@@ -17,7 +17,7 @@ Sign in at <https://authors.curseforge.com> and start a new project:
 | Main category | Quests & Leveling |
 | Other categories (optional) | Map & Minimap, Class |
 | License | GNU General Public License version 3 (GPLv3) |
-| Logo / avatar | `docs/curseforge/logo.png` (400×400, original artwork) |
+| Logo / avatar | `docs/curseforge/logo.png` (400×400, original artwork: a compass with a guide arrow and quest marker) |
 | Source URL | https://github.com/GREYsaurus/TBCGuide |
 | Issues URL | https://github.com/GREYsaurus/TBCGuide/issues |
 
@@ -25,7 +25,7 @@ New projects, and each uploaded file, are reviewed by CurseForge moderation befo
 
 ## 2. Connect GitHub (once)
 
-1. Note the **project ID** shown on the project's page.
+1. Note the **project ID** shown on the project's page. TBCGuide's is **1771321**; it is also recorded in the TOC as `X-Curse-Project-ID`.
 2. Create an API token: CurseForge account settings, then **API tokens**.
 3. In GitHub, open the repository's **Settings > Secrets and variables > Actions**:
    - add the **secret** `CF_API_KEY` with the token;

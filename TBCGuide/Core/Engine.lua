@@ -38,10 +38,6 @@ local COMPLETERS = {
         local currentXP = UnitXP("player")
         return currentXP >= (s.xp or 0)
     end,
-    grind = function(s)
-        local currentXP = UnitXP("player")
-        return currentXP >= (s.xp or 0)
-    end,
 }
 
 -- Steps whose completion is remembered once observed (cannot be re-derived later).
@@ -116,7 +112,6 @@ function Engine:AutoSkipReason(s, ctx)
     elseif s[1] == "grind" then
         local currentXP = UnitXP("player")
         if currentXP >= (s.xp or 0) then return "XP target already reached" end
-    end
     end
     return nil
 end

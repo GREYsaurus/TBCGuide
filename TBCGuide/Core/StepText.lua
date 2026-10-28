@@ -53,6 +53,11 @@ function StepText:Title(s)
         return "Set your Hearthstone at " .. (s.place or "the inn") .. (s.npc and (" (" .. string.format(NPC, s.npc) .. ")") or "")
     elseif k == "level" then
         return "Reach level " .. tostring(s.level)
+    elseif k == "grind" then
+        local zone = s.zone or "the recommended zone"
+        local mobs = s.npcs and table.concat(s.npcs, ", ") or "recommended mobs"
+        local xp = s.xp or "required XP"
+        return "Grind " .. mobs .. " in " .. zone .. " until " .. xp .. " XP"
     elseif k == "talk" then
         return "Talk to " .. string.format(NPC, s.npc or "?")
     elseif k == "guide" then
@@ -87,6 +92,11 @@ function StepText:Details(s)
         if maxXp and maxXp > 0 then
             lines[#lines + 1] = string.format(DIM, string.format("Level %d, %d%% through", UnitLevel("player"), math.floor(xp / maxXp * 100)))
         end
+    elseif s[1] == "grind" then
+        local currentXP = UnitXP("player")
+        local nextLevelXP = UnitXPMax("player")
+        local remainingXP = (s.xp or 0) + nextLevelXP - currentXP
+        lines[#lines + 1] = string.format(DIM, string.format("Current XP: %d, Remaining XP: %d", currentXP, remainingXP))
     end
     if s.text and s[1] ~= "goto" and s[1] ~= "note" and s[1] ~= "travel" then
         lines[#lines + 1] = s.text
@@ -107,6 +117,12 @@ end
 -- falls back to live database lookups for quest steps.
 function StepText:Target(s)
     if s.x and s.y and s.z then return s.z, s.x, s.y, s.npc or s.text end
+    if s[1] == "grind" then
+        local zone = s.zone or "the recommended zone"
+        local mobs = s.npcs and table.concat(s.npcs, ", ") or "recommended mobs"
+        local xp = s.xp or "required XP"
+        return s.z, s.x, s.y, mobs .. " in " .. zone .. " until " .. xp .. " XP"
+    end
     if not s.q then return nil end
     if s[1] == "accept" then
         local npcs = ns.DB.GetQuestStartNPCs(s.q)

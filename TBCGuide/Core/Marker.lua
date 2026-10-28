@@ -59,7 +59,7 @@ function M:RuleFor(s)
     if type(s.mark) == "table" and s.mark.i and s.mark.npcs then
         icon = s.mark.i
         for _, id in ipairs(s.mark.npcs) do npcs[id] = true end
-    elseif p.autoMarkObjectives and s[1] == "complete" and s.q then
+    elseif p.autoMarkObjectives and (s[1] == "complete" or s[1] == "grind") and s.q then
         local q = ns.DB.GetQuestByID(s.q)
         if q then
             for _, id in ipairs(q.objectives.creatures) do npcs[id] = true end

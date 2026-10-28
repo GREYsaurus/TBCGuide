@@ -17,7 +17,7 @@ ns.Guides = Guides
 local VALID_STEP = {
     accept = true, turnin = true, complete = true, ["goto"] = true, note = true, train = true,
     fp = true, fly = true, hs = true, bind = true, level = true, travel = true, guide = true,
-    talk = true, buy = true, use = true, collect = true,
+    talk = true, buy = true, use = true, collect = true, grind = true,
 }
 
 local function reject(id, why)

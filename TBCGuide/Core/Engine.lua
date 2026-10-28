@@ -36,8 +36,7 @@ local COMPLETERS = {
     end,
     grind = function(s)
         local currentXP = UnitXP("player")
-        local nextLevelXP = UnitXPMax("player")
-        return currentXP >= (s.xp or 0) + nextLevelXP
+        return currentXP >= (s.xp or 0)
     end,
 }
 

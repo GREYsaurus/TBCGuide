@@ -1,0 +1,76 @@
+# TBCGuide - Loch Modan (11-18), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_LochModan
+@name Loch Modan
+@faction Alliance
+@levels 11-18
+@zone Loch Modan
+@chapter Azeroth
+@desc Thelsamar, the Stonewrought Dam, the Ironband excavation and the eastern farms. Finish with the Dark Threat Looms chain at the dam, then head to Redridge.
+@next A_Redridge
+
+accept 224 In Defense of the King's Lands | Mountaineer Cobbleflint, the first bunker south of the tunnel.
+accept The Trogg Threat | Captain Rugelfuss in the same bunker.
+complete 224 In Defense of the King's Lands | Troggs on the hills around the bunkers.
+complete The Trogg Threat | Trogg Stone Teeth drop from the same troggs.
+turnin 224 In Defense of the King's Lands
+accept 237 In Defense of the King's Lands
+turnin The Trogg Threat
+turnin Stout to Kadrell | Mountaineer Kadrell, Thelsamar.
+accept Rat Catching
+accept Mountaineer Stormpike's Task
+accept Thelsamar Blood Sausages
+fp Thelsamar
+bind Thelsamar
+accept WANTED: Chok'sul [elite; group=3; optional]
+complete Thelsamar Blood Sausages | Bears and spiders around Thelsamar.
+complete Rat Catching | Tunnel Rat Kobolds at the Silver Stream Mine, north of Thelsamar.
+turnin Thelsamar Blood Sausages
+turnin Rat Catching
+complete 237 In Defense of the King's Lands | Stonesplinter troggs at Grizzlepaw Ridge.
+turnin 237 In Defense of the King's Lands
+accept 263 In Defense of the King's Lands
+turnin Mountaineer Stormpike's Task | Mountaineer Stormpike at the Dam.
+accept Filthy Paws
+complete Filthy Paws | Kobold crates inside Silver Stream Mine.
+turnin Filthy Paws
+accept Stormpike's Order [optional]
+accept Excavation Progress Report | Prospector Ironband, Ironband's Excavation Site.
+accept Gathering Idols | Magmar Fellhew at the excavation.
+turnin Excavation Progress Report | Jern Hornhelm in Thelsamar.
+accept Report to Ironforge
+accept Ironband's Excavation
+turnin Ironband's Excavation
+complete Gathering Idols | Troggs at the excavation site drop Carved Stone Idols.
+turnin Gathering Idols
+accept Crocolisk Hunting | Marek Ironheart at the Farstrider Lodge, east Loch Modan.
+accept A Hunter's Boast | Daryl the Youngling, Farstrider Lodge.
+accept Bingles' Missing Supplies | Bingles Blastenheimer, on the hill north-east of Thelsamar.
+complete A Hunter's Boast | Mountain Buzzards and boars near the lodge.
+turnin A Hunter's Boast
+accept A Hunter's Challenge
+complete Crocolisk Hunting | Loch Crocolisks along the eastern shore.
+complete Bingles' Missing Supplies | Four pieces scattered at the Thelsamar lake islands.
+turnin Bingles' Missing Supplies
+complete A Hunter's Challenge | Elder Mountain Boars south of the lodge.
+turnin A Hunter's Challenge
+turnin Crocolisk Hunting
+complete 263 In Defense of the King's Lands | Troggs at the southern Stonesplinter Valley.
+turnin 263 In Defense of the King's Lands
+accept 217 In Defense of the King's Lands
+complete 217 In Defense of the King's Lands | Kill Stonesplinter troggs in Stonesplinter Valley.
+turnin 217 In Defense of the King's Lands
+turnin Report to Ironforge [optional] | Prospector Stormpike in the Hall of Explorers, Ironforge. Train while you are there.
+accept Mercenaries | Magistrate Bluntnose, Thelsamar.
+complete Mercenaries | Mo'grosh ogres at the north-east of the loch.
+turnin Mercenaries
+accept 250 A Dark Threat Looms | Chief Engineer Hinderweir VII on the Stonewrought Dam.
+turnin 250 A Dark Threat Looms | The suspicious barrel is on the dam.
+accept 199 A Dark Threat Looms
+turnin 199 A Dark Threat Looms
+accept 161 A Dark Threat Looms
+turnin 161 A Dark Threat Looms [optional] | Ashlan Stonesmirk in the Wetlands. Leave it if you are going straight to Redridge.
+level 17 | Finish leftover kills here if you are not 17 yet.
+train
+note Fly from Thelsamar to Ironforge, take the Deeprun Tram to Stormwind, and walk east through Elwynn to Redridge.

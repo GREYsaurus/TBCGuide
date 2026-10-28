@@ -1,0 +1,94 @@
+# TBCGuide - Dustwallow Marsh (37-42), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Dustwallow
+@name Dustwallow Marsh (Brackenwall Village)
+@faction Horde
+@levels 37-42
+@zone Dustwallow Marsh
+@chapter Azeroth
+@desc Brackenwall Village and the updated Dustwallow hubs: the Shady Rest Inn, the Grimtotem plot, Mudsprocket and the Black Dragonflight.
+@next Both_Tanaris
+
+fp Brackenwall Village
+bind Brackenwall Village
+accept Inspecting the Ruins | Krog, Brackenwall.
+accept Theramore Spies | Nazeer Bloodpike.
+accept The Theramore Docks
+accept Identifying the Brood | Draz'Zilb.
+accept Army of the Black Dragon | Tharg.
+accept Overlord Mok'Morokk's Concern
+accept What's Haunting Witch Hill? | Mordant Grimsby.
+accept Hungry! [optional] | Mudcrush Durtfeet.
+complete Inspecting the Ruins | The burned Shady Rest Inn.
+turnin Inspecting the Ruins
+accept Suspicious Hoofprints | The hoofprints are at the Shady Rest Inn.
+accept 1251 The Black Shield | The black shield lies at the Shady Rest Inn too.
+turnin Suspicious Hoofprints
+turnin 1251 The Black Shield
+accept 1321 The Black Shield
+complete 1321 The Black Shield
+turnin 1321 The Black Shield
+accept 1322 The Black Shield
+turnin 1322 The Black Shield
+accept 1323 The Black Shield
+complete 1323 The Black Shield
+turnin 1323 The Black Shield
+accept 1276 The Black Shield
+turnin 1276 The Black Shield
+accept More than Coincidence
+complete Theramore Spies | Theramore infiltrators around Brackenwall.
+complete The Theramore Docks
+complete Identifying the Brood | Black dragonspawn in the south.
+complete Army of the Black Dragon
+complete Overlord Mok'Morokk's Concern
+complete What's Haunting Witch Hill? | Witch Hill, north.
+complete More than Coincidence
+turnin Theramore Spies
+turnin The Theramore Docks
+turnin Identifying the Brood
+accept 1170 The Brood of Onyxia
+turnin 1170 The Brood of Onyxia
+accept 1171 The Brood of Onyxia
+turnin 1171 The Brood of Onyxia
+accept 1172 The Brood of Onyxia
+turnin Army of the Black Dragon
+turnin Overlord Mok'Morokk's Concern
+turnin What's Haunting Witch Hill?
+accept The Witch's Bane
+turnin More than Coincidence
+accept The Grimtotem Plot
+complete 1172 The Brood of Onyxia | Destroy the eggs in Wyrmbog.
+complete The Witch's Bane
+complete The Grimtotem Plot
+turnin 1172 The Brood of Onyxia
+turnin The Witch's Bane
+accept Cleansing Witch Hill
+turnin The Grimtotem Plot
+accept Return to Krog
+turnin Return to Krog
+accept Seek Out Tabetha
+turnin Seek Out Tabetha
+accept Raze Direhorn Post!
+complete Raze Direhorn Post!
+complete Cleansing Witch Hill
+turnin Raze Direhorn Post!
+accept Justice Dispensed
+turnin Cleansing Witch Hill
+complete Justice Dispensed
+turnin Justice Dispensed
+accept The Grimtotem Weapon [optional]
+accept Direhorn Raiders [optional]
+accept The Zeppelin Crash [optional]
+accept The Reagent Thief [optional]
+complete The Grimtotem Weapon [optional]
+complete Direhorn Raiders [optional]
+complete The Zeppelin Crash [optional]
+complete The Reagent Thief [optional]
+turnin The Grimtotem Weapon [optional]
+turnin Direhorn Raiders [optional]
+turnin The Zeppelin Crash [optional]
+turnin The Reagent Thief [optional]
+level 41
+train
+note Fly to Gadgetzan (Tanaris).

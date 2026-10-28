@@ -1,0 +1,44 @@
+﻿QuestieDB import - QuestieDB commit 7901fee2753cecb577a72c2e4b7126198e05baec (QuestieDB v1.0.9 (shipped in Questie bundle/v12.3.1+v1.0.9, published 2026-10-26)).
+
+items: 3919
+npcs: 7302
+objects: 1325
+quests: 6648
+subzones: 121
+warnings: 25
+zones: 312
+
+Corrections applied: 4440
+Corrections skipped (could not be evaluated statically):
+quest 11497 field requiredRanks (line 5895): unary minus on non-number
+quest 11498 field requiredRanks (line 5898): unary minus on non-number
+quest 11875 field requiredRanks (line 6861): unknown symbol rankKeys.ARTISAN
+quest 5640: correction-only record without a name dropped
+quest 5678: correction-only record without a name dropped
+
+Warnings:
+item 36876 referenced by a quest is missing from upstream item data
+item 37736 referenced by a quest is missing from upstream item data
+item 37737 referenced by a quest is missing from upstream item data
+item 185956 referenced by a quest is missing from upstream item data
+npc 80001 referenced but missing from upstream npc data
+npc 80002 referenced but missing from upstream npc data
+npc 80003 referenced but missing from upstream npc data
+npc 80004 referenced but missing from upstream npc data
+npc 80005 referenced but missing from upstream npc data
+npc 80006 referenced but missing from upstream npc data
+npc 178420 referenced but missing from upstream npc data
+object 185519 referenced but missing from upstream object data
+object 187578 referenced but missing from upstream object data
+object 410002 referenced but missing from upstream object data
+object 410003 referenced but missing from upstream object data
+object 410004 referenced but missing from upstream object data
+object 410005 referenced but missing from upstream object data
+object 410006 referenced but missing from upstream object data
+object 410007 referenced but missing from upstream object data
+object 410008 referenced but missing from upstream object data
+object 410009 referenced but missing from upstream object data
+object 410010 referenced but missing from upstream object data
+object 410011 referenced but missing from upstream object data
+object 410012 referenced but missing from upstream object data
+object 410013 referenced but missing from upstream object data

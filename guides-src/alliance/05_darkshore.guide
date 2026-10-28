@@ -1,0 +1,114 @@
+# TBCGuide - Darkshore (11-20), Alliance (Night Elf route)
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Darkshore
+@name Darkshore
+@faction Alliance
+@levels 11-20
+@zone Darkshore
+@chapter Azeroth
+@desc Auberdine, Bashal'Aran, the beached sea creatures, the Cliffspring River and southern Darkshore. Ends at about 19-20 heading south to Ashenvale.
+@next A_Ashenvale
+
+fp Auberdine
+bind Auberdine
+accept Buzzbox 827 | Wizbang Cranktoggle on the Auberdine dock.
+accept Washed Ashore | Gwennyth Bly'Leggonde.
+accept How Big a Threat? | Terenthis.
+accept Plagued Lands | Tharnariun Treetender.
+accept Bashal'Aran | Thundris Windweaver.
+accept Tools of the Highborne
+accept Easy Strider Living | Alanndarian Nightsong.
+accept Cave Mushrooms | Barithras Moonshade.
+accept The Red Crystal | Sentinel Glynda Nal'Shea.
+accept For Love Eternal [optional]
+accept The Family and the Fishing Pole [optional]
+accept Deep Ocean, Vast Sea | Gorbold Steelhand.
+accept The Tower of Althalaxx | Sentinel Elissa Starbreeze.
+complete Buzzbox 827 | Crawlers on the beach.
+turnin Buzzbox 827
+accept Buzzbox 411
+complete Washed Ashore | The sea creature bones are on the beach south of Auberdine.
+turnin Washed Ashore
+accept 4681 Washed Ashore
+complete Plagued Lands | Use the cage on a Rabid Thistle Bear.
+turnin Plagued Lands
+accept Cleansing of the Infected
+complete How Big a Threat? | Explore the furbolg camp east of Auberdine.
+turnin How Big a Threat?
+accept 985 How Big a Threat?
+turnin Bashal'Aran | Asterion, at the ruins east of Auberdine.
+accept 955 Bashal'Aran
+complete 955 Bashal'Aran | Deth'ryll Satyrs.
+turnin 955 Bashal'Aran
+accept 956 Bashal'Aran
+complete 956 Bashal'Aran
+turnin 956 Bashal'Aran
+accept 957 Bashal'Aran
+turnin 957 Bashal'Aran
+complete The Red Crystal | The crystal is on the cliff east of Auberdine.
+turnin The Red Crystal
+accept As Water Cascades
+complete As Water Cascades | Fill the bottle at the moonwell in Auberdine.
+turnin As Water Cascades
+accept The Fragments Within
+turnin The Fragments Within
+complete Buzzbox 411 | Thresher eyes from threshers off the coast.
+turnin Buzzbox 411
+accept Buzzbox 323
+complete Cleansing of the Infected | Rabid Thistle Bears.
+complete 985 How Big a Threat? | Blackwood furbolgs at the camp.
+complete Tools of the Highborne | Highborne relics in the Bashal'Aran ruins.
+turnin Cleansing of the Infected
+accept Tharnariun's Hope
+turnin 985 How Big a Threat?
+accept Thundris Windweaver
+turnin Thundris Windweaver
+accept The Cliffspring River
+turnin Tools of the Highborne
+complete The Cliffspring River | Fill the sample tube in the Cliffspring River.
+turnin The Cliffspring River
+accept The Blackwood Corrupted
+complete The Tower of Althalaxx | Balthule Shadowstrike, north-east.
+turnin The Tower of Althalaxx
+accept 966 The Tower of Althalaxx
+complete 966 The Tower of Althalaxx | Dark Strand Fanatics at the tower.
+turnin 966 The Tower of Althalaxx
+accept 967 The Tower of Althalaxx
+complete 967 The Tower of Althalaxx
+turnin 967 The Tower of Althalaxx
+complete Buzzbox 323 | Moonstalkers.
+turnin Buzzbox 323
+accept Buzzbox 525
+complete Cave Mushrooms | The Mist's Edge cave.
+turnin Cave Mushrooms
+accept Onu
+complete Easy Strider Living | Strider meat from striders along the coast.
+turnin Easy Strider Living
+complete The Blackwood Corrupted | Blackwood furbolg camp in the north.
+turnin The Blackwood Corrupted
+complete Tharnariun's Hope | Den Mother in the bear cave north-east.
+turnin Tharnariun's Hope
+accept The Absent Minded Prospector | Archaeologist Hollee, Auberdine.
+turnin Onu | Onu at the Grove of the Ancients.
+accept The Master's Glaive
+complete The Master's Glaive | The Master's Glaive in the south.
+turnin The Master's Glaive
+accept The Twilight Camp
+turnin The Twilight Camp
+accept Return to Onu
+turnin Return to Onu
+accept Mathystra Relics [optional]
+accept Therylune's Escape [optional]
+complete Therylune's Escape [optional] | Escort quest.
+turnin Therylune's Escape [optional]
+turnin The Absent Minded Prospector | Prospector Remtravel, south coast.
+accept 731 The Absent Minded Prospector [group=2] | Escort quest.
+complete 731 The Absent Minded Prospector [group=2]
+turnin 731 The Absent Minded Prospector
+complete Buzzbox 525
+turnin Buzzbox 525
+level 19
+train | Darnassus trainers via Rut'theran.
+accept Onward to Ashenvale [optional]
+note Follow the road south out of Darkshore into Ashenvale; Astranaar is the Alliance town.

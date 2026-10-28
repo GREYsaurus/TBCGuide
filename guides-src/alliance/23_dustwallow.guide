@@ -1,0 +1,82 @@
+# TBCGuide - Dustwallow Marsh (36-41), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Dustwallow
+@name Dustwallow Marsh (Theramore)
+@faction Alliance
+@levels 36-41
+@zone Dustwallow Marsh
+@chapter Azeroth
+@desc Theramore Isle and the updated Dustwallow quest hubs: the deserters, the lighthouse, the Grimtotems and Mudsprocket.
+@next Both_Tanaris
+
+fp Theramore
+bind Theramore
+accept Inspecting the Ruins | Captain Garran Vimes.
+accept They Call Him Smiling Jim | Guard Byron.
+accept Traitors Among Us | Calia Hastings.
+accept This Old Lighthouse | Sergeant Amelyn.
+accept Defias in Dustwallow? | Captain Wymor.
+accept Raptor Captor | Sergeant Lukas.
+accept The Apothecary's Letter [optional]
+complete Traitors Among Us | Deserters at the Shady Rest Inn ruins.
+complete Inspecting the Ruins | Examine the burned-out Shady Rest Inn.
+turnin Inspecting the Ruins
+turnin Traitors Among Us
+accept Propaganda War
+complete Raptor Captor | Bloodfen raptors.
+turnin Raptor Captor
+accept Prisoners of the Grimtotems
+accept Unleash the Raptors
+turnin This Old Lighthouse | Babs Fizzletorque at the lighthouse.
+accept Thresher Oil
+complete Thresher Oil | Young Murk Threshers along the coast.
+turnin Thresher Oil
+accept Dastardly Denizens of the Deep
+complete Propaganda War | Deserter camp in the marsh.
+turnin Propaganda War
+accept Discrediting the Deserters
+turnin Defias in Dustwallow? | Captain Wymor.
+accept Renn McGill
+turnin Renn McGill
+accept Secondhand Diving Gear
+complete Secondhand Diving Gear
+turnin Secondhand Diving Gear
+accept Recover the Cargo!
+complete Recover the Cargo! | Underwater near Renn McGill.
+turnin Recover the Cargo!
+accept Jaina Must Know
+turnin Jaina Must Know | Lady Jaina Proudmoore, top of the tower.
+accept Survey Alcaz Island
+complete Survey Alcaz Island
+turnin Survey Alcaz Island
+accept Warn Bolvar! [optional]
+complete Dastardly Denizens of the Deep | Murks on the coast.
+turnin Dastardly Denizens of the Deep
+accept Is it Real?
+complete Discrediting the Deserters
+turnin Discrediting the Deserters
+accept The End of the Deserters
+complete The End of the Deserters
+turnin The End of the Deserters
+complete Prisoners of the Grimtotems | Grimtotem camps south.
+complete Unleash the Raptors
+turnin Prisoners of the Grimtotems
+turnin Unleash the Raptors
+accept WANTED: Goreclaw the Ravenous [optional]
+accept Help for Mudsprocket [optional] | Tabetha.
+accept The Grimtotem Weapon [optional]
+accept Direhorn Raiders [optional]
+accept The Zeppelin Crash [optional]
+accept The Reagent Thief [optional]
+complete The Grimtotem Weapon [optional]
+complete Direhorn Raiders [optional]
+complete The Zeppelin Crash [optional]
+complete The Reagent Thief [optional]
+turnin The Grimtotem Weapon [optional]
+turnin Direhorn Raiders [optional]
+turnin The Zeppelin Crash [optional]
+turnin The Reagent Thief [optional]
+level 41
+train
+note Fly south to Gadgetzan (Tanaris). Get the Gadgetzan flight path on arrival.

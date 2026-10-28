@@ -1,0 +1,107 @@
+# TBCGuide - Orc & Troll start: Valley of Trials and Durotar (1-12)
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_OrcTroll_Durotar
+@name Valley of Trials & Durotar
+@faction Horde
+@races Orc,Troll
+@levels 1-12
+@zone Durotar
+@chapter Azeroth
+@start
+@desc Orc and troll starting route. The Valley of Trials to about 5, then Razor Hill, Sen'jin Village, the Echo Isles, Tiragarde Keep and Skull Rock. Ends at about 11-12, heading into the Barrens.
+@next H_Barrens
+
+accept Your Place In The World | Kaltunk at the valley entrance.
+turnin Your Place In The World | Gornek, inside the Den.
+accept Cutting Teeth
+accept Galgar's Cactus Apple Surprise | Galgar, near the Den.
+accept 790 Sarkoth | Hana'zua, wounded near the canyon to the south.
+complete Cutting Teeth | Mottled Boars around the valley.
+complete Galgar's Cactus Apple Surprise | Cactus apples beside the cacti.
+turnin Cutting Teeth
+accept Sting of the Scorpid
+turnin Galgar's Cactus Apple Surprise
+complete 790 Sarkoth | Sarkoth is a large scorpid north-west of Hana'zua.
+turnin 790 Sarkoth
+accept 804 Sarkoth
+turnin 804 Sarkoth
+complete Sting of the Scorpid | Scorpid Workers.
+turnin Sting of the Scorpid
+accept Vanquish the Betrayers
+accept 792 Vile Familiars [class=Warrior,Hunter,Rogue,Shaman,Priest,Mage] | Zureetha Fargaze.
+accept 1485 Vile Familiars [class=Warlock]
+complete 792 Vile Familiars [class=Warrior,Hunter,Rogue,Shaman,Priest,Mage] | Vile Familiars in the north-east of the valley.
+complete 1485 Vile Familiars [class=Warlock]
+turnin 792 Vile Familiars [class=Warrior,Hunter,Rogue,Shaman,Priest,Mage]
+turnin 1485 Vile Familiars [class=Warlock]
+accept Burning Blade Medallion
+accept Lazy Peons | Foreman Thazz'ril.
+accept A Peon's Burden [optional] | Ukor.
+complete Lazy Peons | Use the Foreman's Blackjack on sleeping peons.
+turnin Lazy Peons
+accept Thazz'ril's Pick
+complete Thazz'ril's Pick | Burning Blade Cave, north.
+complete Vanquish the Betrayers | Burning Blade cultists in the cave.
+complete Burning Blade Medallion | Yarrog Baneshadow, deep in the cave.
+turnin Thazz'ril's Pick
+turnin Vanquish the Betrayers
+turnin Burning Blade Medallion
+accept Report to Sen'jin Village
+train | Trainers are inside the Den.
+accept Report to Orgnil [optional]
+turnin Report to Sen'jin Village | Master Gadrin, Sen'jin Village.
+accept Minshina's Skull
+accept Zalazane
+accept Report to Orgnil
+accept Practical Prey | Vel'rin Fang.
+accept A Solvent Spirit | Master Vornal.
+accept Thwarting Kolkar Aggression | Lar Prowltusk.
+complete A Solvent Spirit | Makrura on the shore around Sen'jin.
+complete Practical Prey | Durotar Tigers.
+turnin A Solvent Spirit
+turnin Practical Prey
+complete Minshina's Skull | Echo Isles (walk across the shallow water).
+complete Zalazane | Zalazane is on the largest Echo Isle.
+turnin Minshina's Skull
+turnin Zalazane
+complete Thwarting Kolkar Aggression | Kolkar camp south-west of Sen'jin.
+turnin Thwarting Kolkar Aggression
+turnin Report to Orgnil | Orgnil Soulscar, Razor Hill.
+accept Dark Storms
+accept Encroachment | Gar'Thok.
+accept Break a Few Eggs | Cook Torka.
+bind Razor Hill
+complete Encroachment | Quilboars and Razormane scouts west of Razor Hill.
+complete Break a Few Eggs | Taillasher eggs south of Razor Hill.
+complete Dark Storms | Burning Blade cultists at Thunder Ridge.
+turnin Encroachment
+turnin Break a Few Eggs
+turnin Dark Storms
+accept Margoz
+turnin Margoz | Margoz, Skull Rock.
+accept Skull Rock
+complete Skull Rock | Burning Blade inside Skull Rock.
+turnin Skull Rock
+accept Neeru Fireblade
+accept Lost But Not Forgotten | Misha Tor'kren, north Durotar.
+accept Winds in the Desert | Rezlak at the eastern caravan.
+accept Need for a Cure | Rhinag.
+complete Lost But Not Forgotten | Durotar Tigers near Misha.
+complete Winds in the Desert | Supply sacks scattered in Drygulch Ravine.
+complete Need for a Cure | Venomtail Scorpids.
+turnin Lost But Not Forgotten
+turnin Winds in the Desert
+accept Securing the Lines
+turnin Need for a Cure
+complete Securing the Lines | Dustwind harpies in Drygulch Ravine.
+turnin Securing the Lines
+turnin Neeru Fireblade | Cleft of Shadow, Orgrimmar.
+accept Ak'Zeloth
+train | Orgrimmar trainers.
+fp Orgrimmar [zone=Orgrimmar]
+accept Conscript of the Horde | Takrin Pathseeker, outside the western gate.
+level 11
+turnin Conscript of the Horde | Kargal Battlescar at the Barrens border.
+accept Crossroads Conscription
+note Follow the road west into the Barrens; the Crossroads is the main hub.

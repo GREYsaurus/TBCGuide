@@ -1,0 +1,82 @@
+# TBCGuide - Duskwood (20-25), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Duskwood
+@name Duskwood
+@faction Alliance
+@levels 20-25
+@zone Duskwood
+@chapter Azeroth
+@desc Darkshire, the Raven Hill area and the western farms. Ends at about 25, then by boat or road to the Wetlands.
+@next A_Wetlands
+
+accept Raven Hill | Elaine Carevin, Darkshire.
+accept Deliveries to Sven
+accept The Hermit
+accept The Night Watch | Commander Althea Ebonlocke, Darkshire town hall.
+accept Seasoned Wolf Kabobs | Chef Grual.
+accept The Totem of Infliction | Madame Eva.
+accept 174 Look To The Stars [optional] | Viktori Prism'Antras at the tower east of Darkshire.
+fp Darkshire
+bind Darkshire
+complete The Night Watch | Skeletons and ghouls at Tranquil Gardens Cemetery, south-east of Darkshire.
+turnin The Night Watch
+accept 57 The Night Watch
+accept Eight-Legged Menaces | Watcher Dodds on the bridge on the road to Westfall.
+complete Seasoned Wolf Kabobs | Nightbane Shadow Weavers and wolves.
+complete Eight-Legged Menaces | Pygmy Venom Web Spiders around the road.
+turnin Eight-Legged Menaces
+turnin The Hermit | Abercrombie's hut, north of Raven Hill.
+accept Supplies from Darkshire
+turnin Raven Hill | Jitters, north of the Raven Hill houses.
+accept Jitters' Growling Gut
+turnin Deliveries to Sven | Sven Yorgen's camp, far west.
+accept Sven's Revenge
+accept Wolves at Our Heels | Lars, next to Sven.
+complete Wolves at Our Heels
+turnin Wolves at Our Heels
+complete Sven's Revenge | The dirt mound is south of Darkshire's road, near the river.
+turnin Sven's Revenge
+accept Sven's Camp
+turnin Supplies from Darkshire | Madame Eva, Darkshire.
+accept Ghost Hair Thread
+turnin Jitters' Growling Gut | Chef Grual.
+accept Dusky Crab Cakes
+turnin Seasoned Wolf Kabobs
+turnin Ghost Hair Thread | Blind Mary, house south-east of Darkshire.
+accept Return the Comb
+complete Dusky Crab Cakes | Crabs along the coast in western Duskwood.
+complete 57 The Night Watch | Skeletal Fiends and Healers at the graveyard.
+turnin 57 The Night Watch
+accept 58 The Night Watch [optional]
+turnin Return the Comb
+accept Deliver the Thread
+turnin Dusky Crab Cakes
+accept Return to Jitters
+turnin Return to Jitters
+turnin Deliver the Thread
+accept Zombie Juice
+turnin Zombie Juice | Tavernkeep Smitts, Darkshire inn.
+accept Gather Rot Blossoms
+complete Gather Rot Blossoms | Skeletons in Raven Hill Cemetery.
+turnin Gather Rot Blossoms
+accept Juice Delivery
+turnin Juice Delivery
+accept Ghoulish Effigy
+complete Ghoulish Effigy | Ghouls at Raven Hill Cemetery.
+turnin Ghoulish Effigy
+accept Ogre Thieves
+turnin Sven's Camp
+accept The Shadowy Figure
+complete Ogre Thieves | Splinter Fist ogres at Vul'Gol Ogre Mound.
+turnin Ogre Thieves
+accept Note to the Mayor
+turnin The Shadowy Figure
+accept The Shadowy Search Continues
+turnin Note to the Mayor
+complete The Totem of Infliction | Ogres, worgen and spiders throughout Duskwood.
+turnin The Totem of Infliction
+accept 66 The Legend of Stalvan [optional] | A long chain across several zones - optional.
+level 25
+train
+note Fly to Ironforge or Stormwind, then the boat or Dun Algaz pass to Menethil Harbor, Wetlands.

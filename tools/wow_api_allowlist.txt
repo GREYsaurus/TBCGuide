@@ -1,0 +1,93 @@
+﻿# TBCGuide - client globals the add-on is allowed to reference.
+# SPDX-License-Identifier: GPL-3.0-only
+#
+# tools/build.ps1 lint fails on any global read that is not a Lua builtin, one of our own
+# globals, or listed here. Adding a line is a deliberate decision: note its status.
+#
+# Status legend (from developer knowledge of the 2.5.x Classic client; NOT verified in-game):
+#   core      - present since the original 1.x/2.x API and in all Classic clients
+#   classic   - modern-API function present in the Classic (1.13+/2.5+) clients
+#   guarded   - may be missing in some builds; every call site checks it exists first
+#   optional  - provided by another add-on; always nil-checked
+# Run /tbcg debug api in the client to confirm availability.
+
+# --- frames / UI (core) ---
+CreateFrame
+UIParent
+GameTooltip
+DEFAULT_CHAT_FRAME
+UISpecialFrames
+SlashCmdList
+ReloadUI
+LOCALIZED_CLASS_NAMES_MALE
+UIDropDownMenu_SetWidth
+UIDropDownMenu_Initialize
+UIDropDownMenu_CreateInfo
+UIDropDownMenu_AddButton
+UIDropDownMenu_SetText
+CloseDropDownMenus
+WorldMapFrame                 # core frame; GetMapID/GetCanvas/OnMapChanged are classic (guarded)
+WorldMapFrame.GetMapID
+WorldMapFrame.GetCanvas
+WorldMapFrame.OnMapChanged
+BackdropTemplateMixin         # guarded (needed for SetBackdrop on 2.5.x)
+ERR_NEWTAXIPATH               # core global string; guarded with English fallback
+
+# --- options UI ---
+InterfaceOptions_AddCategory          # guarded (legacy options API)
+InterfaceOptionsFrame_OpenToCategory  # guarded (legacy options API)
+Settings                              # guarded (new Settings API, present on newer Classic builds)
+Settings.RegisterCanvasLayoutCategory
+Settings.RegisterAddOnCategory
+Settings.OpenToCategory
+
+# --- client info (core) ---
+GetBuildInfo
+GetTime
+C_Timer.After                 # classic
+
+# --- player / unit (core) ---
+UnitRace
+UnitClass
+UnitFactionGroup
+UnitLevel
+UnitName
+UnitXP
+UnitXPMax
+GetRealZoneText
+GetZoneText
+GetSubZoneText
+GetBindLocation
+GetPlayerFacing               # classic; guarded (returns nil in some instances)
+
+# --- quests ---
+GetNumQuestLogEntries         # core
+GetQuestLogTitle              # core; 8th return = questID on Classic clients
+GetNumQuestLeaderBoards       # core
+GetQuestLogLeaderBoard        # core
+GetQuestsCompleted            # guarded legacy fallback
+C_QuestLog                    # classic namespace
+C_QuestLog.GetQuestIDForLogIndex  # guarded (not on every Classic build)
+
+# --- map ---
+C_Map                         # classic namespace
+C_Map.GetBestMapForUnit
+C_Map.GetPlayerMapPosition
+C_Map.GetWorldPosFromMapPos
+C_Map.GetMapInfo
+CreateVector2D                # classic
+
+# --- talents / spells ---
+GetNumTalentTabs              # core
+GetTalentTabInfo              # core (return signature varies; see Compat)
+GetNumTalents                 # core
+GetTalentInfo                 # core
+UnitCharacterPoints           # core in TBC (unspent talent points)
+GetUnspentTalentPoints        # guarded (newer clients)
+GetSpellTexture               # core
+GetSpellInfo                  # core
+
+# --- optional integrations ---
+TomTom                        # optional add-on
+TomTom.AddWaypoint
+TomTom.RemoveWaypoint

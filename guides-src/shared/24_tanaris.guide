@@ -1,0 +1,55 @@
+# TBCGuide - Tanaris (41-45), both factions
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide Both_Tanaris
+@name Tanaris (Gadgetzan)
+@faction Both
+@levels 41-45
+@zone Tanaris
+@chapter Azeroth
+@desc Gadgetzan's neutral quest hub: the Wastewander bandits, the water survey, the pirates of Lost Rigger Cove and Steamwheedle Port. Zul'Farrak (dungeon) quests are optional.
+@next A_Feralas [faction=Alliance]
+@next H_Feralas [faction=Horde]
+
+fp Gadgetzan
+bind Gadgetzan
+accept Wastewander Justice | Chief Engineer Bilgewhizzle, Gadgetzan.
+accept Water Pouch Bounty | Spigot Operator Luglunket.
+accept Gadgetzan Water Survey | Senior Surveyor Fizzledowser.
+accept WANTED: Caliph Scorpidsting [elite; group=3; optional]
+accept WANTED: Andre Firebeard [optional]
+accept The Thirsty Goblin [optional] | Marin Noggenfogger.
+complete Wastewander Justice | Wastewander bandits east of Gadgetzan.
+complete Water Pouch Bounty | Same bandits drop Wastewander Water Pouches.
+complete Gadgetzan Water Survey | Use the tool at the Noxious Lair water hole.
+turnin Wastewander Justice
+accept More Wastewander Justice
+turnin Water Pouch Bounty
+turnin Gadgetzan Water Survey
+accept Noxious Lair Investigation
+complete More Wastewander Justice
+turnin More Wastewander Justice
+complete Noxious Lair Investigation | Centipaar insects at the Noxious Lair.
+turnin Noxious Lair Investigation
+accept The Scrimshank Redemption
+complete The Scrimshank Redemption | Inside the Noxious Lair tunnels.
+turnin The Scrimshank Redemption
+accept 110 Insect Part Analysis
+turnin 110 Insect Part Analysis | Alchemist Pestlezugg.
+accept 113 Insect Part Analysis
+turnin 113 Insect Part Analysis
+accept Southsea Shakedown | Security Chief Bilgewhizzle at Steamwheedle Port.
+accept Pirate Hats Ahoy! | Haughty Modiste.
+complete Southsea Shakedown | Pirates at Lost Rigger Cove.
+complete Pirate Hats Ahoy!
+turnin Southsea Shakedown
+turnin Pirate Hats Ahoy!
+accept Screecher Spirits | Yeh'kinya, Steamwheedle Port.
+accept The Dunemaul Compound [optional]
+complete The Dunemaul Compound [optional] | Dunemaul ogres.
+turnin The Dunemaul Compound [optional]
+complete WANTED: Caliph Scorpidsting [elite; group=3; optional]
+turnin WANTED: Caliph Scorpidsting [optional]
+level 44
+train
+note Alliance: fly to Thalanaar or take the boat to Feathermoon Stronghold. Horde: fly to Camp Mojache in Feralas.

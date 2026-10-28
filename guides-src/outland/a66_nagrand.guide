@@ -1,0 +1,117 @@
+# TBCGuide - Nagrand (64-67), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Nagrand
+@name Nagrand (Telaar)
+@faction Alliance
+@levels 64-67
+@zone Nagrand
+@chapter Outland
+@desc Telaar, the Nesingwary safari, the Throne of the Elements, the Burning Blade and the Kil'sorrow chain, and the Ring of Blood.
+@next A_BladesEdge
+
+fp Telaar
+bind Telaar
+accept Do My Eyes Deceive Me | Huntress Bintook, Telaar.
+accept HELP! | Corki, Telaar.
+accept Wanted: Giselda the Crone
+accept Wanted: Zorbo the Advisor
+accept The Ravaged Caravan | Huntress Kima.
+accept Fierce Enemies | Warden Moi'bff Jill.
+turnin Do My Eyes Deceive Me
+accept Not On My Watch!
+turnin HELP! | Corki, in a cage at the Warmaul village.
+accept Corki's Gone Missing Again!
+complete Not On My Watch!
+turnin Not On My Watch!
+accept Mo'mor the Breaker
+turnin Mo'mor the Breaker
+accept The Ruins of Burning Blade
+complete The Ruins of Burning Blade
+turnin The Ruins of Burning Blade
+accept The Twin Clefts of Nagrand
+complete The Twin Clefts of Nagrand
+turnin The Twin Clefts of Nagrand
+accept Diplomatic Measures
+turnin Diplomatic Measures | Lantresor of the Blade.
+accept Ruthless Cunning
+accept Armaments for Deception
+complete Ruthless Cunning
+complete Armaments for Deception
+turnin Ruthless Cunning
+turnin Armaments for Deception
+accept Returning the Favor
+accept Body of Evidence
+complete Returning the Favor
+complete Body of Evidence
+turnin Returning the Favor
+turnin Body of Evidence
+accept Message to Telaar
+turnin Message to Telaar
+complete Wanted: Giselda the Crone | Kil'sorrow Fortress (east).
+complete Wanted: Zorbo the Advisor
+turnin Wanted: Giselda the Crone
+turnin Wanted: Zorbo the Advisor
+accept Wanted: Durn the Hungerer [elite; group=3; optional]
+complete The Ravaged Caravan
+turnin The Ravaged Caravan
+complete Fierce Enemies
+turnin Fierce Enemies
+complete Corki's Gone Missing Again!
+turnin Corki's Gone Missing Again!
+accept Corki's Ransom
+complete Corki's Ransom
+turnin Corki's Ransom
+accept Cho'war the Pillager
+complete Cho'war the Pillager [group=2]
+turnin Cho'war the Pillager
+accept The Throne of the Elements | Elementalist Ioki.
+turnin The Throne of the Elements
+accept A Rare Bean | Elementalist Lo'ap.
+accept Muck Diving
+accept The Underneath | Elementalist Untrag.
+complete A Rare Bean
+complete Muck Diving
+turnin A Rare Bean
+accept Agitated Spirits of Skysong
+turnin Muck Diving
+complete Agitated Spirits of Skysong
+turnin Agitated Spirits of Skysong
+accept Blessing of Incineratus
+complete Blessing of Incineratus
+turnin Blessing of Incineratus
+accept The Spirit Polluted
+complete The Spirit Polluted
+turnin The Spirit Polluted
+turnin The Underneath
+accept The Tortured Earth
+complete The Tortured Earth
+turnin The Tortured Earth
+accept Eating Damnation
+complete Eating Damnation
+turnin Eating Damnation
+accept The Nesingwary Safari | "Shotgun" Jones.
+turnin The Nesingwary Safari | Hemet Nesingwary's camp, north Nagrand.
+accept 9789 Clefthoof Mastery
+accept 9854 Windroc Mastery
+accept 9857 Talbuk Mastery
+complete 9789 Clefthoof Mastery
+complete 9854 Windroc Mastery
+complete 9857 Talbuk Mastery
+turnin 9789 Clefthoof Mastery
+turnin 9854 Windroc Mastery
+turnin 9857 Talbuk Mastery
+accept 9850 Clefthoof Mastery
+accept 9855 Windroc Mastery
+accept 9858 Talbuk Mastery
+complete 9850 Clefthoof Mastery
+complete 9855 Windroc Mastery
+complete 9858 Talbuk Mastery
+turnin 9850 Clefthoof Mastery
+turnin 9855 Windroc Mastery
+turnin 9858 Talbuk Mastery
+accept The Ring of Blood: Brokentoe [optional] | Gurgthock at the Ring of Blood.
+complete The Ring of Blood: Brokentoe [optional]
+turnin The Ring of Blood: Brokentoe [optional]
+level 67
+note Fly to Shattrath, then to Sylvanaar in the Blade's Edge Mountains (or ride north from Zangarmarsh).

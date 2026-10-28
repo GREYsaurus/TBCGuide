@@ -1,0 +1,98 @@
+# TBCGuide - Tauren start: Camp Narache and Mulgore (1-11)
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Tauren_Mulgore
+@name Camp Narache & Mulgore
+@faction Horde
+@races Tauren
+@levels 1-11
+@zone Mulgore
+@chapter Azeroth
+@start
+@desc Tauren starting route. Camp Narache and Red Cloud Mesa to about 6, then Bloodhoof Village, the Winterhoof and Thunderhorn totems, the Venture Co. mine and Thunder Bluff. Ends at about 11, heading into the Barrens.
+@next H_Barrens
+
+accept 747 The Hunt Begins | Grull Hawkwind, Camp Narache.
+accept 752 A Humble Task | Chief Hawkwind.
+turnin 752 A Humble Task | Greatmother Hawkwind at the well.
+accept 753 A Humble Task
+complete 753 A Humble Task | Fill the pitcher at the well.
+complete 747 The Hunt Begins | Plainstriders around the camp.
+turnin 747 The Hunt Begins
+accept 750 The Hunt Continues
+turnin 753 A Humble Task
+accept 755 Rites of the Earthmother
+turnin 755 Rites of the Earthmother | Seer Graytongue, north-west.
+accept Rite of Strength
+complete Rite of Strength | Bristleback quilboars at Brambleblade Ravine.
+complete 750 The Hunt Continues | Mountain Cougars.
+turnin Rite of Strength
+accept 763 Rites of the Earthmother
+turnin 750 The Hunt Continues
+accept The Battleboars
+accept A Task Unfinished | Antur Fallow on the road out of the camp.
+complete The Battleboars | Battleboars in the ravine; Bristleback Belt from Chief Sharptusk Thornmantle's camp.
+turnin The Battleboars
+train | Trainers at Camp Narache.
+turnin 763 Rites of the Earthmother [optional]
+turnin A Task Unfinished | Bloodhoof Village.
+bind Bloodhoof Village
+accept Swoop Hunting | Harken Windtotem.
+accept Dwarven Digging | Baine Bloodhoof.
+accept 767 Rite of Vision
+accept The Ravaged Caravan | Morin Cloudstalker.
+accept Dangers of the Windfury | Ruul Eagletalon.
+accept Poison Water | Mull Thunderhorn.
+accept Kyle's Gone Missing! [optional]
+complete The Ravaged Caravan | The supply crate at the caravan north-east.
+turnin The Ravaged Caravan
+accept 751 The Ravaged Caravan
+turnin 751 The Ravaged Caravan
+accept The Venture Co.
+accept Supervisor Fizsprocket
+complete Poison Water | Prairie wolves and plainstriders.
+turnin Poison Water
+accept Winterhoof Cleansing
+complete Winterhoof Cleansing | Cleanse the Winterhoof Water Well.
+turnin Winterhoof Cleansing
+accept Thunderhorn Totem
+complete Swoop Hunting | Wiry Swoops.
+complete Dwarven Digging | Dwarven tools at Bael'dun Digsite (north-west).
+complete The Venture Co. | Venture Co. workers at the Venture Co. Mine.
+complete Supervisor Fizsprocket | Inside the mine.
+complete Dangers of the Windfury | Windfury Harpies, south-east.
+complete Thunderhorn Totem | Flatland Cougars and Prairie Stalkers.
+turnin Swoop Hunting
+turnin Dwarven Digging
+turnin The Venture Co.
+turnin Supervisor Fizsprocket
+turnin Dangers of the Windfury
+turnin Thunderhorn Totem
+accept Thunderhorn Cleansing
+complete Thunderhorn Cleansing | The Thunderhorn Water Well.
+turnin Thunderhorn Cleansing
+accept Wildmane Totem
+complete Wildmane Totem | Prairie Wolf Alphas.
+turnin Wildmane Totem
+accept Wildmane Cleansing
+complete Wildmane Cleansing | The Wildmane Water Well, north.
+turnin Wildmane Cleansing
+complete 767 Rite of Vision
+turnin 767 Rite of Vision
+accept 771 Rite of Vision
+complete 771 Rite of Vision
+turnin 771 Rite of Vision
+accept 772 Rite of Vision
+complete 772 Rite of Vision | Drink the potion and follow the spirit to Red Rocks.
+turnin 772 Rite of Vision
+accept Rite of Wisdom
+complete Rite of Wisdom
+turnin Rite of Wisdom
+accept Journey into Thunder Bluff
+turnin Journey into Thunder Bluff | Cairne Bloodhoof, Thunder Bluff.
+accept 776 Rites of the Earthmother
+fp Thunder Bluff [zone=Thunder Bluff]
+train | Thunder Bluff trainers.
+accept Journey to the Crossroads [race=Tauren]
+level 11
+note Ride east to the Barrens and north to the Crossroads (or complete Rites of the Earthmother at the Barrens border later).

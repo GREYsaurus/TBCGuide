@@ -1,0 +1,68 @@
+# TBCGuide - Shadowmoon Valley (68-70), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Shadowmoon
+@name Shadowmoon Valley (Shadowmoon Village)
+@faction Horde
+@levels 68-70
+@zone Shadowmoon Valley
+@chapter Outland
+@desc Shadowmoon Village: the Legion Hold chain, the Deathforge, the Hand of Gul'dan approach and the Illidari quests. Ends at 70.
+
+fp Shadowmoon Village
+bind Shadowmoon Village
+accept Besieged! | Blood Guard Gulmok.
+accept The Sketh'lon Wreckage | Sergeant Kargrul.
+accept A Haunted History | Chief Apothecary Hildagard.
+accept What Strange Creatures... | Researcher Tiorus.
+accept A Grunt's Work... | Overlord Or'barokh.
+complete Besieged!
+turnin Besieged!
+accept To Legion Hold
+complete The Sketh'lon Wreckage
+complete A Haunted History
+complete What Strange Creatures...
+complete A Grunt's Work...
+turnin The Sketh'lon Wreckage
+accept Find the Deserter
+turnin A Haunted History
+accept Spectrecles
+turnin What Strange Creatures...
+accept Frankly, It Makes No Sense...
+turnin A Grunt's Work...
+complete To Legion Hold
+turnin To Legion Hold
+accept Setting Up the Bomb
+complete Setting Up the Bomb
+turnin Setting Up the Bomb
+accept Blast the Infernals!
+complete Blast the Infernals!
+turnin Blast the Infernals!
+accept The Deathforge
+complete The Deathforge
+turnin The Deathforge
+accept Minions of the Shadow Council
+complete Minions of the Shadow Council
+turnin Minions of the Shadow Council
+accept The Fate of Kagrosh
+accept The Summoning Chamber
+complete The Fate of Kagrosh
+complete The Summoning Chamber
+turnin The Fate of Kagrosh
+turnin The Summoning Chamber
+accept Bring Down the Warbringer!
+complete Bring Down the Warbringer!
+turnin Bring Down the Warbringer!
+accept Gaining Access
+turnin Gaining Access
+accept Invasion Point: Cataclysm
+complete Invasion Point: Cataclysm
+turnin Invasion Point: Cataclysm
+complete Spectrecles
+complete Frankly, It Makes No Sense...
+complete Find the Deserter
+turnin Spectrecles
+turnin Frankly, It Makes No Sense...
+turnin Find the Deserter
+level 70
+note Congratulations - level 70. Open /tbcg talents to switch to a level-70 build.

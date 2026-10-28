@@ -1,0 +1,88 @@
+# TBCGuide - Silverpine Forest (10-18), Horde (Undead route)
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Silverpine
+@name Silverpine Forest (The Sepulcher)
+@faction Horde
+@levels 10-18
+@zone Silverpine Forest
+@chapter Azeroth
+@desc The Sepulcher, the Yorick hut, the Dead Fields, the Decrepit Ferry, Fenris Isle, Ambermill and Pyrewood. Ends at about 18; take the zeppelin to Orgrimmar for the Barrens.
+@next H_Barrens
+
+turnin Delivery to Silverpine Forest | Apothecary Renferrel, The Sepulcher.
+accept 447 A Recipe For Death
+accept Lost Deathstalkers | High Executor Hadrec.
+accept The Dead Fields
+accept Prove Your Worth | Dalar Dawnweaver.
+accept Border Crossings | Shadow Priest Allister.
+fp The Sepulcher
+bind The Sepulcher
+turnin Lost Deathstalkers | Rane Yorick, at the hut on the northern coast.
+accept Wild Hearts
+complete Wild Hearts | Worgs around the Yorick hut.
+turnin Wild Hearts
+accept Return to Quinn
+turnin Return to Quinn
+accept Ivar the Foul
+complete Ivar the Foul
+turnin Ivar the Foul
+accept Escorting Erland [group=2] | Deathstalker Erland at the hut.
+complete Escorting Erland [group=2]
+turnin Escorting Erland
+accept The Deathstalkers' Report
+complete Prove Your Worth | Moonrage worgen near the Sepulcher.
+complete The Dead Fields | Explore the Dead Field north of the Sepulcher.
+complete 447 A Recipe For Death
+complete Border Crossings | Dalaran apprentices along the Ambermill road.
+turnin The Deathstalkers' Report
+turnin Prove Your Worth
+accept 422 Arugal's Folly
+turnin The Dead Fields
+accept The Decrepit Ferry
+turnin 447 A Recipe For Death
+accept 450 A Recipe For Death
+turnin Border Crossings
+accept Maps and Runes
+turnin The Decrepit Ferry | The corpse-laden boat on the lake shore.
+accept Rot Hide Clues
+turnin Rot Hide Clues
+accept The Engraved Ring
+accept Rot Hide Ichor
+complete Maps and Runes | Dalaran crates at Ambermill.
+turnin Maps and Runes
+accept Dalar's Analysis
+turnin Dalar's Analysis
+accept Dalaran's Intentions
+turnin Dalaran's Intentions
+accept Ambermill Investigations
+complete 422 Arugal's Folly
+complete The Engraved Ring
+complete Rot Hide Ichor | Rot Hide gnolls.
+complete 450 A Recipe For Death
+complete Ambermill Investigations | Ambermill Dalaran mages.
+turnin 422 Arugal's Folly
+accept 423 Arugal's Folly
+turnin The Engraved Ring
+accept Thule Ravenclaw
+complete Thule Ravenclaw
+turnin Thule Ravenclaw
+turnin Rot Hide Ichor
+accept Rot Hide Origins
+turnin 450 A Recipe For Death
+accept Report to Hadrec
+turnin Report to Hadrec
+accept Assault on Fenris Isle
+turnin Ambermill Investigations
+complete Assault on Fenris Isle | Rot Hide gnolls on Fenris Isle.
+complete Rot Hide Origins
+complete 423 Arugal's Folly
+turnin Assault on Fenris Isle
+turnin Rot Hide Origins
+turnin 423 Arugal's Folly
+accept 424 Arugal's Folly
+complete 424 Arugal's Folly | Pyrewood Village.
+turnin 424 Arugal's Folly
+level 17
+accept Deathstalkers in Shadowfang [dungeon=Shadowfang Keep; optional]
+note Take the zeppelin from Tirisfal to Orgrimmar, then ride to the Crossroads.

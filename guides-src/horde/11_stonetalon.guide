@@ -1,0 +1,41 @@
+# TBCGuide - Stonetalon Mountains (21-25), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Stonetalon
+@name Stonetalon Mountains (Sun Rock Retreat)
+@faction Horde
+@levels 21-25
+@zone Stonetalon Mountains
+@chapter Azeroth
+@desc Sun Rock Retreat, Malaka'jin, the Venture Co. at Windshear Crag and the harpies. A short stop before Ashenvale.
+@next H_Ashenvale
+
+accept Jin'Zil's Forest Magic | Witch Doctor Jin'Zil, Malaka'jin (south).
+accept Harpies Threaten | Maggran Earthbinder, Sun Rock Retreat.
+accept Trouble in the Deeps | Tsunaman.
+accept Cenarius' Legacy | Braelyn Firehand.
+fp Sun Rock Retreat
+bind Sun Rock Retreat
+accept 1090 Gerenzo's Orders | Piznik at the Windshear mine.
+complete Harpies Threaten | Bloodfury harpies on the ridge east of Sun Rock.
+complete Trouble in the Deeps
+complete Jin'Zil's Forest Magic | Venture Co. operators and Stonetalon creatures.
+complete 1090 Gerenzo's Orders | Venture Co. at Windshear Crag.
+complete Cenarius' Legacy
+turnin Harpies Threaten
+accept Bloodfury Bloodline
+turnin Trouble in the Deeps
+accept Elemental War
+turnin Jin'Zil's Forest Magic
+turnin 1090 Gerenzo's Orders
+turnin Cenarius' Legacy
+accept Ordanus
+complete Bloodfury Bloodline
+complete Elemental War
+complete Ordanus | Ordanus is in the Sons of Cenarius camp.
+turnin Bloodfury Bloodline
+turnin Elemental War
+turnin Ordanus
+level 24
+train | Orgrimmar or Thunder Bluff.
+note Take the Talondeep Path north-east into Ashenvale; Splintertree Post is the Horde town.

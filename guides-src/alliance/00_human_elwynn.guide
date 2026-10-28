@@ -1,0 +1,138 @@
+# TBCGuide - Human start: Northshire Valley and Elwynn Forest (1-10)
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+# Quest names are resolved against the bundled TBC quest database at build time.
+
+@guide A_Human_Elwynn
+@name Northshire & Elwynn Forest
+@faction Alliance
+@races Human
+@levels 1-10
+@zone Elwynn Forest
+@chapter Azeroth
+@start
+@desc Human starting route. Northshire Valley to level 5, then Goldshire, the Stonefield and Maclure farms, Eastvale and Westbrook. Ends at about level 10, ready for Westfall.
+@next A_Westfall
+
+accept A Threat Within
+turnin A Threat Within
+accept Kobold Camp Cleanup
+accept Eagan Peltskinner
+turnin Eagan Peltskinner
+accept Wolves Across the Border
+complete Kobold Camp Cleanup | Kobold Vermin are in the camp just north-west of the abbey.
+complete Wolves Across the Border | Kill wolves around the valley for Tough Wolf Meat.
+turnin Wolves Across the Border
+turnin Kobold Camp Cleanup
+accept 3100 Simple Letter [class=Warrior]
+accept 3101 Consecrated Letter [class=Paladin]
+accept 3102 Encrypted Letter [class=Rogue]
+accept 3103 Hallowed Letter [class=Priest]
+accept 3104 Glyphic Letter [class=Mage]
+accept 3105 Tainted Letter [class=Warlock]
+accept Investigate Echo Ridge
+accept Brotherhood of Thieves
+accept Milly Osworth
+turnin 3100 Simple Letter [class=Warrior]
+turnin 3101 Consecrated Letter [class=Paladin]
+turnin 3102 Encrypted Letter [class=Rogue]
+turnin 3103 Hallowed Letter [class=Priest]
+turnin 3104 Glyphic Letter [class=Mage]
+turnin 3105 Tainted Letter [class=Warlock]
+train | Learn your level 2-4 abilities while you are here.
+turnin Milly Osworth
+accept Milly's Harvest
+complete Investigate Echo Ridge | Echo Ridge Mine is north of the abbey.
+complete Brotherhood of Thieves | Defias Thugs are in the fields east of the abbey.
+complete Milly's Harvest | Grape buckets are in the vineyard east of the abbey.
+turnin Milly's Harvest
+accept Grape Manifest
+turnin Investigate Echo Ridge
+accept Skirmish at Echo Ridge
+turnin Brotherhood of Thieves
+accept Bounty on Garrick Padfoot
+complete Bounty on Garrick Padfoot | Garrick Padfoot is at the Defias camp east of the vineyard.
+complete Skirmish at Echo Ridge | Kill Kobold Laborers inside Echo Ridge Mine.
+turnin Bounty on Garrick Padfoot
+turnin Skirmish at Echo Ridge
+turnin Grape Manifest | Brother Neals is at the top of the abbey bell tower.
+accept Report to Goldshire
+train | Level 4 abilities.
+accept Rest and Relaxation | Falkhaan Isenstrider stands on the road south of the valley.
+turnin Report to Goldshire
+accept The Fargodeep Mine
+turnin Rest and Relaxation
+bind Goldshire
+accept Kobold Candles
+accept Gold Dust Exchange
+accept A Fishy Peril
+train | Visit your trainer in Goldshire when you reach level 6.
+turnin A Fishy Peril
+accept Further Concerns
+accept Lost Necklace | "Auntie" Bernice Stonefield is at the Stonefield Farm, south-west of Goldshire.
+accept Princess Must Die!
+complete The Fargodeep Mine | Explore the Fargodeep Mine entrance south of the farms.
+complete Kobold Candles | Kobolds in and around Fargodeep Mine.
+complete Gold Dust Exchange | Same kobolds; collect Gold Dust.
+turnin Lost Necklace | Billy Maclure is at the Maclure Vineyards.
+accept Pie for Billy
+accept Young Lovers
+complete Pie for Billy | Kill boars around the farms for Chunks of Boar Meat.
+turnin Pie for Billy
+accept Back to Billy
+turnin Young Lovers | Tommy Joe Stonefield is by the stream west of the Stonefield Farm.
+accept Speak with Gramma
+turnin Speak with Gramma
+accept Note to William
+turnin Back to Billy
+accept Goldtooth
+complete Goldtooth | Goldtooth is deep inside Fargodeep Mine (lower level).
+turnin Goldtooth
+complete Princess Must Die! | Princess is in the Brackwell Pumpkin Patch, south-east of the farms. Bring a friend if you are under level 8.
+turnin Princess Must Die!
+turnin The Fargodeep Mine
+accept The Jasperlode Mine
+turnin Kobold Candles
+turnin Gold Dust Exchange
+turnin Note to William
+accept Collecting Kelp
+complete Collecting Kelp | Murlocs at Crystal Lake east of Goldshire drop Crystal Kelp Fronds.
+turnin Collecting Kelp
+accept The Escape
+turnin The Escape | Maybell Maclure is at the Maclure Vineyards.
+complete The Jasperlode Mine | Explore the Jasperlode Mine, north-east of Goldshire.
+turnin Further Concerns | Guard Thomas is on the bridge to Eastvale.
+accept Find the Lost Guards
+accept Bounty on Murlocs
+accept Protect the Frontier
+turnin Find the Lost Guards
+accept Discover Rolf's Fate
+turnin Discover Rolf's Fate
+accept Report to Thomas
+complete Bounty on Murlocs | Murlocs along the river north of the bridge.
+complete Protect the Frontier | Prowlers and young forest bears in Eastvale.
+turnin Report to Thomas
+accept Deliver Thomas' Report
+turnin Bounty on Murlocs
+turnin Protect the Frontier
+accept Red Linen Goods | Sara Timberlain is at the Eastvale Logging Camp.
+accept A Bundle of Trouble
+complete Red Linen Goods | Defias around the Eastvale farms drop Red Linen Bandanas.
+complete A Bundle of Trouble | Collect Bundles of Wood near the trees of the logging camp.
+turnin Red Linen Goods
+turnin A Bundle of Trouble
+turnin Deliver Thomas' Report
+accept Cloth and Leather Armor
+turnin The Jasperlode Mine
+accept Westbrook Garrison Needs Help!
+turnin Westbrook Garrison Needs Help! | Deputy Rainer is at the Westbrook Garrison, west Elwynn.
+accept Riverpaw Gnoll Bounty
+accept Wanted: "Hogger" [elite; group=3] | The poster is next to Deputy Rainer. Hogger is level 11 elite - group up or skip.
+complete Riverpaw Gnoll Bounty | Gnolls south of the garrison drop Painted Gnoll Armbands.
+turnin Riverpaw Gnoll Bounty
+complete Wanted: "Hogger" [elite; group=3; optional]
+turnin Wanted: "Hogger" [optional]
+turnin Cloth and Leather Armor | Return to Sara Timberlain only if you are passing Eastvale; otherwise skip.
+accept Report to Gryan Stoutmantle | From Marshal Dughan in Goldshire.
+level 10 | Grind gnolls near Westbrook if you are short of level 10.
+train | Level 10 training (warriors: defensive stance quest; warlocks: Voidwalker quest).
+note Head west on the road into Westfall.

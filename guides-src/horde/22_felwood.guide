@@ -1,0 +1,40 @@
+# TBCGuide - Felwood (51-54), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Felwood
+@name Felwood (Bloodvenom Post)
+@faction Horde
+@levels 51-54
+@zone Felwood
+@chapter Azeroth
+@desc Bloodvenom Post, the corrupted moonwells, Jaedenar, Shatter Scar Vale and the Timbermaw furbolgs.
+@next H_WesternPlaguelands
+
+fp Bloodvenom Post
+accept Well of Corruption | Winna Hazzard, Bloodvenom Post.
+accept Corrupted Sabers
+accept Cleansing Felwood | Maybess Riverbreeze, Emerald Sanctuary.
+accept Forces of Jaedenar | Greta Mosshoof, Emerald Sanctuary.
+accept Verifying the Corruption | Taronn Redfeather.
+accept Wild Guardians [optional] | Trull Failbane.
+complete Well of Corruption | Fill the flask at the Irontree moonwell.
+complete Corrupted Sabers | Use the cage on a corrupted saber.
+complete Forces of Jaedenar | Jaedenar cultists.
+complete Verifying the Corruption | Explore north of Shatter Scar Vale.
+turnin Well of Corruption
+turnin Corrupted Sabers
+turnin Forces of Jaedenar
+accept Collection of the Corrupt Water
+complete Collection of the Corrupt Water | The corrupted moonwell in Jaedenar.
+turnin Collection of the Corrupt Water
+turnin Verifying the Corruption
+complete Cleansing Felwood
+turnin Cleansing Felwood
+accept Timbermaw Ally | Grazle, near the Timbermaw Hold tunnel.
+accept Deadwood of the North | Nafien.
+complete Deadwood of the North | Deadwood furbolgs.
+turnin Deadwood of the North
+turnin Timbermaw Ally
+level 54
+train
+note Fly to the Undercity and ride east to the Bulwark (Tirisfal/Western Plaguelands border).

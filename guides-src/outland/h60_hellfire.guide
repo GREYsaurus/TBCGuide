@@ -1,0 +1,158 @@
+# TBCGuide - Hellfire Peninsula (58-62), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Hellfire
+@name Hellfire Peninsula (Thrallmar)
+@faction Horde
+@levels 58-62
+@zone Hellfire Peninsula
+@chapter Outland
+@desc Through the Dark Portal to Thrallmar. Covers the Legion fronts, Reaver's Fall, Spinebreaker Post, Zeth'Gor, the Mag'har Grounds, Falcon Watch and the Cenarion Post. Hellfire Ramparts quests are optional.
+@next H_Zangarmarsh
+
+accept Through the Dark Portal [optional] | From the herald in Orgrimmar or Undercity (level 58).
+turnin Through the Dark Portal [optional] | Lieutenant General Orion at the Stair of Destiny.
+accept Arrival in Outland
+turnin Arrival in Outland | Vlagga Freyfeather, wind rider master on the Stair.
+accept Journey to Thrallmar
+fly Thrallmar
+turnin Journey to Thrallmar | General Krakork.
+accept Report to Nazgrel [optional]
+turnin Report to Nazgrel [optional]
+fp Thrallmar
+bind Thrallmar
+accept Eradicate the Burning Legion | Nazgrel.
+accept Bonechewer Blood | Vurtok Axebreaker.
+accept I Work... For the Horde! | Megzeg Nukklebust.
+accept Preparing the Salve | Grelag.
+accept The Warp Rifts | Ogath the Mad.
+accept Wanted: Blacktalon the Savage [optional]
+turnin Eradicate the Burning Legion | Sergeant Shatterskull, Reaver's Fall area.
+accept Felspark Ravine
+complete Felspark Ravine | Demons in Felspark Ravine.
+turnin Felspark Ravine
+accept Forward Base: Reaver's Fall
+turnin Forward Base: Reaver's Fall | Forward Commander To'arch.
+accept Disrupt Their Reinforcements
+complete Disrupt Their Reinforcements
+turnin Disrupt Their Reinforcements
+accept Mission: Gateways Murketh and Shaadraz
+complete Mission: Gateways Murketh and Shaadraz | Use the wind rider at Reaver's Fall.
+turnin Mission: Gateways Murketh and Shaadraz
+accept Mission: The Abyssal Shelf
+accept Return to Thrallmar
+complete Mission: The Abyssal Shelf
+turnin Mission: The Abyssal Shelf
+complete Bonechewer Blood | Bonechewer orcs along the road.
+complete I Work... For the Horde! | Collect the debris near Thrallmar.
+complete Preparing the Salve
+complete The Warp Rifts | Void Ridge warp rifts.
+turnin Bonechewer Blood
+accept Apothecary Zelana
+turnin I Work... For the Horde!
+accept Burn It Up... For the Horde!
+turnin Preparing the Salve
+accept Investigate the Crash
+turnin The Warp Rifts
+accept Void Ridge
+turnin Return to Thrallmar
+accept Forge Camp: Mageddon
+turnin Apothecary Zelana | Spinebreaker Post, south.
+fp Spinebreaker Ridge
+accept Spinebreaker Post
+turnin Spinebreaker Post
+accept Boiling Blood
+complete Boiling Blood
+turnin Boiling Blood
+accept Apothecary Antonivich
+turnin Apothecary Antonivich
+accept A Burden of Souls
+complete A Burden of Souls
+turnin A Burden of Souls
+accept The Demoniac Scryer
+complete The Demoniac Scryer
+turnin The Demoniac Scryer
+accept Report to Nazgrel
+accept Wanted: Worg Master Kruush | Spinebreaker Post wanted poster.
+accept The Eyes of Grillok | Zezzak.
+complete Wanted: Worg Master Kruush | Zeth'Gor (east).
+complete The Eyes of Grillok
+turnin Wanted: Worg Master Kruush
+accept Zeth'Gor Must Burn!
+turnin The Eyes of Grillok
+accept Grillok "Darkeye"
+complete Zeth'Gor Must Burn!
+complete Grillok "Darkeye"
+turnin Zeth'Gor Must Burn!
+turnin Grillok "Darkeye"
+complete Burn It Up... For the Horde!
+complete Investigate the Crash
+complete Void Ridge
+complete Forge Camp: Mageddon
+turnin Burn It Up... For the Horde!
+turnin Investigate the Crash
+turnin Void Ridge
+accept From the Abyss
+turnin Forge Camp: Mageddon
+accept Cannons of Rage
+complete Cannons of Rage
+turnin Cannons of Rage
+accept Doorway to the Abyss
+complete Doorway to the Abyss
+turnin Doorway to the Abyss
+turnin Report to Nazgrel
+accept The Foot of the Citadel
+accept The Assassin
+turnin The Assassin | The fel orc corpse north of Thrallmar.
+accept A Strange Weapon
+turnin A Strange Weapon
+accept The Warchief's Mandate
+turnin The Warchief's Mandate | Far Seer Regulkut at the Mag'har Post (north-west).
+accept A Spirit Guide
+complete A Spirit Guide
+turnin A Spirit Guide
+accept The Mag'har
+turnin The Mag'har
+accept Messenger to Thrall [optional]
+accept 9498 Falcon Watch [race=Orc,Troll,Tauren,Scourge] | Martik Tor'seldori.
+accept 9499 Falcon Watch [race=BloodElf]
+turnin 9498 Falcon Watch [race=Orc,Troll,Tauren,Scourge]
+turnin 9499 Falcon Watch [race=BloodElf]
+fp Falcon Watch
+accept Magic of the Arakkoa | Arcanist Calesthris Dawnstar.
+accept Birds of a Feather | Falconer Drenna Riverwind.
+accept In Need of Felblood | Ryathen the Somber.
+accept Source of the Corruption | Apothecary Azethen.
+accept The Great Fissure | Ranger Captain Venn'ren.
+accept Arelion's Journal | Magistrix Carinda.
+complete Magic of the Arakkoa
+complete Birds of a Feather
+complete In Need of Felblood
+complete Source of the Corruption
+complete The Great Fissure
+complete Arelion's Journal
+turnin Magic of the Arakkoa
+turnin Birds of a Feather
+accept Trueflight Arrows
+turnin In Need of Felblood
+accept The Cleansing Must Be Stopped
+turnin Source of the Corruption
+turnin The Great Fissure
+accept Marking the Path
+turnin Arelion's Journal
+accept Arelion's Secret
+turnin Arelion's Secret
+accept The Mistress Revealed
+complete Trueflight Arrows
+complete The Cleansing Must Be Stopped
+complete Marking the Path
+complete The Mistress Revealed
+turnin Trueflight Arrows
+turnin The Cleansing Must Be Stopped
+turnin Marking the Path
+turnin The Mistress Revealed
+accept Arelion's Mistress
+complete Arelion's Mistress
+turnin Arelion's Mistress
+level 62
+note Ride west from Falcon Watch into Zangarmarsh; Zabra'jin is the Horde town on the western side.

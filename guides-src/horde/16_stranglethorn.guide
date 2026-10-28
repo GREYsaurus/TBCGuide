@@ -1,0 +1,74 @@
+# TBCGuide - Stranglethorn Vale (34-40), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Stranglethorn
+@name Stranglethorn Vale (Grom'gol)
+@faction Horde
+@levels 34-40
+@zone Stranglethorn Vale
+@chapter Azeroth
+@desc Grom'gol Base Camp, Nesingwary's Expedition, the Bloodscalp and Skullsplitter trolls, and Booty Bay. A contested zone - watch for Alliance players.
+@next H_Dustwallow
+
+fp Grom'gol
+bind Grom'gol
+accept Hunt for Yenniku | Nimboya, Grom'gol.
+accept Bloody Bone Necklaces | Kin'weelay.
+accept The Defense of Grom'gol | Commander Aggro'gosh.
+accept Mok'thardin's Enchantment | Far Seer Mok'thardin.
+accept Bloodscalp Insight [optional] | Nemeth Hawkeye.
+accept Welcome to the Jungle | Barnil Stonepot, Nesingwary's Expedition.
+turnin Welcome to the Jungle
+accept 185 Tiger Mastery
+accept 190 Panther Mastery
+accept 194 Raptor Mastery
+complete Hunt for Yenniku | Bloodscalp trolls west of Grom'gol.
+complete Bloody Bone Necklaces | Bloodscalp trolls.
+complete The Defense of Grom'gol | Raptors around Grom'gol.
+complete Mok'thardin's Enchantment
+complete 185 Tiger Mastery
+complete 190 Panther Mastery
+complete 194 Raptor Mastery
+turnin Hunt for Yenniku
+accept Headhunting
+turnin Bloody Bone Necklaces
+turnin The Defense of Grom'gol
+accept 569 The Defense of Grom'gol
+turnin Mok'thardin's Enchantment
+turnin 185 Tiger Mastery
+accept 186 Tiger Mastery
+turnin 190 Panther Mastery
+accept 191 Panther Mastery
+turnin 194 Raptor Mastery
+accept 195 Raptor Mastery
+complete Headhunting
+complete 569 The Defense of Grom'gol
+complete 186 Tiger Mastery
+complete 191 Panther Mastery
+complete 195 Raptor Mastery
+turnin Headhunting
+turnin 569 The Defense of Grom'gol
+turnin 186 Tiger Mastery
+turnin 191 Panther Mastery
+turnin 195 Raptor Mastery
+fp Booty Bay
+accept Supply and Demand | Drizzlik, Booty Bay.
+accept Singing Blue Shards | Crank Fizzlebub.
+accept Scaring Shaky | "Sea Wolf" MacKinley.
+complete Supply and Demand
+complete Singing Blue Shards
+complete Scaring Shaky
+turnin Supply and Demand
+accept Some Assembly Required
+turnin Singing Blue Shards
+accept Venture Company Mining
+turnin Scaring Shaky
+accept Return to MacKinley
+complete Some Assembly Required
+complete Venture Company Mining
+turnin Some Assembly Required
+turnin Venture Company Mining
+turnin Return to MacKinley
+level 39
+train
+note Fly to Brackenwall Village in Dustwallow Marsh (via Orgrimmar and the zeppelin if you lack the path).

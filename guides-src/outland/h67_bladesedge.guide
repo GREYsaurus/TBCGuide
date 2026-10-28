@@ -1,0 +1,63 @@
+# TBCGuide - Blade's Edge Mountains (66-68), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_BladesEdge
+@name Blade's Edge Mountains (Thunderlord Stronghold)
+@faction Horde
+@levels 66-68
+@zone Blade's Edge Mountains
+@chapter Outland
+@desc Thunderlord Stronghold, the Bloodmaul and Bladespire ogres, Evergrove, Mok'Nathal Village and Rexxar's chain.
+@next Both_Netherstorm
+
+fp Thunderlord Stronghold
+bind Thunderlord Stronghold
+accept The Encroaching Wilderness | Gor'drek.
+accept The Bladespire Threat | Tor'chunk Twoclaws.
+accept They Stole Me Hookah and Me Brews! | T'chali the Witch Doctor.
+accept Felling an Ancient Tree [optional]
+accept Killing the Crawlers | Grunt Grahk.
+complete The Encroaching Wilderness
+complete The Bladespire Threat
+complete They Stole Me Hookah and Me Brews!
+complete Killing the Crawlers
+turnin The Encroaching Wilderness
+accept Dust from the Drakes
+turnin The Bladespire Threat
+accept The Bloodmaul Ogres
+turnin They Stole Me Hookah and Me Brews!
+accept Bladespire Kegger
+turnin Killing the Crawlers
+complete Dust from the Drakes
+complete The Bloodmaul Ogres
+complete Bladespire Kegger
+turnin Dust from the Drakes
+accept Protecting Our Own
+turnin The Bloodmaul Ogres
+turnin Bladespire Kegger
+complete Protecting Our Own
+turnin Protecting Our Own
+accept A Time for Negotiation... | Tree Warden Chawn, Evergrove.
+fp Evergrove
+turnin A Time for Negotiation...
+accept ...and a Time for Action
+accept Poaching from Poachers
+accept Culling the Wild
+accept Little Embers
+accept From the Ashes
+complete ...and a Time for Action
+complete Poaching from Poachers
+complete Culling the Wild
+complete Little Embers
+complete From the Ashes
+turnin ...and a Time for Action
+turnin Poaching from Poachers
+turnin Culling the Wild
+turnin Little Embers
+turnin From the Ashes
+accept Mok'Nathal Treats [optional] | Matron Varah, Mok'Nathal Village.
+fp Mok'Nathal Village
+complete Mok'Nathal Treats [optional]
+turnin Mok'Nathal Treats [optional]
+level 68
+note Fly to Area 52 in Netherstorm.

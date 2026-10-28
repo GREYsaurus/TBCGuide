@@ -1,0 +1,38 @@
+# TBCGuide - Arathi Highlands (30-34), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Arathi
+@name Arathi Highlands (Refuge Pointe)
+@faction Alliance
+@levels 30-34
+@zone Arathi Highlands
+@chapter Azeroth
+@desc Refuge Pointe, Northfold Manor, Stromgarde and the Shards of Myzrael. Then south to Stranglethorn.
+@next A_Stranglethorn
+
+fp Refuge Pointe
+accept Northfold Manor | Captain Nials, Refuge Pointe.
+accept Wanted!  Marez Cowl [elite; group=3; optional]
+accept Wanted!  Otto and Falconcrest [elite; group=3; optional]
+accept The Princess Trapped | The Shards of Myzrael object, south-east of Refuge Pointe.
+complete Northfold Manor | Syndicate at Northfold Manor, north-west.
+turnin Northfold Manor
+accept Stromgarde Badges
+complete The Princess Trapped | Kill Kobolds at Drywhisker Gorge for Iridescent Shards.
+turnin The Princess Trapped
+accept Stones of Binding
+complete Stones of Binding | Collect the three Cresting, Thundering and Burning keys at the stones.
+turnin Stones of Binding
+accept Breaking the Keystone
+complete Stromgarde Badges | Syndicate inside Stromgarde Keep (west).
+turnin Stromgarde Badges
+complete Breaking the Keystone
+turnin Breaking the Keystone
+accept Myzrael's Allies [optional]
+complete Wanted!  Marez Cowl [elite; group=3; optional]
+complete Wanted!  Otto and Falconcrest [elite; group=3; optional]
+turnin Wanted!  Marez Cowl [optional]
+turnin Wanted!  Otto and Falconcrest [optional]
+level 33
+train
+note Fly from Refuge Pointe to Ironforge or Stormwind, then on to Booty Bay or Rebel Camp (northern Stranglethorn).

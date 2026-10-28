@@ -1,0 +1,109 @@
+# TBCGuide - Terokkar Forest (63-65), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Terokkar
+@name Terokkar Forest (Allerian Stronghold)
+@faction Alliance
+@levels 63-65
+@zone Terokkar Forest
+@chapter Outland
+@desc Shattrath City (choose Aldor or Scryers), Allerian Stronghold, Cenarion Thicket, Firewing Point, the Bone Wastes and Skettis' edge.
+@next A_Nagrand
+
+accept A'dal [optional] | Khadgar's servant brings you to A'dal in Shattrath (opens the Aldor/Scryer choice).
+turnin A'dal [optional]
+fp Shattrath City
+note In Shattrath, pick the Aldor or the Scryers. Either is fine for leveling; it only affects later rewards.
+accept Thin the Flock | Lieutenant Gravelhammer, Allerian Stronghold.
+accept Unruly Neighbors | Bertelm.
+accept Timber Worg Tails
+accept Olemba Seeds | Ros'eleth.
+accept Magical Disturbances | Andarl.
+accept Stymying the Arakkoa | Thander.
+accept Speak with Private Weeks
+accept Wanted: Bonelashers Dead!
+fp Allerian Stronghold
+bind Allerian Stronghold
+complete Thin the Flock | Arakkoa at Veil Rhaze area.
+complete Unruly Neighbors | Firewing blood elves around Firewing Point.
+complete Timber Worg Tails | Timber Worgs.
+complete Olemba Seeds | Olemba cones from the trees.
+complete Magical Disturbances | Mana Wraiths at the Bone Wastes.
+complete Stymying the Arakkoa | Arakkoa at the eastern veils.
+turnin Thin the Flock
+turnin Unruly Neighbors
+accept The Firewing Liaison
+accept Thinning the Ranks
+turnin Timber Worg Tails
+accept The Elusive Ironjaw
+turnin Olemba Seeds
+accept Vessels of Power
+turnin Magical Disturbances
+turnin Stymying the Arakkoa
+turnin Speak with Private Weeks | Private Weeks, Shadow Council camp area.
+accept Who Are They?
+complete Who Are They? | Use the disguise at the Shadow Council camp.
+turnin Who Are They?
+accept Kill the Shadow Council!
+complete Kill the Shadow Council!
+turnin Kill the Shadow Council!
+complete The Firewing Liaison
+complete Thinning the Ranks
+complete The Elusive Ironjaw
+complete Vessels of Power
+complete Wanted: Bonelashers Dead!
+turnin The Firewing Liaison
+turnin Thinning the Ranks
+turnin The Elusive Ironjaw
+turnin Vessels of Power
+turnin Wanted: Bonelashers Dead!
+accept Torgos! [group=2; optional]
+accept 9961 What's Wrong at Cenarion Thicket? | Jenai Starwhisper.
+turnin 9961 What's Wrong at Cenarion Thicket? | Earthbinder Tavgren, Cenarion Thicket (north).
+accept Strange Energy
+accept Clues in the Thicket
+complete Strange Energy
+complete Clues in the Thicket
+turnin Strange Energy
+turnin Clues in the Thicket
+accept By Any Means Necessary
+turnin By Any Means Necessary
+accept Wind Trader Lathrai
+turnin Wind Trader Lathrai | Lower City, Shattrath.
+accept A Personal Favor
+complete A Personal Favor
+turnin A Personal Favor
+accept Investigate Tuurem
+turnin Investigate Tuurem
+accept What Are These Things?
+turnin What Are These Things?
+accept Report to the Allerian Post
+turnin Report to the Allerian Post
+accept Attack on Firewing Point
+complete Attack on Firewing Point
+turnin Attack on Firewing Point
+accept The Final Code
+complete The Final Code
+turnin The Final Code
+accept Letting Earthbinder Tavgren Know
+turnin Letting Earthbinder Tavgren Know
+accept An Improper Burial | Commander Ra'vaj, Sha'tari Base Camp (southwest).
+complete An Improper Burial
+turnin An Improper Burial
+accept A Hero Is Needed
+complete A Hero Is Needed
+turnin A Hero Is Needed
+accept The Fallen Exarch
+complete The Fallen Exarch
+turnin The Fallen Exarch
+accept For the Fallen | Vindicator Haylen.
+complete For the Fallen
+turnin For the Fallen
+accept Terokkarantula
+complete Terokkarantula [group=2]
+turnin Terokkarantula
+accept Digging Through Bones | Chief Archaeologist Letoll, Bone Wastes.
+complete Digging Through Bones [group=2] | Escort.
+turnin Digging Through Bones
+level 65
+note Ride west from Shattrath into Nagrand; Telaar is the Alliance town in the south.

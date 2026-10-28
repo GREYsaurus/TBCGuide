@@ -1,0 +1,80 @@
+# TBCGuide - Stranglethorn Vale (32-40), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Stranglethorn
+@name Stranglethorn Vale
+@faction Alliance
+@levels 32-40
+@zone Stranglethorn Vale
+@chapter Azeroth
+@desc Rebel Camp, Nesingwary's Expedition, Kurzen's compound, Grom'gol's neighbours and Booty Bay. A contested zone - watch for Horde players.
+@next A_Dustwallow
+
+accept Welcome to the Jungle | Barnil Stonepot, Nesingwary's Expedition.
+turnin Welcome to the Jungle
+accept 185 Tiger Mastery
+accept 190 Panther Mastery
+accept 194 Raptor Mastery
+accept The Second Rebellion | Sergeant Yohwa, Rebel Camp (north).
+accept Bad Medicine
+accept Jungle Secrets | Private Thorsen.
+turnin Jungle Secrets | Lieutenant Doren.
+accept Bookie Herod
+complete 185 Tiger Mastery | Young Stranglethorn Tigers.
+complete 190 Panther Mastery | Young Panthers.
+complete 194 Raptor Mastery | Stranglethorn Raptors.
+complete The Second Rebellion | Kurzen Jungle Fighters, Kurzen's Compound.
+complete Bad Medicine | Kurzen Medicine Men drop the Jungle Remedy.
+complete Bookie Herod | Bookie Herod's records in Kurzen's Compound.
+turnin 185 Tiger Mastery
+accept 186 Tiger Mastery
+turnin 190 Panther Mastery
+accept 191 Panther Mastery
+turnin 194 Raptor Mastery
+accept 195 Raptor Mastery
+turnin The Second Rebellion
+turnin Bad Medicine
+accept Special Forces
+accept Kurzen's Mystery
+turnin Bookie Herod
+accept The Hidden Key
+complete 186 Tiger Mastery
+complete 191 Panther Mastery
+complete 195 Raptor Mastery
+turnin 186 Tiger Mastery
+turnin 191 Panther Mastery
+turnin 195 Raptor Mastery
+accept 187 Tiger Mastery
+accept 192 Panther Mastery
+complete Special Forces | Kurzen Commandos and Headshrinkers.
+turnin Special Forces
+fp Booty Bay
+bind Booty Bay
+accept Supply and Demand | Drizzlik, Booty Bay.
+accept Singing Blue Shards | Crank Fizzlebub.
+accept The Haunted Isle | Krazek.
+accept Investigate the Camp | Krazek.
+accept Scaring Shaky | "Sea Wolf" MacKinley.
+complete Supply and Demand | Elder Saltwater Crocolisks and Snapjaws.
+complete Singing Blue Shards | Crystal Spine Basilisks.
+turnin Supply and Demand
+accept Some Assembly Required
+turnin Singing Blue Shards
+accept Venture Company Mining
+complete Some Assembly Required | Snapjaw Crocolisks.
+complete Venture Company Mining | Venture Co. miners at the mines.
+turnin Some Assembly Required
+accept Excelsior
+turnin Venture Company Mining
+complete 187 Tiger Mastery | Elder Stranglethorn Tigers.
+complete 192 Panther Mastery | Shadowmaw Panthers.
+turnin 187 Tiger Mastery
+turnin 192 Panther Mastery
+complete Scaring Shaky | Mistvale gorillas.
+turnin Scaring Shaky
+accept Return to MacKinley
+turnin Return to MacKinley
+level 38
+train | Fly to Ironforge/Stormwind to train.
+note Leave the remaining Tiger/Panther/Raptor Mastery chain for your second STV visit or skip it.
+note Take the boat from Menethil to Theramore (Dustwallow Marsh).

@@ -1,0 +1,68 @@
+# TBCGuide - Shadowmoon Valley (68-70), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Shadowmoon
+@name Shadowmoon Valley (Wildhammer Stronghold)
+@faction Alliance
+@levels 68-70
+@zone Shadowmoon Valley
+@chapter Outland
+@desc Wildhammer Stronghold: the Legion Hold chain, the Deathforge, the Netherwing ledge approach and the Hand of Gul'dan. Ends at 70.
+
+fp Wildhammer Stronghold
+bind Wildhammer Stronghold
+accept Besieged! | Wing Commander Nuainn.
+accept The Sketh'lon Wreckage | Gryphonrider Kieran.
+accept A Ghost in the Machine | Zorus the Judicator.
+accept Spleendid! | Gnomus.
+accept Put On Yer Kneepads... | Thane Yoregar.
+complete Besieged! | Infernal attackers outside the stronghold.
+turnin Besieged!
+accept To Legion Hold
+complete The Sketh'lon Wreckage
+complete A Ghost in the Machine
+complete Spleendid!
+complete Put On Yer Kneepads...
+turnin The Sketh'lon Wreckage
+accept Find the Deserter
+turnin A Ghost in the Machine
+accept Harbingers of Shadowmoon
+turnin Spleendid!
+accept The Second Course...
+turnin Put On Yer Kneepads...
+complete To Legion Hold | Legion Hold, west Shadowmoon.
+turnin To Legion Hold
+accept Setting Up the Bomb
+complete Setting Up the Bomb
+turnin Setting Up the Bomb
+accept Blast the Infernals!
+complete Blast the Infernals!
+turnin Blast the Infernals!
+accept The Deathforge
+complete The Deathforge
+turnin The Deathforge
+accept Minions of the Shadow Council
+complete Minions of the Shadow Council
+turnin Minions of the Shadow Council
+accept The Fate of Flanis
+accept The Summoning Chamber
+complete The Fate of Flanis
+complete The Summoning Chamber
+turnin The Fate of Flanis
+turnin The Summoning Chamber
+accept Bring Down the Warbringer!
+complete Bring Down the Warbringer!
+turnin Bring Down the Warbringer!
+accept Gaining Access
+turnin Gaining Access
+accept Invasion Point: Cataclysm
+complete Invasion Point: Cataclysm
+turnin Invasion Point: Cataclysm
+complete Harbingers of Shadowmoon
+complete The Second Course...
+turnin Harbingers of Shadowmoon
+turnin The Second Course...
+complete Find the Deserter
+turnin Find the Deserter
+level 70
+note Congratulations - level 70. Open /tbcg talents to switch to a level-70 build, and check the dungeon and heroic attunement quests for your next goals.

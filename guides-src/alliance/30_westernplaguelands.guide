@@ -1,0 +1,45 @@
+# TBCGuide - Western Plaguelands (55-58), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_WesternPlaguelands
+@name Western Plaguelands (Chillwind Camp)
+@faction Alliance
+@levels 55-58
+@zone Western Plaguelands
+@chapter Azeroth
+@desc Chillwind Camp: the Scourge cauldron chain, Andorhal, the Felstone and Dalson farms, and the wildlife quests. At 58 go straight to the Dark Portal.
+@next A_Hellfire
+
+fp Chillwind Camp
+accept A Plague Upon Thee | Nathaniel Dumah, Chillwind Camp.
+accept The Wildlife Suffers Too | Mulgris Deepriver.
+accept Unfinished Business | Kirsta Deepshadow.
+accept Better Late Than Never | Janice Felstone at the Felstone Field farm.
+accept Mrs. Dalson's Diary [optional] | The diary in Dalson's Tears farmhouse.
+complete A Plague Upon Thee | Termite barrels in the farms.
+turnin A Plague Upon Thee
+accept 5904 A Plague Upon Thee
+complete The Wildlife Suffers Too | Diseased wolves.
+turnin The Wildlife Suffers Too
+accept 4985 The Wildlife Suffers Too
+complete Unfinished Business | Scarlet Medics and Hunters at the Northridge Lumber Camp.
+turnin Unfinished Business
+accept 6023 Unfinished Business
+complete 6023 Unfinished Business | Huntsman Radley and Cavalier Durgen at Hearthglen.
+turnin 6023 Unfinished Business
+accept 6025 Unfinished Business
+complete 6025 Unfinished Business
+turnin 6025 Unfinished Business
+complete 4985 The Wildlife Suffers Too | Diseased Grizzlies.
+turnin 4985 The Wildlife Suffers Too
+accept Glyphed Oaken Branch [optional]
+complete 5904 A Plague Upon Thee
+turnin 5904 A Plague Upon Thee
+accept 6389 A Plague Upon Thee
+complete Better Late Than Never
+turnin Better Late Than Never
+accept 5022 Better Late Than Never
+turnin 5022 Better Late Than Never
+level 58
+train | Train before Outland.
+note At 58 head for the Dark Portal in the Blasted Lands. Fly to Nethergarde Keep (or from Stormwind) and take the quest Through the Dark Portal from the herald in Stormwind or Nethergarde.

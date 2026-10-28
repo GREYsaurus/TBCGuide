@@ -1,0 +1,48 @@
+# TBCGuide - Burning Steppes (53-56), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_BurningSteppes
+@name Burning Steppes (Morgan's Vigil)
+@faction Alliance
+@levels 53-56
+@zone Burning Steppes
+@chapter Azeroth
+@desc Morgan's Vigil, the Firegut ogres, the Blackrock orcs and The True Masters chain. Blackrock Depths and Spire quests are optional group content.
+@next A_WesternPlaguelands
+
+fp Morgan's Vigil
+accept Dragonkin Menace | Helendis Riverhorn.
+accept Extinguish the Firegut | Oralius.
+accept Broodling Essence | Tinkee Steamboil, Flame Crest.
+accept Overmaster Pyron [optional] | Jalinda Sprig.
+accept FIFTY! YEP! [optional]
+complete Extinguish the Firegut | Firegut ogres at Dreadmaul Rock.
+turnin Extinguish the Firegut
+accept Gor'tesh the Brute Lord
+complete Dragonkin Menace | Black Broodlings, Dragonkin Felbinders and dragonspawn.
+turnin Dragonkin Menace
+accept 4183 The True Masters
+complete Broodling Essence | Use the essence collector on broodlings.
+turnin Broodling Essence
+accept Felnok Steelspring
+complete Gor'tesh the Brute Lord [group=2] | Top of Dreadmaul Rock.
+turnin Gor'tesh the Brute Lord
+accept Ogre Head On A Stick = Party
+complete Ogre Head On A Stick = Party
+turnin Ogre Head On A Stick = Party
+turnin 4183 The True Masters | Magistrate Solomon in Lakeshire.
+accept 4184 The True Masters
+turnin 4184 The True Masters | Highlord Bolvar Fordragon, Stormwind Keep.
+accept 4185 The True Masters
+turnin 4185 The True Masters
+accept 4186 The True Masters
+turnin 4186 The True Masters
+accept 4223 The True Masters
+turnin 4223 The True Masters
+accept 4224 The True Masters
+complete 4224 The True Masters
+turnin 4224 The True Masters
+accept Marshal Windsor [optional] | Leads into Blackrock Depths (group content).
+level 55
+train
+note Fly to Chillwind Camp in the Western Plaguelands (fly to Aerie Peak or Southshore first if you lack the path).

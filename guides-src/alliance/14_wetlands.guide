@@ -1,0 +1,83 @@
+# TBCGuide - Wetlands (24-29), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Wetlands
+@name Wetlands
+@faction Alliance
+@levels 24-29
+@zone Wetlands
+@chapter Azeroth
+@desc Menethil Harbor, the Excavation site, Greenwarden's grove and Dun Modr. Shared by both Alliance branches (the Kalimdor branch arrives by boat from Auberdine).
+@next A_Hillsbrad
+
+accept Young Crocolisk Skins | James Halloran, Menethil Harbor.
+accept Claws from the Deep | Karl Boran on the docks.
+accept The Third Fleet | First Mate Fitzsimmons in the inn.
+accept The Greenwarden
+accept In Search of The Excavation Team | Tarrel Rockweaver.
+accept Digging Through the Ooze | Sida, west Menethil.
+accept Report to Captain Stoutfist | Valstag Ironjaw, the keep.
+turnin Report to Captain Stoutfist
+accept War Banners
+fp Menethil Harbor
+bind Menethil Harbor
+complete The Third Fleet | Crocolisk meat from crocolisks around Menethil; buy the Flagon of Mead from the innkeeper.
+turnin The Third Fleet
+accept The Cursed Crew
+complete Young Crocolisk Skins
+complete Claws from the Deep | Gobbler and murlocs at the northern coast.
+turnin Young Crocolisk Skins
+accept Apprentice's Duties
+turnin Claws from the Deep
+accept Reclaiming Goods
+turnin Reclaiming Goods | Damaged crate at the murloc hovels, north coast.
+accept The Search Continues
+turnin The Search Continues
+accept Search More Hovels
+turnin Search More Hovels
+accept Return the Statuette
+turnin Return the Statuette
+complete Digging Through the Ooze | Black Oozes near the Excavation site.
+turnin In Search of The Excavation Team | Merrin Rockweaver at the Whelgar excavation.
+accept 306 In Search of The Excavation Team
+accept Ormer's Revenge | Ormer Ironbraid, excavation site.
+accept Uncovering the Past | Prospector Whelgar.
+complete Ormer's Revenge | Mottled Raptors and Screechers around the site.
+complete Uncovering the Past | Relics are scattered in the excavation (raptors present).
+turnin Ormer's Revenge
+accept 295 Ormer's Revenge
+turnin Uncovering the Past
+complete 295 Ormer's Revenge | Mottled Razormaws.
+turnin 295 Ormer's Revenge
+accept 296 Ormer's Revenge
+complete 296 Ormer's Revenge | Sarltooth, a big raptor on the hill above the site.
+turnin 296 Ormer's Revenge
+turnin The Greenwarden | Rethiel the Greenwarden, central Wetlands.
+accept Tramping Paws
+complete Tramping Paws | Mosshide gnolls around the Greenwarden.
+turnin Tramping Paws
+accept Fire Taboo
+complete Fire Taboo | Mosshide gnolls carry Crude Flints.
+turnin Fire Taboo
+accept Blisters on The Land
+accept The Dark Iron War | Motley Garmason at Dun Modr (north).
+accept A Grim Task | Longbraid the Grim, Dun Modr.
+complete The Dark Iron War | Dark Iron dwarves at Dun Modr.
+complete A Grim Task | Balgaras the Foul, at the Dark Iron camp east of Dun Modr.
+turnin The Dark Iron War
+turnin A Grim Task
+complete Blisters on The Land | Fen Creepers in the marshes.
+turnin Blisters on The Land
+complete The Cursed Crew | Undead crew on the sunken ships north-west of Menethil.
+turnin The Cursed Crew
+accept Lifting the Curse
+complete War Banners | Dragonmaw orcs at Angerfang Encampment.
+turnin War Banners
+accept Nek'rosh's Gambit
+complete Apprentice's Duties | Giant Wetlands Crocolisks.
+turnin Apprentice's Duties
+turnin 306 In Search of The Excavation Team | Tarrel Rockweaver, Menethil.
+turnin Digging Through the Ooze
+level 28
+train | Ironforge via the Dun Algaz pass and Thelsamar.
+note Head north through the Thandol Span into Arathi, then west to Southshore (Hillsbrad Foothills).

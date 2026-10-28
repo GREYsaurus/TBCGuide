@@ -1,0 +1,121 @@
+# TBCGuide - The Barrens (11-22), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Barrens
+@name The Barrens (Crossroads)
+@faction Horde
+@levels 11-22
+@zone The Barrens
+@chapter Azeroth
+@desc The Crossroads, Ratchet, the oases, the Kolkar and Razormane centaur, the Venture Co. and Camp Taurajo. All four Horde starting routes meet here.
+@next H_Stonetalon
+
+turnin Crossroads Conscription [optional] | Sergra Darkthorn, Crossroads.
+turnin Journey to the Crossroads [race=Tauren; optional]
+accept Plainstrider Menace | Sergra Darkthorn.
+accept The Forgotten Pools | Tonga Runetotem.
+accept Disrupt the Attacks | Thork.
+accept Supplies for the Crossroads
+accept Raptor Thieves | Gazrog.
+accept Fungal Spores | Apothecary Helbrim.
+accept Harpy Raiders | Darsok Swiftdagger.
+accept Centaur Bracers | Regthar Deathgate (at the Kolkar border).
+fp Crossroads
+bind Crossroads
+complete Plainstrider Menace
+complete Raptor Thieves
+complete Disrupt the Attacks | Razormane quilboars east of the Crossroads.
+turnin Plainstrider Menace
+accept The Zhevra
+turnin Disrupt the Attacks
+accept The Disruption Ends
+turnin Raptor Thieves
+complete The Forgotten Pools | Explore the pool north of the Crossroads.
+turnin The Forgotten Pools
+accept The Stagnant Oasis
+complete The Disruption Ends
+complete Supplies for the Crossroads | Crates at the Razormane camps.
+turnin The Disruption Ends
+turnin Supplies for the Crossroads
+accept Wharfmaster Dizzywig [optional] | From Apothecary Helbrim.
+accept Southsea Freebooters | Gazlowe, Ratchet.
+accept 890 The Missing Shipment
+accept Samophlange | Sputtervalve.
+accept Raptor Horns | Mebok Mizzyrix.
+accept Chen's Empty Keg [optional]
+fp Ratchet
+turnin 890 The Missing Shipment | Wharfmaster Dizzywig, Ratchet docks.
+accept 892 The Missing Shipment
+turnin 892 The Missing Shipment
+accept Stolen Booty
+complete Southsea Freebooters | Pirates at the camp north of Ratchet.
+complete Stolen Booty
+turnin Southsea Freebooters
+turnin Stolen Booty
+complete The Zhevra | Zhevra Runners.
+complete Fungal Spores | The Forgotten Pools.
+complete The Stagnant Oasis
+turnin The Zhevra
+accept Prowlers of the Barrens
+turnin Fungal Spores
+accept Apothecary Zamah
+turnin The Stagnant Oasis
+accept Altered Beings
+complete Centaur Bracers | Kolkar centaur west of the road.
+complete Harpy Raiders | Witchwing harpies north-west.
+turnin Harpy Raiders
+accept Harpy Lieutenants
+turnin Centaur Bracers
+accept Kolkar Leaders
+complete Samophlange | The Sludge Fen control console.
+turnin Samophlange
+complete Prowlers of the Barrens | Savannah Prowlers.
+complete Altered Beings | Oasis creatures.
+complete Raptor Horns | Sunscale Scytheclaws.
+complete Kolkar Leaders | Barak Kodobane.
+complete Harpy Lieutenants
+turnin Prowlers of the Barrens
+accept Echeyakee
+turnin Altered Beings
+turnin Raptor Horns
+accept Deepmoss Spider Eggs [optional]
+turnin Kolkar Leaders
+accept Verog the Dervish
+turnin Harpy Lieutenants
+accept Serena Bloodfeather
+complete Echeyakee | Use the horn at Echeyakee's lair.
+turnin Echeyakee
+accept The Angry Scytheclaws
+accept Consumed by Hatred | Mankrik, Crossroads.
+accept Lost in Battle
+complete The Angry Scytheclaws
+complete Consumed by Hatred
+complete Lost in Battle | Mankrik's wife lies near Blackthorn Ridge.
+complete Serena Bloodfeather [group=2]
+complete Verog the Dervish
+turnin The Angry Scytheclaws
+accept Jorn Skyseer
+turnin Consumed by Hatred
+turnin Lost in Battle
+turnin Serena Bloodfeather
+accept Letter to Jin'Zil [optional]
+turnin Verog the Dervish
+accept Hezrul Bloodmark
+accept The Guns of Northwatch [optional]
+accept Free From the Hold [optional]
+turnin Jorn Skyseer | Camp Taurajo.
+accept Ishamuhale
+accept Enraged Thunder Lizards
+fp Camp Taurajo
+complete Ishamuhale
+complete Enraged Thunder Lizards
+complete Hezrul Bloodmark
+turnin Ishamuhale
+turnin Enraged Thunder Lizards
+accept Cry of the Thunderhawk
+turnin Hezrul Bloodmark
+complete Cry of the Thunderhawk
+turnin Cry of the Thunderhawk
+level 22
+train | Orgrimmar or Thunder Bluff.
+note The Wailing Caverns (dungeon, 17-24) is in the oasis north-west of the Crossroads. Next: Stonetalon Mountains, via the road west from the Crossroads.

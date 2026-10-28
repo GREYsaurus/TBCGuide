@@ -1,0 +1,56 @@
+# TBCGuide - The Hinterlands (44-50), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Hinterlands
+@name The Hinterlands (Revantusk Village)
+@faction Horde
+@levels 44-50
+@zone The Hinterlands
+@chapter Azeroth
+@desc Revantusk Village: the Vilebranch trolls, the Wildhammer messages, Elder Torntusk and the Hinterlands wildlife.
+@next Both_UngoroCrater
+
+fp Revantusk Village
+bind Revantusk Village
+accept Snapjaws, Mon! | Katoom the Angler.
+accept Gammerita, Mon!
+accept Stalking the Stalkers | Huntsman Markhor.
+accept Hunt the Savages
+accept Avenging the Fallen
+accept Vilebranch Hooligans | Smith Slagtree.
+accept Lard Lost His Lunch | Lard.
+accept Cannibalistic Cousins | Mystic Yayo'jin.
+accept Message to the Wildhammer | Otho Moji'ko.
+accept Wanted: Vile Priestess Hexx and Her Minions [optional]
+accept Kidnapped Elder Torntusk! | Primal Torntusk.
+complete Snapjaws, Mon! | Turtles along the coast.
+complete Gammerita, Mon! | Gammerita, the large turtle on the coast.
+complete Stalking the Stalkers | Silvermane Stalkers.
+complete Hunt the Savages | Savage Owlbeasts.
+complete Avenging the Fallen | Wildhammer dwarves.
+complete Vilebranch Hooligans | Vilebranch trolls.
+complete Lard Lost His Lunch | The Wildhammer camp by the coast.
+complete Cannibalistic Cousins | Vilebranch Scalpers.
+complete Message to the Wildhammer | Highvale area Wildhammer.
+turnin Snapjaws, Mon!
+turnin Gammerita, Mon!
+turnin Stalking the Stalkers
+turnin Hunt the Savages
+turnin Avenging the Fallen
+turnin Vilebranch Hooligans
+turnin Lard Lost His Lunch
+turnin Cannibalistic Cousins
+turnin Message to the Wildhammer
+accept Another Message to the Wildhammer
+complete Another Message to the Wildhammer
+turnin Another Message to the Wildhammer
+complete Kidnapped Elder Torntusk! | Elder Torntusk is held in the Vilebranch area.
+turnin Kidnapped Elder Torntusk!
+accept Recover the Key!
+complete Recover the Key!
+turnin Recover the Key!
+accept Return to Primal Torntusk
+turnin Return to Primal Torntusk
+level 49
+train
+note Fly to Gadgetzan and ride north-west into Un'Goro Crater.

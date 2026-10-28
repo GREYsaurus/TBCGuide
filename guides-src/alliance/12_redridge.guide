@@ -1,0 +1,73 @@
+# TBCGuide - Redridge Mountains (15-21), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Redridge
+@name Redridge Mountains
+@faction Alliance
+@levels 15-21
+@zone Redridge Mountains
+@chapter Azeroth
+@desc Lakeshire and the gnoll and Blackrock camps. Shared by humans arriving from Westfall and dwarves and gnomes arriving from Loch Modan.
+@next A_Duskwood
+
+accept Encroaching Gnolls | Guard Parker at the Elwynn border bridge.
+turnin Encroaching Gnolls | Deputy Feldon, further east on the road.
+accept Assessing the Threat
+fp Lakeshire
+turnin 65 The Defias Brotherhood [race=Human; optional] | Wiley the Black in the Lakeshire inn (if you brought it from Westfall).
+accept Dry Times
+accept A Free Lunch
+accept The Lost Tools | Foreman Oslow at the broken bridge.
+accept The Price of Shoes | Verner Osgood, south of the bridge.
+accept Redridge Goulash | Chef Breanna in the inn.
+accept Wanted: Lieutenant Fangore
+accept Wanted: Gath'Ilzogg
+bind Lakeshire
+accept Hilary's Necklace | Shawn, at the dock south of the bridge.
+complete The Lost Tools | Underwater by the broken bridge, a box on the lake bed.
+turnin The Lost Tools
+accept The Everstill Bridge
+complete Hilary's Necklace | Murlocs on the lake; the necklace is in a glinting mud pile underwater.
+turnin Hilary's Necklace
+turnin A Free Lunch | Guard Parker at the west bridge.
+accept Visit the Herbalist
+turnin Visit the Herbalist | Martie Jainrose, the farm north-west of Lakeshire.
+accept Delivering Daffodils
+turnin Delivering Daffodils | Darcy in the Lakeshire inn.
+complete Assessing the Threat | Redridge gnolls west of Lakeshire.
+complete Redridge Goulash | Tarantulas, condors and goretusks.
+complete The Everstill Bridge | Redridge Mystics and Brutes west of the lake.
+turnin Assessing the Threat
+turnin Redridge Goulash
+turnin The Everstill Bridge
+accept Solomon's Law
+accept Selling Fish | Dockmaster Baren on the dock.
+complete Selling Fish | Murlocs drop Spotted Sunfish.
+complete Solomon's Law | Blackrock orcs along the north-east road and Stonewatch Falls.
+complete Dry Times
+turnin Dry Times
+turnin Selling Fish
+turnin Solomon's Law
+accept Blackrock Menace | Marshal Marris at the east house of Lakeshire.
+complete Blackrock Menace | Blackrock orcs in the Render's Camp area north of Lakeshire.
+turnin Blackrock Menace
+accept Missing In Action [optional; group=2] | Corporal Keeshan at Render's Camp - escort quest.
+complete Missing In Action [optional]
+turnin Missing In Action [optional]
+complete Wanted: Lieutenant Fangore [elite; group=3; optional]
+complete Wanted: Gath'Ilzogg [elite; group=3; optional]
+turnin Wanted: Lieutenant Fangore [optional]
+turnin Wanted: Gath'Ilzogg [optional]
+turnin The Price of Shoes | Smith Argus, the Goldshire blacksmith (Elwynn). Combine with a training trip.
+accept Return to Verner
+turnin Return to Verner
+accept Underbelly Scales [optional]
+accept A Baying of Gnolls
+complete A Baying of Gnolls | Gnolls around Alther's Mill and Stonewatch.
+turnin A Baying of Gnolls
+accept Howling in the Hills
+complete Howling in the Hills | Yowler is a gnoll at Stonewatch Keep.
+turnin Howling in the Hills
+level 20
+train | Stormwind or Lakeshire area trainers.
+note Leave by the south road from Lakeshire to Darkshire (Duskwood).

@@ -1,0 +1,127 @@
+# TBCGuide - Zangarmarsh (61-64), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Zangarmarsh
+@name Zangarmarsh (Telredor)
+@faction Alliance
+@levels 61-64
+@zone Zangarmarsh
+@chapter Outland
+@desc Cenarion Refuge, Telredor, Orebor Harborage and Sporeggar. The Coilfang Reservoir dungeons (Slave Pens, Underbog) are optional.
+@next A_Terokkar
+
+accept The Umbrafen Tribe | Ikeyen, Cenarion Refuge.
+accept Plants of Zangarmarsh | Lauranna Thar'well.
+accept The Dying Balance | Lethyn Moonfire.
+accept Disturbance at Umbrafen Lake | Ysiel Windsinger.
+accept Warden Hamoot
+accept Blessings of the Ancients | Windcaller Blackhoof.
+accept Leader of the Darkcrest [optional]
+accept Leader of the Bloodscale [optional]
+accept The Zapthrottle Mote Extractor! | K. Lee Smallfry.
+fp Cenarion Refuge
+turnin Warden Hamoot
+accept A Warm Welcome
+complete The Umbrafen Tribe | Umbrafen kobolds at Umbrafen Lake (south).
+complete Disturbance at Umbrafen Lake | Explore the pumping station.
+turnin The Umbrafen Tribe
+accept A Damp, Dark Place
+accept Safeguarding the Watchers
+accept Saving the Sporeloks
+turnin Disturbance at Umbrafen Lake
+accept As the Crow Flies
+complete As the Crow Flies | Use the potion to fly the route.
+turnin As the Crow Flies
+accept Balance Must Be Preserved
+complete A Warm Welcome | Mire Hydras.
+complete A Damp, Dark Place | The Ikeyen's Belongings cave in Umbrafen.
+complete Safeguarding the Watchers | Kill the Umbrafen Oracles and Seers.
+complete Saving the Sporeloks
+complete Balance Must Be Preserved | Shut down the pumps at Umbrafen Lake.
+complete The Dying Balance
+turnin A Warm Welcome
+turnin A Damp, Dark Place
+turnin Safeguarding the Watchers
+turnin Saving the Sporeloks
+turnin Balance Must Be Preserved
+turnin The Dying Balance
+accept Escape from Umbrafen [group=2; optional]
+fp Telredor | Climb the giant mushroom at Telredor.
+bind Telredor
+accept Fulgor Spores | Ruam.
+accept Menacing Marshfangs | Noraani.
+accept Too Many Mouths to Feed | Haalrun.
+accept The Dead Mire | Vindicator Idaar.
+accept The Boha'mu Ruins | Anchorite Ahuurn.
+complete Menacing Marshfangs | Marshfang Rippers.
+complete Too Many Mouths to Feed
+complete Fulgor Spores | Fulgor spores on mushrooms around Telredor.
+complete The Dead Mire | The soil sample in the Dead Mire (east).
+complete The Boha'mu Ruins | Explore the Boha'mu Ruins.
+turnin Menacing Marshfangs
+accept Umbrafen Eel Filets
+turnin Too Many Mouths to Feed
+accept Diaphanous Wings
+turnin Fulgor Spores
+turnin The Dead Mire
+accept An Unnatural Drought
+turnin The Boha'mu Ruins
+accept Idols of the Feralfen
+complete Umbrafen Eel Filets
+complete Diaphanous Wings
+complete An Unnatural Drought | Withered giants in the Dead Mire.
+complete Idols of the Feralfen | Feralfen Ruins idols.
+turnin Umbrafen Eel Filets
+turnin Diaphanous Wings
+turnin An Unnatural Drought
+turnin Idols of the Feralfen
+accept Gathering the Reagents
+complete Gathering the Reagents
+turnin Gathering the Reagents
+accept Messenger to the Feralfen
+complete Messenger to the Feralfen
+turnin Messenger to the Feralfen
+accept Watcher Leesa'oh | From Lethyn Moonfire.
+turnin Watcher Leesa'oh | Watcher Leesa'oh, near Sporeggar.
+accept Observing the Sporelings
+accept The Sporelings' Plight | Fahssn.
+accept Natural Enemies
+complete Observing the Sporelings
+complete The Sporelings' Plight | Mature Spore Sacs on the ground.
+complete Natural Enemies
+turnin Observing the Sporelings
+accept A Question of Gluttony
+turnin The Sporelings' Plight
+turnin Natural Enemies
+complete A Question of Gluttony
+turnin A Question of Gluttony
+accept Familiar Fungi
+complete Familiar Fungi
+turnin Familiar Fungi
+accept The Orebor Harborage | Anchorite Ahuurn.
+turnin The Orebor Harborage
+fp Orebor Harborage
+accept Ango'rosh Encroachment | Ikuti.
+accept Daggerfen Deviance
+accept Stinger Venom | Puluu.
+accept Lines of Communication
+accept Natural Armor | Maktu.
+complete Ango'rosh Encroachment | Ango'rosh ogres at the Twin Spire Ruins and the Ango'rosh Grounds.
+complete Daggerfen Deviance | Daggerfen camp, north.
+complete Stinger Venom | Marshlight Bleeders.
+complete Lines of Communication
+complete Natural Armor
+turnin Ango'rosh Encroachment
+accept Overlord Gorefist
+turnin Daggerfen Deviance
+turnin Stinger Venom
+turnin Lines of Communication
+turnin Natural Armor
+accept Maktu's Revenge
+complete Overlord Gorefist | Ango'rosh Stronghold.
+complete Maktu's Revenge
+turnin Overlord Gorefist
+turnin Maktu's Revenge
+turnin The Zapthrottle Mote Extractor! [optional]
+level 63
+note Ride south from Telredor into Terokkar Forest; Allerian Stronghold is the Alliance town. Shattrath City is on the way.

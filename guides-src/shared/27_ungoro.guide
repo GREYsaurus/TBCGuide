@@ -1,0 +1,59 @@
+# TBCGuide - Un'Goro Crater (48-52), both factions
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide Both_UngoroCrater
+@name Un'Goro Crater
+@faction Both
+@levels 48-52
+@zone Un'Goro Crater
+@chapter Azeroth
+@desc Marshal's Refuge and the neutral crater quests: pylons, devilsaurs, oozes, raptors, the gorillas and Linken.
+@next A_Felwood [faction=Alliance]
+@next H_Felwood [faction=Horde]
+
+accept Beware of Pterrordax | The sign on the ramp down into the crater.
+accept Expedition Salvation | Williden Marshal, Marshal's Refuge.
+accept Alien Ecology | Hol'anyee Marshal.
+accept Roll the Bones | Spark Nilminer.
+accept Crystals of Power | J.D. Collie.
+accept The Apes of Un'Goro | Torwa Pathfinder at the east side of the crater.
+accept The Fare of Lar'korwi
+accept Chasing A-Me 01 [optional]
+accept Lost! [optional]
+accept Shizzle's Flyer [optional]
+fp Marshal's Refuge
+complete The Fare of Lar'korwi | The threshadon carcass is near Torwa.
+turnin The Fare of Lar'korwi
+accept The Scent of Lar'korwi
+complete Beware of Pterrordax | Pterrordaxes and Frenzied Pterrordaxes.
+complete Expedition Salvation | Supply crates around the crater.
+complete Alien Ecology | Use the gorishi scent gland on the hive at the Slithering Scar (southwest).
+complete Roll the Bones | Dinosaur bones on the ground.
+complete Crystals of Power | Power crystals in the crater.
+complete The Scent of Lar'korwi | Raptor nests near the Terror Run.
+turnin The Scent of Lar'korwi
+accept The Bait for Lar'korwi
+complete The Bait for Lar'korwi [group=2]
+turnin The Bait for Lar'korwi
+complete The Apes of Un'Goro | Un'Goro gorillas north-east.
+turnin The Apes of Un'Goro
+accept The Mighty U'cha [group=2; optional]
+turnin Beware of Pterrordax
+turnin Expedition Salvation
+turnin Alien Ecology
+turnin Roll the Bones
+turnin Crystals of Power
+accept The Northern Pylon
+accept The Eastern Pylon
+accept The Western Pylon
+complete The Northern Pylon
+complete The Eastern Pylon
+complete The Western Pylon
+turnin The Northern Pylon
+turnin The Eastern Pylon
+turnin The Western Pylon
+accept Making Sense of It
+turnin Making Sense of It
+level 51
+train
+note Alliance: fly to Talonbranch Glade (Felwood). Horde: fly to Bloodvenom Post (Felwood).

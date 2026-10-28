@@ -1,0 +1,103 @@
+# TBCGuide - Undead start: Deathknell and Tirisfal Glades (1-11)
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Undead_Tirisfal
+@name Deathknell & Tirisfal Glades
+@faction Horde
+@races Scourge
+@levels 1-11
+@zone Tirisfal Glades
+@chapter Azeroth
+@start
+@desc Undead starting route. Deathknell to about 5, then Brill, the Agamand Mills, the Scarlet Crusade camps and the Undercity. Ends at about 11, heading to Silverpine Forest.
+@next H_Silverpine
+
+accept Rude Awakening | Undertaker Mordo.
+turnin Rude Awakening | Shadow Priest Sarvis.
+accept The Mindless Ones
+accept Rattling the Rattlecages
+complete The Mindless Ones | Mindless Zombies and Wretched Zombies.
+complete Rattling the Rattlecages | Rattlecage Skeletons.
+turnin The Mindless Ones
+accept The Damned
+turnin Rattling the Rattlecages
+accept Scavenging Deathknell | Deathguard Saltain.
+accept Marla's Last Wish | Novice Elreth.
+complete The Damned | Young Night Webs and Scrawny Duskbats.
+complete Scavenging Deathknell | Supplies in the houses of Deathknell.
+turnin The Damned
+turnin Scavenging Deathknell
+accept Night Web's Hollow | Executor Arren.
+accept The Scarlet Crusade
+complete Night Web's Hollow | Night Web Spiders in the hollow.
+complete The Scarlet Crusade | Scarlet Converts and Initiates east.
+complete Marla's Last Wish | Samuel Fipps; bury Marla's remains in the graveyard.
+turnin Night Web's Hollow
+turnin The Scarlet Crusade
+accept The Red Messenger
+turnin Marla's Last Wish
+complete The Red Messenger | Meven Korgal, at the Scarlet camp.
+turnin The Red Messenger
+accept Vital Intelligence
+train | Trainers in Deathknell's church.
+turnin Vital Intelligence | Executor Zygand, Brill.
+accept 427 At War With The Scarlet Crusade
+accept A Putrid Task | Deathguard Dillinger.
+accept Graverobbers | Magistrate Sevren.
+accept 365 Fields of Grief | Deathguard Simmer.
+accept Wanted: Maggot Eye
+accept Gordo's Task | Gordo, on the road.
+bind Brill
+turnin 365 Fields of Grief | Apothecary Johaan.
+accept 407 Fields of Grief
+accept 367 A New Plague
+complete 407 Fields of Grief | Pumpkins in the Solliden Farmstead fields.
+complete 367 A New Plague
+complete A Putrid Task | Rotting Dead and Ravaged Corpses.
+complete Graverobbers
+complete 427 At War With The Scarlet Crusade | Scarlet Warriors at Solliden Farmstead.
+turnin 407 Fields of Grief
+turnin 367 A New Plague
+accept 368 A New Plague
+turnin A Putrid Task
+accept The Mills Overrun
+turnin Graverobbers
+accept Forsaken Duties
+turnin 427 At War With The Scarlet Crusade
+accept 370 At War With The Scarlet Crusade
+complete Gordo's Task | Gloom Weed around Brill.
+turnin Gordo's Task
+complete Wanted: Maggot Eye | Maggot Eye at the Garren's Haunt farm.
+turnin Wanted: Maggot Eye
+complete The Mills Overrun | Agamand Mills, north.
+complete 368 A New Plague | Vile Fin murlocs on the coast.
+turnin Forsaken Duties | Deathguard Linnea, the bridge north.
+accept Return to the Magistrate
+turnin Return to the Magistrate
+accept The Chill of Death | Gretchen Dedmar.
+turnin The Mills Overrun
+turnin 368 A New Plague
+accept 369 A New Plague
+complete 370 At War With The Scarlet Crusade | Captain Perrine, Scarlet Crusade camp.
+complete 369 A New Plague | Greater Duskbats.
+turnin 370 At War With The Scarlet Crusade
+accept 371 At War With The Scarlet Crusade
+turnin 369 A New Plague
+complete The Chill of Death | Duskbats and Vile Fin murlocs.
+turnin The Chill of Death
+accept Deaths in the Family | Coleman Farthing, Brill inn.
+accept The Haunted Mills
+complete Deaths in the Family | Agamand relatives in the mills crypt.
+complete The Haunted Mills | Devlin Agamand in the mills.
+turnin Deaths in the Family
+turnin The Haunted Mills
+complete 371 At War With The Scarlet Crusade | Scarlet Zealots at the Scarlet Watch Post.
+turnin 371 At War With The Scarlet Crusade
+accept 372 At War With The Scarlet Crusade [optional]
+complete 372 At War With The Scarlet Crusade [optional]
+turnin 372 At War With The Scarlet Crusade [optional]
+train | Undercity trainers (west of Brill).
+fp Undercity [zone=Undercity]
+accept Delivery to Silverpine Forest | Apothecary Johaan.
+level 11
+note Ride south into Silverpine Forest; The Sepulcher is the Horde town.

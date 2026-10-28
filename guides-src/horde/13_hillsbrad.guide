@@ -1,0 +1,52 @@
+# TBCGuide - Hillsbrad Foothills (27-31), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Hillsbrad
+@name Hillsbrad Foothills (Tarren Mill)
+@faction Horde
+@levels 27-31
+@zone Hillsbrad Foothills
+@chapter Azeroth
+@desc Tarren Mill: the Battle of Hillsbrad, Apothecary Lydon's elixirs, the Syndicate and the Dalaran mages. Then to Thousand Needles.
+@next H_ThousandNeedles
+
+fp Tarren Mill
+bind Tarren Mill
+accept 527 Battle of Hillsbrad | High Executor Darthalia.
+accept Elixir of Suffering | Apothecary Lydon.
+accept Souvenirs of Death | Deathguard Samsa.
+accept Time To Strike [optional] | Deathguard Lesh.
+accept Dangerous! [optional]
+complete 527 Battle of Hillsbrad | Hillsbrad farmers and peasants on the farms.
+complete Elixir of Suffering | Hillsbrad farm creatures.
+complete Souvenirs of Death
+turnin 527 Battle of Hillsbrad
+accept 528 Battle of Hillsbrad
+turnin Elixir of Suffering
+accept Elixir of Pain
+turnin Souvenirs of Death
+complete 528 Battle of Hillsbrad
+complete Elixir of Pain | Mountain Lions.
+turnin 528 Battle of Hillsbrad
+accept 529 Battle of Hillsbrad
+turnin Elixir of Pain
+accept Elixir of Agony
+complete 529 Battle of Hillsbrad
+turnin 529 Battle of Hillsbrad
+accept 532 Battle of Hillsbrad
+complete 532 Battle of Hillsbrad
+turnin 532 Battle of Hillsbrad
+complete Elixir of Agony
+turnin Elixir of Agony
+accept Prison Break In | Magus Wordeen Voidglare, south of Tarren Mill.
+accept Dalaran Patrols
+accept Stone Tokens [optional] | Keeper Bel'varil.
+complete Prison Break In
+complete Dalaran Patrols
+turnin Prison Break In
+turnin Dalaran Patrols
+accept Helcular's Revenge [optional]
+accept The Hammer May Fall | Tallow, at the Tarren Mill area - leads to Hammerfall.
+level 30
+train | Undercity trainers.
+note Fly to Orgrimmar via the Undercity zeppelin, then fly to Freewind Post (Thousand Needles).

@@ -1,0 +1,32 @@
+# TBCGuide - Feralas (43-47), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Feralas
+@name Feralas (Camp Mojache)
+@faction Horde
+@levels 43-47
+@zone Feralas
+@chapter Azeroth
+@desc Camp Mojache, the Northspring harpies, the Twin Colossals giants and the Grimtotem compound.
+@next H_Hinterlands
+
+fp Camp Mojache
+bind Camp Mojache
+accept Dark Heart | Talo Thornhoof, Camp Mojache.
+accept Vengeance on the Northspring
+accept The Strength of Corruption
+accept Zapped Giants | Zorbin Fandazzle on the coast.
+accept Fuel for the Zapping
+complete Vengeance on the Northspring | Northspring harpies.
+complete Dark Heart | Harpy chieftain at the Northspring nest.
+turnin Vengeance on the Northspring
+turnin Dark Heart
+complete Zapped Giants | Use Zorbin's Ultra-Shrinker on Wave Striders and Land Walkers.
+complete Fuel for the Zapping | Water elementals on the coast.
+turnin Zapped Giants
+turnin Fuel for the Zapping
+complete The Strength of Corruption
+turnin The Strength of Corruption
+level 46
+train
+note Fly to Revantusk Village in the Hinterlands (via the Undercity or Tarren Mill).

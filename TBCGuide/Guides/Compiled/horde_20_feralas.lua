@@ -1,0 +1,40 @@
+-- TBCGuide - compiled guide data. GENERATED from guides-src/horde/20_feralas.guide by tools/build.ps1 guides.
+-- DO NOT EDIT: edit the .guide source and rebuild. Guide routes and notes are original TBCGuide content
+-- (GPL-3.0-only); quest ids, NPC names and coordinates were looked up in the bundled QuestieDB-derived data.
+local _, ns = ...
+ns.Guides:Register({
+  id="H_Feralas", name="Feralas (Camp Mojache)", faction="Horde", chapter="Azeroth",
+  minLevel=43, maxLevel=47, zone=357, zoneName="Feralas",
+  desc="Camp Mojache, the Northspring harpies, the Twin Colossals giants and the Grimtotem compound.",
+  next={{id="H_Hinterlands"},},
+  steps={
+    {"fp",npc="Shyn",z=357,x=75.4,y=44.4,place="Camp Mojache",v=1},
+    {"bind",npc="Innkeeper Greul",z=357,x=74.8,y=45.2,place="Camp Mojache",v=1},
+    {"accept",q=3062,title="Dark Heart",npc="Talo Thornhoof",z=357,x=76.2,y=43.8,text="Talo Thornhoof, Camp Mojache.",v=1},
+    {"accept",q=3063,title="Vengeance on the Northspring",npc="Talo Thornhoof",z=357,x=76.2,y=43.8,v=1},
+    {"accept",q=4120,title="The Strength of Corruption",npc="Talo Thornhoof",z=357,x=76.2,y=43.8,v=1},
+    {"accept",q=7003,title="Zapped Giants",npc="Zorbin Fandazzle",z=357,x=44.8,y=43.4,text="Zorbin Fandazzle on the coast.",v=1},
+    {"accept",q=7721,title="Fuel for the Zapping",npc="Zorbin Fandazzle",z=357,x=44.8,y=43.4,v=1},
+    {"complete",q=3063,title="Vengeance on the Northspring",text="Northspring harpies.",v=1},
+    {"complete",q=3062,title="Dark Heart",text="Harpy chieftain at the Northspring nest.",v=1},
+    {"turnin",q=3063,title="Vengeance on the Northspring",npc="Talo Thornhoof",z=357,x=76.2,y=43.8,v=1},
+    {"turnin",q=3062,title="Dark Heart",npc="Talo Thornhoof",z=357,x=76.2,y=43.8,v=1},
+    {"complete",q=7003,title="Zapped Giants",text="Use Zorbin's Ultra-Shrinker on Wave Striders and Land Walkers.",v=1},
+    {"complete",q=7721,title="Fuel for the Zapping",text="Water elementals on the coast.",v=1},
+    {"turnin",q=7003,title="Zapped Giants",npc="Zorbin Fandazzle",z=357,x=44.8,y=43.4,v=1},
+    {"turnin",q=7721,title="Fuel for the Zapping",npc="Zorbin Fandazzle",z=357,x=44.8,y=43.4,v=1},
+    {"complete",q=4120,title="The Strength of Corruption",v=1},
+    {"turnin",q=4120,title="The Strength of Corruption",npc="Talo Thornhoof",z=357,x=76.2,y=43.8,v=1},
+    {"level",level=46,v=1},
+    {"train",npc="Jannos Lighthoof",z=357,x=76,y=42.3,classes={"DRUID"},v=1},
+    {"train",text="No hunter trainer in this zone - train at the next town or capital.",classes={"HUNTER"},v=1},
+    {"train",text="No mage trainer in this zone - train at the next town or capital.",classes={"MAGE"},v=1},
+    {"train",text="No paladin trainer in this zone - train at the next town or capital.",classes={"PALADIN"},v=1},
+    {"train",text="No priest trainer in this zone - train at the next town or capital.",classes={"PRIEST"},v=1},
+    {"train",text="No rogue trainer in this zone - train at the next town or capital.",classes={"ROGUE"},v=1},
+    {"train",text="No shaman trainer in this zone - train at the next town or capital.",classes={"SHAMAN"},v=1},
+    {"train",text="No warlock trainer in this zone - train at the next town or capital.",classes={"WARLOCK"},v=1},
+    {"train",text="No warrior trainer in this zone - train at the next town or capital.",classes={"WARRIOR"},v=1},
+    {"note",text="Fly to Revantusk Village in the Hinterlands (via the Undercity or Tarren Mill).",v=1},
+  },
+})

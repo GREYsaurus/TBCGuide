@@ -1,0 +1,181 @@
+# TBCGuide - Hellfire Peninsula (58-62), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Hellfire
+@name Hellfire Peninsula (Honor Hold)
+@faction Alliance
+@levels 58-62
+@zone Hellfire Peninsula
+@chapter Outland
+@desc Through the Dark Portal to Honor Hold. Covers the Stair of Destiny, the Legion forge camps, Expedition Point, Shatter Point, the Zeth'Gor and Pools of Aggonar quests, Temple of Telhamat and the Cenarion Post. Hellfire Ramparts quests are optional group content.
+@next A_Zangarmarsh
+
+accept Through the Dark Portal [optional] | From the herald in Stormwind or the Blasted Lands (level 58).
+turnin Through the Dark Portal [optional] | Commander Duron, top of the Stair of Destiny.
+accept Arrival in Outland
+turnin Arrival in Outland | Amish Wildhammer, the gryphon master on the Stair.
+accept Journey to Honor Hold
+fly Honor Hold
+turnin Journey to Honor Hold | Marshal Isildor.
+accept Force Commander Danath
+turnin Force Commander Danath
+accept The Legion Reborn
+accept Know your Enemy
+turnin Know your Enemy
+fp Honor Hold
+bind Honor Hold
+accept Fel Orc Scavengers | Lieutenant Amadi.
+accept Waste Not, Want Not | Dumphry.
+accept Ravager Egg Roundup | Legassi.
+accept In Case of Emergency... | "Screaming" Screed Luckheed.
+accept Outland Sucks! | Foreman Razelcraz, outside Honor Hold.
+turnin The Legion Reborn | Sergeant Altumus at the Stair of Destiny caravan.
+accept The Path of Anguish
+complete The Path of Anguish | Demons along the Path of Glory.
+complete Waste Not, Want Not | Burning Legion missives on the ground near the Stair.
+complete Outland Sucks! | Salvage scattered west of Honor Hold.
+complete In Case of Emergency... | Zeppelin debris around the Hellfire fields.
+turnin The Path of Anguish
+accept Expedition Point
+turnin Expedition Point | Forward Commander Kingston, Expedition Point.
+accept Disrupt Their Reinforcements
+complete Disrupt Their Reinforcements | Demons at the two Legion portals near Expedition Point.
+turnin Disrupt Their Reinforcements
+accept Mission: The Murketh and Shaadraz Gateways
+complete Fel Orc Scavengers | Fel orcs at Zeth'Gor.
+complete Ravager Egg Roundup | Ravager nests south of Honor Hold.
+turnin Fel Orc Scavengers
+accept Ill Omens
+turnin Ravager Egg Roundup
+accept Helboar, the Other White Meat
+turnin Waste Not, Want Not
+accept Laying Waste to the Unwanted
+turnin Outland Sucks!
+accept How to Serve Goblins
+turnin In Case of Emergency...
+accept Voidwalkers Gone Wild
+accept The Longbeards | Sid Limbardi, Honor Hold.
+accept When This Mine's a-Rockin' | Foreman Biggums.
+accept Unyielding Souls | Honor Guard Wesilow.
+accept An Old Gift | Father Malgor Devidicus.
+accept Weaken the Ramparts [group=3; optional] | Lieutenant Chadwick - Hellfire Ramparts dungeon.
+complete Mission: The Murketh and Shaadraz Gateways | Fly over the gateways with the gryphon from Shatter Point.
+turnin Mission: The Murketh and Shaadraz Gateways
+accept Shatter Point
+turnin Shatter Point
+accept Wing Commander Gryphongar
+fp Shatter Point
+turnin Wing Commander Gryphongar
+accept Mission: The Abyssal Shelf
+complete Mission: The Abyssal Shelf | Bomb the Abyssal Shelf from the gryphon.
+turnin Mission: The Abyssal Shelf
+accept Go to the Front
+turnin Go to the Front | Field Marshal Brock at the Forge Camp: Mageddon front.
+accept Disruption - Forge Camp: Mageddon
+complete Disruption - Forge Camp: Mageddon
+turnin Disruption - Forge Camp: Mageddon
+accept Enemy of my Enemy...
+complete Enemy of my Enemy...
+turnin Enemy of my Enemy...
+accept Invasion Point: Annihilator
+complete Invasion Point: Annihilator
+turnin Invasion Point: Annihilator
+complete Ill Omens | Bleeding Hollow orcs at Zeth'Gor.
+turnin Ill Omens
+accept Cursed Talismans
+complete Cursed Talismans
+turnin Cursed Talismans
+accept Warlord of the Bleeding Hollow
+complete Warlord of the Bleeding Hollow
+turnin Warlord of the Bleeding Hollow
+accept Return to Honor Hold
+complete Helboar, the Other White Meat | Helboars around Honor Hold.
+complete Laying Waste to the Unwanted | Burn the fuel tanks along the Path of Glory.
+complete How to Serve Goblins | Rescue goblins from the Bonechewer camps.
+complete When This Mine's a-Rockin' | Hellfire Quarry mine.
+complete Unyielding Souls | Unyielding orcs at the Hellfire Citadel approach.
+complete An Old Gift | The broken altar at the Hellfire Citadel ruins.
+complete Voidwalkers Gone Wild | Voidwalkers at Void Ridge.
+turnin Helboar, the Other White Meat
+accept Smooth as Butter
+turnin Laying Waste to the Unwanted
+turnin How to Serve Goblins
+turnin When This Mine's a-Rockin'
+accept The Mastermind
+turnin Unyielding Souls
+accept Looking to the Leadership
+turnin An Old Gift
+turnin Voidwalkers Gone Wild
+turnin Return to Honor Hold
+accept Fel Spirits
+accept Digging for Prayer Beads
+complete The Mastermind | Deep inside the Hellfire Quarry mine.
+complete Looking to the Leadership | Bonechewer leaders.
+complete Smooth as Butter | Bonestripper Buzzards.
+complete Fel Spirits
+complete Digging for Prayer Beads
+turnin The Mastermind
+turnin Looking to the Leadership
+turnin Smooth as Butter
+turnin Fel Spirits
+turnin Digging for Prayer Beads
+accept The Exorcism of Colonel Jules
+complete The Exorcism of Colonel Jules
+turnin The Exorcism of Colonel Jules
+accept Trollbane is Looking for You
+turnin Trollbane is Looking for You
+accept Drill the Drillmaster
+accept The Path of Glory | Warp-Scryer Kryv.
+complete Drill the Drillmaster
+turnin Drill the Drillmaster
+complete The Path of Glory
+turnin The Path of Glory
+accept The Temple of Telhamat
+turnin The Temple of Telhamat | Amaan the Wise, Temple of Telhamat (west).
+fp Temple of Telhamat
+accept The Pools of Aggonar
+accept In Search of Sedai | Anchorite Obadei.
+accept Deadly Predators | Scout Vanura.
+accept Cruel Taskmasters | Ikan.
+accept The Rock Flayer Matriarch
+accept Rampaging Ravagers | Gremni Longbeard.
+accept The Arakkoa Threat
+turnin In Search of Sedai | Sedai's corpse on the road.
+accept Return to Obadei
+turnin Return to Obadei
+accept Makuru's Vengeance
+complete The Pools of Aggonar | Aggonis and blistering oozes at the Pools of Aggonar.
+complete Deadly Predators | Fel stalkers and helboars.
+complete Cruel Taskmasters | Taskmasters at the Mag'har Grounds.
+complete Makuru's Vengeance | Mag'har orcs at the Mag'har Grounds.
+complete The Rock Flayer Matriarch
+complete Rampaging Ravagers
+complete The Arakkoa Threat | Arakkoa at Haal'eshi Gorge.
+turnin The Pools of Aggonar
+accept Cleansing the Waters
+turnin Deadly Predators
+turnin Cruel Taskmasters
+turnin Makuru's Vengeance
+accept Atonement
+turnin Atonement
+turnin The Rock Flayer Matriarch
+turnin Rampaging Ravagers
+turnin The Arakkoa Threat
+complete Cleansing the Waters [group=2] | Aggonis at the pools.
+turnin Cleansing the Waters
+accept The Cenarion Expedition [optional] | Leads to Zangarmarsh.
+accept Demonic Contamination | Thiah Redmane, Cenarion Post.
+accept Colossal Menace | Tola'thion.
+accept Keep Thornfang Hill Clear! | Mahuram Stouthoof.
+complete Demonic Contamination
+complete Colossal Menace
+complete Keep Thornfang Hill Clear!
+turnin Demonic Contamination
+accept Testing the Antidote
+complete Testing the Antidote
+turnin Testing the Antidote
+turnin Colossal Menace
+turnin Keep Thornfang Hill Clear!
+level 62
+train | Hearth or take the Dark Portal back to a capital city to train.
+note Ride west from the Temple of Telhamat into Zangarmarsh; Telredor is the Alliance town.

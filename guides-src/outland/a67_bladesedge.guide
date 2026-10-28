@@ -1,0 +1,115 @@
+# TBCGuide - Blade's Edge Mountains (66-68), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_BladesEdge
+@name Blade's Edge Mountains (Sylvanaar & Toshley's Station)
+@faction Alliance
+@levels 66-68
+@zone Blade's Edge Mountains
+@chapter Outland
+@desc Sylvanaar, the Bladespire and Bloodmaul ogres, Evergrove, Toshley's Station and the gronn chain with Baron Sablemane.
+@next Both_Netherstorm
+
+fp Sylvanaar
+bind Sylvanaar
+accept The Encroaching Wilderness | Rina Moonspring, Sylvanaar.
+accept The Bloodmaul Ogres | Commander Skyshadow.
+accept Into the Draenethyst Mine | Bronwyn Stouthammer.
+accept Strange Brew | Borgrim Stouthammer.
+accept The Trappings of a Vindicator | Vindicator Vuuleen.
+accept Malaise | Daranelle.
+accept The Den Mother [optional]
+accept Killing the Crawlers | Sentinel Moonwhisper.
+complete The Encroaching Wilderness
+complete The Bloodmaul Ogres
+complete Into the Draenethyst Mine | Ogres in the Draenethyst Mine.
+complete Strange Brew
+complete The Trappings of a Vindicator
+complete Malaise
+complete Killing the Crawlers
+turnin The Encroaching Wilderness
+accept Marauding Wolves
+turnin The Bloodmaul Ogres
+accept The Bladespire Ogres
+turnin Into the Draenethyst Mine
+turnin Strange Brew
+accept Getting the Bladespire Tanked
+turnin The Trappings of a Vindicator
+accept Gorr'Dim, Your Time Has Come...
+turnin Malaise
+accept Scratches
+turnin Killing the Crawlers
+complete Marauding Wolves
+complete The Bladespire Ogres
+complete Getting the Bladespire Tanked
+complete Gorr'Dim, Your Time Has Come...
+complete Scratches
+turnin Marauding Wolves
+accept Protecting Our Own
+turnin The Bladespire Ogres
+turnin Getting the Bladespire Tanked
+turnin Gorr'Dim, Your Time Has Come...
+accept Planting the Banner
+turnin Scratches
+complete Protecting Our Own
+complete Planting the Banner
+turnin Protecting Our Own
+accept A Dire Situation
+turnin Planting the Banner
+accept Where Did Those Darn Gnomes Go?
+complete A Dire Situation
+turnin A Dire Situation
+turnin Where Did Those Darn Gnomes Go?
+accept Follow the Breadcrumbs
+turnin Follow the Breadcrumbs | Toshley's Station.
+fp Toshley's Station
+accept Picking Up Some Power Converters | Toshley.
+accept Crystal Clear | Nickwinkle the Metro-Gnome.
+accept What Came First, the Drake or the Egg? | Fizit "Doc" Clocktock.
+complete Picking Up Some Power Converters
+complete Crystal Clear
+complete What Came First, the Drake or the Egg?
+turnin Picking Up Some Power Converters
+accept Ridgespine Menace
+accept Cutting Your Teeth
+accept Ride the Lightning
+turnin Crystal Clear
+accept Gauging the Resonant Frequency
+turnin What Came First, the Drake or the Egg?
+complete Ridgespine Menace
+complete Cutting Your Teeth
+complete Ride the Lightning
+complete Gauging the Resonant Frequency
+turnin Ridgespine Menace
+accept More than a Pound of Flesh
+turnin Cutting Your Teeth
+turnin Ride the Lightning
+accept Trapping the Light Fantastic
+turnin Gauging the Resonant Frequency
+complete More than a Pound of Flesh
+complete Trapping the Light Fantastic
+turnin More than a Pound of Flesh
+turnin Trapping the Light Fantastic
+accept Show Them Gnome Mercy!
+complete Show Them Gnome Mercy!
+turnin Show Them Gnome Mercy!
+accept A Time for Negotiation... | Tree Warden Chawn, Evergrove (north).
+fp Evergrove
+turnin A Time for Negotiation...
+accept ...and a Time for Action
+accept Poaching from Poachers
+accept Culling the Wild | Faradrella.
+accept Little Embers | Mosswood the Ancient.
+accept From the Ashes
+complete ...and a Time for Action
+complete Poaching from Poachers
+complete Culling the Wild
+complete Little Embers
+complete From the Ashes
+turnin ...and a Time for Action
+turnin Poaching from Poachers
+turnin Culling the Wild
+turnin Little Embers
+turnin From the Ashes
+level 68
+note Fly to Area 52 in Netherstorm (from Toshley's Station or Evergrove), or ride east through the Netherstorm bridge.

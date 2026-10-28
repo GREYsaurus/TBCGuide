@@ -1,0 +1,135 @@
+# TBCGuide - Draenei start: Ammen Vale and Azuremyst Isle (1-11)
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Draenei_Azuremyst
+@name Ammen Vale & Azuremyst Isle
+@faction Alliance
+@races Draenei
+@levels 1-11
+@zone Azuremyst Isle
+@chapter Azeroth
+@start
+@desc Draenei starting route (TBC). The Exodar crash site in Ammen Vale to about 5, then Azure Watch, Odesyus' Landing, Stillpine Hold and the totem chain. Continues on Bloodmyst Isle.
+@next A_Draenei_Bloodmyst
+
+accept You Survived! | Megelon, at the crash site.
+turnin You Survived!
+accept 9280 Replenishing the Healing Crystals | Proenitus.
+complete 9280 Replenishing the Healing Crystals | Vale Moths drop Vials of Moth Blood.
+turnin 9280 Replenishing the Healing Crystals
+accept Urgent Delivery!
+turnin Urgent Delivery! | Zalduun, near the Exodar entrance.
+accept Rescue the Survivors!
+accept Botanist Taerix | From Proenitus.
+turnin Botanist Taerix
+accept Volatile Mutations
+accept Inoculation | Vindicator Aldar.
+accept Spare Parts | Technician Zhanaa.
+complete Rescue the Survivors! | Use the Gift of the Naaru racial on the injured draenei around the vale.
+complete Volatile Mutations | Volatile Mutations east of the crash site.
+turnin Rescue the Survivors!
+turnin Volatile Mutations
+accept What Must Be Done...
+accept Botanical Legwork
+complete Spare Parts | Emitter spare parts on the ground in the vale.
+complete Inoculation | Use the inoculating crystal on Nestlewood Owlkins.
+complete What Must Be Done... | Mutated Root Lashers at the lake.
+complete Botanical Legwork | Corrupted Flowers.
+turnin What Must Be Done...
+turnin Botanical Legwork
+accept Healing the Lake
+turnin Spare Parts
+turnin Inoculation
+accept The Missing Scout
+complete Healing the Lake | Use the Pure Energy at the lake.
+turnin Healing the Lake
+turnin The Missing Scout | Tolaan, south-west of the vale.
+accept The Blood Elves
+complete The Blood Elves | Blood elf scouts west of the crash site.
+turnin The Blood Elves
+accept Blood Elf Spy
+complete Blood Elf Spy | Surveyor Candress, at the blood elf camp.
+turnin Blood Elf Spy
+accept The Emitter
+turnin The Emitter
+accept Travel to Azure Watch
+train | Trainers at the crash site.
+turnin Travel to Azure Watch | Technician Dyvuun, Azure Watch.
+accept Red Snapper - Very Tasty! | Diktynna, on the beach.
+accept Word from Azure Watch [optional]
+accept Medicinal Purpose | Anchorite Fateema, Azure Watch.
+accept Learning the Language | Cryptographer Aurren.
+accept The Missing Fisherman [optional]
+accept Coming of Age | Exarch Menelaous.
+bind Azure Watch
+complete Red Snapper - Very Tasty!
+turnin Red Snapper - Very Tasty!
+accept Find Acteon!
+turnin Find Acteon!
+accept 9454 The Great Moongraze Hunt
+complete Medicinal Purpose | Skittering Crawlers drop Skittering Crawler Meat.
+turnin Medicinal Purpose
+accept An Alternative Alternative
+complete 9454 The Great Moongraze Hunt | Moongraze Stags.
+turnin 9454 The Great Moongraze Hunt
+accept 10324 The Great Moongraze Hunt
+complete An Alternative Alternative | Azure Snapdragon bulbs around the trees.
+turnin An Alternative Alternative
+complete Learning the Language
+turnin Learning the Language
+accept Totem of Coo
+complete 10324 The Great Moongraze Hunt
+turnin 10324 The Great Moongraze Hunt
+accept A Small Start | Admiral Odesyus, Odesyus' Landing (south coast).
+accept Cookie's Jumbo Gumbo
+accept I've Got a Plant
+complete A Small Start
+complete Cookie's Jumbo Gumbo | Skittering Crawlers.
+complete I've Got a Plant
+turnin A Small Start
+turnin Cookie's Jumbo Gumbo
+turnin I've Got a Plant
+accept Tree's Company
+accept Reclaiming the Ruins
+accept Precious and Fragile Things Need Special Handling
+complete Reclaiming the Ruins | Wrathscale naga at the ruins.
+complete Precious and Fragile Things Need Special Handling | Ancient relics at the ruins.
+turnin Reclaiming the Ruins
+turnin Precious and Fragile Things Need Special Handling
+complete Tree's Company
+turnin Tree's Company
+accept Show Gnomercy
+complete Show Gnomercy
+turnin Show Gnomercy
+accept Deliver Them From Evil...
+turnin Totem of Coo | Follow the totem chain across the isle.
+accept Totem of Tikti
+turnin Totem of Tikti
+accept Totem of Yor
+turnin Totem of Yor
+accept Totem of Vark
+turnin Totem of Vark
+accept The Prophecy of Akida
+complete The Prophecy of Akida | Free the Stillpine captives at the Bristlelimb furbolg camps.
+turnin The Prophecy of Akida | Arugoo of the Stillpine, Stillpine Hold.
+accept Stillpine Hold
+turnin Stillpine Hold
+accept Beasts of the Apocalypse!
+accept Murlocs... Why Here? Why Now?
+complete Beasts of the Apocalypse! | Ravagers south of Stillpine Hold.
+complete Murlocs... Why Here? Why Now? | Murlocs at the lake by the hold.
+turnin Beasts of the Apocalypse!
+turnin Murlocs... Why Here? Why Now?
+accept Chieftain Oomooroo
+complete Chieftain Oomooroo | Inside Stillpine Hold.
+turnin Chieftain Oomooroo
+accept Search Stillpine Hold
+turnin Search Stillpine Hold
+accept Blood Crystals
+turnin Blood Crystals
+complete Coming of Age
+turnin Coming of Age
+turnin Deliver Them From Evil...
+level 10
+train
+note Head north over the bridge at Wrathscale Point into Bloodmyst Isle.

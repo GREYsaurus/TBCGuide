@@ -1,0 +1,133 @@
+# TBCGuide - Bloodmyst Isle (10-20), Alliance (Draenei route)
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Draenei_Bloodmyst
+@name Bloodmyst Isle
+@faction Alliance
+@races Draenei
+@levels 10-20
+@zone Bloodmyst Isle
+@chapter Azeroth
+@desc Kessel's Crossing, Blood Watch, the crystal samples, Wrathscale naga, Vindicator's Rest and the Sun Gate. Ends at 19-20 with the boat from Azuremyst to Auberdine, heading for Ashenvale.
+@next A_Ashenvale
+
+accept Alien Predators | Vorkhan the Elekk Herder, Kessel's Crossing.
+accept A Favorite Treat | Aonar.
+accept The Kessel Run | Kessel.
+complete The Kessel Run | Talk to High Chief Stillpine, Exarch Menelaous and Admiral Odesyus back on Azuremyst.
+turnin The Kessel Run
+accept Declaration of Power
+complete A Favorite Treat
+complete Alien Predators | Bloodmyst ravagers near the crossing.
+turnin A Favorite Treat
+turnin Alien Predators
+complete Declaration of Power | Plant the Stillpine banner at the Bristlelimb Enclave south-east.
+accept Saving Princess Stillpine | Princess Stillpine, inside the furbolg enclave.
+complete Saving Princess Stillpine | Kill Bristlelimb furbolgs for the key.
+turnin Saving Princess Stillpine
+turnin Declaration of Power
+accept Report to Exarch Admetius
+turnin Report to Exarch Admetius | Blood Watch.
+accept What Argus Means to Me
+turnin What Argus Means to Me
+accept Blood Watch
+accept Learning from the Crystals | Harbinger Mikolaas.
+accept Catch and Release | Morae.
+accept Know Thine Enemy | Vindicator Aalesia.
+accept Irradiated Crystal Shards | Vindicator Boros.
+accept Maatparm Mushroom Menagerie | Jessera of Mac'Aree.
+accept The Bear Necessities | Tracker Lyceon.
+accept Constrictor Vines
+bind Blood Watch
+fp Blood Watch
+turnin Learning from the Crystals
+accept The Missing Survey Team
+turnin The Missing Survey Team | Draenei Cartographer east of Blood Watch.
+accept Salvaging the Data
+complete Salvaging the Data
+complete Blood Watch | Sunhawk agents at the Sunhawk camp south-west.
+turnin Salvaging the Data
+accept The Second Sample
+turnin Blood Watch
+accept Intercepting the Message
+complete Catch and Release | Use the tagging kit on a blood elf at Ruins of Loreth'Aran.
+complete Know Thine Enemy | Wrathscale naga at the Wrathscale Lair (west).
+complete Constrictor Vines | Thorn Flayers west of Blood Watch.
+complete The Bear Necessities | Elder Brown Bears.
+complete Maatparm Mushroom Menagerie | Mushrooms near water.
+turnin Catch and Release
+accept Victims of Corruption
+turnin Know Thine Enemy
+accept Containing the Threat
+turnin Constrictor Vines
+turnin The Bear Necessities
+accept Culling the Flutterers
+turnin Maatparm Mushroom Menagerie
+accept Ysera's Tears
+complete The Second Sample
+complete Intercepting the Message | Sunhawk Agents.
+turnin The Second Sample
+accept The Final Sample
+turnin Intercepting the Message
+accept Translations...
+turnin Translations...
+accept Audience with the Prophet
+turnin Audience with the Prophet
+accept Truth or Fiction
+turnin Truth or Fiction
+accept I Shoot Magic Into the Darkness
+complete I Shoot Magic Into the Darkness | Axxarien, north-east.
+complete Victims of Corruption | Corrupted treants.
+complete Culling the Flutterers | Mutated Flutterers.
+complete Containing the Threat | Satyrs and demons at Axxarien.
+complete Irradiated Crystal Shards [optional] | Shards drop from many mobs on the isle.
+turnin I Shoot Magic Into the Darkness
+accept The Cryo-Core
+turnin Victims of Corruption
+turnin Culling the Flutterers
+turnin Containing the Threat
+turnin Irradiated Crystal Shards [optional] | Hand in shards for rewards whenever you have 10.
+accept Searching for Galaen | Morae.
+complete Searching for Galaen | Galaen's corpse is at the Bloodcurse Isle shore west.
+turnin Searching for Galaen
+accept Galaen's Fate
+accept Galaen's Journal - The Fate of Vindicator Saruan
+complete Galaen's Fate
+complete The Cryo-Core | Sunhawk outpost at the Cryo-Core, south-west.
+turnin The Cryo-Core
+accept Don't Drink the Water
+turnin Galaen's Fate
+turnin Galaen's Journal - The Fate of Vindicator Saruan
+accept Matis the Cruel
+complete Matis the Cruel [group=2] | Patrols the Sunhawk camp roads.
+turnin Matis the Cruel
+complete Don't Drink the Water
+turnin Don't Drink the Water
+accept Limits of Physical Exhaustion
+complete Limits of Physical Exhaustion
+turnin Limits of Physical Exhaustion
+accept The Sun Gate
+complete The Sun Gate
+turnin The Sun Gate
+complete Ysera's Tears | Pink pools north-east.
+turnin Ysera's Tears
+complete The Final Sample | The large crystal at the Vector Coil.
+turnin The Final Sample
+accept What We Know...
+turnin What We Know...
+accept What We Don't Know...
+turnin What We Don't Know...
+accept Vindicator's Rest
+turnin Vindicator's Rest | Vindicator Corin, Vindicator's Rest (west).
+accept Clearing the Way
+accept Oh, the Tangled Webs They Weave
+accept Fouled Water Spirits
+complete Clearing the Way | Ravagers and Spiders at the camp.
+complete Oh, the Tangled Webs They Weave
+complete Fouled Water Spirits
+turnin Clearing the Way
+turnin Oh, the Tangled Webs They Weave
+turnin Fouled Water Spirits
+level 19
+train | Exodar trainers.
+note Take the boat from Valaar's Berth (Azuremyst) to Auberdine, then follow the road south through Darkshore to Ashenvale.

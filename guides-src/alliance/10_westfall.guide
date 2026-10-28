@@ -1,0 +1,60 @@
+# TBCGuide - Westfall (10-15), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Westfall
+@name Westfall
+@faction Alliance
+@levels 10-16
+@zone Westfall
+@chapter Azeroth
+@desc Farms of northern Westfall, Sentinel Hill and the Jangolode Mine, then the coast and the Defias chain up to Moonbrook. Leaves for Redridge at about 15-16.
+@next A_Redridge
+
+accept Westfall Stew | Verna Furlbrow waits by the wagon at the Furlbrow farm, just over the Elwynn border.
+accept Poor Old Blanchy
+accept The Forgotten Heirloom
+turnin 36 Westfall Stew | Salma Saldean, Saldean's Farm.
+accept 38 Westfall Stew
+accept Goretusk Liver Pie
+accept The Killing Fields
+turnin Report to Gryan Stoutmantle | Sentinel Hill tower.
+accept 12 The People's Militia
+accept Patrolling Westfall
+accept Red Leather Bandanas
+fp Sentinel Hill
+complete The Killing Fields | Harvest Watchers in the fields around Saldean's and the Molsen farm.
+complete Poor Old Blanchy | Oat sacks lie in the fields; take them back to Verna.
+complete Goretusk Liver Pie | Goretusks everywhere in the north.
+complete 38 Westfall Stew | Murlocs on the coast drop Murloc Eyes; Goretusks give snouts; vultures give Stringy Vulture Meat. Okra comes from the field crates.
+complete The Forgotten Heirloom | The pocket watch is in a box in the Alexston farmstead barn.
+turnin Poor Old Blanchy
+turnin The Forgotten Heirloom
+turnin The Killing Fields
+turnin Goretusk Liver Pie
+turnin 38 Westfall Stew
+complete 12 The People's Militia | Defias Trappers and Smugglers north of Jangolode Mine.
+complete Patrolling Westfall | Gnolls south of Sentinel Hill.
+complete Red Leather Bandanas | Any Defias in Westfall drops them.
+turnin 12 The People's Militia
+accept 13 The People's Militia
+turnin Patrolling Westfall
+turnin Red Leather Bandanas
+complete 13 The People's Militia | Defias Pathstalkers and Highwaymen west of the Jangolode Mine.
+turnin 13 The People's Militia
+accept 14 The People's Militia
+accept 65 The Defias Brotherhood | Leads to Lakeshire (Redridge); you will hand it in there.
+accept Keeper of the Flame | Captain Grayson at the Westfall Lighthouse.
+accept The Coast Isn't Clear
+complete Keeper of the Flame | Kill Gnoll Mystics on the coast for Flasks of Oil.
+complete The Coast Isn't Clear | Murlocs along the shore north of the lighthouse.
+turnin Keeper of the Flame
+turnin The Coast Isn't Clear
+accept The Coastal Menace [elite; group=2; optional] | Old Murk-Eye (elite murloc). Skip if solo below level 16.
+complete 14 The People's Militia | Defias Looters and Pillagers around the Moonbrook area.
+turnin 14 The People's Militia
+complete The Coastal Menace [elite; group=2; optional]
+turnin The Coastal Menace [optional]
+level 15 | Grind Defias around Moonbrook if needed.
+train | Train in Stormwind or Goldshire before leaving.
+note The Deadmines (dungeon, 17-21) starts in Moonbrook. Most of its quests come later with the Defias Brotherhood chain.
+fly Lakeshire | Walk from Elwynn's east road into Redridge, or fly if you already have the Lakeshire flight path.

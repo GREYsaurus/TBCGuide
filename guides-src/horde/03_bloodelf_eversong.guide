@@ -1,0 +1,122 @@
+# TBCGuide - Blood Elf start: Sunstrider Isle and Eversong Woods (1-11)
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_BloodElf_Eversong
+@name Sunstrider Isle & Eversong Woods
+@faction Horde
+@races BloodElf
+@levels 1-11
+@zone Eversong Woods
+@chapter Azeroth
+@start
+@desc Blood elf starting route (TBC). Sunstrider Isle to about 5, then Falconwing Square, Fairbreeze Village, the Sunsail Anchorage, Stillwhisper Pond and Farstrider Retreat. Continues in the Ghostlands.
+@next H_BloodElf_Ghostlands
+
+accept Reclaiming Sunstrider Isle | Magistrix Erona.
+complete Reclaiming Sunstrider Isle | Mana Wyrms around the isle.
+turnin Reclaiming Sunstrider Isle
+accept Unfortunate Measures
+accept Report to Lanthan Perilon
+accept Solanian's Belongings | Well Watcher Solanian.
+accept The Shrine of Dath'Remar
+accept A Fistful of Slivers | Arcanist Ithanas.
+accept Thirst Unending | Arcanist Helion.
+turnin Report to Lanthan Perilon
+accept Aggression
+complete Unfortunate Measures | Springpaw Cubs and Lynxes.
+complete Aggression | Tender and Feral Tenders.
+complete Solanian's Belongings | Scrying orb, scroll and journal around the isle.
+complete The Shrine of Dath'Remar | Read the plaque at the shrine.
+complete A Fistful of Slivers | Arcane Slivers from tenders and wyrms.
+complete Thirst Unending | Use Arcane Torrent on a Mana Wyrm.
+turnin Unfortunate Measures
+turnin Aggression
+accept Felendren the Banished
+turnin Solanian's Belongings
+turnin The Shrine of Dath'Remar
+turnin A Fistful of Slivers
+turnin Thirst Unending
+complete Felendren the Banished | Top of the Falthrien Academy.
+turnin Felendren the Banished
+accept Aiding the Outrunners
+train | Trainers on Sunstrider Isle.
+turnin Aiding the Outrunners | Outrunner Alarion, on the bridge.
+accept Slain by the Wretched
+turnin Slain by the Wretched
+accept Package Recovery
+turnin Package Recovery
+accept Completing the Delivery
+turnin Completing the Delivery | Falconwing Square.
+accept Unstable Mana Crystals | Aeldon Sunbrand.
+accept Major Malfunction | Magister Jaronis.
+accept Wanted: Thaelis the Hungerer
+accept Darnassian Intrusions
+accept Pelt Collection [optional] | Velan Brightoak.
+bind Falconwing Square
+complete Unstable Mana Crystals | Crates at the Ruins of Silvermoon.
+complete Major Malfunction | Arcane Patrollers.
+complete Wanted: Thaelis the Hungerer
+complete Darnassian Intrusions
+turnin Unstable Mana Crystals
+turnin Major Malfunction
+accept Delivery to the North Sanctum
+turnin Wanted: Thaelis the Hungerer
+turnin Darnassian Intrusions
+turnin Delivery to the North Sanctum | Ley-Keeper Caidanis.
+accept Malfunction at the West Sanctum
+turnin Malfunction at the West Sanctum | Ley-Keeper Velania.
+accept Arcane Instability
+complete Arcane Instability | Mana Stalkers and Manawraiths.
+turnin Arcane Instability
+accept Incriminating Documents | Starts from a drop from the Wretched at the Ruins of Silvermoon.
+turnin Incriminating Documents
+accept The Dwarven Spy
+complete The Dwarven Spy | Prospector Anvilward, on the road south of Falconwing Square.
+turnin The Dwarven Spy
+accept Fairbreeze Village
+turnin Fairbreeze Village
+accept The Dead Scar | Ranger Jaela.
+accept Situation at Sunsail Anchorage
+accept A Somber Task | Larianna Riverwind.
+accept Corrupted Soil | Apprentice Mirveda.
+accept Lost Armaments | Velendris Whitemorn.
+accept Defending Fairbreeze Village | Ranger Sareyn.
+fp Fairbreeze Village [optional]
+complete The Dead Scar | Plaguebone Pillagers along the Dead Scar.
+complete Corrupted Soil
+complete Lost Armaments
+turnin The Dead Scar
+turnin Corrupted Soil
+accept Unexpected Results
+complete Unexpected Results
+turnin Unexpected Results
+accept Research Notes
+turnin Lost Armaments
+accept Wretched Ringleader
+complete Situation at Sunsail Anchorage | Grimscale murlocs at the anchorage.
+complete A Somber Task | Old Whitebark's area - wraiths at Stillwhisper Pond.
+complete Defending Fairbreeze Village | Rotlimb and Darkwraiths south of Fairbreeze.
+complete Wretched Ringleader
+turnin Situation at Sunsail Anchorage
+turnin A Somber Task
+turnin Defending Fairbreeze Village
+accept Runewarden Deryan
+turnin Wretched Ringleader
+turnin Research Notes [optional] | Silvermoon City.
+turnin Runewarden Deryan
+accept Powering our Defenses
+complete Powering our Defenses | East Sanctum.
+turnin Powering our Defenses
+accept Farstrider Retreat [optional]
+accept Amani Encroachment | Lieutenant Dawnrunner, Farstrider Retreat.
+complete Amani Encroachment | Amani trolls at Zeb'Watha.
+turnin Amani Encroachment
+accept The Spearcrafter's Hammer [optional]
+accept Zul'Marosh [optional]
+train | Silvermoon City trainers.
+fp Silvermoon City
+accept The Fallen Courier | Apothecary Thedra, south Eversong.
+turnin The Fallen Courier
+accept Delivery to Tranquillien
+level 10
+note Continue south through the Elrendar Falls gate into the Ghostlands.

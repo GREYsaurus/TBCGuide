@@ -1,0 +1,111 @@
+# TBCGuide - Ghostlands (10-20), Horde (Blood Elf route)
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_BloodElf_Ghostlands
+@name Ghostlands (Tranquillien)
+@faction Horde
+@races BloodElf
+@levels 10-20
+@zone Ghostlands
+@chapter Azeroth
+@desc Tranquillien, the three villages, Sanctum of the Moon, the Amani trolls, Windrunner Village and Deatholme. Ends at about 20; go through the Orb of Translocation to the Undercity.
+@next H_Barrens
+
+turnin Delivery to Tranquillien | Tranquillien.
+accept 9327 The Forsaken | Arcanist Vandril.
+turnin 9327 The Forsaken | High Executor Mavren.
+accept Return to Arcanist Vandril
+turnin Return to Arcanist Vandril
+accept Suncrown Village
+accept Tomber's Supplies [optional] | Rathis Tomber.
+accept Help Ranger Valanna! | Ranger Lethvalin.
+accept The Plagued Coast | Apothecary Renzithen.
+accept Salvaging the Past | Magister Darenis.
+fp Tranquillien
+bind Tranquillien
+complete Suncrown Village | Nerubis Guards and Centipedes at Suncrown Village.
+turnin Suncrown Village
+accept Goldenmist Village
+complete Goldenmist Village | Quel'dorei ghosts at Goldenmist Village.
+turnin Goldenmist Village
+accept Windrunner Village
+turnin Help Ranger Valanna! | Ranger Valanna.
+accept Dealing with Zeb'Sora
+complete Dealing with Zeb'Sora | Zeb'Sora trolls.
+turnin Dealing with Zeb'Sora
+accept Report to Captain Helios
+complete The Plagued Coast | Murlocs on the coast.
+complete Salvaging the Past | Relics in Goldenmist.
+turnin The Plagued Coast
+turnin Salvaging the Past
+turnin Report to Captain Helios
+accept Shadowpine Weaponry
+complete Windrunner Village | Windrunner Village spirits.
+turnin Windrunner Village
+accept Forgotten Rituals | Geranis Whitemorn, Sanctum of the Moon.
+accept Spirits of the Drowned | Ranger Krenn'an.
+complete Forgotten Rituals
+complete Spirits of the Drowned
+turnin Forgotten Rituals
+accept Vanquishing Aquantion
+complete Vanquishing Aquantion
+turnin Vanquishing Aquantion
+turnin Spirits of the Drowned
+accept Investigate An'daroth | Dame Auriferous.
+complete Investigate An'daroth
+turnin Investigate An'daroth
+accept Into Occupied Territory
+complete Into Occupied Territory
+turnin Into Occupied Territory
+accept Deliver the Plans to An'telas
+turnin Deliver the Plans to An'telas
+accept Bearers of the Plague | Farstrider Sedina.
+accept Curbing the Plague
+complete Bearers of the Plague
+complete Curbing the Plague
+turnin Bearers of the Plague
+turnin Curbing the Plague
+accept Trouble at the Underlight Mines | Deathstalker Maltendis.
+complete Trouble at the Underlight Mines
+turnin Trouble at the Underlight Mines
+accept Troll Juju
+accept Investigate the Amani Catacombs | Advisor Valwyn.
+complete Troll Juju
+complete Investigate the Amani Catacombs
+complete Shadowpine Weaponry | Shadowpine trolls.
+turnin Troll Juju
+turnin Investigate the Amani Catacombs
+turnin Shadowpine Weaponry
+accept Rotting Hearts | Magistrix Aminel.
+accept Spinal Dust
+complete Rotting Hearts
+complete Spinal Dust
+turnin Rotting Hearts
+turnin Spinal Dust
+accept The Farstrider Enclave
+turnin The Farstrider Enclave
+accept Attack on Zeb'Tela | Farstrider Solanna.
+complete Attack on Zeb'Tela
+turnin Attack on Zeb'Tela
+accept Assault on Zeb'Nowa
+complete Assault on Zeb'Nowa
+turnin Assault on Zeb'Nowa
+accept The Traitor's Shadow | Ranger Vynna.
+complete The Traitor's Shadow
+turnin The Traitor's Shadow
+accept Hints of the Past
+turnin Hints of the Past
+accept Report to Magister Kaendris
+turnin Report to Magister Kaendris
+accept The Twin Ziggurats
+complete The Twin Ziggurats
+turnin The Twin Ziggurats
+accept War on Deatholme | Magister Idonis.
+accept Dar'Khan's Lieutenants
+complete War on Deatholme
+complete Dar'Khan's Lieutenants [group=2]
+turnin War on Deatholme
+turnin Dar'Khan's Lieutenants
+level 19
+train | Silvermoon City.
+note Take the Orb of Translocation in Silvermoon City to the Undercity, then the zeppelin to Orgrimmar and ride into the Barrens.

@@ -1,0 +1,98 @@
+# TBCGuide - Night Elf start: Shadowglen and Teldrassil (1-11)
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_NightElf_Teldrassil
+@name Shadowglen & Teldrassil
+@faction Alliance
+@races NightElf
+@levels 1-11
+@zone Teldrassil
+@chapter Azeroth
+@start
+@desc Night elf starting route. Shadowglen to about level 5, then Dolanaar, the Ban'ethil Barrow Den, Lake Al'Ameth and the Oracle Glade. Ends with the flight to Auberdine for Darkshore.
+@next A_Darkshore
+
+accept 456 The Balance of Nature | Conservator Ilthalaine, in front of Aldrassil.
+accept The Woodland Protector | Melithar Staghelm.
+complete 456 The Balance of Nature | Young Nightsabers and Young Thistle Boars.
+turnin The Woodland Protector | Tarindrella in the glade.
+accept 459 The Woodland Protector
+turnin 456 The Balance of Nature
+accept 457 The Balance of Nature
+accept Webwood Venom | Gilshalan Windwalker, inside Aldrassil.
+accept A Good Friend | Dirania Silvershine.
+complete 459 The Woodland Protector | Grells around the glade drop Fel Moss.
+turnin 459 The Woodland Protector
+complete 457 The Balance of Nature | Mangy Nightsabers and Thistle Boars.
+turnin 457 The Balance of Nature
+turnin A Good Friend | Iverron, north near the spider cave.
+accept A Friend in Need
+complete Webwood Venom | Webwood Spiders in Shadowthread Cave.
+turnin A Friend in Need
+accept 3521 Iverron's Antidote
+complete 3521 Iverron's Antidote | Hyacinth Mushrooms on the ground, Moonpetal Lilies at the pool, Webwood Ichor from spiders.
+turnin 3521 Iverron's Antidote
+turnin Webwood Venom
+accept Webwood Egg
+complete Webwood Egg | The egg is at the back of Shadowthread Cave.
+turnin Webwood Egg
+accept Tenaron's Summons
+turnin Tenaron's Summons | Top of Aldrassil.
+accept 921 Crown of the Earth
+complete 921 Crown of the Earth | Fill the phial at the moonwell north of Aldrassil.
+turnin 921 Crown of the Earth
+accept 928 Crown of the Earth
+train | Your trainer is inside Aldrassil.
+accept Dolanaar Delivery | Porthannius on the path out of Shadowglen.
+turnin Dolanaar Delivery | Innkeeper Keldamyr, Dolanaar.
+bind Dolanaar
+turnin 928 Crown of the Earth | Corithras Moonrage, Dolanaar.
+accept 929 Crown of the Earth
+accept Zenn's Bidding | Zenn Foulhoof, by the river east of Dolanaar.
+accept A Troubling Breeze | Athridas Bearmantle, Dolanaar.
+accept Denalan's Earth | Syral Bladeleaf.
+accept Elixirs for the Bladeleafs
+accept Twisted Hatred | Tallonkai Swiftroot.
+accept Recipe of the Kaldorei | Zarrin.
+turnin Denalan's Earth | Denalan at Lake Al'Ameth, south of Dolanaar.
+accept Timberling Seeds
+accept Timberling Sprouts
+complete Timberling Seeds | Timberlings around the lake.
+complete Timberling Sprouts | Sprouts on the ground around the lake.
+turnin Timberling Seeds
+turnin Timberling Sprouts
+accept Rellian Greenspyre
+complete Zenn's Bidding | Nightsabers, Webwood Lurkers and Strigid Owls around Dolanaar.
+complete Recipe of the Kaldorei | Webwood Lurkers drop Small Spider Legs.
+complete Elixirs for the Bladeleafs | Moonpetal Lilies.
+turnin A Troubling Breeze | Gaerolas Talvethren, top of the hill east of Dolanaar.
+accept Gnarlpine Corruption
+turnin Gnarlpine Corruption
+accept The Relics of Wakening
+complete 929 Crown of the Earth | Fill the phial at the Starbreeze Village moonwell.
+complete Twisted Hatred | Lord Melenas in Fel Rock, near Dolanaar.
+turnin Zenn's Bidding
+turnin Recipe of the Kaldorei
+turnin Elixirs for the Bladeleafs
+turnin Twisted Hatred
+turnin 929 Crown of the Earth
+accept 933 Crown of the Earth
+complete The Relics of Wakening | Ban'ethil Barrow Den, north of Dolanaar.
+turnin The Relics of Wakening
+accept Ursal the Mauler
+complete 933 Crown of the Earth | The Pools of Arlithrien moonwell, south-west.
+complete Ursal the Mauler | Gnarlpine camp south-east of Lake Al'Ameth.
+turnin Ursal the Mauler
+turnin 933 Crown of the Earth
+accept 7383 Crown of the Earth
+complete 7383 Crown of the Earth | The Oracle Glade moonwell in the north-west.
+turnin 7383 Crown of the Earth
+accept 935 Crown of the Earth
+accept The Road to Darnassus [optional] | Moon Priestess Amara patrols the road.
+complete The Road to Darnassus [optional] | Gnarlpine Ambushers along the road west of Dolanaar.
+turnin The Road to Darnassus [optional]
+turnin 935 Crown of the Earth
+train | Darnassus trainers (Warrior's Terrace, Cenarion Enclave).
+fp Rut'theran Village
+note Take the portal in Darnassus down to Rut'theran Village, then fly to Auberdine (Darkshore).
+fly Auberdine

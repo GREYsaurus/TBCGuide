@@ -1,0 +1,120 @@
+# TBCGuide - Zangarmarsh (61-64), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Zangarmarsh
+@name Zangarmarsh (Zabra'jin)
+@faction Horde
+@levels 61-64
+@zone Zangarmarsh
+@chapter Outland
+@desc Cenarion Refuge, Swamprat Post, Zabra'jin and Sporeggar. The Coilfang Reservoir dungeons are optional.
+@next H_Terokkar
+
+accept The Umbrafen Tribe | Ikeyen, Cenarion Refuge.
+accept Plants of Zangarmarsh | Lauranna Thar'well.
+accept The Dying Balance | Lethyn Moonfire.
+accept Disturbance at Umbrafen Lake | Ysiel Windsinger.
+accept Warden Hamoot
+accept Blessings of the Ancients | Windcaller Blackhoof.
+accept The Zapthrottle Mote Extractor! | Mack Diver.
+fp Cenarion Refuge
+turnin Warden Hamoot
+accept A Warm Welcome
+complete The Umbrafen Tribe
+complete Disturbance at Umbrafen Lake
+turnin The Umbrafen Tribe
+accept A Damp, Dark Place
+accept Safeguarding the Watchers
+accept Saving the Sporeloks
+turnin Disturbance at Umbrafen Lake
+accept As the Crow Flies
+complete As the Crow Flies
+turnin As the Crow Flies
+accept Balance Must Be Preserved
+complete A Warm Welcome
+complete A Damp, Dark Place
+complete Safeguarding the Watchers
+complete Saving the Sporeloks
+complete Balance Must Be Preserved
+complete The Dying Balance
+turnin A Warm Welcome
+turnin A Damp, Dark Place
+turnin Safeguarding the Watchers
+turnin Saving the Sporeloks
+turnin Balance Must Be Preserved
+turnin The Dying Balance
+accept Thick Hydra Scales | Zurai, Swamprat Post.
+accept No More Mushrooms! | Magasha.
+accept Menacing Marshfangs | Reavij.
+fp Swamprat Post
+complete Thick Hydra Scales
+complete No More Mushrooms!
+complete Menacing Marshfangs
+turnin Thick Hydra Scales
+accept Searching for Scout Jyoba
+turnin No More Mushrooms!
+accept There's No Explanation for Fashion
+accept A Job Undone
+turnin Menacing Marshfangs
+accept The Respect of Another
+turnin Searching for Scout Jyoba
+accept Jyoba's Report
+complete There's No Explanation for Fashion
+complete A Job Undone
+complete The Respect of Another
+turnin Jyoba's Report
+turnin There's No Explanation for Fashion
+turnin A Job Undone
+turnin The Respect of Another
+accept Report to Shadow Hunter Denjai
+turnin Report to Shadow Hunter Denjai | Zabra'jin.
+fp Zabra'jin
+bind Zabra'jin
+accept WANTED: Boss Grog'ak
+accept Burstcap Mushrooms, Mon! | Witch Doctor Tor'gash.
+accept Stinging the Stingers | Gambarinka.
+accept Angling to Beat the Competition | Zurjaya.
+complete WANTED: Boss Grog'ak
+complete Burstcap Mushrooms, Mon!
+complete Stinging the Stingers
+complete Angling to Beat the Competition
+turnin WANTED: Boss Grog'ak
+accept Impending Attack
+turnin Burstcap Mushrooms, Mon!
+accept Have You Ever Seen One of These?
+turnin Stinging the Stingers
+accept The Sharpest Blades
+turnin Angling to Beat the Competition
+accept The Biggest of Them All
+accept Pursuing Terrorclaw
+complete Impending Attack
+turnin Impending Attack
+accept Us or Them
+accept Message to the Daggerfen
+complete Us or Them
+complete Message to the Daggerfen
+complete The Sharpest Blades
+complete The Biggest of Them All
+complete Pursuing Terrorclaw
+turnin Us or Them
+turnin Message to the Daggerfen
+turnin The Sharpest Blades
+turnin The Biggest of Them All
+turnin Pursuing Terrorclaw
+accept Watcher Leesa'oh | From Lethyn Moonfire.
+turnin Watcher Leesa'oh
+accept Observing the Sporelings
+accept The Sporelings' Plight | Fahssn.
+accept Natural Enemies
+complete Observing the Sporelings
+complete The Sporelings' Plight
+complete Natural Enemies
+turnin Observing the Sporelings
+accept A Question of Gluttony
+turnin The Sporelings' Plight
+turnin Natural Enemies
+complete A Question of Gluttony
+turnin A Question of Gluttony
+turnin The Zapthrottle Mote Extractor! [optional]
+level 63
+note Ride south from Zabra'jin into Terokkar Forest; Stonebreaker Hold is the Horde town. Shattrath is on the way.

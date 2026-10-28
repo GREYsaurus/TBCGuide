@@ -1,0 +1,60 @@
+# TBCGuide - Thousand Needles (29-33), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_ThousandNeedles
+@name Thousand Needles (Freewind Post)
+@faction Horde
+@levels 29-33
+@zone Thousand Needles
+@chapter Azeroth
+@desc Freewind Post, the Grimtotem and centaur camps, and the Shimmering Flats racing goblins and gnomes.
+@next H_Arathi
+
+accept Message to Freewind Post | Brave Moonhorn at the Great Lift, on the Barrens side.
+fp Freewind Post
+turnin Message to Freewind Post | Cliffwatcher Longhorn.
+bind Freewind Post
+accept Pacify the Centaur | Cliffwatcher Longhorn.
+accept Wanted - Arnak Grimtotem [optional]
+accept Alien Egg | Hagar Lightninghoof.
+accept Serpent Wild
+accept Sacred Fire | Motega Firemane.
+accept Wind Rider | Elu.
+complete Pacify the Centaur | Galak centaur west of Freewind.
+complete Alien Egg | The egg is in the Roguefeather den.
+complete Serpent Wild | Wind serpents.
+complete Sacred Fire
+complete Wind Rider
+turnin Pacify the Centaur
+accept Grimtotem Spying
+turnin Alien Egg
+turnin Serpent Wild
+turnin Sacred Fire
+accept Arikara
+turnin Wind Rider
+complete Grimtotem Spying
+complete Arikara
+turnin Grimtotem Spying
+turnin Arikara
+accept Hypercapacitor Gizmo | Wizlo Bearingshiner.
+complete Hypercapacitor Gizmo
+turnin Hypercapacitor Gizmo
+accept Salt Flat Venom | Fizzle Brassbolts, Shimmering Flats.
+accept Hardened Shells | Wizzle Brassbolts.
+accept Rocket Car Parts | Kravel Koalbeard.
+accept A Bump in the Road | Trackmaster Zherin.
+accept Load Lightening | Pozzik.
+complete Salt Flat Venom | Scorpids on the salt flats.
+complete Hardened Shells
+complete Rocket Car Parts | Parts scattered on the flats.
+complete A Bump in the Road | Saltstone basilisks.
+complete Load Lightening | Saltstone gazers and crawlers.
+turnin Salt Flat Venom
+turnin Hardened Shells
+turnin Rocket Car Parts
+turnin A Bump in the Road
+turnin Load Lightening
+accept Goblin Sponsorship [optional]
+level 32
+train
+note Take the zeppelin to the Undercity and fly or ride to Hammerfall (Arathi Highlands).

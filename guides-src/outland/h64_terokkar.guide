@@ -1,0 +1,108 @@
+# TBCGuide - Terokkar Forest (63-65), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Terokkar
+@name Terokkar Forest (Stonebreaker Hold)
+@faction Horde
+@levels 63-65
+@zone Terokkar Forest
+@chapter Outland
+@desc Shattrath City (choose Aldor or Scryers), Stonebreaker Hold, Cenarion Thicket, Firewing Point and the Bone Wastes.
+@next H_Nagrand
+
+accept A'dal [optional] | Leads you to A'dal in Shattrath.
+turnin A'dal [optional]
+fp Shattrath City
+note In Shattrath, pick the Aldor or the Scryers. Either is fine for leveling.
+accept Arakkoa War Path | Advisor Faila, Stonebreaker Hold.
+accept An Unwelcome Presence | Kurgatok.
+accept Magical Disturbances
+accept Vestments of the Wolf Spirit | Malukaz.
+accept Stymying the Arakkoa | Rokag.
+accept Olemba Seed Oil | Rakoria.
+accept What Happens in Terokkar Stays in Terokkar | Shadowstalker Kaide.
+accept Speak with Scout Neftis
+accept Wanted: Bonelashers Dead!
+fp Stonebreaker Hold
+bind Stonebreaker Hold
+complete Arakkoa War Path
+complete An Unwelcome Presence
+complete Magical Disturbances
+complete Vestments of the Wolf Spirit
+complete Stymying the Arakkoa
+complete Olemba Seed Oil
+complete What Happens in Terokkar Stays in Terokkar
+turnin Arakkoa War Path
+turnin An Unwelcome Presence
+accept The Firewing Liaison
+turnin Magical Disturbances
+turnin Vestments of the Wolf Spirit
+accept Patriarch Ironjaw
+turnin Stymying the Arakkoa
+turnin Olemba Seed Oil
+accept And Now, the Moment of Truth
+turnin What Happens in Terokkar Stays in Terokkar
+turnin Speak with Scout Neftis
+accept Who Are They?
+complete Who Are They?
+turnin Who Are They?
+accept Kill the Shadow Council!
+complete Kill the Shadow Council!
+turnin Kill the Shadow Council!
+complete The Firewing Liaison
+complete Patriarch Ironjaw
+complete And Now, the Moment of Truth
+complete Wanted: Bonelashers Dead!
+turnin The Firewing Liaison
+turnin Patriarch Ironjaw
+accept Welcoming the Wolf Spirit
+turnin And Now, the Moment of Truth
+turnin Wanted: Bonelashers Dead!
+accept Torgos! [group=2; optional]
+turnin Welcoming the Wolf Spirit
+accept 9960 What's Wrong at Cenarion Thicket? | Tooki.
+turnin 9960 What's Wrong at Cenarion Thicket? | Earthbinder Tavgren, Cenarion Thicket.
+accept Strange Energy
+accept Clues in the Thicket
+complete Strange Energy
+complete Clues in the Thicket
+turnin Strange Energy
+turnin Clues in the Thicket
+accept By Any Means Necessary
+turnin By Any Means Necessary
+accept Wind Trader Lathrai
+turnin Wind Trader Lathrai
+accept A Personal Favor
+complete A Personal Favor
+turnin A Personal Favor
+accept Investigate Tuurem
+turnin Investigate Tuurem
+accept What Are These Things?
+turnin What Are These Things?
+accept Report to Stonebreaker Camp
+turnin Report to Stonebreaker Camp
+accept Attack on Firewing Point
+complete Attack on Firewing Point
+turnin Attack on Firewing Point
+accept The Final Code
+complete The Final Code
+turnin The Final Code
+accept Letting Earthbinder Tavgren Know
+turnin Letting Earthbinder Tavgren Know
+accept An Improper Burial | Commander Ra'vaj, Sha'tari Base Camp.
+complete An Improper Burial
+turnin An Improper Burial
+accept A Hero Is Needed
+complete A Hero Is Needed
+turnin A Hero Is Needed
+accept The Fallen Exarch
+complete The Fallen Exarch
+turnin The Fallen Exarch
+accept For the Fallen
+complete For the Fallen
+turnin For the Fallen
+accept Terokkarantula
+complete Terokkarantula [group=2]
+turnin Terokkarantula
+level 65
+note Ride west from Shattrath into Nagrand; Garadar is the Horde town in the north.

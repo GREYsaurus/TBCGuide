@@ -1,0 +1,44 @@
+# TBCGuide - The Hinterlands (45-49), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Hinterlands
+@name The Hinterlands (Aerie Peak)
+@faction Alliance
+@levels 45-49
+@zone The Hinterlands
+@chapter Azeroth
+@desc Aerie Peak, the Witherbark trolls, Skulk Rock, the Featherbeard chain and the Altar of Zul.
+@next Both_UngoroCrater
+
+fp Aerie Peak
+bind Aerie Peak
+accept Troll Necklace Bounty | Fraggar Thundermantle.
+accept Skulk Rock Clean-up
+accept Witherbark Cages | Gryphon Master Talonaxe.
+accept Featherbeard's Endorsement | Ambassador Rualeth (draenei).
+accept A Gesture of Goodwill
+accept Preying on the Predators
+complete Witherbark Cages | Witherbark trolls' cages around the Hinterlands.
+complete Troll Necklace Bounty | Any Witherbark trolls.
+complete Preying on the Predators
+complete A Gesture of Goodwill
+turnin Witherbark Cages
+accept The Altar of Zul
+turnin Troll Necklace Bounty
+turnin Preying on the Predators
+turnin A Gesture of Goodwill
+complete Featherbeard's Endorsement
+turnin Featherbeard's Endorsement
+accept In Pursuit of Featherbeard
+turnin In Pursuit of Featherbeard
+accept Reclaiming the Eggs
+complete Reclaiming the Eggs
+turnin Reclaiming the Eggs
+complete Skulk Rock Clean-up | Oozes at Skulk Rock.
+turnin Skulk Rock Clean-up
+complete The Altar of Zul | Explore the altar (trolls are dense here).
+turnin The Altar of Zul
+accept Thadius Grimshade
+level 48
+train
+note Thadius Grimshade is in the Blasted Lands (Nethergarde Keep) - optional detour. Then fly to Gadgetzan and ride north-west into Un'Goro Crater.

@@ -1,0 +1,57 @@
+## Interface: 20506
+## Title: TBCGuide
+## Notes: Free TBC Classic leveling guides (1-70), bundled quest database and talent guide. GPL-3.0.
+## Author: GREYsaurus
+## Version: 0.1.0
+## Category: Quests
+## SavedVariables: TBCGuideDB
+## SavedVariablesPerCharacter: TBCGuideCharDB
+## OptionalDeps: TomTom
+## X-License: GPL-3.0-only
+## X-Target: TBC Classic Anniversary 2.5.6
+
+# Core
+Core\Init.lua
+Config\Target.lua
+Compat\Compat.lua
+Core\SavedVars.lua
+
+# Bundled quest database (generated from QuestieDB TBC data - see NOTICE.md)
+Database\Schema.lua
+Database\QuestieTBC\Zones.lua
+Database\QuestieTBC\Quests.lua
+Database\QuestieTBC\Npcs.lua
+Database\QuestieTBC\Objects.lua
+Database\QuestieTBC\Items.lua
+Database\RaceClass.lua
+Database\Overrides.lua
+Database\QuestDB.lua
+
+# Guides (generated from guides-src/*.guide by tools/build.ps1)
+Guides\Registry.lua
+Guides\Compiled\Guides.xml
+
+# Classes and talents
+Classes\ClassAdvice.lua
+Talents\Data\TalentTrees.lua
+Talents\Talents.lua
+Talents\Builds\Builds.xml
+
+# Engine
+Core\QuestTracker.lua
+Core\Selector.lua
+Core\Engine.lua
+Core\StepText.lua
+Core\Navigation.lua
+
+# UI
+UI\Widgets.lua
+UI\MainFrame.lua
+UI\Browser.lua
+UI\TalentFrame.lua
+UI\Options.lua
+
+# Commands, diagnostics, start-up
+Core\Commands.lua
+Core\Diagnostics.lua
+Core\Boot.lua

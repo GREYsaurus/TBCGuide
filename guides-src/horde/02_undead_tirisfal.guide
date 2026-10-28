@@ -15,24 +15,24 @@
 accept Rude Awakening | Undertaker Mordo.
 turnin Rude Awakening | Shadow Priest Sarvis.
 accept The Mindless Ones
-accept Rattling the Rattlecages
 complete The Mindless Ones | Mindless Zombies and Wretched Zombies.
-complete Rattling the Rattlecages | Rattlecage Skeletons.
 turnin The Mindless Ones
+accept Rattling the Rattlecages | Offered once The Mindless Ones is turned in.
 accept The Damned
+complete Rattling the Rattlecages | Rattlecage Skeletons.
+complete The Damned | Young Night Webs and Scrawny Duskbats.
 turnin Rattling the Rattlecages
+turnin The Damned
 accept Scavenging Deathknell | Deathguard Saltain.
 accept Marla's Last Wish | Novice Elreth.
-complete The Damned | Young Night Webs and Scrawny Duskbats.
-complete Scavenging Deathknell | Supplies in the houses of Deathknell.
-turnin The Damned
-turnin Scavenging Deathknell
 accept Night Web's Hollow | Executor Arren.
-accept The Scarlet Crusade
+complete Scavenging Deathknell | Supplies in the houses of Deathknell.
 complete Night Web's Hollow | Night Web Spiders in the hollow.
+turnin Scavenging Deathknell
+turnin Night Web's Hollow
+accept The Scarlet Crusade | Offered once Night Web's Hollow is turned in.
 complete The Scarlet Crusade | Scarlet Converts and Initiates east.
 complete Marla's Last Wish | Samuel Fipps; bury Marla's remains in the graveyard.
-turnin Night Web's Hollow
 turnin The Scarlet Crusade
 accept The Red Messenger
 turnin Marla's Last Wish

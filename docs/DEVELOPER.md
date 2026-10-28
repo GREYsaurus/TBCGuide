@@ -21,11 +21,15 @@ TBCGuide/                       the add-on (this folder is what players install)
   Talents/Talents.lua           build expansion/validation, live talent reading (by tier/column)
   Talents/Builds/*.lua          talent builds per class + Builds.xml
   Core/QuestTracker.lua         live quest log + turn-in tracking
+  Core/QuestAuto.lua            quest accept / turn-in automation (escort + reward-choice rules)
+  Core/Vendor.lua               junk selling at vendors (+ protection list)
+  Core/Orphans.lua              quests in the log the route will never turn in; confirmed abandon
+  Database/EscortQuests.lua     curated never-auto-accept list (one of several escort signals)
   Core/Selector.lua             recommended guide / route for a character
   Core/Engine.lua               step state machine, auto/manual progression
   Core/StepText.lua             step text + navigation target per step
   Core/Navigation.lua           arrow, world-map pin, TomTom
-  UI/*.lua                      main window, browser, talent calculator, options
+  UI/*.lua                      main window, browser, talent calculator, options, automation options, orphan window
   Core/Commands.lua             /tbcg
   Core/Diagnostics.lua          /tbcg debug ...
   Core/Boot.lua                 ADDON_LOADED / PLAYER_LOGIN sequence (each stage pcall-guarded)
@@ -41,7 +45,7 @@ docs/                           documentation; docs/generated/ holds build logs
 powershell -ExecutionPolicy Bypass -File tools/build.ps1 all
 ```
 
-`all` runs `guides`, `lint`, `validate`, `report` and `package`. Individual commands are documented at the top of `tools/build.ps1`. `zonequests "<Zone>" <Faction>` is an authoring aid that lists every quest in a zone from the bundled data.
+`all` runs `guides`, `lint`, `validate`, `routes`, `report` and `package`. `routes` is the route optimization model (see docs/ROUTE_OPTIMIZATION.md); it fails the build on impossible quest orders or quest-log overflow. Individual commands are documented at the top of `tools/build.ps1`. `zonequests "<Zone>" <Faction>` is an authoring aid that lists every quest in a zone from the bundled data.
 
 ## The lint gate
 
@@ -66,5 +70,10 @@ The allowlist is deliberately small and annotated. **Adding a WoW API is a revie
   ```bash
   lua5.1 tests/run_tests.lua
   ```
-  **This harness has not been run.** No Lua interpreter was available when it was written. Treat it as unverified until it passes once.
+  It now runs and passes (284 checks in 0.2.0). Any Lua 5.1 interpreter works. On Windows without one, the Lua 5.1 runtime bundled in Python's `lupa` package works too:
+  ```bash
+  python -m pip install lupa
+  python -c "import lupa.lua51 as l; l.LuaRuntime().execute('dofile(\"tests/run_tests.lua\")')"
+  ```
+- `tests/test_automation.lua` covers junk selling, quest acceptance and turn-in (escort and reward rules), orphaned quests, the speed-route option and setting repair.
 - `tools/build.ps1 lint/validate` are the checks that **were** run (see `docs/COVERAGE_REPORT.md`).

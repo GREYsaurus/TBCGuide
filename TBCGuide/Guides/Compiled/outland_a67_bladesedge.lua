@@ -16,7 +16,6 @@ ns.Guides:Register({
     {"accept",q=10511,title="Strange Brew",npc="Borgrim Stouthammer",z=3522,x=37.4,y=64.7,text="Borgrim Stouthammer.",v=1},
     {"accept",q=10516,title="The Trappings of a Vindicator",npc="Vindicator Vuuleen",z=3522,x=44,y=51.8,text="Vindicator Vuuleen.",v=1},
     {"accept",q=10555,title="Malaise",npc="Daranelle",z=3522,x=37.1,y=65.6,text="Daranelle.",v=1},
-    {"accept",q=10690,title="The Den Mother",npc="Wanted Poster",z=3522,x=36.6,y=67.3,optional=true,v=1},
     {"accept",q=10927,title="Killing the Crawlers",npc="Sentinel Moonwhisper",z=3522,x=32.2,y=91.1,text="Sentinel Moonwhisper.",v=1},
     {"complete",q=10455,title="The Encroaching Wilderness",v=1},
     {"complete",q=10502,title="The Bloodmaul Ogres",v=1},

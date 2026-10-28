@@ -15,12 +15,12 @@
 accept Your Place In The World | Kaltunk at the valley entrance.
 turnin Your Place In The World | Gornek, inside the Den.
 accept Cutting Teeth
-accept Galgar's Cactus Apple Surprise | Galgar, near the Den.
 accept 790 Sarkoth | Hana'zua, wounded near the canyon to the south.
 complete Cutting Teeth | Mottled Boars around the valley.
-complete Galgar's Cactus Apple Surprise | Cactus apples beside the cacti.
 turnin Cutting Teeth
 accept Sting of the Scorpid
+accept Galgar's Cactus Apple Surprise | Galgar, near the Den (offered after Cutting Teeth).
+complete Galgar's Cactus Apple Surprise | Cactus apples beside the cacti.
 turnin Galgar's Cactus Apple Surprise
 complete 790 Sarkoth | Sarkoth is a large scorpid north-west of Hana'zua.
 turnin 790 Sarkoth
@@ -46,10 +46,10 @@ complete Vanquish the Betrayers | Burning Blade cultists in the cave.
 complete Burning Blade Medallion | Yarrog Baneshadow, deep in the cave.
 turnin Thazz'ril's Pick
 turnin Vanquish the Betrayers
+turnin A Peon's Burden [optional] | Innkeeper Grosk, Razor Hill inn.
 turnin Burning Blade Medallion
 accept Report to Sen'jin Village
 train | Trainers are inside the Den.
-accept Report to Orgnil [optional]
 turnin Report to Sen'jin Village | Master Gadrin, Sen'jin Village.
 accept Minshina's Skull
 accept Zalazane
@@ -103,5 +103,6 @@ fp Orgrimmar [zone=Orgrimmar]
 accept Conscript of the Horde | Takrin Pathseeker, outside the western gate.
 level 11
 turnin Conscript of the Horde | Kargal Battlescar at the Barrens border.
+turnin Ak'Zeloth | Ak'Zeloth, at the same outpost.
 accept Crossroads Conscription
 note Follow the road west into the Barrens; the Crossroads is the main hub.

@@ -17,7 +17,6 @@ turnin 9327 The Forsaken | High Executor Mavren.
 accept Return to Arcanist Vandril
 turnin Return to Arcanist Vandril
 accept Suncrown Village
-accept Tomber's Supplies [optional] | Rathis Tomber.
 accept Help Ranger Valanna! | Ranger Lethvalin.
 accept The Plagued Coast | Apothecary Renzithen.
 accept Salvaging the Past | Magister Darenis.
@@ -60,10 +59,10 @@ turnin Into Occupied Territory
 accept Deliver the Plans to An'telas
 turnin Deliver the Plans to An'telas
 accept Bearers of the Plague | Farstrider Sedina.
-accept Curbing the Plague
 complete Bearers of the Plague
-complete Curbing the Plague
 turnin Bearers of the Plague
+accept Curbing the Plague
+complete Curbing the Plague
 turnin Curbing the Plague
 accept Trouble at the Underlight Mines | Deathstalker Maltendis.
 complete Trouble at the Underlight Mines
@@ -101,10 +100,10 @@ accept The Twin Ziggurats
 complete The Twin Ziggurats
 turnin The Twin Ziggurats
 accept War on Deatholme | Magister Idonis.
-accept Dar'Khan's Lieutenants
 complete War on Deatholme
-complete Dar'Khan's Lieutenants [group=2]
 turnin War on Deatholme
+accept Dar'Khan's Lieutenants
+complete Dar'Khan's Lieutenants [group=2]
 turnin Dar'Khan's Lieutenants
 level 19
 train | Silvermoon City.

@@ -43,7 +43,6 @@ accept 767 Rite of Vision
 accept The Ravaged Caravan | Morin Cloudstalker.
 accept Dangers of the Windfury | Ruul Eagletalon.
 accept Poison Water | Mull Thunderhorn.
-accept Kyle's Gone Missing! [optional]
 complete The Ravaged Caravan | The supply crate at the caravan north-east.
 turnin The Ravaged Caravan
 accept 751 The Ravaged Caravan
@@ -90,7 +89,6 @@ complete Rite of Wisdom
 turnin Rite of Wisdom
 accept Journey into Thunder Bluff
 turnin Journey into Thunder Bluff | Cairne Bloodhoof, Thunder Bluff.
-accept 776 Rites of the Earthmother
 fp Thunder Bluff [zone=Thunder Bluff]
 train | Thunder Bluff trainers.
 accept Journey to the Crossroads [race=Tauren]

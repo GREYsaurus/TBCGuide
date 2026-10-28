@@ -67,3 +67,9 @@ Errors (the build fails): unknown or ambiguous quests, quests not available to t
 Warnings (`docs/generated/guide-warnings.log`): prerequisites not turned in anywhere on the route, turn-ins without an accept, quests whose required level is above the guide's range, repeatable quests, and complete-steps with no objective location in the data.
 
 Write notes only when you are sure of them. For complete-steps, the add-on already shows the quest log objectives and the database objective text.
+
+## Route checks (`tools/build.ps1 routes`)
+
+After compiling, every race/class route is walked step by step (docs/ROUTE_OPTIMIZATION.md). The build fails if a quest is accepted before one of its prerequisites is turned in on that route, if a complete-step comes before its accept, or if the quest log would exceed 25. Accept a quest after the turn-in that unlocks it, and give every pickup a turn-in somewhere on the route.
+
+An `[optional]` turn-in of a quest accepted in an **earlier** guide (a breadcrumb) is skipped automatically for players who do not have it in their log. A non-optional one is never auto-skipped.

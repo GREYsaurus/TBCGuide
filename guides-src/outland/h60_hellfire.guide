@@ -26,7 +26,6 @@ accept Bonechewer Blood | Vurtok Axebreaker.
 accept I Work... For the Horde! | Megzeg Nukklebust.
 accept Preparing the Salve | Grelag.
 accept The Warp Rifts | Ogath the Mad.
-accept Wanted: Blacktalon the Savage [optional]
 turnin Eradicate the Burning Legion | Sergeant Shatterskull, Reaver's Fall area.
 accept Felspark Ravine
 complete Felspark Ravine | Demons in Felspark Ravine.
@@ -74,10 +73,10 @@ complete The Demoniac Scryer
 turnin The Demoniac Scryer
 accept Report to Nazgrel
 accept Wanted: Worg Master Kruush | Spinebreaker Post wanted poster.
-accept The Eyes of Grillok | Zezzak.
 complete Wanted: Worg Master Kruush | Zeth'Gor (east).
-complete The Eyes of Grillok
 turnin Wanted: Worg Master Kruush
+accept The Eyes of Grillok | Zezzak.
+complete The Eyes of Grillok
 accept Zeth'Gor Must Burn!
 turnin The Eyes of Grillok
 accept Grillok "Darkeye"
@@ -92,7 +91,6 @@ complete Forge Camp: Mageddon
 turnin Burn It Up... For the Horde!
 turnin Investigate the Crash
 turnin Void Ridge
-accept From the Abyss
 turnin Forge Camp: Mageddon
 accept Cannons of Rage
 complete Cannons of Rage
@@ -101,7 +99,6 @@ accept Doorway to the Abyss
 complete Doorway to the Abyss
 turnin Doorway to the Abyss
 turnin Report to Nazgrel
-accept The Foot of the Citadel
 accept The Assassin
 turnin The Assassin | The fel orc corpse north of Thrallmar.
 accept A Strange Weapon
@@ -113,7 +110,6 @@ complete A Spirit Guide
 turnin A Spirit Guide
 accept The Mag'har
 turnin The Mag'har
-accept Messenger to Thrall [optional]
 accept 9498 Falcon Watch [race=Orc,Troll,Tauren,Scourge] | Martik Tor'seldori.
 accept 9499 Falcon Watch [race=BloodElf]
 turnin 9498 Falcon Watch [race=Orc,Troll,Tauren,Scourge]

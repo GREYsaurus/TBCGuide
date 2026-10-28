@@ -36,7 +36,6 @@ ns.Guides:Register({
     {"turnin",q=2877,title="Skulk Rock Clean-up",npc="Fraggar Thundermantle",z=47,x=14.8,y=44.6,v=1},
     {"complete",q=2989,title="The Altar of Zul",text="Explore the altar (trolls are dense here).",v=1},
     {"turnin",q=2989,title="The Altar of Zul",npc="Gryphon Master Talonaxe",z=47,x=9.8,y=44.5,v=1},
-    {"accept",q=2990,title="Thadius Grimshade",npc="Gryphon Master Talonaxe",z=47,x=9.8,y=44.5,v=1},
     {"level",level=48,v=1},
     {"train",text="No druid trainer in this zone - train at the next town or capital.",classes={"DRUID"},v=1},
     {"train",text="No hunter trainer in this zone - train at the next town or capital.",classes={"HUNTER"},v=1},

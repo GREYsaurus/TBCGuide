@@ -61,7 +61,6 @@ ns.Guides:Register({
     {"complete",q=919,title="Timberling Sprouts",text="Sprouts on the ground around the lake.",v=1},
     {"turnin",q=918,title="Timberling Seeds",npc="Denalan",z=141,x=60.9,y=68.5,v=1},
     {"turnin",q=919,title="Timberling Sprouts",npc="Denalan",z=141,x=60.9,y=68.5,v=1},
-    {"accept",q=922,title="Rellian Greenspyre",npc="Denalan",z=141,x=60.9,y=68.5,v=1},
     {"complete",q=488,title="Zenn's Bidding",text="Nightsabers, Webwood Lurkers and Strigid Owls around Dolanaar.",v=1},
     {"complete",q=4161,title="Recipe of the Kaldorei",text="Webwood Lurkers drop Small Spider Legs.",v=1},
     {"complete",q=1581,title="Elixirs for the Bladeleafs",text="Moonpetal Lilies.",v=1},

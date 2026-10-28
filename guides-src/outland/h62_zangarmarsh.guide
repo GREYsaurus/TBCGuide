@@ -16,6 +16,8 @@ accept The Dying Balance | Lethyn Moonfire.
 accept Disturbance at Umbrafen Lake | Ysiel Windsinger.
 accept Warden Hamoot
 accept Blessings of the Ancients | Windcaller Blackhoof.
+complete Blessings of the Ancients | Speak to the ancients Ashyen and Keleth, right here at the Refuge.
+turnin Blessings of the Ancients
 accept The Zapthrottle Mote Extractor! | Mack Diver.
 fp Cenarion Refuge
 turnin Warden Hamoot
@@ -42,6 +44,8 @@ turnin A Damp, Dark Place
 turnin Safeguarding the Watchers
 turnin Saving the Sporeloks
 turnin Balance Must Be Preserved
+complete Plants of Zangarmarsh [optional] | 10 Unidentified Plant Parts drop from Zangarmarsh creatures as you quest.
+turnin Plants of Zangarmarsh [optional] | Lauranna Thar'well; hand in whenever you are back with 10 parts.
 turnin The Dying Balance
 accept Thick Hydra Scales | Zurai, Swamprat Post.
 accept No More Mushrooms! | Magasha.
@@ -81,7 +85,6 @@ complete Angling to Beat the Competition
 turnin WANTED: Boss Grog'ak
 accept Impending Attack
 turnin Burstcap Mushrooms, Mon!
-accept Have You Ever Seen One of These?
 turnin Stinging the Stingers
 accept The Sharpest Blades
 turnin Angling to Beat the Competition

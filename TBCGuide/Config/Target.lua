@@ -34,6 +34,8 @@ ns.Target = {
     end,
     -- Through the Dark Portal (quest 9407/10119) requires level 58 in TBC.
     outlandMinLevel = 58,
+    -- Quest log capacity in TBC (MAX_QUESTLOG_QUESTS). Used only if the client does not report it.
+    questLogMax = 25,
     -- Default XP multiplier (1 = Blizzard retail-like rates). Used only for advisory "grind" notes.
     xpRate = 1,
     -- Races/classes are generated from client tables into Database/RaceClass.lua.

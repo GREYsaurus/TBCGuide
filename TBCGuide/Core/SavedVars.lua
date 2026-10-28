@@ -29,13 +29,29 @@ local accountDefaults = {
         hideCompletedOptional = false,
         showDungeonSteps = true,
         showElite = true,
+        speedRoute = false,       -- maximum-speed route: hide [optional] side quests (documented default: off)
         talentHints = true,       -- remind when talent points are unspent
+        -- Automation (docs/AUTOMATION.md). Quest automation only ever touches quests that have an
+        -- open step in the active guide; escort quests and reward choices are always manual.
+        autoAccept = true,          -- accept guide quests when their offer panel opens
+        autoAcceptOptional = false, -- ...including steps marked [optional]
+        autoAcceptGroup = false,    -- ...including [elite]/[group]/[dungeon] steps
+        autoTurnIn = true,          -- turn in guide quests that need no reward choice
+        turnInUnrelated = false,    -- also turn in completed quests that are not in the guide
+        questNotify = true,         -- chat messages for accepted / turned-in / manual quests
+        autoSellJunk = false,       -- OFF by default: sell grey (Poor) items when a vendor opens
+        sellNotify = true,          -- chat summary of junk sales
+        sellNotifyItems = false,    -- one chat line per item sold
     },
+    protectedItems = {},    -- [itemID] = true: never sold automatically
+    protectedClasses = {},  -- [itemClassID] = true/false: overrides Vendor.CLASSES defaults
+    escortExtra = {},       -- [questID] = true: extra quests that must never be auto-accepted
     frames = {
         main = { point = "RIGHT", x = -60, y = 120, w = 320, h = 230, minimized = false, shown = true },
         browser = { point = "CENTER", x = 0, y = 0 },
         talents = { point = "CENTER", x = 0, y = 0 },
         arrow = { point = "TOP", x = 0, y = -120 },
+        orphans = { point = "CENTER", x = 0, y = 0 },
     },
 }
 
@@ -46,6 +62,7 @@ local charDefaults = {
     history = {},       -- recently used guide ids (most recent first)
     talentBuild = nil,  -- chosen build id for this character
     simTalents = {},    -- [class] = { [talentId] = rank } simulated allocation in the calculator
+    junkStats = { items = 0, copper = 0 }, -- confirmed automatic junk sales (all time)
 }
 
 local function sanitizeProgress(p)
@@ -70,6 +87,13 @@ function ns:InitSavedVariables()
     TBCGuideCharDB.progress = sanitizeProgress(TBCGuideCharDB.progress)
     if type(TBCGuideCharDB.history) ~= "table" then TBCGuideCharDB.history = {} end
     if type(TBCGuideCharDB.simTalents) ~= "table" then TBCGuideCharDB.simTalents = {} end
+    for _, key in ipairs({ "protectedItems", "protectedClasses", "escortExtra" }) do
+        if type(TBCGuideDB[key]) ~= "table" then TBCGuideDB[key] = {} end
+    end
+    local js = TBCGuideCharDB.junkStats
+    if type(js) ~= "table" or type(js.items) ~= "number" or type(js.copper) ~= "number" then
+        TBCGuideCharDB.junkStats = { items = 0, copper = 0 }
+    end
     if TBCGuideCharDB.activeGuide ~= nil and type(TBCGuideCharDB.activeGuide) ~= "string" then
         TBCGuideCharDB.activeGuide = nil
     end

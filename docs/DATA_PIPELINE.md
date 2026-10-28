@@ -64,3 +64,7 @@ If quests changed upstream, the guide compiler reports any guide step whose ques
 | `Talents/Data/TalentTrees.lua` | client DB2 `Talent`, `TalentTab`, `SpellName` | `ClientTables.cs` |
 | `Database/RaceClass.lua` | client DB2 `CharBaseInfo`, `ChrRaces` | `ClientTables.cs` |
 | `Guides/Compiled/*.lua` | `guides-src/*.guide` + the files above | `GuideCompiler.cs` |
+
+## Quest flags (0.2.0)
+
+The importer now also exports QuestieDB `questFlags` as quest field 26 (`ns.QDB.QUEST.FLAGS`). Bit 2 (`PARTY_ACCEPT`) is one of the escort signals used by the quest automation (`DB.GetEscortStatus`, docs/AUTOMATION.md). Re-importing at the pinned commit changes only `Quests.lua`, and only by appending that field.

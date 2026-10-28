@@ -18,9 +18,6 @@ accept Roll the Bones | Spark Nilminer.
 accept Crystals of Power | J.D. Collie.
 accept The Apes of Un'Goro | Torwa Pathfinder at the east side of the crater.
 accept The Fare of Lar'korwi
-accept Chasing A-Me 01 [optional]
-accept Lost! [optional]
-accept Shizzle's Flyer [optional]
 fp Marshal's Refuge
 complete The Fare of Lar'korwi | The threshadon carcass is near Torwa.
 turnin The Fare of Lar'korwi
@@ -37,7 +34,6 @@ complete The Bait for Lar'korwi [group=2]
 turnin The Bait for Lar'korwi
 complete The Apes of Un'Goro | Un'Goro gorillas north-east.
 turnin The Apes of Un'Goro
-accept The Mighty U'cha [group=2; optional]
 turnin Beware of Pterrordax
 turnin Expedition Salvation
 turnin Alien Ecology

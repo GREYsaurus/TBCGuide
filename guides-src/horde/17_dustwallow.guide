@@ -14,12 +14,10 @@ fp Brackenwall Village
 bind Brackenwall Village
 accept Inspecting the Ruins | Krog, Brackenwall.
 accept Theramore Spies | Nazeer Bloodpike.
-accept The Theramore Docks
 accept Identifying the Brood | Draz'Zilb.
 accept Army of the Black Dragon | Tharg.
 accept Overlord Mok'Morokk's Concern
 accept What's Haunting Witch Hill? | Mordant Grimsby.
-accept Hungry! [optional] | Mudcrush Durtfeet.
 complete Inspecting the Ruins | The burned Shady Rest Inn.
 turnin Inspecting the Ruins
 accept Suspicious Hoofprints | The hoofprints are at the Shady Rest Inn.
@@ -36,15 +34,19 @@ complete 1323 The Black Shield
 turnin 1323 The Black Shield
 accept 1276 The Black Shield
 turnin 1276 The Black Shield
+accept Return to Krog | Mosarn, right after The Black Shield.
+turnin Return to Krog
 accept More than Coincidence
+accept The Grimtotem Plot
 complete Theramore Spies | Theramore infiltrators around Brackenwall.
-complete The Theramore Docks
 complete Identifying the Brood | Black dragonspawn in the south.
 complete Army of the Black Dragon
 complete Overlord Mok'Morokk's Concern
 complete What's Haunting Witch Hill? | Witch Hill, north.
 complete More than Coincidence
 turnin Theramore Spies
+accept The Theramore Docks
+complete The Theramore Docks
 turnin The Theramore Docks
 turnin Identifying the Brood
 accept 1170 The Brood of Onyxia
@@ -57,7 +59,6 @@ turnin Overlord Mok'Morokk's Concern
 turnin What's Haunting Witch Hill?
 accept The Witch's Bane
 turnin More than Coincidence
-accept The Grimtotem Plot
 complete 1172 The Brood of Onyxia | Destroy the eggs in Wyrmbog.
 complete The Witch's Bane
 complete The Grimtotem Plot
@@ -65,8 +66,6 @@ turnin 1172 The Brood of Onyxia
 turnin The Witch's Bane
 accept Cleansing Witch Hill
 turnin The Grimtotem Plot
-accept Return to Krog
-turnin Return to Krog
 accept Seek Out Tabetha
 turnin Seek Out Tabetha
 accept Raze Direhorn Post!

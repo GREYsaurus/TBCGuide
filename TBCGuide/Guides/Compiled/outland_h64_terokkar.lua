@@ -56,7 +56,6 @@ ns.Guides:Register({
     {"accept",q=10791,title="Welcoming the Wolf Spirit",npc="Malukaz",z=3519,x=50.2,y=46.4,v=1},
     {"turnin",q=10201,title="And Now, the Moment of Truth",npc="Rakoria",z=3519,x=50.1,y=44.9,v=1},
     {"turnin",q=10034,title="Wanted: Bonelashers Dead!",npc="Mawg Grimshot",z=3519,x=49.2,y=45.9,v=1},
-    {"accept",q=10036,title="Torgos!",npc="Mawg Grimshot",z=3519,x=49.2,y=45.9,optional=true,group=2,v=1},
     {"turnin",q=10791,title="Welcoming the Wolf Spirit",npc="Malukaz",z=3519,x=50.2,y=46.4,v=1},
     {"accept",q=9960,title="What's Wrong at Cenarion Thicket?",npc="Tooki",z=3519,x=50,y=45.9,text="Tooki.",v=1},
     {"turnin",q=9960,title="What's Wrong at Cenarion Thicket?",npc="Earthbinder Tavgren",z=3519,x=44.3,y=26.3,text="Earthbinder Tavgren, Cenarion Thicket.",v=1},

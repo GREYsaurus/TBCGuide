@@ -58,7 +58,6 @@ accept The Longbeards | Sid Limbardi, Honor Hold.
 accept When This Mine's a-Rockin' | Foreman Biggums.
 accept Unyielding Souls | Honor Guard Wesilow.
 accept An Old Gift | Father Malgor Devidicus.
-accept Weaken the Ramparts [group=3; optional] | Lieutenant Chadwick - Hellfire Ramparts dungeon.
 complete Mission: The Murketh and Shaadraz Gateways | Fly over the gateways with the gryphon from Shatter Point.
 turnin Mission: The Murketh and Shaadraz Gateways
 accept Shatter Point
@@ -138,6 +137,7 @@ accept In Search of Sedai | Anchorite Obadei.
 accept Deadly Predators | Scout Vanura.
 accept Cruel Taskmasters | Ikan.
 accept The Rock Flayer Matriarch
+turnin The Longbeards | Gremni Longbeard.
 accept Rampaging Ravagers | Gremni Longbeard.
 accept The Arakkoa Threat
 turnin In Search of Sedai | Sedai's corpse on the road.

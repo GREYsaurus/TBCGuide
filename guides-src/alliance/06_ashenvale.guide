@@ -27,8 +27,6 @@ bind Astranaar
 accept Raene's Cleansing | Raene Wolfrunner, Astranaar.
 accept Culling the Threat
 accept The Zoram Strand | Shindrell Swiftfire.
-accept 1070 On Guard in Stonetalon [optional]
-accept Journey to Stonetalon Peak [optional]
 accept A Helping Hand | Vindicator Palanaar (draenei, Astranaar).
 turnin Orendil's Cure | Pelturas Whitemoon, Astranaar.
 accept Elune's Tear
@@ -36,7 +34,6 @@ complete The Zoram Strand | Wrathtail naga at the strand.
 complete Ruuzel [group=2] | Ruuzel patrols the island off the strand.
 turnin Ruuzel
 turnin The Zoram Strand
-accept Pridewings of Stonetalon [optional]
 complete Raene's Cleansing | Teronis' corpse is at the Zoram Strand ruins.
 turnin Raene's Cleansing
 accept 1023 Raene's Cleansing
@@ -45,12 +42,10 @@ turnin Elune's Tear
 accept The Ruins of Stardust
 complete The Ruins of Stardust | Stardust Covered Bushes south of Astranaar.
 turnin The Ruins of Stardust
-accept Fallen Sky Lake
 complete Culling the Threat
 turnin Culling the Threat
 complete 1023 Raene's Cleansing | Gnarled ancients near the lake drop the Glowing Soul Gem.
 turnin 1023 Raene's Cleansing
-accept 1024 Raene's Cleansing
 accept An Aggressive Defense
 complete An Aggressive Defense | Foulweald furbolgs south of Astranaar.
 turnin An Aggressive Defense

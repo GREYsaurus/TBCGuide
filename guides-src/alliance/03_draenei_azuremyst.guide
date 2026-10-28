@@ -58,9 +58,8 @@ turnin Travel to Azure Watch | Technician Dyvuun, Azure Watch.
 accept Red Snapper - Very Tasty! | Diktynna, on the beach.
 accept Word from Azure Watch [optional]
 accept Medicinal Purpose | Anchorite Fateema, Azure Watch.
+turnin Word from Azure Watch [optional] | Caregiver Chellan, the Azure Watch inn.
 accept Learning the Language | Cryptographer Aurren.
-accept The Missing Fisherman [optional]
-accept Coming of Age | Exarch Menelaous.
 bind Azure Watch
 complete Red Snapper - Very Tasty!
 turnin Red Snapper - Very Tasty!
@@ -82,11 +81,11 @@ complete 10324 The Great Moongraze Hunt
 turnin 10324 The Great Moongraze Hunt
 accept A Small Start | Admiral Odesyus, Odesyus' Landing (south coast).
 accept Cookie's Jumbo Gumbo
-accept I've Got a Plant
 complete A Small Start
 complete Cookie's Jumbo Gumbo | Skittering Crawlers.
-complete I've Got a Plant
 turnin A Small Start
+accept I've Got a Plant
+complete I've Got a Plant
 turnin Cookie's Jumbo Gumbo
 turnin I've Got a Plant
 accept Tree's Company
@@ -127,8 +126,6 @@ accept Search Stillpine Hold
 turnin Search Stillpine Hold
 accept Blood Crystals
 turnin Blood Crystals
-complete Coming of Age
-turnin Coming of Age
 turnin Deliver Them From Evil...
 level 10
 train

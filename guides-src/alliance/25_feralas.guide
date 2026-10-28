@@ -14,7 +14,6 @@ fp Feathermoon Stronghold
 bind Feathermoon Stronghold
 accept The Ruins of Solarsal | Shandris Feathermoon.
 accept The Missing Courier | Latronicus Moonspear.
-accept In Search of Knowledge [optional]
 turnin The Ruins of Solarsal | The gazebo on the island south.
 accept Return to Feathermoon Stronghold
 turnin Return to Feathermoon Stronghold
@@ -27,7 +26,6 @@ turnin 2869 Against the Hatecrest
 accept Against Lord Shalzaru
 complete Against Lord Shalzaru [group=2] | Lord Shalzaru, in the cave on the isle.
 turnin Against Lord Shalzaru
-accept Delivering the Relic [optional]
 turnin The Missing Courier | Ginro Hearthkindle on the mainland dock.
 accept 4125 The Missing Courier
 turnin 4125 The Missing Courier
@@ -55,7 +53,6 @@ complete 2970 Doling Justice | Grimtotem tauren at the compound.
 turnin 2970 Doling Justice
 accept The Giant Guardian | Rockbiter at the Twin Colossals.
 turnin The Giant Guardian
-accept Wandering Shay
 accept Zapped Giants | Zorbin Fandazzle, the coast.
 accept Fuel for the Zapping
 complete Zapped Giants | Use the Zorbin's Ultra-Shrinker on Wave Striders and Land Walkers.

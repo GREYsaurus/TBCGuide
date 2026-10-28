@@ -19,6 +19,7 @@ local CHECKS = {
     { "useTomTom", "Send waypoints to TomTom (if installed)" },
     { "showDungeonSteps", "Show dungeon quest steps" },
     { "showElite", "Show elite / group quest steps" },
+    { "speedRoute", "Maximum-speed route: hide optional side quests" },
     { "talentHints", "Remind me to spend talent points (chat)" },
     { "locked", "Lock window positions" },
     { "debug", "Debug messages" },

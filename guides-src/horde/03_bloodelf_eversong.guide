@@ -16,20 +16,20 @@ accept Reclaiming Sunstrider Isle | Magistrix Erona.
 complete Reclaiming Sunstrider Isle | Mana Wyrms around the isle.
 turnin Reclaiming Sunstrider Isle
 accept Unfortunate Measures
-accept Report to Lanthan Perilon
 accept Solanian's Belongings | Well Watcher Solanian.
 accept The Shrine of Dath'Remar
 accept A Fistful of Slivers | Arcanist Ithanas.
 accept Thirst Unending | Arcanist Helion.
-turnin Report to Lanthan Perilon
-accept Aggression
 complete Unfortunate Measures | Springpaw Cubs and Lynxes.
-complete Aggression | Tender and Feral Tenders.
 complete Solanian's Belongings | Scrying orb, scroll and journal around the isle.
 complete The Shrine of Dath'Remar | Read the plaque at the shrine.
 complete A Fistful of Slivers | Arcane Slivers from tenders and wyrms.
 complete Thirst Unending | Use Arcane Torrent on a Mana Wyrm.
 turnin Unfortunate Measures
+accept Report to Lanthan Perilon
+turnin Report to Lanthan Perilon
+accept Aggression
+complete Aggression | Tender and Feral Tenders.
 turnin Aggression
 accept Felendren the Banished
 turnin Solanian's Belongings
@@ -50,14 +50,13 @@ turnin Completing the Delivery | Falconwing Square.
 accept Unstable Mana Crystals | Aeldon Sunbrand.
 accept Major Malfunction | Magister Jaronis.
 accept Wanted: Thaelis the Hungerer
-accept Darnassian Intrusions
-accept Pelt Collection [optional] | Velan Brightoak.
 bind Falconwing Square
 complete Unstable Mana Crystals | Crates at the Ruins of Silvermoon.
 complete Major Malfunction | Arcane Patrollers.
 complete Wanted: Thaelis the Hungerer
-complete Darnassian Intrusions
 turnin Unstable Mana Crystals
+accept Darnassian Intrusions
+complete Darnassian Intrusions
 turnin Major Malfunction
 accept Delivery to the North Sanctum
 turnin Wanted: Thaelis the Hungerer
@@ -108,11 +107,10 @@ accept Powering our Defenses
 complete Powering our Defenses | East Sanctum.
 turnin Powering our Defenses
 accept Farstrider Retreat [optional]
+turnin Farstrider Retreat [optional] | Lieutenant Dawnrunner.
 accept Amani Encroachment | Lieutenant Dawnrunner, Farstrider Retreat.
 complete Amani Encroachment | Amani trolls at Zeb'Watha.
 turnin Amani Encroachment
-accept The Spearcrafter's Hammer [optional]
-accept Zul'Marosh [optional]
 train | Silvermoon City trainers.
 fp Silvermoon City
 accept The Fallen Courier | Apothecary Thedra, south Eversong.

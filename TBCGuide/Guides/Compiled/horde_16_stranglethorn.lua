@@ -14,7 +14,6 @@ ns.Guides:Register({
     {"accept",q=596,title="Bloody Bone Necklaces",npc="Kin'weelay",z=33,x=32.3,y=27.7,text="Kin'weelay.",v=1},
     {"accept",q=568,title="The Defense of Grom'gol",npc="Commander Aggro'gosh",z=33,x=32.2,y=28.9,text="Commander Aggro'gosh.",v=1},
     {"accept",q=570,title="Mok'thardin's Enchantment",npc="Far Seer Mok'thardin",z=33,x=32.1,y=29.2,text="Far Seer Mok'thardin.",v=1},
-    {"accept",q=9436,title="Bloodscalp Insight",npc="Nemeth Hawkeye",z=33,x=32,y=28.6,text="Nemeth Hawkeye.",optional=true,v=1},
     {"accept",q=583,title="Welcome to the Jungle",npc="Barnil Stonepot",z=33,x=35.7,y=10.5,text="Barnil Stonepot, Nesingwary's Expedition.",v=1},
     {"turnin",q=583,title="Welcome to the Jungle",npc="Hemet Nesingwary Jr.",z=33,x=35.7,y=10.8,v=1},
     {"accept",q=185,title="Tiger Mastery",npc="Ajeck Rouack",z=33,x=35.6,y=10.6,v=1},

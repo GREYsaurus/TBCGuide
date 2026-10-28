@@ -12,16 +12,15 @@
 
 fp Bloodvenom Post
 accept Well of Corruption | Winna Hazzard, Bloodvenom Post.
-accept Corrupted Sabers
 accept Cleansing Felwood | Maybess Riverbreeze, Emerald Sanctuary.
 accept Forces of Jaedenar | Greta Mosshoof, Emerald Sanctuary.
 accept Verifying the Corruption | Taronn Redfeather.
-accept Wild Guardians [optional] | Trull Failbane.
 complete Well of Corruption | Fill the flask at the Irontree moonwell.
-complete Corrupted Sabers | Use the cage on a corrupted saber.
 complete Forces of Jaedenar | Jaedenar cultists.
 complete Verifying the Corruption | Explore north of Shatter Scar Vale.
 turnin Well of Corruption
+accept Corrupted Sabers
+complete Corrupted Sabers | Use the cage on a corrupted saber.
 turnin Corrupted Sabers
 turnin Forces of Jaedenar
 accept Collection of the Corrupt Water

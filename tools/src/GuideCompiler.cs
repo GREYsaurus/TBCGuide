@@ -394,7 +394,8 @@ namespace TBCGuideTools
             if (!Verbs.Contains(verb)) { res.Errors.Add(where + ": unknown step type '" + verb + "'"); return; }
 
             var s = new CStep { Kind = verb, Text = text };
-            s.Line = 0;
+            int ln; int colon = where.LastIndexOf(':');
+            s.Line = colon >= 0 && int.TryParse(where.Substring(colon + 1), out ln) ? ln : 0;
             string v;
             if (flags.TryGetValue("class", out v)) s.Classes = ParseClasses(v, where, res);
             if (flags.TryGetValue("race", out v)) s.Races = ParseRaces(v, where, res);

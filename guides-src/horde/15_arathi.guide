@@ -16,16 +16,12 @@ accept Hammerfall | Gor'mul.
 turnin Hammerfall | Tor'gan.
 turnin The Hammer May Fall | Drum Fel.
 accept 672 Raising Spirits | Tor'gan.
-accept 701 Guile of the Raptor
 accept 677 Call to Arms | Drum Fel.
 accept Foul Magics
 accept The Princess Trapped | The Shards of Myzrael, south-east.
 complete 672 Raising Spirits | Highland Striders.
-complete 701 Guile of the Raptor | Highland raptors.
 turnin 672 Raising Spirits
 accept 674 Raising Spirits
-turnin 701 Guile of the Raptor
-accept 702 Guile of the Raptor
 complete 674 Raising Spirits
 turnin 674 Raising Spirits
 accept 675 Raising Spirits
@@ -38,13 +34,17 @@ turnin Foul Magics
 turnin The Princess Trapped
 accept Stones of Binding
 complete 678 Call to Arms | Stromgarde Keep.
-complete 702 Guile of the Raptor
 complete 675 Raising Spirits
 complete Stones of Binding
 turnin 678 Call to Arms
+turnin 675 Raising Spirits
+accept 701 Guile of the Raptor | Tor'gan offers it once Raising Spirits is done.
+complete 701 Guile of the Raptor | Highland raptors.
+turnin 701 Guile of the Raptor
+accept 702 Guile of the Raptor
+complete 702 Guile of the Raptor
 turnin 702 Guile of the Raptor
 accept 847 Guile of the Raptor
-turnin 675 Raising Spirits
 turnin Stones of Binding
 accept Breaking the Keystone
 complete Breaking the Keystone

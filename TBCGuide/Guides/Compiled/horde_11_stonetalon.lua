@@ -8,6 +8,7 @@ ns.Guides:Register({
   desc="Sun Rock Retreat, Malaka'jin, the Venture Co. at Windshear Crag and the harpies. A short stop before Ashenvale.",
   next={{id="H_Ashenvale"},},
   steps={
+    {"turnin",q=1060,title="Letter to Jin'Zil",npc="Witch Doctor Jin'Zil",z=406,x=74.5,y=97.9,text="Witch Doctor Jin'Zil, if you took the letter in the Barrens.",optional=true,v=1},
     {"accept",q=1058,title="Jin'Zil's Forest Magic",npc="Witch Doctor Jin'Zil",z=406,x=74.5,y=97.9,text="Witch Doctor Jin'Zil, Malaka'jin (south).",v=1},
     {"accept",q=6282,title="Harpies Threaten",npc="Maggran Earthbinder",z=406,x=47.2,y=61.2,text="Maggran Earthbinder, Sun Rock Retreat.",v=1},
     {"accept",q=6562,title="Trouble in the Deeps",npc="Tsunaman",z=406,x=47.4,y=64.2,text="Tsunaman.",v=1},

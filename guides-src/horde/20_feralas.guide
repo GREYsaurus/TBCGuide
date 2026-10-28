@@ -12,9 +12,9 @@
 
 fp Camp Mojache
 bind Camp Mojache
+level 45 | Camp Mojache's quests need level 45. If you are short, kill gnolls and yetis around the camp until you ding.
 accept Dark Heart | Talo Thornhoof, Camp Mojache.
 accept Vengeance on the Northspring
-accept The Strength of Corruption
 accept Zapped Giants | Zorbin Fandazzle on the coast.
 accept Fuel for the Zapping
 complete Vengeance on the Northspring | Northspring harpies.
@@ -25,8 +25,6 @@ complete Zapped Giants | Use Zorbin's Ultra-Shrinker on Wave Striders and Land W
 complete Fuel for the Zapping | Water elementals on the coast.
 turnin Zapped Giants
 turnin Fuel for the Zapping
-complete The Strength of Corruption
-turnin The Strength of Corruption
 level 46
 train
 note Fly to Revantusk Village in the Hinterlands (via the Undercity or Tarren Mill).

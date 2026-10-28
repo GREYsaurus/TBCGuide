@@ -26,7 +26,6 @@ ns.Guides:Register({
     {"turnin",q=682,title="Stromgarde Badges",npc="Captain Nials",z=45,x=45.8,y=47.6,v=1},
     {"complete",q=652,title="Breaking the Keystone",v=1},
     {"turnin",q=652,title="Breaking the Keystone",npc="Keystone",z=45,x=36.1,y=58.1,v=1},
-    {"accept",q=653,title="Myzrael's Allies",npc="Keystone",z=45,x=36.1,y=58.1,optional=true,v=1},
     {"complete",q=684,title="Wanted!  Marez Cowl",optional=true,elite=true,group=3,v=1},
     {"complete",q=685,title="Wanted!  Otto and Falconcrest",optional=true,elite=true,group=3,v=1},
     {"turnin",q=684,title="Wanted!  Marez Cowl",npc="Captain Nials",z=45,x=45.8,y=47.6,optional=true,v=1},

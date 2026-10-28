@@ -4,14 +4,20 @@ A **free** leveling guide and talent add-on for **World of Warcraft: The Burning
 
 Everything is in the base install. There are no guide packs, accounts, subscriptions or downloads after installing.
 
-- **Level 1-70 guides for every race/class combination.** There are 54 guides with 4,281 steps and 1,314 distinct quests, covering all 10 racial starts (including Draenei and Blood Elf), 32 Azeroth zones and all 7 Outland leveling zones. Every one of the 52 race/class combinations has a validated route from 1 to 70.
+- **Level 1-70 guides for every race/class combination.** There are 54 guides with 4,204 steps and 1,222 distinct quests, covering all 10 racial starts (including Draenei and Blood Elf), 32 Azeroth zones and all 7 Outland leveling zones. Every one of the 52 race/class combinations has a validated route from 1 to 70: the route audit walks all 52 and finds no impossible quest order, no quest-log overflow and no pickup that is never turned in (see [docs/ROUTE_OPTIMIZATION.md](docs/ROUTE_OPTIMIZATION.md)).
 - **Bundled TBC quest database**, derived from QuestieDB: 6,648 quests, 7,302 NPCs, 1,325 objects and 3,919 items. It provides quest names, objectives, prerequisites, givers and coordinates. **You do not need to install Questie.**
 - **Automatic progression** from the quest log, quest-completion flags, level, hearthstone bind location and flight-path messages. **Every step can also be completed or skipped by hand**, so you never get stuck.
 - **Navigation**: a built-in arrow, a world-map pin, and optional TomTom waypoints.
 - **Talent guide and calculator** for all nine classes. Trees come straight from the 2.5.6 client data. There are 21 builds (leveling and level 70: tank, healer and DPS), each checked point by point for tier gating, prerequisites and the 61-point budget. You can compare a build with your real talents (your own class) or with a simulated allocation (any class).
 - **Class leveling tips** for every class.
+- **Quest automation (new in 0.2.0):** accepts and turns in the quests of your active guide. **Escort quests are never auto-accepted, and you always choose your own reward.** Hold Shift to skip it once.
+- **Junk selling (new in 0.2.0, off by default):** sells grey items at vendors, with protected items and categories, and quest items always kept.
+- **Orphaned quests (new in 0.2.0):** an **Orphaned** button on the quest log lists quests your route will never turn in, and abandons the ones you pick after a confirmation.
+- **Maximum-speed route option:** hides optional side quests.
 
-> **Status: untested in the game client.** Everything was built and checked with offline tools: Lua 5.1 syntax and API lint, the guide compiler and the content validator. Nobody has loaded it in WoW yet. Expect some API, UI and route issues on first run, and please report them. See `docs/KNOWN_LIMITATIONS.md`.
+Details and defaults: [docs/AUTOMATION.md](docs/AUTOMATION.md).
+
+> **Status:** 0.1.0 has been loaded and played in the game client by the author. The 0.2.0 additions (quest automation, junk selling, orphaned quests and the route fixes) pass the offline checks: Lua 5.1 lint, the guide compiler, the content validator, the route audit, and 284 headless tests run under a real Lua 5.1 interpreter. **They have not been run in the client yet.** The in-game checklist is in `docs/COMPATIBILITY.md`, and limitations are in `docs/KNOWN_LIMITATIONS.md`.
 
 ## Install
 
@@ -50,6 +56,11 @@ More detail, including building from source, is in [INSTALL.md](INSTALL.md).
 | `/tbcg reset` | Reset the current guide's progress |
 | `/tbcg class` | Class leveling tips |
 | `/tbcg options` | Settings |
+| `/tbcg automation` | Quest automation and junk-selling settings |
+| `/tbcg orphans` | Review and abandon quests your route will never turn in |
+| `/tbcg protect <item>` / `unprotect` / `protected` | Junk-selling protection list |
+| `/tbcg escort add\|remove <questID>` | Extra quests that must never be auto-accepted |
+| `/tbcg set <option> on\|off` | Change any on/off setting from chat |
 | `/tbcg debug` / `debug api` / `debug talents` / `debug quest <id>` | Diagnostics |
 | `/tbcg help` | All commands |
 
@@ -69,3 +80,7 @@ Bundled third-party data and its licensing situation are described in [NOTICE.md
 - [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md): target client and in-game test checklist
 - [docs/COVERAGE_REPORT.md](docs/COVERAGE_REPORT.md): generated coverage report
 - [docs/RESEARCH.md](docs/RESEARCH.md): research findings and decisions
+- [docs/AUTOMATION.md](docs/AUTOMATION.md): quest automation, junk selling, orphaned quests, API evidence
+- [docs/ROUTE_OPTIMIZATION.md](docs/ROUTE_OPTIMIZATION.md): route research, optimization model, audit and changes
+- [docs/ROUTE_AUDIT.md](docs/ROUTE_AUDIT.md): generated route audit
+- [CHANGELOG.md](CHANGELOG.md)

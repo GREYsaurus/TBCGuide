@@ -3,7 +3,8 @@
 -- Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus)
 -- SPDX-License-Identifier: GPL-3.0-only
 --
--- STATUS: written without access to a Lua interpreter; not yet executed. See docs/DEVELOPER.md.
+-- Runs under any Lua 5.1 interpreter (verified with the Lua 5.1 runtime bundled in Python's
+-- `lupa` package; see docs/DEVELOPER.md).
 
 dofile("tests/mock_wow.lua")
 
@@ -122,6 +123,10 @@ for _, cmd in ipairs({ "", "help", "guide", "talents", "debug", "debug api", "de
     local ok, err = pcall(SlashCmdList["TBCGUIDE"], cmd)
     check(ok, "/tbcg " .. cmd .. " -> " .. tostring(err))
 end
+
+-- Automation (junk selling, quest accept / turn-in) -------------------------------------------------
+TEST = { check = check, ns = ns }
+dofile("tests/test_automation.lua")
 
 print(string.format("%d passed, %d failed", passes, failures))
 os.exit(failures == 0 and 0 or 1)

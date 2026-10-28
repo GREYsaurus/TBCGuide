@@ -50,7 +50,6 @@ ns.Guides:Register({
     {"complete",q=9940,title="Wanted: Zorbo the Advisor",v=1},
     {"turnin",q=9936,title="Wanted: Giselda the Crone",npc="Warden Moi'bff Jill",z=3518,x=54.7,y=70.9,v=1},
     {"turnin",q=9940,title="Wanted: Zorbo the Advisor",npc="Warden Moi'bff Jill",z=3518,x=54.7,y=70.9,v=1},
-    {"accept",q=9938,title="Wanted: Durn the Hungerer",npc="Warden Moi'bff Jill",z=3518,x=54.7,y=70.9,optional=true,elite=true,group=3,v=1},
     {"complete",q=9956,title="The Ravaged Caravan",v=1},
     {"turnin",q=9956,title="The Ravaged Caravan",npc="Huntress Kima",z=3518,x=54.2,y=72.3,v=1},
     {"complete",q=10476,title="Fierce Enemies",v=1},

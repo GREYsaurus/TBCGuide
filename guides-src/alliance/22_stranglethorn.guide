@@ -35,9 +35,7 @@ accept 195 Raptor Mastery
 turnin The Second Rebellion
 turnin Bad Medicine
 accept Special Forces
-accept Kurzen's Mystery
 turnin Bookie Herod
-accept The Hidden Key
 complete 186 Tiger Mastery
 complete 191 Panther Mastery
 complete 195 Raptor Mastery
@@ -52,8 +50,6 @@ fp Booty Bay
 bind Booty Bay
 accept Supply and Demand | Drizzlik, Booty Bay.
 accept Singing Blue Shards | Crank Fizzlebub.
-accept The Haunted Isle | Krazek.
-accept Investigate the Camp | Krazek.
 accept Scaring Shaky | "Sea Wolf" MacKinley.
 complete Supply and Demand | Elder Saltwater Crocolisks and Snapjaws.
 complete Singing Blue Shards | Crystal Spine Basilisks.
@@ -64,7 +60,6 @@ accept Venture Company Mining
 complete Some Assembly Required | Snapjaw Crocolisks.
 complete Venture Company Mining | Venture Co. miners at the mines.
 turnin Some Assembly Required
-accept Excelsior
 turnin Venture Company Mining
 complete 187 Tiger Mastery | Elder Stranglethorn Tigers.
 complete 192 Panther Mastery | Shadowmaw Panthers.

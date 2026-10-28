@@ -13,11 +13,12 @@
 accept The Umbrafen Tribe | Ikeyen, Cenarion Refuge.
 accept Plants of Zangarmarsh | Lauranna Thar'well.
 accept The Dying Balance | Lethyn Moonfire.
+turnin The Cenarion Expedition [optional] | Ysiel Windsinger, if you took it in Hellfire.
 accept Disturbance at Umbrafen Lake | Ysiel Windsinger.
 accept Warden Hamoot
 accept Blessings of the Ancients | Windcaller Blackhoof.
-accept Leader of the Darkcrest [optional]
-accept Leader of the Bloodscale [optional]
+complete Blessings of the Ancients | Speak to the ancients Ashyen and Keleth, right here at the Refuge.
+turnin Blessings of the Ancients
 accept The Zapthrottle Mote Extractor! | K. Lee Smallfry.
 fp Cenarion Refuge
 turnin Warden Hamoot
@@ -44,8 +45,9 @@ turnin A Damp, Dark Place
 turnin Safeguarding the Watchers
 turnin Saving the Sporeloks
 turnin Balance Must Be Preserved
+complete Plants of Zangarmarsh [optional] | 10 Unidentified Plant Parts drop from Zangarmarsh creatures as you quest.
+turnin Plants of Zangarmarsh [optional] | Lauranna Thar'well; hand in whenever you are back with 10 parts.
 turnin The Dying Balance
-accept Escape from Umbrafen [group=2; optional]
 fp Telredor | Climb the giant mushroom at Telredor.
 bind Telredor
 accept Fulgor Spores | Ruam.

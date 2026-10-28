@@ -99,6 +99,10 @@ function Engine:AutoSkipReason(s, ctx)
                 -- Accepted in an earlier guide: only block if the DB says the player could have it.
                 local ok, why = ns.DB.IsQuestAvailable(s.q, ctx)
                 if not ok and (why == "race" or why == "class") then return "not available (" .. why .. ")" end
+                -- Optional pick-ups from an earlier guide (breadcrumbs): if the quest log has been
+                -- read and the quest is not there, the player never took it. Re-evaluated on every
+                -- refresh, never saved, so a late quest log scan cannot skip it for good.
+                if s.optional and T.lastScan > 0 then return "not in your quest log" end
             end
         end
     end
@@ -121,7 +125,8 @@ function Engine:Refresh(silent)
         local st
         if not ns.Guides:StepApplies(s, ctx) then
             st = "na"
-        elseif (s.dungeon and not prof.showDungeonSteps) or (s.elite and not prof.showElite) then
+        elseif (s.dungeon and not prof.showDungeonSteps) or (s.elite and not prof.showElite)
+            or (s.optional and prof.speedRoute) then
             st = "na"
         elseif p.skipped[i] then
             st = "skipped"

@@ -91,3 +91,53 @@ GetSpellInfo                  # core
 TomTom                        # optional add-on
 TomTom.AddWaypoint
 TomTom.RemoveWaypoint
+
+# --- automation: bags / items / money (added 0.2.0) ---
+# Evidence: Questie v12.3.1 (TOC 20506) QuestieCompat.lua uses C_Container with a fallback to the
+# globals; warcraft.wiki.gg lists C_Container.UseContainerItem for TBC Classic 2.5.6.
+C_Container                       # classic namespace on 2.5.x Anniversary; guarded (legacy globals as fallback)
+C_Container.GetContainerItemInfo  # guarded
+GetContainerItemInfo              # guarded legacy fallback
+GetMoney                          # core
+CursorHasItem                     # core
+
+# --- automation: quest dialogs (added 0.2.0) ---
+# Evidence: Questie v12.3.1 (TOC 20506) AutoQuesting.lua / QuestieCompat.lua drive exactly these
+# calls on this client; C_GossipInfo.* take and return quest IDs (warcraft.wiki.gg lists 2.5.6).
+C_GossipInfo                      # classic namespace; guarded (legacy Gossip* globals as fallback)
+C_GossipInfo.SelectAvailableQuest # guarded; argument = questID
+C_GossipInfo.SelectActiveQuest    # guarded; argument = questID
+SelectGossipAvailableQuest        # guarded legacy fallback (argument = list index)
+SelectGossipActiveQuest           # guarded legacy fallback (argument = list index)
+GetNumAvailableQuests             # core (QUEST_GREETING)
+GetAvailableTitle                 # core (QUEST_GREETING)
+GetAvailableQuestInfo             # guarded; 5th return = questID only on some clients (pcall + type check)
+GetNumActiveQuests                # core (QUEST_GREETING)
+GetActiveTitle                    # core (QUEST_GREETING); 2nd return = isComplete
+GetActiveQuestID                  # guarded (not on every Classic build)
+SelectAvailableQuest              # core (QUEST_GREETING; argument = list index)
+SelectActiveQuest                 # core (QUEST_GREETING; argument = list index)
+GetQuestID                        # classic; 0 when no quest panel is open
+GetTitleText                      # core
+GetObjectiveText                  # core
+GetQuestText                      # core
+AcceptQuest                       # core
+IsQuestCompletable                # core
+GetQuestMoneyToGet                # core
+CompleteQuest                     # core
+GetNumQuestChoices                # core
+GetQuestReward                    # core; only ever called with 0-1 reward choices
+UnitIsPlayer                      # core
+UnitExists                        # core
+MAX_QUESTLOG_QUESTS               # core global constant; guarded with Target.questLogMax fallback
+IsShiftKeyDown                    # core
+
+# --- orphaned quests (added 0.2.0) ---
+SelectQuestLogEntry               # core; same sequence the default quest log's Abandon button uses
+SetAbandonQuest                   # core
+AbandonQuest                      # core; only after the player confirms in a StaticPopup
+StaticPopupDialogs                # core
+StaticPopup_Show                  # core
+YES                               # core global string
+NO                                # core global string
+QuestLogFrame                     # core frame; guarded (button is skipped if missing)

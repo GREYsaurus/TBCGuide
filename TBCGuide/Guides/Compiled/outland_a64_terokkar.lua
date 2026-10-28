@@ -55,7 +55,6 @@ ns.Guides:Register({
     {"turnin",q=10022,title="The Elusive Ironjaw",npc="Bertelm",z=3519,x=58.3,y=54.8,v=1},
     {"turnin",q=10028,title="Vessels of Power",npc="Ros'eleth",z=3519,x=57.4,y=55.4,v=1},
     {"turnin",q=10033,title="Wanted: Bonelashers Dead!",npc="Taela Everstride",z=3519,x=58.1,y=53.4,v=1},
-    {"accept",q=10035,title="Torgos!",npc="Taela Everstride",z=3519,x=58.1,y=53.4,optional=true,group=2,v=1},
     {"accept",q=9961,title="What's Wrong at Cenarion Thicket?",npc="Jenai Starwhisper",z=3519,x=57,y=53.5,text="Jenai Starwhisper.",v=1},
     {"turnin",q=9961,title="What's Wrong at Cenarion Thicket?",npc="Earthbinder Tavgren",z=3519,x=44.3,y=26.3,text="Earthbinder Tavgren, Cenarion Thicket (north).",v=1},
     {"accept",q=9968,title="Strange Energy",npc="Earthbinder Tavgren",z=3519,x=44.3,y=26.3,v=1},

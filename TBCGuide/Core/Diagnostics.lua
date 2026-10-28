@@ -41,6 +41,13 @@ function D:Api()
         "GetPlayerFacing", "GetBindLocation", "GetTalentInfo", "GetTalentTabInfo", "UnitCharacterPoints",
         "C_AddOns.GetAddOnMetadata", "GetAddOnMetadata", "Settings.RegisterCanvasLayoutCategory",
         "InterfaceOptions_AddCategory", "BackdropTemplateMixin", "C_Timer.After",
+        -- automation
+        "C_Container.GetContainerItemInfo", "GetContainerItemInfo", "C_Container.UseContainerItem", "UseContainerItem",
+        "C_Container.GetContainerItemQuestInfo", "GetContainerItemQuestInfo", "GetItemInfo", "GetMoney",
+        "C_GossipInfo.GetAvailableQuests", "C_GossipInfo.SelectAvailableQuest", "C_GossipInfo.GetActiveQuests",
+        "C_GossipInfo.SelectActiveQuest", "GetGossipAvailableQuests", "GetAvailableQuestInfo", "GetActiveQuestID",
+        "GetQuestID", "AcceptQuest", "CompleteQuest", "IsQuestCompletable", "GetNumQuestChoices", "GetQuestReward",
+        "GetQuestMoneyToGet", "C_QuestLog.GetMaxNumQuestsCanAccept", "Settings.RegisterCanvasLayoutSubcategory",
     }
     ns:Print("API availability:")
     for _, a in ipairs(apis) do
@@ -87,6 +94,13 @@ function D:Run(arg)
     if cmd == "api" then return self:Api() end
     if cmd == "talents" then return self:TalentCheck() end
     if cmd == "quest" then return self:Quest(rest) end
+    if cmd == "escort" then
+        local id = tonumber(rest)
+        if not id then return ns:Print("usage: /tbcg debug escort <questId>") end
+        local manual, why = ns.DB.GetEscortStatus(id)
+        return ns:Print(string.format("%d %s: %s", id, tostring(ns.DB.GetQuestName(id)),
+            manual and ("manual only (" .. why .. ")") or "may be auto-accepted when it is in the active guide"))
+    end
     if cmd == "errors" then
         ns:Print(#ns.errors .. " captured errors:")
         for i = 1, #ns.errors do line(ns.errors[i]) end

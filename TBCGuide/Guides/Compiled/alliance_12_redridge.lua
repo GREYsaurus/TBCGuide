@@ -59,7 +59,6 @@ ns.Guides:Register({
     {"turnin",q=118,title="The Price of Shoes",npc="Smith Argus",z=12,x=41.7,y=65.5,text="Smith Argus, the Goldshire blacksmith (Elwynn). Combine with a training trip.",v=1},
     {"accept",q=119,title="Return to Verner",npc="Smith Argus",z=12,x=41.7,y=65.5,v=1},
     {"turnin",q=119,title="Return to Verner",npc="Verner Osgood",z=44,x=31,y=47.3,v=1},
-    {"accept",q=122,title="Underbelly Scales",npc="Verner Osgood",z=44,x=31,y=47.3,optional=true,v=1},
     {"accept",q=124,title="A Baying of Gnolls",npc="Verner Osgood",z=44,x=31,y=47.3,v=1},
     {"complete",q=124,title="A Baying of Gnolls",text="Gnolls around Alther's Mill and Stonewatch.",v=1},
     {"turnin",q=124,title="A Baying of Gnolls",npc="Verner Osgood",z=44,x=31,y=47.3,v=1},

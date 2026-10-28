@@ -21,6 +21,7 @@ ns.QDB.QUEST = {
     EXCLUSIVE = 16, NEXT = 17, BREADCRUMB_FOR = 18, SPECIAL_FLAGS = 19, MAX_LEVEL = 20,
     TRIGGER = 21,                                -- { text, { [zoneId] = { {x,y}, ... } } } exploration objective
     REQ_SKILL = 22, REQ_MIN_REP = 23, SOURCE_ITEM = 24, PARENT = 25,
+    FLAGS = 26,                                  -- questFlags bitmask (cmangos): 2 = PARTY_ACCEPT (escort/event)
 }
 
 ns.QDB.NPC = {
@@ -45,4 +46,7 @@ ns.QDB.CLASS_BITS = {
     WARLOCK = 256, DRUID = 1024,
 }
 ns.QDB.NPC_FLAGS = { QUEST_GIVER = 2, TRAINER = 16, VENDOR = 128, FLIGHT_MASTER = 8192, INNKEEPER = 65536 }
+-- questFlags / specialFlags bits used by the escort guard (see Database/EscortQuests.lua).
+ns.QDB.QUEST_FLAG_PARTY_ACCEPT = 2
+ns.QDB.SPECIAL_FLAG_REPEATABLE = 1
 ns.QDB.RANK = { [0] = "normal", [1] = "elite", [2] = "rare elite", [3] = "boss", [4] = "rare" }

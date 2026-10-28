@@ -16,7 +16,7 @@ accept 527 Battle of Hillsbrad | High Executor Darthalia.
 accept Elixir of Suffering | Apothecary Lydon.
 accept Souvenirs of Death | Deathguard Samsa.
 accept Time To Strike [optional] | Deathguard Lesh.
-accept Dangerous! [optional]
+turnin Time To Strike [optional] | High Executor Darthalia, Tarren Mill.
 complete 527 Battle of Hillsbrad | Hillsbrad farmers and peasants on the farms.
 complete Elixir of Suffering | Hillsbrad farm creatures.
 complete Souvenirs of Death
@@ -39,13 +39,11 @@ turnin 532 Battle of Hillsbrad
 complete Elixir of Agony
 turnin Elixir of Agony
 accept Prison Break In | Magus Wordeen Voidglare, south of Tarren Mill.
-accept Dalaran Patrols
-accept Stone Tokens [optional] | Keeper Bel'varil.
 complete Prison Break In
-complete Dalaran Patrols
 turnin Prison Break In
+accept Dalaran Patrols
+complete Dalaran Patrols
 turnin Dalaran Patrols
-accept Helcular's Revenge [optional]
 accept The Hammer May Fall | Tallow, at the Tarren Mill area - leads to Hammerfall.
 level 30
 train | Undercity trainers.

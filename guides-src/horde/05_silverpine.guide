@@ -64,25 +64,24 @@ complete Ambermill Investigations | Ambermill Dalaran mages.
 turnin 422 Arugal's Folly
 accept 423 Arugal's Folly
 turnin The Engraved Ring
-accept Thule Ravenclaw
-complete Thule Ravenclaw
-turnin Thule Ravenclaw
 turnin Rot Hide Ichor
 accept Rot Hide Origins
 turnin 450 A Recipe For Death
+turnin Ambermill Investigations
+complete Rot Hide Origins
+complete 423 Arugal's Folly
+turnin Rot Hide Origins
+accept Thule Ravenclaw | Chain order: Rot Hide Origins, Thule Ravenclaw, Report to Hadrec, Assault on Fenris Isle.
+complete Thule Ravenclaw | Fenris Keep, on Fenris Isle.
+turnin Thule Ravenclaw
 accept Report to Hadrec
 turnin Report to Hadrec
 accept Assault on Fenris Isle
-turnin Ambermill Investigations
 complete Assault on Fenris Isle | Rot Hide gnolls on Fenris Isle.
-complete Rot Hide Origins
-complete 423 Arugal's Folly
 turnin Assault on Fenris Isle
-turnin Rot Hide Origins
 turnin 423 Arugal's Folly
 accept 424 Arugal's Folly
 complete 424 Arugal's Folly | Pyrewood Village.
 turnin 424 Arugal's Folly
 level 17
-accept Deathstalkers in Shadowfang [dungeon=Shadowfang Keep; optional]
 note Take the zeppelin from Tirisfal to Orgrimmar, then ride to the Crossroads.

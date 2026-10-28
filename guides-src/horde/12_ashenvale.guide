@@ -17,11 +17,9 @@ accept Between a Rock and a Thistlefur | Karang Amakkar.
 accept Warsong Supplies | Locke Okarr.
 accept Satyr Horns | Pixel.
 accept The Lost Pages | Gurda Ragescar.
-accept Destroy the Legion | Valusha.
 fp Splintertree Post
 bind Splintertree Post
 accept 6921 Amongst the Ruins | Je'neu Sancrea, Zoram'gar Outpost (west coast).
-accept Vorsha the Lasher [group=2; optional] | Muglash.
 fp Zoram'gar Outpost
 complete 6921 Amongst the Ruins | The Zoram Strand ruins.
 turnin 6921 Amongst the Ruins
@@ -31,14 +29,12 @@ complete Between a Rock and a Thistlefur | Thistlefur furbolgs at Thistlefur Vil
 complete Warsong Supplies | Supply crates in the Warsong area.
 complete Satyr Horns | Satyrs at Satyrnaar.
 complete The Lost Pages
-complete Destroy the Legion | Demons at Demon Fall Canyon.
 turnin Ashenvale Outrunners
 turnin Torek's Assault
 turnin Between a Rock and a Thistlefur
 turnin Warsong Supplies
 turnin Satyr Horns
 turnin The Lost Pages
-turnin Destroy the Legion
 complete Stonetalon Standstill | Venture Co. in the eastern lumber camps.
 turnin Stonetalon Standstill
 level 27

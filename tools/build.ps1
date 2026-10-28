@@ -13,8 +13,10 @@
 #   lint             Lua 5.1 syntax check + global usage audit of every shipped .lua file
 #   validate         Content validation (guides, talents, coverage, manifest)
 #   report           Write docs/COVERAGE_REPORT.md
+#   routes           Route optimization model: walk every race/class route, write docs/ROUTE_AUDIT.md
+#                    and docs/generated/route-metrics.csv (fails on impossible quest order / log overflow)
 #   package          Build dist/TBCGuide-<version>.zip (installable add-on + corresponding source)
-#   all              guides, lint, validate, report, package (uses already-imported data)
+#   all              guides, lint, validate, routes, report, package (uses already-imported data)
 #   zonequests "<Zone>" <Alliance|Horde>   Authoring aid: list a zone's quests from the bundled DB
 #
 # Nothing here is needed by players: the shipped add-on already contains all generated data.
@@ -145,6 +147,15 @@ function Invoke-Validate {
     if ($r.Errors -gt 0) { throw "Validation failed with $($r.Errors) error(s)." }
 }
 
+function Invoke-Routes {
+    Load-Tools
+    $a = [TBCGuideTools.RouteAnalyzer]::Run($Root, $AddOn)
+    [TBCGuideTools.RouteAnalyzer]::Write($Root, $a)
+    $a.Errors | Select-Object -First 40 | ForEach-Object { Write-Host "  ERROR $_" -ForegroundColor Red }
+    Write-Host ("routes: {0} routes walked, {1} error(s), {2} warning(s). Report: docs/ROUTE_AUDIT.md" -f $a.Routes, $a.Errors.Count, $a.Warnings.Count)
+    if ($a.Errors.Count -gt 0) { throw "Route audit failed with $($a.Errors.Count) error(s)." }
+}
+
 function Invoke-Report {
     Load-Tools
     $path = Join-Path $Root "docs\COVERAGE_REPORT.md"
@@ -182,7 +193,7 @@ function Invoke-Package {
     $srcStage = Join-Path $stage "TBCGuide-source"
     New-Item -ItemType Directory -Force $srcStage | Out-Null
     foreach ($d in "TBCGuide", "guides-src", "tools", "tests", "docs") { Copy-Item (Join-Path $Root $d) (Join-Path $srcStage $d) -Recurse }
-    foreach ($f in "LICENSE", "COPYING", "NOTICE.md", "THIRD_PARTY_LICENSES.md", "README.md", "INSTALL.md", ".gitignore") {
+    foreach ($f in "LICENSE", "COPYING", "NOTICE.md", "THIRD_PARTY_LICENSES.md", "README.md", "INSTALL.md", "CHANGELOG.md", ".gitignore") {
         Copy-Item (Join-Path $Root $f) (Join-Path $srcStage $f)
     }
     $addonZip = Join-Path $dist "TBCGuide-$ver.zip"
@@ -203,8 +214,9 @@ switch ($Command) {
     "lint" { Invoke-Lint }
     "validate" { Invoke-Validate }
     "report" { Invoke-Report }
+    "routes" { Invoke-Routes }
     "package" { Invoke-Package }
     "zonequests" { Load-Tools; [TBCGuideTools.QuestLister]::List($AddOn, $Arg1, $Arg2) }
-    "all" { Invoke-Guides; Invoke-Lint; Invoke-Validate; Invoke-Report; Invoke-Package }
+    "all" { Invoke-Guides; Invoke-Lint; Invoke-Validate; Invoke-Routes; Invoke-Report; Invoke-Package }
     default { throw "Unknown command '$Command'. See the header of tools/build.ps1." }
 }

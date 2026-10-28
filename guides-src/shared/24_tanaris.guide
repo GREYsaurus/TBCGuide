@@ -17,8 +17,6 @@ accept Wastewander Justice | Chief Engineer Bilgewhizzle, Gadgetzan.
 accept Water Pouch Bounty | Spigot Operator Luglunket.
 accept Gadgetzan Water Survey | Senior Surveyor Fizzledowser.
 accept WANTED: Caliph Scorpidsting [elite; group=3; optional]
-accept WANTED: Andre Firebeard [optional]
-accept The Thirsty Goblin [optional] | Marin Noggenfogger.
 complete Wastewander Justice | Wastewander bandits east of Gadgetzan.
 complete Water Pouch Bounty | Same bandits drop Wastewander Water Pouches.
 complete Gadgetzan Water Survey | Use the tool at the Noxious Lair water hole.
@@ -44,7 +42,6 @@ complete Southsea Shakedown | Pirates at Lost Rigger Cove.
 complete Pirate Hats Ahoy!
 turnin Southsea Shakedown
 turnin Pirate Hats Ahoy!
-accept Screecher Spirits | Yeh'kinya, Steamwheedle Port.
 accept The Dunemaul Compound [optional]
 complete The Dunemaul Compound [optional] | Dunemaul ogres.
 turnin The Dunemaul Compound [optional]

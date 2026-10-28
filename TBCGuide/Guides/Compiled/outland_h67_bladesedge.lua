@@ -13,7 +13,6 @@ ns.Guides:Register({
     {"accept",q=10486,title="The Encroaching Wilderness",npc="Gor'drek",z=3522,x=52.4,y=57.9,text="Gor'drek.",v=1},
     {"accept",q=10503,title="The Bladespire Threat",npc="Tor'chunk Twoclaws",z=3522,x=51.9,y=58.4,text="Tor'chunk Twoclaws.",v=1},
     {"accept",q=10542,title="They Stole Me Hookah and Me Brews!",npc="T'chali the Witch Doctor",z=3522,x=45,y=72.3,text="T'chali the Witch Doctor.",v=1},
-    {"accept",q=10489,title="Felling an Ancient Tree",npc="Wanted Poster",z=3522,x=51.9,y=57.8,optional=true,v=1},
     {"accept",q=10928,title="Killing the Crawlers",npc="Grunt Grahk",z=3522,x=53,y=96.2,text="Grunt Grahk.",v=1},
     {"complete",q=10486,title="The Encroaching Wilderness",v=1},
     {"complete",q=10503,title="The Bladespire Threat",v=1},

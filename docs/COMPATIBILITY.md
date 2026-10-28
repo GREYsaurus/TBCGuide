@@ -46,3 +46,19 @@ None of these have been done yet. Tick them off on a real client:
 - [ ] Options panel appears under Interface > AddOns and the settings persist.
 - [ ] A boosted or high-level character (e.g. level 58) gets an appropriate guide (Hellfire).
 - [ ] Draenei and Blood Elf routes: Azuremyst to Bloodmyst to Ashenvale, and Eversong to Ghostlands to Barrens.
+
+### 0.2.0 automation (see docs/AUTOMATION.md)
+
+- [ ] `/tbcg debug api`: the automation APIs (C_Container, C_GossipInfo, GetQuestID, AcceptQuest, GetNumQuestChoices, ...) report `yes`.
+- [ ] Gossip NPC with several guide quests: completed ones are turned in first, then each guide quest is accepted, with "Accepted:" printed only after it appears in the log.
+- [ ] A quest-giver with the plain greeting window (no gossip) behaves the same.
+- [ ] An unrelated quest at the same NPC is **not** accepted.
+- [ ] An escort quest in the guide (e.g. *Protecting the Shipment*, *Rescue OOX-17/TN!*, Horde *Free From the Hold*) is **not** accepted, and the chat message says why. A party member starting an escort: the confirmation is left to you.
+- [ ] A turn-in with **several rewards** stays open with "Choose your reward". No reward is picked. After you pick one, the guide advances.
+- [ ] A turn-in with no reward or a single reward completes automatically.
+- [ ] Holding Shift while talking to an NPC disables automation for that conversation.
+- [ ] With a full quest log (25), a guide quest is not accepted and the message says the log is full.
+- [ ] Junk selling OFF (default): opening a vendor sells nothing.
+- [ ] Junk selling ON: grey items are sold. Grey items needed by a quest in your log, protected items and protected categories stay. The summary's copper matches the money gained.
+- [ ] Quest log window: the **Orphaned (N)** button is visible and not overlapping anything. The list matches expectations. **Abandon** asks for confirmation and removes only the ticked quests.
+- [ ] *Maximum-speed route* (Interface > AddOns > TBCGuide) hides optional steps; turning it off restores them.

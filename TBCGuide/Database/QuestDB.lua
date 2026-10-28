@@ -303,3 +303,72 @@ function DB.AreaForUiMap(uiMapId)
     end
     return uiToArea[uiMapId]
 end
+
+-- Automation safety metadata -------------------------------------------------------------------
+
+-- Escort / scripted-event wording. Deliberately broad: a false positive only costs one click.
+-- "Follow" and "Protect" count only when followed by a name ("Follow Thrall"), so that
+-- "follow the road" or "Protection Totems" do not trigger it.
+local ESCORT_PATTERNS = {
+    "[Ee]scort", "[Aa]ccompany", "[Ss]afely", "[Ll]ead .- back to", "[Pp]rotect %u", "[Ff]ollow %u",
+    "[Dd]efend %u", "[Ss]tay alive",
+}
+
+local function escortWording(text)
+    if type(text) ~= "string" or text == "" then return nil end
+    for _, p in ipairs(ESCORT_PATTERNS) do
+        if string.find(text, p) then return p end
+    end
+end
+DB.EscortWording = escortWording
+
+-- Returns manual(bool), reason. manual=true means the quest must never be auto-accepted.
+-- Conservative by design: any single signal is enough, and a quest we have no data for is manual.
+-- `liveText` is the quest text shown by the client on the offer panel (optional).
+function DB.GetEscortStatus(questId, liveText)
+    if questId and ns.EscortQuests and ns.EscortQuests[questId] then return true, "known escort quest" end
+    local extra = ns.db and ns.db.escortExtra
+    if questId and type(extra) == "table" and extra[questId] then return true, "on your escort list" end
+    if escortWording(liveText) then return true, "escort wording in quest text" end
+    local r = rawQuest(questId)
+    if not r then return true, "quest not in the database" end
+    if ns.HasBit(r[Q.FLAGS] or 0, QDB.QUEST_FLAG_PARTY_ACCEPT) then return true, "escort/event quest (party-accept flag)" end
+    if escortWording(r[Q.OBJECTIVES_TEXT]) then return true, "escort wording in objectives" end
+    local trig = r[Q.TRIGGER]
+    if type(trig) == "table" and escortWording(trig[1]) then return true, "escort wording in objectives" end
+    return false
+end
+
+function DB.IsRepeatable(questId)
+    local r = rawQuest(questId)
+    return r and ns.HasBit(r[Q.SPECIAL_FLAGS] or 0, QDB.SPECIAL_FLAG_REPEATABLE) or false
+end
+
+-- Item ids a quest needs: collect objectives plus the item the giver hands out.
+function DB.GetQuestItems(questId)
+    local r = rawQuest(questId)
+    if not r then return EMPTY end
+    local out = {}
+    local obj = r[Q.OBJECTIVES]
+    for _, id in ipairs(obj and obj.i or EMPTY) do out[#out + 1] = id end
+    local src = r[Q.SOURCE_ITEM]
+    if src and src > 0 then out[#out + 1] = src end
+    return out
+end
+
+-- Item starts a quest (e.g. a dropped letter). Such items are never junk. Upstream TBC item
+-- records leave startQuest empty, so the index is built from the quests' START_ITEMS (lazily).
+local questStarters
+function DB.ItemStartsQuest(itemId)
+    if not itemId then return false end
+    if not questStarters then
+        questStarters = {}
+        for _, r in pairs(QDB.quests) do
+            for _, it in ipairs(r[Q.START_ITEMS] or EMPTY) do questStarters[it] = true end
+        end
+    end
+    if questStarters[itemId] then return true end
+    local r = QDB.items[itemId]
+    local s = r and r[I.START_QUEST]
+    return type(s) == "number" and s > 0
+end

@@ -15,7 +15,6 @@ turnin Journey to the Crossroads [race=Tauren; optional]
 accept Plainstrider Menace | Sergra Darkthorn.
 accept The Forgotten Pools | Tonga Runetotem.
 accept Disrupt the Attacks | Thork.
-accept Supplies for the Crossroads
 accept Raptor Thieves | Gazrog.
 accept Fungal Spores | Apothecary Helbrim.
 accept Harpy Raiders | Darsok Swiftdagger.
@@ -29,6 +28,7 @@ turnin Plainstrider Menace
 accept The Zhevra
 turnin Disrupt the Attacks
 accept The Disruption Ends
+accept Supplies for the Crossroads
 turnin Raptor Thieves
 complete The Forgotten Pools | Explore the pool north of the Crossroads.
 turnin The Forgotten Pools
@@ -39,18 +39,20 @@ turnin The Disruption Ends
 turnin Supplies for the Crossroads
 accept Wharfmaster Dizzywig [optional] | From Apothecary Helbrim.
 accept Southsea Freebooters | Gazlowe, Ratchet.
-accept 890 The Missing Shipment
 accept Samophlange | Sputtervalve.
 accept Raptor Horns | Mebok Mizzyrix.
 accept Chen's Empty Keg [optional]
 fp Ratchet
+turnin Chen's Empty Keg [optional] | Brewmaster Drohn.
+complete Southsea Freebooters | Pirates at the camp north of Ratchet.
+turnin Southsea Freebooters
+accept 890 The Missing Shipment
+turnin Wharfmaster Dizzywig [optional]
 turnin 890 The Missing Shipment | Wharfmaster Dizzywig, Ratchet docks.
 accept 892 The Missing Shipment
 turnin 892 The Missing Shipment
 accept Stolen Booty
-complete Southsea Freebooters | Pirates at the camp north of Ratchet.
-complete Stolen Booty
-turnin Southsea Freebooters
+complete Stolen Booty | Back to the pirate camp north of Ratchet for Tazan.
 turnin Stolen Booty
 complete The Zhevra | Zhevra Runners.
 complete Fungal Spores | The Forgotten Pools.
@@ -58,7 +60,6 @@ complete The Stagnant Oasis
 turnin The Zhevra
 accept Prowlers of the Barrens
 turnin Fungal Spores
-accept Apothecary Zamah
 turnin The Stagnant Oasis
 accept Altered Beings
 complete Centaur Bracers | Kolkar centaur west of the road.
@@ -78,7 +79,6 @@ turnin Prowlers of the Barrens
 accept Echeyakee
 turnin Altered Beings
 turnin Raptor Horns
-accept Deepmoss Spider Eggs [optional]
 turnin Kolkar Leaders
 accept Verog the Dervish
 turnin Harpy Lieutenants
@@ -101,16 +101,14 @@ turnin Serena Bloodfeather
 accept Letter to Jin'Zil [optional]
 turnin Verog the Dervish
 accept Hezrul Bloodmark
-accept The Guns of Northwatch [optional]
-accept Free From the Hold [optional]
 turnin Jorn Skyseer | Camp Taurajo.
 accept Ishamuhale
-accept Enraged Thunder Lizards
 fp Camp Taurajo
 complete Ishamuhale
-complete Enraged Thunder Lizards
 complete Hezrul Bloodmark
 turnin Ishamuhale
+accept Enraged Thunder Lizards
+complete Enraged Thunder Lizards
 turnin Enraged Thunder Lizards
 accept Cry of the Thunderhawk
 turnin Hezrul Bloodmark

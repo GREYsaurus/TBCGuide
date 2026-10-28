@@ -16,7 +16,6 @@ accept The Hermit
 accept The Night Watch | Commander Althea Ebonlocke, Darkshire town hall.
 accept Seasoned Wolf Kabobs | Chef Grual.
 accept The Totem of Infliction | Madame Eva.
-accept 174 Look To The Stars [optional] | Viktori Prism'Antras at the tower east of Darkshire.
 fp Darkshire
 bind Darkshire
 complete The Night Watch | Skeletons and ghouls at Tranquil Gardens Cemetery, south-east of Darkshire.
@@ -48,7 +47,6 @@ accept Return the Comb
 complete Dusky Crab Cakes | Crabs along the coast in western Duskwood.
 complete 57 The Night Watch | Skeletal Fiends and Healers at the graveyard.
 turnin 57 The Night Watch
-accept 58 The Night Watch [optional]
 turnin Return the Comb
 accept Deliver the Thread
 turnin Dusky Crab Cakes
@@ -72,11 +70,9 @@ complete Ogre Thieves | Splinter Fist ogres at Vul'Gol Ogre Mound.
 turnin Ogre Thieves
 accept Note to the Mayor
 turnin The Shadowy Figure
-accept The Shadowy Search Continues
 turnin Note to the Mayor
 complete The Totem of Infliction | Ogres, worgen and spiders throughout Duskwood.
 turnin The Totem of Infliction
-accept 66 The Legend of Stalvan [optional] | A long chain across several zones - optional.
 level 25
 train
 note Fly to Ironforge or Stormwind, then the boat or Dun Algaz pass to Menethil Harbor, Wetlands.

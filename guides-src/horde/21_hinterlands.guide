@@ -13,7 +13,6 @@
 fp Revantusk Village
 bind Revantusk Village
 accept Snapjaws, Mon! | Katoom the Angler.
-accept Gammerita, Mon!
 accept Stalking the Stalkers | Huntsman Markhor.
 accept Hunt the Savages
 accept Avenging the Fallen
@@ -21,10 +20,8 @@ accept Vilebranch Hooligans | Smith Slagtree.
 accept Lard Lost His Lunch | Lard.
 accept Cannibalistic Cousins | Mystic Yayo'jin.
 accept Message to the Wildhammer | Otho Moji'ko.
-accept Wanted: Vile Priestess Hexx and Her Minions [optional]
 accept Kidnapped Elder Torntusk! | Primal Torntusk.
 complete Snapjaws, Mon! | Turtles along the coast.
-complete Gammerita, Mon! | Gammerita, the large turtle on the coast.
 complete Stalking the Stalkers | Silvermane Stalkers.
 complete Hunt the Savages | Savage Owlbeasts.
 complete Avenging the Fallen | Wildhammer dwarves.
@@ -33,6 +30,8 @@ complete Lard Lost His Lunch | The Wildhammer camp by the coast.
 complete Cannibalistic Cousins | Vilebranch Scalpers.
 complete Message to the Wildhammer | Highvale area Wildhammer.
 turnin Snapjaws, Mon!
+accept Gammerita, Mon!
+complete Gammerita, Mon! | Gammerita, the large turtle on the coast.
 turnin Gammerita, Mon!
 turnin Stalking the Stalkers
 turnin Hunt the Savages

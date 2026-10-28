@@ -130,7 +130,7 @@ function GetBindLocation() return MOCK.bind end
 function GetPlayerFacing() return 0 end
 
 C_QuestLog = { IsQuestFlaggedCompleted = function(id) return MOCK.completed[id] == true end }
-function GetNumQuestLogEntries() return #MOCK.questLog end
+function GetNumQuestLogEntries() return #MOCK.questLog, #MOCK.questLog end
 function GetQuestLogTitle(i)
     local q = MOCK.questLog[i]
     if not q then return nil end
@@ -173,6 +173,10 @@ function InterfaceOptionsFrame_OpenToCategory() end
 function ReloadUI() end
 function hooksecurefunc() end
 
+tinsert = table.insert
+tremove = table.remove
+wipe = function(t) for k in pairs(t) do t[k] = nil end return t end
+
 bit = bit or {
     band = function(a, b)
         local r, m = 0, 1
@@ -183,3 +187,103 @@ bit = bit or {
         return r
     end,
 }
+
+-- Bags, items, money, merchant (junk selling) ------------------------------------------------------
+MOCK.money = 0
+MOCK.bags = { [0] = {} }      -- [bag][slot] = { itemID=, count=, locked=, questItem=, noValue= }
+MOCK.items = {}               -- [itemID] = { name=, quality=, sellPrice=, classID=, bindType=, uncached= }
+MOCK.merchantOpen = false
+MOCK.sellFails = {}           -- [itemID] = true: the server refuses to buy it
+MOCK.useCalls = {}
+MOCK.cursor = false
+MOCK.shift = false
+
+local function bagItem(bag, slot) return MOCK.bags[bag] and MOCK.bags[bag][slot] end
+
+C_Container = {
+    GetContainerNumSlots = function(bag) return MOCK.bags[bag] and 16 or 0 end,
+    GetContainerItemInfo = function(bag, slot)
+        local b = bagItem(bag, slot)
+        if not b then return nil end
+        local it = MOCK.items[b.itemID] or {}
+        return { itemID = b.itemID, stackCount = b.count or 1, isLocked = b.locked or false, quality = it.quality,
+                 hyperlink = "|Hitem:" .. b.itemID .. "|h[" .. tostring(it.name) .. "]|h", hasNoValue = b.noValue or false }
+    end,
+    GetContainerItemQuestInfo = function(bag, slot)
+        local b = bagItem(bag, slot)
+        return { isQuestItem = b and b.questItem or false, questID = nil, isActive = false }
+    end,
+    UseContainerItem = function(bag, slot)
+        table.insert(MOCK.useCalls, { bag = bag, slot = slot })
+        local b = bagItem(bag, slot)
+        if not b or not MOCK.merchantOpen or MOCK.sellFails[b.itemID] then return end
+        local it = MOCK.items[b.itemID]
+        MOCK.money = MOCK.money + (it.sellPrice or 0) * (b.count or 1)
+        MOCK.bags[bag][slot] = nil
+    end,
+}
+
+function GetItemInfo(id)
+    if type(id) == "string" then id = tonumber(string.match(id, "item:(%d+)")) end
+    local it = MOCK.items[id]
+    if not it or it.uncached then return nil end
+    return it.name, "link", it.quality, 1, 1, "type", "subtype", 1, "", "icon", it.sellPrice, it.classID, 0, it.bindType or 0
+end
+function GetMoney() return MOCK.money end
+function CursorHasItem() return MOCK.cursor end
+function IsShiftKeyDown() return MOCK.shift end
+
+-- Quest dialogs (gossip / greeting / detail / progress / reward) -----------------------------------
+MOCK.gossip = { available = {}, active = {} }  -- { {questID=, title=, isComplete=} }
+MOCK.greeting = { available = {}, active = {} } -- { {title=, isComplete=} } (no ids, like old clients)
+MOCK.dialog = nil      -- { questID=, title=, text=, choices=, completable=, money=, fromPlayer= }
+MOCK.calls = {}        -- log of automation calls, e.g. "accept", "select_available:783"
+
+local function copyList(l)
+    local out = {}
+    for i, v in ipairs(l) do out[i] = { questID = v.questID, title = v.title, isComplete = v.isComplete } end
+    return out
+end
+local function call(s) table.insert(MOCK.calls, s) end
+
+C_GossipInfo = {
+    GetAvailableQuests = function() return copyList(MOCK.gossip.available) end,
+    GetActiveQuests = function() return copyList(MOCK.gossip.active) end,
+    SelectAvailableQuest = function(id) call("select_available:" .. tostring(id)) end,
+    SelectActiveQuest = function(id) call("select_active:" .. tostring(id)) end,
+}
+function GetNumAvailableQuests() return #MOCK.greeting.available end
+function GetAvailableTitle(i) return MOCK.greeting.available[i] and MOCK.greeting.available[i].title end
+function GetNumActiveQuests() return #MOCK.greeting.active end
+function GetActiveTitle(i) local a = MOCK.greeting.active[i] return a and a.title, a and a.isComplete end
+function SelectAvailableQuest(i) call("greeting_available:" .. i) end
+function SelectActiveQuest(i) call("greeting_active:" .. i) end
+
+function GetQuestID() return MOCK.dialog and MOCK.dialog.questID or 0 end
+function GetTitleText() return MOCK.dialog and MOCK.dialog.title or "" end
+function GetObjectiveText() return MOCK.dialog and MOCK.dialog.text or "" end
+function GetQuestText() return "" end
+function GetNumQuestChoices() return MOCK.dialog and MOCK.dialog.choices or 0 end
+function IsQuestCompletable() return MOCK.dialog and MOCK.dialog.completable or false end
+function GetQuestMoneyToGet() return MOCK.dialog and MOCK.dialog.money or 0 end
+function UnitExists(u) return u == "questnpc" and MOCK.dialog ~= nil end
+function UnitIsPlayer(u) return u == "questnpc" and MOCK.dialog ~= nil and MOCK.dialog.fromPlayer or false end
+function AcceptQuest() call("accept:" .. tostring(GetQuestID())) end
+function CompleteQuest() call("complete:" .. tostring(GetQuestID())) end
+function GetQuestReward(i) call("reward:" .. tostring(GetQuestID()) .. ":" .. tostring(i)) end
+
+-- Quest log abandon + confirmation popups ------------------------------------------------------------
+MOCK.selectedLog = nil
+MOCK.popups = {}
+StaticPopupDialogs = {}
+function StaticPopup_Show(name, a) table.insert(MOCK.popups, { name = name, arg = a }) end
+function SelectQuestLogEntry(i) MOCK.selectedLog = i end
+function SetAbandonQuest() MOCK.abandonArmed = MOCK.selectedLog end
+function AbandonQuest()
+    if MOCK.abandonArmed then
+        table.remove(MOCK.questLog, MOCK.abandonArmed)
+        table.insert(MOCK.calls, "abandon")
+        MOCK.abandonArmed = nil
+    end
+end
+QuestLogFrame = CreateFrame("Frame", "QuestLogFrame")

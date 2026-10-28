@@ -17,7 +17,6 @@ ns.Guides:Register({
     {"accept",q=5157,title="Collection of the Corrupt Water",npc="Greta Mosshoof",z=361,x=51.2,y=82.1,v=1},
     {"complete",q=5157,title="Collection of the Corrupt Water",text="Fill the vessel at the corrupted moonwell in Jaedenar.",v=1},
     {"turnin",q=5157,title="Collection of the Corrupt Water",npc="Greta Mosshoof",z=361,x=51.2,y=82.1,v=1},
-    {"accept",q=5158,title="Seeking Spiritual Aid",npc="Greta Mosshoof",z=361,x=51.2,y=82.1,v=1},
     {"complete",q=5156,title="Verifying the Corruption",text="Explore the area north of Shatter Scar Vale.",v=1},
     {"turnin",q=5156,title="Verifying the Corruption",npc="Taronn Redfeather",z=361,x=50.9,y=81.6,v=1},
     {"complete",q=4421,title="The Corruption of the Jadefire",text="Jadefire satyrs at Jadefire Glen.",v=1},

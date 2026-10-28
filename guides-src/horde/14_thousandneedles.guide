@@ -15,20 +15,19 @@ fp Freewind Post
 turnin Message to Freewind Post | Cliffwatcher Longhorn.
 bind Freewind Post
 accept Pacify the Centaur | Cliffwatcher Longhorn.
-accept Wanted - Arnak Grimtotem [optional]
 accept Alien Egg | Hagar Lightninghoof.
-accept Serpent Wild
-accept Sacred Fire | Motega Firemane.
 accept Wind Rider | Elu.
 complete Pacify the Centaur | Galak centaur west of Freewind.
 complete Alien Egg | The egg is in the Roguefeather den.
-complete Serpent Wild | Wind serpents.
-complete Sacred Fire
 complete Wind Rider
 turnin Pacify the Centaur
 accept Grimtotem Spying
 turnin Alien Egg
+accept Serpent Wild
+complete Serpent Wild | Wind serpents.
 turnin Serpent Wild
+accept Sacred Fire | Motega Firemane.
+complete Sacred Fire
 turnin Sacred Fire
 accept Arikara
 turnin Wind Rider
@@ -54,7 +53,6 @@ turnin Hardened Shells
 turnin Rocket Car Parts
 turnin A Bump in the Road
 turnin Load Lightening
-accept Goblin Sponsorship [optional]
 level 32
 train
 note Take the zeppelin to the Undercity and fly or ride to Hammerfall (Arathi Highlands).

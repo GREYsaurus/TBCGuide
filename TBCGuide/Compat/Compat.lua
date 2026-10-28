@@ -197,6 +197,214 @@ function C.GetUnspentTalentPoints()
     return 0
 end
 
+-- Bags / items / money -------------------------------------------------------------------------
+-- 2.5.x Anniversary clients expose C_Container; older Classic builds only have the globals.
+-- Both are supported (same split Questie uses for interface 20506).
+
+C.NUM_BAGS = 4 -- backpack (0) + four bag slots (1-4). Bank and keyring are never touched.
+
+function C.GetContainerNumSlots(bag)
+    local f = has("C_Container.GetContainerNumSlots") or has("GetContainerNumSlots")
+    if f then return f(bag) or 0 end
+    note("GetContainerNumSlots")
+    return 0
+end
+
+-- Returns a normalised record or nil for an empty slot:
+-- { itemID=, count=, locked=bool, quality=, link=, noValue=bool }
+function C.GetContainerItem(bag, slot)
+    if C_Container and C_Container.GetContainerItemInfo then
+        local i = C_Container.GetContainerItemInfo(bag, slot)
+        if not i then return nil end
+        return { itemID = i.itemID, count = i.stackCount or 1, locked = i.isLocked and true or false,
+                 quality = i.quality, link = i.hyperlink, noValue = i.hasNoValue and true or false }
+    end
+    if GetContainerItemInfo then
+        local _, count, locked, quality, _, _, link, _, noValue, itemID = GetContainerItemInfo(bag, slot)
+        if not link and not itemID then return nil end
+        if not itemID and link then itemID = tonumber(string.match(link, "item:(%d+)")) end
+        return { itemID = itemID, count = count or 1, locked = locked and true or false,
+                 quality = quality, link = link, noValue = noValue and true or false }
+    end
+    note("GetContainerItemInfo")
+    return nil
+end
+
+-- Selling is "use item while a merchant window is open". Not a protected action in Classic.
+function C.UseContainerItem(bag, slot)
+    local f = has("C_Container.UseContainerItem") or has("UseContainerItem")
+    if f then f(bag, slot) return true end
+    note("UseContainerItem")
+    return false
+end
+
+-- Quest-item flag for a bag slot, where the client offers it (nil = unknown).
+function C.ContainerItemIsQuestItem(bag, slot)
+    local f = has("C_Container.GetContainerItemQuestInfo")
+    if f then
+        local ok, info = pcall(f, bag, slot)
+        if ok and type(info) == "table" then return (info.isQuestItem or (info.questID and info.questID > 0)) and true or false end
+        return nil
+    end
+    f = has("GetContainerItemQuestInfo")
+    if f then
+        local ok, isQuestItem, questId = pcall(f, bag, slot)
+        if ok then return (isQuestItem or (questId and questId > 0)) and true or false end
+    end
+    return nil
+end
+
+-- { name=, quality=, sellPrice=, classID=, subclassID=, bindType= } or nil while the item is not cached.
+function C.GetItemInfo(item)
+    local f = has("C_Item.GetItemInfo") or has("GetItemInfo")
+    if not f then note("GetItemInfo") return nil end
+    local name, _, quality, _, _, _, _, _, _, _, sellPrice, classID, subclassID, bindType = f(item)
+    if not name then return nil end
+    return { name = name, quality = quality, sellPrice = sellPrice, classID = classID,
+             subclassID = subclassID, bindType = bindType }
+end
+
+function C.GetMoney() return GetMoney and GetMoney() or 0 end
+
+function C.CursorHasItem() return CursorHasItem and CursorHasItem() and true or false end
+
+function C.FormatMoney(copper)
+    copper = math.floor(copper or 0)
+    local g, s, c = math.floor(copper / 10000), math.floor(copper / 100) % 100, copper % 100
+    if g > 0 then return string.format("%dg %ds %dc", g, s, c) end
+    if s > 0 then return string.format("%ds %dc", s, c) end
+    return string.format("%dc", c)
+end
+
+-- Quest dialogs (gossip / greeting / detail / progress / reward) -------------------------------
+-- Verified against Questie v12.3.1 (TOC 20506), which drives the same calls on this client:
+-- C_GossipInfo.Get*/Select*Quest take and return quest IDs; GetQuestID() is valid on the
+-- detail/progress/reward panels; GetNumQuestChoices()/GetQuestReward() are core APIs.
+
+-- { {questID=, title=, isComplete=, repeatable=} } for the open gossip window.
+local function gossipList(modern, legacy, stride, completeAt)
+    local f = has(modern)
+    if f then
+        local ok, list = pcall(f)
+        if ok and type(list) == "table" then return list end
+        return {}
+    end
+    f = has(legacy)
+    if not f then return {} end
+    local raw, out = { f() }, {}
+    for i = 1, #raw, stride do
+        out[#out + 1] = { title = raw[i], questID = 0, isComplete = completeAt and raw[i + completeAt] and true or false,
+                          index = #out + 1 }
+    end
+    return out
+end
+
+function C.GossipAvailableQuests() return gossipList("C_GossipInfo.GetAvailableQuests", "GetGossipAvailableQuests", 7) end
+function C.GossipActiveQuests() return gossipList("C_GossipInfo.GetActiveQuests", "GetGossipActiveQuests", 6, 3) end
+
+-- Select by quest ID on modern clients; legacy clients select by list position.
+function C.GossipSelectAvailable(q)
+    if C_GossipInfo and C_GossipInfo.SelectAvailableQuest and q.questID and q.questID > 0 then
+        C_GossipInfo.SelectAvailableQuest(q.questID) return true
+    end
+    if SelectGossipAvailableQuest and q.index then SelectGossipAvailableQuest(q.index) return true end
+    return false
+end
+
+function C.GossipSelectActive(q)
+    if C_GossipInfo and C_GossipInfo.SelectActiveQuest and q.questID and q.questID > 0 then
+        C_GossipInfo.SelectActiveQuest(q.questID) return true
+    end
+    if SelectGossipActiveQuest and q.index then SelectGossipActiveQuest(q.index) return true end
+    return false
+end
+
+-- QUEST_GREETING lists (NPCs without a gossip menu). IDs are not always exposed; 0 = unknown.
+function C.GreetingAvailableQuests()
+    local out = {}
+    local n = GetNumAvailableQuests and GetNumAvailableQuests() or 0
+    for i = 1, n do
+        local id = 0
+        if GetAvailableQuestInfo then
+            local ok, a5 = pcall(function() return select(5, GetAvailableQuestInfo(i)) end)
+            if ok and type(a5) == "number" then id = a5 end
+        end
+        out[i] = { index = i, title = GetAvailableTitle and GetAvailableTitle(i), questID = id }
+    end
+    return out
+end
+
+function C.GreetingActiveQuests()
+    local out = {}
+    local n = GetNumActiveQuests and GetNumActiveQuests() or 0
+    for i = 1, n do
+        local title, isComplete
+        if GetActiveTitle then title, isComplete = GetActiveTitle(i) end
+        local id = 0
+        if GetActiveQuestID then
+            local ok, v = pcall(GetActiveQuestID, i)
+            if ok and type(v) == "number" then id = v end
+        end
+        out[i] = { index = i, title = title, questID = id, isComplete = isComplete and true or false }
+    end
+    return out
+end
+
+function C.GreetingSelectAvailable(i) if SelectAvailableQuest then SelectAvailableQuest(i) return true end return false end
+function C.GreetingSelectActive(i) if SelectActiveQuest then SelectActiveQuest(i) return true end return false end
+
+-- Quest ID of the open detail/progress/reward panel (nil when unknown or closed).
+function C.DialogQuestID()
+    if not GetQuestID then note("GetQuestID") return nil end
+    local id = GetQuestID()
+    if id and id > 0 then return id end
+    return nil
+end
+
+function C.DialogTitle() return GetTitleText and GetTitleText() or nil end
+
+-- All text the offer panel shows; used for the escort keyword check.
+function C.DialogText()
+    local a = GetObjectiveText and GetObjectiveText() or ""
+    local b = GetQuestText and GetQuestText() or ""
+    return tostring(a) .. "\n" .. tostring(b)
+end
+
+-- True when the quest was offered by another player (party share), not by an NPC/object.
+function C.DialogFromPlayer()
+    if UnitIsPlayer and UnitExists and UnitExists("questnpc") then return UnitIsPlayer("questnpc") and true or false end
+    return false
+end
+
+function C.QuestLogSize()
+    local max = (C_QuestLog and C_QuestLog.GetMaxNumQuestsCanAccept and C_QuestLog.GetMaxNumQuestsCanAccept())
+        or MAX_QUESTLOG_QUESTS or ns.Target.questLogMax or 25
+    local count = 0
+    if GetNumQuestLogEntries then
+        local _, numQuests = GetNumQuestLogEntries()
+        count = numQuests or (ns.Tracker and ns.Tracker:Count()) or 0
+    end
+    return count, max
+end
+
+function C.IsModifierHeld() return IsShiftKeyDown and IsShiftKeyDown() and true or false end
+
+-- Abandons the quest at a quest log index (the default UI's own sequence). The quest id is
+-- re-checked against that index first so a shifted log can never drop the wrong quest.
+function C.AbandonQuestAt(index, questId)
+    if not (SelectQuestLogEntry and SetAbandonQuest and AbandonQuest and GetQuestLogTitle) then
+        note("AbandonQuest")
+        return false
+    end
+    local title, _, _, isHeader, _, _, _, id = GetQuestLogTitle(index)
+    if not id and C_QuestLog and C_QuestLog.GetQuestIDForLogIndex then id = C_QuestLog.GetQuestIDForLogIndex(index) end
+    if not title or isHeader or id ~= questId then return false end
+    SelectQuestLogEntry(index)
+    SetAbandonQuest()
+    AbandonQuest()
+    return true
+end
+
 -- UI -------------------------------------------------------------------------------------------
 
 C.BackdropTemplate = BackdropTemplateMixin and "BackdropTemplate" or nil
@@ -225,7 +433,29 @@ function C.RegisterOptionsPanel(frame, title)
     note("InterfaceOptions_AddCategory")
 end
 
+-- Child page under the add-on's options entry (call after RegisterOptionsPanel).
+function C.RegisterOptionsSubPanel(frame, parentTitle, title)
+    if C.optionsCategory and Settings and Settings.RegisterCanvasLayoutSubcategory then
+        local sub = Settings.RegisterCanvasLayoutSubcategory(C.optionsCategory, frame, title)
+        C.subCategories = C.subCategories or {}
+        C.subCategories[frame] = sub
+        return
+    end
+    if InterfaceOptions_AddCategory then
+        frame.name = title
+        frame.parent = parentTitle
+        InterfaceOptions_AddCategory(frame)
+        return
+    end
+    note("InterfaceOptions_AddCategory")
+end
+
 function C.OpenOptionsPanel(frame)
+    local sub = C.subCategories and C.subCategories[frame]
+    if sub and Settings and Settings.OpenToCategory then
+        Settings.OpenToCategory(sub:GetID())
+        return true
+    end
     if C.optionsCategory and Settings and Settings.OpenToCategory then
         Settings.OpenToCategory(C.optionsCategory:GetID())
         return true

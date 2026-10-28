@@ -21,8 +21,13 @@ local HELP = {
     { "load <guideId>", "load a guide by id" },
     { "class", "class leveling tips" },
     { "options", "open settings" },
+    { "automation", "open quest automation / junk selling settings" },
+    { "orphans", "review and abandon quests your route will never turn in" },
+    { "protect <itemID|link>", "never sell this item automatically (unprotect to undo)" },
+    { "protected", "list protected items and junk-sale totals" },
+    { "escort add|remove <questID>", "extra quests that must never be auto-accepted (escort list)" },
     { "set <option> on|off", "change a setting from chat" },
-    { "debug [api|talents|quest <id>|errors]", "diagnostics" },
+    { "debug [api|talents|quest <id>|escort <id>|errors]", "diagnostics" },
     { "help", "this list" },
 }
 
@@ -49,6 +54,48 @@ commands.reset = function() ns.Engine:Reset() end
 commands.options = function() ns.Options:Open() end
 commands.config = commands.options
 commands.help = printHelp
+commands.orphans = function() ns.OrphanFrame:Toggle() end
+commands.orphaned = commands.orphans
+commands.automation = function() ns.AutomationOptions:Open() end
+
+commands.protect = function(arg)
+    local id = ns.Vendor.ParseItem(arg)
+    if not id then return ns:Print("usage: /tbcg protect <itemID or shift-clicked item link>") end
+    ns.Vendor:Protect(id, true)
+    ns:Print("Protected item " .. id .. ": it will never be sold automatically.")
+end
+
+commands.unprotect = function(arg)
+    local id = ns.Vendor.ParseItem(arg)
+    if not id then return ns:Print("usage: /tbcg unprotect <itemID or item link>") end
+    ns.Vendor:Protect(id, false)
+    ns:Print("Item " .. id .. " is no longer protected.")
+end
+
+commands.protected = function()
+    local ids = ns.Vendor:ProtectedList()
+    ns:Print(#ids .. " protected item(s): " .. (#ids > 0 and table.concat(ids, ", ") or "none"))
+    local js = ns.char.junkStats
+    ns:Print(string.format("Automatic junk sales: %d items, %s. Selling is %s.", js.items,
+        ns.Compat.FormatMoney(js.copper), ns.db.profile.autoSellJunk and "ON" or "OFF"))
+end
+
+commands.escort = function(arg)
+    local verb, id = string.match(arg or "", "^(%S+)%s+(%d+)")
+    id = tonumber(id)
+    if verb == "add" and id then
+        ns.db.escortExtra[id] = true
+        return ns:Print("Quest " .. id .. " will never be accepted automatically.")
+    elseif verb == "remove" and id then
+        if ns.EscortQuests[id] then return ns:Print("Quest " .. id .. " is a known escort quest and stays manual.") end
+        ns.db.escortExtra[id] = nil
+        return ns:Print("Quest " .. id .. " removed from your escort list.")
+    end
+    local ids = {}
+    for q in pairs(ns.db.escortExtra) do ids[#ids + 1] = q end
+    table.sort(ids)
+    ns:Print("usage: /tbcg escort add|remove <questID>. Your list: " .. (#ids > 0 and table.concat(ids, ", ") or "empty"))
+end
 
 commands.auto = function()
     local g, why = ns.Selector:Recommend()

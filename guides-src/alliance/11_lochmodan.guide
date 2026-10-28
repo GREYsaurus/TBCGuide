@@ -23,7 +23,6 @@ accept Mountaineer Stormpike's Task
 accept Thelsamar Blood Sausages
 fp Thelsamar
 bind Thelsamar
-accept WANTED: Chok'sul [elite; group=3; optional]
 complete Thelsamar Blood Sausages | Bears and spiders around Thelsamar.
 complete Rat Catching | Tunnel Rat Kobolds at the Silver Stream Mine, north of Thelsamar.
 turnin Thelsamar Blood Sausages
@@ -35,7 +34,6 @@ turnin Mountaineer Stormpike's Task | Mountaineer Stormpike at the Dam.
 accept Filthy Paws
 complete Filthy Paws | Kobold crates inside Silver Stream Mine.
 turnin Filthy Paws
-accept Stormpike's Order [optional]
 accept Excavation Progress Report | Prospector Ironband, Ironband's Excavation Site.
 accept Gathering Idols | Magmar Fellhew at the excavation.
 turnin Excavation Progress Report | Jern Hornhelm in Thelsamar.

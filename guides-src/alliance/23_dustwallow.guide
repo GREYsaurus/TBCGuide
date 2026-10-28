@@ -13,7 +13,6 @@
 fp Theramore
 bind Theramore
 accept Inspecting the Ruins | Captain Garran Vimes.
-accept They Call Him Smiling Jim | Guard Byron.
 accept Traitors Among Us | Calia Hastings.
 accept This Old Lighthouse | Sergeant Amelyn.
 accept Defias in Dustwallow? | Captain Wymor.
@@ -53,7 +52,6 @@ turnin Survey Alcaz Island
 accept Warn Bolvar! [optional]
 complete Dastardly Denizens of the Deep | Murks on the coast.
 turnin Dastardly Denizens of the Deep
-accept Is it Real?
 complete Discrediting the Deserters
 turnin Discrediting the Deserters
 accept The End of the Deserters
@@ -63,8 +61,7 @@ complete Prisoners of the Grimtotems | Grimtotem camps south.
 complete Unleash the Raptors
 turnin Prisoners of the Grimtotems
 turnin Unleash the Raptors
-accept WANTED: Goreclaw the Ravenous [optional]
-accept Help for Mudsprocket [optional] | Tabetha.
+turnin The Apothecary's Letter [optional] | Andello Porter, at Tabetha's farm.
 accept The Grimtotem Weapon [optional]
 accept Direhorn Raiders [optional]
 accept The Zeppelin Crash [optional]

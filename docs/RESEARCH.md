@@ -1,4 +1,4 @@
-# Research findings and decisions (Phase 1)
+# Research findings and decisions
 
 Recorded 2026-10-28.
 
@@ -42,3 +42,24 @@ Recorded 2026-10-28.
 2. Which options API does 2.5.6 expose: new Settings, legacy InterfaceOptions, or both? (Both are handled.)
 3. Does `GetTalentInfo` on 2.5.6 index talents in the same tree order as `TalentTab.OrderIndex`? (Mapped by tier/column; `/tbcg debug talents` checks.)
 4. ~~Copyright holder~~ - resolved: GREYsaurus (https://github.com/GREYsaurus), confirmed by the project owner.
+
+# 0.2.0 research (2026-10-28)
+
+## Client APIs for automation
+
+- Questie v12.3.1 (`Questie_TBC.toc`, interface 20506) was used as evidence for which quest-dialog, gossip and container calls work on 2.5.6, and how. It passes quest IDs to `C_GossipInfo.Select*Quest` and uses `C_Container` with a legacy fallback. Details and the list of calls: docs/AUTOMATION.md. Nothing was copied from it.
+- warcraft.wiki.gg lists `C_GossipInfo.SelectAvailableQuest` (index → questID in 10.0.0), `C_GossipInfo.GetAvailableQuests` and `C_Container.UseContainerItem` for TBC Classic 2.5.6.
+- **Decision:** wrap every call in `Compat.lua` with legacy fallbacks. Never answer party escort confirmations, never accept quests from players, never pick a reward among several.
+
+## Escort detection
+
+- QuestieDB `questFlags` bit 2 (`PARTY_ACCEPT`) marks escort-type quests (304 TBC quests, including some scripted "defend/wait" events). `specialFlags` bit 2 (`NEEDS_EVENT`) was reviewed: all 67 quests with only that flag are exploration or area-trigger quests, so it is **not** used.
+- Escorts lacking both the flag and the word "escort": 2078, 4122, 10284, 10439, 10965, added to the curated list.
+
+## Leveling routes
+
+Sources, conflicts and decisions: docs/ROUTE_OPTIMIZATION.md, section 1. RestedXP remains design-reference only (CC BY-NC-SA 4.0).
+
+## Tooling
+
+- A Lua 5.1 runtime is now available through Python's `lupa` package, so `tests/run_tests.lua` actually runs.

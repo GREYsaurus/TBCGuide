@@ -38,6 +38,10 @@ local COMPLETERS = {
         local currentXP = UnitXP("player")
         return currentXP >= (s.xp or 0)
     end,
+    grind = function(s)
+        local currentXP = UnitXP("player")
+        return currentXP >= (s.xp or 0)
+    end,
 }
 
 -- Steps whose completion is remembered once observed (cannot be re-derived later).

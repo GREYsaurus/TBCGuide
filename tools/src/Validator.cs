@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 //
 // Checks (errors fail the build; warnings are reported):
-//   * every legal race/class combination (Database/RaceClass.lua) has a start guide and a guide
+//   * every race/class combination (Database/RaceClass.lua) has a start guide and a guide
 //     chain that reaches level 70 without level gaps, cycles or dead ends;
 //   * guides compile (quest resolution etc. - see GuideCompiler);
 //   * every class has a leveling build and a level-70 build; every build is legal against the
@@ -241,7 +241,7 @@ namespace TBCGuideTools
 
             // Race/class coverage
             var combos = LoadCombos(addOnDir);
-            if (combos.Count != 52) v.Warn("expected 52 legal race/class combinations for TBC, found " + combos.Count);
+            if (combos.Count != 52) v.Warn("expected 52 race/class combinations for TBC, found " + combos.Count);
             foreach (var c in combos)
             {
                 var r = Route(comp.Guides, c.Item1, c.Item2, c.Item3);
@@ -327,14 +327,14 @@ namespace TBCGuideTools
             sb.AppendLine("| Distinct quests referenced | " + comp.Guides.SelectMany(g => g.Steps).Where(s => s.Quest > 0).Select(s => s.Quest).Distinct().Count() + " |");
             sb.AppendLine("| Steps with database-derived coordinates | " + comp.Guides.Sum(g => g.Steps.Count(s => s.X >= 0 && s.Verified)) + " |");
             sb.AppendLine("| Steps with hand-written coordinates (unverified) | " + comp.Guides.Sum(g => g.Steps.Count(s => s.X >= 0 && !s.Verified)) + " |");
-            sb.AppendLine("| Legal race/class combinations | " + combos.Count + " |");
+            sb.AppendLine("| Race/class combinations | " + combos.Count + " |");
             sb.AppendLine("| Talent builds | " + builds.Count + " (" + builds.Count(b => b.Errors.Count == 0) + " pass validation) |");
             sb.AppendLine("| Validation | " + v.Summary + " |");
             sb.AppendLine("| Compiler warnings | " + comp.Warnings.Count + " (see docs/generated/guide-warnings.log) |");
             sb.AppendLine();
             sb.AppendLine("## Race/class routes (level 1 to 70)");
             sb.AppendLine();
-            sb.AppendLine("Each legal combination is followed from its racial start guide through the `@next` chain.");
+            sb.AppendLine("Each race/class combination is followed from its racial start guide through the `@next` chain.");
             sb.AppendLine();
             sb.AppendLine("| Race | Class | Faction | Guides | Reaches | Problems |");
             sb.AppendLine("|---|---|---|---|---|---|");

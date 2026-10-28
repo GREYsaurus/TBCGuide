@@ -5,7 +5,7 @@
 // Input: CSV exports of the TBC Anniversary client's DB2 tables (see tools/upstream.json).
 // Output:
 //   TBCGuide/Talents/Data/TalentTrees.lua  - every talent: tab, tier, column, ranks, prereq, spell ids
-//   TBCGuide/Database/RaceClass.lua        - legal race/class combinations from CharBaseInfo
+//   TBCGuide/Database/RaceClass.lua        - race/class combinations from CharBaseInfo
 // Talent descriptions are NOT copied; the add-on shows the client's own tooltip
 // for the spell id of each rank, so text always matches the running client.
 
@@ -156,7 +156,7 @@ namespace TBCGuideTools
             rc.Append("  },\n}\n");
             File.WriteAllText(Path.Combine(addOnDir, "Database", "RaceClass.lua"), rc.ToString(), new UTF8Encoding(false));
             summary.Add("talents total: " + total);
-            summary.Add("legal race/class combinations: " + comboCount);
+            summary.Add("race/class combinations: " + comboCount);
             return string.Join(Environment.NewLine, summary.ToArray());
         }
     }

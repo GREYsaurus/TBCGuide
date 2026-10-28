@@ -29,7 +29,7 @@ Recorded 2026-10-28.
 ## Client tables
 
 - wago.tools provides CSV exports of the client's DB2 tables for build 2.5.6.70577.
-- **Decision:** generate talent trees (tier, column, ranks, prerequisites, spell ids) and the legal race/class list from these. Talent builds are validated mechanically, and race/class legality comes from the client's own `CharBaseInfo` table (52 combinations).
+- **Decision:** generate talent trees (tier, column, ranks, prerequisites, spell ids) and the race/class list from these. Talent builds are validated mechanically, and race/class legality comes from the client's own `CharBaseInfo` table (52 combinations).
 
 ## Tooling constraints in this environment
 

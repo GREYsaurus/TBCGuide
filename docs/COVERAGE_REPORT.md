@@ -13,14 +13,14 @@ It reports what the automated checks found. It is **not** evidence of in-game te
 | Distinct quests referenced | 1314 |
 | Steps with database-derived coordinates | 2918 |
 | Steps with hand-written coordinates (unverified) | 0 |
-| Legal race/class combinations | 52 |
+| Race/class combinations | 52 |
 | Talent builds | 21 (21 pass validation) |
 | Validation | validate: 0 error(s), 0 warning(s) |
 | Compiler warnings | 73 (see docs/generated/guide-warnings.log) |
 
 ## Race/class routes (level 1 to 70)
 
-Each legal combination is followed from its racial start guide through the `@next` chain.
+Each race/class combination is followed from its racial start guide through the `@next` chain.
 
 | Race | Class | Faction | Guides | Reaches | Problems |
 |---|---|---|---|---|---|

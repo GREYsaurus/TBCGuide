@@ -38,7 +38,7 @@ powershell -ExecutionPolicy Bypass -File tools/build.ps1 import-client
 - applies `tbcQuestFixes.lua` with a restricted static evaluator. It accepts literals, enum constants, `l10n("...")` and `+`/`-`; anything runtime-dependent is skipped and logged.
 - writes the trimmed data and `docs/generated/questie-import.log`, which has record counts, applied and skipped corrections, and dangling references.
 
-`import-client` writes the talent trees (positions, ranks, prerequisites and spell ids per rank) and the legal race/class table.
+`import-client` writes the talent trees (positions, ranks, prerequisites and spell ids per rank) and the race/class table.
 
 ## 4. Re-validate everything
 

@@ -106,7 +106,7 @@ for _, b in ipairs(ns.Talents.buildList) do
     check(#seq == 61, "build " .. b.id .. " uses 61 points (" .. #seq .. ")")
 end
 
--- Selector for every legal race/class at level 1 and at 60
+-- Selector for every race/class at level 1 and at 60
 for raceKey, rec in pairs(ns.RaceClass.races) do
     for _, cls in ipairs(rec.classes) do
         local info = { race = raceKey, class = cls, faction = rec.faction, level = 1 }

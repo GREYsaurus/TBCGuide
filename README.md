@@ -4,7 +4,7 @@ A **free** leveling guide and talent add-on for **World of Warcraft: The Burning
 
 Everything is in the base install. There are no guide packs, accounts, subscriptions or downloads after installing.
 
-- **Level 1-70 guides for every legal race/class combination.** There are 54 guides with 4,281 steps and 1,314 distinct quests, covering all 10 racial starts (including Draenei and Blood Elf), 32 Azeroth zones and all 7 Outland leveling zones. Every one of the 52 race/class combinations has a validated route from 1 to 70.
+- **Level 1-70 guides for every race/class combination.** There are 54 guides with 4,281 steps and 1,314 distinct quests, covering all 10 racial starts (including Draenei and Blood Elf), 32 Azeroth zones and all 7 Outland leveling zones. Every one of the 52 race/class combinations has a validated route from 1 to 70.
 - **Bundled TBC quest database**, derived from QuestieDB: 6,648 quests, 7,302 NPCs, 1,325 objects and 3,919 items. It provides quest names, objectives, prerequisites, givers and coordinates. **You do not need to install Questie.**
 - **Automatic progression** from the quest log, quest-completion flags, level, hearthstone bind location and flight-path messages. **Every step can also be completed or skipped by hand**, so you never get stuck.
 - **Navigation**: a built-in arrow, a world-map pin, and optional TomTom waypoints.

@@ -11,7 +11,7 @@ TBCGuide/                       the add-on (this folder is what players install)
   Core/SavedVars.lua            TBCGuideDB (account) / TBCGuideCharDB (character), defaults, validation
   Database/Schema.lua           field layout of the bundled data
   Database/QuestieTBC/*.lua     GENERATED quest/NPC/object/item/zone data (QuestieDB-derived)
-  Database/RaceClass.lua        GENERATED legal race/class table
+  Database/RaceClass.lua        GENERATED race/class table
   Database/Overrides.lua        project-owned data corrections (client/realm specific)
   Database/QuestDB.lua          query API: GetQuestByID, GetNPCPosition, IsQuestAvailable, ...
   Guides/Registry.lua           guide registration, filtering, route resolution

@@ -153,6 +153,8 @@ namespace TBCGuideTools
         public int MarkIcon;                     // raid target icon 1-8 from [mark=...] (0 = none)
         public string MarkTarget;                // optional explicit target: NPC id or exact NPC name
         public List<int> MarkNpcs;               // resolved NPC ids the add-on may mark for this step
+        public List<string> Mobs;                // grind: mob names (as spelled in the database)
+        public string Location;                  // grind: where to find them (free text)
     }
 
     public sealed class CGuide
@@ -206,7 +208,7 @@ namespace TBCGuideTools
         const int FLAG_TRAINER = 16, FLAG_FLIGHT = 8192, FLAG_INN = 65536;
 
         static readonly HashSet<string> Verbs = new HashSet<string>(new[] {
-            "accept","turnin","complete","goto","note","train","fp","fly","hs","bind","level","travel","guide","talk","buy","use","collect" });
+            "accept","turnin","complete","goto","note","train","fp","fly","hs","bind","level","travel","guide","talk","buy","use","collect","grind" });
 
         public static CompileResult CompileAll(string srcDir, string addOnDir, bool write = true)
         {
@@ -543,6 +545,9 @@ namespace TBCGuideTools
                     if (!int.TryParse(arg, out lvl) || lvl < 2 || lvl > 70) { res.Errors.Add(where + ": level needs 2-70"); return; }
                     s.Level = lvl;
                     break;
+                case "grind":
+                    if (!ParseGrind(arg, s, stepZone, where, res, lz, lx, ly)) return;
+                    break;
                 case "guide":
                     s.GuideRef = arg;
                     break;
@@ -564,6 +569,57 @@ namespace TBCGuideTools
             }
             if (s.MarkIcon > 0) ResolveMark(s, stepZone, where, res);
             g.Steps.Add(s);
+        }
+
+        // ------------------------------------------------------------------ grind steps
+        // grind <level> <Mob>[, <Mob>...] [@ <location>]
+        // Completes like a level step. Every mob must exist in the bundled database AND spawn in this
+        // step's zone, so a guide cannot name invented or out-of-zone mobs. Without [at=x,y] the
+        // step points at the database spawn of those mobs nearest the previous step.
+        // Note: [at=x,y] still updates the position (same as every other step type).
+        static bool ParseGrind(string arg, CStep s, int zone, string where, CompileResult res, int lz, double lx, double ly)
+        {
+            var m = Regex.Match(arg, @"^(\d+)\s+([^@]+?)\s*(?:@\s*(.+))?$");
+            int lvl;
+            if (!m.Success || !int.TryParse(m.Groups[1].Value, out lvl) || lvl < 2 || lvl > 70)
+            {
+                res.Errors.Add(where + ": grind needs '<level 2-70> <Mob>[, <Mob>] [@ location]'");
+                return false;
+            }
+            s.Level = lvl;
+            s.Location = m.Groups[3].Success ? m.Groups[3].Value.Trim() : null;
+            s.Mobs = new List<string>();
+            var spawns = new List<double[]>();
+            var db = res.Db;
+            int parent = db.Parent(zone);
+            foreach (var raw in m.Groups[2].Value.Split(','))
+            {
+                string want = BundledDb.Norm(raw);
+                if (want.Length == 0) continue;
+                string canonical = null;
+                foreach (var kv in db.Npcs)
+                {
+                    string name = BundledDb.Str(kv.Value, BundledDb.N_NAME);
+                    if (name == null || BundledDb.Norm(name) != want) continue;
+                    var here = db.NpcSpawns(kv.Key).Where(sp => db.Parent((int)sp[0]) == parent).ToList();
+                    if (here.Count == 0) continue;
+                    canonical = name;
+                    spawns.AddRange(here);
+                }
+                if (canonical == null)
+                {
+                    res.Errors.Add(where + ": grind mob '" + raw.Trim() + "' has no spawns in " + (db.ZoneNames.ContainsKey(zone) ? db.ZoneNames[zone] : ("zone " + zone)) + " in the database");
+                    return false;
+                }
+                s.Mobs.Add(canonical);
+            }
+            if (s.Mobs.Count == 0) { res.Errors.Add(where + ": grind needs at least one mob"); return false; }
+            // Point at the spawn nearest the previous step, but on copies: a grind step must not move
+            // the compiler's position, or later steps would resolve different trainers/NPCs.
+            // [at=x,y] (applied by the caller) overrides this, e.g. to name a specific camp.
+            int tz = lz; double tx = lx, ty = ly;
+            PlaceAt(spawns, s, zone, ref tz, ref tx, ref ty);
+            return true;
         }
 
         // ------------------------------------------------------------------ raid markers
@@ -977,6 +1033,8 @@ namespace TBCGuideTools
             if (s.Dest != null) sb.Append(",dest=").Append(L(s.Dest));
             if (s.Level > 0) sb.Append(",level=").Append(s.Level);
             if (s.GuideRef != null) sb.Append(",guide=").Append(L(s.GuideRef));
+            if (s.Mobs != null) sb.Append(",mobs=").Append(LList(s.Mobs));
+            if (s.Location != null) sb.Append(",location=").Append(L(s.Location));
             if (s.Classes != null) sb.Append(",classes=").Append(LList(s.Classes));
             if (s.Races != null) sb.Append(",races=").Append(LList(s.Races));
             if (s.Faction != null) sb.Append(",faction=").Append(L(s.Faction));

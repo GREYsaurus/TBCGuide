@@ -133,6 +133,6 @@ complete Wanted: "Hogger" [elite; group=3; optional]
 turnin Wanted: "Hogger" [optional]
 turnin Cloth and Leather Armor | Return to Sara Timberlain only if you are passing Eastvale; otherwise skip.
 accept Report to Gryan Stoutmantle | From Marshal Dughan in Goldshire.
-level 10 | Grind gnolls near Westbrook if you are short of level 10.
+grind 10 Riverpaw Outrunner, Riverpaw Runt @ south of Westbrook Garrison [at=27.8,81.2] | Only if you are short of level 10: keep killing the bounty gnolls until you ding.
 train | Level 10 training (warriors: defensive stance quest; warlocks: Voidwalker quest).
 note Head west on the road into Westfall.

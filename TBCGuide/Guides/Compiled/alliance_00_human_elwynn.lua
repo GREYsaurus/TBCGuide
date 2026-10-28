@@ -143,7 +143,7 @@ ns.Guides:Register({
     {"turnin",q=176,title="Wanted:  \"Hogger\"",npc="Marshal Dughan",z=12,x=42.1,y=65.9,optional=true,v=1},
     {"turnin",q=59,title="Cloth and Leather Armor",npc="Sara Timberlain",z=12,x=79.5,y=68.8,text="Return to Sara Timberlain only if you are passing Eastvale; otherwise skip.",v=1},
     {"accept",q=109,title="Report to Gryan Stoutmantle",npc="Guard Thomas",z=12,x=74,y=72.2,text="From Marshal Dughan in Goldshire.",v=1},
-    {"level",text="Grind gnolls near Westbrook if you are short of level 10.",level=10,v=1},
+    {"grind",z=12,x=27.8,y=81.2,text="Only if you are short of level 10: keep killing the bounty gnolls until you ding.",level=10,mobs={"Riverpaw Outrunner","Riverpaw Runt"},location="south of Westbrook Garrison",v=0},
     {"train",npc="Zaldimar Wefhellt",z=12,x=43.2,y=66.2,text="Level 10 training (warriors: defensive stance quest; warlocks: Voidwalker quest).",classes={"MAGE"},v=1},
     {"train",npc="Brother Wilhelm",z=12,x=41.1,y=66,text="Level 10 training (warriors: defensive stance quest; warlocks: Voidwalker quest).",classes={"PALADIN"},v=1},
     {"train",npc="Priestess Josetta",z=12,x=43.3,y=65.7,text="Level 10 training (warriors: defensive stance quest; warlocks: Voidwalker quest).",classes={"PRIEST"},v=1},

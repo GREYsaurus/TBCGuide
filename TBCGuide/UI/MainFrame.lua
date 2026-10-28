@@ -29,6 +29,7 @@ local function stepIcon(s, status)
     if k == "train" then return "Interface\\GossipFrame\\TrainerGossipIcon" end
     if k == "hs" or k == "bind" then return "Interface\\Icons\\INV_Misc_Rune_01" end
     if k == "level" then return "Interface\\Icons\\Spell_Holy_SurgeOfLight" end
+    if k == "grind" then return "Interface\\Icons\\Ability_DualWield" end
     return "Interface\\GossipFrame\\GossipGossipIcon"
 end
 
@@ -246,21 +247,6 @@ function Main:Render()
         r:SetPoint("TOPLEFT", self.body, "TOPLEFT", 0, -y)
         y = y + h + 2
         r:SetShown(y <= maxH + h * 0.5 or n == 1)
-    
-        -- Add grinding progress
-        if s[1] == "grind" then
-            local currentXP = UnitXP("player")
-            local nextLevelXP = UnitXPMax("player")
-            local remainingXP = (s.xp or 0) + nextLevelXP - currentXP
-            local progressText = string.format("Current XP: %d, Remaining XP: %d", currentXP, remainingXP)
-            local progress = W.Text(r, "GameFontHighlightSmall")
-            progress:SetPoint("TOPLEFT", r.detail, "BOTTOMLEFT", 0, -2)
-            progress:SetPoint("RIGHT", r, "RIGHT", -2, 0)
-            progress:SetText(progressText)
-            progress:SetShown(true)
-            h = h + progress:GetStringHeight() + 4
-            r:SetHeight(h)
-        end
     end
     for n = #items + 1, #self.rows do self.rows[n]:Hide() end
 end

@@ -38,7 +38,7 @@ Values in brackets are the baseline (`docs/generated/route-metrics-baseline.csv`
 | A_Hellfire | 177 | 60 (61) | 803 (804) | 34 (35) | 0 | 0 | 0 (3) | 0 | 1 (2) |
 | A_Hillsbrad | 45 (47) | 12 (14) | 44 | 0 | 0 | 3 | 0 (3) | 0 | 0 |
 | A_Hinterlands | 39 (40) | 9 (10) | 111 | 5 | 0 | 0 | 0 (1) | 0 | 0 |
-| A_Human_Elwynn | 143 | 48 | 467 | 16 | 0 | 2 | 0 | 0 | 2 |
+| A_Human_Elwynn | 143 | 48 | 504 (467) | 16 | 0 | 2 | 0 | 0 | 2 |
 | A_LochModan | 70 (72) | 22 (24) | 512 (517) | 11 | 0 | 0 | 0 (2) | 0 | 0 (1) |
 | A_Nagrand | 104 (105) | 36 (37) | 367 | 4 | 0 | 0 | 0 (1) | 2 | 1 (2) |
 | A_NightElf_Teldrassil | 91 (92) | 29 (30) | 214 | 7 | 0 | 1 | 0 (1) | 0 | 0 |

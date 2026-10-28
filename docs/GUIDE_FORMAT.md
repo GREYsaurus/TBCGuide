@@ -39,6 +39,7 @@ Files are compiled in path order (`alliance/`, `horde/`, `outland/`, `shared/`, 
 | `fly` / `hs` / `travel` | destination zone/subzone name | zone change to the destination, or manual |
 | `bind` | inn location name | `GetBindLocation()` matches |
 | `level` | level | player level reached |
+| `grind` | `<level> <Mob>[, <Mob>...] [@ location]` | player level reached (same as `level`). Each mob must exist in the database and spawn in the step's zone, or the build fails. The arrow points at the spawn nearest the previous step unless `[at=x,y]` is given. Example: `grind 10 Riverpaw Outrunner, Riverpaw Runt @ south of Westbrook Garrison [at=27.8,81.2] \| note` |
 | `note` / `buy` / `use` / `collect` | text | manual (`buy` also completes on closing a vendor) |
 | `guide` | guide id | manual |
 

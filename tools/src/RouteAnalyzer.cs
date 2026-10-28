@@ -79,7 +79,7 @@ namespace TBCGuideTools
                 int n = g.Steps.Count;
                 var anchors = new List<KeyValuePair<int, double>> { new KeyValuePair<int, double>(0, g.MinLevel) };
                 for (int k = 0; k < n; k++)
-                    if (g.Steps[k].Kind == "level" && g.Steps[k].Level > 0) anchors.Add(new KeyValuePair<int, double>(k, g.Steps[k].Level));
+                    if ((g.Steps[k].Kind == "level" || g.Steps[k].Kind == "grind") && g.Steps[k].Level > 0) anchors.Add(new KeyValuePair<int, double>(k, g.Steps[k].Level));
                 if (anchors[anchors.Count - 1].Key < n - 1) anchors.Add(new KeyValuePair<int, double>(n - 1, Math.Max(g.MaxLevel, anchors[anchors.Count - 1].Value)));
                 est = new double[n];
                 for (int a = 0; a + 1 < anchors.Count; a++)

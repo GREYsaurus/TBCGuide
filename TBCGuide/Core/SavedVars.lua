@@ -42,9 +42,6 @@ local accountDefaults = {
         autoSellJunk = false,       -- OFF by default: sell grey (Poor) items when a vendor opens
         sellNotify = true,          -- chat summary of junk sales
         sellNotifyItems = false,    -- one chat line per item sold
-        grindEnabled = true,        -- enable grinding steps
-        grindAutoComplete = true,   -- automatically complete grinding steps when XP target is reached
-        grindEstimates = false,     -- show estimated kills or time remaining
         -- Raid markers (docs/RAID_MARKERS.md)
         markEnabled = true,         -- /tbcg mark, the marker bar and guide marking
         autoMark = true,            -- mark NPCs the current guide step names with [mark=...]

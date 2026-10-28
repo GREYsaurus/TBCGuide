@@ -12,7 +12,7 @@ It reports what the automated checks found. It is **not** evidence of in-game te
 | Quest steps (accept/complete/turn-in) | 3572 |
 | Distinct quests referenced | 1222 |
 | Steps with database-derived coordinates | 2839 |
-| Steps with hand-written coordinates (unverified) | 0 |
+| Steps with hand-written coordinates (unverified) | 1 |
 | Race/class combinations | 52 |
 | Talent builds | 21 (21 pass validation) |
 | Validation | validate: 0 error(s), 0 warning(s) |

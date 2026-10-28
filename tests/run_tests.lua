@@ -124,6 +124,53 @@ for _, cmd in ipairs({ "", "help", "guide", "talents", "debug", "debug api", "de
     check(ok, "/tbcg " .. cmd .. " -> " .. tostring(err))
 end
 
+-- Grind steps -------------------------------------------------------------------------------------
+-- Registered in memory only (no guide file). Completion must follow the player's LEVEL, never XP.
+local G = ns.Guides
+local nRejected, nErrors = #G.rejected, #ns.errors
+G:Register({ id = "T_GrindNoLevel", name = "t", faction = "Alliance", steps = { { "grind", mobs = { "X" } } } })
+check(G.byId["T_GrindNoLevel"] == nil and #G.rejected == nRejected + 1, "registry rejects a grind step without a level")
+table.remove(G.rejected) -- the deliberate rejection above is not a real error
+while #ns.errors > nErrors do table.remove(ns.errors) end
+G:Register({ id = "T_Grind", name = "Grind test", faction = "Alliance", minLevel = 3, maxLevel = 5, steps = {
+    { "note", text = "before" },
+    { "grind", level = 5, mobs = { "Riverpaw Outrunner", "Riverpaw Runt" }, location = "south of Westbrook Garrison",
+      z = 12, x = 27.8, y = 81.2, text = "Kill gnolls until 5." },
+    { "note", text = "after" },
+} })
+check(G.byId["T_Grind"] ~= nil, "registry accepts a valid grind step")
+MOCK.player.level = 3
+ns.Engine:Load("T_Grind", { reset = true })
+ns.Engine:MarkDone(1)
+check(ns.Engine.current == 2 and ns.Engine.status[2] == "active", "grind step becomes the current step")
+for _ = 1, 3 do ns.Engine:Refresh() end
+MOCK.fire("PLAYER_XP_UPDATE")
+MOCK.tick(1)
+check(ns.Engine.current == 2, "grind step stays active below the target level (XP into the level does not complete it)")
+local gs = ns.Engine:CurrentStep()
+check(string.find(ns.StepText:Title(gs), "Grind Riverpaw Outrunner, Riverpaw Runt at south of Westbrook Garrison until level 5", 1, true),
+    "title names the mobs, the place and the target level")
+local det = table.concat(ns.StepText:Details(gs), "\n")
+check(string.find(det, "Level 3", 1, true) and string.find(det, "Kill gnolls until 5.", 1, true), "details show level progress and the guide note")
+local tz, tx, ty, tlabel = ns.StepText:Target(gs)
+check(tz == 12 and tx == 27.8 and ty == 81.2 and tlabel == "south of Westbrook Garrison", "navigation target is the grind spot")
+check(pcall(function() ns.MainFrame:Render() end), "main window renders a grind step")
+MOCK.player.level = 4
+MOCK.fire("PLAYER_LEVEL_UP", 4)
+MOCK.tick(1)
+check(ns.Engine.current == 2, "one level short: still grinding")
+MOCK.player.level = 5
+MOCK.fire("PLAYER_LEVEL_UP", 5)
+MOCK.tick(1)
+check(ns.Engine.current == 3 and ns.Engine.status[2] == "done", "reaching the target level completes it and the guide advances")
+check(ns.Engine.progress.done[2] == true, "completion is remembered like a level step")
+-- The shipped example: Elwynn's level-10 gate is a grind step on database-verified gnolls.
+local elw, found = G.byId["A_Human_Elwynn"], nil
+for _, s in ipairs(elw.steps) do if s[1] == "grind" then found = s end end
+check(found and found.level == 10 and found.mobs[1] == "Riverpaw Outrunner" and found.location, "Elwynn ships one grind step (level 10, Riverpaw gnolls)")
+MOCK.player.level = 1
+ns.Engine:Load("A_Human_Elwynn")
+
 -- Automation (junk selling, quest accept / turn-in) and raid markers -----------------------------
 TEST = { check = check, ns = ns }
 dofile("tests/test_automation.lua")

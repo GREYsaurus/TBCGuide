@@ -34,11 +34,10 @@ local COMPLETERS = {
         local loc = ns.Compat.GetBindLocation()
         return s.place and loc and string.lower(loc) == string.lower(s.place) or false
     end,
-    grind = function(s)
-        local currentXP = UnitXP("player")
-        return currentXP >= (s.xp or 0)
-    end,
 }
+-- A grind step ends exactly like a level step: when the player reaches s.level. (UnitXP only
+-- counts XP into the current level, so an XP threshold would misfire after a level-up.)
+COMPLETERS.grind = COMPLETERS.level
 
 -- Steps whose completion is remembered once observed (cannot be re-derived later).
 local STICKY = { ["goto"] = true, note = true, train = true, fp = true, fly = true, hs = true, travel = true,
@@ -109,9 +108,6 @@ function Engine:AutoSkipReason(s, ctx)
                 if s.optional and T.lastScan > 0 then return "not in your quest log" end
             end
         end
-    elseif s[1] == "grind" then
-        local currentXP = UnitXP("player")
-        if currentXP >= (s.xp or 0) then return "XP target already reached" end
     end
     return nil
 end

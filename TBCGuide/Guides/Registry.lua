@@ -32,6 +32,8 @@ function Guides:Register(g)
     if type(g.steps) ~= "table" or #g.steps == 0 then return reject(g.id, "no steps") end
     for i, s in ipairs(g.steps) do
         if type(s) ~= "table" or not VALID_STEP[s[1]] then return reject(g.id, "bad step " .. i) end
+        -- A grind step without a target level would count as done at once.
+        if s[1] == "grind" and type(s.level) ~= "number" then return reject(g.id, "grind step " .. i .. " needs a level") end
         s.index = i
     end
     g.minLevel = g.minLevel or 1

@@ -54,10 +54,8 @@ function StepText:Title(s)
     elseif k == "level" then
         return "Reach level " .. tostring(s.level)
     elseif k == "grind" then
-        local zone = s.zone or "the recommended zone"
-        local mobs = s.npcs and table.concat(s.npcs, ", ") or "recommended mobs"
-        local xp = s.xp or "required XP"
-        return "Grind " .. mobs .. " in " .. zone .. " until " .. xp .. " XP"
+        local mobs = type(s.mobs) == "table" and #s.mobs > 0 and table.concat(s.mobs, ", ") or "mobs"
+        return "Grind " .. mobs .. (s.location and (" at " .. s.location) or "") .. " until level " .. tostring(s.level)
     elseif k == "talk" then
         return "Talk to " .. string.format(NPC, s.npc or "?")
     elseif k == "guide" then
@@ -87,16 +85,11 @@ function StepText:Details(s)
         end
     elseif s[1] == "turnin" and s.q and not ns.Tracker:InLog(s.q) and not ns.Tracker:IsTurnedIn(s.q) then
         lines[#lines + 1] = string.format(WARN, "Quest is not in your log - skip this step if you did not take it.")
-    elseif s[1] == "level" then
+    elseif s[1] == "level" or s[1] == "grind" then
         local xp, maxXp = UnitXP("player"), UnitXPMax("player")
         if maxXp and maxXp > 0 then
             lines[#lines + 1] = string.format(DIM, string.format("Level %d, %d%% through", UnitLevel("player"), math.floor(xp / maxXp * 100)))
         end
-    elseif s[1] == "grind" then
-        local currentXP = UnitXP("player")
-        local nextLevelXP = UnitXPMax("player")
-        local remainingXP = (s.xp or 0) + nextLevelXP - currentXP
-        lines[#lines + 1] = string.format(DIM, string.format("Current XP: %d, Remaining XP: %d", currentXP, remainingXP))
     end
     if s.text and s[1] ~= "goto" and s[1] ~= "note" and s[1] ~= "travel" then
         lines[#lines + 1] = s.text
@@ -116,12 +109,9 @@ end
 -- Navigation target for a step: zoneAreaId, x, y, label. Uses compiled coordinates first and
 -- falls back to live database lookups for quest steps.
 function StepText:Target(s)
-    if s.x and s.y and s.z then return s.z, s.x, s.y, s.npc or s.text end
-    if s[1] == "grind" then
-        local zone = s.zone or "the recommended zone"
-        local mobs = s.npcs and table.concat(s.npcs, ", ") or "recommended mobs"
-        local xp = s.xp or "required XP"
-        return s.z, s.x, s.y, mobs .. " in " .. zone .. " until " .. xp .. " XP"
+    if s.x and s.y and s.z then
+        if s[1] == "grind" then return s.z, s.x, s.y, s.location or (s.mobs and s.mobs[1]) end
+        return s.z, s.x, s.y, s.npc or s.text
     end
     if not s.q then return nil end
     if s[1] == "accept" then

@@ -15,7 +15,7 @@ ns.Guides:Register({
     {"accept",q=38,title="Westfall Stew",npc="Salma Saldean",z=40,x=56.4,y=30.5,v=1},
     {"accept",q=22,title="Goretusk Liver Pie",npc="Salma Saldean",z=40,x=56.4,y=30.5,v=1},
     {"accept",q=9,title="The Killing Fields",npc="Farmer Saldean",z=40,x=56,y=31.2,v=1},
-    {"turnin",q=109,title="Report to Gryan Stoutmantle",npc="Gryan Stoutmantle",z=40,x=56.3,y=47.5,text="Sentinel Hill tower.",v=1},
+    {"turnin",q=109,title="Report to Gryan Stoutmantle",npc="Gryan Stoutmantle",z=40,x=56.3,y=47.5,text="Sentinel Hill tower.",mark={i=1,npcs={234}},v=1},
     {"accept",q=12,title="The People's Militia",npc="Gryan Stoutmantle",z=40,x=56.3,y=47.5,v=1},
     {"accept",q=102,title="Patrolling Westfall",npc="Captain Danuvin",z=40,x=56.4,y=47.6,v=1},
     {"accept",q=153,title="Red Leather Bandanas",npc="Scout Galiaan",z=40,x=54,y=53,v=1},

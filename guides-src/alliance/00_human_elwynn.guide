@@ -50,7 +50,7 @@ turnin Investigate Echo Ridge
 accept Skirmish at Echo Ridge
 turnin Brotherhood of Thieves
 accept Bounty on Garrick Padfoot
-complete Bounty on Garrick Padfoot | Garrick Padfoot is at the Defias camp east of the vineyard.
+complete Bounty on Garrick Padfoot [mark=skull] | Garrick Padfoot is at the Defias camp east of the vineyard.
 complete Skirmish at Echo Ridge | Kill Kobold Laborers inside Echo Ridge Mine.
 turnin Bounty on Garrick Padfoot
 turnin Skirmish at Echo Ridge

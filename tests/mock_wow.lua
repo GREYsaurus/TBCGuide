@@ -287,3 +287,53 @@ function AbandonQuest()
     end
 end
 QuestLogFrame = CreateFrame("Frame", "QuestLogFrame")
+
+-- Units and raid target icons -----------------------------------------------------------------------
+-- MOCK.units[token] = { guid=, name=, dead= }; icons are stored per GUID like the real client
+-- (one icon per unit, each icon on one unit). MOCK.markDenied makes the client ignore SetRaidTarget.
+MOCK.units = {}
+MOCK.icons = {}
+MOCK.markCalls = 0
+MOCK.inRaid, MOCK.leader, MOCK.assist, MOCK.combat = false, false, false, false
+
+function MOCK.creature(npcId, spawn, name)
+    return { guid = string.format("Creature-0-4372-0-17-%d-%010d", npcId, spawn or 1), name = name or ("npc " .. npcId) }
+end
+
+local baseUnitExists, baseUnitName = UnitExists, UnitName
+function UnitExists(u)
+    if MOCK.units[u] then return true end
+    return baseUnitExists(u)
+end
+function UnitName(u)
+    if u and MOCK.units[u] then return MOCK.units[u].name end
+    return baseUnitName(u)
+end
+function UnitGUID(u) return MOCK.units[u] and MOCK.units[u].guid end
+function UnitIsDead(u) return MOCK.units[u] and MOCK.units[u].dead or false end
+function GetRaidTargetIndex(u)
+    local x = MOCK.units[u]
+    return x and MOCK.icons[x.guid] or nil
+end
+function SetRaidTarget(u, i)
+    MOCK.markCalls = MOCK.markCalls + 1
+    if MOCK.markDenied then return end
+    local x = MOCK.units[u]
+    if not x then return end
+    if i == 0 or MOCK.icons[x.guid] == i then
+        MOCK.icons[x.guid] = nil -- real client: same icon again toggles it off
+    else
+        for g, ic in pairs(MOCK.icons) do if ic == i then MOCK.icons[g] = nil end end
+        MOCK.icons[x.guid] = i
+    end
+    MOCK.fire("RAID_TARGET_UPDATE")
+end
+function IsInRaid() return MOCK.inRaid end
+function UnitIsGroupLeader() return MOCK.leader end
+function UnitIsGroupAssistant() return MOCK.assist end
+function InCombatLockdown() return MOCK.combat end
+function strsplit(sep, s)
+    local out = {}
+    for part in string.gmatch(s, "([^" .. sep .. "]+)") do out[#out + 1] = part end
+    return unpack(out)
+end

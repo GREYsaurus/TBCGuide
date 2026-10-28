@@ -54,7 +54,7 @@ ns.Guides:Register({
     {"bind",npc="Innkeeper Delaniel",z=3430,x=48.2,y=47.7,place="Falconwing Square",v=1},
     {"complete",q=8463,title="Unstable Mana Crystals",text="Crates at the Ruins of Silvermoon.",v=1},
     {"complete",q=8472,title="Major Malfunction",text="Arcane Patrollers.",v=1},
-    {"complete",q=8468,title="Wanted: Thaelis the Hungerer",v=1},
+    {"complete",q=8468,title="Wanted: Thaelis the Hungerer",mark={i=8,npcs={15949}},v=1},
     {"turnin",q=8463,title="Unstable Mana Crystals",npc="Aeldon Sunbrand",z=3430,x=48.2,y=46,v=1},
     {"accept",q=9352,title="Darnassian Intrusions",npc="Aeldon Sunbrand",z=3430,x=48.2,y=46,v=1},
     {"complete",q=9352,title="Darnassian Intrusions",v=1},

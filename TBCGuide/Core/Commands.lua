@@ -23,11 +23,16 @@ local HELP = {
     { "options", "open settings" },
     { "automation", "open quest automation / junk selling settings" },
     { "orphans", "review and abandon quests your route will never turn in" },
+    { "mark [icon]", "mark your target (skull, cross, square, moon, triangle, diamond, circle, star)" },
+    { "unmark", "clear your target's raid marker" },
+    { "marker <icon>", "set the default marker" },
+    { "markbar", "show/hide the raid marker bar" },
+    { "markers", "open raid marker settings" },
     { "protect <itemID|link>", "never sell this item automatically (unprotect to undo)" },
     { "protected", "list protected items and junk-sale totals" },
     { "escort add|remove <questID>", "extra quests that must never be auto-accepted (escort list)" },
     { "set <option> on|off", "change a setting from chat" },
-    { "debug [api|talents|quest <id>|escort <id>|errors]", "diagnostics" },
+    { "debug [api|talents|quest <id>|escort <id>|marks|errors]", "diagnostics" },
     { "help", "this list" },
 }
 
@@ -55,6 +60,24 @@ commands.options = function() ns.Options:Open() end
 commands.config = commands.options
 commands.help = printHelp
 commands.orphans = function() ns.OrphanFrame:Toggle() end
+
+commands.mark = function(arg)
+    local icon
+    if arg and arg ~= "" then
+        icon = ns.Marker.Parse(arg)
+        if not icon then return ns:Print("Unknown marker '" .. arg .. "'. Use skull, cross, square, moon, triangle, diamond, circle, star or 1-8.") end
+    end
+    ns.Marker:MarkTarget(icon)
+end
+commands.unmark = function() ns.Marker:Unmark() end
+commands.marker = function(arg)
+    local icon = ns.Marker.Parse(arg)
+    if not icon then return ns:Print("Default marker is " .. ns.Marker.Label(ns.db.profile.defaultMarker) .. ". Usage: /tbcg marker <icon>") end
+    ns.db.profile.defaultMarker = icon
+    ns:Print("Default marker: " .. ns.Marker.Label(icon))
+end
+commands.markbar = function() ns.MarkerBar:Toggle() end
+commands.markers = function() ns.MarkerBar:OpenOptions() end
 commands.orphaned = commands.orphans
 commands.automation = function() ns.AutomationOptions:Open() end
 

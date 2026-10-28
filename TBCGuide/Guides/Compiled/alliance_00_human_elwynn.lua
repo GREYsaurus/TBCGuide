@@ -50,7 +50,7 @@ ns.Guides:Register({
     {"accept",q=21,title="Skirmish at Echo Ridge",npc="Marshal McBride",z=12,x=48.9,y=41.6,v=1},
     {"turnin",q=18,title="Brotherhood of Thieves",npc="Deputy Willem",z=12,x=48.2,y=42.9,v=1},
     {"accept",q=6,title="Bounty on Garrick Padfoot",npc="Deputy Willem",z=12,x=48.2,y=42.9,v=1},
-    {"complete",q=6,title="Bounty on Garrick Padfoot",text="Garrick Padfoot is at the Defias camp east of the vineyard.",v=1},
+    {"complete",q=6,title="Bounty on Garrick Padfoot",text="Garrick Padfoot is at the Defias camp east of the vineyard.",mark={i=8,npcs={103}},v=1},
     {"complete",q=21,title="Skirmish at Echo Ridge",text="Kill Kobold Laborers inside Echo Ridge Mine.",v=1},
     {"turnin",q=6,title="Bounty on Garrick Padfoot",npc="Deputy Willem",z=12,x=48.2,y=42.9,v=1},
     {"turnin",q=21,title="Skirmish at Echo Ridge",npc="Marshal McBride",z=12,x=48.9,y=41.6,v=1},

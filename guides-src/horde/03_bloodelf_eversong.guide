@@ -53,7 +53,7 @@ accept Wanted: Thaelis the Hungerer
 bind Falconwing Square
 complete Unstable Mana Crystals | Crates at the Ruins of Silvermoon.
 complete Major Malfunction | Arcane Patrollers.
-complete Wanted: Thaelis the Hungerer
+complete Wanted: Thaelis the Hungerer [mark=skull]
 turnin Unstable Mana Crystals
 accept Darnassian Intrusions
 complete Darnassian Intrusions

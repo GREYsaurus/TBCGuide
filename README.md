@@ -14,6 +14,7 @@ Everything is in the base install. There are no guide packs, accounts, subscript
 - **Junk selling (new in 0.2.0, off by default):** sells grey items at vendors, with protected items and categories, and quest items always kept.
 - **Orphaned quests (new in 0.2.0):** an **Orphaned** button on the quest log lists quests your route will never turn in, and abandons the ones you pick after a confirmation.
 - **Maximum-speed route option:** hides optional side quests.
+- **Raid markers (new in 0.3.0):** `/tbcg mark skull`, a marker bar, and guide steps that mark their quest NPC or kill target. Only NPCs the step names are marked, matched by NPC ID, and markers you or others set are never overwritten. See [docs/RAID_MARKERS.md](docs/RAID_MARKERS.md).
 
 Details and defaults: [docs/AUTOMATION.md](docs/AUTOMATION.md).
 
@@ -60,6 +61,8 @@ More detail, including building from source, is in [INSTALL.md](INSTALL.md).
 | `/tbcg orphans` | Review and abandon quests your route will never turn in |
 | `/tbcg protect <item>` / `unprotect` / `protected` | Junk-selling protection list |
 | `/tbcg escort add\|remove <questID>` | Extra quests that must never be auto-accepted |
+| `/tbcg mark [icon]` / `unmark` | Mark your target with a raid icon (skull, cross, ...) or clear it |
+| `/tbcg marker <icon>` / `markbar` / `markers` | Default marker, marker bar, raid marker settings |
 | `/tbcg set <option> on\|off` | Change any on/off setting from chat |
 | `/tbcg debug` / `debug api` / `debug talents` / `debug quest <id>` | Diagnostics |
 | `/tbcg help` | All commands |
@@ -81,6 +84,7 @@ Bundled third-party data and its licensing situation are described in [NOTICE.md
 - [docs/COVERAGE_REPORT.md](docs/COVERAGE_REPORT.md): generated coverage report
 - [docs/RESEARCH.md](docs/RESEARCH.md): research findings and decisions
 - [docs/AUTOMATION.md](docs/AUTOMATION.md): quest automation, junk selling, orphaned quests, API evidence
+- [docs/RAID_MARKERS.md](docs/RAID_MARKERS.md): raid markers, `[mark=...]` guide flag, client rules
 - [docs/ROUTE_OPTIMIZATION.md](docs/ROUTE_OPTIMIZATION.md): route research, optimization model, audit and changes
 - [docs/ROUTE_AUDIT.md](docs/ROUTE_AUDIT.md): generated route audit
 - [CHANGELOG.md](CHANGELOG.md)

@@ -42,6 +42,15 @@ local accountDefaults = {
         autoSellJunk = false,       -- OFF by default: sell grey (Poor) items when a vendor opens
         sellNotify = true,          -- chat summary of junk sales
         sellNotifyItems = false,    -- one chat line per item sold
+        -- Raid markers (docs/RAID_MARKERS.md)
+        markEnabled = true,         -- /tbcg mark, the marker bar and guide marking
+        autoMark = true,            -- mark NPCs the current guide step names with [mark=...]
+        autoMarkObjectives = false, -- also mark kill objectives of unmarked steps (default icon)
+        markReplace = false,        -- automatic marking may replace an existing icon
+        markClearOnAdvance = true,  -- remove our automatic icons when the step changes
+        markNotify = true,          -- chat messages for marking results
+        defaultMarker = 8,          -- 1 star .. 8 skull
+        showMarkerBar = false,
     },
     protectedItems = {},    -- [itemID] = true: never sold automatically
     protectedClasses = {},  -- [itemClassID] = true/false: overrides Vendor.CLASSES defaults
@@ -52,6 +61,7 @@ local accountDefaults = {
         talents = { point = "CENTER", x = 0, y = 0 },
         arrow = { point = "TOP", x = 0, y = -120 },
         orphans = { point = "CENTER", x = 0, y = 0 },
+        markerBar = { point = "TOP", x = 0, y = -200 },
     },
 }
 
@@ -90,6 +100,8 @@ function ns:InitSavedVariables()
     for _, key in ipairs({ "protectedItems", "protectedClasses", "escortExtra" }) do
         if type(TBCGuideDB[key]) ~= "table" then TBCGuideDB[key] = {} end
     end
+    local dm = TBCGuideDB.profile.defaultMarker
+    if type(dm) ~= "number" or dm < 1 or dm > 8 then TBCGuideDB.profile.defaultMarker = 8 end
     local js = TBCGuideCharDB.junkStats
     if type(js) ~= "table" or type(js.items) ~= "number" or type(js.copper) ~= "number" then
         TBCGuideCharDB.junkStats = { items = 0, copper = 0 }

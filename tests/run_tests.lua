@@ -124,9 +124,10 @@ for _, cmd in ipairs({ "", "help", "guide", "talents", "debug", "debug api", "de
     check(ok, "/tbcg " .. cmd .. " -> " .. tostring(err))
 end
 
--- Automation (junk selling, quest accept / turn-in) -------------------------------------------------
+-- Automation (junk selling, quest accept / turn-in) and raid markers -----------------------------
 TEST = { check = check, ns = ns }
 dofile("tests/test_automation.lua")
+dofile("tests/test_markers.lua")
 
 print(string.format("%d passed, %d failed", passes, failures))
 os.exit(failures == 0 and 0 or 1)

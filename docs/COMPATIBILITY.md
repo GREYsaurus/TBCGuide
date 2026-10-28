@@ -62,3 +62,17 @@ None of these have been done yet. Tick them off on a real client:
 - [ ] Junk selling ON: grey items are sold. Grey items needed by a quest in your log, protected items and protected categories stay. The summary's copper matches the money gained.
 - [ ] Quest log window: the **Orphaned (N)** button is visible and not overlapping anything. The list matches expectations. **Abandon** asks for confirmation and removes only the ticked quests.
 - [ ] *Maximum-speed route* (Interface > AddOns > TBCGuide) hides optional steps; turning it off restores them.
+
+### 0.3.0 raid markers (see docs/RAID_MARKERS.md)
+
+- [ ] `/tbcg debug api`: `SetRaidTarget`, `GetRaidTargetIndex` and `UnitGUID` report `yes`.
+- [ ] No target: `/tbcg mark skull` prints "You have no target to mark." with no Lua error.
+- [ ] Solo: `/tbcg mark skull` puts a skull on your target (check the target frame and the world), and "Marked ..." is printed. `/tbcg unmark` removes it. Marking the same icon twice leaves it on.
+- [ ] In a party, as any member: marking works. In a raid without assist: it is refused with a reason. As raid assistant or leader: it works.
+- [ ] Orc/Troll, Durotar step *Sarkoth*: targeting Sarkoth puts a skull on him automatically (once). Other scorpids are not marked.
+- [ ] Change that skull by hand: TBCGuide does not put it back, and does not mark another Sarkoth in the same step.
+- [ ] A mob that already has an icon is not re-marked (default `markReplace` off).
+- [ ] Advancing the step removes TBCGuide's skull but not icons you set yourself.
+- [ ] In combat: marking by command and by the marker bar works. `/tbcg markbar` toggling is refused in combat.
+- [ ] Marker bar buttons mark and clear your target. If the client ever blocks addon marking, the chat message says so and the bar still works.
+- [ ] Raid marker settings page appears under TBCGuide, and changes persist after `/reload`.

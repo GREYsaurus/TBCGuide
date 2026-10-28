@@ -22,7 +22,7 @@ accept Sting of the Scorpid
 accept Galgar's Cactus Apple Surprise | Galgar, near the Den (offered after Cutting Teeth).
 complete Galgar's Cactus Apple Surprise | Cactus apples beside the cacti.
 turnin Galgar's Cactus Apple Surprise
-complete 790 Sarkoth | Sarkoth is a large scorpid north-west of Hana'zua.
+complete 790 Sarkoth [mark=skull] | Sarkoth is a large scorpid north-west of Hana'zua.
 turnin 790 Sarkoth
 accept 804 Sarkoth
 turnin 804 Sarkoth
@@ -42,7 +42,7 @@ complete Lazy Peons | Use the Foreman's Blackjack on sleeping peons.
 turnin Lazy Peons
 accept Thazz'ril's Pick
 complete Thazz'ril's Pick | Burning Blade Cave, north.
-complete Vanquish the Betrayers | Burning Blade cultists in the cave.
+complete Vanquish the Betrayers [mark=cross:Lieutenant Benedict] | Kul Tiras Sailors and Marines at Tiragarde Keep; Lieutenant Benedict is upstairs in the keep.
 complete Burning Blade Medallion | Yarrog Baneshadow, deep in the cave.
 turnin Thazz'ril's Pick
 turnin Vanquish the Betrayers

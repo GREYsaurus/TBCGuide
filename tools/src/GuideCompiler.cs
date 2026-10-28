@@ -149,6 +149,10 @@ namespace TBCGuideTools
         public int Group = -1; // -1 none, 0 unspecified size, n = group size
         public List<string> Classes, Races;
         public int Line;
+        public int NpcId;                        // giver/finisher/talk NPC chosen for the step (0 = none)
+        public int MarkIcon;                     // raid target icon 1-8 from [mark=...] (0 = none)
+        public string MarkTarget;                // optional explicit target: NPC id or exact NPC name
+        public List<int> MarkNpcs;               // resolved NPC ids the add-on may mark for this step
     }
 
     public sealed class CGuide
@@ -405,6 +409,7 @@ namespace TBCGuideTools
             if (flags.TryGetValue("dungeon", out v)) s.Dungeon = v;
             if (flags.TryGetValue("obj", out v)) s.Obj = int.Parse(v);
             if (flags.ContainsKey("unverified")) s.Verified = false;
+            if (flags.TryGetValue("mark", out v)) ParseMark(v, s, where, res);
             int stepZone = g.Zone;
             if (flags.TryGetValue("zone", out v))
             {
@@ -486,6 +491,7 @@ namespace TBCGuideTools
                     int npc = ResolveNpc(res.Db, arg, g.Faction, stepZone, lx, ly);
                     if (npc <= 0) { res.Errors.Add(where + ": NPC '" + arg + "' not found in database for " + g.Faction); return; }
                     s.Npc = res.Db.NpcName(npc);
+                    s.NpcId = npc;
                     PlaceAt(res.Db.NpcSpawns(npc), s, stepZone, ref lz, ref lx, ref ly);
                     break;
                 }
@@ -556,7 +562,95 @@ namespace TBCGuideTools
                 lx = ax; ly = ay; lz = stepZone;
                 if (verb != "goto") s.Verified = false;
             }
+            if (s.MarkIcon > 0) ResolveMark(s, stepZone, where, res);
             g.Steps.Add(s);
+        }
+
+        // ------------------------------------------------------------------ raid markers
+        // [mark=skull] marks the step's own NPCs: accept -> quest givers, turnin -> finishers,
+        // talk -> that NPC, complete -> kill-objective creatures (and the 1-3 NPCs that drop a quest item). [mark=skull:1234] targets an NPC
+        // id; [mark=skull:Name] an exact NPC name, which must resolve to ONE id (else: error, use
+        // the id). The add-on only ever matches units by NPC id, never by name.
+        public static readonly string[] MarkNames = { "", "star", "circle", "diamond", "triangle", "moon", "square", "cross", "skull" };
+
+        static void ParseMark(string v, CStep s, string where, CompileResult res)
+        {
+            string icon = v, target = null;
+            int c = v.IndexOf(':');
+            if (c >= 0) { icon = v.Substring(0, c).Trim(); target = v.Substring(c + 1).Trim(); }
+            int idx = Array.IndexOf(MarkNames, icon.ToLowerInvariant());
+            int n;
+            if (idx <= 0 && int.TryParse(icon, out n) && n >= 1 && n <= 8) idx = n;
+            if (idx <= 0) { res.Errors.Add(where + ": unknown raid marker '" + icon + "' (use star, circle, diamond, triangle, moon, square, cross, skull or 1-8)"); return; }
+            s.MarkIcon = idx;
+            s.MarkTarget = string.IsNullOrEmpty(target) ? null : target;
+        }
+
+        static void ResolveMark(CStep s, int zone, string where, CompileResult res)
+        {
+            var db = res.Db;
+            var ids = new List<int>();
+            LTable rec = null;
+            if (s.Quest > 0) db.Quests.TryGetValue(s.Quest, out rec);
+            if (s.MarkTarget == null)
+            {
+                if (s.Kind == "accept" && rec != null) ids.AddRange(BundledDb.Ids(rec, BundledDb.Q_SNPC));
+                else if (s.Kind == "turnin" && rec != null) ids.AddRange(BundledDb.Ids(rec, BundledDb.Q_ENPC));
+                else if (s.Kind == "complete" && rec != null)
+                {
+                    var obj = BundledDb.Tab(rec, BundledDb.Q_OBJ);
+                    var cl = obj == null ? null : obj.Get("c") as LTable;
+                    var kl = obj == null ? null : obj.Get("k") as LTable;
+                    if (cl != null) ids.AddRange(cl.IntList());
+                    if (kl != null) ids.AddRange(kl.IntList());
+                    // Item objectives: the NPCs that drop the item, only when it is a specific drop
+                    // (at most 3 sources, e.g. a named mob's head) - never a common drop table.
+                    var il = obj == null ? null : obj.Get("i") as LTable;
+                    if (il != null)
+                        foreach (var item in il.IntList())
+                        {
+                            LTable it;
+                            if (!db.Items.TryGetValue(item, out it)) continue;
+                            var drops = BundledDb.Ids(it, BundledDb.I_NPCDROPS);
+                            if (drops.Count > 0 && drops.Count <= 3) ids.AddRange(drops);
+                        }
+                }
+                else if (s.NpcId > 0) ids.Add(s.NpcId);
+                if (ids.Count == 0) { res.Errors.Add(where + ": [mark] has no NPC to mark for this step; add a target, e.g. [mark=skull:1234]"); return; }
+            }
+            else
+            {
+                int id;
+                if (int.TryParse(s.MarkTarget, out id))
+                {
+                    if (!db.Npcs.ContainsKey(id)) { res.Errors.Add(where + ": [mark] NPC id " + id + " is not in the database"); return; }
+                    ids.Add(id);
+                }
+                else
+                {
+                    string want = BundledDb.Norm(s.MarkTarget);
+                    var byName = db.Npcs.Where(kv => BundledDb.Norm(BundledDb.Str(kv.Value, BundledDb.N_NAME) ?? "") == want).Select(kv => kv.Key).ToList();
+                    if (byName.Count > 1)
+                    {
+                        // Prefer the ones this step is about, then the ones spawning in this zone.
+                        var related = new HashSet<int>();
+                        if (rec != null)
+                        {
+                            foreach (var x in BundledDb.Ids(rec, BundledDb.Q_SNPC)) related.Add(x);
+                            foreach (var x in BundledDb.Ids(rec, BundledDb.Q_ENPC)) related.Add(x);
+                            var obj = BundledDb.Tab(rec, BundledDb.Q_OBJ);
+                            foreach (var key in new[] { "c", "k" }) { var t = obj == null ? null : obj.Get(key) as LTable; if (t != null) foreach (var x in t.IntList()) related.Add(x); }
+                        }
+                        var narrowed = byName.Where(related.Contains).ToList();
+                        if (narrowed.Count == 0) narrowed = byName.Where(x => db.NpcSpawns(x).Any(sp => db.Parent((int)sp[0]) == db.Parent(zone))).ToList();
+                        if (narrowed.Count > 0) byName = narrowed;
+                    }
+                    if (byName.Count == 0) { res.Errors.Add(where + ": [mark] NPC '" + s.MarkTarget + "' not found in the database"); return; }
+                    if (byName.Count > 1) { res.Errors.Add(where + ": [mark] NPC name '" + s.MarkTarget + "' is ambiguous (ids " + string.Join(",", byName.Select(x => x.ToString()).ToArray()) + "); use the id"); return; }
+                    ids.AddRange(byName);
+                }
+            }
+            s.MarkNpcs = ids.Distinct().OrderBy(x => x).ToList();
         }
 
         static double D(string s) { return double.Parse(s, CultureInfo.InvariantCulture); }
@@ -702,7 +796,7 @@ namespace TBCGuideTools
                 foreach (var sp in db.NpcSpawns(n))
                 {
                     double d = Dist(sp, zone, lz, lx, ly);
-                    if (d < bestD) { bestD = d; best = sp; who = db.NpcName(n); }
+                    if (d < bestD) { bestD = d; best = sp; who = db.NpcName(n); s.NpcId = n; }
                 }
             foreach (var o in objs)
                 foreach (var sp in db.ObjSpawns(o))
@@ -890,6 +984,8 @@ namespace TBCGuideTools
             if (s.Elite) sb.Append(",elite=true");
             if (s.Group >= 0) sb.Append(",group=").Append(s.Group > 0 ? s.Group.ToString() : "true");
             if (s.Dungeon != null) sb.Append(",dungeon=").Append(L(s.Dungeon));
+            if (s.MarkNpcs != null && s.MarkNpcs.Count > 0)
+                sb.Append(",mark={i=").Append(s.MarkIcon).Append(",npcs={").Append(string.Join(",", s.MarkNpcs.Select(x => x.ToString()).ToArray())).Append("}}");
             sb.Append(",v=").Append(s.Verified ? 1 : 0);
             return sb.Append("}").ToString();
         }

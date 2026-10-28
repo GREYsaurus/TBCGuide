@@ -15,6 +15,13 @@ Stated plainly, so nobody mistakes "files exist" for "finished and tested".
 - **Quests that cost money** to complete, quests shared by players and party escort confirmations are always left to you.
 - **Orphaned quests** are judged against the active guide and the `@next` chain from it. If you leveled off-route or use a guide that is not on your race's chain, quests may be listed that you still want; nothing is abandoned without your confirmation.
 
+## Raid markers
+
+- **Not run in the client yet.** Marking behaviour is tested headless only (mocked APIs that model the documented rules).
+- If 2.5.6 restricts `SetRaidTarget` to secure code (as Retail 12.0 does), automatic and slash-command marking are blocked. TBCGuide detects that, switches automatic marking off, and the click-driven marker bar remains.
+- Icons can only be cleared on units you can currently see (target, mouseover, focus, nameplates).
+- Automatic marking only reacts to units you look at; it never searches for or targets units itself.
+
 ## Guides
 
 - **Route speed is unmeasured.** The route audit (`docs/ROUTE_AUDIT.md`) proves every route is completable in order, never overfills the quest log, and has no pickup that is never turned in. But no route has been timed, and no XP-per-hour figure is claimed. Possible issues:

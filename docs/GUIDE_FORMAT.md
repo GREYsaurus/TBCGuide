@@ -52,7 +52,7 @@ If a name is ambiguous (e.g. the three "Rite of Vision" quests), the compiler st
 
 ### Flags
 
-`[optional]`, `[elite]`, `[group]` or `[group=3]`, `[dungeon=Shadowfang Keep]`, `[class=Warrior,Paladin]`, `[race=Human]`, `[zone=Orgrimmar]`, `[at=x,y]` (explicit coordinates; marked unverified), `[obj=2]`, `[unverified]`. Separate several flags with `;` inside one bracket: `[elite; group=3; optional]`.
+`[optional]`, `[elite]`, `[group]` or `[group=3]`, `[dungeon=Shadowfang Keep]`, `[class=Warrior,Paladin]`, `[race=Human]`, `[zone=Orgrimmar]`, `[at=x,y]` (explicit coordinates; marked unverified), `[obj=2]`, `[unverified]`, `[mark=skull]` / `[mark=cross:Lieutenant Benedict]` / `[mark=star:1234]` (raid marker; see docs/RAID_MARKERS.md). Separate several flags with `;` inside one bracket: `[elite; group=3; optional]`.
 
 ### What the compiler adds for you
 

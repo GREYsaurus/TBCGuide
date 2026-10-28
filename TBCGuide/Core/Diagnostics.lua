@@ -48,6 +48,9 @@ function D:Api()
         "C_GossipInfo.SelectActiveQuest", "GetGossipAvailableQuests", "GetAvailableQuestInfo", "GetActiveQuestID",
         "GetQuestID", "AcceptQuest", "CompleteQuest", "IsQuestCompletable", "GetNumQuestChoices", "GetQuestReward",
         "GetQuestMoneyToGet", "C_QuestLog.GetMaxNumQuestsCanAccept", "Settings.RegisterCanvasLayoutSubcategory",
+        -- raid markers
+        "SetRaidTarget", "GetRaidTargetIndex", "UnitGUID", "IsInRaid", "UnitIsGroupLeader", "UnitIsGroupAssistant",
+        "InCombatLockdown",
     }
     ns:Print("API availability:")
     for _, a in ipairs(apis) do
@@ -94,6 +97,20 @@ function D:Run(arg)
     if cmd == "api" then return self:Api() end
     if cmd == "talents" then return self:TalentCheck() end
     if cmd == "quest" then return self:Quest(rest) end
+    if cmd == "marks" then
+        local M = ns.Marker
+        local r = M.rule
+        ns:Print("raid markers: " .. (r and ("step marks " .. M.Label(r.icon)) or "no marker rule for this step")
+            .. (M.blocked and ", BLOCKED by the client" or "") .. (M.stopped and ", paused after failures" or ""))
+        local ok, why = ns.Compat.CanMark()
+        line("can mark now: " .. tostring(ok) .. (why and (" (" .. why .. ")") or ""))
+        if r then
+            local ids = {}
+            for id in pairs(r.npcs) do ids[#ids + 1] = id .. " " .. tostring(ns.DB.GetNPCName(id)) end
+            line("npcs: " .. table.concat(ids, ", "))
+        end
+        return
+    end
     if cmd == "escort" then
         local id = tonumber(rest)
         if not id then return ns:Print("usage: /tbcg debug escort <questId>") end

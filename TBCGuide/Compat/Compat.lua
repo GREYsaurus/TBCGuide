@@ -405,6 +405,61 @@ function C.AbandonQuestAt(index, questId)
     return true
 end
 
+-- Raid target icons -------------------------------------------------------------------------------
+-- SetRaidTarget/GetRaidTargetIndex exist on 2.5.6 (warcraft.wiki.gg). Solo players and party
+-- members may mark; in a raid only the leader and assistants. Retail 12.0 made SetRaidTarget
+-- secure-only; if this client ever does the same, the call is blocked and Marker.lua falls back
+-- to the click-driven marker bar (SecureActionButtonTemplate).
+
+function C.GetRaidTargetIndex(unit)
+    if not (GetRaidTargetIndex and UnitExists and UnitExists(unit)) then return nil end
+    local i = GetRaidTargetIndex(unit)
+    if i and i >= 1 and i <= 8 then return i end
+    return nil
+end
+
+-- Sets (index 1-8) or clears (0) a unit's icon. Never toggles: SetRaidTarget removes an icon
+-- the unit already has, so that case is skipped. Returns false if the call errored or is missing.
+function C.SetRaidTarget(unit, index)
+    if not SetRaidTarget then note("SetRaidTarget") return false end
+    if index ~= 0 and C.GetRaidTargetIndex(unit) == index then return true end
+    if index == 0 and not C.GetRaidTargetIndex(unit) then return true end
+    local ok = pcall(SetRaidTarget, unit, index)
+    return ok
+end
+
+-- NPC id from a creature GUID ("Creature-0-<server>-<instance>-<zone>-<npcId>-<spawn>"), or nil.
+function C.UnitNpcId(unit)
+    if not (UnitGUID and UnitExists and UnitExists(unit)) then return nil end
+    local guid = UnitGUID(unit)
+    if type(guid) ~= "string" then return nil end
+    local kind, _, _, _, _, id = strsplit("-", guid)
+    if kind ~= "Creature" and kind ~= "Vehicle" then return nil end
+    return tonumber(id), guid
+end
+
+-- Whether the player may set raid icons right now; false plus a reason if not.
+function C.CanMark()
+    local inRaid = (IsInRaid and IsInRaid()) or (GetNumRaidMembers and GetNumRaidMembers() > 0) or false
+    if not inRaid then return true end
+    local leader = (UnitIsGroupLeader and UnitIsGroupLeader("player")) or (IsRaidLeader and IsRaidLeader())
+    local assist = (UnitIsGroupAssistant and UnitIsGroupAssistant("player")) or (IsRaidOfficer and IsRaidOfficer())
+    if leader or assist then return true end
+    return false, "in a raid only the leader and assistants can set raid markers"
+end
+
+-- Unit tokens that can be marked without changing target: target, mouseover, focus, nameplates.
+function C.MarkableUnits()
+    local out = { "target", "mouseover", "focus" }
+    for i = 1, 40 do
+        local u = "nameplate" .. i
+        if UnitExists and UnitExists(u) then out[#out + 1] = u end
+    end
+    return out
+end
+
+function C.InCombat() return InCombatLockdown and InCombatLockdown() and true or false end
+
 -- UI -------------------------------------------------------------------------------------------
 
 C.BackdropTemplate = BackdropTemplateMixin and "BackdropTemplate" or nil

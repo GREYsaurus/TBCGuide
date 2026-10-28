@@ -1,0 +1,92 @@
+# Publishes each GitHub release's add-on zip to CurseForge.
+# SPDX-License-Identifier: GPL-3.0-only
+#
+# Uploads exactly the TBCGuide-<version>.zip attached to the release (built and checked by
+# tools/build.ps1 all); nothing is rebuilt here. GitHub pre-releases go up as CurseForge "beta",
+# normal releases as "release".
+#
+# One-time setup (see docs/CURSEFORGE.md):
+#   - repository variable CURSEFORGE_PROJECT_ID = the numeric project ID from the CurseForge page
+#   - repository secret   CF_API_KEY            = a CurseForge API token (authors.curseforge.com > API tokens)
+# Optional variable CURSEFORGE_GAME_VERSION (default 2.5.6) picks the CurseForge game version.
+# Without the variable and secret the workflow skips the upload instead of failing.
+#
+# Re-run for an existing release: Actions > "Publish to CurseForge" > Run workflow > tag, e.g. v0.2.0.
+
+name: Publish to CurseForge
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to upload (e.g. v0.2.0)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    env:
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+      CF_PROJECT: ${{ vars.CURSEFORGE_PROJECT_ID }}
+      CF_GAME_VERSION: ${{ vars.CURSEFORGE_GAME_VERSION || '2.5.6' }}
+      CF_HOST: https://wow.curseforge.com
+      GH_TOKEN: ${{ github.token }}
+      TAG: ${{ github.event.release.tag_name || inputs.tag }}
+    steps:
+      - name: Check configuration
+        id: cfg
+        run: |
+          if [ -z "$CF_API_KEY" ] || [ -z "$CF_PROJECT" ]; then
+            echo "::notice::CurseForge upload skipped: set the CF_API_KEY secret and CURSEFORGE_PROJECT_ID variable (docs/CURSEFORGE.md)."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Download release zip and notes
+        if: steps.cfg.outputs.skip != 'true'
+        run: |
+          set -euo pipefail
+          VERSION="${TAG#v}"
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern "TBCGuide-${VERSION}.zip" --dir dist
+          test -s "dist/TBCGuide-${VERSION}.zip"
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json body,isPrerelease,name > release.json
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+
+      - name: Resolve CurseForge game version
+        if: steps.cfg.outputs.skip != 'true'
+        run: |
+          set -euo pipefail
+          curl -sSf -H "X-Api-Token: $CF_API_KEY" "$CF_HOST/api/game/versions" > versions.json
+          IDS=$(jq -c --arg n "$CF_GAME_VERSION" '[.[] | select(.name == $n) | .id]' versions.json)
+          echo "Game versions named $CF_GAME_VERSION: $IDS"
+          if [ "$(jq length <<< "$IDS")" -ne 1 ]; then
+            echo "::error::Expected exactly one CurseForge game version named '$CF_GAME_VERSION', found $IDS. Set CURSEFORGE_GAME_VERSION to the right name."
+            jq -c --arg n "$CF_GAME_VERSION" '.[] | select(.name | startswith($n[0:3]))' versions.json | head -20
+            exit 1
+          fi
+          echo "GAME_VERSION_IDS=$IDS" >> "$GITHUB_ENV"
+
+      - name: Upload to CurseForge
+        if: steps.cfg.outputs.skip != 'true'
+        run: |
+          set -euo pipefail
+          jq -n \
+            --arg name "TBCGuide $VERSION" \
+            --argjson versions "$GAME_VERSION_IDS" \
+            --slurpfile rel release.json \
+            '{displayName: $name,
+              changelog: $rel[0].body,
+              changelogType: "markdown",
+              gameVersions: $versions,
+              releaseType: (if $rel[0].isPrerelease then "beta" else "release" end),
+              relations: {projects: [{slug: "tomtom", type: "optionalDependency"}]}}' > metadata.json
+          cat metadata.json | jq 'del(.changelog)'
+          curl -sSf -H "X-Api-Token: $CF_API_KEY" \
+            -F "metadata=<metadata.json" \
+            -F "file=@dist/TBCGuide-${VERSION}.zip" \
+            "$CF_HOST/api/projects/$CF_PROJECT/upload-file" | tee response.json
+          echo "::notice::Uploaded TBCGuide $VERSION to CurseForge (file id $(jq -r .id response.json)). New files go through CurseForge moderation before they are public."

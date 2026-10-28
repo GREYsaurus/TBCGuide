@@ -84,3 +84,4 @@ Bundled third-party data and its licensing situation are described in [NOTICE.md
 - [docs/ROUTE_OPTIMIZATION.md](docs/ROUTE_OPTIMIZATION.md): route research, optimization model, audit and changes
 - [docs/ROUTE_AUDIT.md](docs/ROUTE_AUDIT.md): generated route audit
 - [CHANGELOG.md](CHANGELOG.md)
+- [docs/CURSEFORGE.md](docs/CURSEFORGE.md): publishing to CurseForge (listing text, logo, upload workflow)

@@ -12,8 +12,10 @@
 -- step text still shows plain coordinates - navigation is an aid, never a requirement.
 --
 -- Ownership (Nav.owner): "step" (the current guide step, FromStep), "route" (a roaming hunting route,
--- Core/Roam.lua) or "manual" (a waypoint the player asked for, such as /tbcg train waypoint). Routes
--- and the periodic retargeting never replace a manual waypoint; a new guide step does.
+-- Core/Roam.lua), "manual" (a waypoint the player asked for, such as /tbcg train waypoint) or
+-- "corpse" (Core/Corpse.lua, while you run back as a ghost). Routes and the periodic retargeting never
+-- replace a manual waypoint; a new guide step does. While the corpse owns the arrow, steps and routes
+-- cannot replace it (Nav:Held); a manual waypoint can, and that dismisses the corpse arrow.
 
 local _, ns = ...
 
@@ -25,13 +27,28 @@ local ARRIVE_YARDS = 12
 
 -- Target -----------------------------------------------------------------------------------------
 
+-- Whether the corpse arrow is active and `owner` may not replace it.
+function Nav:Held(owner)
+    return self.owner == "corpse" and ns.Corpse and ns.Corpse:Active() and owner ~= "corpse" and owner ~= "manual"
+end
+
 function Nav:SetTarget(areaId, x, y, label, owner)
+    owner = owner or "manual"
+    if self:Held(owner) then return end
     local mapId = ns.DB.ZoneUiMap(areaId)
     if not mapId then
         self:Clear()
         return
     end
-    self.owner = owner or "manual"
+    self:SetMapTarget(mapId, x, y, label, owner, areaId)
+end
+
+-- Same as SetTarget for a uiMapID (the corpse position comes as one).
+function Nav:SetMapTarget(mapId, x, y, label, owner, areaId)
+    owner = owner or "manual"
+    if self:Held(owner) then return end
+    if owner == "manual" and self.owner == "corpse" and ns.Corpse then ns.Corpse:OnManual() end
+    self.owner = owner
     local t = self.target
     if t and t.mapId == mapId and t.x == x and t.y == y then t.label = label or "" return end
     self.target = { area = areaId, mapId = mapId, x = x, y = y, label = label or "" }
@@ -48,6 +65,7 @@ function Nav:Clear()
 end
 
 function Nav:FromStep(step)
+    if self:Held("step") then return end
     if not step then return self:Clear() end
     local z, x, y, label = ns.Roam:TargetFor(step)
     if z then return self:SetTarget(z, x, y, label, "route") end
@@ -178,11 +196,12 @@ local function createArrow()
             self.label:SetText(t and string.format("%.1f, %.1f", t.x, t.y) or "")
             return
         end
+        local corpse = Nav.owner == "corpse"
         if dist < ARRIVE_YARDS then
             self.tex:SetVertexColor(0.3, 1, 0.3)
-            self.label:SetText("Arrived")
+            self.label:SetText(corpse and "Corpse" or "Arrived")
             local s = ns.Engine:CurrentStep()
-            if s and s[1] == "goto" then ns.Engine:MarkDone() end
+            if Nav.owner == "step" and s and s[1] == "goto" then ns.Engine:MarkDone() end
             return
         end
         if angle then
@@ -191,7 +210,7 @@ local function createArrow()
             local g = 1 - math.min(a / math.pi, 1)
             self.tex:SetVertexColor(1 - g * 0.7, 0.4 + g * 0.6, 0.2)
         end
-        self.label:SetText(string.format("%d yd", math.floor(dist + 0.5)))
+        self.label:SetText(string.format(corpse and "Corpse %d yd" or "%d yd", math.floor(dist + 0.5)))
     end)
     f:Hide()
     return f

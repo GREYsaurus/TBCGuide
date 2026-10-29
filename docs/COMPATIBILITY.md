@@ -190,3 +190,17 @@ Traversal sample of the researched routes (walk at least one full loop of each; 
 - [ ] **Step change / new quest item:** the button set updates; in combat it updates when combat ends, and no button ever shows one item while using another.
 - [ ] **Shift-click** links the item in chat without using it; **Alt-drag** moves the window; the tooltip still shows.
 - [ ] **No automatic use** when the guide advances, and no "action blocked" message in combat.
+
+### Corpse waypoint (not yet run in the game)
+
+- [ ] **Dead, not released:** no corpse arrow.
+- [ ] **Release:** one chat note, the arrow says "Corpse N yd" and points at the body, not the graveyard. Distance falls as you run back.
+- [ ] **Run across a zone border** on the way back: the arrow keeps pointing at the corpse.
+- [ ] **Resurrect at the corpse:** the arrow returns to the current guide step (or hunting route); a "go to" step is not completed by standing on your corpse.
+- [ ] **Spirit healer** or **another player's resurrection:** the arrow returns to the guide.
+- [ ] **`/reload` as a ghost:** the corpse arrow comes back.
+- [ ] **`/tbcg corpse off`**, then run: the guide arrow stays; **`/tbcg corpse on`** brings the corpse arrow back.
+- [ ] **Setting off while a ghost:** the arrow returns to the guide at once.
+- [ ] **Die inside a dungeon:** a note that there is no outdoor position, no arrow.
+- [ ] **Die twice:** the second death points to the new corpse, with no leftover from the first.
+- [ ] **No Lua errors** with `/tbcg debug` on (corpse: lines).

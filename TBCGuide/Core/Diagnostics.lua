@@ -52,6 +52,8 @@ function D:Api()
         -- hearthstone binding (Core/Bind.lua)
         "C_GossipInfo.GetOptions", "C_GossipInfo.SelectOption", "C_Map.GetAreaInfo",
         "C_PlayerInteractionManager.ConfirmationInteraction", "ConfirmBinder",
+        -- corpse waypoint (Core/Corpse.lua)
+        "C_DeathInfo.GetCorpseMapPosition", "UnitIsGhost",
         -- raid markers
         "SetRaidTarget", "GetRaidTargetIndex", "UnitGUID", "IsInRaid", "UnitIsGroupLeader", "UnitIsGroupAssistant",
         "InCombatLockdown", "C_Container.PickupContainerItem", "PickupContainerItem", "EquipCursorItem",

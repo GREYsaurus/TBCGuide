@@ -308,3 +308,6 @@ C_Map.GetAreaInfo                 # localized area names for bind steps (Core/Bi
 IsInInstance                      # hunting routes stop inside instances (Core/Roam.lua)
 SecureActionButtonMixin           # modern secure template present: register down+up clicks (UI/ActiveItems.lua)
 ChatEdit_InsertLink               # shift-click an active item to link it in chat
+UnitIsGhost                       # corpse waypoint: only while a ghost (Core/Corpse.lua)
+C_DeathInfo                       # corpse position (Core/Corpse.lua)
+C_DeathInfo.GetCorpseMapPosition  # corpse position on a uiMap, nil when the corpse is not on it

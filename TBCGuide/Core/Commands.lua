@@ -25,6 +25,7 @@ local HELP = {
     { "train", "spells your class trainer has for you (train defer | train waypoint)" },
     { "pet", "hunter pet skills and warlock Grimoires still to learn (pet defer | pet waypoint)" },
     { "route next|off|on", "hunting route: next point, normal objective waypoint for this step, or back on" },
+    { "corpse off|on", "while a ghost: return the arrow to the guide, or point it at your corpse again" },
     { "options", "open settings" },
     { "minimap", "show/hide the minimap button" },
     { "automation", "open quest automation / junk selling settings" },
@@ -93,6 +94,10 @@ commands.route = function(arg)
     elseif arg == "off" then ns.Roam:Suspend()
     elseif arg == "on" then ns.Roam:Resume()
     else ns:Print(ns.Roam:StatusLine() or "No hunting route is running for the current step.") end
+end
+commands.corpse = function(arg)
+    arg = string.lower(arg or "")
+    if arg == "off" then ns.Corpse:Dismiss() else ns.Corpse:Resume() end
 end
 commands.next = function() ns.Engine:Next() end
 commands.prev = function() ns.Engine:Prev() end

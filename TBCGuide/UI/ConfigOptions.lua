@@ -35,6 +35,8 @@ pages.general = { title = "General", items = function() return {
     T("worldMapButton", "Enable World Map Button", { tip = "A button on the world map that opens the guide browser." }),
     T("hideWindow", "Hide Window"),
     T("showArrow", "Hide waypoint arrow", { invert = true }),
+    T("corpseNav", "Automatically Navigate to Corpse", { tip = "After you release your spirit, the arrow points to your corpse until you are alive again, then goes back to the guide. Navigation only: it never releases, resurrects or talks to a spirit healer. Not inside instances (no outdoor position). /tbcg corpse off|on dismisses or brings it back.",
+      after = function() ns.Corpse:OnSetting() end }),
     T("roamRoutes", "Roaming Waypoints for Kill Objectives", { tip = "Cycles through verified hunting-area waypoints until the objective is complete. The points cover where the mobs are known to spawn, not where they are right now. Only some quests have a verified route; the others keep their normal waypoint.",
       after = function() ns.Roam:Refresh() if not ns.db.profile.roamRoutes then ns.Roam:Stop("setting off") end end }),
     { type = "button", label = "Next patrol point", tip = "Moves the arrow to the next point of the hunting route. The quest step is not skipped.",

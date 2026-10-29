@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.9.5
+
+### Added
+- **Automatically Navigate to Corpse** (Settings → General, on by default): after you release your spirit, the arrow points to your corpse ("Corpse 120 yd") until you are alive again, then goes back to the current guide step or hunting route. Navigation only: it never releases, resurrects or talks to a spirit healer.
+  - **Where the position comes from:** the game's own corpse position (C_DeathInfo), for the map you died on, then your current map and its parent maps. No position, or 0,0, means no arrow; the game is asked again a few times, then you get a short note.
+  - **Instances:** dying inside a dungeon, raid or battleground gives no outdoor position, so there is a note instead of an arrow.
+  - **Controls:** `/tbcg corpse off` returns the arrow to the guide, `/tbcg corpse on` brings it back. A waypoint you set yourself (such as `/tbcg train waypoint`) also replaces it.
+- Arriving near a waypoint only completes a "go to" step when the arrow is showing that step (not a hunting route point or your corpse).
+
+
 ## 0.9.4
 
 ### Added

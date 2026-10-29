@@ -9,7 +9,7 @@ ns.Guides:Register({
   next={{id="H_SwampOfSorrows"},},
   steps={
     {"fp",npc="Thysta",z=33,x=32.5,y=29.4,place="Grom'gol",v=1},
-    {"bind",npc="Innkeeper Thulbek",z=33,x=31.5,y=29.8,place="Grom'gol",v=1},
+    {"bind",npc="Innkeeper Thulbek",z=33,x=31.5,y=29.8,place="Grom'gol",npcId=5814,areas={117},v=1},
     {"accept",q=570,title="Mok'thardin's Enchantment",npc="Far Seer Mok'thardin",z=33,x=32.1,y=29.2,text="Far Seer Mok'thardin.",v=1},
     {"accept",q=568,title="The Defense of Grom'gol",npc="Commander Aggro'gosh",z=33,x=32.2,y=28.9,text="Commander Aggro'gosh.",v=1},
     {"accept",q=596,title="Bloody Bone Necklaces",npc="Kin'weelay",z=33,x=32.3,y=27.7,text="Kin'weelay.",v=1},

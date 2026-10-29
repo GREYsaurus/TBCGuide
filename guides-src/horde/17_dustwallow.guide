@@ -11,7 +11,7 @@
 @next Both_Tanaris
 
 fp Brackenwall Village
-bind Brackenwall Village
+bind Brackenwall Village [area=496]
 accept Inspecting the Ruins | Krog, Brackenwall.
 accept Identifying the Brood | Draz'Zilb.
 complete Inspecting the Ruins | The burned Shady Rest Inn.

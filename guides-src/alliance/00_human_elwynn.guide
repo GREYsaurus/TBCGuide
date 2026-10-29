@@ -65,7 +65,7 @@ turnin Report to Goldshire
 accept The Fargodeep Mine
 accept 5624 Garments of the Light [class=Priest] | Needs level 5. If you are lower, TBCGuide skips it and moves on.
 turnin Rest and Relaxation
-bind Goldshire
+bind Goldshire [area=87]
 accept Kobold Candles
 accept Gold Dust Exchange
 complete 5624 Garments of the Light [class=Priest]

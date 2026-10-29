@@ -17,7 +17,7 @@ accept The Dead Fields
 accept Prove Your Worth | Dalar Dawnweaver.
 accept Border Crossings | Shadow Priest Allister.
 fp The Sepulcher
-bind The Sepulcher
+bind The Sepulcher [area=228]
 turnin Lost Deathstalkers | Rane Yorick, at the hut on the northern coast.
 accept Wild Hearts
 complete Wild Hearts | Worgs around the Yorick hut.

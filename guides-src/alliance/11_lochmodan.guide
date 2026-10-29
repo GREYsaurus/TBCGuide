@@ -34,7 +34,7 @@ accept Thelsamar Blood Sausages
 turnin Stout to Kadrell | Mountaineer Kadrell, Thelsamar.
 accept Rat Catching
 accept Mountaineer Stormpike's Task
-bind Thelsamar
+bind Thelsamar [area=144,2101]
 accept 6387 Honor Students [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
 accept 6387 Honor Students [race=Gnome]
 complete Rat Catching | Tunnel Rat Kobolds at the Silver Stream Mine, north of Thelsamar.

@@ -30,7 +30,7 @@ None of this has been tested in the game client yet.
   | Class Trainer Suggestions | Important only | Off / Important only / All: what your trainer has for you, checked against your spellbook; train steps with nothing new are skipped. Never buys (docs/TRAINER.md) |
   | Trainer automation | off | Learns every spell you can afford at your class trainer; spends gold |
   | Flight Path automation | on | On a "fly to" step, takes that flight when the flight map opens |
-  | Innkeeper Bind automation | on | On a "set your hearthstone" step, picks the innkeeper's bind option and confirms it |
+  | Innkeeper Bind automation | on | On a "set your hearthstone" step, when you talk to that town's innkeeper: picks the bind option, confirms it only if the game names the step's inn, and completes the step once the game reports the new home. Never at other inns. Hold Shift to skip |
   | Skip Gossip | on | Picks the only option when an NPC has one option and no quests (never a bind option outside a bind step) |
 
   Hold **Shift** while talking to an NPC to skip all of these once.
@@ -38,8 +38,13 @@ None of this has been tested in the game client yet.
   - *Enable Inventory Manager* is the master switch for everything below it.
   - *Toggle junk with modified right click*: modifier + right-click a bag item adds it to, or removes it from, your junk list. You pick the modifier.
   - *Auto Sell Junk*.
-  - *Discard junk items if bag is full* (off by default) deletes the junk item worth least at a vendor when your bags are full.
-  - *Delete Cheapest Junk Item Keybind* (click, then press a key; right-click unbinds).
+  - *Discard junk if bag is full* (off by default): when your bags are full, the junk item worth least at a vendor is destroyed (gone, not sold) on your next click in the game world, key press or loot-window click. One item per click or key press; there is no confirmation.
+    - **Why it waits for your input:** WoW only lets add-ons destroy an item during a click or key press, one item each time (`DeleteCursorItem` needs a hardware event on every Classic-engine client, TBC 2.5 included). TBCGuide listens to your own clicks and key presses (key presses still reach the game as normal); it never simulates input.
+    - **Checks before each item:** each attempt re-reads the bag slot (same item, same stack, not locked) and re-checks the junk rules: grey or on your junk list; never quest, quest-starting, guide-needed or protected items; never items whose data is not loaded.
+    - **When it waits:** in combat, with something on the cursor, or with a merchant, trade, bank, mail or auction window open, the item stays chosen and is destroyed on your first input after that.
+    - **Failures:** a failed item is not tried again this session.
+    - **Feedback:** "Destroyed (not sold)" is printed only after the bags confirm it.
+  - *Delete Cheapest Junk Item Keybind* (click, then press a key; right-click unbinds): the same destroy-one-item action from the keyboard, with the same checks.
   - *Reset Junk List*.
   - Junk means grey items plus your junk list. Quest, quest-starting, guide-needed and protected items are never sold or deleted, and nothing is deleted in combat.
 - **Features:**

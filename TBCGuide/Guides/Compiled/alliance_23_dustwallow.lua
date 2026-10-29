@@ -9,7 +9,7 @@ ns.Guides:Register({
   next={{id="Both_Tanaris"},},
   steps={
     {"fp",npc="Baldruc",z=15,x=67.5,y=51.3,place="Theramore",v=1},
-    {"bind",npc="Innkeeper Janene",z=15,x=66.6,y=45.2,place="Theramore",v=1},
+    {"bind",npc="Innkeeper Janene",z=15,x=66.6,y=45.2,place="Theramore",npcId=6272,areas={513},v=1},
     {"accept",q=11137,title="Defias in Dustwallow?",npc="Captain Wymor",z=15,x=59.7,y=41.1,text="Captain Wymor.",v=1},
     {"turnin",q=11137,title="Defias in Dustwallow?",npc="Captain Wymor",z=15,x=59.7,y=41.1,text="Captain Wymor.",v=1},
     {"accept",q=11138,title="Renn McGill",npc="Captain Wymor",z=15,x=59.7,y=41.1,v=1},

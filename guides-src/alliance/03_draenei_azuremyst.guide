@@ -87,7 +87,7 @@ accept 9456 Nightstalker Clean Up, Isle 2... [optional]
 turnin Travel to Azure Watch | Technician Dyvuun, Azure Watch.
 accept 9586 Help Tavara [class=Priest]
 turnin Word from Azure Watch [optional] | Caregiver Chellan, the Azure Watch inn.
-bind Azure Watch
+bind Azure Watch [area=3576]
 complete Medicinal Purpose | Skittering Crawlers drop Skittering Crawler Meat.
 turnin Medicinal Purpose
 accept An Alternative Alternative

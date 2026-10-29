@@ -11,7 +11,7 @@
 @next H_ThousandNeedles
 
 fp Tarren Mill
-bind Tarren Mill
+bind Tarren Mill [area=272]
 accept Souvenirs of Death | Deathguard Samsa.
 accept The Hammer May Fall | Tallow, at the Tarren Mill area - leads to Hammerfall.
 accept Elixir of Suffering | Apothecary Lydon.

@@ -58,7 +58,7 @@ turnin 459 The Woodland Protector
 train | Your trainer is inside Aldrassil.
 accept Dolanaar Delivery | Porthannius on the path out of Shadowglen.
 turnin Dolanaar Delivery | Innkeeper Keldamyr, Dolanaar.
-bind Dolanaar
+bind Dolanaar [area=186]
 accept The Road to Darnassus [optional] | Moon Priestess Amara patrols the road.
 complete The Road to Darnassus [optional] | Gnarlpine Ambushers along the road west of Dolanaar.
 turnin The Road to Darnassus [optional]

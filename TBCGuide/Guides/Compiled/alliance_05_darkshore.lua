@@ -9,7 +9,7 @@ ns.Guides:Register({
   next={{id="A_Ashenvale"},},
   steps={
     {"fp",npc="Caylais Moonfeather",z=148,x=36.3,y=45.6,place="Auberdine",v=1},
-    {"bind",npc="Innkeeper Shaussiy",z=148,x=37,y=44.1,place="Auberdine",v=1},
+    {"bind",npc="Innkeeper Shaussiy",z=148,x=37,y=44.1,place="Auberdine",npcId=6737,areas={442},v=1},
     {"accept",q=947,title="Cave Mushrooms",npc="Barithras Moonshade",z=148,x=37.3,y=43.6,text="Barithras Moonshade.",v=1},
     {"complete",q=947,title="Cave Mushrooms",text="The Mist's Edge cave.",v=1},
     {"turnin",q=947,title="Cave Mushrooms",npc="Barithras Moonshade",z=148,x=37.3,y=43.6,v=1},

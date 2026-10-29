@@ -10,7 +10,7 @@
 @desc Shadowmoon Village: the Legion Hold chain, the Deathforge, the Hand of Gul'dan approach and the Illidari quests. Ends at 70.
 
 fp Shadowmoon Village
-bind Shadowmoon Village
+bind Shadowmoon Village [area=3744]
 accept A Grunt's Work... | Overlord Or'barokh.
 accept A Haunted History | Chief Apothecary Hildagard.
 accept What Strange Creatures... | Researcher Tiorus.

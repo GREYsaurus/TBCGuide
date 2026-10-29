@@ -130,7 +130,7 @@ complete 791 Carry Your Weight [class=Hunter,Shaman; race=Troll; optional] | Can
 complete 791 Carry Your Weight [class=Hunter,Shaman,Warlock; race=Orc; optional] | Canvas Scraps drops from Kolkar Drudge, Kolkar Outrunner and Kul Tiras Sailor and others.
 turnin 791 Carry Your Weight [class=Hunter,Shaman; race=Troll; optional]
 turnin 791 Carry Your Weight [class=Hunter,Shaman,Warlock; race=Orc; optional]
-bind Razor Hill
+bind Razor Hill [area=362]
 complete Encroachment | Quilboars and Razormane scouts west of Razor Hill.
 complete Break a Few Eggs | Taillasher eggs south of Razor Hill.
 turnin Break a Few Eggs

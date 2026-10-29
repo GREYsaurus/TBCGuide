@@ -70,7 +70,7 @@ ns.Guides:Register({
     {"accept",q=62,title="The Fargodeep Mine",npc="Marshal Dughan",z=12,x=42.1,y=65.9,v=1},
     {"accept",q=5624,title="Garments of the Light",npc="Priestess Josetta",z=12,x=43.3,y=65.7,text="Needs level 5. If you are lower, TBCGuide skips it and moves on.",classes={"PRIEST"},v=1},
     {"turnin",q=2158,title="Rest and Relaxation",npc="Innkeeper Farley",z=12,x=43.8,y=65.8,v=1},
-    {"bind",npc="Innkeeper Farley",z=12,x=43.8,y=65.8,place="Goldshire",v=1},
+    {"bind",npc="Innkeeper Farley",z=12,x=43.8,y=65.8,place="Goldshire",npcId=295,areas={87},v=1},
     {"accept",q=60,title="Kobold Candles",npc="William Pestle",z=12,x=43.3,y=65.7,v=1},
     {"accept",q=47,title="Gold Dust Exchange",npc="Remy \"Two Times\"",z=12,x=42.1,y=67.3,v=1},
     {"complete",q=5624,title="Garments of the Light",classes={"PRIEST"},v=1},

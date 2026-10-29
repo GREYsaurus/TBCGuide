@@ -49,7 +49,7 @@ turnin Balance Must Be Preserved
 fp Cenarion Refuge
 fp Telredor | Climb the giant mushroom at Telredor.
 accept The Zapthrottle Mote Extractor! | K. Lee Smallfry.
-bind Telredor
+bind Telredor [area=3644]
 accept The Dead Mire | Vindicator Idaar.
 accept The Orebor Harborage | Anchorite Ahuurn.
 accept The Boha'mu Ruins | Anchorite Ahuurn.

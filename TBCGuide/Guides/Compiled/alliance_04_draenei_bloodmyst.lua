@@ -48,7 +48,7 @@ ns.Guides:Register({
     {"accept",q=9580,title="The Bear Necessities",npc="Tracker Lyceon",z=3525,x=55.9,y=57,text="Tracker Lyceon.",v=1},
     {"accept",q=9643,title="Constrictor Vines",npc="Tracker Lyceon",z=3525,x=55.9,y=57,v=1},
     {"accept",q=9567,title="Know Thine Enemy",npc="Vindicator Aalesia",z=3525,x=55.1,y=58,text="Vindicator Aalesia.",v=1},
-    {"bind",npc="Caregiver Topher Loaal",z=3525,x=55.8,y=59.8,place="Blood Watch",v=1},
+    {"bind",npc="Caregiver Topher Loaal",z=3525,x=55.8,y=59.8,place="Blood Watch",npcId=17553,areas={3584},v=1},
     {"accept",q=9646,title="WANTED: Deathclaw",npc="Wanted Poster",z=3525,x=55.3,y=59.1,v=1},
     {"complete",q=9567,title="Know Thine Enemy",text="Wrathscale naga at the Wrathscale Lair (west).",v=1},
     {"complete",q=9648,title="Maatparm Mushroom Menagerie",text="Mushrooms near water.",v=1},

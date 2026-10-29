@@ -9,7 +9,7 @@ ns.Guides:Register({
   next={{id="Both_SearingGorge"},},
   steps={
     {"fp",npc="Gorkas",z=47,x=81.7,y=81.8,place="Revantusk Village",v=1},
-    {"bind",npc="Lard",z=47,x=78.1,y=81.4,place="Revantusk Village",v=1},
+    {"bind",npc="Lard",z=47,x=78.1,y=81.4,place="Revantusk Village",npcId=14731,areas={3317},v=1},
     {"accept",q=7840,title="Lard Lost His Lunch",npc="Lard",z=47,x=78.1,y=81.4,text="Lard.",v=1},
     {"accept",q=7845,title="Kidnapped Elder Torntusk!",npc="Primal Torntusk",z=47,x=78.2,y=81.2,text="Primal Torntusk.",v=1},
     {"accept",q=7839,title="Vilebranch Hooligans",npc="Smith Slagtree",z=47,x=77.2,y=80.1,text="Smith Slagtree.",v=1},

@@ -63,7 +63,7 @@ turnin 34 An Unwelcome Guest
 accept Redridge Goulash | Chef Breanna in the inn.
 accept Dry Times
 accept A Free Lunch
-bind Lakeshire
+bind Lakeshire [area=69]
 accept Solomon's Law
 accept Missing In Action [optional; group=2] | Corporal Keeshan at Render's Camp - escort quest.
 turnin The Price of Shoes | Smith Argus, the Goldshire blacksmith (Elwynn). Combine with a training trip.

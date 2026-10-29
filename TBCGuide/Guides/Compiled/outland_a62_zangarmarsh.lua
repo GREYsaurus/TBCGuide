@@ -47,7 +47,7 @@ ns.Guides:Register({
     {"fp",npc="Munci",z=3521,x=67.8,y=51.5,place="Cenarion Refuge",v=1},
     {"fp",npc="Munci",z=3521,x=67.8,y=51.5,text="Climb the giant mushroom at Telredor.",place="Telredor",v=1},
     {"accept",q=9636,title="The Zapthrottle Mote Extractor!",npc="K. Lee Smallfry",z=3521,x=68.6,y=50.2,text="K. Lee Smallfry.",v=1},
-    {"bind",npc="Caregiver Abidaar",z=3521,x=67.2,y=49.3,place="Telredor",v=1},
+    {"bind",npc="Caregiver Abidaar",z=3521,x=67.2,y=49.3,place="Telredor",npcId=18251,areas={3644},v=1},
     {"accept",q=9782,title="The Dead Mire",npc="Vindicator Idaar",z=3521,x=68.3,y=50.1,text="Vindicator Idaar.",v=1},
     {"accept",q=9776,title="The Orebor Harborage",npc="Anchorite Ahuurn",z=3521,x=68.2,y=49.4,text="Anchorite Ahuurn.",v=1},
     {"accept",q=9786,title="The Boha'mu Ruins",npc="Anchorite Ahuurn",z=3521,x=68.2,y=49.4,text="Anchorite Ahuurn.",v=1},

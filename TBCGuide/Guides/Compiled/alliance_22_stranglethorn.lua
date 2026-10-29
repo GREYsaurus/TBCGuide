@@ -121,7 +121,7 @@ ns.Guides:Register({
     {"turnin",q=1248,title="The Missing Diplomat",npc="Mikhail",z=11,x=10.6,y=60.8,text="Turned in at Wetlands.",v=1},
     {"turnin",q=1301,title="James Hyal",npc="Vincent Hyal",z=11,x=8.4,y=61.8,text="Turned in at Wetlands.",v=1},
     {"turnin",q=1243,title="The Missing Diplomat",npc="Watcher Backus",z=10,x=74.8,y=44.2,text="Turned in at Duskwood.",v=1},
-    {"bind",npc="Innkeeper Skindle",z=33,x=27,y=77.3,place="Booty Bay",v=1},
+    {"bind",npc="Innkeeper Skindle",z=33,x=27,y=77.3,place="Booty Bay",npcId=6807,areas={35},v=1},
     {"accept",q=605,title="Singing Blue Shards",npc="Crank Fizzlebub",z=33,x=27.1,y=77.2,text="Crank Fizzlebub.",v=1},
     {"accept",q=606,title="Scaring Shaky",npc="\"Sea Wolf\" MacKinley",z=33,x=27.8,y=77.1,text="\"Sea Wolf\" MacKinley.",v=1},
     {"accept",q=575,title="Supply and Demand",npc="Drizzlik",z=33,x=28.3,y=77.6,text="Drizzlik, Booty Bay.",v=1},

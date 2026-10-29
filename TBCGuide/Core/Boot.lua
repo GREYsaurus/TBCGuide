@@ -58,6 +58,7 @@ ns:On("PLAYER_LOGIN", function()
     stage("auction upgrades", function() ns.AHUpgrades:Init() end)
     stage("navigation", function() ns.Nav:Init() end)
     stage("assist", function() ns.Assist:Init() end)
+    stage("hearthstone binding", function() ns.Bind:Init() end)
     stage("settings window", function() ns.Config:Create() end)
 
     stage("first-login setup", function() ns.Welcome:Migrate() end)

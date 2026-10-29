@@ -11,7 +11,7 @@
 @next A_Hinterlands
 
 fp Feathermoon Stronghold
-bind Feathermoon Stronghold
+bind Feathermoon Stronghold [area=1116]
 accept The Ruins of Solarsal | Shandris Feathermoon.
 turnin The Ruins of Solarsal | The gazebo on the island south.
 accept Return to Feathermoon Stronghold

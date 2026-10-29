@@ -37,7 +37,7 @@ ns.Guides:Register({
     {"turnin",q=9133,title="Fly to Silvermoon City",npc="Sathren Azuredawn",z=3487,x=53.9,y=71,text="Turned in at Silvermoon City.",classes={"WARLOCK"},v=1},
     {"turnin",q=9133,title="Fly to Silvermoon City",npc="Sathren Azuredawn",z=3487,x=53.9,y=71,text="Turned in at Silvermoon City.",classes={"PRIEST","MAGE"},v=1},
     {"accept",q=9315,title="Anok'suten",npc="Dying Blood Elf",z=3433,x=57.6,y=14.9,text="Group quest: Anok'suten is elite.",optional=true,v=1},
-    {"bind",npc="Innkeeper Kalarin",z=3433,x=48.9,y=32.4,place="Tranquillien",v=1},
+    {"bind",npc="Innkeeper Kalarin",z=3433,x=48.9,y=32.4,place="Tranquillien",npcId=16542,areas={3488},v=1},
     {"accept",q=9171,title="Culinary Crunch",npc="Master Chef Mouldier",z=3433,x=48.4,y=30.9,optional=true,v=1},
     {"turnin",q=9171,title="Culinary Crunch",npc="Master Chef Mouldier",z=3433,x=48.4,y=30.9,optional=true,v=1},
     {"turnin",q=9532,title="Find Keltus Darkleaf",npc="Keltus Darkleaf",z=3433,x=33,y=11.2,classes={"ROGUE"},optional=true,v=1},

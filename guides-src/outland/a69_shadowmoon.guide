@@ -10,7 +10,7 @@
 @desc Wildhammer Stronghold: the Legion Hold chain, the Deathforge, the Netherwing ledge approach and the Hand of Gul'dan. Ends at 70.
 
 fp Wildhammer Stronghold
-bind Wildhammer Stronghold
+bind Wildhammer Stronghold [area=3745]
 accept Put On Yer Kneepads... | Thane Yoregar.
 accept Spleendid! | Gnomus.
 accept A Ghost in the Machine | Zorus the Judicator.

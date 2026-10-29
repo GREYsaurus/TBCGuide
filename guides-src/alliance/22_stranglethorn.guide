@@ -123,7 +123,7 @@ turnin 1250 The Missing Diplomat | Turned in at Wetlands.
 turnin 1248 The Missing Diplomat | Turned in at Wetlands.
 turnin 1301 James Hyal | Turned in at Wetlands.
 turnin 1243 The Missing Diplomat | Turned in at Duskwood.
-bind Booty Bay
+bind Booty Bay [area=35]
 accept Singing Blue Shards | Crank Fizzlebub.
 accept Scaring Shaky | "Sea Wolf" MacKinley.
 accept Supply and Demand | Drizzlik, Booty Bay.

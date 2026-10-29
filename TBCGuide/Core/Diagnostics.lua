@@ -49,6 +49,9 @@ function D:Api()
         "C_GossipInfo.SelectActiveQuest", "GetGossipAvailableQuests", "GetAvailableQuestInfo", "GetActiveQuestID",
         "GetQuestID", "AcceptQuest", "CompleteQuest", "IsQuestCompletable", "GetNumQuestChoices", "GetQuestReward",
         "GetQuestMoneyToGet", "C_QuestLog.GetMaxNumQuestsCanAccept", "Settings.RegisterCanvasLayoutSubcategory",
+        -- hearthstone binding (Core/Bind.lua)
+        "C_GossipInfo.GetOptions", "C_GossipInfo.SelectOption", "C_Map.GetAreaInfo",
+        "C_PlayerInteractionManager.ConfirmationInteraction", "ConfirmBinder",
         -- raid markers
         "SetRaidTarget", "GetRaidTargetIndex", "UnitGUID", "IsInRaid", "UnitIsGroupLeader", "UnitIsGroupAssistant",
         "InCombatLockdown", "C_Container.PickupContainerItem", "PickupContainerItem", "EquipCursorItem",

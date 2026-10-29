@@ -21,7 +21,7 @@ accept Claws from the Deep | Karl Boran on the docks.
 fp Menethil Harbor
 accept The Third Fleet | First Mate Fitzsimmons in the inn.
 accept The Greenwarden
-bind Menethil Harbor
+bind Menethil Harbor [area=150,2104]
 turnin 270 The Doomed Fleet [optional]
 accept 321 Lightforge Iron [optional]
 complete The Third Fleet | Crocolisk meat from crocolisks around Menethil; buy the Flagon of Mead from the innkeeper.

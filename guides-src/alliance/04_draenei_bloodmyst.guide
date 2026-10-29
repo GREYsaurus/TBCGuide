@@ -51,7 +51,7 @@ accept Maatparm Mushroom Menagerie | Jessera of Mac'Aree.
 accept The Bear Necessities | Tracker Lyceon.
 accept Constrictor Vines
 accept Know Thine Enemy | Vindicator Aalesia.
-bind Blood Watch
+bind Blood Watch [area=3584]
 accept 9646 WANTED: Deathclaw
 complete Know Thine Enemy | Wrathscale naga at the Wrathscale Lair (west).
 complete Maatparm Mushroom Menagerie | Mushrooms near water.

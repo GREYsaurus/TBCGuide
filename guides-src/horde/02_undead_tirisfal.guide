@@ -67,7 +67,7 @@ turnin 5650 Garments of Darkness [class=Priest]
 turnin 8 A Rogue's Deal
 accept Graverobbers | Magistrate Sevren.
 accept Wanted: Maggot Eye
-bind Brill
+bind Brill [area=159,2119]
 complete Gordo's Task | Gloom Weed around Brill.
 turnin Gordo's Task
 complete A Putrid Task | Rotting Dead and Ravaged Corpses.

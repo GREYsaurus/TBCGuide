@@ -18,7 +18,7 @@ ns.Guides:Register({
     {"turnin",q=10289,title="Journey to Thrallmar",npc="General Krakork",z=3483,x=55.9,y=36.6,text="General Krakork.",v=1},
     {"accept",q=10291,title="Report to Nazgrel",npc="General Krakork",z=3483,x=55.9,y=36.6,optional=true,v=1},
     {"turnin",q=10291,title="Report to Nazgrel",npc="Nazgrel",z=3483,x=55,y=36,optional=true,v=1},
-    {"bind",npc="Floyd Pinkus",z=3483,x=56.7,y=37.5,place="Thrallmar",v=1},
+    {"bind",npc="Floyd Pinkus",z=3483,x=56.7,y=37.5,place="Thrallmar",npcId=16602,areas={3536},v=1},
     {"accept",q=10121,title="Eradicate the Burning Legion",npc="Nazgrel",z=3483,x=55,y=36,text="Nazgrel.",v=1},
     {"accept",q=10086,title="I Work... For the Horde!",npc="Megzeg Nukklebust",z=3483,x=55.2,y=38.8,text="Megzeg Nukklebust.",v=1},
     {"turnin",q=10121,title="Eradicate the Burning Legion",npc="Sergeant Shatterskull",z=3483,x=58.1,y=41.3,text="Sergeant Shatterskull, Reaver's Fall area.",v=1},

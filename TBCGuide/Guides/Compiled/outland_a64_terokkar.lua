@@ -21,7 +21,7 @@ ns.Guides:Register({
     {"accept",q=10033,title="Wanted: Bonelashers Dead!",npc="Wanted Poster",z=3519,x=57.6,y=54.7,v=1},
     {"accept",q=9986,title="Stymying the Arakkoa",npc="Thander",z=3519,x=57.8,y=54.2,text="Thander.",v=1},
     {"accept",q=10026,title="Magical Disturbances",npc="Andarl",z=3519,x=58.5,y=53.6,text="Andarl.",v=1},
-    {"bind",npc="Innkeeper Biribi",z=3519,x=56.7,y=53.3,place="Allerian Stronghold",v=1},
+    {"bind",npc="Innkeeper Biribi",z=3519,x=56.7,y=53.3,place="Allerian Stronghold",npcId=19296,areas={3684},v=1},
     {"turnin",q=10038,title="Speak with Private Weeks",npc="Private Weeks",z=3519,x=40.5,y=36.2,text="Private Weeks, Shadow Council camp area.",v=1},
     {"accept",q=10040,title="Who Are They?",npc="Private Weeks",z=3519,x=40.5,y=36.2,v=1},
     {"complete",q=10040,title="Who Are They?",text="Use the disguise at the Shadow Council camp.",v=1},

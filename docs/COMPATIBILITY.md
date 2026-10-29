@@ -131,3 +131,24 @@ None of these have been done yet. Tick them off on a real client:
 - [ ] **Hunter:** call a pet. `/tbcg pet` names its family (also on a non-English client if it has a family skill). Open Beast Training and the training-point costs appear. Nothing is tamed or abandoned.
 - [ ] **Warlock:** `/tbcg pet` asks you to summon each demon once. After summoning, Grimoires you still need are listed, ones in your bags are marked, and after using one it drops off.
 - [ ] **Assassination:** with the Assassination profile, talent-window markers follow the Wowhead plan, and Mutilate is suggested at 50.
+
+### Junk discard (not yet run in the game)
+
+- [ ] **Off (default):** fill your bags with a grey item, then click the world and press keys. Nothing is destroyed.
+- [ ] **On, bags full:** your next click on the world (or key press) destroys the cheapest grey item with no popup, and chat says "Destroyed (not sold)". Only one item per click; the next one goes only if the bags fill again.
+- [ ] **Things it must leave alone:** quest items, guide items, protected items and white or green gear. Hold an item on the cursor and click the world: nothing is destroyed and the cursor item stays.
+- [ ] **Waits:** with a merchant, mail, bank or trade window open, or in combat, clicks destroy nothing; the first click after closing it (or leaving combat) does.
+- [ ] **Loot:** with full bags, click an item in the loot window: junk is destroyed, and a second click loots. Typing in chat and movement keys work as normal throughout.
+- [ ] **Turning it off** stops it at once. **Keybind:** *Delete Cheapest Junk Item* destroys one item per key press, with the same checks.
+
+### Hearthstone binding (not yet run in the game)
+
+Turn on the *Enable Debug* setting to see the `bind:` lines in chat (off by default).
+- [ ] **Right inn:** on a bind step (for example Goldshire), talk to the step's innkeeper. The bind option is chosen, the dialog is confirmed, chat says "Hearthstone set to ..." and the step completes. Check that the step stays open until that message.
+- [ ] **Inn with its own area:** Kharanos, Thelsamar, Menethil Harbor, Brill or Aerie Peak (or The Crossroads, Theramore, Grom'gol): the step completes after binding. If not, note the name your character sheet / hearthstone tooltip shows.
+- [ ] **Wrong inn:** talk to another town's innkeeper during a bind step: nothing is chosen, one chat line says so.
+- [ ] **Already bound there:** reopen the step (`/tbcg prev`) and talk to the innkeeper: nothing is chosen and the step completes.
+- [ ] **Quests first:** an innkeeper with a guide quest to hand in: the quest is handled first; talk again to bind.
+- [ ] **Decline / close:** hold Shift (nothing happens) or press No on the dialog yourself, or close the window: nothing is retried, the step stays open.
+- [ ] **Setting off:** with Innkeeper Bind automation off, nothing is chosen; binding by hand still completes the step.
+- [ ] **Non-English client** (if available): the same as the first item.

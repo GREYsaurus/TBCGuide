@@ -11,7 +11,7 @@
 @next Both_SearingGorge
 
 fp Revantusk Village
-bind Revantusk Village
+bind Revantusk Village [area=3317]
 accept Lard Lost His Lunch | Lard.
 accept Kidnapped Elder Torntusk! | Primal Torntusk.
 accept Vilebranch Hooligans | Smith Slagtree.

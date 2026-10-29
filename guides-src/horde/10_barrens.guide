@@ -58,7 +58,7 @@ accept Fungal Spores | Apothecary Helbrim.
 fp Crossroads
 accept Raptor Thieves | Gazrog.
 accept 6365 Meats to Orgrimmar [race=Orc,Troll]
-bind Crossroads
+bind Crossroads [area=380]
 turnin 6361 A Bundle of Hides [race=Tauren]
 accept 6362 Ride to Thunder Bluff [race=Tauren]
 fp Ratchet

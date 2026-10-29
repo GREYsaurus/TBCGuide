@@ -12,7 +12,7 @@
 @next H_Feralas [faction=Horde]
 
 fp Gadgetzan
-bind Gadgetzan
+bind Gadgetzan [area=976]
 accept Gadgetzan Water Survey | Senior Surveyor Fizzledowser.
 accept WANTED: Caliph Scorpidsting [elite; group=3; optional]
 complete WANTED: Caliph Scorpidsting [elite; group=3; optional] | Caliph Scorpidsting's Head drops from Caliph Scorpidsting.

@@ -11,7 +11,7 @@
 @next H_Hinterlands
 
 fp Camp Mojache
-bind Camp Mojache
+bind Camp Mojache [area=1099]
 accept War on the Woodpaw | Hadoken Swiftstrider, Camp Mojache.
 accept A New Cloak's Sheen | Krueg Skullsplitter.
 accept 2975 The Ogres of Feralas | Rok Orhan.

@@ -9,7 +9,7 @@ ns.Guides:Register({
   next={{id="Both_SearingGorge"},},
   steps={
     {"fp",npc="Guthrum Thunderfist",z=47,x=11.1,y=46.2,place="Aerie Peak",v=1},
-    {"bind",npc="Innkeeper Thulfram",z=47,x=14.2,y=41.6,place="Aerie Peak",v=1},
+    {"bind",npc="Innkeeper Thulfram",z=47,x=14.2,y=41.6,place="Aerie Peak",npcId=7744,areas={348,349},v=1},
     {"accept",q=2880,title="Troll Necklace Bounty",npc="Fraggar Thundermantle",z=47,x=14.8,y=44.6,text="Fraggar Thundermantle.",v=1},
     {"accept",q=2877,title="Skulk Rock Clean-up",npc="Fraggar Thundermantle",z=47,x=14.8,y=44.6,v=1},
     {"accept",q=9469,title="Featherbeard's Endorsement",npc="Ambassador Rualeth",z=47,x=15.1,y=47.2,text="Ambassador Rualeth (draenei).",v=1},

@@ -40,7 +40,7 @@ accept 9431 A Different Approach
 turnin Message to Freewind Post | Cliffwatcher Longhorn.
 accept 5147 Wanted - Arnak Grimtotem [optional]
 turnin 1196 The Sacred Flame [optional]
-bind Freewind Post
+bind Freewind Post [area=484]
 accept Pacify the Centaur | Cliffwatcher Longhorn.
 complete 9431 A Different Approach | Purifying Earth drops from Thundering Boulderkin.
 complete Pacify the Centaur | Galak centaur west of Freewind.

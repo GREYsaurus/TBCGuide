@@ -61,7 +61,7 @@ ns.Guides:Register({
     {"accept",q=92,title="Redridge Goulash",npc="Chef Breanna",z=44,x=22.7,y=43.8,text="Chef Breanna in the inn.",v=1},
     {"accept",q=116,title="Dry Times",npc="Barkeep Daniels",z=44,x=26.5,y=44,v=1},
     {"accept",q=129,title="A Free Lunch",npc="Darcy",z=44,x=26.6,y=44.3,v=1},
-    {"bind",npc="Innkeeper Brianna",z=44,x=27,y=44.8,place="Lakeshire",v=1},
+    {"bind",npc="Innkeeper Brianna",z=44,x=27,y=44.8,place="Lakeshire",npcId=6727,areas={69},v=1},
     {"accept",q=91,title="Solomon's Law",npc="Bailiff Conacher",z=44,x=29.7,y=44.3,v=1},
     {"accept",q=219,title="Missing In Action",npc="Corporal Keeshan",z=44,x=28.4,y=12.6,text="Corporal Keeshan at Render's Camp - escort quest.",optional=true,group=2,v=1},
     {"turnin",q=118,title="The Price of Shoes",npc="Smith Argus",z=12,x=41.7,y=65.5,text="Smith Argus, the Goldshire blacksmith (Elwynn). Combine with a training trip.",v=1},

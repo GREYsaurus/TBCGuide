@@ -12,7 +12,7 @@
 @next H_Shadowmoon [faction=Horde]
 
 fp Area 52
-bind Area 52
+bind Area 52 [area=3712]
 accept Flora of the Eco-Domes | Aurine Moonblaze, Eco-Dome Midrealm.
 accept Off To Area 52 [optional] | Netherologist Coppernickels at the Netherstorm bridge.
 accept Recharging the Batteries | Bot-Specialist Alley.

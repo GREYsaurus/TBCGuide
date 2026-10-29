@@ -72,7 +72,7 @@ ns.Guides:Register({
     {"accept",q=5625,title="Garments of the Light",npc="Maxan Anvol",z=1,x=47.3,y=52.2,classes={"PRIEST"},races={"Dwarf"},v=1},
     {"complete",q=5625,title="Garments of the Light",classes={"PRIEST"},races={"Dwarf"},v=1},
     {"turnin",q=5625,title="Garments of the Light",npc="Maxan Anvol",z=1,x=47.3,y=52.2,classes={"PRIEST"},races={"Dwarf"},v=1},
-    {"bind",npc="Innkeeper Belm",z=1,x=47.4,y=52.5,place="Kharanos",v=1},
+    {"bind",npc="Innkeeper Belm",z=1,x=47.4,y=52.5,place="Kharanos",npcId=1247,areas={131,2102},v=1},
     {"accept",q=384,title="Beer Basted Boar Ribs",npc="Ragnar Thunderbrew",z=1,x=46.8,y=52.4,v=1},
     {"accept",q=400,title="Tools for Steelgrill",npc="Tharek Blackstone",z=1,x=46,y=51.7,v=1},
     {"accept",q=412,title="Operation Recombobulation",npc="Razzle Sprysprocket",z=1,x=45.8,y=49.4,text="Razzle Sprysprocket in the gnome building of Kharanos.",v=1},

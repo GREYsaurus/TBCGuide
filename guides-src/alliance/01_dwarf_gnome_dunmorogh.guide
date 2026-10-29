@@ -70,7 +70,7 @@ turnin Supplies to Tannok [optional] | Tannok Frosthammer inside the Thunderbrew
 accept 5625 Garments of the Light [class=Priest; race=Dwarf]
 complete 5625 Garments of the Light [class=Priest; race=Dwarf]
 turnin 5625 Garments of the Light [class=Priest; race=Dwarf]
-bind Kharanos
+bind Kharanos [area=131,2102]
 accept Beer Basted Boar Ribs
 accept Tools for Steelgrill
 accept Operation Recombobulation | Razzle Sprysprocket in the gnome building of Kharanos.

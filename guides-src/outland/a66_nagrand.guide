@@ -11,7 +11,7 @@
 @next A_BladesEdge
 
 fp Telaar
-bind Telaar
+bind Telaar [area=3626]
 accept The Ravaged Caravan | Huntress Kima.
 complete The Ravaged Caravan | Telaar Supply Crate: loot Telaar Supply Crate.
 turnin The Ravaged Caravan

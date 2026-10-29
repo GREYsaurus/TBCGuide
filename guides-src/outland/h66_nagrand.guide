@@ -11,7 +11,7 @@
 @next H_BladesEdge
 
 fp Garadar
-bind Garadar
+bind Garadar [area=3613]
 accept Missing Mag'hari Procession | Matron Drakia.
 accept The Impotent Leader | Jorin Deadeye.
 accept Wanted: Giselda the Crone

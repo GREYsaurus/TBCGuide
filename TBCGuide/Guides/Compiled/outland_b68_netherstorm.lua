@@ -10,8 +10,8 @@ ns.Guides:Register({
   steps={
     {"fp",npc="Krexcil",z=3523,x=33.8,y=63.8,place="Area 52",faction="Alliance",v=1},
     {"fp",npc="Krexcil",z=3523,x=33.8,y=63.8,place="Area 52",faction="Horde",v=1},
-    {"bind",npc="Eyonix",z=3523,x=43.4,y=36.1,place="Area 52",faction="Alliance",v=1},
-    {"bind",npc="Eyonix",z=3523,x=43.4,y=36.1,place="Area 52",faction="Horde",v=1},
+    {"bind",npc="Eyonix",z=3523,x=43.4,y=36.1,place="Area 52",faction="Alliance",npcId=19531,areas={3712},v=1},
+    {"bind",npc="Eyonix",z=3523,x=43.4,y=36.1,place="Area 52",faction="Horde",npcId=19531,areas={3712},v=1},
     {"accept",q=10426,title="Flora of the Eco-Domes",npc="Aurine Moonblaze",z=3523,x=42.3,y=32.6,text="Aurine Moonblaze, Eco-Dome Midrealm.",v=1},
     {"accept",q=10183,title="Off To Area 52",npc="Netherologist Coppernickels",z=3523,x=21.3,y=55.6,text="Netherologist Coppernickels at the Netherstorm bridge.",optional=true,v=1},
     {"accept",q=10190,title="Recharging the Batteries",npc="Bot-Specialist Alley",z=3523,x=31.5,y=56.6,text="Bot-Specialist Alley.",v=1},

@@ -24,7 +24,7 @@ turnin 970 The Tower of Althalaxx [optional]
 accept 973 The Tower of Althalaxx [optional]
 fp Astranaar
 turnin Onward to Ashenvale [optional] | Astranaar.
-bind Astranaar
+bind Astranaar [area=415]
 accept Raene's Cleansing | Raene Wolfrunner, Astranaar.
 accept Culling the Threat
 accept A Helping Hand | Vindicator Palanaar (draenei, Astranaar).

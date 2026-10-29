@@ -132,7 +132,7 @@ ns.Guides:Register({
     {"complete",q=791,title="Carry Your Weight",text="Canvas Scraps drops from Kolkar Drudge, Kolkar Outrunner and Kul Tiras Sailor and others.",classes={"HUNTER","SHAMAN","WARLOCK"},races={"Orc"},optional=true,v=1},
     {"turnin",q=791,title="Carry Your Weight",npc="Furl Scornbrow",z=14,x=49.9,y=40.4,classes={"HUNTER","SHAMAN"},races={"Troll"},optional=true,v=1},
     {"turnin",q=791,title="Carry Your Weight",npc="Furl Scornbrow",z=14,x=49.9,y=40.4,classes={"HUNTER","SHAMAN","WARLOCK"},races={"Orc"},optional=true,v=1},
-    {"bind",npc="Innkeeper Grosk",z=14,x=51.5,y=41.6,place="Razor Hill",v=1},
+    {"bind",npc="Innkeeper Grosk",z=14,x=51.5,y=41.6,place="Razor Hill",npcId=6928,areas={362},v=1},
     {"complete",q=837,title="Encroachment",text="Quilboars and Razormane scouts west of Razor Hill.",v=1},
     {"complete",q=815,title="Break a Few Eggs",text="Taillasher eggs south of Razor Hill.",v=1},
     {"turnin",q=815,title="Break a Few Eggs",npc="Cook Torka",z=14,x=51.1,y=42.4,v=1},

@@ -88,7 +88,7 @@ ns.Guides:Register({
     {"turnin",q=9313,title="Travel to Azure Watch",npc="Technician Dyvuun",z=3524,x=48.7,y=50.3,text="Technician Dyvuun, Azure Watch.",v=1},
     {"accept",q=9586,title="Help Tavara",npc="Guvan",z=3524,x=48.6,y=49.3,classes={"PRIEST"},v=1},
     {"turnin",q=9314,title="Word from Azure Watch",npc="Caregiver Chellan",z=3524,x=48.4,y=49.2,text="Caregiver Chellan, the Azure Watch inn.",optional=true,v=1},
-    {"bind",npc="Caregiver Chellan",z=3524,x=48.4,y=49.2,place="Azure Watch",v=1},
+    {"bind",npc="Caregiver Chellan",z=3524,x=48.4,y=49.2,place="Azure Watch",npcId=16553,areas={3576},v=1},
     {"complete",q=9463,title="Medicinal Purpose",text="Skittering Crawlers drop Skittering Crawler Meat.",v=1},
     {"turnin",q=9463,title="Medicinal Purpose",npc="Anchorite Fateema",z=3524,x=48.4,y=51.8,v=1},
     {"accept",q=9473,title="An Alternative Alternative",npc="Daedal",z=3524,x=48.4,y=51.5,v=1},

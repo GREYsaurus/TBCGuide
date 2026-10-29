@@ -39,7 +39,7 @@ fp Sun Rock Retreat
 turnin 6401 Kaya's Alive
 turnin 6284 Arachnophobia [class=Shaman; race=Orc,Tauren,Troll]
 accept Harpies Threaten | Maggran Earthbinder, Sun Rock Retreat.
-bind Sun Rock Retreat
+bind Sun Rock Retreat [area=460]
 accept Elemental War
 accept 1090 Gerenzo's Orders | Piznik at the Windshear mine.
 complete Harpies Threaten | Bloodfury harpies on the ridge east of Sun Rock.

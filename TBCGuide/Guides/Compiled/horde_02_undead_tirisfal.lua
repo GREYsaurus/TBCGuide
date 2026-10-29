@@ -67,7 +67,7 @@ ns.Guides:Register({
     {"turnin",q=8,title="A Rogue's Deal",npc="Innkeeper Renee",z=85,x=61.7,y=52,v=1},
     {"accept",q=358,title="Graverobbers",npc="Magistrate Sevren",z=85,x=61.3,y=50.8,text="Magistrate Sevren.",v=1},
     {"accept",q=398,title="Wanted: Maggot Eye",npc="Wanted!",z=85,x=60.7,y=51.5,v=1},
-    {"bind",npc="Innkeeper Renee",z=85,x=61.7,y=52,place="Brill",v=1},
+    {"bind",npc="Innkeeper Renee",z=85,x=61.7,y=52,place="Brill",npcId=5688,areas={159,2119},v=1},
     {"complete",q=5481,title="Gordo's Task",text="Gloom Weed around Brill.",v=1},
     {"turnin",q=5481,title="Gordo's Task",npc="Junior Apothecary Holland",z=85,x=57.4,y=48.8,v=1},
     {"complete",q=404,title="A Putrid Task",text="Rotting Dead and Ravaged Corpses.",v=1},

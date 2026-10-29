@@ -58,7 +58,7 @@ ns.Guides:Register({
     {"train",npc="Alyissia",z=141,x=59.6,y=38.4,text="Your trainer is inside Aldrassil.",classes={"WARRIOR"},v=1},
     {"accept",q=2159,title="Dolanaar Delivery",npc="Porthannius",z=141,x=61.2,y=47.6,text="Porthannius on the path out of Shadowglen.",v=1},
     {"turnin",q=2159,title="Dolanaar Delivery",npc="Innkeeper Keldamyr",z=141,x=55.6,y=59.8,text="Innkeeper Keldamyr, Dolanaar.",v=1},
-    {"bind",npc="Innkeeper Keldamyr",z=141,x=55.6,y=59.8,place="Dolanaar",v=1},
+    {"bind",npc="Innkeeper Keldamyr",z=141,x=55.6,y=59.8,place="Dolanaar",npcId=6736,areas={186},v=1},
     {"accept",q=487,title="The Road to Darnassus",npc="Moon Priestess Amara",z=141,x=54.6,y=58.5,text="Moon Priestess Amara patrols the road.",optional=true,v=1},
     {"complete",q=487,title="The Road to Darnassus",text="Gnarlpine Ambushers along the road west of Dolanaar.",optional=true,v=1},
     {"turnin",q=487,title="The Road to Darnassus",npc="Moon Priestess Amara",z=141,x=54.6,y=58.5,optional=true,v=1},

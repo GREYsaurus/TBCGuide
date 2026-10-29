@@ -71,7 +71,7 @@ ns.Guides:Register({
     {"fp",npc="Du'ga",z=3521,x=33.1,y=51.1,place="Zabra'jin",v=1},
     {"fp",npc="Du'ga",z=3521,x=33.1,y=51.1,place="Cenarion Refuge",v=1},
     {"turnin",q=9775,title="Report to Shadow Hunter Denjai",npc="Shadow Hunter Denjai",z=3521,x=30.7,y=50.9,text="Zabra'jin.",v=1},
-    {"bind",npc="Merajit",z=3521,x=30.7,y=50.9,place="Zabra'jin",v=1},
+    {"bind",npc="Merajit",z=3521,x=30.7,y=50.9,place="Zabra'jin",npcId=18245,areas={3645},v=1},
     {"accept",q=9841,title="Stinging the Stingers",npc="Gambarinka",z=3521,x=31.6,y=49.2,text="Gambarinka.",v=1},
     {"accept",q=9820,title="WANTED: Boss Grog'ak",npc="Wanted Poster",z=3521,x=32,y=49.3,v=1},
     {"accept",q=9814,title="Burstcap Mushrooms, Mon!",npc="Witch Doctor Tor'gash",z=3521,x=32.9,y=48.9,text="Witch Doctor Tor'gash.",v=1},

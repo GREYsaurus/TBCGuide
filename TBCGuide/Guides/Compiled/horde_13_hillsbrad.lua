@@ -9,7 +9,7 @@ ns.Guides:Register({
   next={{id="H_ThousandNeedles"},},
   steps={
     {"fp",npc="Zarise",z=267,x=60.1,y=18.6,place="Tarren Mill",v=1},
-    {"bind",npc="Innkeeper Shay",z=267,x=62.8,y=19,place="Tarren Mill",v=1},
+    {"bind",npc="Innkeeper Shay",z=267,x=62.8,y=19,place="Tarren Mill",npcId=2388,areas={272},v=1},
     {"accept",q=546,title="Souvenirs of Death",npc="Deathguard Samsa",z=267,x=62.1,y=19.7,text="Deathguard Samsa.",v=1},
     {"accept",q=676,title="The Hammer May Fall",npc="Tallow",z=267,x=61.9,y=19.6,text="Tallow, at the Tarren Mill area - leads to Hammerfall.",v=1},
     {"accept",q=496,title="Elixir of Suffering",npc="Apothecary Lydon",z=267,x=61.4,y=19.1,text="Apothecary Lydon.",v=1},

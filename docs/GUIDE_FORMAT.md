@@ -37,7 +37,7 @@ Files are compiled in path order (`alliance/`, `horde/`, `outland/`, `shared/`, 
 | `train` | - (expands to one step per class, with that class's trainer from the database) | trainer window closed |
 | `fp` | place name | "New flight path discovered" or taxi map opened |
 | `fly` / `hs` / `travel` | destination zone/subzone name | zone change to the destination, or manual |
-| `bind` | inn location name | `GetBindLocation()` matches |
+| `bind` | inn location name, plus required `[area=<id>,...]` | `GetBindLocation()` equals one of the areas' names in the client's language, or a bind TBCGuide verified at this step's innkeeper |
 | `level` | level | player level reached |
 | `grind` | `<level> <Mob>[, <Mob>...] [@ location]` | player level reached (same as `level`). Each mob must exist in the database and spawn in the step's zone, or the build fails. The arrow points at the spawn nearest the previous step unless `[at=x,y]` is given. Example: `grind 10 Riverpaw Outrunner, Riverpaw Runt @ south of Westbrook Garrison [at=27.8,81.2] \| note` |
 | `note` / `buy` / `use` / `collect` | text | manual (`buy` also completes on closing a vendor) |
@@ -76,3 +76,10 @@ Write notes only when you are sure of them. For complete-steps, the add-on alrea
 After compiling, every race/class route is walked step by step (docs/ROUTE_OPTIMIZATION.md). The build fails if a quest is accepted before one of its prerequisites is turned in on that route, if a complete-step comes before its accept, or if the quest log would exceed 25. Accept a quest after the turn-in that unlocks it, and give every pickup a turn-in somewhere on the route.
 
 An `[optional]` turn-in of a quest accepted in an **earlier** guide (a breadcrumb) is skipped automatically for players who do not have it in their log. A non-optional one is never auto-skipped.
+
+### Bind steps
+
+`bind Kharanos [area=131,2102]`. The place name is shown to the player; the `area` ids decide completion.
+- **Area ids** are AreaTable ids from the client (wago.tools, product `wow_anniversary`). `GetBindLocation()` reports the area the inn stands in, which is not always the town: Kharanos reports *Thunderbrew Distillery* (2102), Thelsamar *Stoutlager Inn* (2101), Menethil Harbor *Deepwater Tavern* (2104), Brill *Gallows' End Tavern* (2119), Aerie Peak *Wildhammer Keep* (349). List the town and, where it has one, its inn area.
+- **Why ids:** `C_Map.GetAreaInfo(id)` names the area in the client's language, so the check works on every client. The compiler rejects a bind step without `[area=]`.
+- **Innkeeper:** the compiler picks the nearest innkeeper of the guide's faction (NPC flag) and stores its NPC id; bind automation only acts at that innkeeper or another innkeeper of the same town.

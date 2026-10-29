@@ -23,7 +23,7 @@ accept Olemba Seeds | Ros'eleth.
 accept Wanted: Bonelashers Dead!
 accept Stymying the Arakkoa | Thander.
 accept Magical Disturbances | Andarl.
-bind Allerian Stronghold
+bind Allerian Stronghold [area=3684]
 turnin Speak with Private Weeks | Private Weeks, Shadow Council camp area.
 accept Who Are They?
 complete Who Are They? | Use the disguise at the Shadow Council camp.

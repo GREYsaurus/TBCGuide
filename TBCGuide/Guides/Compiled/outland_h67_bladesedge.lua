@@ -9,7 +9,7 @@ ns.Guides:Register({
   next={{id="Both_Netherstorm"},},
   steps={
     {"fp",npc="Unoke Tenderhoof",z=3522,x=52,y=54.1,place="Thunderlord Stronghold",v=1},
-    {"bind",npc="Gholah",z=3522,x=53.4,y=55.4,place="Thunderlord Stronghold",v=1},
+    {"bind",npc="Gholah",z=3522,x=53.4,y=55.4,place="Thunderlord Stronghold",npcId=19470,areas={3769},v=1},
     {"accept",q=10503,title="The Bladespire Threat",npc="Tor'chunk Twoclaws",z=3522,x=51.9,y=58.4,text="Tor'chunk Twoclaws.",v=1},
     {"accept",q=10542,title="They Stole Me Hookah and Me Brews!",npc="T'chali the Witch Doctor",z=3522,x=45,y=72.3,text="T'chali the Witch Doctor.",v=1},
     {"accept",q=10928,title="Killing the Crawlers",npc="Grunt Grahk",z=3522,x=53,y=96.2,text="Grunt Grahk.",v=1},

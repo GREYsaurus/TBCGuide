@@ -22,7 +22,7 @@ ns.Guides:Register({
     {"fp",npc="Kerna",z=3519,x=49.2,y=43.4,place="Stonebreaker Hold",v=1},
     {"accept",q=10868,title="Arakkoa War Path",npc="Advisor Faila",z=3519,x=48.9,y=44.6,text="Advisor Faila, Stonebreaker Hold.",v=1},
     {"accept",q=10039,title="Speak with Scout Neftis",npc="Advisor Faila",z=3519,x=48.9,y=44.6,v=1},
-    {"bind",npc="Innkeeper Grilka",z=3519,x=48.8,y=45,place="Stonebreaker Hold",v=1},
+    {"bind",npc="Innkeeper Grilka",z=3519,x=48.8,y=45,place="Stonebreaker Hold",npcId=18957,areas={3683},v=1},
     {"complete",q=9993,title="Olemba Seed Oil",text="Olemba Seed: loot Olemba Cone.",v=1},
     {"complete",q=10008,title="What Happens in Terokkar Stays in Terokkar",v=1},
     {"complete",q=10868,title="Arakkoa War Path",v=1},

@@ -23,7 +23,7 @@ turnin 742 The Ashenvale Hunt [class=Warrior,Hunter,Rogue,Priest,Mage; race=Trol
 turnin 742 The Ashenvale Hunt [class=Warrior,Hunter,Druid; race=Tauren; optional]
 turnin 742 The Ashenvale Hunt [race=Undead,Blood Elf; optional]
 accept Stonetalon Standstill | Mastok Wrilehiss, Splintertree Post.
-bind Splintertree Post
+bind Splintertree Post [area=431]
 complete Ashenvale Outrunners | Ashenvale Outrunners, stealthy night elves around Splintertree.
 complete Torek's Assault [group=2]
 turnin Torek's Assault

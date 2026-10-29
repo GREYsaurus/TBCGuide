@@ -21,7 +21,7 @@ ns.Guides:Register({
     {"turnin",q=742,title="The Ashenvale Hunt",npc="Senani Thunderheart",z=331,x=73.8,y=61.5,classes={"WARRIOR","HUNTER","DRUID"},races={"Tauren"},optional=true,v=1},
     {"turnin",q=742,title="The Ashenvale Hunt",npc="Senani Thunderheart",z=331,x=73.8,y=61.5,races={"Scourge","BloodElf"},optional=true,v=1},
     {"accept",q=25,title="Stonetalon Standstill",npc="Mastok Wrilehiss",z=331,x=73.7,y=60,text="Mastok Wrilehiss, Splintertree Post.",v=1},
-    {"bind",npc="Innkeeper Kaylisk",z=331,x=74,y=60.6,place="Splintertree Post",v=1},
+    {"bind",npc="Innkeeper Kaylisk",z=331,x=74,y=60.6,place="Splintertree Post",npcId=12196,areas={431},v=1},
     {"complete",q=6503,title="Ashenvale Outrunners",text="Ashenvale Outrunners, stealthy night elves around Splintertree.",v=1},
     {"complete",q=6544,title="Torek's Assault",group=2,v=1},
     {"turnin",q=6544,title="Torek's Assault",npc="Ertog Ragetusk",z=331,x=73,y=62.5,v=1},

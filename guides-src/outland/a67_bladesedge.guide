@@ -11,7 +11,7 @@
 @next Both_Netherstorm
 
 fp Sylvanaar
-bind Sylvanaar
+bind Sylvanaar [area=3772]
 accept The Trappings of a Vindicator | Vindicator Vuuleen.
 accept Strange Brew | Borgrim Stouthammer.
 accept Malaise | Daranelle.

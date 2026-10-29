@@ -9,7 +9,7 @@ ns.Guides:Register({
   next={{id="H_BladesEdge"},},
   steps={
     {"fp",npc="Gursha",z=3518,x=57.2,y=35.2,place="Garadar",v=1},
-    {"bind",npc="Matron Tikkit",z=3518,x=56.7,y=34.5,place="Garadar",v=1},
+    {"bind",npc="Matron Tikkit",z=3518,x=56.7,y=34.5,place="Garadar",npcId=18913,areas={3613},v=1},
     {"accept",q=9944,title="Missing Mag'hari Procession",npc="Matron Drakia",z=3518,x=56.8,y=34.1,text="Matron Drakia.",v=1},
     {"accept",q=9888,title="The Impotent Leader",npc="Jorin Deadeye",z=3518,x=55.6,y=37.6,text="Jorin Deadeye.",v=1},
     {"accept",q=9935,title="Wanted: Giselda the Crone",npc="Garadar Bulletin Board",z=3518,x=55.8,y=38,v=1},

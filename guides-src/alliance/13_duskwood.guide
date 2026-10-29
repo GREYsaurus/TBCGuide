@@ -27,7 +27,7 @@ turnin 66 The Legend of Stalvan
 accept 67 The Legend of Stalvan | Needs level 22. If you are lower, TBCGuide skips it and moves on.
 turnin 9429 Travel to Darkshire [race=Draenei]
 accept Seasoned Wolf Kabobs | Chef Grual.
-bind Darkshire
+bind Darkshire [area=42]
 turnin 1650 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei] | Turned in at Westfall.
 accept 1651 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei] | Escort quest: start it when you are ready to follow.
 complete 1651 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei] | Escort: stay close; it fails if the NPC dies.

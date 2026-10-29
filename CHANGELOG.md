@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.9.3
+
+### Fixed
+- **Discard junk if bag is full** now works without any confirmation: when the bags are full, the cheapest junk item is destroyed on your next click in the game world, key press or loot click, one item each time.
+  - **Why the change:** the client only lets add-ons destroy items during a click or key press, so the old attempt from a bag update was refused and left the item on your cursor.
+  - **Safety:** every attempt re-checks the slot and the junk rules, and waits while you are in combat, holding an item, or at a merchant, trade, bank, mail or auction window.
+  - **Feedback:** success is reported only once the bags confirm it, and failed items are not retried.
+
+- **Innkeeper Bind automation** sets your hearthstone again, and bind steps complete on every client.
+  - **Why it failed:** on this client the innkeeper's gossip options have no type, so the bind option was never found; the confirmation used a function the client no longer has; and the step only completed when the game's home name equalled the guide's English town name, which fails for The Crossroads, Theramore Isle, Grom'gol Base Camp, the inns with their own area (Thunderbrew Distillery, Stoutlager Inn, Deepwater Tavern, Gallows' End Tavern, Wildhammer Keep) and every non-English client.
+  - **Now:** each bind step names its inn by client area id and innkeeper id. TBCGuide acts only at that innkeeper, confirms only a dialog for that inn, and completes the step only once the game reports the new home. Quest turn-ins at the innkeeper go first. Nothing is retried; declining, closing the window, changing step or turning the setting off cancels it.
+
+
 ## 0.9.2
 
 ### Added

@@ -10,8 +10,8 @@ ns.Guides:Register({
   steps={
     {"fp",npc="Bera Stonehammer",z=440,x=51,y=29.3,place="Gadgetzan",faction="Alliance",v=1},
     {"fp",npc="Bulkrek Ragefist",z=440,x=51.6,y=25.4,place="Gadgetzan",faction="Horde",v=1},
-    {"bind",npc="Innkeeper Fizzgrimble",z=440,x=52.5,y=27.9,place="Gadgetzan",faction="Alliance",v=1},
-    {"bind",npc="Innkeeper Fizzgrimble",z=440,x=52.5,y=27.9,place="Gadgetzan",faction="Horde",v=1},
+    {"bind",npc="Innkeeper Fizzgrimble",z=440,x=52.5,y=27.9,place="Gadgetzan",faction="Alliance",npcId=7733,areas={976},v=1},
+    {"bind",npc="Innkeeper Fizzgrimble",z=440,x=52.5,y=27.9,place="Gadgetzan",faction="Horde",npcId=7733,areas={976},v=1},
     {"accept",q=992,title="Gadgetzan Water Survey",npc="Senior Surveyor Fizzledowser",z=440,x=50.2,y=27.5,text="Senior Surveyor Fizzledowser.",v=1},
     {"accept",q=2781,title="WANTED: Caliph Scorpidsting",npc="Wanted Poster",z=440,x=51.8,y=27,optional=true,elite=true,group=3,v=1},
     {"complete",q=2781,title="WANTED: Caliph Scorpidsting",text="Caliph Scorpidsting's Head drops from Caliph Scorpidsting.",optional=true,elite=true,group=3,v=1},

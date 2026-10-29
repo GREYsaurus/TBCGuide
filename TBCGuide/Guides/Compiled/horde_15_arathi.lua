@@ -9,7 +9,7 @@ ns.Guides:Register({
   next={{id="H_Badlands"},},
   steps={
     {"fp",npc="Urda",z=45,x=73,y=32.7,place="Hammerfall",v=1},
-    {"bind",npc="Innkeeper Adegwa",z=45,x=73.8,y=32.5,place="Hammerfall",v=1},
+    {"bind",npc="Innkeeper Adegwa",z=45,x=73.8,y=32.5,place="Hammerfall",npcId=9501,areas={321},v=1},
     {"accept",q=655,title="Hammerfall",npc="Gor'mul",z=45,x=72.6,y=33.9,text="Gor'mul.",v=1},
     {"accept",q=642,title="The Princess Trapped",npc="Shards of Myzrael",z=45,x=62.5,y=33.7,text="The Shards of Myzrael, south-east.",v=1},
     {"accept",q=671,title="Foul Magics",npc="Tor'gan",z=45,x=74.7,y=36.3,v=1},

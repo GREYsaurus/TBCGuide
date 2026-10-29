@@ -11,7 +11,7 @@
 @next H_Badlands
 
 fp Hammerfall
-bind Hammerfall
+bind Hammerfall [area=321]
 accept Hammerfall | Gor'mul.
 accept The Princess Trapped | The Shards of Myzrael, south-east.
 accept Foul Magics

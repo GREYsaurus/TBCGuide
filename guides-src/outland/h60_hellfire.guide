@@ -20,7 +20,7 @@ fp Thrallmar
 turnin Journey to Thrallmar | General Krakork.
 accept Report to Nazgrel [optional]
 turnin Report to Nazgrel [optional]
-bind Thrallmar
+bind Thrallmar [area=3536]
 accept Eradicate the Burning Legion | Nazgrel.
 accept I Work... For the Horde! | Megzeg Nukklebust.
 turnin Eradicate the Burning Legion | Sergeant Shatterskull, Reaver's Fall area.

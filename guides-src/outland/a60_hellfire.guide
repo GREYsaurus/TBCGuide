@@ -23,7 +23,7 @@ turnin Force Commander Danath
 accept The Legion Reborn
 accept Know your Enemy
 turnin Know your Enemy
-bind Honor Hold
+bind Honor Hold [area=3538]
 accept In Case of Emergency... | "Screaming" Screed Luckheed.
 accept Ravager Egg Roundup | Legassi.
 accept Waste Not, Want Not | Dumphry.

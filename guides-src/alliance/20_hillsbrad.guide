@@ -11,7 +11,7 @@
 @next A_Arathi
 
 fp Southshore
-bind Southshore
+bind Southshore [area=271]
 accept 9435 Missing Crystals
 accept Down the Coast | Lieutenant Farren Orinelle, Southshore.
 complete Down the Coast | Murlocs on the coast south of Southshore.

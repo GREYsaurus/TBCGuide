@@ -11,7 +11,7 @@
 @next Both_SearingGorge
 
 fp Aerie Peak
-bind Aerie Peak
+bind Aerie Peak [area=348,349]
 accept Troll Necklace Bounty | Fraggar Thundermantle.
 accept Skulk Rock Clean-up
 accept Featherbeard's Endorsement | Ambassador Rualeth (draenei).

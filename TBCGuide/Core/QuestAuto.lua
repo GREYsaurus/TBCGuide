@@ -157,11 +157,13 @@ end
 -- Gossip window (NPCs with a menu) and quest greeting (NPCs with only quests): turn in completed
 -- guide quests first (they often unlock the next ones), then open one guide quest to accept.
 -- One selection per window; the game re-shows the list afterwards and we run again.
-function QA:OnQuestList(active, available, selectActive, selectAvailable)
+-- With dry set, only answers whether it would select something (used by Core/Bind.lua).
+function QA:OnQuestList(active, available, selectActive, selectAvailable, dry)
     if blocked() then return end
     for _, a in ipairs(active) do
         local q = self:Resolve(a.questID, a.title)
         if a.isComplete and q and not recentlyTried(q) and self:CanTurnIn(q) then
+            if dry then return true end
             markTried(q)
             return selectActive(a)
         end
@@ -171,9 +173,10 @@ function QA:OnQuestList(active, available, selectActive, selectAvailable)
         if q and not recentlyTried(q) then
             local ok, why, onGuide = self:CanAccept(q)
             if ok then
+                if dry then return true end
                 markTried(q)
                 return selectAvailable(a)
-            elseif onGuide and why then
+            elseif onGuide and why and not dry then
                 markTried(q)
                 self:Explain(q, why)
             end
@@ -183,6 +186,11 @@ end
 
 function QA:OnGossipShow()
     self:OnQuestList(C.GossipActiveQuests(), C.GossipAvailableQuests(), C.GossipSelectActive, C.GossipSelectAvailable)
+end
+
+-- Whether quest automation will act on the open gossip (turn-ins and guide pickups come first).
+function QA:GossipWants()
+    return self:OnQuestList(C.GossipActiveQuests(), C.GossipAvailableQuests(), nil, nil, true) == true
 end
 
 function QA:OnQuestGreeting()

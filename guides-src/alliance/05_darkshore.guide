@@ -11,7 +11,7 @@
 @next A_Ashenvale
 
 fp Auberdine
-bind Auberdine
+bind Auberdine [area=442]
 accept Cave Mushrooms | Barithras Moonshade.
 complete Cave Mushrooms | The Mist's Edge cave.
 turnin Cave Mushrooms

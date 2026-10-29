@@ -24,7 +24,7 @@ note In Shattrath, pick the Aldor or the Scryers. Either is fine for leveling.
 fp Stonebreaker Hold
 accept Arakkoa War Path | Advisor Faila, Stonebreaker Hold.
 accept Speak with Scout Neftis
-bind Stonebreaker Hold
+bind Stonebreaker Hold [area=3683]
 complete Olemba Seed Oil | Olemba Seed: loot Olemba Cone.
 complete What Happens in Terokkar Stays in Terokkar
 complete Arakkoa War Path

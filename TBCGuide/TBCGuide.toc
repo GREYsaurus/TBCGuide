@@ -2,7 +2,7 @@
 ## Title: TBCGuide
 ## Notes: Free TBC Classic leveling guides (1-70), bundled quest database and talent guide. GPL-3.0.
 ## Author: GREYsaurus
-## Version: 0.9.2
+## Version: 0.9.3
 ## Category: Quests
 ## SavedVariables: TBCGuideDB
 ## SavedVariablesPerCharacter: TBCGuideCharDB
@@ -66,6 +66,7 @@ Core\QuestAuto.lua
 Core\Orphans.lua
 Core\Marker.lua
 Core\Assist.lua
+Core\Bind.lua
 Core\Group.lua
 Core\FlightTimer.lua
 

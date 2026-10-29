@@ -58,7 +58,7 @@ ns.Guides:Register({
     {"accept",q=11129,title="Kyle's Gone Missing!",npc="Ahab Wheathoof",z=215,x=48.2,y=53.3,v=1},
     {"accept",q=766,title="Mazzranache",npc="Maur Raincaller",z=215,x=47,y=57.1,optional=true,v=1},
     {"turnin",q=1656,title="A Task Unfinished",npc="Innkeeper Kauth",z=215,x=46.6,y=61.1,text="Bloodhoof Village.",v=1},
-    {"bind",npc="Innkeeper Kauth",z=215,x=46.6,y=61.1,place="Bloodhoof Village",v=1},
+    {"bind",npc="Innkeeper Kauth",z=215,x=46.6,y=61.1,place="Bloodhoof Village",npcId=6747,areas={222},v=1},
     {"accept",q=748,title="Poison Water",npc="Mull Thunderhorn",z=215,x=48.5,y=60.4,text="Mull Thunderhorn.",v=1},
     {"complete",q=748,title="Poison Water",text="Prairie wolves and plainstriders.",v=1},
     {"turnin",q=748,title="Poison Water",npc="Mull Thunderhorn",z=215,x=48.5,y=60.4,v=1},

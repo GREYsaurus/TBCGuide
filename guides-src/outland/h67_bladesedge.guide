@@ -11,7 +11,7 @@
 @next Both_Netherstorm
 
 fp Thunderlord Stronghold
-bind Thunderlord Stronghold
+bind Thunderlord Stronghold [area=3769]
 accept The Bladespire Threat | Tor'chunk Twoclaws.
 accept They Stole Me Hookah and Me Brews! | T'chali the Witch Doctor.
 accept Killing the Crawlers | Grunt Grahk.

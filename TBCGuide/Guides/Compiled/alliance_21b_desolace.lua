@@ -11,7 +11,7 @@ ns.Guides:Register({
     {"accept",q=1453,title="Reclaimers' Business in Desolace",npc="Roetten Stonehammer",z=1537,x=70,y=21.3,text="Roetten Stonehammer in Ironforge's Hall of Explorers. Needed for the Reclaimers quests in Desolace.",v=1},
     {"note",text="From Ironforge fly to Menethil Harbor and take the boat to Auberdine. Fly to Stonetalon Peak if you have it (otherwise Astranaar, then ride west through Stonetalon) and follow the road south into Desolace. Nijel's Point is in the north-east.",v=1},
     {"fp",npc="Baritanas Skyriver",z=405,x=64.7,y=10.5,place="Nijel's Point",v=1},
-    {"bind",npc="Innkeeper Lyshaerya",z=405,x=66.3,y=6.6,place="Nijel's Point",v=1},
+    {"bind",npc="Innkeeper Lyshaerya",z=405,x=66.3,y=6.6,place="Nijel's Point",npcId=11103,areas={608},v=1},
     {"accept",q=1387,title="Centaur Bounty",npc="Corporal Melkins",z=405,x=66.7,y=10.9,text="Corporal Melkins.",v=1},
     {"accept",q=1437,title="Vahlarriel's Search",npc="Vahlarriel Demonslayer",z=405,x=66.4,y=11.8,text="Vahlarriel Demonslayer.",v=1},
     {"accept",q=1385,title="Brutal Politics",npc="Captain Pentigast",z=405,x=66.7,y=10.9,text="Captain Pentigast. Choose the Magram side: do not also take Strange Alliance.",v=1},

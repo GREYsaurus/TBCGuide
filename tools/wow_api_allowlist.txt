@@ -298,3 +298,10 @@ GetPetTrainingPoints              # core; hunter pet training points (guarded)
 GetNumCrafts                      # core; Beast Training window (guarded)
 GetCraftInfo                      # core; Beast Training entries and training-point costs (guarded)
 IsTradeskillTrainer               # core; skip profession trainers when reading prices (guarded)
+GetCursorInfo                     # core; confirms the cursor holds the junk item before deleting
+ERR_INV_FULL                      # GlobalStrings; the "Inventory is full." error re-arms junk discard
+INVENTORY_FULL                    # GlobalStrings; same message under its other name
+C_PlayerInteractionManager        # modern-engine clients; confirms the innkeeper bind (Core/Bind.lua)
+Enum                              # client enums (Enum.PlayerInteractionType.Binder)
+Enum.PlayerInteractionType        # Binder interaction type for the bind confirmation
+C_Map.GetAreaInfo                 # localized area names for bind steps (Core/Bind.lua)

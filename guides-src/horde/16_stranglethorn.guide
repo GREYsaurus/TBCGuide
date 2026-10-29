@@ -11,7 +11,7 @@
 @next H_SwampOfSorrows
 
 fp Grom'gol
-bind Grom'gol
+bind Grom'gol [area=117]
 accept Mok'thardin's Enchantment | Far Seer Mok'thardin.
 accept The Defense of Grom'gol | Commander Aggro'gosh.
 accept Bloody Bone Necklaces | Kin'weelay.

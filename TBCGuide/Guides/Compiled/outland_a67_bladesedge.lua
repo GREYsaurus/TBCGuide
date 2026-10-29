@@ -9,7 +9,7 @@ ns.Guides:Register({
   next={{id="Both_Netherstorm"},},
   steps={
     {"fp",npc="Amerun Leafshade",z=3522,x=37.8,y=61.4,place="Sylvanaar",v=1},
-    {"bind",npc="Innkeeper Shaunessy",z=3522,x=35.8,y=63.9,place="Sylvanaar",v=1},
+    {"bind",npc="Innkeeper Shaunessy",z=3522,x=35.8,y=63.9,place="Sylvanaar",npcId=19495,areas={3772},v=1},
     {"accept",q=10516,title="The Trappings of a Vindicator",npc="Vindicator Vuuleen",z=3522,x=44,y=51.8,text="Vindicator Vuuleen.",v=1},
     {"accept",q=10511,title="Strange Brew",npc="Borgrim Stouthammer",z=3522,x=37.4,y=64.7,text="Borgrim Stouthammer.",v=1},
     {"accept",q=10555,title="Malaise",npc="Daranelle",z=3522,x=37.1,y=65.6,text="Daranelle.",v=1},

@@ -30,10 +30,8 @@ local COMPLETERS = {
         return T:IsComplete(s.q)
     end,
     level = function(s) return (UnitLevel("player") or 1) >= (s.level or 1) end,
-    bind = function(s)
-        local loc = ns.Compat.GetBindLocation()
-        return s.place and loc and string.lower(loc) == string.lower(s.place) or false
-    end,
+    -- The step's [area=] names in the client's language (Core/Bind.lua), or a bind TBCGuide verified.
+    bind = function(s) return ns.Bind:IsBoundFor(s) end,
 }
 -- A grind step ends exactly like a level step: when the player reaches s.level. (UnitXP only
 -- counts XP into the current level, so an XP threshold would misfire after a level-up.)
@@ -53,8 +51,6 @@ function Engine:Init()
     ns:On("UI_INFO_MESSAGE", function(_, a, b) Engine:OnInfoMessage(type(b) == "string" and b or a) end)
     ns:On("TAXIMAP_OPENED", function() Engine:CompleteCurrentOfType("fp") end)
     ns:On("TRAINER_CLOSED", function() Engine:CompleteCurrentOfType("train") end)
-    ns:On("CONFIRM_BINDER", function() C_Timer.After(1, function() Engine:Refresh() end) end)
-    ns:On("HEARTHSTONE_BOUND", function() Engine:Refresh() end)
     ns:On("MERCHANT_CLOSED", function() Engine:CompleteCurrentOfType("buy") end)
 end
 

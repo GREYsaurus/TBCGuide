@@ -59,7 +59,7 @@ turnin 763 Rites of the Earthmother [optional]
 accept 11129 Kyle's Gone Missing!
 accept 766 Mazzranache [optional]
 turnin A Task Unfinished | Bloodhoof Village.
-bind Bloodhoof Village
+bind Bloodhoof Village [area=222]
 accept Poison Water | Mull Thunderhorn.
 complete Poison Water | Prairie wolves and plainstriders.
 turnin Poison Water

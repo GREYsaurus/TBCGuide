@@ -25,7 +25,7 @@ ns.Guides:Register({
     {"accept",q=67,title="The Legend of Stalvan",npc="Clerk Daltry",z=10,x=72.5,y=46.9,text="Needs level 22. If you are lower, TBCGuide skips it and moves on.",v=1},
     {"turnin",q=9429,title="Travel to Darkshire",npc="Anchorite Delan",z=10,x=71.8,y=46.4,races={"Draenei"},v=1},
     {"accept",q=90,title="Seasoned Wolf Kabobs",npc="Chef Grual",z=10,x=73.8,y=43.5,text="Chef Grual.",v=1},
-    {"bind",npc="Innkeeper Trelayne",z=10,x=73.9,y=44.4,place="Darkshire",v=1},
+    {"bind",npc="Innkeeper Trelayne",z=10,x=73.9,y=44.4,place="Darkshire",npcId=6790,areas={42},v=1},
     {"turnin",q=1650,title="The Tome of Valor",npc="Daphne Stilwell",z=40,x=41.7,y=89.2,text="Turned in at Westfall.",classes={"PALADIN"},races={"Human","Dwarf","Draenei"},v=1},
     {"accept",q=1651,title="The Tome of Valor",npc="Daphne Stilwell",z=40,x=41.7,y=89.2,text="Escort quest: start it when you are ready to follow.",classes={"PALADIN"},races={"Human","Dwarf","Draenei"},v=1},
     {"complete",q=1651,title="The Tome of Valor",text="Escort: stay close; it fails if the NPC dies.",classes={"PALADIN"},races={"Human","Dwarf","Draenei"},v=1},

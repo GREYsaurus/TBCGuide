@@ -32,7 +32,7 @@ ns.Guides:Register({
     {"turnin",q=414,title="Stout to Kadrell",npc="Mountaineer Kadrell",z=38,x=34.2,y=47.8,text="Mountaineer Kadrell, Thelsamar.",v=1},
     {"accept",q=416,title="Rat Catching",npc="Mountaineer Kadrell",z=38,x=34.2,y=47.8,v=1},
     {"accept",q=1339,title="Mountaineer Stormpike's Task",npc="Mountaineer Kadrell",z=38,x=34.2,y=47.8,v=1},
-    {"bind",npc="Innkeeper Hearthstove",z=38,x=35.5,y=48.4,place="Thelsamar",v=1},
+    {"bind",npc="Innkeeper Hearthstove",z=38,x=35.5,y=48.4,place="Thelsamar",npcId=6734,areas={144,2101},v=1},
     {"accept",q=6387,title="Honor Students",npc="Brock Stoneseeker",z=38,x=37,y=47.8,classes={"WARRIOR","PALADIN","ROGUE","PRIEST"},races={"Dwarf"},v=1},
     {"accept",q=6387,title="Honor Students",npc="Brock Stoneseeker",z=38,x=37,y=47.8,races={"Gnome"},v=1},
     {"complete",q=416,title="Rat Catching",text="Tunnel Rat Kobolds at the Silver Stream Mine, north of Thelsamar.",v=1},

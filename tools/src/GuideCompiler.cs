@@ -155,6 +155,7 @@ namespace TBCGuideTools
         public List<int> MarkNpcs;               // resolved NPC ids the add-on may mark for this step
         public List<string> Mobs;                // grind: mob names (as spelled in the database)
         public string Location;                  // grind: where to find them (free text)
+        public List<int> Areas;                  // bind: AreaTable ids the client may report as the home (GetBindLocation)
     }
 
     public sealed class CGuide
@@ -420,6 +421,18 @@ namespace TBCGuideTools
             if (flags.TryGetValue("obj", out v)) s.Obj = int.Parse(v);
             if (flags.ContainsKey("unverified")) s.Verified = false;
             if (flags.TryGetValue("mark", out v)) ParseMark(v, s, where, res);
+            if (flags.TryGetValue("area", out v))
+            {
+                if (verb != "bind") res.Errors.Add(where + ": [area=] is only for bind steps");
+                s.Areas = new List<int>();
+                foreach (var a in v.Split(','))
+                {
+                    int id;
+                    if (int.TryParse(a.Trim(), out id) && id > 0) s.Areas.Add(id); else res.Errors.Add(where + ": bad area id '" + a.Trim() + "'");
+                }
+            }
+            if (verb == "bind" && (s.Areas == null || s.Areas.Count == 0))
+                res.Errors.Add(where + ": bind needs [area=<AreaTable id>,...]: the area(s) GetBindLocation reports for this inn");
             int stepZone = g.Zone;
             if (flags.TryGetValue("zone", out v))
             {
@@ -530,11 +543,12 @@ namespace TBCGuideTools
                         // Service NPCs are faction-specific: emit one step per faction.
                         foreach (var fac in new[] { "Alliance", "Horde" })
                         {
-                            var fs = new CStep { Kind = verb, Text = s.Text, Optional = s.Optional, Place = arg, Faction = fac, Verified = s.Verified };
+                            var fs = new CStep { Kind = verb, Text = s.Text, Optional = s.Optional, Place = arg, Faction = fac, Verified = s.Verified, Areas = s.Areas };
                             int fnpc = FindService(res.Db, verb == "fp" ? FLAG_FLIGHT : FLAG_INN, fac, stepZone, lx, ly, null);
                             if (fnpc > 0)
                             {
                                 fs.Npc = res.Db.NpcName(fnpc);
+                                fs.NpcId = fnpc;
                                 int tz = lz; double tx = lx, ty = ly;
                                 PlaceAt(res.Db.NpcSpawns(fnpc), fs, stepZone, ref tz, ref tx, ref ty);
                             }
@@ -549,6 +563,7 @@ namespace TBCGuideTools
                     if (npc > 0)
                     {
                         s.Npc = res.Db.NpcName(npc);
+                        s.NpcId = npc;
                         PlaceAt(res.Db.NpcSpawns(npc), s, stepZone, ref lz, ref lx, ref ly);
                     }
                     else res.Warnings.Add(where + ": no " + (verb == "fp" ? "flight master" : "innkeeper") + " found in zone for " + arg);
@@ -1148,6 +1163,8 @@ namespace TBCGuideTools
             if (s.Dungeon != null) sb.Append(",dungeon=").Append(L(s.Dungeon));
             if (s.MarkNpcs != null && s.MarkNpcs.Count > 0)
                 sb.Append(",mark={i=").Append(s.MarkIcon).Append(",npcs={").Append(string.Join(",", s.MarkNpcs.Select(x => x.ToString()).ToArray())).Append("}}");
+            if (s.Kind == "bind" && s.NpcId > 0) sb.Append(",npcId=").Append(s.NpcId);
+            if (s.Areas != null && s.Areas.Count > 0) sb.Append(",areas={").Append(string.Join(",", s.Areas.Select(x => x.ToString()).ToArray())).Append("}");
             sb.Append(",v=").Append(s.Verified ? 1 : 0);
             return sb.Append("}").ToString();
         }

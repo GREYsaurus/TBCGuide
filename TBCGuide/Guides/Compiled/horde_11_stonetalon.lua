@@ -37,7 +37,7 @@ ns.Guides:Register({
     {"turnin",q=6401,title="Kaya's Alive",npc="Tammra Windfield",z=406,x=47.5,y=58.4,v=1},
     {"turnin",q=6284,title="Arachnophobia",npc="Maggran Earthbinder",z=406,x=47.2,y=61.2,classes={"SHAMAN"},races={"Orc","Tauren","Troll"},v=1},
     {"accept",q=6282,title="Harpies Threaten",npc="Maggran Earthbinder",z=406,x=47.2,y=61.2,text="Maggran Earthbinder, Sun Rock Retreat.",v=1},
-    {"bind",npc="Innkeeper Jayka",z=406,x=47.5,y=62.1,place="Sun Rock Retreat",v=1},
+    {"bind",npc="Innkeeper Jayka",z=406,x=47.5,y=62.1,place="Sun Rock Retreat",npcId=7731,areas={460},v=1},
     {"accept",q=6393,title="Elemental War",npc="Tsunaman",z=406,x=47.4,y=64.2,v=1},
     {"accept",q=1090,title="Gerenzo's Orders",npc="Piznik",z=406,x=71.9,y=60,text="Piznik at the Windshear mine.",v=1},
     {"complete",q=6282,title="Harpies Threaten",text="Bloodfury harpies on the ridge east of Sun Rock.",v=1},

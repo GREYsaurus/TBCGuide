@@ -40,7 +40,7 @@ turnin 9133 Fly to Silvermoon City [class=Hunter] | Turned in at Silvermoon City
 turnin 9133 Fly to Silvermoon City [class=Warlock] | Turned in at Silvermoon City.
 turnin 9133 Fly to Silvermoon City [class=Priest,Mage] | Turned in at Silvermoon City.
 accept 9315 Anok'suten [optional] | Group quest: Anok'suten is elite.
-bind Tranquillien
+bind Tranquillien [area=3488]
 accept 9171 Culinary Crunch [optional]
 turnin 9171 Culinary Crunch [optional]
 turnin 9532 Find Keltus Darkleaf [class=Rogue; optional]

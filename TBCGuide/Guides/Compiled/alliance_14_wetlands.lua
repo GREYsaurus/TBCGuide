@@ -19,7 +19,7 @@ ns.Guides:Register({
     {"fp",npc="Shellei Brondir",z=11,x=9.5,y=59.7,place="Menethil Harbor",v=1},
     {"accept",q=288,title="The Third Fleet",npc="First Mate Fitzsimmons",z=11,x=10.9,y=59.6,text="First Mate Fitzsimmons in the inn.",v=1},
     {"accept",q=463,title="The Greenwarden",npc="First Mate Fitzsimmons",z=11,x=10.9,y=59.6,v=1},
-    {"bind",npc="Innkeeper Helbrek",z=11,x=10.7,y=61,place="Menethil Harbor",v=1},
+    {"bind",npc="Innkeeper Helbrek",z=11,x=10.7,y=61,place="Menethil Harbor",npcId=1464,areas={150,2104},v=1},
     {"turnin",q=270,title="The Doomed Fleet",npc="Glorin Steelbrow",z=11,x=10.6,y=60.6,optional=true,v=1},
     {"accept",q=321,title="Lightforge Iron",npc="Glorin Steelbrow",z=11,x=10.6,y=60.6,optional=true,v=1},
     {"complete",q=288,title="The Third Fleet",text="Crocolisk meat from crocolisks around Menethil; buy the Flagon of Mead from the innkeeper.",v=1},

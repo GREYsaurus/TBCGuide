@@ -9,7 +9,7 @@ ns.Guides:Register({
   next={{id="Both_Tanaris"},},
   steps={
     {"fp",npc="Shardi",z=15,x=35.6,y=31.9,place="Brackenwall Village",v=1},
-    {"bind",npc="\"Little\" Logok",z=15,x=36.9,y=32.4,place="Brackenwall Village",v=1},
+    {"bind",npc="\"Little\" Logok",z=15,x=36.9,y=32.4,place="Brackenwall Village",npcId=24208,areas={496},v=1},
     {"accept",q=11124,title="Inspecting the Ruins",npc="Krog",z=15,x=36.4,y=31.9,text="Krog, Brackenwall.",v=1},
     {"accept",q=1169,title="Identifying the Brood",npc="Draz'Zilb",z=15,x=37.2,y=33.1,text="Draz'Zilb.",v=1},
     {"complete",q=11124,title="Inspecting the Ruins",text="The burned Shady Rest Inn.",v=1},

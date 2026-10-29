@@ -15,7 +15,7 @@ ns.Guides:Register({
     {"accept",q=421,title="Prove Your Worth",npc="Dalar Dawnweaver",z=130,x=44.2,y=39.8,text="Dalar Dawnweaver.",v=1},
     {"accept",q=477,title="Border Crossings",npc="Shadow Priest Allister",z=130,x=44,y=40.9,text="Shadow Priest Allister.",v=1},
     {"fp",npc="Karos Razok",z=130,x=45.6,y=42.6,place="The Sepulcher",v=1},
-    {"bind",npc="Innkeeper Bates",z=130,x=43.2,y=41.3,place="The Sepulcher",v=1},
+    {"bind",npc="Innkeeper Bates",z=130,x=43.2,y=41.3,place="The Sepulcher",npcId=6739,areas={228},v=1},
     {"turnin",q=428,title="Lost Deathstalkers",npc="Rane Yorick",z=130,x=53.5,y=13.4,text="Rane Yorick, at the hut on the northern coast.",v=1},
     {"accept",q=429,title="Wild Hearts",npc="Rane Yorick",z=130,x=53.5,y=13.4,v=1},
     {"complete",q=429,title="Wild Hearts",text="Worgs around the Yorick hut.",v=1},

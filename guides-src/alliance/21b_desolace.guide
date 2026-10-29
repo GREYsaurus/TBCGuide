@@ -13,7 +13,7 @@
 accept Reclaimers' Business in Desolace [zone=Ironforge] | Roetten Stonehammer in Ironforge's Hall of Explorers. Needed for the Reclaimers quests in Desolace.
 note From Ironforge fly to Menethil Harbor and take the boat to Auberdine. Fly to Stonetalon Peak if you have it (otherwise Astranaar, then ride west through Stonetalon) and follow the road south into Desolace. Nijel's Point is in the north-east.
 fp Nijel's Point
-bind Nijel's Point
+bind Nijel's Point [area=608]
 accept Centaur Bounty | Corporal Melkins.
 accept 1437 Vahlarriel's Search | Vahlarriel Demonslayer.
 accept Brutal Politics | Captain Pentigast. Choose the Magram side: do not also take Strange Alliance.

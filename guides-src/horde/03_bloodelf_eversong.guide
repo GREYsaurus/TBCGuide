@@ -82,7 +82,7 @@ accept Unstable Mana Crystals | Aeldon Sunbrand.
 accept Wanted: Thaelis the Hungerer
 accept 9489 Cleansing the Scar [class=Priest; optional]
 turnin Completing the Delivery | Falconwing Square.
-bind Falconwing Square
+bind Falconwing Square [area=3665]
 complete Unstable Mana Crystals | Crates at the Ruins of Silvermoon.
 complete Major Malfunction | Arcane Patrollers.
 complete Wanted: Thaelis the Hungerer [mark=skull]

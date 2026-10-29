@@ -83,6 +83,7 @@ function CreateFrame(kind, name, parent)
 end
 
 UIParent = newObject("Frame")
+WorldFrame = newObject("Frame")
 WorldMapFrame = newObject("Frame")
 -- Minimap: 140 px wide, centred at (1000, 600), scale 1. The cursor is MOCK.cursorX/Y.
 Minimap = newObject("Frame")

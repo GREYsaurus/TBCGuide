@@ -56,7 +56,7 @@ ns.Guides:Register({
     {"fp",npc="Devrak",z=17,x=51.5,y=30.3,place="Crossroads",v=1},
     {"accept",q=869,title="Raptor Thieves",npc="Gazrog",z=17,x=51.9,y=30.3,text="Gazrog.",v=1},
     {"accept",q=6365,title="Meats to Orgrimmar",npc="Zargh",z=17,x=52.6,y=29.8,races={"Orc","Troll"},v=1},
-    {"bind",npc="Innkeeper Boorand Plainswind",z=17,x=52,y=29.9,place="Crossroads",v=1},
+    {"bind",npc="Innkeeper Boorand Plainswind",z=17,x=52,y=29.9,place="Crossroads",npcId=3934,areas={380},v=1},
     {"turnin",q=6361,title="A Bundle of Hides",npc="Devrak",z=17,x=51.5,y=30.3,races={"Tauren"},v=1},
     {"accept",q=6362,title="Ride to Thunder Bluff",npc="Devrak",z=17,x=51.5,y=30.3,races={"Tauren"},v=1},
     {"fp",npc="Devrak",z=17,x=51.5,y=30.3,place="Ratchet",v=1},

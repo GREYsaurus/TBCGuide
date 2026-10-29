@@ -11,7 +11,7 @@
 @next Both_Tanaris
 
 fp Theramore
-bind Theramore
+bind Theramore [area=513]
 accept Defias in Dustwallow? | Captain Wymor.
 turnin Defias in Dustwallow? | Captain Wymor.
 accept Renn McGill

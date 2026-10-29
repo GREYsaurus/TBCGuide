@@ -38,7 +38,7 @@ ns.Guides:Register({
     {"turnin",q=4542,title="Message to Freewind Post",npc="Cliffwatcher Longhorn",z=400,x=45.7,y=50.7,text="Cliffwatcher Longhorn.",v=1},
     {"accept",q=5147,title="Wanted - Arnak Grimtotem",npc="Wanted Poster - Arnak Grimtotem",z=400,x=46,y=50.9,optional=true,v=1},
     {"turnin",q=1196,title="The Sacred Flame",npc="Rau Cliffrunner",z=400,x=46.1,y=51.7,optional=true,v=1},
-    {"bind",npc="Innkeeper Abeqwa",z=400,x=46.1,y=51.5,place="Freewind Post",v=1},
+    {"bind",npc="Innkeeper Abeqwa",z=400,x=46.1,y=51.5,place="Freewind Post",npcId=11116,areas={484},v=1},
     {"accept",q=4841,title="Pacify the Centaur",npc="Cliffwatcher Longhorn",z=400,x=45.7,y=50.7,text="Cliffwatcher Longhorn.",v=1},
     {"complete",q=9431,title="A Different Approach",text="Purifying Earth drops from Thundering Boulderkin.",v=1},
     {"complete",q=4841,title="Pacify the Centaur",text="Galak centaur west of Freewind.",v=1},

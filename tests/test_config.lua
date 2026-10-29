@@ -177,16 +177,8 @@ MOCK.shift = false
 local options, selected = {}, {}
 C_GossipInfo.GetOptions = function() return options end
 C_GossipInfo.SelectOption = function(id) table.insert(selected, id) end
-options = { { name = "Make this inn your home.", type = "binder", gossipOptionID = 11 }, { name = "Trade", type = "vendor", gossipOptionID = 12 } }
-step = { "bind", place = "Goldshire" }
-check(A:OnGossip() == "bind" and selected[1] == 11, "bind step: the innkeeper's bind option is chosen")
-local confirmed = false
-function ConfirmBinder() confirmed = true end
-check(A:OnConfirmBinder() and confirmed, "bind step: the bind is confirmed")
+-- (hearthstone binding itself: tests/test_bind.lua)
 step = { "accept", q = 1 }
-confirmed = false
-check(not A:OnConfirmBinder() and not confirmed, "no bind step: the bind confirmation is left to you")
-selected = {}
 options = { { name = "Tell me more.", type = "gossip", gossipOptionID = 21 } }
 check(A:OnGossip() == "skip" and selected[1] == 21, "skip gossip: the only option is chosen")
 options[2] = { name = "Something else", type = "gossip", gossipOptionID = 22 }
@@ -303,15 +295,98 @@ prof().inventoryManager = true
 MOCK.combat = true
 check(not A:DeleteCheapestJunk(true), "never deletes in combat")
 MOCK.combat = false
--- discard when full
-C_Container.GetContainerNumFreeSlots = function() return 0 end
+-- discard when full: the client only allows DeleteCursorItem from a click or key press, so a bag
+-- event never deletes; it arms the cheapest junk, and the player's next hooked input destroys it.
+GetCursorInfo = function()
+    local c = MOCK.cursor
+    if not c then return nil end
+    local it = MOCK.bags[c.bag] and MOCK.bags[c.bag][c.slot]
+    return "item", it and it.itemID
+end
+ClearCursor = function() MOCK.cursor = false end
+local freeSlots = 0
+C_Container.GetContainerNumFreeSlots = function() return freeSlots end
+local function click() WorldFrame.scripts.OnMouseDown(WorldFrame, "LeftButton") end
+local function key() TBCGuideJunkInput.scripts.OnKeyDown(TBCGuideJunkInput, "W") end
+check(type(WorldFrame.scripts.OnMouseDown) == "function" and type(WorldFrame.scripts.OnMouseUp) == "function", "world clicks are hooked")
+check(TBCGuideJunkInput and type(TBCGuideJunkInput.scripts.OnKeyDown) == "function", "key presses are hooked")
 deleted = {}
+A.discardFailed, A.discardPending, A.discardTarget = {}, nil, nil
 A:OnBagsChanged()
-check(#deleted == 0, "discard-when-full is off by default")
+click()
+check(#deleted == 0 and A.discardTarget == nil, "discard-when-full is off by default")
 prof().discardJunkFull = true
 A:OnBagsChanged()
-check(deleted[1] == 95002, "bags full: the cheapest junk item is discarded")
+check(#deleted == 0, "bags full: nothing is deleted from a bag event")
+check(A.discardTarget and A.discardTarget.itemID == 95002, "bags full: the cheapest junk item is armed")
+MOCK.combat = true
+click()
+check(#deleted == 0 and A.discardTarget, "in combat: nothing deleted, stays armed")
+MOCK.combat = false
+click()
+check(#deleted == 1 and deleted[1] == 95002, "next click destroys exactly the armed item")
+check(A.discardPending ~= nil and A.discardTarget == nil, "success waits for the bag update")
+WorldFrame.scripts.OnMouseUp(WorldFrame, "LeftButton")
+key()
+check(#deleted == 1, "one item per input: mouse-up and later keys delete nothing more")
+local nPrinted = #MOCK.printed
+A:OnBagsChanged()
+check(A.discardPending == nil and string.find(MOCK.printed[#MOCK.printed] or "", "Destroyed (not sold)", 1, true) and #MOCK.printed == nPrinted + 1,
+    "after the bag update: one message, saying it was destroyed, not sold")
+-- a key press works too; bags with a free slot arm nothing
+MOCK.bags[0][4] = { itemID = 95002, count = 1 }
+A:OnBagsChanged()
+key()
+check(#deleted == 2, "a key press destroys the armed item")
+A:OnBagsChanged()
+freeSlots = 1
+MOCK.bags[0][4] = { itemID = 95002, count = 1 }
+A:OnBagsChanged()
+click()
+check(#deleted == 2 and A.discardTarget == nil, "a free bag slot: nothing armed or deleted")
+freeSlots = 0
+-- the armed slot changed before the click
+A:OnBagsChanged()
+MOCK.bags[0][4] = { itemID = 95002, count = 3 }
+click()
+check(#deleted == 2, "armed stack changed before the click: not deleted")
+-- cursor busy keeps it armed, then deletes once the cursor is free
+A:OnBagsChanged()
+MOCK.cursor = { bag = 0, slot = 1, other = true }
+local held = MOCK.cursor
+click()
+check(MOCK.cursor == held and #deleted == 2 and A.discardTarget, "cursor holds something: left alone, stays armed")
+MOCK.cursor = false
+-- safety: slot changed, data missing, locked, refusal
+MOCK.bags[0][4] = { itemID = 95002, count = 2 }
+local cand = { bag = 0, slot = 4, itemID = 95002, count = 2, link = "Dear Grey", value = 1000 }
+MOCK.bags[0][4] = { itemID = 95002, count = 1 }
+deleted = {}
+check(not A:DiscardJunk(cand) and #deleted == 0, "stack count changed: not deleted")
+MOCK.bags[0][4] = { itemID = 95001, count = 2 }
+check(not A:DiscardJunk(cand) and #deleted == 0, "different item in the slot: not deleted")
+MOCK.bags[0][4] = { itemID = 95002, count = 2, locked = true }
+check(not A:DiscardJunk(cand) and #deleted == 0, "locked item: not deleted")
+MOCK.items[95009] = nil
+MOCK.bags[0][5] = { itemID = 95009, count = 1, quality = 0 }
+check(not A:DiscardJunk({ bag = 0, slot = 5, itemID = 95009, count = 1 }) and #deleted == 0, "item data not loaded: not deleted")
+MOCK.bags[0][5] = nil
+MOCK.bags[0][4] = { itemID = 95002, count = 2 }
+local realDelete = DeleteCursorItem
+DeleteCursorItem = function() end -- refused, like a call without a click
+A.discardTarget = cand
+click()
+check(not MOCK.cursor and MOCK.bags[0][4] and #deleted == 0, "refused deletion: item put back, nothing deleted")
+check(A.discardFailed["0:4:95002"] and (A:CheapestJunk() == nil or A:CheapestJunk().slot ~= 4), "a failed item is not armed again (no retry loop)")
+DeleteCursorItem = realDelete
+MOCK.bags[0][4] = nil
+A.discardFailed = {}
+A:OnBagsChanged()
 prof().discardJunkFull = false
+click()
+check(#deleted == 0 and A.discardTarget == nil, "turning the setting off disarms it")
+prof().discardJunkFull = false
+GetCursorInfo, ClearCursor = nil, function() MOCK.cursor = false end
 C_Container.GetContainerNumFreeSlots = nil
 ns.Compat.CursorHasItem = realCursor
 A:ToggleJunk(95001)

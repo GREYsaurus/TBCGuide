@@ -22,7 +22,7 @@ ns.Guides:Register({
     {"accept",q=973,title="The Tower of Althalaxx",npc="Delgren the Purifier",z=331,x=26.2,y=38.7,optional=true,v=1},
     {"fp",npc="Daelyshia",z=331,x=34.4,y=48,place="Astranaar",v=1},
     {"turnin",q=10752,title="Onward to Ashenvale",npc="Raene Wolfrunner",z=331,x=36.6,y=49.6,text="Astranaar.",optional=true,v=1},
-    {"bind",npc="Innkeeper Kimlya",z=331,x=37,y=49.2,place="Astranaar",v=1},
+    {"bind",npc="Innkeeper Kimlya",z=331,x=37,y=49.2,place="Astranaar",npcId=6738,areas={415},v=1},
     {"accept",q=991,title="Raene's Cleansing",npc="Raene Wolfrunner",z=331,x=36.6,y=49.6,text="Raene Wolfrunner, Astranaar.",v=1},
     {"accept",q=1054,title="Culling the Threat",npc="Raene Wolfrunner",z=331,x=36.6,y=49.6,v=1},
     {"accept",q=9533,title="A Helping Hand",npc="Vindicator Palanaar",z=331,x=34.9,y=49.7,text="Vindicator Palanaar (draenei, Astranaar).",v=1},

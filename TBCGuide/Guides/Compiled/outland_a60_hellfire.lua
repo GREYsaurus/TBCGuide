@@ -21,7 +21,7 @@ ns.Guides:Register({
     {"accept",q=10141,title="The Legion Reborn",npc="Force Commander Danath Trollbane",z=3483,x=56.6,y=66.7,v=1},
     {"accept",q=10160,title="Know your Enemy",npc="Force Commander Danath Trollbane",z=3483,x=56.6,y=66.7,v=1},
     {"turnin",q=10160,title="Know your Enemy",npc="Lieutenant Amadi",z=3483,x=50.9,y=60.2,v=1},
-    {"bind",npc="Sid Limbardi",z=3483,x=54.2,y=63.6,place="Honor Hold",v=1},
+    {"bind",npc="Sid Limbardi",z=3483,x=54.2,y=63.6,place="Honor Hold",npcId=16826,areas={3538},v=1},
     {"accept",q=10161,title="In Case of Emergency...",npc="\"Screaming\" Screed Luckheed",z=3483,x=49.2,y=74.9,text="\"Screaming\" Screed Luckheed.",v=1},
     {"accept",q=9349,title="Ravager Egg Roundup",npc="Legassi",z=3483,x=49.2,y=74.8,text="Legassi.",v=1},
     {"accept",q=10055,title="Waste Not, Want Not",npc="Dumphry",z=3483,x=51.1,y=60.3,text="Dumphry.",v=1},

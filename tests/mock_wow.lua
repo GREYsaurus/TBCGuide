@@ -157,7 +157,7 @@ end
 function GetNumQuestLeaderBoards(i) return #(MOCK.questLog[i].objectives or {}) end
 function GetQuestLogLeaderBoard(o, i)
     local ob = MOCK.questLog[i].objectives[o]
-    return ob.text, "monster", ob.done
+    return ob.text, ob.type or "monster", ob.done
 end
 
 C_Map = {

@@ -152,3 +152,41 @@ Turn on the *Enable Debug* setting to see the `bind:` lines in chat (off by defa
 - [ ] **Decline / close:** hold Shift (nothing happens) or press No on the dialog yourself, or close the window: nothing is retried, the step stays open.
 - [ ] **Setting off:** with Innkeeper Bind automation off, nothing is chosen; binding by hand still completes the step.
 - [ ] **Non-English client** (if available): the same as the first item.
+
+### Roaming hunting routes (not yet run in the game)
+
+- [ ] **Kobold Camp Cleanup** (Northshire): with the quest taken, the arrow points at a camp point and the step window says "Hunting route: point N of 3". Walk to it: the arrow moves to the next point once, then loops. Standing still and fighting never moves it.
+- [ ] **Objective done:** at 10/10 the route ends at once and the arrow goes to the turn-in.
+- [ ] **Wolves Across the Border:** the loop circles the abbey on open ground; check no leg runs into the abbey walls.
+- [ ] **The Balance of Nature** (Shadowglen): nightsabers' route first (east of the tree); after 7/7 the boars' route (west side). Check the west route never pulls you into the Grellkin camp or the trunk.
+- [ ] **Controls:** *Next patrol point* / key binding skips one point; *Normal objective waypoint* returns to the old arrow; `/tbcg route on` brings the route back.
+- [ ] **Manual waypoint:** `/tbcg train waypoint` during a route: the arrow stays on the trainer.
+- [ ] **Abandon / reload:** abandoning the quest stops the route; `/reload` on the step resumes from the nearest point.
+- [ ] **Other kill steps** (no route): the arrow behaves exactly as before.
+
+Traversal sample of the researched routes (walk at least one full loop of each; note any leg that runs into a wall, cliff, water you can't cross, or a camp of other mobs):
+
+- [ ] **Horde, Mulgore: Dangers of the Windfury** (743): harpies, 341 yd area.
+- [ ] **Horde, Ghostlands: Suncrown Village** (9138): Nerubis Guards.
+- [ ] **Horde, The Barrens: Harpy Raiders** (867): the largest area, 451 yd.
+- [ ] **Horde, Stranglethorn: Hunt for Yenniku** (581): Bloodscalp trolls; also used by Bloody Bone Necklaces (596).
+- [ ] **Horde, Thousand Needles (strict zone): Pacify the Centaur** (4841, objectives 1 and 3): Galak camp on the canyon floor; check no leg climbs a mesa.
+- [ ] **Alliance, Bloodmyst Isle: Alien Predators** (9634).
+- [ ] **Alliance, Desolace: Centaur Bounty** (1387); the Horde Centaur Bounty (1366) reuses it.
+- [ ] **Alliance, Western Plaguelands: Clear the Way** (5092): objective 1 then objective 2, two routes in the Felstone Field.
+- [ ] **Alliance, Hellfire: Ill Omens** (10483): Zeth'Gor, worst leg gap 46 yd; check it stays clear of the elite and named orcs.
+- [ ] **Both, Nagrand: Talbuk Mastery** (9858).
+- [ ] **Alliance, Nagrand: Fierce Enemies** (10476): Boulderfist ogres, kill-for-drop.
+- [ ] **Shadowmoon Valley (strict zone): Spleendid!** (10661, Alliance); the Horde What Strange Creatures... (10660) reuses it. Check the legs stay off the lava.
+- [ ] **English client:** on any of the above the label shows the quest log's objective text; on a non-English client the route still runs.
+
+### Active Item window (not yet run in the game)
+
+- [ ] **Click to use:** take a quest with a usable item (for example a quest wand or a sample bottle). Left-click its button: the item is used exactly as from the bag. Try with Interface > Combat > *Cast action keybinds on key down* on and off.
+- [ ] **Targeted items:** an item that needs a target or a ground spot enters the normal targeting (cursor or target check); nothing is used until you finish it.
+- [ ] **Cooldown and count:** after use the cooldown sweep shows; the number is the total across stacks.
+- [ ] **Move the item** to another bag slot: the button still works.
+- [ ] **Use the last one:** out of combat the button disappears; in combat it greys out and disappears when combat ends.
+- [ ] **Step change / new quest item:** the button set updates; in combat it updates when combat ends, and no button ever shows one item while using another.
+- [ ] **Shift-click** links the item in chat without using it; **Alt-drag** moves the window; the tooltip still shows.
+- [ ] **No automatic use** when the guide advances, and no "action blocked" message in combat.

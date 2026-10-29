@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.9.4
+
+### Added
+- **Roaming Waypoints for Kill Objectives** (Settings → General, on by default): on a kill step with a verified route, the arrow walks a loop of points through the mobs' known spawn area and moves to the next point when you reach one, until the objective is done. Navigation only: it never targets, fights or completes a step for you.
+  - **Supported now:** 194 quest objectives in 170 quests, with 160 distinct routes in 39 zones, from the starting zones to Shadowmoon Valley, for both factions. Every other step keeps its normal waypoint.
+  - **How the routes were made:** each point is the centre of real spawns, and every leg was checked against the full spawn list, kept away from elites and other-faction towns, and reviewed zone by zone. Caves, mines, multi-level areas, named and elite enemies, escorts and small spawn spots keep a single waypoint.
+  - **Records:** all 949 candidate objectives have a recorded decision and reason (docs/research/roaming-dispositions.csv). None of the routes has been walked in the game yet.
+  - **Checking the target:** on English clients a route only runs when the quest log's objective names its target.
+  - **Controls:** *Next patrol point* and *Normal objective waypoint* buttons, `/tbcg route next | off | on`, and a key binding for the next point.
+  - **Routes** are built from real spawn data and checked by the compiler (docs/ROAMING.md); `docs/generated/roaming-candidates.csv` lists the steps that could get one next.
+- **Waypoints you choose** (such as `/tbcg train waypoint`) are no longer replaced by the periodic objective retargeting on kill steps.
+
+### Fixed
+- **Active Item window:** clicking an item now uses it. The buttons were set up correctly as secure item buttons, but on this client a secure button acts on the mouse-down event (the default "use on key down" setting) and ours only listened for mouse-up, so clicks did nothing. They now listen for both, and the client acts once.
+  - **Also:** the buttons show the total stack count and the item's cooldown, and grey out when the item is used up during combat (the list itself changes after combat, so a button never shows one item and uses another). Shift-click links the item in chat, Alt-drag moves the window; neither uses it.
+
+
 ## 0.9.3
 
 ### Fixed

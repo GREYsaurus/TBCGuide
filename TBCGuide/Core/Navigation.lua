@@ -10,10 +10,14 @@
 -- converted to uiMapIDs (Zones.lua) and then to world coordinates with C_Map so distance and
 -- direction can be computed. If any of those APIs are missing the arrow hides itself and the
 -- step text still shows plain coordinates - navigation is an aid, never a requirement.
+--
+-- Ownership (Nav.owner): "step" (the current guide step, FromStep), "route" (a roaming hunting route,
+-- Core/Roam.lua) or "manual" (a waypoint the player asked for, such as /tbcg train waypoint). Routes
+-- and the periodic retargeting never replace a manual waypoint; a new guide step does.
 
 local _, ns = ...
 
-local Nav = { target = nil }
+local Nav = { target = nil, owner = nil }
 ns.Nav = Nav
 
 local C = ns.Compat
@@ -21,14 +25,15 @@ local ARRIVE_YARDS = 12
 
 -- Target -----------------------------------------------------------------------------------------
 
-function Nav:SetTarget(areaId, x, y, label)
+function Nav:SetTarget(areaId, x, y, label, owner)
     local mapId = ns.DB.ZoneUiMap(areaId)
     if not mapId then
         self:Clear()
         return
     end
+    self.owner = owner or "manual"
     local t = self.target
-    if t and t.mapId == mapId and t.x == x and t.y == y then return end
+    if t and t.mapId == mapId and t.x == x and t.y == y then t.label = label or "" return end
     self.target = { area = areaId, mapId = mapId, x = x, y = y, label = label or "" }
     self:UpdateTomTom()
     self:UpdateMapPin()
@@ -36,7 +41,7 @@ function Nav:SetTarget(areaId, x, y, label)
 end
 
 function Nav:Clear()
-    self.target = nil
+    self.target, self.owner = nil, nil
     self:UpdateTomTom()
     self:UpdateMapPin()
     if self.arrow then self.arrow:Hide() end
@@ -44,8 +49,10 @@ end
 
 function Nav:FromStep(step)
     if not step then return self:Clear() end
-    local z, x, y, label = ns.StepText:Target(step)
-    if z and x and y then self:SetTarget(z, x, y, label) else self:Clear() end
+    local z, x, y, label = ns.Roam:TargetFor(step)
+    if z then return self:SetTarget(z, x, y, label, "route") end
+    z, x, y, label = ns.StepText:Target(step)
+    if z and x and y then self:SetTarget(z, x, y, label, "step") else self:Clear() end
 end
 
 -- Distance (yards) and relative angle (radians, 0 = straight ahead, + = to the left).
@@ -210,6 +217,6 @@ function Nav:Init()
         if t < 3 then return end
         t = 0
         local s = ns.Engine:CurrentStep()
-        if s and s[1] == "complete" and not s.x then Nav:FromStep(s) end
+        if s and s[1] == "complete" and not s.x and Nav.owner ~= "manual" and not ns.Roam.active then Nav:FromStep(s) end
     end)
 end

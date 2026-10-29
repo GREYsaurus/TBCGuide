@@ -182,7 +182,32 @@ local AIb = ns.ActiveItems.buttons
 check(AIb[1]:IsShown() and AIb[1].attributes and AIb[1].attributes.item == "item:96001" or (AIb[1]:IsShown() and AIb[1].link),
     "a usable quest item gets a button")
 check(not AIb[2]:IsShown(), "usable non-quest items and unusable quest items are left out")
+check(AIb[1].attributes["shift-type1"] == "" and AIb[1].attributes["alt-type1"] == "", "Shift-click (link) and Alt-drag (move) never use the item")
+-- Click registration: the modern secure template acts on key-down (ActionButtonUseKeyDown), so both
+-- edges must be registered; older templates act on every registered edge, so only "AnyUp" there.
+local reg
+local fake = { RegisterForClicks = function(_, ...) reg = { ... } end }
+local realMixin = SecureActionButtonMixin
+SecureActionButtonMixin = {}
+ns.ActiveItems.RegisterClicks(fake)
+check(reg and #reg == 2 and reg[1] == "AnyUp" and reg[2] == "AnyDown", "modern client: the button listens for down and up clicks")
+SecureActionButtonMixin = nil
+ns.ActiveItems.RegisterClicks(fake)
+check(reg and #reg == 1 and reg[1] == "AnyUp", "older client: up clicks only (no double use)")
+SecureActionButtonMixin = realMixin
+-- Stack count is the total across stacks; moving the item keeps the same action
+MOCK.bags = { [0] = { { itemID = 96001, count = 2 }, nil, { itemID = 96001, count = 3 } } }
+ns.ActiveItems:Update()
+check(AIb[1].count:GetText() == 5 and AIb[1].attributes.item == "item:96001", "count adds up all stacks")
+MOCK.bags = { [0] = { nil, nil, nil, { itemID = 96001, count = 5 } } }
+ns.ActiveItems:Update()
+check(AIb[1]:IsShown() and AIb[1].attributes.item == "item:96001", "moving the item to another slot keeps the button and its action")
+-- Consumed in combat: the action stays bound to the same item, shown greyed out, never a different item
 MOCK.combat = true
+MOCK.bags = { [0] = { { itemID = 96003 } } }
+ns.ActiveItems:Update()
+check(ns.ActiveItems.pending and AIb[1]:IsShown() and AIb[1].attributes.item == "item:96001" and AIb[1].missing,
+    "in combat the secure buttons are not changed; a used-up item shows as missing")
 MOCK.bags = { [0] = {} }
 ns.ActiveItems:Update()
 check(ns.ActiveItems.pending and AIb[1]:IsShown(), "in combat the secure buttons are not changed")

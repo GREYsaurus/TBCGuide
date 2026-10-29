@@ -88,6 +88,8 @@ function StepText:Details(s)
                     lines[#lines + 1] = (o.done and "|cff55ff55- " or "|cffffffff- ") .. (o.text or "?") .. "|r"
                 end
             end
+            local route = ns.Roam and ns.Roam.active and ns.Roam:StatusLine()
+            if route then lines[#lines + 1] = string.format(DIM, route) end
         else
             local _, text = ns.DB.GetQuestObjectives(s.q)
             if text and text ~= "" then lines[#lines + 1] = string.format(DIM, text) end

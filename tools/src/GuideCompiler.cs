@@ -177,6 +177,8 @@ namespace TBCGuideTools
         public BundledDb Db;
         public List<string[]> AutoDungeon = new List<string[]>();  // guide, quest, title, instance, verb (tagged from data)
         public List<string[]> MixedDungeon = new List<string[]>(); // guide, quest, title, place: some objectives inside an instance or raid
+        public List<RoamRoute> Routes = new List<RoamRoute>();     // roaming hunting routes (guides-src/routes, RoamRoutes.cs)
+        public List<string[]> RoamInventory = new List<string[]>(); // guide, quest, obj, title, status, reason, targets
     }
 
     // ---------------------------------------------------------------- compiler
@@ -228,11 +230,13 @@ namespace TBCGuideTools
                 catch (Exception e) { res.Errors.Add(rel + ": " + e.Message); }
             }
             CrossChecks(res, state);
+            res.Routes = RoamRoutes.Compile(srcDir, res);
+            res.RoamInventory = RoamRoutes.Inventory(res);
             if (res.Errors.Count == 0 && write) Write(res, addOnDir);
             int steps = res.Guides.Sum(g => g.Steps.Count);
             int quests = res.Guides.SelectMany(g => g.Steps).Where(s => s.Quest > 0).Select(s => s.Quest).Distinct().Count();
-            res.Summary = string.Format("guides: {0} guides, {1} steps, {2} distinct quests, {3} error(s), {4} warning(s)",
-                res.Guides.Count, steps, quests, res.Errors.Count, res.Warnings.Count);
+            res.Summary = string.Format("guides: {0} guides, {1} steps, {2} distinct quests, {3} roaming routes, {4} error(s), {5} warning(s)",
+                res.Guides.Count, steps, quests, res.Routes.Count, res.Errors.Count, res.Warnings.Count);
             return res;
         }
 
@@ -1211,6 +1215,8 @@ namespace TBCGuideTools
                 File.WriteAllText(Path.Combine(outDir, fname), sb.ToString(), new UTF8Encoding(false));
                 xml.Append("  <Script file=\"" + fname + "\"/>\n");
             }
+            File.WriteAllText(Path.Combine(outDir, "Routes.lua"), RoamRoutes.Lua(res.Routes, res.Db), new UTF8Encoding(false));
+            xml.Append("  <Script file=\"Routes.lua\"/>\n");
             xml.Append("</Ui>\n");
             File.WriteAllText(Path.Combine(outDir, "Guides.xml"), xml.ToString(), new UTF8Encoding(false));
         }

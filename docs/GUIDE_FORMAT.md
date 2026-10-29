@@ -83,3 +83,7 @@ An `[optional]` turn-in of a quest accepted in an **earlier** guide (a breadcrum
 - **Area ids** are AreaTable ids from the client (wago.tools, product `wow_anniversary`). `GetBindLocation()` reports the area the inn stands in, which is not always the town: Kharanos reports *Thunderbrew Distillery* (2102), Thelsamar *Stoutlager Inn* (2101), Menethil Harbor *Deepwater Tavern* (2104), Brill *Gallows' End Tavern* (2119), Aerie Peak *Wildhammer Keep* (349). List the town and, where it has one, its inn area.
 - **Why ids:** `C_Map.GetAreaInfo(id)` names the area in the client's language, so the check works on every client. The compiler rejects a bind step without `[area=]`.
 - **Innkeeper:** the compiler picks the nearest innkeeper of the guide's faction (NPC flag) and stores its NPC id; bind automation only acts at that innkeeper or another innkeeper of the same town.
+
+### Roaming hunting routes
+
+Routes for kill and kill-for-drop objectives live in `guides-src/routes/*.routes`, not in the guide files: they attach to a quest and its quest-log objective index, so guide steps, ids and saved progress do not change. Format, compiler checks and the research method: docs/ROAMING.md.

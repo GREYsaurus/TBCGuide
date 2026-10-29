@@ -21,6 +21,7 @@ None of this has been tested in the game client yet.
 - **First-login setup:** a new character gets a short setup window: guide, spec profile, and an explicit opt-in for automatic upgrades (off unless ticked, and only with a spec profile). Saved per character. *Skip* keeps the defaults; closing it keeps the choices for next time. *Open setup* (General) reopens it. Characters that already used TBCGuide are not asked.
 - **Window Management:** *Show all Enabled Frames* hides the guide window and arrow together when off. *Lock Frames* and *Autohide in Raids* do what they say.
 - **Features:** minimap button, world map button (opens the guide browser), *Hide Window* and *Hide waypoint arrow*.
+- **Roaming Waypoints for Kill Objectives** (on): cycles through verified hunting-area waypoints until the objective is complete. The points cover where the mobs are known to spawn, not where they are now. Only quests with a verified route use it; the others keep their normal waypoint. *Next patrol point* moves the arrow to the next point (also `/tbcg route next` and a key binding); *Normal objective waypoint* turns the route off for the current step (`/tbcg route off`, back with `/tbcg route on`). Details: docs/ROAMING.md.
 - **Automation:**
 
   | Option | Default | What it does |

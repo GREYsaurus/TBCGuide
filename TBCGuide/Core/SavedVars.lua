@@ -101,6 +101,7 @@ local profileDefaults = {
         trainerAuto = false,        -- learn affordable spells at your class trainer
         trainerSuggestions = "important", -- Class Trainer Suggestions: "off", "important", "all" (docs/TRAINER.md)
         flightAuto = true,          -- fly to the current fly step's destination when the taxi map opens
+        roamRoutes = true,          -- roaming hunting-area waypoints on kill steps with a verified route (Core/Roam.lua)
         bindAuto = true,            -- confirm the hearthstone bind on the guide's bind step
         skipGossip = true,          -- pick the only gossip option when an NPC offers nothing else
         inventoryManager = true,    -- master switch for junk selling, junk list and junk deletion

@@ -1,0 +1,37 @@
+# Roaming hunting routes, Teldrassil (Shadowglen). Format and verification: docs/ROAMING.md.
+# Points are centres of spawn clusters in the full QuestieDB TBC spawn list; legs were sampled every
+# 5 yards against the targets' known spawns.
+zone Teldrassil 5091.7x3393.8   # map size in yards: UiMapAssignment uiMap 1438, build 2.5.6.70577
+
+# The Balance of Nature (456): objective 1 Young Nightsabers, objective 2 Young Thistle Boars.
+# Both live around the foot of Aldrassil, but on different sides, and a loop through both would
+# cross the trunk or leave the glen (rejected: 100 yd from any target spawn). So each objective has
+# its own route; the nightsabers come first (objective order), then the boars.
+
+# Young Nightsabers: 25 spawns east and south-east of the tree. The loop stays east of the trunk
+# (64 yd or more from Melithar Staghelm at its foot). Worst leg gap 44 yd.
+route The Balance of Nature: Young Nightsabers
+quest 456
+kill 1 2031
+radius 20
+loop
+point 61.6,40.6 | North-east of Aldrassil
+point 63.2,42.3 | East edge of the glen
+point 62.2,44.4 | South-east
+point 60.6,45.6 | South of the tree
+end
+
+# Young Thistle Boars: 24 spawns on the west and south-west side. This side is tight: the trunk is to
+# the east and the Grellkin camp (hostile, 54.0-54.9) to the west. The points keep 56 yd from the
+# trunk's NPCs and 47 yd from the nearest Grellkin spawn, and the order goes around, never across.
+# Worst leg gap 37 yd.
+route The Balance of Nature: Young Thistle Boars
+quest 456
+kill 2 1984
+radius 15
+loop
+point 55.8,41.4 | West of the tree, east of the Grellkin
+point 56.9,42.6 | Foot of the tree, west side
+point 57.3,45.3 | South-west of the tree
+point 55.8,43.6 | West side, keep clear of the Grellkin to the west
+end

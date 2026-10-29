@@ -24,6 +24,7 @@ local HELP = {
     { "class", "class leveling tips" },
     { "train", "spells your class trainer has for you (train defer | train waypoint)" },
     { "pet", "hunter pet skills and warlock Grimoires still to learn (pet defer | pet waypoint)" },
+    { "route next|off|on", "hunting route: next point, normal objective waypoint for this step, or back on" },
     { "options", "open settings" },
     { "minimap", "show/hide the minimap button" },
     { "automation", "open quest automation / junk selling settings" },
@@ -85,6 +86,13 @@ commands.train = function(arg)
     else
         ns.Trainer:ViewAgain()
     end
+end
+commands.route = function(arg)
+    arg = string.lower(arg or "")
+    if arg == "next" then ns.Roam:Next()
+    elseif arg == "off" then ns.Roam:Suspend()
+    elseif arg == "on" then ns.Roam:Resume()
+    else ns:Print(ns.Roam:StatusLine() or "No hunting route is running for the current step.") end
 end
 commands.next = function() ns.Engine:Next() end
 commands.prev = function() ns.Engine:Prev() end

@@ -62,4 +62,5 @@
   <Script file="shared_27_ungoro.lua"/>
   <Script file="shared_28b_winterspring.lua"/>
   <Script file="shared_31_easternplaguelands.lua"/>
+  <Script file="Routes.lua"/>
 </Ui>

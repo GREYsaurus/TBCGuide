@@ -305,3 +305,6 @@ C_PlayerInteractionManager        # modern-engine clients; confirms the innkeepe
 Enum                              # client enums (Enum.PlayerInteractionType.Binder)
 Enum.PlayerInteractionType        # Binder interaction type for the bind confirmation
 C_Map.GetAreaInfo                 # localized area names for bind steps (Core/Bind.lua)
+IsInInstance                      # hunting routes stop inside instances (Core/Roam.lua)
+SecureActionButtonMixin           # modern secure template present: register down+up clicks (UI/ActiveItems.lua)
+ChatEdit_InsertLink               # shift-click an active item to link it in chat

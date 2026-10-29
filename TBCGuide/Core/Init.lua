@@ -12,6 +12,7 @@ ns.name = addonName
 -- Key binding labels (Bindings.xml)
 BINDING_HEADER_TBCGUIDE = "TBCGuide"
 BINDING_NAME_TBCGUIDE_DELETEJUNK = "Delete cheapest junk item"
+BINDING_NAME_TBCGUIDE_ROUTENEXT = "Next hunting route point"
 ns.QDB = { quests = {}, npcs = {}, objects = {}, items = {}, zones = {} }
 ns.modules = {}
 

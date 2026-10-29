@@ -128,6 +128,9 @@ function Invoke-Guides {
     (@("guide,quest,title,instance,step") + @($res.AutoDungeon | ForEach-Object { ($_ | ForEach-Object { '"' + ($_ -replace '"','""') + '"' }) -join "," })) | Set-Content $dg -Encoding UTF8
     $mx = Join-Path $Root "docs\generated\dungeon-mixed.csv"
     (@("guide,quest,title,place") + @($res.MixedDungeon | ForEach-Object { ($_ | ForEach-Object { '"' + ($_ -replace '"','""') + '"' }) -join "," })) | Set-Content $mx -Encoding UTF8
+    # Roaming hunting routes: which kill/drop steps have one, could get one, or keep a single waypoint (docs/ROAMING.md).
+    $rc = Join-Path $Root "docs\generated\roaming-candidates.csv"
+    (@("guide,quest,obj,title,status,reason,targets,route") + @($res.RoamInventory | ForEach-Object { ($_ | ForEach-Object { '"' + ($_ -replace '"','""') + '"' }) -join "," })) | Set-Content $rc -Encoding UTF8
     if ($res.Errors.Count -gt 0) {
         $res.Errors | Select-Object -First 200 | ForEach-Object { Write-Host "  ERROR $_" -ForegroundColor Red }
         throw "Guide compilation failed with $($res.Errors.Count) error(s)."

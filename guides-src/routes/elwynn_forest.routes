@@ -1,0 +1,35 @@
+# Roaming hunting routes, Elwynn Forest (Northshire Valley). Format and verification: docs/ROAMING.md.
+# Points are centres of spawn clusters in the full QuestieDB TBC spawn list (.cache/upstream, commit in
+# Database/QuestieTBC/UPSTREAM_PROVENANCE.md). Every leg was sampled every 5 yards and stays within
+# 50 yards of a known spawn of the route's targets; nothing here is placed around a quest marker.
+zone Elwynn Forest 3470.8x2314.6   # map size in yards (x across, y down): UiMapAssignment uiMap 1429, build 2.5.6.70577
+
+# Kobold Vermin: 31 spawns in one camp north-west of the abbey (46.9-51.8, 34.9-37.6). Flat ground,
+# a straight west-east camp; the loop runs along it and back. Worst leg gap 23 yd.
+route Kobold Camp Cleanup: Kobold Vermin
+quest 7
+kill 1 6
+radius 15
+loop
+point 47.6,35.8 | West end of the kobold camp
+point 49.6,35.7 | Middle of the camp
+point 51.3,37.0 | East end of the camp
+end
+
+# Tough Wolf Meat drops from Timber Wolves and Young Wolves (Items: NPC drops 69, 299). 55 spawns ring
+# Northshire Abbey. The loop circles the abbey on open ground, at least 49 yd from the abbey's NPCs,
+# and stays inside the valley (the Elwynn wolves south of Northshire are left out). Worst leg gap
+# 48 yd (north-east, between two wolf groups).
+route Wolves Across the Border: Tough Wolf Meat
+quest 33
+drop 1 750 69,299
+radius 20
+loop
+point 46.1,38.4 | West of the abbey
+point 48.7,37.9 | North of the abbey
+point 50.6,36.3 | North-east field
+point 52.3,39.4 | East of the abbey
+point 51.6,43.6 | South-east, by the vineyard path
+point 49.1,46.2 | South of the abbey
+point 46.1,43.6 | South-west field
+end

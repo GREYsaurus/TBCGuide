@@ -38,6 +38,7 @@ turnin 3102 Encrypted Letter [class=Rogue]
 turnin 3103 Hallowed Letter [class=Priest]
 turnin 3104 Glyphic Letter [class=Mage]
 turnin 3105 Tainted Letter [class=Warlock]
+accept 1598 The Stolen Tome [class=Warlock] | Drusilla La Salle.
 train | Learn your level 2-4 abilities while you are here.
 turnin Milly Osworth
 accept Milly's Harvest
@@ -51,10 +52,12 @@ accept Skirmish at Echo Ridge
 turnin Brotherhood of Thieves
 accept Bounty on Garrick Padfoot
 complete Bounty on Garrick Padfoot [mark=skull] | Garrick Padfoot is at the Defias camp east of the vineyard.
+complete 1598 The Stolen Tome [class=Warlock] | The Stolen Books are at the same Defias camp.
 complete Skirmish at Echo Ridge | Kill Kobold Laborers inside Echo Ridge Mine.
 turnin Bounty on Garrick Padfoot
 turnin Skirmish at Echo Ridge
 turnin Grape Manifest | Brother Neals is at the top of the abbey bell tower.
+turnin 1598 The Stolen Tome [class=Warlock]
 accept Report to Goldshire
 train | Level 4 abilities.
 accept Rest and Relaxation | Falkhaan Isenstrider stands on the road south of the valley.

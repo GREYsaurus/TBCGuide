@@ -18,6 +18,15 @@ accept The Boar Hunter | Talin Keeneye, west of Anvilmar.
 accept A Refugee's Quandary | Felix Whindlebolt, north of Anvilmar.
 complete Dwarven Outfitters | Wolves around Anvilmar drop Tough Wolf Meat.
 turnin Dwarven Outfitters
+accept 3106 Simple Rune [class=Warrior; race=Dwarf] | Sten Stoutarm gives your class letter now.
+accept 3107 Consecrated Rune [class=Paladin; race=Dwarf]
+accept 3108 Etched Rune [class=Hunter; race=Dwarf]
+accept 3109 Encrypted Rune [class=Rogue; race=Dwarf]
+accept 3110 Hallowed Rune [class=Priest; race=Dwarf]
+accept 3112 Simple Memorandum [class=Warrior; race=Gnome]
+accept 3113 Encrypted Memorandum [class=Rogue; race=Gnome]
+accept 3114 Glyphic Memorandum [class=Mage; race=Gnome]
+accept 3115 Tainted Memorandum [class=Warlock; race=Gnome]
 accept A New Threat
 accept 233 Coldridge Valley Mail Delivery
 complete A New Threat | Rockjaw Troggs and Burly Rockjaw Troggs in the valley.
@@ -28,8 +37,19 @@ turnin A Refugee's Quandary
 turnin 233 Coldridge Valley Mail Delivery
 accept 234 Coldridge Valley Mail Delivery
 turnin The Boar Hunter
+turnin 3106 Simple Rune [class=Warrior; race=Dwarf] | Your class trainer inside Anvilmar.
+turnin 3107 Consecrated Rune [class=Paladin; race=Dwarf]
+turnin 3108 Etched Rune [class=Hunter; race=Dwarf]
+turnin 3109 Encrypted Rune [class=Rogue; race=Dwarf]
+turnin 3110 Hallowed Rune [class=Priest; race=Dwarf]
+turnin 3112 Simple Memorandum [class=Warrior; race=Gnome]
+turnin 3113 Encrypted Memorandum [class=Rogue; race=Gnome]
+turnin 3114 Glyphic Memorandum [class=Mage; race=Gnome]
+turnin 3115 Tainted Memorandum [class=Warlock; race=Gnome]
+accept 1599 Beginnings [class=Warlock; race=Gnome] | Alamar Grimm.
 train | Classes train inside Anvilmar.
 complete The Troll Cave | Frostmane Troll Whelps in the cave west of Grelin.
+complete 1599 Beginnings [class=Warlock; race=Gnome] | Frostmane Novices around the troll camps drop Feather Charms.
 turnin 234 Coldridge Valley Mail Delivery
 turnin The Troll Cave
 accept The Stolen Journal
@@ -40,6 +60,7 @@ accept 282 Senir's Observations
 turnin Scalding Mornbrew Delivery | Durnan Furcutter inside Anvilmar.
 accept Bring Back the Mug
 turnin Bring Back the Mug
+turnin 1599 Beginnings [class=Warlock; race=Gnome]
 turnin 282 Senir's Observations | Mountaineer Thalos at the tunnel out of the valley.
 accept 420 Senir's Observations
 accept Supplies to Tannok [optional] | Hands Springsprocket stands at the tunnel too.

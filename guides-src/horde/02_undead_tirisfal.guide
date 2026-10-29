@@ -17,12 +17,20 @@ turnin Rude Awakening | Shadow Priest Sarvis.
 accept The Mindless Ones
 complete The Mindless Ones | Mindless Zombies and Wretched Zombies.
 turnin The Mindless Ones
+accept 3095 Simple Scroll [class=Warrior] | Shadow Priest Sarvis gives your class scroll now.
+accept 3096 Encrypted Scroll [class=Rogue]
+accept 3097 Hallowed Scroll [class=Priest]
+accept 3098 Glyphic Scroll [class=Mage]
+accept 3099 Tainted Scroll [class=Warlock]
 accept Rattling the Rattlecages | Offered once The Mindless Ones is turned in.
 accept The Damned
+accept 1470 Piercing the Veil [class=Warlock] | Venya Marthand, Deathknell.
 complete Rattling the Rattlecages | Rattlecage Skeletons.
+complete 1470 Piercing the Veil [class=Warlock] | Rattlecage Skulls from the same skeletons.
 complete The Damned | Young Night Webs and Scrawny Duskbats.
 turnin Rattling the Rattlecages
 turnin The Damned
+turnin 1470 Piercing the Veil [class=Warlock]
 accept Scavenging Deathknell | Deathguard Saltain.
 accept Marla's Last Wish | Novice Elreth.
 accept Night Web's Hollow | Executor Arren.
@@ -39,6 +47,11 @@ turnin Marla's Last Wish
 complete The Red Messenger | Meven Korgal, at the Scarlet camp.
 turnin The Red Messenger
 accept Vital Intelligence
+turnin 3095 Simple Scroll [class=Warrior] | Your class trainer in Deathknell.
+turnin 3096 Encrypted Scroll [class=Rogue]
+turnin 3097 Hallowed Scroll [class=Priest]
+turnin 3098 Glyphic Scroll [class=Mage]
+turnin 3099 Tainted Scroll [class=Warlock]
 train | Trainers in Deathknell's church.
 turnin Vital Intelligence | Executor Zygand, Brill.
 accept 427 At War With The Scarlet Crusade

@@ -18,6 +18,11 @@ complete 456 The Balance of Nature | Young Nightsabers and Young Thistle Boars.
 turnin The Woodland Protector | Tarindrella in the glade.
 accept 459 The Woodland Protector
 turnin 456 The Balance of Nature
+accept 3116 Simple Sigil [class=Warrior] | Conservator Ilthalaine gives your class sigil now.
+accept 3117 Etched Sigil [class=Hunter]
+accept 3118 Encrypted Sigil [class=Rogue]
+accept 3119 Hallowed Sigil [class=Priest]
+accept 3120 Verdant Sigil [class=Druid]
 accept 457 The Balance of Nature
 accept Webwood Venom | Gilshalan Windwalker, inside Aldrassil.
 accept A Good Friend | Dirania Silvershine.
@@ -42,6 +47,11 @@ accept 921 Crown of the Earth
 complete 921 Crown of the Earth | Fill the phial at the moonwell north of Aldrassil.
 turnin 921 Crown of the Earth
 accept 928 Crown of the Earth
+turnin 3116 Simple Sigil [class=Warrior] | Your class trainer in Aldrassil.
+turnin 3117 Etched Sigil [class=Hunter]
+turnin 3118 Encrypted Sigil [class=Rogue]
+turnin 3119 Hallowed Sigil [class=Priest]
+turnin 3120 Verdant Sigil [class=Druid]
 train | Your trainer is inside Aldrassil.
 accept Dolanaar Delivery | Porthannius on the path out of Shadowglen.
 turnin Dolanaar Delivery | Innkeeper Keldamyr, Dolanaar.

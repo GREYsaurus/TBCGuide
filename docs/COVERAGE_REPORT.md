@@ -8,10 +8,10 @@ It reports what the automated checks found. It is **not** evidence of in-game te
 | Item | Count |
 |---|---|
 | Guides | 54 (41 Azeroth, 13 Outland) |
-| Guide steps | 4204 |
-| Quest steps (accept/complete/turn-in) | 3572 |
-| Distinct quests referenced | 1222 |
-| Steps with database-derived coordinates | 2839 |
+| Guide steps | 4331 |
+| Quest steps (accept/complete/turn-in) | 3699 |
+| Distinct quests referenced | 1282 |
+| Steps with database-derived coordinates | 2959 |
 | Steps with hand-written coordinates (unverified) | 1 |
 | Race/class combinations | 52 |
 | Talent builds | 21 (21 pass validation) |
@@ -81,14 +81,14 @@ Each race/class combination is followed from its racial start guide through the 
 
 | Guide | Faction | Levels | Zone | Steps | Quests | Optional/elite/group steps |
 |---|---|---|---|---|---|---|
-| Northshire & Elwynn Forest | Alliance | 1-10 | Elwynn Forest | 143 | 48 | 3 |
-| Coldridge Valley & Dun Morogh | Alliance | 1-11 | Dun Morogh | 101 | 34 | 3 |
-| Shadowglen & Teldrassil | Alliance | 1-11 | Teldrassil | 91 | 29 | 3 |
-| Ammen Vale & Azuremyst Isle | Alliance | 1-11 | Azuremyst Isle | 128 | 43 | 2 |
-| Valley of Trials & Durotar | Horde | 1-12 | Durotar | 106 | 33 | 2 |
-| Camp Narache & Mulgore | Horde | 1-11 | Mulgore | 88 | 28 | 1 |
-| Deathknell & Tirisfal Glades | Horde | 1-11 | Tirisfal Glades | 97 | 30 | 3 |
-| Sunstrider Isle & Eversong Woods | Horde | 1-11 | Eversong Woods | 116 | 38 | 4 |
+| Northshire & Elwynn Forest | Alliance | 1-10 | Elwynn Forest | 146 | 49 | 3 |
+| Coldridge Valley & Dun Morogh | Alliance | 1-11 | Dun Morogh | 122 | 44 | 3 |
+| Shadowglen & Teldrassil | Alliance | 1-11 | Teldrassil | 101 | 34 | 3 |
+| Ammen Vale & Azuremyst Isle | Alliance | 1-11 | Azuremyst Isle | 147 | 52 | 2 |
+| Valley of Trials & Durotar | Horde | 1-12 | Durotar | 137 | 48 | 2 |
+| Camp Narache & Mulgore | Horde | 1-11 | Mulgore | 103 | 35 | 1 |
+| Deathknell & Tirisfal Glades | Horde | 1-11 | Tirisfal Glades | 110 | 36 | 3 |
+| Sunstrider Isle & Eversong Woods | Horde | 1-11 | Eversong Woods | 131 | 45 | 4 |
 | Bloodmyst Isle | Alliance | 10-20 | Bloodmyst Isle | 125 | 42 | 3 |
 | Westfall | Alliance | 10-16 | Westfall | 56 | 16 | 3 |
 | Ghostlands (Tranquillien) | Horde | 10-20 | Ghostlands | 102 | 34 | 1 |

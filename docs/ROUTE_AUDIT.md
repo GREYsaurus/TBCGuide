@@ -13,9 +13,9 @@ Every race/class route is walked step by step. **Estimated level** interpolates 
 | Warnings | 0 |
 | Peak quest log (worst route) | 10 / 25 |
 | Reduced-XP pickups (6+ levels below estimate) | 1 |
-| Level-gated pickups | 20 |
+| Level-gated pickups | 18 |
 | Accepted, never turned in | 0 |
-| Hub revisits (all guides) | 438 |
+| Hub revisits (all guides) | 448 |
 
 ## Per guide
 
@@ -28,20 +28,20 @@ Values in brackets are the baseline (`docs/generated/route-metrics-baseline.csv`
 | A_BladesEdge | 102 (103) | 33 (34) | 258 | 8 | 0 | 0 | 0 (1) | 2 | 0 |
 | A_BurningSteppes | 42 (44) | 13 (15) | 212 (203) | 6 (5) | 0 | 0 | 0 (4) | 2 | 1 |
 | A_Darkshore | 105 (110) | 34 (39) | 346 (355) | 13 | 0 | 1 (0) | 0 (5) | 2 | 2 |
-| A_Draenei_Azuremyst | 128 (131) | 43 (45) | 415 (384) | 9 | 0 | 2 (4) | 0 (2) | 1 | 0 |
+| A_Draenei_Azuremyst | 147 (131) | 52 (45) | 452 (384) | 11 (9) | 0 | 2 (4) | 0 (2) | 1 | 0 |
 | A_Draenei_Bloodmyst | 125 | 42 | 275 (276) | 6 | 0 | 5 (4) | 0 | 2 | 1 |
 | A_Duskwood | 74 (78) | 25 (29) | 564 (571) | 13 | 0 | 0 | 0 (4) | 0 | 0 |
 | A_Dustwallow | 75 (78) | 23 (27) | 391 (429) | 7 | 0 | 0 | 0 (6) | 1 | 0 |
-| A_DwarfGnome_DunMorogh | 101 | 34 | 322 | 15 | 0 | 3 | 0 | 0 | 0 |
+| A_DwarfGnome_DunMorogh | 122 (101) | 44 (34) | 338 (322) | 19 (15) | 0 | 2 (3) | 0 | 0 | 0 |
 | A_Felwood | 35 (36) | 8 (9) | 247 | 4 | 0 | 0 | 0 (1) | 0 | 0 |
 | A_Feralas | 60 (63) | 19 (22) | 341 (344) | 3 | 0 | 0 | 0 (3) | 2 (3) | 2 |
 | A_Hellfire | 177 | 60 (61) | 803 (804) | 34 (35) | 0 | 0 | 0 (3) | 0 | 1 (2) |
 | A_Hillsbrad | 45 (47) | 12 (14) | 44 | 0 | 0 | 3 | 0 (3) | 0 | 0 |
 | A_Hinterlands | 39 (40) | 9 (10) | 111 | 5 | 0 | 0 | 0 (1) | 0 | 0 |
-| A_Human_Elwynn | 143 | 48 | 504 (467) | 16 | 0 | 2 | 0 | 0 | 2 |
+| A_Human_Elwynn | 146 (143) | 49 (48) | 506 (467) | 16 | 0 | 2 | 0 | 0 | 2 |
 | A_LochModan | 70 (72) | 22 (24) | 512 (517) | 11 | 0 | 0 | 0 (2) | 0 | 0 (1) |
 | A_Nagrand | 104 (105) | 36 (37) | 367 | 4 | 0 | 0 | 0 (1) | 2 | 1 (2) |
-| A_NightElf_Teldrassil | 91 (92) | 29 (30) | 214 | 7 | 0 | 1 | 0 (1) | 0 | 0 |
+| A_NightElf_Teldrassil | 101 (92) | 34 (30) | 220 (214) | 7 | 0 | 0 (1) | 0 (1) | 0 | 0 |
 | A_Redridge | 68 (69) | 21 (22) | 289 | 13 | 0 | 0 | 0 (1) | 1 | 3 |
 | A_Shadowmoon | 57 | 18 | 132 | 2 | 0 | 0 | 0 | 0 | 0 |
 | A_Stranglethorn | 71 (76) | 20 (25) | 268 (269) | 6 | 0 | 0 | 0 (5) | 0 | 0 |
@@ -57,7 +57,7 @@ Values in brackets are the baseline (`docs/generated/route-metrics-baseline.csv`
 | H_Ashenvale | 38 (42) | 8 (10) | 489 (492) | 12 (13) | 0 | 0 (1) | 0 (1) | 1 (2) | 2 (3) |
 | H_Barrens | 115 (117) | 37 (41) | 281 (299) | 12 (13) | 0 | 0 | 0 (7) | 0 (1) | 1 |
 | H_BladesEdge | 50 (51) | 15 (16) | 215 (245) | 7 (8) | 0 | 0 | 0 (1) | 1 | 0 |
-| H_BloodElf_Eversong | 116 (118) | 38 (41) | 500 (583) | 14 (16) | 0 | 0 | 0 (4) | 1 | 0 |
+| H_BloodElf_Eversong | 131 (118) | 45 (41) | 509 (583) | 14 (16) | 0 | 0 | 0 (4) | 1 | 0 |
 | H_BloodElf_Ghostlands | 102 (103) | 34 (35) | 439 (440) | 16 | 0 | 1 | 0 (1) | 0 | 1 |
 | H_Dustwallow | 89 (90) | 28 (29) | 300 (301) | 10 (12) | 0 | 0 | 0 (1) | 0 | 0 |
 | H_Felwood | 35 (36) | 8 (9) | 274 | 5 | 0 | 0 | 0 (1) | 1 | 0 |
@@ -66,15 +66,15 @@ Values in brackets are the baseline (`docs/generated/route-metrics-baseline.csv`
 | H_Hillsbrad | 46 (48) | 12 (15) | 117 (122) | 1 | 0 | 0 | 0 (4) | 0 | 0 |
 | H_Hinterlands | 51 (52) | 13 (14) | 70 | 1 | 0 | 0 | 0 (1) | 0 | 0 |
 | H_Nagrand | 114 | 39 | 336 | 9 | 0 | 0 | 0 | 3 | 1 |
-| H_OrcTroll_Durotar | 106 (105) | 33 | 376 (371) | 14 | 0 | 0 | 0 (2) | 0 | 0 |
+| H_OrcTroll_Durotar | 137 (105) | 48 (33) | 406 (371) | 16 (14) | 0 | 0 | 0 (2) | 0 | 0 |
 | H_Shadowmoon | 57 | 18 | 89 | 5 | 0 | 0 | 0 | 0 | 0 |
 | H_Silverpine | 75 (76) | 27 (28) | 190 (191) | 7 (8) | 0 | 0 | 0 (1) | 1 | 2 (3) |
 | H_Stonetalon | 38 (37) | 9 (8) | 222 | 5 | 0 | 0 | 0 | 1 | 0 |
 | H_Stranglethorn | 69 (70) | 19 (20) | 278 | 5 | 1 | 0 | 0 (1) | 0 | 0 |
-| H_Tauren_Mulgore | 88 (90) | 28 (30) | 257 (258) | 9 | 0 | 1 | 0 (2) | 3 | 0 |
+| H_Tauren_Mulgore | 103 (90) | 35 (30) | 280 (258) | 11 (9) | 0 | 1 | 0 (2) | 3 | 0 |
 | H_Terokkar | 95 (96) | 33 (34) | 351 | 13 | 0 | 0 | 0 (1) | 0 | 1 (2) |
 | H_ThousandNeedles | 54 (56) | 14 (16) | 189 (246) | 6 (8) | 0 | 0 | 0 (2) | 1 | 0 |
-| H_Undead_Tirisfal | 97 | 30 | 217 (216) | 5 | 0 | 0 | 0 | 0 | 0 |
+| H_Undead_Tirisfal | 110 (97) | 36 (30) | 220 (216) | 5 | 0 | 0 | 0 | 0 | 0 |
 | H_WesternPlaguelands | 47 | 14 | 10 | 7 | 0 | 0 | 0 | 1 | 0 |
 | H_Zangarmarsh | 111 (108) | 37 (38) | 401 (397) | 10 | 0 | 0 | 0 (3) | 1 | 0 |
 
@@ -110,22 +110,20 @@ None.
 
 - A_Ashenvale: level-gated pickup: A Helping Hand (9533) needs 22, guide estimate 20.8
 - A_Darkshore: level-gated pickup: The Tower of Althalaxx (965) needs 13, guide estimate 11.9
-- A_Draenei_Azuremyst: level-gated pickup: Learning the Language (9538) needs 8, guide estimate 4.9
-- A_Draenei_Azuremyst: level-gated pickup: Totem of Coo (9539) needs 8, guide estimate 6.2
+- A_Draenei_Azuremyst: level-gated pickup: Learning the Language (9538) needs 8, guide estimate 5.6
+- A_Draenei_Azuremyst: level-gated pickup: Totem of Coo (9539) needs 8, guide estimate 6.7
 - A_Draenei_Bloodmyst: level-gated pickup: Constrictor Vines (9643) needs 14, guide estimate 12.0
 - A_Draenei_Bloodmyst: level-gated pickup: Intercepting the Message (9779) needs 14, guide estimate 12.9
 - A_Draenei_Bloodmyst: level-gated pickup: Irradiated Crystal Shards (9641) needs 13, guide estimate 11.8
 - A_Draenei_Bloodmyst: level-gated pickup: Know Thine Enemy (9567) needs 13, guide estimate 11.7
 - A_Draenei_Bloodmyst: level-gated pickup: The Bear Necessities (9580) needs 14, guide estimate 11.9
 - A_DwarfGnome_DunMorogh: level-gated pickup: A Refugee's Quandary (3361) needs 3, guide estimate 1.3
-- A_DwarfGnome_DunMorogh: level-gated pickup: Frostmane Hold (287) needs 7, guide estimate 4.8
-- A_DwarfGnome_DunMorogh: level-gated pickup: Operation Recombobulation (412) needs 7, guide estimate 5.6
+- A_DwarfGnome_DunMorogh: level-gated pickup: Frostmane Hold (287) needs 7, guide estimate 5.9
 - A_Hillsbrad: level-gated pickup: Costly Menace (564) needs 30, guide estimate 28.4
 - A_Hillsbrad: level-gated pickup: Crushridge Bounty (500) needs 30, guide estimate 28.4
 - A_Hillsbrad: level-gated pickup: Hints of a New Plague? (659) needs 30, guide estimate 28.5
-- A_Human_Elwynn: level-gated pickup: A Fishy Peril (40) needs 7, guide estimate 5.1
-- A_Human_Elwynn: level-gated pickup: Further Concerns (35) needs 7, guide estimate 5.6
-- A_NightElf_Teldrassil: level-gated pickup: Webwood Venom (916) needs 3, guide estimate 1.8
+- A_Human_Elwynn: level-gated pickup: A Fishy Peril (40) needs 7, guide estimate 5.2
+- A_Human_Elwynn: level-gated pickup: Further Concerns (35) needs 7, guide estimate 5.7
 - H_BloodElf_Ghostlands: level-gated pickup: Shadowpine Weaponry (9214) needs 15, guide estimate 12.6
 - H_Stranglethorn: reduced-XP quest: Supply and Demand (575, level 31) at estimated level 37.5
-- H_Tauren_Mulgore: level-gated pickup: Dwarven Digging (746) needs 6, guide estimate 4.4
+- H_Tauren_Mulgore: level-gated pickup: Call of Earth (1519) needs 4, guide estimate 2.9

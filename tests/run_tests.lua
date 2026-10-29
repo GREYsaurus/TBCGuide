@@ -171,6 +171,63 @@ check(found and found.level == 10 and found.mobs[1] == "Riverpaw Outrunner" and 
 MOCK.player.level = 1
 ns.Engine:Load("A_Human_Elwynn")
 
+-- Class quests in the starting guides -------------------------------------------------------------
+-- Every level-1 class quest in the database that a starting guide's races can take, whose giver
+-- stands in the guide's zone and whose prerequisite the guide hands in, must be in that guide
+-- (accept and turn-in) exactly once.
+local QD = ns.QDB.QUEST
+local function stepsFor(g, kind, q)
+    local out = {}
+    for i, s in ipairs(g.steps) do if s[1] == kind and s.q == q then out[#out + 1] = i end end
+    return out
+end
+for _, g in ipairs(G.list) do
+    if g.start and g.races then
+        local mask, turnedIn = 0, {}
+        for _, r in ipairs(g.races) do mask = mask + (ns.QDB.RACE_BITS[r] or 0) end
+        for _, s in ipairs(g.steps) do if s[1] == "turnin" and s.q then turnedIn[s.q] = true end end
+        for id, r in pairs(ns.QDB.quests) do
+            local races, pre = r[QD.RACES] or 0, r[QD.PRE_SINGLE]
+            local giver = r[QD.START_NPCS] and ns.QDB.npcs[r[QD.START_NPCS][1]]
+            local unlocked = pre == nil
+            for _, p in ipairs(pre or {}) do if turnedIn[p] then unlocked = true end end
+            local reachable = unlocked and giver ~= nil and giver[ns.QDB.NPC.ZONE] == g.zone
+            if (r[QD.CLASSES] or 0) ~= 0 and r[QD.REQ_LEVEL] == 1 and races ~= 0 and races % (2 * mask) >= 1 and reachable then
+                local fits = false
+                for _, rn in ipairs(g.races) do local b = ns.QDB.RACE_BITS[rn]; if races % (2 * b) >= b then fits = true end end
+                if fits then
+                    check(#stepsFor(g, "accept", id) == 1 and #stepsFor(g, "turnin", id) == 1,
+                        g.id .. " has class quest " .. id .. " " .. tostring(r[QD.NAME]) .. " once (accept + turn-in)")
+                end
+            end
+        end
+    end
+end
+-- The reported bug: Verdant Note (3094) for tauren druids, after The Hunt Begins (747).
+local mul = G.byId["H_Tauren_Mulgore"]
+local va, vt, hb = stepsFor(mul, "accept", 3094)[1], stepsFor(mul, "turnin", 3094)[1], stepsFor(mul, "turnin", 747)[1]
+check(va and vt and hb and hb < va and va < vt, "Verdant Note is accepted after The Hunt Begins and turned in later")
+check(G:StepApplies(mul.steps[va], { race = "Tauren", class = "DRUID", faction = "Horde" })
+    and not G:StepApplies(mul.steps[va], { race = "Tauren", class = "WARRIOR", faction = "Horde" }), "Verdant Note applies to druids only")
+MOCK.player.race, MOCK.player.class, MOCK.player.faction = "Tauren", "DRUID", "Horde"
+ns.Engine:Load("H_Tauren_Mulgore", { reset = true })
+MOCK.completed[747] = true
+for i = 1, va - 1 do if ns.Engine.status[i] ~= "na" then ns.Engine.progress.done[i] = true end end
+ns.Engine:Refresh()
+check(ns.Engine.current == va and ns.Engine:CurrentStep().q == 3094, "tauren druid reaches the Verdant Note step")
+table.insert(MOCK.questLog, { id = 3094, title = "Verdant Note", complete = true, objectives = {} })
+MOCK.fire("QUEST_ACCEPTED", 1, 3094)
+MOCK.tick(0.5)
+check(ns.Engine.status[va] == "done", "accepting Verdant Note completes its step")
+table.remove(MOCK.questLog)
+MOCK.completed[3094] = true
+MOCK.fire("QUEST_TURNED_IN", 3094, 0, 0)
+MOCK.tick(0.5)
+check(ns.Engine.status[vt] == "done", "turning in Verdant Note completes its turn-in step")
+MOCK.completed[747], MOCK.completed[3094] = nil, nil
+MOCK.player.race, MOCK.player.class, MOCK.player.faction = "Human", "WARRIOR", "Alliance"
+ns.Engine:Load("A_Human_Elwynn")
+
 -- Automation (junk selling, quest accept / turn-in) and raid markers -----------------------------
 TEST = { check = check, ns = ns }
 dofile("tests/test_automation.lua")

@@ -19,6 +19,10 @@ accept 753 A Humble Task
 complete 753 A Humble Task | Fill the pitcher at the well.
 complete 747 The Hunt Begins | Plainstriders around the camp.
 turnin 747 The Hunt Begins
+accept 3091 Simple Note [class=Warrior] | Grull Hawkwind gives your class note now.
+accept 3092 Etched Note [class=Hunter]
+accept 3093 Rune-Inscribed Note [class=Shaman]
+accept 3094 Verdant Note [class=Druid]
 accept 750 The Hunt Continues
 turnin 753 A Humble Task
 accept 755 Rites of the Earthmother
@@ -27,13 +31,24 @@ accept Rite of Strength
 complete Rite of Strength | Bristleback quilboars at Brambleblade Ravine.
 complete 750 The Hunt Continues | Mountain Cougars.
 turnin Rite of Strength
+accept 1519 Call of Earth [class=Shaman] | Seer Ravenfeather, Camp Narache (level 4).
 accept 763 Rites of the Earthmother
 turnin 750 The Hunt Continues
 accept The Battleboars
 accept A Task Unfinished | Antur Fallow on the road out of the camp.
 complete The Battleboars | Battleboars in the ravine; Bristleback Belt from Chief Sharptusk Thornmantle's camp.
+complete 1519 Call of Earth [class=Shaman] | Bristleback Shamans in the ravine drop Ritual Salve.
 turnin The Battleboars
+turnin 3091 Simple Note [class=Warrior] | Your class trainer in Camp Narache.
+turnin 3092 Etched Note [class=Hunter]
+turnin 3093 Rune-Inscribed Note [class=Shaman]
+turnin 3094 Verdant Note [class=Druid]
 train | Trainers at Camp Narache.
+turnin 1519 Call of Earth [class=Shaman]
+accept 1520 Call of Earth [class=Shaman]
+turnin 1520 Call of Earth [class=Shaman] | Drink the Earth Sapta at Kodo Rock; the Minor Manifestation of Earth appears.
+accept 1521 Call of Earth [class=Shaman]
+turnin 1521 Call of Earth [class=Shaman] | Back to Seer Ravenfeather for your Earth Totem.
 turnin 763 Rites of the Earthmother [optional]
 turnin A Task Unfinished | Bloodhoof Village.
 bind Bloodhoof Village

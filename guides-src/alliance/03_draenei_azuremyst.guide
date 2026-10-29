@@ -53,7 +53,26 @@ turnin Blood Elf Spy
 accept The Emitter
 turnin The Emitter
 accept Travel to Azure Watch
+accept 9289 Warrior Training [class=Warrior] | From your class trainer at the crash site (level 2).
+accept 9287 Paladin Training [class=Paladin]
+accept 9288 Hunter Training [class=Hunter]
+accept 9291 Priest Training [class=Priest]
+accept 9421 Shaman Training [class=Shaman]
+accept 9290 Mage Training [class=Mage]
 train | Trainers at the crash site.
+turnin 9289 Warrior Training [class=Warrior]
+turnin 9287 Paladin Training [class=Paladin]
+turnin 9288 Hunter Training [class=Hunter]
+turnin 9291 Priest Training [class=Priest]
+turnin 9421 Shaman Training [class=Shaman]
+turnin 9290 Mage Training [class=Mage]
+accept 9449 Call of Earth [class=Shaman] | Firmanvaar (level 4).
+turnin 9449 Call of Earth [class=Shaman] | Spirit of the Vale at the Sacred Grove, north-west of the crash site.
+accept 9450 Call of Earth [class=Shaman]
+complete 9450 Call of Earth [class=Shaman] | Restless Spirits of Earth around the grove.
+turnin 9450 Call of Earth [class=Shaman]
+accept 9451 Call of Earth [class=Shaman]
+turnin 9451 Call of Earth [class=Shaman] | Back to Firmanvaar for your Earth Totem.
 turnin Travel to Azure Watch | Technician Dyvuun, Azure Watch.
 accept Red Snapper - Very Tasty! | Diktynna, on the beach.
 accept Word from Azure Watch [optional]

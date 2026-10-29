@@ -15,15 +15,23 @@
 accept Reclaiming Sunstrider Isle | Magistrix Erona.
 complete Reclaiming Sunstrider Isle | Mana Wyrms around the isle.
 turnin Reclaiming Sunstrider Isle
+accept 9676 Paladin Training [class=Paladin] | Magistrix Erona sends you to your class trainer.
+accept 9393 Hunter Training [class=Hunter]
+accept 9392 Rogue Training [class=Rogue]
+accept 8564 Priest Training [class=Priest]
+accept 8328 Mage Training [class=Mage]
+accept 8563 Warlock Training [class=Warlock]
 accept Unfortunate Measures
 accept Solanian's Belongings | Well Watcher Solanian.
 accept The Shrine of Dath'Remar
 accept A Fistful of Slivers | Arcanist Ithanas.
 accept Thirst Unending | Arcanist Helion.
+accept 8344 Windows to the Source [class=Warlock] | Summoner Teli'Larien, the warlock trainer.
 complete Unfortunate Measures | Springpaw Cubs and Lynxes.
 complete Solanian's Belongings | Scrying orb, scroll and journal around the isle.
 complete The Shrine of Dath'Remar | Read the plaque at the shrine.
 complete A Fistful of Slivers | Arcane Slivers from tenders and wyrms.
+complete 8344 Windows to the Source [class=Warlock] | Arcane Wraiths and the Tainted Arcane Wraith, west of the Sunspire.
 complete Thirst Unending | Use Arcane Torrent on a Mana Wyrm.
 turnin Unfortunate Measures
 accept Report to Lanthan Perilon
@@ -36,9 +44,16 @@ turnin Solanian's Belongings
 turnin The Shrine of Dath'Remar
 turnin A Fistful of Slivers
 turnin Thirst Unending
+turnin 8344 Windows to the Source [class=Warlock]
 complete Felendren the Banished | Top of the Falthrien Academy.
 turnin Felendren the Banished
 accept Aiding the Outrunners
+turnin 9676 Paladin Training [class=Paladin] | Your class trainer in the Sunspire.
+turnin 9393 Hunter Training [class=Hunter]
+turnin 9392 Rogue Training [class=Rogue]
+turnin 8564 Priest Training [class=Priest]
+turnin 8328 Mage Training [class=Mage]
+turnin 8563 Warlock Training [class=Warlock]
 train | Trainers on Sunstrider Isle.
 turnin Aiding the Outrunners | Outrunner Alarion, on the bridge.
 accept Slain by the Wretched

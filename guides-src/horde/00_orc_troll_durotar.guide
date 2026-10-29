@@ -18,6 +18,28 @@ accept Cutting Teeth
 accept 790 Sarkoth | Hana'zua, wounded near the canyon to the south.
 complete Cutting Teeth | Mottled Boars around the valley.
 turnin Cutting Teeth
+accept 2383 Simple Parchment [class=Warrior; race=Orc] | Gornek gives your class letter now.
+accept 3087 Etched Parchment [class=Hunter; race=Orc]
+accept 3088 Encrypted Parchment [class=Rogue; race=Orc]
+accept 3089 Rune-Inscribed Parchment [class=Shaman; race=Orc]
+accept 3090 Tainted Parchment [class=Warlock; race=Orc]
+accept 3065 Simple Tablet [class=Warrior; race=Troll]
+accept 3082 Etched Tablet [class=Hunter; race=Troll]
+accept 3083 Encrypted Tablet [class=Rogue; race=Troll]
+accept 3084 Rune-Inscribed Tablet [class=Shaman; race=Troll]
+accept 3085 Hallowed Tablet [class=Priest; race=Troll]
+accept 3086 Glyphic Tablet [class=Mage; race=Troll]
+turnin 2383 Simple Parchment [class=Warrior; race=Orc] | Your class trainer in the Den.
+turnin 3087 Etched Parchment [class=Hunter; race=Orc]
+turnin 3088 Encrypted Parchment [class=Rogue; race=Orc]
+turnin 3089 Rune-Inscribed Parchment [class=Shaman; race=Orc]
+turnin 3090 Tainted Parchment [class=Warlock; race=Orc]
+turnin 3065 Simple Tablet [class=Warrior; race=Troll]
+turnin 3082 Etched Tablet [class=Hunter; race=Troll]
+turnin 3083 Encrypted Tablet [class=Rogue; race=Troll]
+turnin 3084 Rune-Inscribed Tablet [class=Shaman; race=Troll]
+turnin 3085 Hallowed Tablet [class=Priest; race=Troll]
+turnin 3086 Glyphic Tablet [class=Mage; race=Troll]
 accept Sting of the Scorpid
 accept Galgar's Cactus Apple Surprise | Galgar, near the Den (offered after Cutting Teeth).
 complete Galgar's Cactus Apple Surprise | Cactus apples beside the cacti.
@@ -29,12 +51,16 @@ turnin 804 Sarkoth
 complete Sting of the Scorpid | Scorpid Workers.
 turnin Sting of the Scorpid
 accept Vanquish the Betrayers
+accept 1516 Call of Earth [class=Shaman] | Canaga Earthcaller, by the Den (level 4).
 accept 792 Vile Familiars [class=Warrior,Hunter,Rogue,Shaman,Priest,Mage] | Zureetha Fargaze.
 accept 1485 Vile Familiars [class=Warlock]
 complete 792 Vile Familiars [class=Warrior,Hunter,Rogue,Shaman,Priest,Mage] | Vile Familiars in the north-east of the valley.
 complete 1485 Vile Familiars [class=Warlock]
+complete 1516 Call of Earth [class=Shaman] | Felstalkers in the north-east of the valley drop Felstalker Hooves.
 turnin 792 Vile Familiars [class=Warrior,Hunter,Rogue,Shaman,Priest,Mage]
 turnin 1485 Vile Familiars [class=Warlock]
+accept 1499 Vile Familiars [class=Warlock] | Ruzan; needed for Burning Blade Medallion.
+turnin 1499 Vile Familiars [class=Warlock] | Zureetha Fargaze.
 accept Burning Blade Medallion
 accept Lazy Peons | Foreman Thazz'ril.
 accept A Peon's Burden [optional] | Ukor.
@@ -50,6 +76,11 @@ turnin A Peon's Burden [optional] | Innkeeper Grosk, Razor Hill inn.
 turnin Burning Blade Medallion
 accept Report to Sen'jin Village
 train | Trainers are inside the Den.
+turnin 1516 Call of Earth [class=Shaman]
+accept 1517 Call of Earth [class=Shaman]
+turnin 1517 Call of Earth [class=Shaman] | Drink the Earth Sapta at Spirit Rock; the Minor Manifestation of Earth appears.
+accept 1518 Call of Earth [class=Shaman]
+turnin 1518 Call of Earth [class=Shaman] | Back to Canaga Earthcaller for your Earth Totem.
 turnin Report to Sen'jin Village | Master Gadrin, Sen'jin Village.
 accept Minshina's Skull
 accept Zalazane

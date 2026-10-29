@@ -67,6 +67,9 @@ accept Supplies to Tannok [optional] | Hands Springsprocket stands at the tunnel
 turnin 420 Senir's Observations | Senir Whitebeard in Kharanos.
 accept Frostmane Hold
 turnin Supplies to Tannok [optional] | Tannok Frosthammer inside the Thunderbrew Distillery.
+accept 5625 Garments of the Light [class=Priest; race=Dwarf]
+complete 5625 Garments of the Light [class=Priest; race=Dwarf]
+turnin 5625 Garments of the Light [class=Priest; race=Dwarf]
 bind Kharanos
 accept Beer Basted Boar Ribs
 accept Tools for Steelgrill
@@ -77,6 +80,9 @@ accept Operation Recombobulation | Razzle Sprysprocket in the gnome building of 
 train | Your trainer is in Kharanos.
 turnin Tools for Steelgrill | Beldin Steelgrill at Steelgrill's Depot, east of Kharanos.
 complete The Grizzled Den | Wendigos in the cave south of Kharanos.
+accept 312 Tundra MacGrann's Stolen Stash [class=Hunter; race=Dwarf]
+complete 312 Tundra MacGrann's Stolen Stash [class=Hunter; race=Dwarf]
+turnin 312 Tundra MacGrann's Stolen Stash [class=Hunter; race=Dwarf]
 complete Stocking Jetsteam | Boars and bears south of Kharanos.
 turnin Stocking Jetsteam
 accept Evershine
@@ -98,7 +104,24 @@ accept The Reports
 turnin Bitter Rivals | The barrel stands inside the Thunderbrew Distillery.
 accept Return to Marleth
 turnin Return to Bellowfiz
+accept 6064 Taming the Beast [class=Hunter; race=Dwarf]
+complete 6064 Taming the Beast [class=Hunter; race=Dwarf]
+turnin 6064 Taming the Beast [class=Hunter; race=Dwarf]
+accept 6084 Taming the Beast [class=Hunter; race=Dwarf]
+complete 6084 Taming the Beast [class=Hunter; race=Dwarf]
+turnin 6084 Taming the Beast [class=Hunter; race=Dwarf]
+accept 6085 Taming the Beast [class=Hunter; race=Dwarf]
+complete 6085 Taming the Beast [class=Hunter; race=Dwarf]
+turnin 6085 Taming the Beast [class=Hunter; race=Dwarf]
+accept 6086 Training the Beast [class=Hunter; race=Dwarf]
+turnin 6086 Training the Beast [class=Hunter; race=Dwarf]
 turnin Beer Basted Boar Ribs
+accept 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
+accept 312 Tundra MacGrann's Stolen Stash [race=Gnome]
+complete 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
+complete 312 Tundra MacGrann's Stolen Stash [race=Gnome]
+turnin 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
+turnin 312 Tundra MacGrann's Stolen Stash [race=Gnome]
 complete Operation Recombobulation | Leper Gnomes at the Gnomeregan entrance and the tunnel west of Kharanos.
 turnin Operation Recombobulation
 turnin Return to Marleth

@@ -10,8 +10,45 @@
 @desc Lakeshire and the gnoll and Blackrock camps. Shared by humans arriving from Westfall and dwarves and gnomes arriving from Loch Modan.
 @next A_Duskwood
 
+accept 9429 Travel to Darkshire [race=Draenei]
+accept 2281 Redridge Rendezvous [class=Rogue; race=Human,Dwarf,Night Elf,Gnome]
+accept 2360 Mathias and the Defias [class=Rogue; race=Human,Dwarf,Night Elf,Gnome]
+accept 1642 The Tome of Divinity [class=Paladin; race=Human]
+turnin 1642 The Tome of Divinity [class=Paladin; race=Human]
+accept 1643 The Tome of Divinity [class=Paladin; race=Human]
+turnin 1643 The Tome of Divinity [class=Paladin; race=Human]
+accept 1644 The Tome of Divinity [class=Paladin; race=Human]
+turnin 1644 The Tome of Divinity [class=Paladin; race=Human]
+accept 1780 The Tome of Divinity [class=Paladin; race=Human]
+turnin 1780 The Tome of Divinity [class=Paladin; race=Human]
+accept 1781 The Tome of Divinity [class=Paladin; race=Human]
+turnin 1781 The Tome of Divinity [class=Paladin; race=Human]
+accept 1649 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
+turnin 1649 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
+accept 1650 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
+turnin 1738 Heartswood [class=Warlock; race=Human,Gnome; optional]
+accept 1739 The Binding [class=Warlock; race=Human,Gnome; optional]
+complete 1739 The Binding [class=Warlock; race=Human,Gnome; optional]
+turnin 1739 The Binding [class=Warlock; race=Human,Gnome; optional]
+accept 94 A Watchful Eye [optional]
 accept Encroaching Gnolls | Guard Parker at the Elwynn border bridge.
 turnin Encroaching Gnolls | Deputy Feldon, further east on the road.
+turnin 1097 Elmore's Task
+accept 6661 Deeprun Rat Roundup [class=Paladin,Priest; race=Dwarf; optional]
+accept 6661 Deeprun Rat Roundup [class=Mage; race=Gnome; optional]
+accept 6661 Deeprun Rat Roundup [class=Paladin,Priest,Mage; race=Human; optional]
+accept 6661 Deeprun Rat Roundup [class=Paladin,Priest,Shaman,Mage; race=Draenei; optional]
+accept 6661 Deeprun Rat Roundup [class=Priest,Druid; race=Night Elf; optional]
+complete 6661 Deeprun Rat Roundup [class=Paladin,Priest; race=Dwarf; optional]
+complete 6661 Deeprun Rat Roundup [class=Mage; race=Gnome; optional]
+complete 6661 Deeprun Rat Roundup [class=Paladin,Priest,Mage; race=Human; optional]
+complete 6661 Deeprun Rat Roundup [class=Paladin,Priest,Shaman,Mage; race=Draenei; optional]
+complete 6661 Deeprun Rat Roundup [class=Priest,Druid; race=Night Elf; optional]
+turnin 6661 Deeprun Rat Roundup [class=Paladin,Priest; race=Dwarf; optional]
+turnin 6661 Deeprun Rat Roundup [class=Mage; race=Gnome; optional]
+turnin 6661 Deeprun Rat Roundup [class=Paladin,Priest,Mage; race=Human; optional]
+turnin 6661 Deeprun Rat Roundup [class=Paladin,Priest,Shaman,Mage; race=Draenei; optional]
+turnin 6661 Deeprun Rat Roundup [class=Priest,Druid; race=Night Elf; optional]
 accept Assessing the Threat
 fp Lakeshire
 turnin 65 The Defias Brotherhood [race=Human; optional] | Wiley the Black in the Lakeshire inn (if you brought it from Westfall).
@@ -21,6 +58,10 @@ accept The Lost Tools | Foreman Oslow at the broken bridge.
 accept The Price of Shoes | Verner Osgood, south of the bridge.
 accept Redridge Goulash | Chef Breanna in the inn.
 accept Wanted: Lieutenant Fangore
+accept 34 An Unwelcome Guest
+complete 34 An Unwelcome Guest
+turnin 34 An Unwelcome Guest
+accept 66 The Legend of Stalvan
 accept Wanted: Gath'Ilzogg
 bind Lakeshire
 accept Hilary's Necklace | Shawn, at the dock south of the bridge.
@@ -42,11 +83,17 @@ turnin Redridge Goulash
 turnin The Everstill Bridge
 accept Solomon's Law
 accept Selling Fish | Dockmaster Baren on the dock.
+accept 150 Murloc Poachers
+turnin 2281 Redridge Rendezvous [class=Rogue; race=Human,Dwarf,Night Elf,Gnome]
+accept 2282 Alther's Mill [class=Rogue; race=Human,Dwarf,Night Elf,Gnome; optional]
 complete Selling Fish | Murlocs drop Spotted Sunfish.
+complete 2282 Alther's Mill [class=Rogue; race=Human,Dwarf,Night Elf,Gnome; optional]
 complete Solomon's Law | Blackrock orcs along the north-east road and Stonewatch Falls.
 complete Dry Times
 turnin Dry Times
 turnin Selling Fish
+turnin 150 Murloc Poachers
+turnin 2282 Alther's Mill [class=Rogue; race=Human,Dwarf,Night Elf,Gnome; optional]
 turnin Solomon's Law
 accept Blackrock Menace | Marshal Marris at the east house of Lakeshire.
 complete Blackrock Menace | Blackrock orcs in the Render's Camp area north of Lakeshire.
@@ -55,7 +102,10 @@ accept Missing In Action [optional; group=2] | Corporal Keeshan at Render's Camp
 complete Missing In Action [optional]
 turnin Missing In Action [optional]
 complete Wanted: Lieutenant Fangore [elite; group=3; optional]
+turnin 94 A Watchful Eye [optional]
+accept 248 Looking Further [optional]
 complete Wanted: Gath'Ilzogg [elite; group=3; optional]
+turnin 248 Looking Further [optional]
 turnin Wanted: Lieutenant Fangore [optional]
 turnin Wanted: Gath'Ilzogg [optional]
 turnin The Price of Shoes | Smith Argus, the Goldshire blacksmith (Elwynn). Combine with a training trip.

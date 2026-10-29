@@ -10,6 +10,15 @@
 @desc Thelsamar, the Stonewrought Dam, the Ironband excavation and the eastern farms. Finish with the Dark Threat Looms chain at the dam, then head to Redridge.
 @next A_Redridge
 
+accept 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Priest,Shaman,Mage; race=Draenei]
+accept 312 Tundra MacGrann's Stolen Stash [class=Warrior,Rogue,Priest,Druid; race=Night Elf]
+accept 312 Tundra MacGrann's Stolen Stash [race=Human]
+complete 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Priest,Shaman,Mage; race=Draenei]
+complete 312 Tundra MacGrann's Stolen Stash [class=Warrior,Rogue,Priest,Druid; race=Night Elf]
+complete 312 Tundra MacGrann's Stolen Stash [race=Human]
+turnin 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Priest,Shaman,Mage; race=Draenei]
+turnin 312 Tundra MacGrann's Stolen Stash [class=Warrior,Rogue,Priest,Druid; race=Night Elf]
+turnin 312 Tundra MacGrann's Stolen Stash [race=Human]
 accept 224 In Defense of the King's Lands | Mountaineer Cobbleflint, the first bunker south of the tunnel.
 accept The Trogg Threat | Captain Rugelfuss in the same bunker.
 complete 224 In Defense of the King's Lands | Troggs on the hills around the bunkers.
@@ -20,20 +29,47 @@ turnin The Trogg Threat
 turnin Stout to Kadrell | Mountaineer Kadrell, Thelsamar.
 accept Rat Catching
 accept Mountaineer Stormpike's Task
+accept 147 Manhunt [class=Warlock; race=Gnome; optional]
+complete 147 Manhunt [class=Warlock; race=Gnome; optional]
+turnin 147 Manhunt [class=Warlock; race=Gnome; optional]
 accept Thelsamar Blood Sausages
 fp Thelsamar
 bind Thelsamar
 complete Thelsamar Blood Sausages | Bears and spiders around Thelsamar.
 complete Rat Catching | Tunnel Rat Kobolds at the Silver Stream Mine, north of Thelsamar.
 turnin Thelsamar Blood Sausages
+accept 6387 Honor Students [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
+accept 6387 Honor Students [race=Gnome]
+turnin 6387 Honor Students [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
+turnin 6387 Honor Students [race=Gnome]
+accept 6391 Ride to Ironforge [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
+accept 6391 Ride to Ironforge [race=Gnome]
+turnin 6391 Ride to Ironforge [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
+turnin 6391 Ride to Ironforge [race=Gnome]
+accept 6388 Gryth Thurden [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
+accept 6388 Gryth Thurden [race=Gnome]
+turnin 6388 Gryth Thurden [class=Warrior,Rogue; race=Dwarf]
+turnin 6388 Gryth Thurden [class=Warrior,Rogue,Warlock; race=Gnome]
+accept 6392 Return to Brock [class=Warrior,Rogue; race=Dwarf; optional]
+accept 6392 Return to Brock [class=Warrior,Rogue,Warlock; race=Gnome; optional]
+turnin 6388 Gryth Thurden [class=Paladin,Priest; race=Dwarf]
+turnin 6388 Gryth Thurden [class=Mage; race=Gnome]
+turnin 6392 Return to Brock [class=Warrior,Rogue; race=Dwarf,Gnome; optional]
+turnin 6392 Return to Brock [class=Warlock; race=Gnome; optional]
 turnin Rat Catching
 complete 237 In Defense of the King's Lands | Stonesplinter troggs at Grizzlepaw Ridge.
 turnin 237 In Defense of the King's Lands
 accept 263 In Defense of the King's Lands
 turnin Mountaineer Stormpike's Task | Mountaineer Stormpike at the Dam.
+accept 1338 Stormpike's Order [class=Warrior; race=Draenei]
+accept 1338 Stormpike's Order [class=Warrior,Rogue; race=Dwarf,Night Elf]
+accept 1338 Stormpike's Order [class=Warrior,Rogue,Warlock; race=Human,Gnome]
 accept Filthy Paws
 complete Filthy Paws | Kobold crates inside Silver Stream Mine.
 turnin Filthy Paws
+turnin 1338 Stormpike's Order [class=Warrior; race=Draenei]
+turnin 1338 Stormpike's Order [class=Warrior,Rogue; race=Dwarf,Night Elf]
+turnin 1338 Stormpike's Order [class=Warrior,Rogue,Warlock; race=Human,Gnome]
 accept Excavation Progress Report | Prospector Ironband, Ironband's Excavation Site.
 accept Gathering Idols | Magmar Fellhew at the excavation.
 turnin Excavation Progress Report | Jern Hornhelm in Thelsamar.

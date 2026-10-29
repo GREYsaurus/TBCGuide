@@ -35,10 +35,14 @@ accept 1519 Call of Earth [class=Shaman] | Seer Ravenfeather, Camp Narache (leve
 accept 763 Rites of the Earthmother
 turnin 750 The Hunt Continues
 accept The Battleboars
+accept 3376 Break Sharptusk!
 accept A Task Unfinished | Antur Fallow on the road out of the camp.
 complete The Battleboars | Battleboars in the ravine; Bristleback Belt from Chief Sharptusk Thornmantle's camp.
 complete 1519 Call of Earth [class=Shaman] | Bristleback Shamans in the ravine drop Ritual Salve.
+complete 3376 Break Sharptusk!
+accept 781 Attack on Camp Narache
 turnin The Battleboars
+turnin 3376 Break Sharptusk!
 turnin 3091 Simple Note [class=Warrior] | Your class trainer in Camp Narache.
 turnin 3092 Etched Note [class=Hunter]
 turnin 3093 Rune-Inscribed Note [class=Shaman]
@@ -46,10 +50,14 @@ turnin 3094 Verdant Note [class=Druid]
 train | Trainers at Camp Narache.
 turnin 1519 Call of Earth [class=Shaman]
 accept 1520 Call of Earth [class=Shaman]
+turnin 781 Attack on Camp Narache
 turnin 1520 Call of Earth [class=Shaman] | Drink the Earth Sapta at Kodo Rock; the Minor Manifestation of Earth appears.
 accept 1521 Call of Earth [class=Shaman]
 turnin 1521 Call of Earth [class=Shaman] | Back to Seer Ravenfeather for your Earth Totem.
+accept 11129 Kyle's Gone Missing!
+accept 766 Mazzranache [optional]
 turnin 763 Rites of the Earthmother [optional]
+accept 745 Sharing the Land
 turnin A Task Unfinished | Bloodhoof Village.
 bind Bloodhoof Village
 accept Swoop Hunting | Harken Windtotem.
@@ -71,16 +79,36 @@ complete Winterhoof Cleansing | Cleanse the Winterhoof Water Well.
 turnin Winterhoof Cleansing
 accept Thunderhorn Totem
 complete Swoop Hunting | Wiry Swoops.
+accept 833 A Sacred Burial
+complete 766 Mazzranache [optional]
 complete Dwarven Digging | Dwarven tools at Bael'dun Digsite (north-west).
 complete The Venture Co. | Venture Co. workers at the Venture Co. Mine.
 complete Supervisor Fizsprocket | Inside the mine.
 complete Dangers of the Windfury | Windfury Harpies, south-east.
 complete Thunderhorn Totem | Flatland Cougars and Prairie Stalkers.
+turnin 766 Mazzranache [optional]
 turnin Swoop Hunting
 turnin Dwarven Digging
 turnin The Venture Co.
 turnin Supervisor Fizsprocket
+accept 5726 Hidden Enemies [optional]
+accept 832 Burning Shadows [optional]
+complete 5726 Hidden Enemies [optional]
+turnin 5726 Hidden Enemies [optional]
+turnin 832 Burning Shadows [optional]
 turnin Dangers of the Windfury
+accept 2984 Call of Fire [class=Shaman]
+accept 6061 Taming the Beast [class=Hunter]
+accept 5928 Heeding the Call [class=Druid; optional]
+complete 6061 Taming the Beast [class=Hunter]
+turnin 6061 Taming the Beast [class=Hunter]
+accept 6087 Taming the Beast [class=Hunter]
+complete 6087 Taming the Beast [class=Hunter]
+turnin 6087 Taming the Beast [class=Hunter]
+accept 6088 Taming the Beast [class=Hunter]
+complete 6088 Taming the Beast [class=Hunter]
+turnin 6088 Taming the Beast [class=Hunter]
+accept 861 The Hunter's Way [class=Shaman; optional]
 turnin Thunderhorn Totem
 accept Thunderhorn Cleansing
 complete Thunderhorn Cleansing | The Thunderhorn Water Well.
@@ -89,23 +117,54 @@ accept Wildmane Totem
 complete Wildmane Totem | Prairie Wolf Alphas.
 turnin Wildmane Totem
 accept Wildmane Cleansing
+accept 886 The Barrens Oases [class=Druid]
+turnin 5928 Heeding the Call [class=Druid; optional]
+accept 5922 Moonglade [class=Druid; optional]
+turnin 5922 Moonglade [class=Druid; optional]
+accept 5930 Great Bear Spirit [class=Druid]
+complete 5930 Great Bear Spirit [class=Druid]
+turnin 5930 Great Bear Spirit [class=Druid]
+accept 5932 Back to Thunder Bluff [class=Druid]
+turnin 5932 Back to Thunder Bluff [class=Druid]
+accept 6002 Body and Heart [class=Druid]
+complete 6002 Body and Heart [class=Druid]
+accept 744 Preparation for Ceremony [class=Warrior,Hunter,Druid]
+complete 744 Preparation for Ceremony [class=Warrior,Hunter,Druid]
 complete Wildmane Cleansing | The Wildmane Water Well, north.
+complete 861 The Hunter's Way [class=Shaman; optional]
+turnin 744 Preparation for Ceremony [class=Warrior,Hunter,Druid]
+turnin 861 The Hunter's Way [class=Shaman; optional]
+accept 860 Sergra Darkthorn [optional]
 turnin Wildmane Cleansing
 complete 767 Rite of Vision
 turnin 767 Rite of Vision
 accept 771 Rite of Vision
 complete 771 Rite of Vision
+complete 745 Sharing the Land
+turnin 745 Sharing the Land
 turnin 771 Rite of Vision
 accept 772 Rite of Vision
+complete 11129 Kyle's Gone Missing!
+turnin 11129 Kyle's Gone Missing!
 complete 772 Rite of Vision | Drink the potion and follow the spirit to Red Rocks.
 turnin 772 Rite of Vision
 accept Rite of Wisdom
+accept 770 The Demon Scarred Cloak [optional]
 complete Rite of Wisdom
 turnin Rite of Wisdom
 accept Journey into Thunder Bluff
+complete 833 A Sacred Burial
+turnin 833 A Sacred Burial
+turnin 770 The Demon Scarred Cloak [optional]
 turnin Journey into Thunder Bluff | Cairne Bloodhoof, Thunder Bluff.
+accept 776 Rites of the Earthmother [class=Shaman; optional]
+accept 1818 Speak with Dillinger [class=Warrior; optional]
+turnin 1818 Speak with Dillinger [class=Warrior; optional]
+accept 1820 Speak with Coleman [class=Warrior; optional]
+turnin 1820 Speak with Coleman [class=Warrior; optional]
 fp Thunder Bluff [zone=Thunder Bluff]
 train | Thunder Bluff trainers.
 accept Journey to the Crossroads [race=Tauren]
+turnin 886 The Barrens Oases [class=Druid]
 level 11
 note Ride east to the Barrens and north to the Crossroads (or complete Rites of the Earthmother at the Barrens border later).

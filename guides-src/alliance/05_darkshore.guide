@@ -12,21 +12,38 @@
 
 fp Auberdine
 bind Auberdine
+accept 1141 The Family and the Fishing Pole [class=Warlock; race=Human,Gnome; optional]
+turnin 1141 The Family and the Fishing Pole [class=Warlock; race=Human,Gnome; optional]
+accept 1141 The Family and the Fishing Pole [class=Warrior,Rogue,Mage; race=Gnome; optional]
+accept 1141 The Family and the Fishing Pole [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+accept 1141 The Family and the Fishing Pole [race=Dwarf,Night Elf,Draenei; optional]
+turnin 1141 The Family and the Fishing Pole [class=Warrior,Rogue,Mage; race=Gnome; optional]
+turnin 1141 The Family and the Fishing Pole [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+turnin 1141 The Family and the Fishing Pole [race=Dwarf,Night Elf,Draenei; optional]
+turnin 6342 Flight to Auberdine [race=Night Elf; optional]
 accept Buzzbox 827 | Wizbang Cranktoggle on the Auberdine dock.
 accept Washed Ashore | Gwennyth Bly'Leggonde.
 accept How Big a Threat? | Terenthis.
 accept Plagued Lands | Tharnariun Treetender.
 accept Bashal'Aran | Thundris Windweaver.
 accept Tools of the Highborne
+complete 6001 Body and Heart [class=Druid; race=Night Elf; optional]
 accept Easy Strider Living | Alanndarian Nightsong.
+accept 1138 Fruit of the Sea [optional]
+accept 4740 WANTED: Murkdeep! [optional]
 accept Cave Mushrooms | Barithras Moonshade.
 accept The Red Crystal | Sentinel Glynda Nal'Shea.
 accept The Tower of Althalaxx | Sentinel Elissa Starbreeze.
+accept 982 Deep Ocean, Vast Sea [optional]
 complete Buzzbox 827 | Crawlers on the beach.
 turnin Buzzbox 827
 accept Buzzbox 411
 complete Washed Ashore | The sea creature bones are on the beach south of Auberdine.
 turnin Washed Ashore
+accept 4681 Washed Ashore
+accept 963 For Love Eternal [optional]
+complete 4681 Washed Ashore
+turnin 4681 Washed Ashore
 complete Plagued Lands | Use the cage on a Rabid Thistle Bear.
 turnin Plagued Lands
 accept Cleansing of the Infected
@@ -48,13 +65,19 @@ accept As Water Cascades
 complete As Water Cascades | Fill the bottle at the moonwell in Auberdine.
 turnin As Water Cascades
 accept The Fragments Within
+complete 963 For Love Eternal [optional]
 turnin The Fragments Within
+turnin 963 For Love Eternal [optional]
 complete Buzzbox 411 | Thresher eyes from threshers off the coast.
 turnin Buzzbox 411
 accept Buzzbox 323
 complete Cleansing of the Infected | Rabid Thistle Bears.
+accept 4722 Beached Sea Turtle [optional]
 complete 985 How Big a Threat? | Blackwood furbolgs at the camp.
 complete Tools of the Highborne | Highborne relics in the Bashal'Aran ruins.
+accept 953 The Fall of Ameth'Aran [optional]
+complete 953 The Fall of Ameth'Aran [optional]
+turnin 953 The Fall of Ameth'Aran [optional]
 turnin Cleansing of the Infected
 accept Tharnariun's Hope
 turnin 985 How Big a Threat?
@@ -62,7 +85,9 @@ accept Thundris Windweaver
 turnin Thundris Windweaver
 accept The Cliffspring River
 turnin Tools of the Highborne
+turnin 4722 Beached Sea Turtle [optional]
 complete The Cliffspring River | Fill the sample tube in the Cliffspring River.
+turnin 6001 Body and Heart [class=Druid; race=Night Elf; optional]
 turnin The Cliffspring River
 accept The Blackwood Corrupted
 complete The Tower of Althalaxx | Balthule Shadowstrike, north-east.
@@ -79,13 +104,33 @@ accept Buzzbox 525
 complete Cave Mushrooms | The Mist's Edge cave.
 turnin Cave Mushrooms
 accept Onu
+accept 9432 Travel to Astranaar [race=Draenei; optional]
+complete 4740 WANTED: Murkdeep! [class=Warrior,Rogue,Mage; race=Gnome; optional]
+complete 4740 WANTED: Murkdeep! [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+complete 4740 WANTED: Murkdeep! [race=Dwarf,Night Elf,Draenei; optional]
 complete Easy Strider Living | Strider meat from striders along the coast.
 turnin Easy Strider Living
 complete The Blackwood Corrupted | Blackwood furbolg camp in the north.
 turnin The Blackwood Corrupted
 complete Tharnariun's Hope | Den Mother in the bear cave north-east.
 turnin Tharnariun's Hope
+accept 1716 Devourer of Souls [class=Warlock; race=Human,Gnome]
 accept The Absent Minded Prospector | Archaeologist Hollee, Auberdine.
+complete 982 Deep Ocean, Vast Sea [class=Warrior,Rogue,Mage; race=Gnome; optional]
+complete 982 Deep Ocean, Vast Sea [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+complete 982 Deep Ocean, Vast Sea [race=Dwarf,Night Elf,Draenei; optional]
+accept 4725 Beached Sea Turtle [class=Warrior,Rogue,Mage; race=Gnome; optional]
+accept 4725 Beached Sea Turtle [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+accept 4725 Beached Sea Turtle [race=Dwarf,Night Elf,Draenei; optional]
+accept 4727 Beached Sea Turtle [class=Warrior,Rogue,Mage; race=Gnome; optional]
+accept 4727 Beached Sea Turtle [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+accept 4727 Beached Sea Turtle [race=Dwarf,Night Elf,Draenei; optional]
+turnin 4725 Beached Sea Turtle [class=Warrior,Rogue,Mage; race=Gnome; optional]
+turnin 4725 Beached Sea Turtle [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+turnin 4725 Beached Sea Turtle [race=Dwarf,Night Elf,Draenei; optional]
+turnin 4727 Beached Sea Turtle [class=Warrior,Rogue,Mage; race=Gnome; optional]
+turnin 4727 Beached Sea Turtle [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+turnin 4727 Beached Sea Turtle [race=Dwarf,Night Elf,Draenei; optional]
 turnin Onu | Onu at the Grove of the Ancients.
 accept The Master's Glaive
 complete The Master's Glaive | The Master's Glaive in the south.
@@ -100,10 +145,49 @@ turnin Therylune's Escape [optional]
 turnin The Absent Minded Prospector | Prospector Remtravel, south coast.
 accept 731 The Absent Minded Prospector [group=2] | Escort quest.
 complete 731 The Absent Minded Prospector [group=2]
+complete 1138 Fruit of the Sea [class=Warrior,Rogue,Mage; race=Gnome; optional]
+complete 1138 Fruit of the Sea [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+complete 1138 Fruit of the Sea [race=Dwarf,Night Elf,Draenei; optional]
 turnin 731 The Absent Minded Prospector
+accept 741 The Absent Minded Prospector [class=Warrior,Rogue,Mage; race=Gnome; optional]
+accept 741 The Absent Minded Prospector [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+accept 741 The Absent Minded Prospector [race=Dwarf,Night Elf,Draenei; optional]
+accept 741 The Absent Minded Prospector [class=Warlock; race=Human,Gnome; optional]
 complete Buzzbox 525
 turnin Buzzbox 525
 level 19
 train | Darnassus trainers via Rut'theran.
+accept 986 A Lost Master [class=Warrior,Rogue,Mage; race=Gnome; optional]
+accept 986 A Lost Master [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+accept 986 A Lost Master [race=Dwarf,Night Elf,Draenei; optional]
 accept Onward to Ashenvale [optional]
+complete 982 Deep Ocean, Vast Sea [class=Warlock; race=Human,Gnome; optional]
+accept 2098 Gyromast's Retrieval [class=Warlock; race=Human,Gnome]
+complete 2098 Gyromast's Retrieval [class=Warlock; race=Human,Gnome]
+turnin 2098 Gyromast's Retrieval [class=Warlock; race=Human,Gnome]
+accept 2078 Gyromast's Revenge [class=Warlock; race=Human,Gnome]
+complete 2078 Gyromast's Revenge [class=Warlock; race=Human,Gnome]
+turnin 2078 Gyromast's Revenge [class=Warlock; race=Human,Gnome]
+complete 1138 Fruit of the Sea [class=Warlock; race=Human,Gnome; optional]
+turnin 982 Deep Ocean, Vast Sea [optional]
+turnin 1138 Fruit of the Sea [optional]
+complete 986 A Lost Master [class=Warrior,Rogue,Mage; race=Gnome; optional]
+complete 986 A Lost Master [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+complete 986 A Lost Master [race=Dwarf,Night Elf,Draenei; optional]
+turnin 986 A Lost Master [class=Warrior,Rogue,Mage; race=Gnome; optional]
+turnin 986 A Lost Master [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+turnin 986 A Lost Master [race=Dwarf,Night Elf,Draenei; optional]
+accept 993 A Lost Master [class=Warrior,Rogue,Mage; race=Gnome; optional]
+accept 993 A Lost Master [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+accept 993 A Lost Master [race=Dwarf,Night Elf,Draenei; optional]
+turnin 993 A Lost Master [class=Warrior,Rogue,Mage; race=Gnome; optional]
+turnin 993 A Lost Master [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+turnin 993 A Lost Master [race=Dwarf,Night Elf,Draenei; optional]
+accept 994 Escape Through Force [class=Warrior,Rogue,Mage; race=Gnome; optional]
+accept 994 Escape Through Force [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+accept 994 Escape Through Force [race=Dwarf,Night Elf,Draenei; optional]
+complete 994 Escape Through Force [class=Warrior,Rogue,Mage; race=Gnome; optional]
+complete 994 Escape Through Force [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
+complete 994 Escape Through Force [race=Dwarf,Night Elf,Draenei; optional]
+complete 4740 WANTED: Murkdeep! [class=Warlock; race=Human,Gnome; optional]
 note Follow the road south out of Darkshore into Ashenvale; Astranaar is the Alliance town.

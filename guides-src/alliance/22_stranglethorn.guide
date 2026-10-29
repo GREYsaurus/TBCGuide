@@ -17,8 +17,84 @@ accept 190 Panther Mastery
 accept 194 Raptor Mastery
 accept The Second Rebellion | Sergeant Yohwa, Rebel Camp (north).
 accept Bad Medicine
+turnin 322 Blessed Arm [class=Warrior,Rogue,Warlock; race=Gnome; optional]
+turnin 322 Blessed Arm [class=Warrior,Paladin,Rogue,Priest,Warlock; race=Human; optional]
+turnin 322 Blessed Arm [class=Warrior,Paladin,Hunter,Priest,Shaman; race=Draenei; optional]
+turnin 322 Blessed Arm [race=Dwarf,Night Elf; optional]
+accept 325 Armed and Ready [class=Warrior,Rogue,Warlock; race=Gnome; optional]
+accept 325 Armed and Ready [class=Warrior,Paladin,Rogue,Priest,Warlock; race=Human; optional]
+accept 325 Armed and Ready [class=Warrior,Paladin,Hunter,Priest,Shaman; race=Draenei; optional]
+accept 325 Armed and Ready [race=Dwarf,Night Elf; optional]
+accept 1274 The Missing Diplomat
+turnin 293 Cleansing the Eye [optional]
+turnin 322 Blessed Arm [class=Mage; race=Human,Gnome,Draenei; optional]
+accept 325 Armed and Ready [class=Mage; race=Human,Gnome,Draenei; optional]
+turnin 1274 The Missing Diplomat
+accept 1241 The Missing Diplomat
+turnin 1241 The Missing Diplomat
+accept 1242 The Missing Diplomat
+accept 10491 Call of Air [class=Shaman; race=Draenei]
+turnin 1242 The Missing Diplomat
+accept 1243 The Missing Diplomat
+turnin 1243 The Missing Diplomat
+turnin 75 The Legend of Stalvan
+accept 78 The Legend of Stalvan
+turnin 78 The Legend of Stalvan [class=Shaman; race=Draenei]
+accept 79 The Legend of Stalvan [class=Shaman; race=Draenei]
+turnin 79 The Legend of Stalvan [class=Shaman; race=Draenei]
+accept 80 The Legend of Stalvan [class=Shaman; race=Draenei]
+turnin 80 The Legend of Stalvan [class=Shaman; race=Draenei]
+accept 97 The Legend of Stalvan [class=Shaman; race=Draenei]
+turnin 97 The Legend of Stalvan [class=Shaman; race=Draenei]
+turnin 325 Armed and Ready [optional]
+accept 55 Morbent Fel [optional]
+complete 55 Morbent Fel [optional]
+turnin 55 Morbent Fel [optional]
+turnin 78 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
+turnin 78 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
+accept 79 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
+accept 79 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
+turnin 79 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
+turnin 79 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
+accept 80 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
+accept 80 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
+turnin 80 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
+turnin 80 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
+accept 97 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
+accept 97 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
+turnin 97 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
+turnin 97 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
+accept 1245 The Missing Diplomat
+turnin 221 Worgen in the Woods
 accept Jungle Secrets | Private Thorsen.
 turnin Jungle Secrets | Lieutenant Doren.
+accept 223 Worgen in the Woods
+turnin 223 Worgen in the Woods
+accept 1301 James Hyal [class=Mage; race=Human,Gnome,Draenei]
+turnin 1245 The Missing Diplomat
+accept 1246 The Missing Diplomat
+turnin 1246 The Missing Diplomat
+accept 1247 The Missing Diplomat
+turnin 1247 The Missing Diplomat
+accept 1248 The Missing Diplomat
+accept 1301 James Hyal [class=Warrior,Rogue,Warlock; race=Gnome]
+accept 1301 James Hyal [class=Warrior,Paladin,Rogue,Priest,Warlock; race=Human]
+accept 1301 James Hyal [class=Warrior,Paladin,Hunter,Priest,Shaman; race=Draenei]
+accept 1301 James Hyal [race=Dwarf,Night Elf]
+turnin 335 A Noble Brew [optional]
+accept 336 A Noble Brew
+turnin 336 A Noble Brew
+turnin 1248 The Missing Diplomat
+accept 1250 The Missing Diplomat
+turnin 1250 The Missing Diplomat
+turnin 10491 Call of Air [class=Shaman; race=Draenei]
+accept 9552 Call of Air [class=Shaman; race=Draenei]
+turnin 9552 Call of Air [class=Shaman; race=Draenei]
+accept 9553 Call of Air [class=Shaman; race=Draenei]
+turnin 9553 Call of Air [class=Shaman; race=Draenei]
+accept 9554 Call of Air [class=Shaman; race=Draenei]
+turnin 9554 Call of Air [class=Shaman; race=Draenei]
+turnin 1301 James Hyal
 accept Bookie Herod
 complete 185 Tiger Mastery | Young Stranglethorn Tigers.
 complete 190 Panther Mastery | Young Panthers.

@@ -32,7 +32,9 @@ complete Solanian's Belongings | Scrying orb, scroll and journal around the isle
 complete The Shrine of Dath'Remar | Read the plaque at the shrine.
 complete A Fistful of Slivers | Arcane Slivers from tenders and wyrms.
 complete 8344 Windows to the Source [class=Warlock] | Arcane Wraiths and the Tainted Arcane Wraith, west of the Sunspire.
+accept 8338 Tainted Arcane Sliver [class=Warlock; optional]
 complete Thirst Unending | Use Arcane Torrent on a Mana Wyrm.
+accept 8338 Tainted Arcane Sliver [class=Paladin,Hunter,Rogue,Priest,Mage; optional]
 turnin Unfortunate Measures
 accept Report to Lanthan Perilon
 turnin Report to Lanthan Perilon
@@ -43,17 +45,31 @@ accept Felendren the Banished
 turnin Solanian's Belongings
 turnin The Shrine of Dath'Remar
 turnin A Fistful of Slivers
+turnin 8338 Tainted Arcane Sliver [class=Paladin,Hunter,Rogue,Priest,Mage; optional]
 turnin Thirst Unending
+turnin 8338 Tainted Arcane Sliver [class=Warlock; optional]
 turnin 8344 Windows to the Source [class=Warlock]
 complete Felendren the Banished | Top of the Falthrien Academy.
 turnin Felendren the Banished
 accept Aiding the Outrunners
 turnin 9676 Paladin Training [class=Paladin] | Your class trainer in the Sunspire.
+accept 10069 Well Watcher Solanian [class=Paladin]
+turnin 10069 Well Watcher Solanian [class=Paladin]
 turnin 9393 Hunter Training [class=Hunter]
+accept 10070 Well Watcher Solanian [class=Hunter]
+turnin 10070 Well Watcher Solanian [class=Hunter]
 turnin 9392 Rogue Training [class=Rogue]
+accept 10071 Well Watcher Solanian [class=Rogue]
+turnin 10071 Well Watcher Solanian [class=Rogue]
 turnin 8564 Priest Training [class=Priest]
+accept 10072 Well Watcher Solanian [class=Priest]
+turnin 10072 Well Watcher Solanian [class=Priest]
 turnin 8328 Mage Training [class=Mage]
+accept 10068 Well Watcher Solanian [class=Mage]
 turnin 8563 Warlock Training [class=Warlock]
+accept 10073 Well Watcher Solanian [class=Warlock]
+turnin 10068 Well Watcher Solanian [class=Mage]
+turnin 10073 Well Watcher Solanian [class=Warlock]
 train | Trainers on Sunstrider Isle.
 turnin Aiding the Outrunners | Outrunner Alarion, on the bridge.
 accept Slain by the Wretched
@@ -62,6 +78,7 @@ accept Package Recovery
 turnin Package Recovery
 accept Completing the Delivery
 turnin Completing the Delivery | Falconwing Square.
+accept 9489 Cleansing the Scar [class=Priest; optional]
 accept Unstable Mana Crystals | Aeldon Sunbrand.
 accept Major Malfunction | Magister Jaronis.
 accept Wanted: Thaelis the Hungerer
@@ -76,8 +93,19 @@ turnin Major Malfunction
 accept Delivery to the North Sanctum
 turnin Wanted: Thaelis the Hungerer
 turnin Darnassian Intrusions
+accept 8884 Fish Heads, Fish Heads...
+complete 8884 Fish Heads, Fish Heads...
+accept 8887 Captain Kelisendra's Lost Rutters
+turnin 8884 Fish Heads, Fish Heads...
+accept 8885 The Ring of Mmmrrrggglll
 turnin Delivery to the North Sanctum | Ley-Keeper Caidanis.
 accept Malfunction at the West Sanctum
+accept 9035 Roadside Ambush
+turnin 9035 Roadside Ambush
+accept 9062 Soaked Pages
+complete 9062 Soaked Pages
+turnin 9062 Soaked Pages
+accept 9064 Taking the Fall
 turnin Malfunction at the West Sanctum | Ley-Keeper Velania.
 accept Arcane Instability
 complete Arcane Instability | Mana Stalkers and Manawraiths.
@@ -87,19 +115,42 @@ turnin Incriminating Documents
 accept The Dwarven Spy
 complete The Dwarven Spy | Prospector Anvilward, on the road south of Falconwing Square.
 turnin The Dwarven Spy
+accept 9677 Summons from Knight-Lord Bloodvalor [class=Paladin; optional]
+accept 9529 The Stone [class=Warlock; optional]
+accept 9402 Fetch! [class=Mage]
+complete 9402 Fetch! [class=Mage]
+turnin 9402 Fetch! [class=Mage]
+accept 9403 The Purest Water [class=Mage]
 accept Fairbreeze Village
 turnin Fairbreeze Village
+accept 830 The Admiral's Orders [class=Paladin,Rogue,Priest,Mage]
+turnin 830 The Admiral's Orders [class=Paladin,Rogue,Priest,Mage]
+accept 8 A Rogue's Deal
+turnin 8 A Rogue's Deal
 accept The Dead Scar | Ranger Jaela.
+complete 9489 Cleansing the Scar [class=Priest; optional]
 accept Situation at Sunsail Anchorage
+accept 9358 Ranger Sareyn
+accept 9258 The Scorched Grove
+accept 9395 Saltheril's Haven
+accept 9254 The Wayward Apprentice
+turnin 9395 Saltheril's Haven
+accept 9067 The Party Never Ends [optional]
+turnin 8887 Captain Kelisendra's Lost Rutters
+accept 8886 Grimscale Pirates!
 accept A Somber Task | Larianna Riverwind.
 accept Corrupted Soil | Apprentice Mirveda.
 accept Lost Armaments | Velendris Whitemorn.
 accept Defending Fairbreeze Village | Ranger Sareyn.
 fp Fairbreeze Village [optional]
 complete The Dead Scar | Plaguebone Pillagers along the Dead Scar.
+turnin 9064 Taking the Fall
+accept 9066 Swift Discipline
 complete Corrupted Soil
 complete Lost Armaments
 turnin The Dead Scar
+complete 9066 Swift Discipline [class=Paladin,Priest,Mage]
+complete 9066 Swift Discipline [class=Hunter,Rogue,Warlock]
 turnin Corrupted Soil
 accept Unexpected Results
 complete Unexpected Results
@@ -108,27 +159,88 @@ accept Research Notes
 turnin Lost Armaments
 accept Wretched Ringleader
 complete Situation at Sunsail Anchorage | Grimscale murlocs at the anchorage.
+complete 8885 The Ring of Mmmrrrggglll
+complete 8886 Grimscale Pirates!
+turnin 8885 The Ring of Mmmrrrggglll
+turnin 8886 Grimscale Pirates!
 complete A Somber Task | Old Whitebark's area - wraiths at Stillwhisper Pond.
+accept 8474 Old Whitebark's Pendant
 complete Defending Fairbreeze Village | Rotlimb and Darkwraiths south of Fairbreeze.
+turnin 9254 The Wayward Apprentice
+turnin 9489 Cleansing the Scar [class=Priest; optional]
+turnin 9066 Swift Discipline
 complete Wretched Ringleader
 turnin Situation at Sunsail Anchorage
 turnin A Somber Task
+turnin 8474 Old Whitebark's Pendant
+accept 10166 Whitebark's Memory
+turnin 10166 Whitebark's Memory
 turnin Defending Fairbreeze Village
 accept Runewarden Deryan
+accept 9144 Missing in the Ghostlands [optional]
 turnin Wretched Ringleader
 turnin Research Notes [optional] | Silvermoon City.
+turnin 9067 The Party Never Ends [optional]
+turnin 9258 The Scorched Grove
 turnin Runewarden Deryan
 accept Powering our Defenses
 complete Powering our Defenses | East Sanctum.
 turnin Powering our Defenses
 accept Farstrider Retreat [optional]
+turnin 9358 Ranger Sareyn
 turnin Farstrider Retreat [optional] | Lieutenant Dawnrunner.
 accept Amani Encroachment | Lieutenant Dawnrunner, Farstrider Retreat.
+accept 9484 Taming the Beast [class=Hunter; optional]
+accept 8477 The Spearcrafter's Hammer
+complete 9484 Taming the Beast [class=Hunter; optional]
+turnin 9484 Taming the Beast [class=Hunter; optional]
+accept 9486 Taming the Beast [class=Hunter]
+complete 9486 Taming the Beast [class=Hunter]
+turnin 9486 Taming the Beast [class=Hunter]
+accept 9485 Taming the Beast [class=Hunter]
+complete 9403 The Purest Water [class=Mage]
 complete Amani Encroachment | Amani trolls at Zeb'Watha.
+complete 8477 The Spearcrafter's Hammer
+accept 8479 Zul'Marosh
+complete 8479 Zul'Marosh
+accept 9360 Amani Invasion
+turnin 8479 Zul'Marosh
 turnin Amani Encroachment
+turnin 9360 Amani Invasion
+accept 9363 Warning Fairbreeze Village [optional]
+complete 9485 Taming the Beast [class=Hunter]
+turnin 9485 Taming the Beast [class=Hunter]
+accept 9673 Beast Training [class=Hunter]
+turnin 8477 The Spearcrafter's Hammer
+accept 8888 The Magister's Apprentice
+turnin 8888 The Magister's Apprentice
+accept 8889 Deactivating the Spire [optional]
+accept 9394 Where's Wyllithen?
+turnin 9394 Where's Wyllithen?
+accept 8894 Cleaning up the Grounds
+accept 8891 Abandoned Investigations
+complete 8889 Deactivating the Spire [optional]
+complete 8894 Cleaning up the Grounds
+turnin 8894 Cleaning up the Grounds
+turnin 8889 Deactivating the Spire [optional]
+accept 8890 Word from the Spire
+turnin 8890 Word from the Spire
+turnin 8891 Abandoned Investigations
+turnin 9403 The Purest Water [class=Mage]
+accept 9404 Recently Living [class=Mage]
+accept 9532 Find Keltus Darkleaf [class=Rogue; optional]
+turnin 9677 Summons from Knight-Lord Bloodvalor [class=Paladin; optional]
+accept 9678 The First Trial [class=Paladin; optional]
+turnin 9673 Beast Training [class=Hunter]
+turnin 9363 Warning Fairbreeze Village [optional]
+complete 9404 Recently Living [class=Mage]
 train | Silvermoon City trainers.
 fp Silvermoon City
+turnin 9144 Missing in the Ghostlands [optional]
 accept The Fallen Courier | Apothecary Thedra, south Eversong.
+turnin 9529 The Stone [class=Warlock; optional]
+accept 9619 The Rune of Summoning [class=Warlock; optional]
+complete 9619 The Rune of Summoning [class=Warlock; optional]
 turnin The Fallen Courier
 accept Delivery to Tranquillien
 level 10

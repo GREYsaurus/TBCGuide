@@ -6,7 +6,7 @@
 |---|---|---|
 | Game | World of Warcraft: The Burning Crusade Classic, **Anniversary realms** (TBC pre-patch 2026-01-13, launch 2026-02-05) | public news coverage |
 | Client build | **2.5.6.70577** | wago.tools build list, product `wow_anniversary` (checked 2026-10-28) |
-| TOC interface | **20506** | Questie `bundle/v12.3.1` `release.json` (flavor `bcc`, interface 20506); RestedXP's `RXPGuides_TBC.toc` also uses 20506 |
+| TOC interface | **20506** | Questie `bundle/v12.3.1` `release.json` (flavor `bcc`, interface 20506) |
 | Lua | 5.1 (WoW embedded) | standard for all WoW clients |
 | Races | 10 (incl. Draenei, Blood Elf), 52 race/class combinations | client `CharBaseInfo` table, build 2.5.6.70577 |
 | Talents | 3 trees per class, 61 points at 70 (first at 10) | client `Talent`/`TalentTab` tables |

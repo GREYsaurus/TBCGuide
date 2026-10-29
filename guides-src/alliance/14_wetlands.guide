@@ -16,12 +16,17 @@ accept The Third Fleet | First Mate Fitzsimmons in the inn.
 accept The Greenwarden
 accept In Search of The Excavation Team | Tarrel Rockweaver.
 accept Digging Through the Ooze | Sida, west Menethil.
+accept 472 Fall of Dun Modr
 accept Report to Captain Stoutfist | Valstag Ironjaw, the keep.
 turnin Report to Captain Stoutfist
 accept War Banners
 fp Menethil Harbor
 bind Menethil Harbor
 complete The Third Fleet | Crocolisk meat from crocolisks around Menethil; buy the Flagon of Mead from the innkeeper.
+turnin 942 The Absent Minded Prospector [optional]
+accept 943 The Absent Minded Prospector [optional]
+turnin 270 The Doomed Fleet [optional]
+accept 321 Lightforge Iron [optional]
 turnin The Third Fleet
 accept The Cursed Crew
 complete Young Crocolisk Skins
@@ -29,6 +34,8 @@ complete Claws from the Deep | Gobbler and murlocs at the northern coast.
 turnin Young Crocolisk Skins
 accept Apprentice's Duties
 turnin Claws from the Deep
+accept 968 The Powers Below [optional]
+turnin 968 The Powers Below [optional]
 accept Reclaiming Goods
 turnin Reclaiming Goods | Damaged crate at the murloc hovels, north coast.
 accept The Search Continues
@@ -44,6 +51,7 @@ accept Ormer's Revenge | Ormer Ironbraid, excavation site.
 accept Uncovering the Past | Prospector Whelgar.
 complete Ormer's Revenge | Mottled Raptors and Screechers around the site.
 complete Uncovering the Past | Relics are scattered in the excavation (raptors present).
+complete 943 The Absent Minded Prospector [optional]
 turnin Ormer's Revenge
 accept 295 Ormer's Revenge
 turnin Uncovering the Past
@@ -65,17 +73,45 @@ accept A Grim Task | Longbraid the Grim, Dun Modr.
 complete The Dark Iron War | Dark Iron dwarves at Dun Modr.
 complete A Grim Task | Balgaras the Foul, at the Dark Iron camp east of Dun Modr.
 turnin The Dark Iron War
+accept 647 MacKreel's Moonshine [optional]
+accept 637 Sully Balloo's Letter
+turnin 647 MacKreel's Moonshine [optional]
 turnin A Grim Task
 complete Blisters on The Land | Fen Creepers in the marshes.
 turnin Blisters on The Land
+accept 631 The Thandol Span
+turnin 472 Fall of Dun Modr
+turnin 631 The Thandol Span
+accept 632 The Thandol Span
+turnin 632 The Thandol Span
+accept 633 The Thandol Span
 complete The Cursed Crew | Undead crew on the sunken ships north-west of Menethil.
+complete 633 The Thandol Span
 turnin The Cursed Crew
+accept 290 Lifting the Curse
 complete War Banners | Dragonmaw orcs at Angerfang Encampment.
+accept 469 Daily Delivery [optional]
 turnin War Banners
+turnin 469 Daily Delivery [class=Paladin; race=Dwarf; optional]
+turnin 469 Daily Delivery [class=Warrior,Hunter,Rogue,Priest; race=Dwarf; optional]
+turnin 469 Daily Delivery [race=Human,Night Elf,Gnome,Draenei; optional]
 complete Apprentice's Duties | Giant Wetlands Crocolisks.
 turnin Apprentice's Duties
+accept 465 Nek'rosh's Gambit [optional]
+complete 290 Lifting the Curse
+turnin 290 Lifting the Curse
+accept 292 The Eye of Paleth
+turnin 465 Nek'rosh's Gambit [optional]
+accept 474 Defeat Nek'rosh [optional]
+complete 474 Defeat Nek'rosh [optional]
+turnin 633 The Thandol Span
+accept 634 Plea To The Alliance
+turnin 634 Plea To The Alliance
 turnin 306 In Search of The Excavation Team | Tarrel Rockweaver, Menethil.
 turnin Digging Through the Ooze
+turnin 943 The Absent Minded Prospector [class=Paladin; race=Dwarf; optional]
+turnin 943 The Absent Minded Prospector [class=Warrior,Hunter,Rogue,Priest; race=Dwarf; optional]
+turnin 943 The Absent Minded Prospector [race=Human,Night Elf,Gnome,Draenei; optional]
 level 28
 train | Ironforge via the Dun Algaz pass and Thelsamar.
 note Head north through the Thandol Span into Arathi, then west to Southshore (Hillsbrad Foothills).

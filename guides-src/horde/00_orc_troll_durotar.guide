@@ -51,6 +51,8 @@ turnin 804 Sarkoth
 complete Sting of the Scorpid | Scorpid Workers.
 turnin Sting of the Scorpid
 accept Vanquish the Betrayers
+accept 791 Carry Your Weight [class=Warrior,Rogue; race=Orc; optional]
+accept 791 Carry Your Weight [class=Warrior,Rogue,Priest,Mage; race=Troll; optional]
 accept 1516 Call of Earth [class=Shaman] | Canaga Earthcaller, by the Den (level 4).
 accept 792 Vile Familiars [class=Warrior,Hunter,Rogue,Shaman,Priest,Mage] | Zureetha Fargaze.
 accept 1485 Vile Familiars [class=Warlock]
@@ -69,12 +71,27 @@ turnin Lazy Peons
 accept Thazz'ril's Pick
 complete Thazz'ril's Pick | Burning Blade Cave, north.
 complete Vanquish the Betrayers [mark=cross:Lieutenant Benedict] | Kul Tiras Sailors and Marines at Tiragarde Keep; Lieutenant Benedict is upstairs in the keep.
+accept 830 The Admiral's Orders [class=Warrior,Rogue; race=Orc]
+accept 830 The Admiral's Orders [class=Warrior,Rogue,Priest,Mage; race=Troll]
+accept 830 The Admiral's Orders [class=Hunter,Shaman; race=Troll]
+accept 830 The Admiral's Orders [class=Hunter,Shaman,Warlock; race=Orc]
+complete 791 Carry Your Weight [class=Warrior,Rogue; race=Orc; optional]
+complete 791 Carry Your Weight [class=Warrior,Rogue,Priest,Mage; race=Troll; optional]
 complete Burning Blade Medallion | Yarrog Baneshadow, deep in the cave.
 turnin Thazz'ril's Pick
 turnin Vanquish the Betrayers
+turnin 830 The Admiral's Orders [class=Warrior,Rogue; race=Orc]
+turnin 830 The Admiral's Orders [class=Warrior,Rogue,Priest,Mage; race=Troll]
+turnin 791 Carry Your Weight [class=Warrior,Rogue; race=Orc; optional]
+turnin 791 Carry Your Weight [class=Warrior,Rogue,Priest,Mage; race=Troll; optional]
+turnin 830 The Admiral's Orders [class=Hunter,Shaman; race=Troll]
+turnin 830 The Admiral's Orders [class=Hunter,Shaman,Warlock; race=Orc]
+accept 825 From The Wreckage....
+accept 831 The Admiral's Orders
 turnin A Peon's Burden [optional] | Innkeeper Grosk, Razor Hill inn.
 turnin Burning Blade Medallion
 accept Report to Sen'jin Village
+accept 5649 In Favor of Spirituality [class=Priest; race=Troll]
 train | Trainers are inside the Den.
 turnin 1516 Call of Earth [class=Shaman]
 accept 1517 Call of Earth [class=Shaman]
@@ -89,9 +106,11 @@ accept Practical Prey | Vel'rin Fang.
 accept A Solvent Spirit | Master Vornal.
 accept Thwarting Kolkar Aggression | Lar Prowltusk.
 complete A Solvent Spirit | Makrura on the shore around Sen'jin.
+complete 825 From The Wreckage....
 complete Practical Prey | Durotar Tigers.
 turnin A Solvent Spirit
 turnin Practical Prey
+turnin 825 From The Wreckage....
 complete Minshina's Skull | Echo Isles (walk across the shallow water).
 complete Zalazane | Zalazane is on the largest Echo Isle.
 turnin Minshina's Skull
@@ -99,41 +118,100 @@ turnin Zalazane
 complete Thwarting Kolkar Aggression | Kolkar camp south-west of Sen'jin.
 turnin Thwarting Kolkar Aggression
 turnin Report to Orgnil | Orgnil Soulscar, Razor Hill.
+turnin 5649 In Favor of Spirituality [class=Priest; race=Troll]
+accept 5648 Garments of Spirituality [class=Priest; race=Troll]
 accept Dark Storms
 accept Encroachment | Gar'Thok.
 accept Break a Few Eggs | Cook Torka.
+accept 791 Carry Your Weight [class=Hunter,Shaman; race=Troll; optional]
+accept 791 Carry Your Weight [class=Hunter,Shaman,Warlock; race=Orc; optional]
+complete 5648 Garments of Spirituality [class=Priest; race=Troll]
+complete 791 Carry Your Weight [class=Hunter,Shaman; race=Troll; optional]
+complete 791 Carry Your Weight [class=Hunter,Shaman,Warlock; race=Orc; optional]
+turnin 791 Carry Your Weight [class=Hunter,Shaman; race=Troll; optional]
+turnin 791 Carry Your Weight [class=Hunter,Shaman,Warlock; race=Orc; optional]
 bind Razor Hill
 complete Encroachment | Quilboars and Razormane scouts west of Razor Hill.
 complete Break a Few Eggs | Taillasher eggs south of Razor Hill.
 complete Dark Storms | Burning Blade cultists at Thunder Ridge.
 turnin Encroachment
+accept 2983 Call of Fire [class=Shaman; optional]
+accept 1506 Gan'rul's Summons [class=Warlock; race=Orc]
+accept 6062 Taming the Beast [class=Hunter]
+complete 6062 Taming the Beast [class=Hunter]
+turnin 6062 Taming the Beast [class=Hunter]
+accept 6083 Taming the Beast [class=Hunter]
+complete 6083 Taming the Beast [class=Hunter]
+turnin 6083 Taming the Beast [class=Hunter]
+accept 6082 Taming the Beast [class=Hunter]
+complete 6082 Taming the Beast [class=Hunter]
+turnin 6082 Taming the Beast [class=Hunter]
+accept 6081 Training the Beast [class=Hunter]
 turnin Break a Few Eggs
 turnin Dark Storms
 accept Margoz
 turnin Margoz | Margoz, Skull Rock.
 accept Skull Rock
 complete Skull Rock | Burning Blade inside Skull Rock.
+accept 832 Burning Shadows [class=Warrior,Hunter,Rogue,Shaman; race=Orc; optional]
+accept 832 Burning Shadows [race=Troll; optional]
 turnin Skull Rock
 accept Neeru Fireblade
 accept Lost But Not Forgotten | Misha Tor'kren, north Durotar.
+turnin 5648 Garments of Spirituality [class=Priest; race=Troll]
 accept Winds in the Desert | Rezlak at the eastern caravan.
+turnin 6081 Training the Beast [class=Hunter]
+turnin 831 The Admiral's Orders [class=Hunter; race=Troll]
+turnin 831 The Admiral's Orders [class=Hunter,Warlock; race=Orc]
+accept 5726 Hidden Enemies [class=Warlock; race=Orc; optional]
+turnin 1506 Gan'rul's Summons [class=Warlock; race=Orc]
+accept 1501 Creature of the Void [class=Warlock; race=Orc]
+accept 832 Burning Shadows [class=Warlock; race=Orc; optional]
+complete 1501 Creature of the Void [class=Warlock; race=Orc]
+turnin 1501 Creature of the Void [class=Warlock; race=Orc]
+accept 1504 The Binding [class=Warlock; race=Orc]
+turnin 832 Burning Shadows [class=Warlock; race=Orc; optional]
+complete 1504 The Binding [class=Warlock; race=Orc]
+turnin 1504 The Binding [class=Warlock; race=Orc]
 accept Need for a Cure | Rhinag.
+turnin 831 The Admiral's Orders [class=Warrior,Rogue,Shaman; race=Orc]
+turnin 831 The Admiral's Orders [class=Warrior,Rogue,Priest,Shaman,Mage; race=Troll]
+accept 5726 Hidden Enemies [class=Warrior,Hunter,Rogue,Shaman; race=Orc; optional]
+accept 5726 Hidden Enemies [race=Troll; optional]
 complete Lost But Not Forgotten | Durotar Tigers near Misha.
+complete 5726 Hidden Enemies [optional]
 complete Winds in the Desert | Supply sacks scattered in Drygulch Ravine.
 complete Need for a Cure | Venomtail Scorpids.
 turnin Lost But Not Forgotten
+turnin 5726 Hidden Enemies [class=Warlock; race=Orc; optional]
+accept 5727 Hidden Enemies [class=Warlock; race=Orc; optional]
+complete 5727 Hidden Enemies [class=Warlock; race=Orc; optional]
+turnin 5727 Hidden Enemies [class=Warlock; race=Orc; optional]
 turnin Winds in the Desert
 accept Securing the Lines
 turnin Need for a Cure
 complete Securing the Lines | Dustwind harpies in Drygulch Ravine.
 turnin Securing the Lines
+turnin 5726 Hidden Enemies [class=Warrior,Hunter,Rogue,Shaman; race=Orc; optional]
+turnin 5726 Hidden Enemies [race=Troll; optional]
 turnin Neeru Fireblade | Cleft of Shadow, Orgrimmar.
+turnin 832 Burning Shadows [class=Warrior,Hunter,Rogue,Shaman; race=Orc; optional]
+turnin 832 Burning Shadows [race=Troll; optional]
 accept Ak'Zeloth
 train | Orgrimmar trainers.
 fp Orgrimmar [zone=Orgrimmar]
+accept 1505 Veteran Uzzek [class=Warrior]
 accept Conscript of the Horde | Takrin Pathseeker, outside the western gate.
 level 11
 turnin Conscript of the Horde | Kargal Battlescar at the Barrens border.
 turnin Ak'Zeloth | Ak'Zeloth, at the same outpost.
+accept 924 The Demon Seed [optional]
 accept Crossroads Conscription
+turnin 1505 Veteran Uzzek [class=Warrior]
+accept 1498 Path of Defense [class=Warrior]
+turnin 2983 Call of Fire [class=Shaman; optional]
+accept 1524 Call of Fire [class=Shaman]
+accept 1503 Forged Steel [class=Warrior]
+complete 1503 Forged Steel [class=Warrior]
+turnin 1503 Forged Steel [class=Warrior]
 note Follow the road west into the Barrens; the Crossroads is the main hub.

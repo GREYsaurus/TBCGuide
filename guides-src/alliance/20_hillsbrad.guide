@@ -13,6 +13,7 @@
 fp Southshore
 bind Southshore
 accept Down the Coast | Lieutenant Farren Orinelle, Southshore.
+turnin 538 Southshore [optional]
 accept Soothing Turtle Bisque | Chef Jessen.
 accept Syndicate Assassins | Magistrate Henry Maleb, town hall.
 accept Bartolo's Yeti Fur Cloak | Bartolo Ginsetti.
@@ -34,6 +35,25 @@ accept Stormwind Ho!
 complete Stormwind Ho! | Daggerspine naga further south.
 turnin Stormwind Ho!
 accept Reassignment
+turnin 474 Defeat Nek'rosh [optional]
+turnin 292 The Eye of Paleth
+accept 293 Cleansing the Eye [optional]
+turnin 321 Lightforge Iron [optional]
+accept 322 Blessed Arm [optional]
+turnin 637 Sully Balloo's Letter
+accept 683 Sara Balloo's Plea
+turnin 683 Sara Balloo's Plea
+accept 686 A King's Tribute
+turnin 686 A King's Tribute
+accept 9435 Missing Crystals
+complete 9435 Missing Crystals
+accept 510 Foreboding Plans
+accept 511 Encrypted Letter
+turnin 511 Encrypted Letter
+accept 514 Letter to Stormpike [optional]
+turnin 510 Foreboding Plans
+turnin 9435 Missing Crystals
+turnin 514 Letter to Stormpike [optional]
 complete Syndicate Assassins | Syndicate camp north-east of Southshore (Durnholde area).
 turnin Syndicate Assassins
 complete Bartolo's Yeti Fur Cloak | Yetis in the Alterac foothills cave.

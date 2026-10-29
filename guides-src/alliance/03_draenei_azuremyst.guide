@@ -49,7 +49,9 @@ complete The Blood Elves | Blood elf scouts west of the crash site.
 turnin The Blood Elves
 accept Blood Elf Spy
 complete Blood Elf Spy | Surveyor Candress, at the blood elf camp.
+accept 9798 Blood Elf Plans
 turnin Blood Elf Spy
+turnin 9798 Blood Elf Plans
 accept The Emitter
 turnin The Emitter
 accept Travel to Azure Watch
@@ -75,9 +77,15 @@ accept 9451 Call of Earth [class=Shaman]
 turnin 9451 Call of Earth [class=Shaman] | Back to Firmanvaar for your Earth Totem.
 turnin Travel to Azure Watch | Technician Dyvuun, Azure Watch.
 accept Red Snapper - Very Tasty! | Diktynna, on the beach.
+accept 9612 A Hearty Thanks! [optional]
+accept 9455 Strange Findings [optional]
 accept Word from Azure Watch [optional]
 accept Medicinal Purpose | Anchorite Fateema, Azure Watch.
+turnin 9612 A Hearty Thanks! [optional]
+turnin 9455 Strange Findings [optional]
+accept 9456 Nightstalker Clean Up, Isle 2... [optional]
 turnin Word from Azure Watch [optional] | Caregiver Chellan, the Azure Watch inn.
+accept 9586 Help Tavara [class=Priest]
 accept Learning the Language | Cryptographer Aurren.
 bind Azure Watch
 complete Red Snapper - Very Tasty!
@@ -86,8 +94,10 @@ accept Find Acteon!
 turnin Find Acteon!
 accept 9454 The Great Moongraze Hunt
 complete Medicinal Purpose | Skittering Crawlers drop Skittering Crawler Meat.
+complete 9586 Help Tavara [class=Priest]
 turnin Medicinal Purpose
 accept An Alternative Alternative
+accept 10428 The Missing Fisherman
 complete 9454 The Great Moongraze Hunt | Moongraze Stags.
 turnin 9454 The Great Moongraze Hunt
 accept 10324 The Great Moongraze Hunt
@@ -96,6 +106,7 @@ turnin An Alternative Alternative
 complete Learning the Language
 turnin Learning the Language
 accept Totem of Coo
+turnin 9586 Help Tavara [class=Priest]
 complete 10324 The Great Moongraze Hunt
 turnin 10324 The Great Moongraze Hunt
 accept A Small Start | Admiral Odesyus, Odesyus' Landing (south coast).
@@ -113,13 +124,19 @@ accept Precious and Fragile Things Need Special Handling
 complete Reclaiming the Ruins | Wrathscale naga at the ruins.
 complete Precious and Fragile Things Need Special Handling | Ancient relics at the ruins.
 turnin Reclaiming the Ruins
+accept 9515 Warlord Sriss'tiz
 turnin Precious and Fragile Things Need Special Handling
 complete Tree's Company
+turnin 10428 The Missing Fisherman
+accept 9527 All That Remains
+complete 9527 All That Remains
+turnin 9527 All That Remains
 turnin Tree's Company
 accept Show Gnomercy
 complete Show Gnomercy
 turnin Show Gnomercy
 accept Deliver Them From Evil...
+complete 9515 Warlord Sriss'tiz [class=Warrior,Paladin,Priest,Shaman,Mage]
 turnin Totem of Coo | Follow the totem chain across the isle.
 accept Totem of Tikti
 turnin Totem of Tikti
@@ -129,23 +146,63 @@ accept Totem of Vark
 turnin Totem of Vark
 accept The Prophecy of Akida
 complete The Prophecy of Akida | Free the Stillpine captives at the Bristlelimb furbolg camps.
+complete 9456 Nightstalker Clean Up, Isle 2... [optional]
 turnin The Prophecy of Akida | Arugoo of the Stillpine, Stillpine Hold.
 accept Stillpine Hold
+turnin 9456 Nightstalker Clean Up, Isle 2... [optional]
 turnin Stillpine Hold
 accept Beasts of the Apocalypse!
 accept Murlocs... Why Here? Why Now?
 complete Beasts of the Apocalypse! | Ravagers south of Stillpine Hold.
 complete Murlocs... Why Here? Why Now? | Murlocs at the lake by the hold.
+accept 9564 Gurf's Dignity
 turnin Beasts of the Apocalypse!
 turnin Murlocs... Why Here? Why Now?
+accept 9616 Bandits! [optional]
+turnin 9616 Bandits! [optional]
 accept Chieftain Oomooroo
 complete Chieftain Oomooroo | Inside Stillpine Hold.
 turnin Chieftain Oomooroo
+accept 9570 The Kurken is Lurkin'
+complete 9570 The Kurken is Lurkin'
+turnin 9570 The Kurken is Lurkin'
+accept 9571 The Kurken's Hide
+turnin 9571 The Kurken's Hide
 accept Search Stillpine Hold
 turnin Search Stillpine Hold
 accept Blood Crystals
 turnin Blood Crystals
+accept 9622 Warn Your People [class=Shaman]
+turnin 9622 Warn Your People [class=Shaman]
 turnin Deliver Them From Evil...
+accept 9623 Coming of Age
+accept 9464 Call of Fire [class=Shaman; optional]
+accept 9757 Seek Huntress Kella Nightbow [class=Hunter]
+accept 9582 Strength of One [class=Warrior; optional]
+turnin 9757 Seek Huntress Kella Nightbow [class=Hunter]
+accept 9591 Taming the Beast [class=Hunter]
+complete 9591 Taming the Beast [class=Hunter]
+complete 9515 Warlord Sriss'tiz [class=Hunter]
+turnin 9591 Taming the Beast [class=Hunter]
+accept 9592 Taming the Beast [class=Hunter]
+turnin 9623 Coming of Age
+accept 9625 Elekks Are Serious Business [optional]
+complete 9592 Taming the Beast [class=Hunter]
+turnin 9592 Taming the Beast [class=Hunter]
+accept 9593 Taming the Beast [class=Hunter]
+complete 9593 Taming the Beast [class=Hunter]
+turnin 9593 Taming the Beast [class=Hunter]
+accept 9675 Beast Training [class=Hunter]
+turnin 9675 Beast Training [class=Hunter]
+turnin 9464 Call of Fire [class=Shaman; optional]
+accept 9465 Call of Fire [class=Shaman]
+complete 9582 Strength of One [class=Warrior; optional]
+complete 9465 Call of Fire [class=Shaman]
+turnin 9465 Call of Fire [class=Shaman]
+accept 9467 Call of Fire [class=Shaman]
+complete 9467 Call of Fire [class=Shaman]
+turnin 9467 Call of Fire [class=Shaman]
+accept 9468 Call of Fire [class=Shaman; optional]
 level 10
 train
 note Head north over the bridge at Wrathscale Point into Bloodmyst Isle.

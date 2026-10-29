@@ -16,13 +16,16 @@ accept 527 Battle of Hillsbrad | High Executor Darthalia.
 accept Elixir of Suffering | Apothecary Lydon.
 accept Souvenirs of Death | Deathguard Samsa.
 accept Time To Strike [optional] | Deathguard Lesh.
+accept 1066 Blood of Innocents [optional]
 turnin Time To Strike [optional] | High Executor Darthalia, Tarren Mill.
 complete 527 Battle of Hillsbrad | Hillsbrad farmers and peasants on the farms.
 complete Elixir of Suffering | Hillsbrad farm creatures.
+complete 1066 Blood of Innocents [optional]
 complete Souvenirs of Death
 turnin 527 Battle of Hillsbrad
 accept 528 Battle of Hillsbrad
 turnin Elixir of Suffering
+turnin 1066 Blood of Innocents [optional]
 accept Elixir of Pain
 turnin Souvenirs of Death
 complete 528 Battle of Hillsbrad
@@ -30,6 +33,8 @@ complete Elixir of Pain | Mountain Lions.
 turnin 528 Battle of Hillsbrad
 accept 529 Battle of Hillsbrad
 turnin Elixir of Pain
+accept 502 Elixir of Pain [optional]
+turnin 502 Elixir of Pain [optional]
 accept Elixir of Agony
 complete 529 Battle of Hillsbrad
 turnin 529 Battle of Hillsbrad

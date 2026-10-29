@@ -67,7 +67,6 @@ These are factual game mechanics (talent positions and names), and they are what
 
 | Source | Licence found | How it was used |
 |---|---|---|
-| RestedXP / RXPGuides (https://github.com/RestedXP/RXPGuides) | **CC BY-NC-SA 4.0** (non-commercial, share-alike; not GPL-compatible) | The repository structure, TOC (interface `20506`) and feature set were reviewed for design ideas only. **No RXP code, guide text, routes or assets were copied.** All TBCGuide routes were written independently from the QuestieDB quest lists. |
 | Icy Veins (https://www.icy-veins.com/) | Proprietary website content | Not copied. Talent builds were written by the project and checked mechanically against the client talent tables. |
 | gnu.org | GPL text | `LICENSE` / `COPYING` are the verbatim GPLv3 text from https://www.gnu.org/licenses/gpl-3.0.txt (SHA-256 `3972DC9744F6499F0F9B2DBF76696F2AE7AD8AF9B23DDE66D6AF86C9DFB36986`). |
 

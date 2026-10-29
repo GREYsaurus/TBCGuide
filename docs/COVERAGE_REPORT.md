@@ -8,15 +8,15 @@ It reports what the automated checks found. It is **not** evidence of in-game te
 | Item | Count |
 |---|---|
 | Guides | 54 (41 Azeroth, 13 Outland) |
-| Guide steps | 4330 |
-| Quest steps (accept/complete/turn-in) | 3698 |
-| Distinct quests referenced | 1282 |
-| Steps with database-derived coordinates | 2959 |
+| Guide steps | 5731 |
+| Quest steps (accept/complete/turn-in) | 5099 |
+| Distinct quests referenced | 1730 |
+| Steps with database-derived coordinates | 4054 |
 | Steps with hand-written coordinates (unverified) | 1 |
 | Race/class combinations | 52 |
 | Talent builds | 21 (21 pass validation) |
 | Validation | validate: 0 error(s), 0 warning(s) |
-| Compiler warnings | 71 (see docs/generated/guide-warnings.log) |
+| Compiler warnings | 137 (see docs/generated/guide-warnings.log) |
 
 ## Race/class routes (level 1 to 70)
 
@@ -81,36 +81,36 @@ Each race/class combination is followed from its racial start guide through the 
 
 | Guide | Faction | Levels | Zone | Steps | Quests | Optional/elite/group steps |
 |---|---|---|---|---|---|---|
-| Northshire & Elwynn Forest | Alliance | 1-10 | Elwynn Forest | 146 | 49 | 3 |
-| Coldridge Valley & Dun Morogh | Alliance | 1-11 | Dun Morogh | 122 | 44 | 3 |
-| Shadowglen & Teldrassil | Alliance | 1-11 | Teldrassil | 101 | 34 | 3 |
-| Ammen Vale & Azuremyst Isle | Alliance | 1-11 | Azuremyst Isle | 147 | 52 | 2 |
-| Valley of Trials & Durotar | Horde | 1-12 | Durotar | 137 | 48 | 2 |
-| Camp Narache & Mulgore | Horde | 1-11 | Mulgore | 103 | 35 | 1 |
-| Deathknell & Tirisfal Glades | Horde | 1-11 | Tirisfal Glades | 110 | 36 | 3 |
-| Sunstrider Isle & Eversong Woods | Horde | 1-11 | Eversong Woods | 131 | 45 | 4 |
-| Bloodmyst Isle | Alliance | 10-20 | Bloodmyst Isle | 125 | 42 | 3 |
-| Westfall | Alliance | 10-16 | Westfall | 56 | 16 | 3 |
-| Ghostlands (Tranquillien) | Horde | 10-20 | Ghostlands | 102 | 34 | 1 |
+| Northshire & Elwynn Forest | Alliance | 1-10 | Elwynn Forest | 164 | 59 | 14 |
+| Coldridge Valley & Dun Morogh | Alliance | 1-11 | Dun Morogh | 145 | 50 | 3 |
+| Shadowglen & Teldrassil | Alliance | 1-11 | Teldrassil | 178 | 63 | 14 |
+| Ammen Vale & Azuremyst Isle | Alliance | 1-11 | Azuremyst Isle | 204 | 77 | 17 |
+| Valley of Trials & Durotar | Horde | 1-12 | Durotar | 215 | 70 | 33 |
+| Camp Narache & Mulgore | Horde | 1-11 | Mulgore | 162 | 60 | 24 |
+| Deathknell & Tirisfal Glades | Horde | 1-11 | Tirisfal Glades | 119 | 40 | 3 |
+| Sunstrider Isle & Eversong Woods | Horde | 1-11 | Eversong Woods | 243 | 93 | 31 |
+| Bloodmyst Isle | Alliance | 10-20 | Bloodmyst Isle | 205 | 78 | 14 |
+| Westfall | Alliance | 10-16 | Westfall | 78 | 27 | 17 |
+| Ghostlands (Tranquillien) | Horde | 10-20 | Ghostlands | 193 | 70 | 49 |
 | Silverpine Forest (The Sepulcher) | Horde | 10-18 | Silverpine Forest | 75 | 27 | 2 |
-| Darkshore | Alliance | 11-20 | Darkshore | 105 | 34 | 6 |
-| Loch Modan | Alliance | 11-18 | Loch Modan | 70 | 22 | 2 |
-| The Barrens (Crossroads) | Horde | 11-22 | The Barrens | 115 | 37 | 8 |
-| Redridge Mountains | Alliance | 15-21 | Redridge Mountains | 68 | 21 | 8 |
-| Ashenvale | Alliance | 19-25 | Ashenvale | 57 | 16 | 6 |
-| Duskwood | Alliance | 20-25 | Duskwood | 74 | 25 | 0 |
-| Stonetalon Mountains (Sun Rock Retreat) | Horde | 21-25 | Stonetalon Mountains | 36 | 9 | 1 |
-| Ashenvale (Splintertree Post) | Horde | 23-28 | Ashenvale | 39 | 9 | 3 |
-| Wetlands | Alliance | 24-29 | Wetlands | 77 | 24 | 0 |
-| Hillsbrad Foothills (Tarren Mill) | Horde | 27-31 | Hillsbrad Foothills | 46 | 12 | 2 |
-| Hillsbrad Foothills (Southshore) | Alliance | 28-31 | Hillsbrad Foothills | 45 | 12 | 0 |
-| Thousand Needles (Freewind Post) | Horde | 29-33 | Thousand Needles | 54 | 14 | 0 |
+| Darkshore | Alliance | 11-20 | Darkshore | 189 | 54 | 80 |
+| Loch Modan | Alliance | 11-18 | Loch Modan | 106 | 29 | 9 |
+| The Barrens (Crossroads) | Horde | 11-22 | The Barrens | 323 | 111 | 91 |
+| Redridge Mountains | Alliance | 15-21 | Redridge Mountains | 118 | 41 | 34 |
+| Ashenvale | Alliance | 19-25 | Ashenvale | 76 | 24 | 24 |
+| Duskwood | Alliance | 20-25 | Duskwood | 190 | 65 | 65 |
+| Stonetalon Mountains (Sun Rock Retreat) | Horde | 21-25 | Stonetalon Mountains | 59 | 23 | 3 |
+| Ashenvale (Splintertree Post) | Horde | 23-28 | Ashenvale | 58 | 18 | 15 |
+| Wetlands | Alliance | 24-29 | Wetlands | 113 | 41 | 20 |
+| Hillsbrad Foothills (Tarren Mill) | Horde | 27-31 | Hillsbrad Foothills | 51 | 14 | 7 |
+| Hillsbrad Foothills (Southshore) | Alliance | 28-31 | Hillsbrad Foothills | 65 | 25 | 7 |
+| Thousand Needles (Freewind Post) | Horde | 29-33 | Thousand Needles | 135 | 42 | 58 |
 | Arathi Highlands (Refuge Pointe) | Alliance | 30-34 | Arathi Highlands | 33 | 7 | 6 |
-| Stranglethorn Vale | Alliance | 32-40 | Stranglethorn Vale | 71 | 20 | 0 |
+| Stranglethorn Vale | Alliance | 32-40 | Stranglethorn Vale | 147 | 47 | 16 |
 | Arathi Highlands (Hammerfall) | Horde | 32-35 | Arathi Highlands | 52 | 14 | 0 |
 | Stranglethorn Vale (Grom'gol) | Horde | 34-40 | Stranglethorn Vale | 69 | 19 | 0 |
 | Dustwallow Marsh (Theramore) | Alliance | 36-41 | Dustwallow Marsh | 75 | 23 | 15 |
-| Dustwallow Marsh (Brackenwall Village) | Horde | 37-42 | Dustwallow Marsh | 89 | 28 | 12 |
+| Dustwallow Marsh (Brackenwall Village) | Horde | 37-42 | Dustwallow Marsh | 91 | 29 | 14 |
 | Tanaris (Gadgetzan) | Both | 41-45 | Tanaris | 49 | 12 | 6 |
 | Feralas (Feathermoon Stronghold) | Alliance | 43-47 | Feralas | 60 | 19 | 2 |
 | Feralas (Camp Mojache) | Horde | 43-47 | Feralas | 26 | 4 | 0 |
@@ -170,8 +170,8 @@ Each race/class combination is followed from its racial start guide through the 
 ## Data awaiting verification
 
 - Guide **routes, ordering and notes** are original and were written without in-game testing. Quest ids, names, faction/race/class limits and NPC coordinates come from the database, but the practical route (XP sufficiency, travel efficiency) needs play-testing.
-- **70 complete-steps** have no objective location in the data (escort, talk or event quests). The arrow cannot target them; the step text still shows the objective.
-- **1 prerequisite warnings**: a quest's prerequisite is not turned in on the route (usually an alternative chain). The engine auto-skips unavailable quests at runtime.
+- **99 complete-steps** have no objective location in the data (escort, talk or event quests). The arrow cannot target them; the step text still shows the objective.
+- **31 prerequisite warnings**: a quest's prerequisite is not turned in on the route (usually an alternative chain). The engine auto-skips unavailable quests at runtime.
 - **Class advice** text (Classes/ClassAdvice.lua) is marked unverified. Ability training levels are from developer knowledge.
 - **Talent builds** are legal against the 2.5.6 client tables, but how good they are is a judgement call, not something tested.
 

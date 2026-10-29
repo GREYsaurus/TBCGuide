@@ -10,7 +10,34 @@
 @desc Freewind Post, the Grimtotem and centaur camps, and the Shimmering Flats racing goblins and gnomes.
 @next H_Arathi
 
+turnin 1195 The Sacred Flame [optional]
+accept 1196 The Sacred Flame [optional]
+accept 1718 The Islander [class=Warrior; race=Orc,Undead,Tauren,Troll; optional]
+accept 879 Betrayal from Within [optional]
+accept 885 Washte Pawne [class=Shaman; race=Orc,Tauren,Troll; optional]
+accept 885 Washte Pawne [class=Warrior,Hunter,Rogue,Warlock; race=Orc; optional]
+accept 885 Washte Pawne [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll; optional]
+accept 885 Washte Pawne [class=Warrior,Hunter,Druid; race=Tauren; optional]
+accept 885 Washte Pawne [race=Undead,Blood Elf; optional]
+complete 879 Betrayal from Within [optional]
+accept 846 Revenge of Gann [optional]
+accept 857 The Tear of the Moons [optional]
+complete 857 The Tear of the Moons [optional]
+turnin 857 The Tear of the Moons [optional]
+complete 846 Revenge of Gann [optional]
+turnin 846 Revenge of Gann [optional]
+accept 849 Revenge of Gann [optional]
+complete 849 Revenge of Gann [optional]
+turnin 849 Revenge of Gann [optional]
+turnin 5881 Calling in the Reserves [class=Warrior,Hunter,Rogue,Warlock; race=Orc; optional]
+turnin 5881 Calling in the Reserves [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll; optional]
+turnin 5881 Calling in the Reserves [class=Warrior,Hunter,Druid; race=Tauren; optional]
+turnin 5881 Calling in the Reserves [race=Undead,Blood Elf; optional]
 accept Message to Freewind Post | Brave Moonhorn at the Great Lift, on the Barrens side.
+accept 4881 Assassination Plot [optional]
+accept 9431 A Different Approach
+accept 5147 Wanted - Arnak Grimtotem [optional]
+turnin 1196 The Sacred Flame [optional]
 fp Freewind Post
 turnin Message to Freewind Post | Cliffwatcher Longhorn.
 bind Freewind Post
@@ -18,26 +45,80 @@ accept Pacify the Centaur | Cliffwatcher Longhorn.
 accept Alien Egg | Hagar Lightninghoof.
 accept Wind Rider | Elu.
 complete Pacify the Centaur | Galak centaur west of Freewind.
+accept 1149 Test of Faith
+complete 1149 Test of Faith
+turnin 1149 Test of Faith
+accept 1150 Test of Endurance [optional]
 complete Alien Egg | The egg is in the Roguefeather den.
+complete 9431 A Different Approach
 complete Wind Rider
+accept 4770 Homeward Bound [optional]
+complete 4770 Homeward Bound [optional]
+turnin 4881 Assassination Plot [optional]
+accept 4966 Protect Kanati Greycloud [optional]
 turnin Pacify the Centaur
 accept Grimtotem Spying
 turnin Alien Egg
 accept Serpent Wild
+complete 1150 Test of Endurance [optional]
 complete Serpent Wild | Wind serpents.
 turnin Serpent Wild
 accept Sacred Fire | Motega Firemane.
+turnin 4770 Homeward Bound [optional]
+turnin 9431 A Different Approach
+accept 9433 A Dip in the Moonwell [optional]
 complete Sacred Fire
 turnin Sacred Fire
 accept Arikara
+turnin 879 Betrayal from Within [optional]
+accept 906 Betrayal from Within [optional]
+accept 1153 A New Ore Sample
+turnin 885 Washte Pawne [optional]
 turnin Wind Rider
+turnin 1150 Test of Endurance [optional]
+accept 1151 Test of Strength [optional]
 complete Grimtotem Spying
 complete Arikara
+complete 5147 Wanted - Arnak Grimtotem [optional]
+accept 4904 Free at Last [optional]
+complete 4904 Free at Last [optional]
 turnin Grimtotem Spying
+turnin 5147 Wanted - Arnak Grimtotem [optional]
+turnin 4904 Free at Last [optional]
+complete 1153 A New Ore Sample
+accept 1111 Wharfmaster Dizzywig
+turnin 1153 A New Ore Sample
+turnin 906 Betrayal from Within [optional]
+accept 1145 The Swarm Grows
+turnin 1145 The Swarm Grows [class=Warrior; race=Orc,Undead,Tauren,Troll]
+turnin 1111 Wharfmaster Dizzywig
+turnin 874 Mahren Skyseer [optional]
+accept 873 Isha Awak [optional]
+complete 873 Isha Awak [optional]
+turnin 1718 The Islander [class=Warrior; race=Orc,Undead,Tauren,Troll; optional]
+accept 1719 The Affray [class=Warrior; race=Orc,Undead,Tauren,Troll]
+complete 1719 The Affray [class=Warrior; race=Orc,Undead,Tauren,Troll]
+turnin 1719 The Affray [class=Warrior; race=Orc,Undead,Tauren,Troll]
+turnin 873 Isha Awak [optional]
+turnin 1145 The Swarm Grows [class=Rogue,Priest,Mage,Warlock; race=Undead]
+turnin 1145 The Swarm Grows [class=Hunter,Rogue,Shaman,Warlock; race=Orc]
+turnin 1145 The Swarm Grows [class=Hunter,Rogue,Priest,Shaman,Mage; race=Troll]
+turnin 1145 The Swarm Grows [class=Hunter,Shaman,Druid; race=Tauren]
+turnin 1145 The Swarm Grows [race=Blood Elf]
 turnin Arikara
+complete 4966 Protect Kanati Greycloud [optional]
+complete 1151 Test of Strength [optional]
+turnin 1151 Test of Strength [optional]
 accept Hypercapacitor Gizmo | Wizlo Bearingshiner.
+turnin 4966 Protect Kanati Greycloud [optional]
 complete Hypercapacitor Gizmo
+complete 9433 A Dip in the Moonwell [optional]
+complete 1131 Steelsnap
+turnin 9433 A Dip in the Moonwell [optional]
+accept 9434 Testing the Tonic [optional]
 turnin Hypercapacitor Gizmo
+turnin 1131 Steelsnap
+turnin 9434 Testing the Tonic [optional]
 accept Salt Flat Venom | Fizzle Brassbolts, Shimmering Flats.
 accept Hardened Shells | Wizzle Brassbolts.
 accept Rocket Car Parts | Kravel Koalbeard.

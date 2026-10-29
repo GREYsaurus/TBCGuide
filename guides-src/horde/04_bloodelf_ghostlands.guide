@@ -15,30 +15,67 @@ turnin Delivery to Tranquillien | Tranquillien.
 accept 9327 The Forsaken | Arcanist Vandril.
 turnin 9327 The Forsaken | High Executor Mavren.
 accept Return to Arcanist Vandril
+accept 9130 Goods from Silvermoon City [class=Hunter]
+accept 9130 Goods from Silvermoon City [class=Paladin,Rogue,Priest,Mage,Warlock]
 turnin Return to Arcanist Vandril
 accept Suncrown Village
+turnin 9130 Goods from Silvermoon City [class=Hunter]
+accept 9133 Fly to Silvermoon City [class=Hunter]
+accept 9152 Tomber's Supplies [class=Hunter; optional]
+turnin 9133 Fly to Silvermoon City [class=Hunter]
+turnin 9130 Goods from Silvermoon City [class=Paladin,Rogue,Priest,Mage,Warlock]
+accept 9133 Fly to Silvermoon City [class=Priest,Mage,Warlock]
+turnin 9133 Fly to Silvermoon City [class=Warlock]
+turnin 9619 The Rune of Summoning [class=Warlock; optional]
+accept 9152 Tomber's Supplies [class=Paladin,Rogue,Priest,Mage,Warlock; optional]
+accept 9315 Anok'suten [optional]
 accept Help Ranger Valanna! | Ranger Lethvalin.
 accept The Plagued Coast | Apothecary Renzithen.
+accept 9155 Down the Dead Scar [class=Paladin,Hunter,Priest,Mage,Warlock; optional]
 accept Salvaging the Past | Magister Darenis.
+accept 9155 Down the Dead Scar [class=Rogue; optional]
+accept 10372 A Discreet Inquiry [class=Rogue; optional]
+turnin 9404 Recently Living [class=Mage]
+turnin 9133 Fly to Silvermoon City [class=Priest,Mage]
+accept 9135 Return to Quartermaster Lymel [class=Priest,Mage; optional]
+turnin 9135 Return to Quartermaster Lymel [class=Priest,Mage; optional]
 fp Tranquillien
 bind Tranquillien
 complete Suncrown Village | Nerubis Guards and Centipedes at Suncrown Village.
+complete 9315 Anok'suten [optional]
+complete 9678 The First Trial [class=Paladin; optional]
 turnin Suncrown Village
 accept Goldenmist Village
 complete Goldenmist Village | Quel'dorei ghosts at Goldenmist Village.
 turnin Goldenmist Village
 accept Windrunner Village
+accept 9171 Culinary Crunch [optional]
+turnin 9171 Culinary Crunch [optional]
 turnin Help Ranger Valanna! | Ranger Valanna.
 accept Dealing with Zeb'Sora
 complete Dealing with Zeb'Sora | Zeb'Sora trolls.
 turnin Dealing with Zeb'Sora
 accept Report to Captain Helios
+turnin 9315 Anok'suten [optional]
 complete The Plagued Coast | Murlocs on the coast.
 complete Salvaging the Past | Relics in Goldenmist.
+complete 9152 Tomber's Supplies [optional]
 turnin The Plagued Coast
 turnin Salvaging the Past
+accept 9151 The Sanctum of the Sun [optional]
+turnin 9678 The First Trial [class=Paladin; optional]
+accept 9681 A Study in Power [class=Paladin]
+turnin 9681 A Study in Power [class=Paladin]
+accept 63866 Claiming the Light [class=Paladin]
+complete 63866 Claiming the Light [class=Paladin]
+turnin 63866 Claiming the Light [class=Paladin]
+accept 9685 Redeeming the Dead [class=Paladin]
+complete 9685 Redeeming the Dead [class=Paladin]
+turnin 10372 A Discreet Inquiry [class=Rogue; optional]
+accept 9491 Greed [class=Rogue; optional]
 turnin Report to Captain Helios
 accept Shadowpine Weaponry
+accept 9275 A Little Dash of Seasoning
 complete Windrunner Village | Windrunner Village spirits.
 turnin Windrunner Village
 accept Forgotten Rituals | Geranis Whitemorn, Sanctum of the Moon.
@@ -52,43 +89,82 @@ turnin Vanquishing Aquantion
 turnin Spirits of the Drowned
 accept Investigate An'daroth | Dame Auriferous.
 complete Investigate An'daroth
+turnin 9532 Find Keltus Darkleaf [class=Rogue; optional]
+accept 9460 Combining Forces [class=Rogue]
+complete 9460 Combining Forces [class=Rogue]
+turnin 9460 Combining Forces [class=Rogue]
+accept 9618 Return the Reports [class=Rogue; optional]
 turnin Investigate An'daroth
 accept Into Occupied Territory
+accept 9173 Retaking Windrunner Spire
 complete Into Occupied Territory
 turnin Into Occupied Territory
 accept Deliver the Plans to An'telas
+turnin 9685 Redeeming the Dead [class=Paladin]
 turnin Deliver the Plans to An'telas
+accept 9169 Deactivate An'owyn
 accept Bearers of the Plague | Farstrider Sedina.
 complete Bearers of the Plague
 turnin Bearers of the Plague
 accept Curbing the Plague
 complete Curbing the Plague
+accept 9281 Clearing the Way [optional]
+accept 9175 The Lady's Necklace
+complete 9173 Retaking Windrunner Spire
+turnin 9173 Retaking Windrunner Spire
+turnin 9175 The Lady's Necklace
+accept 9180 Journey to Undercity [optional]
 turnin Curbing the Plague
 accept Trouble at the Underlight Mines | Deathstalker Maltendis.
 complete Trouble at the Underlight Mines
+accept 9207 Underlight Ore Samples
+complete 9207 Underlight Ore Samples
+complete 9155 Down the Dead Scar [optional]
+turnin 9152 Tomber's Supplies [optional]
+turnin 9155 Down the Dead Scar [optional]
 turnin Trouble at the Underlight Mines
+turnin 9618 Return the Reports [class=Rogue; optional]
 accept Troll Juju
 accept Investigate the Amani Catacombs | Advisor Valwyn.
 complete Troll Juju
+accept 9212 Escape from the Catacombs
 complete Investigate the Amani Catacombs
+complete 9212 Escape from the Catacombs
+complete 9491 Greed [class=Rogue; optional]
+turnin 9212 Escape from the Catacombs
 complete Shadowpine Weaponry | Shadowpine trolls.
+complete 9275 A Little Dash of Seasoning
+complete 9169 Deactivate An'owyn
 turnin Troll Juju
+turnin 9491 Greed [class=Rogue; optional]
+accept 10548 The Sad Truth [class=Rogue; optional]
 turnin Investigate the Amani Catacombs
 turnin Shadowpine Weaponry
+turnin 9275 A Little Dash of Seasoning
+turnin 9169 Deactivate An'owyn
 accept Rotting Hearts | Magistrix Aminel.
 accept Spinal Dust
 complete Rotting Hearts
 complete Spinal Dust
 turnin Rotting Hearts
+accept 10794 Rogues of the Shattered Hand [class=Rogue; optional]
+turnin 9180 Journey to Undercity [optional]
 turnin Spinal Dust
+turnin 9207 Underlight Ore Samples
 accept The Farstrider Enclave
+turnin 9151 The Sanctum of the Sun [optional]
 turnin The Farstrider Enclave
 accept Attack on Zeb'Tela | Farstrider Solanna.
+accept 9215 Bring Me Kel'gash's Head! [optional]
 complete Attack on Zeb'Tela
 turnin Attack on Zeb'Tela
 accept Assault on Zeb'Nowa
 complete Assault on Zeb'Nowa
+complete 9215 Bring Me Kel'gash's Head! [optional]
+complete 10548 The Sad Truth [class=Rogue; optional]
 turnin Assault on Zeb'Nowa
+turnin 9215 Bring Me Kel'gash's Head! [optional]
+turnin 10548 The Sad Truth [class=Rogue; optional]
 accept The Traitor's Shadow | Ranger Vynna.
 complete The Traitor's Shadow
 turnin The Traitor's Shadow
@@ -98,13 +174,28 @@ accept Report to Magister Kaendris
 turnin Report to Magister Kaendris
 accept The Twin Ziggurats
 complete The Twin Ziggurats
+complete 9281 Clearing the Way [optional]
 turnin The Twin Ziggurats
+accept 9167 The Traitor's Destruction [optional]
 accept War on Deatholme | Magister Idonis.
 complete War on Deatholme
 turnin War on Deatholme
 accept Dar'Khan's Lieutenants
+accept 9877 A Restorative Draught
+turnin 9877 A Restorative Draught
+accept 9164 Captives at Deatholme
+turnin 9281 Clearing the Way [optional]
 complete Dar'Khan's Lieutenants [group=2]
+complete 9164 Captives at Deatholme
+complete 9167 The Traitor's Destruction [optional]
+turnin 9167 The Traitor's Destruction [optional]
+accept 9328 Hero of the Sin'dorei [optional]
 turnin Dar'Khan's Lieutenants
+turnin 9164 Captives at Deatholme
+turnin 9328 Hero of the Sin'dorei [optional]
+accept 9621 Envoy to the Horde [optional]
+turnin 9621 Envoy to the Horde [optional]
+accept 9626 Meeting the Warchief [optional]
 level 19
 train | Silvermoon City.
 note Take the Orb of Translocation in Silvermoon City to the Undercity, then the zeppelin to Orgrimmar and ride into the Barrens.

@@ -44,9 +44,11 @@ complete Marla's Last Wish | Samuel Fipps; bury Marla's remains in the graveyard
 turnin The Scarlet Crusade
 accept The Red Messenger
 turnin Marla's Last Wish
+accept 5651 In Favor of Darkness [class=Priest]
 complete The Red Messenger | Meven Korgal, at the Scarlet camp.
 turnin The Red Messenger
 accept Vital Intelligence
+accept 8 A Rogue's Deal
 turnin 3095 Simple Scroll [class=Warrior] | Your class trainer in Deathknell.
 turnin 3096 Encrypted Scroll [class=Rogue]
 turnin 3097 Hallowed Scroll [class=Priest]
@@ -54,6 +56,11 @@ turnin 3098 Glyphic Scroll [class=Mage]
 turnin 3099 Tainted Scroll [class=Warlock]
 train | Trainers in Deathknell's church.
 turnin Vital Intelligence | Executor Zygand, Brill.
+turnin 8 A Rogue's Deal
+turnin 5651 In Favor of Darkness [class=Priest]
+accept 5650 Garments of Darkness [class=Priest]
+complete 5650 Garments of Darkness [class=Priest]
+turnin 5650 Garments of Darkness [class=Priest]
 accept 427 At War With The Scarlet Crusade
 accept A Putrid Task | Deathguard Dillinger.
 accept Graverobbers | Magistrate Sevren.
@@ -87,6 +94,8 @@ complete 368 A New Plague | Vile Fin murlocs on the coast.
 turnin Forsaken Duties | Deathguard Linnea, the bridge north.
 accept Return to the Magistrate
 turnin Return to the Magistrate
+accept 830 The Admiral's Orders [class=Warrior,Rogue,Priest,Mage]
+turnin 830 The Admiral's Orders [class=Warrior,Rogue,Priest,Mage]
 accept The Chill of Death | Gretchen Dedmar.
 turnin The Mills Overrun
 turnin 368 A New Plague

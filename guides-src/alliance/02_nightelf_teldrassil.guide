@@ -30,6 +30,7 @@ complete 459 The Woodland Protector | Grells around the glade drop Fel Moss.
 turnin 459 The Woodland Protector
 complete 457 The Balance of Nature | Mangy Nightsabers and Thistle Boars.
 turnin 457 The Balance of Nature
+accept 5622 In Favor of Elune [class=Priest; optional]
 turnin A Good Friend | Iverron, north near the spider cave.
 accept A Friend in Need
 complete Webwood Venom | Webwood Spiders in Shadowthread Cave.
@@ -37,6 +38,7 @@ turnin A Friend in Need
 accept 3521 Iverron's Antidote
 complete 3521 Iverron's Antidote | Hyacinth Mushrooms on the ground, Moonpetal Lilies at the pool, Webwood Ichor from spiders.
 turnin 3521 Iverron's Antidote
+accept 3522 Iverron's Antidote
 turnin Webwood Venom
 accept Webwood Egg
 complete Webwood Egg | The egg is at the back of Shadowthread Cave.
@@ -52,6 +54,7 @@ turnin 3117 Etched Sigil [class=Hunter]
 turnin 3118 Encrypted Sigil [class=Rogue]
 turnin 3119 Hallowed Sigil [class=Priest]
 turnin 3120 Verdant Sigil [class=Druid]
+turnin 3522 Iverron's Antidote
 train | Your trainer is inside Aldrassil.
 accept Dolanaar Delivery | Porthannius on the path out of Shadowglen.
 turnin Dolanaar Delivery | Innkeeper Keldamyr, Dolanaar.
@@ -60,6 +63,8 @@ turnin 928 Crown of the Earth | Corithras Moonrage, Dolanaar.
 accept 929 Crown of the Earth
 accept Zenn's Bidding | Zenn Foulhoof, by the river east of Dolanaar.
 accept A Troubling Breeze | Athridas Bearmantle, Dolanaar.
+turnin 5622 In Favor of Elune [class=Priest; optional]
+accept 5621 Garments of the Moon [class=Priest]
 accept Denalan's Earth | Syral Bladeleaf.
 accept Elixirs for the Bladeleafs
 accept Twisted Hatred | Tallonkai Swiftroot.
@@ -70,37 +75,109 @@ accept Timberling Sprouts
 complete Timberling Seeds | Timberlings around the lake.
 complete Timberling Sprouts | Sprouts on the ground around the lake.
 turnin Timberling Seeds
+accept 922 Rellian Greenspyre
 turnin Timberling Sprouts
 complete Zenn's Bidding | Nightsabers, Webwood Lurkers and Strigid Owls around Dolanaar.
+complete 5621 Garments of the Moon [class=Priest]
 complete Recipe of the Kaldorei | Webwood Lurkers drop Small Spider Legs.
 complete Elixirs for the Bladeleafs | Moonpetal Lilies.
 turnin A Troubling Breeze | Gaerolas Talvethren, top of the hill east of Dolanaar.
 accept Gnarlpine Corruption
 turnin Gnarlpine Corruption
+turnin 5621 Garments of the Moon [class=Priest]
+accept 2459 Ferocitas the Dream Eater
 accept The Relics of Wakening
 complete 929 Crown of the Earth | Fill the phial at the Starbreeze Village moonwell.
 complete Twisted Hatred | Lord Melenas in Fel Rock, near Dolanaar.
 turnin Zenn's Bidding
+accept 489 Seek Redemption! [optional]
 turnin Recipe of the Kaldorei
 turnin Elixirs for the Bladeleafs
 turnin Twisted Hatred
 turnin 929 Crown of the Earth
+accept 930 The Glowing Fruit
 accept 933 Crown of the Earth
+complete 2459 Ferocitas the Dream Eater
+complete 489 Seek Redemption! [optional]
 complete The Relics of Wakening | Ban'ethil Barrow Den, north of Dolanaar.
 turnin The Relics of Wakening
 accept Ursal the Mauler
+turnin 489 Seek Redemption! [optional]
 complete 933 Crown of the Earth | The Pools of Arlithrien moonwell, south-west.
 complete Ursal the Mauler | Gnarlpine camp south-east of Lake Al'Ameth.
 turnin Ursal the Mauler
 turnin 933 Crown of the Earth
 accept 7383 Crown of the Earth
+turnin 2459 Ferocitas the Dream Eater
 complete 7383 Crown of the Earth | The Oracle Glade moonwell in the north-west.
+accept 931 The Shimmering Frond
+turnin 922 Rellian Greenspyre [class=Warrior,Hunter,Priest,Druid]
+accept 923 Tumors [class=Warrior,Hunter,Priest,Druid]
+accept 5921 Moonglade [class=Druid]
+accept 2518 Tears of the Moon [class=Warrior,Hunter,Priest,Druid]
+turnin 5921 Moonglade [class=Druid]
+accept 5929 Great Bear Spirit [class=Druid]
+complete 5929 Great Bear Spirit [class=Druid]
+turnin 5929 Great Bear Spirit [class=Druid]
+accept 5931 Back to Darnassus [class=Druid]
 turnin 7383 Crown of the Earth
 accept 935 Crown of the Earth
+accept 1684 Elanaria [class=Warrior]
+accept 6063 Taming the Beast [class=Hunter]
+complete 6063 Taming the Beast [class=Hunter]
+turnin 6063 Taming the Beast [class=Hunter]
+accept 6101 Taming the Beast [class=Hunter]
+turnin 931 The Shimmering Frond [class=Warrior,Hunter,Priest,Druid]
+turnin 930 The Glowing Fruit [class=Warrior,Hunter,Priest,Druid]
+accept 927 The Moss-twined Heart [class=Warrior,Hunter,Priest,Druid; optional]
+turnin 927 The Moss-twined Heart [class=Warrior,Hunter,Priest,Druid; optional]
+complete 6101 Taming the Beast [class=Hunter]
+turnin 6101 Taming the Beast [class=Hunter]
+accept 6102 Taming the Beast [class=Hunter]
+complete 6102 Taming the Beast [class=Hunter]
+turnin 6102 Taming the Beast [class=Hunter]
+accept 6103 Training the Beast [class=Hunter]
+turnin 931 The Shimmering Frond [class=Rogue]
+turnin 930 The Glowing Fruit [class=Rogue]
+accept 927 The Moss-twined Heart [class=Rogue; optional]
+turnin 927 The Moss-twined Heart [class=Rogue; optional]
+accept 2241 The Apple Falls [class=Rogue]
 accept The Road to Darnassus [optional] | Moon Priestess Amara patrols the road.
 complete The Road to Darnassus [optional] | Gnarlpine Ambushers along the road west of Dolanaar.
 turnin The Road to Darnassus [optional]
+accept 937 The Enchanted Glade
+complete 937 The Enchanted Glade
+turnin 937 The Enchanted Glade
+accept 940 Teldrassil
+turnin 940 Teldrassil [class=Warrior,Hunter,Priest,Druid]
+turnin 922 Rellian Greenspyre [class=Rogue]
+accept 923 Tumors [class=Rogue]
+turnin 940 Teldrassil [class=Rogue]
 turnin 935 Crown of the Earth
+turnin 2241 The Apple Falls [class=Rogue]
+accept 2242 Destiny Calls [class=Rogue]
+accept 2518 Tears of the Moon [class=Rogue]
+complete 2518 Tears of the Moon
+complete 923 Tumors
+complete 2242 Destiny Calls [class=Rogue]
+accept 6344 Nessa Shadowsong
+turnin 1684 Elanaria [class=Warrior]
+accept 1683 Vorlus Vilehoof [class=Warrior]
+complete 1683 Vorlus Vilehoof [class=Warrior]
+turnin 1683 Vorlus Vilehoof [class=Warrior]
+turnin 5931 Back to Darnassus [class=Druid]
+accept 6001 Body and Heart [class=Druid; optional]
+turnin 6103 Training the Beast [class=Hunter]
+turnin 2242 Destiny Calls [class=Rogue]
+turnin 923 Tumors
+turnin 2518 Tears of the Moon
+accept 2520 Sathrah's Sacrifice
+complete 2520 Sathrah's Sacrifice
+turnin 2520 Sathrah's Sacrifice
+turnin 6344 Nessa Shadowsong
+accept 6341 The Bounty of Teldrassil
+turnin 6341 The Bounty of Teldrassil
+accept 6342 Flight to Auberdine [optional]
 train | Darnassus trainers (Warrior's Terrace, Cenarion Enclave).
 fp Rut'theran Village
 note Take the portal in Darnassus down to Rut'theran Village, then fly to Auberdine (Darkshore).

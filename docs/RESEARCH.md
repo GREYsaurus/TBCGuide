@@ -6,14 +6,8 @@ Recorded 2026-10-28.
 
 - TBC Classic **Anniversary** realms are the live TBC Classic product in 2026: pre-patch 2026-01-13, launch 2026-02-05, Phase 2 on 2026-05-14.
 - wago.tools lists product `wow_anniversary` at **2.5.6.70577**.
-- Questie's latest release (`bundle/v12.3.1+v1.0.9`, 2026-10-26) ships flavor `bcc` at **interface 20506**. RestedXP's `RXPGuides_TBC.toc` also declares 20506.
+- Questie's latest release (`bundle/v12.3.1+v1.0.9`, 2026-10-26) ships flavor `bcc` at **interface 20506**.
 - **Decision:** target interface 20506 / build 2.5.6, configured in `Config/Target.lua`.
-
-## RestedXP (RXPGuides)
-
-- Repository reviewed: layout (`Guides/`, `GuideLoader.lua`, `QuestLog.lua`, `map.lua`, `Talents.lua`, `RXPGuides_TBC.toc`) and feature set (step lists, auto-progression, waypoints, talents, guide selection).
-- **Licence: CC BY-NC-SA 4.0.** This is non-commercial and share-alike, so it is incompatible with redistributing under GPLv3.
-- **Decision:** use it for design ideas only. No code, guide text, routes or assets were copied. TBCGuide's guide format, engine and routes are independent.
 
 ## Icy Veins
 
@@ -58,7 +52,7 @@ Recorded 2026-10-28.
 
 ## Leveling routes
 
-Sources, conflicts and decisions: docs/ROUTE_OPTIMIZATION.md, section 1. RestedXP remains design-reference only (CC BY-NC-SA 4.0).
+Sources, conflicts and decisions: docs/ROUTE_OPTIMIZATION.md, section 1.
 
 ## Tooling
 

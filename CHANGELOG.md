@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.0
+
+### Changed
+- **Denser 1-30 routes:** 448 quests added across 25 guides, including class quests that used to be only a note on train steps, such as *Taming the Beast*, druid forms, totem quests and Voidwalker. Every added quest passed the compiler and route audit. Not tested in the game client.
+
 ## 0.5.0
 
 ### Fixed

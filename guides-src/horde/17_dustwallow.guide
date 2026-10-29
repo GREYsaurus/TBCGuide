@@ -21,8 +21,10 @@ accept What's Haunting Witch Hill? | Mordant Grimsby.
 complete Inspecting the Ruins | The burned Shady Rest Inn.
 turnin Inspecting the Ruins
 accept Suspicious Hoofprints | The hoofprints are at the Shady Rest Inn.
+accept 1269 Lieutenant Paval Reethe [optional]
 accept 1251 The Black Shield | The black shield lies at the Shady Rest Inn too.
 turnin Suspicious Hoofprints
+turnin 1269 Lieutenant Paval Reethe [optional]
 turnin 1251 The Black Shield
 accept 1321 The Black Shield
 complete 1321 The Black Shield

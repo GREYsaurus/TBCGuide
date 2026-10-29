@@ -10,8 +10,13 @@
 @desc Zoram'gar Outpost, Splintertree Post and the Warsong Lumber Camp. The Ashenvale Hunt and Blackfathom Deeps are optional.
 @next H_Hillsbrad
 
+turnin 742 The Ashenvale Hunt [class=Warrior,Hunter,Rogue,Warlock; race=Orc; optional]
+turnin 742 The Ashenvale Hunt [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll; optional]
+turnin 742 The Ashenvale Hunt [class=Warrior,Hunter,Druid; race=Tauren; optional]
+turnin 742 The Ashenvale Hunt [race=Undead,Blood Elf; optional]
 accept Stonetalon Standstill | Mastok Wrilehiss, Splintertree Post.
 accept Ashenvale Outrunners | Kuray'bin.
+turnin 9428 Report to Splintertree Post [race=Blood Elf; optional]
 accept Torek's Assault [group=2] | Torek.
 accept Between a Rock and a Thistlefur | Karang Amakkar.
 accept Warsong Supplies | Locke Okarr.
@@ -27,17 +32,31 @@ turnin 6921 Amongst the Ruins [dungeon=Blackfathom Deeps]
 complete Ashenvale Outrunners | Ashenvale Outrunners, stealthy night elves around Splintertree.
 complete Torek's Assault [group=2]
 complete Between a Rock and a Thistlefur | Thistlefur furbolgs at Thistlefur Village.
+accept 6482 Freedom to Ruul
+complete 6482 Freedom to Ruul
+accept 23 Ursangous's Paw [optional]
 complete Warsong Supplies | Supply crates in the Warsong area.
 complete Satyr Horns | Satyrs at Satyrnaar.
+accept 24 Shadumbra's Head [optional]
 complete The Lost Pages
 turnin Ashenvale Outrunners
 turnin Torek's Assault
+turnin 24 Shadumbra's Head [optional]
+turnin 23 Ursangous's Paw [optional]
 turnin Between a Rock and a Thistlefur
 turnin Warsong Supplies
 turnin Satyr Horns
 turnin The Lost Pages
+accept 2 Sharptalon's Claw [optional]
 complete Stonetalon Standstill | Venture Co. in the eastern lumber camps.
+accept 1918 The Befouled Element
+complete 1195 The Sacred Flame [optional]
+turnin 2 Sharptalon's Claw [optional]
 turnin Stonetalon Standstill
+turnin 1918 The Befouled Element
+accept 824 Je'neu of the Earthen Ring
+turnin 6482 Freedom to Ruul
+turnin 824 Je'neu of the Earthen Ring
 level 27
 train
 note Fly to Orgrimmar, take the zeppelin to the Undercity and fly or ride to Tarren Mill (Hillsbrad Foothills).

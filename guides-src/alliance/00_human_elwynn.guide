@@ -64,9 +64,11 @@ accept Rest and Relaxation | Falkhaan Isenstrider stands on the road south of th
 turnin Report to Goldshire
 accept The Fargodeep Mine
 turnin Rest and Relaxation
+accept 5624 Garments of the Light [class=Priest]
 bind Goldshire
 accept Kobold Candles
 accept Gold Dust Exchange
+complete 5624 Garments of the Light [class=Priest]
 accept A Fishy Peril
 train | Visit your trainer in Goldshire when you reach level 6.
 turnin A Fishy Peril
@@ -95,9 +97,11 @@ turnin Princess Must Die!
 turnin The Fargodeep Mine
 accept The Jasperlode Mine
 turnin Kobold Candles
+accept 61 Shipment to Stormwind
 turnin Gold Dust Exchange
 turnin Note to William
 accept Collecting Kelp
+turnin 5624 Garments of the Light [class=Priest]
 complete Collecting Kelp | Murlocs at Crystal Lake east of Goldshire drop Crystal Kelp Fronds.
 turnin Collecting Kelp
 accept The Escape
@@ -115,6 +119,7 @@ complete Bounty on Murlocs | Murlocs along the river north of the bridge.
 complete Protect the Frontier | Prowlers and young forest bears in Eastvale.
 turnin Report to Thomas
 accept Deliver Thomas' Report
+accept 184 Furlbrow's Deed [optional]
 turnin Bounty on Murlocs
 turnin Protect the Frontier
 accept Red Linen Goods | Sara Timberlain is at the Eastvale Logging Camp.
@@ -130,12 +135,25 @@ accept Westbrook Garrison Needs Help!
 turnin Westbrook Garrison Needs Help! | Deputy Rainer is at the Westbrook Garrison, west Elwynn.
 accept Riverpaw Gnoll Bounty
 accept Wanted: "Hogger" [elite; group=3] | The poster is next to Deputy Rainer. Hogger is level 11 elite - group up or skip.
+accept 123 The Collector [optional]
 complete Riverpaw Gnoll Bounty | Gnolls south of the garrison drop Painted Gnoll Armbands.
 turnin Riverpaw Gnoll Bounty
+turnin 184 Furlbrow's Deed [optional]
 complete Wanted: "Hogger" [elite; group=3; optional]
 turnin Wanted: "Hogger" [optional]
+turnin 123 The Collector [class=Warrior,Paladin,Rogue,Priest,Mage; optional]
+turnin 123 The Collector [class=Warlock; optional]
+accept 147 Manhunt [class=Warlock; optional]
+complete 147 Manhunt [class=Warlock; optional]
+turnin 147 Manhunt [class=Warlock; optional]
 turnin Cloth and Leather Armor | Return to Sara Timberlain only if you are passing Eastvale; otherwise skip.
+accept 1665 Bartleby's Mug [class=Warrior]
+turnin 1665 Bartleby's Mug [class=Warrior]
 accept Report to Gryan Stoutmantle | From Marshal Dughan in Goldshire.
+accept 1097 Elmore's Task
+accept 1685 Gakin's Summons [class=Warlock; optional]
+accept 5635 Desperate Prayer [class=Priest; optional]
+accept 1638 A Warrior's Training [class=Warrior; optional]
 grind 10 Riverpaw Outrunner, Riverpaw Runt @ south of Westbrook Garrison [at=27.8,81.2] | Only if you are short of level 10: keep killing the bounty gnolls until you ding.
 train | Level 10 training (warriors: defensive stance quest; warlocks: Voidwalker quest).
 note Head west on the road into Westfall.

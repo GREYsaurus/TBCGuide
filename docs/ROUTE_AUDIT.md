@@ -10,12 +10,12 @@ Every race/class route is walked step by step. **Estimated level** interpolates 
 |---|---|
 | Routes walked | 52 |
 | Order errors (prerequisite later, complete before accept, log over cap) | 0 |
-| Warnings | 0 |
-| Peak quest log (worst route) | 10 / 25 |
-| Reduced-XP pickups (6+ levels below estimate) | 1 |
-| Level-gated pickups | 18 |
+| Warnings | 31 |
+| Peak quest log (worst route) | 20 / 25 |
+| Reduced-XP pickups (6+ levels below estimate) | 10 |
+| Level-gated pickups | 129 |
 | Accepted, never turned in | 0 |
-| Hub revisits (all guides) | 447 |
+| Hub revisits (all guides) | 693 |
 
 ## Per guide
 
@@ -24,57 +24,57 @@ Values in brackets are the baseline (`docs/generated/route-metrics-baseline.csv`
 | Guide | Steps | Quests | Distance | Hub revisits | Reduced-XP | Level-gated | Never turned in | Escort/event | Group |
 |---|---|---|---|---|---|---|---|---|---|
 | A_Arathi | 33 (34) | 7 (8) | 184 | 4 | 0 | 0 | 0 (1) | 0 | 4 |
-| A_Ashenvale | 57 (62) | 16 (21) | 268 (270) | 4 | 0 | 1 | 0 (5) | 0 | 1 |
+| A_Ashenvale | 76 (62) | 24 (21) | 317 (270) | 10 (4) | 0 | 1 | 0 (5) | 0 | 1 |
 | A_BladesEdge | 102 (103) | 33 (34) | 258 | 8 | 0 | 0 | 0 (1) | 2 | 0 |
 | A_BurningSteppes | 42 (44) | 13 (15) | 212 (203) | 6 (5) | 0 | 0 | 0 (4) | 2 | 1 |
-| A_Darkshore | 105 (110) | 34 (39) | 346 (355) | 13 | 0 | 1 (0) | 0 (5) | 2 | 2 |
-| A_Draenei_Azuremyst | 147 (131) | 52 (45) | 452 (384) | 11 (9) | 0 | 2 (4) | 0 (2) | 1 | 0 |
-| A_Draenei_Bloodmyst | 125 | 42 | 275 (276) | 6 | 0 | 5 (4) | 0 | 2 | 1 |
-| A_Duskwood | 74 (78) | 25 (29) | 564 (571) | 13 | 0 | 0 | 0 (4) | 0 | 0 |
+| A_Darkshore | 189 (110) | 54 (39) | 580 (355) | 22 (13) | 0 | 1 (0) | 0 (5) | 5 (2) | 2 |
+| A_Draenei_Azuremyst | 204 (131) | 77 (45) | 596 (384) | 14 (9) | 0 | 11 (4) | 0 (2) | 4 (1) | 0 |
+| A_Draenei_Bloodmyst | 205 (125) | 78 (42) | 1030 (276) | 35 (6) | 2 (0) | 15 (4) | 0 | 2 | 1 |
+| A_Duskwood | 190 (78) | 65 (29) | 1018 (571) | 33 (13) | 0 | 3 (0) | 0 (4) | 1 (0) | 0 |
 | A_Dustwallow | 75 (78) | 23 (27) | 391 (429) | 7 | 0 | 0 | 0 (6) | 1 | 0 |
-| A_DwarfGnome_DunMorogh | 122 (101) | 44 (34) | 338 (322) | 19 (15) | 0 | 2 (3) | 0 | 0 | 0 |
+| A_DwarfGnome_DunMorogh | 145 (101) | 50 (34) | 390 (322) | 22 (15) | 0 | 7 (3) | 0 | 3 (0) | 0 |
 | A_Felwood | 35 (36) | 8 (9) | 247 | 4 | 0 | 0 | 0 (1) | 0 | 0 |
 | A_Feralas | 60 (63) | 19 (22) | 341 (344) | 3 | 0 | 0 | 0 (3) | 2 (3) | 2 |
 | A_Hellfire | 177 | 60 (61) | 803 (804) | 34 (35) | 0 | 0 | 0 (3) | 0 | 1 (2) |
-| A_Hillsbrad | 45 (47) | 12 (14) | 44 | 0 | 0 | 3 | 0 (3) | 0 | 0 |
+| A_Hillsbrad | 65 (47) | 25 (14) | 120 (44) | 4 (0) | 0 | 3 | 0 (3) | 0 | 0 |
 | A_Hinterlands | 39 (40) | 9 (10) | 111 | 5 | 0 | 0 | 0 (1) | 0 | 0 |
-| A_Human_Elwynn | 146 (143) | 49 (48) | 506 (467) | 16 | 0 | 2 | 0 | 0 | 2 |
-| A_LochModan | 70 (72) | 22 (24) | 512 (517) | 11 | 0 | 0 | 0 (2) | 0 | 0 (1) |
+| A_Human_Elwynn | 164 (143) | 59 (48) | 462 (467) | 16 | 0 | 2 | 0 | 0 | 2 |
+| A_LochModan | 106 (72) | 29 (24) | 478 (517) | 13 (11) | 0 | 0 | 0 (2) | 0 | 0 (1) |
 | A_Nagrand | 104 (105) | 36 (37) | 367 | 4 | 0 | 0 | 0 (1) | 2 | 1 (2) |
-| A_NightElf_Teldrassil | 101 (92) | 34 (30) | 220 (214) | 7 | 0 | 0 (1) | 0 (1) | 0 | 0 |
-| A_Redridge | 68 (69) | 21 (22) | 289 | 13 | 0 | 0 | 0 (1) | 1 | 3 |
+| A_NightElf_Teldrassil | 178 (92) | 63 (30) | 804 (214) | 25 (7) | 0 | 14 (1) | 0 (1) | 6 (0) | 0 |
+| A_Redridge | 118 (69) | 41 (22) | 629 (289) | 21 (13) | 0 | 7 (0) | 0 (1) | 1 | 3 |
 | A_Shadowmoon | 57 | 18 | 132 | 2 | 0 | 0 | 0 | 0 | 0 |
-| A_Stranglethorn | 71 (76) | 20 (25) | 268 (269) | 6 | 0 | 0 | 0 (5) | 0 | 0 |
+| A_Stranglethorn | 147 (76) | 47 (25) | 778 (269) | 17 (6) | 3 (0) | 0 | 0 (5) | 0 | 0 |
 | A_Terokkar | 96 (97) | 33 (34) | 390 | 11 | 0 | 0 | 0 (1) | 1 | 2 (3) |
 | A_WesternPlaguelands | 38 (41) | 9 (12) | 274 (288) | 5 | 0 | 0 | 0 (3) | 0 | 0 |
-| A_Westfall | 56 | 16 | 253 | 7 | 0 | 0 | 0 | 0 | 2 |
-| A_Wetlands | 77 (79) | 24 (26) | 255 | 9 | 0 | 0 | 0 (2) | 0 | 0 |
+| A_Westfall | 78 (56) | 27 (16) | 350 (253) | 10 (7) | 0 | 0 | 0 | 0 | 2 |
+| A_Wetlands | 113 (79) | 41 (26) | 497 (255) | 15 (9) | 0 | 4 (0) | 0 (2) | 0 | 0 |
 | A_Zangarmarsh | 117 (115) | 39 (41) | 323 (365) | 9 | 0 | 0 | 0 (5) | 1 (2) | 0 (1) |
 | Both_Netherstorm | 105 (107) | 35 (37) | 358 (440) | 11 (14) | 0 | 0 | 0 (2) | 0 (1) | 1 |
 | Both_Tanaris | 49 (52) | 12 (15) | 61 (63) | 1 | 0 | 0 (1) | 0 (3) | 0 | 2 |
 | Both_UngoroCrater | 51 (55) | 13 (17) | 316 (323) | 3 (4) | 0 | 0 (1) | 0 (4) | 3 | 1 (2) |
 | H_Arathi | 52 | 14 | 163 | 3 | 0 | 0 | 0 | 0 | 0 |
-| H_Ashenvale | 39 (42) | 9 (10) | 489 (492) | 12 (13) | 0 | 0 (1) | 0 (1) | 1 (2) | 5 (3) |
-| H_Barrens | 115 (117) | 37 (41) | 281 (299) | 12 (13) | 0 | 0 | 0 (7) | 0 (1) | 1 |
+| H_Ashenvale | 58 (42) | 18 (10) | 568 (492) | 13 | 0 | 0 (1) | 0 (1) | 2 | 5 (3) |
+| H_Barrens | 323 (117) | 111 (41) | 1063 (299) | 49 (13) | 4 (0) | 8 (0) | 0 (7) | 2 (1) | 1 |
 | H_BladesEdge | 50 (51) | 15 (16) | 215 (245) | 7 (8) | 0 | 0 | 0 (1) | 1 | 0 |
-| H_BloodElf_Eversong | 131 (118) | 45 (41) | 509 (583) | 14 (16) | 0 | 0 | 0 (4) | 1 | 0 |
-| H_BloodElf_Ghostlands | 102 (103) | 34 (35) | 439 (440) | 16 | 0 | 1 | 0 (1) | 0 | 1 |
-| H_Dustwallow | 89 (90) | 28 (29) | 300 (301) | 10 (12) | 0 | 0 | 0 (1) | 0 | 0 |
+| H_BloodElf_Eversong | 243 (118) | 93 (41) | 795 (583) | 33 (16) | 0 | 18 (0) | 0 (4) | 4 (1) | 0 |
+| H_BloodElf_Ghostlands | 193 (103) | 70 (35) | 866 (440) | 43 (16) | 0 | 6 (1) | 0 (1) | 1 (0) | 1 |
+| H_Dustwallow | 91 (90) | 29 | 300 (301) | 10 (12) | 0 | 0 | 0 (1) | 0 | 0 |
 | H_Felwood | 35 (36) | 8 (9) | 274 | 5 | 0 | 0 | 0 (1) | 1 | 0 |
 | H_Feralas | 26 (28) | 4 (5) | 128 (130) | 2 (3) | 0 | 0 (5) | 0 | 0 | 0 |
 | H_Hellfire | 142 (146) | 51 (55) | 713 (748) | 14 (15) | 0 | 0 | 0 (4) | 0 | 0 |
-| H_Hillsbrad | 46 (48) | 12 (15) | 117 (122) | 1 | 0 | 0 | 0 (4) | 0 | 0 |
+| H_Hillsbrad | 51 (48) | 14 (15) | 184 (122) | 2 (1) | 0 | 0 | 0 (4) | 0 | 0 |
 | H_Hinterlands | 51 (52) | 13 (14) | 70 | 1 | 0 | 0 | 0 (1) | 0 | 0 |
 | H_Nagrand | 114 | 39 | 336 | 9 | 0 | 0 | 0 | 3 | 1 |
-| H_OrcTroll_Durotar | 137 (105) | 48 (33) | 406 (371) | 16 (14) | 0 | 0 | 0 (2) | 0 | 0 |
+| H_OrcTroll_Durotar | 215 (105) | 70 (33) | 659 (371) | 24 (14) | 0 | 9 (0) | 0 (2) | 4 (0) | 0 |
 | H_Shadowmoon | 57 | 18 | 89 | 5 | 0 | 0 | 0 | 0 | 0 |
 | H_Silverpine | 75 (76) | 27 (28) | 190 (191) | 7 (8) | 0 | 0 | 0 (1) | 1 | 2 (3) |
-| H_Stonetalon | 36 (37) | 9 (8) | 225 (222) | 4 (5) | 0 | 0 | 0 | 1 | 0 |
+| H_Stonetalon | 59 (37) | 23 (8) | 464 (222) | 7 (5) | 0 | 0 | 0 | 2 (1) | 0 |
 | H_Stranglethorn | 69 (70) | 19 (20) | 278 | 5 | 1 | 0 | 0 (1) | 0 | 0 |
-| H_Tauren_Mulgore | 103 (90) | 35 (30) | 280 (258) | 11 (9) | 0 | 1 | 0 (2) | 3 | 0 |
+| H_Tauren_Mulgore | 162 (90) | 60 (30) | 547 (258) | 23 (9) | 0 | 19 (1) | 0 (2) | 8 (3) | 0 |
 | H_Terokkar | 95 (96) | 33 (34) | 351 | 13 | 0 | 0 | 0 (1) | 0 | 1 (2) |
-| H_ThousandNeedles | 54 (56) | 14 (16) | 189 (246) | 6 (8) | 0 | 0 | 0 (2) | 1 | 0 |
-| H_Undead_Tirisfal | 110 (97) | 36 (30) | 220 (216) | 5 | 0 | 0 | 0 | 0 | 0 |
+| H_ThousandNeedles | 135 (56) | 42 (16) | 511 (246) | 20 (8) | 0 | 0 | 0 (2) | 4 (1) | 0 |
+| H_Undead_Tirisfal | 119 (97) | 40 (30) | 241 (216) | 7 (5) | 0 | 1 (0) | 0 | 0 | 0 |
 | H_WesternPlaguelands | 47 | 14 | 10 | 7 | 0 | 0 | 0 | 1 | 0 |
 | H_Zangarmarsh | 111 (108) | 37 (38) | 401 (397) | 10 | 0 | 0 | 0 (3) | 1 | 0 |
 
@@ -82,21 +82,21 @@ Values in brackets are the baseline (`docs/generated/route-metrics-baseline.csv`
 
 | Route | Peak | At |
 |---|---|---|
-| BloodElf/HUNTER | 10 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:44] |
-| BloodElf/MAGE | 10 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:44] |
-| BloodElf/PALADIN | 10 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:44] |
-| BloodElf/PRIEST | 10 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:44] |
-| BloodElf/ROGUE | 10 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:44] |
-| BloodElf/WARLOCK | 10 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:44] |
-| Draenei/HUNTER | 10 | A_Hellfire (An Old Gift) [outland/a60_hellfire.guide:60] |
-| Draenei/MAGE | 10 | A_Hellfire (An Old Gift) [outland/a60_hellfire.guide:60] |
-| Draenei/PALADIN | 10 | A_Hellfire (An Old Gift) [outland/a60_hellfire.guide:60] |
-| Draenei/PRIEST | 10 | A_Hellfire (An Old Gift) [outland/a60_hellfire.guide:60] |
-| Draenei/SHAMAN | 10 | A_Hellfire (An Old Gift) [outland/a60_hellfire.guide:60] |
-| Draenei/WARRIOR | 10 | A_Hellfire (An Old Gift) [outland/a60_hellfire.guide:60] |
-| Dwarf/HUNTER | 10 | A_Hellfire (An Old Gift) [outland/a60_hellfire.guide:60] |
-| Dwarf/PALADIN | 10 | A_Hellfire (An Old Gift) [outland/a60_hellfire.guide:60] |
-| Dwarf/PRIEST | 10 | A_Hellfire (An Old Gift) [outland/a60_hellfire.guide:60] |
+| Orc/SHAMAN | 20 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| Troll/SHAMAN | 20 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| BloodElf/ROGUE | 19 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| Orc/ROGUE | 19 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| Orc/WARRIOR | 19 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| Troll/ROGUE | 19 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| Troll/WARRIOR | 19 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| BloodElf/HUNTER | 18 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| BloodElf/MAGE | 18 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| BloodElf/PALADIN | 18 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| BloodElf/PRIEST | 18 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| BloodElf/WARLOCK | 18 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| Orc/HUNTER | 18 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| Orc/WARLOCK | 18 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
+| Scourge/ROGUE | 18 | H_Barrens (Chen's Empty Keg) [horde/10_barrens.guide:119] |
 
 ## Errors
 
@@ -104,26 +104,176 @@ None.
 
 ## Warnings
 
-None.
+- Dwarf/WARRIOR: A_Redridge (Elmore's Task) [alliance/12_redridge.guide:36]: turn-in of a quest never accepted on this route
+- Dwarf/PALADIN: A_Redridge (Elmore's Task) [alliance/12_redridge.guide:36]: turn-in of a quest never accepted on this route
+- Dwarf/HUNTER: A_Redridge (Elmore's Task) [alliance/12_redridge.guide:36]: turn-in of a quest never accepted on this route
+- Dwarf/ROGUE: A_Redridge (Elmore's Task) [alliance/12_redridge.guide:36]: turn-in of a quest never accepted on this route
+- Dwarf/PRIEST: A_Redridge (Elmore's Task) [alliance/12_redridge.guide:36]: turn-in of a quest never accepted on this route
+- NightElf/WARRIOR: A_Stranglethorn (The Legend of Stalvan) [alliance/22_stranglethorn.guide:40]: turn-in of a quest never accepted on this route
+- NightElf/WARRIOR: A_Stranglethorn (Worgen in the Woods) [alliance/22_stranglethorn.guide:68]: turn-in of a quest never accepted on this route
+- NightElf/HUNTER: A_Stranglethorn (The Legend of Stalvan) [alliance/22_stranglethorn.guide:40]: turn-in of a quest never accepted on this route
+- NightElf/HUNTER: A_Stranglethorn (Worgen in the Woods) [alliance/22_stranglethorn.guide:68]: turn-in of a quest never accepted on this route
+- NightElf/ROGUE: A_Stranglethorn (The Legend of Stalvan) [alliance/22_stranglethorn.guide:40]: turn-in of a quest never accepted on this route
+- NightElf/ROGUE: A_Stranglethorn (Worgen in the Woods) [alliance/22_stranglethorn.guide:68]: turn-in of a quest never accepted on this route
+- NightElf/PRIEST: A_Stranglethorn (The Legend of Stalvan) [alliance/22_stranglethorn.guide:40]: turn-in of a quest never accepted on this route
+- NightElf/PRIEST: A_Stranglethorn (Worgen in the Woods) [alliance/22_stranglethorn.guide:68]: turn-in of a quest never accepted on this route
+- NightElf/DRUID: A_Stranglethorn (The Legend of Stalvan) [alliance/22_stranglethorn.guide:40]: turn-in of a quest never accepted on this route
+- NightElf/DRUID: A_Stranglethorn (Worgen in the Woods) [alliance/22_stranglethorn.guide:68]: turn-in of a quest never accepted on this route
+- Gnome/WARRIOR: A_Redridge (Elmore's Task) [alliance/12_redridge.guide:36]: turn-in of a quest never accepted on this route
+- Gnome/ROGUE: A_Redridge (Elmore's Task) [alliance/12_redridge.guide:36]: turn-in of a quest never accepted on this route
+- Gnome/MAGE: A_Redridge (Elmore's Task) [alliance/12_redridge.guide:36]: turn-in of a quest never accepted on this route
+- Gnome/WARLOCK: A_Redridge (Elmore's Task) [alliance/12_redridge.guide:36]: turn-in of a quest never accepted on this route
+- Draenei/WARRIOR: A_Stranglethorn (The Legend of Stalvan) [alliance/22_stranglethorn.guide:40]: turn-in of a quest never accepted on this route
+- Draenei/WARRIOR: A_Stranglethorn (Worgen in the Woods) [alliance/22_stranglethorn.guide:68]: turn-in of a quest never accepted on this route
+- Draenei/PALADIN: A_Stranglethorn (The Legend of Stalvan) [alliance/22_stranglethorn.guide:40]: turn-in of a quest never accepted on this route
+- Draenei/PALADIN: A_Stranglethorn (Worgen in the Woods) [alliance/22_stranglethorn.guide:68]: turn-in of a quest never accepted on this route
+- Draenei/HUNTER: A_Stranglethorn (The Legend of Stalvan) [alliance/22_stranglethorn.guide:40]: turn-in of a quest never accepted on this route
+- Draenei/HUNTER: A_Stranglethorn (Worgen in the Woods) [alliance/22_stranglethorn.guide:68]: turn-in of a quest never accepted on this route
+- Draenei/PRIEST: A_Stranglethorn (The Legend of Stalvan) [alliance/22_stranglethorn.guide:40]: turn-in of a quest never accepted on this route
+- Draenei/PRIEST: A_Stranglethorn (Worgen in the Woods) [alliance/22_stranglethorn.guide:68]: turn-in of a quest never accepted on this route
+- Draenei/SHAMAN: A_Stranglethorn (The Legend of Stalvan) [alliance/22_stranglethorn.guide:40]: turn-in of a quest never accepted on this route
+- Draenei/SHAMAN: A_Stranglethorn (Worgen in the Woods) [alliance/22_stranglethorn.guide:68]: turn-in of a quest never accepted on this route
+- Draenei/MAGE: A_Stranglethorn (The Legend of Stalvan) [alliance/22_stranglethorn.guide:40]: turn-in of a quest never accepted on this route
+- Draenei/MAGE: A_Stranglethorn (Worgen in the Woods) [alliance/22_stranglethorn.guide:68]: turn-in of a quest never accepted on this route
 
 ## Findings (per guide)
 
-- A_Ashenvale: level-gated pickup: A Helping Hand (9533) needs 22, guide estimate 20.8
-- A_Darkshore: level-gated pickup: The Tower of Althalaxx (965) needs 13, guide estimate 11.9
-- A_Draenei_Azuremyst: level-gated pickup: Learning the Language (9538) needs 8, guide estimate 5.6
-- A_Draenei_Azuremyst: level-gated pickup: Totem of Coo (9539) needs 8, guide estimate 6.7
-- A_Draenei_Bloodmyst: level-gated pickup: Constrictor Vines (9643) needs 14, guide estimate 12.0
-- A_Draenei_Bloodmyst: level-gated pickup: Intercepting the Message (9779) needs 14, guide estimate 12.9
-- A_Draenei_Bloodmyst: level-gated pickup: Irradiated Crystal Shards (9641) needs 13, guide estimate 11.8
-- A_Draenei_Bloodmyst: level-gated pickup: Know Thine Enemy (9567) needs 13, guide estimate 11.7
-- A_Draenei_Bloodmyst: level-gated pickup: The Bear Necessities (9580) needs 14, guide estimate 11.9
-- A_DwarfGnome_DunMorogh: level-gated pickup: A Refugee's Quandary (3361) needs 3, guide estimate 1.3
-- A_DwarfGnome_DunMorogh: level-gated pickup: Frostmane Hold (287) needs 7, guide estimate 5.9
-- A_Hillsbrad: level-gated pickup: Costly Menace (564) needs 30, guide estimate 28.4
-- A_Hillsbrad: level-gated pickup: Crushridge Bounty (500) needs 30, guide estimate 28.4
-- A_Hillsbrad: level-gated pickup: Hints of a New Plague? (659) needs 30, guide estimate 28.5
-- A_Human_Elwynn: level-gated pickup: A Fishy Peril (40) needs 7, guide estimate 5.2
-- A_Human_Elwynn: level-gated pickup: Further Concerns (35) needs 7, guide estimate 5.7
-- H_BloodElf_Ghostlands: level-gated pickup: Shadowpine Weaponry (9214) needs 15, guide estimate 12.6
+- A_Ashenvale: level-gated pickup: A Helping Hand (9533) needs 22, guide estimate 20.5
+- A_Darkshore: level-gated pickup: Fruit of the Sea (1138) needs 15, guide estimate 12.0
+- A_Draenei_Azuremyst: level-gated pickup: A Hearty Thanks! (9612) needs 8, guide estimate 4.2
+- A_Draenei_Azuremyst: level-gated pickup: Call of Fire (9464) needs 10, guide estimate 8.8
+- A_Draenei_Azuremyst: level-gated pickup: Coming of Age (9623) needs 10, guide estimate 8.7
+- A_Draenei_Azuremyst: level-gated pickup: Learning the Language (9538) needs 8, guide estimate 4.6
+- A_Draenei_Azuremyst: level-gated pickup: Seek Huntress Kella Nightbow (9757) needs 10, guide estimate 8.8
+- A_Draenei_Azuremyst: level-gated pickup: Strength of One (9582) needs 10, guide estimate 8.9
+- A_Draenei_Azuremyst: level-gated pickup: Taming the Beast (9591) needs 10, guide estimate 8.9
+- A_Draenei_Azuremyst: level-gated pickup: The Missing Fisherman (10428) needs 8, guide estimate 5.1
+- A_Draenei_Azuremyst: level-gated pickup: Totem of Coo (9539) needs 8, guide estimate 5.5
+- A_Draenei_Azuremyst: level-gated pickup: Travel to Azure Watch (9313) needs 4, guide estimate 2.9
+- A_Draenei_Azuremyst: level-gated pickup: Warn Your People (9622) needs 10, guide estimate 8.6
+- A_Draenei_Bloodmyst: level-gated pickup: Call of Water (9501) needs 20, guide estimate 16.3
+- A_Draenei_Bloodmyst: level-gated pickup: Call of Water (9502) needs 20, guide estimate 16.2
+- A_Draenei_Bloodmyst: level-gated pickup: Call of Water (9503) needs 20, guide estimate 16.4
+- A_Draenei_Bloodmyst: level-gated pickup: Constrictor Vines (9643) needs 14, guide estimate 11.8
+- A_Draenei_Bloodmyst: level-gated pickup: Critters of the Void (9741) needs 16, guide estimate 12.7
+- A_Draenei_Bloodmyst: level-gated pickup: Cutting a Path (10065) needs 16, guide estimate 12.7
+- A_Draenei_Bloodmyst: level-gated pickup: Intercepting the Message (9779) needs 14, guide estimate 12.3
+- A_Draenei_Bloodmyst: level-gated pickup: Irradiated Crystal Shards (9641) needs 13, guide estimate 11.6
+- A_Draenei_Bloodmyst: level-gated pickup: Know Thine Enemy (9567) needs 13, guide estimate 11.6
+- A_Draenei_Bloodmyst: level-gated pickup: Redemption (9598) needs 12, guide estimate 10.5
+- A_Draenei_Bloodmyst: level-gated pickup: Redemption (9600) needs 12, guide estimate 10.6
+- A_Draenei_Bloodmyst: level-gated pickup: Restoring Sanctity (9687) needs 15, guide estimate 13.5
+- A_Draenei_Bloodmyst: level-gated pickup: The Bear Necessities (9580) needs 14, guide estimate 11.7
+- A_Draenei_Bloodmyst: level-gated pickup: Urgent Delivery (9671) needs 15, guide estimate 13.7
+- A_Draenei_Bloodmyst: level-gated pickup: Ysera's Tears (9649) needs 15, guide estimate 13.5
+- A_Draenei_Bloodmyst: reduced-XP quest: Hippogryph Master Stephanos (9605, level 10) at estimated level 17.4
+- A_Draenei_Bloodmyst: reduced-XP quest: On the Wings of a Hippogryph (9604, level 10) at estimated level 17.3
+- A_Duskwood: level-gated pickup: The Legend of Stalvan (67) needs 22, guide estimate 20.3
+- A_Duskwood: level-gated pickup: The Weathered Grave (225) needs 25, guide estimate 20.9
+- A_Duskwood: level-gated pickup: Worgen in the Woods (173) needs 23, guide estimate 20.4
+- A_DwarfGnome_DunMorogh: level-gated pickup: A Refugee's Quandary (3361) needs 3, guide estimate 1.2
+- A_DwarfGnome_DunMorogh: level-gated pickup: Frostmane Hold (287) needs 7, guide estimate 5.1
+- A_DwarfGnome_DunMorogh: level-gated pickup: Operation Recombobulation (412) needs 7, guide estimate 5.9
+- A_DwarfGnome_DunMorogh: level-gated pickup: Taming the Beast (6064) needs 10, guide estimate 8.3
+- A_DwarfGnome_DunMorogh: level-gated pickup: Taming the Beast (6084) needs 10, guide estimate 8.5
+- A_DwarfGnome_DunMorogh: level-gated pickup: Taming the Beast (6085) needs 10, guide estimate 8.7
+- A_DwarfGnome_DunMorogh: level-gated pickup: Training the Beast (6086) needs 10, guide estimate 8.9
+- A_Hillsbrad: level-gated pickup: Costly Menace (564) needs 30, guide estimate 28.3
+- A_Hillsbrad: level-gated pickup: Crushridge Bounty (500) needs 30, guide estimate 28.3
+- A_Hillsbrad: level-gated pickup: Hints of a New Plague? (659) needs 30, guide estimate 28.3
+- A_Human_Elwynn: level-gated pickup: A Fishy Peril (40) needs 7, guide estimate 4.8
+- A_Human_Elwynn: level-gated pickup: Further Concerns (35) needs 7, guide estimate 5.3
+- A_NightElf_Teldrassil: level-gated pickup: Back to Darnassus (5931) needs 10, guide estimate 7.3
+- A_NightElf_Teldrassil: level-gated pickup: Crown of the Earth (921) needs 4, guide estimate 2.9
+- A_NightElf_Teldrassil: level-gated pickup: Elanaria (1684) needs 10, guide estimate 7.4
+- A_NightElf_Teldrassil: level-gated pickup: Great Bear Spirit (5929) needs 10, guide estimate 7.1
+- A_NightElf_Teldrassil: level-gated pickup: In Favor of Elune (5622) needs 5, guide estimate 2.0
+- A_NightElf_Teldrassil: level-gated pickup: Moonglade (5921) needs 10, guide estimate 6.9
+- A_NightElf_Teldrassil: level-gated pickup: Taming the Beast (6063) needs 10, guide estimate 7.5
+- A_NightElf_Teldrassil: level-gated pickup: Taming the Beast (6101) needs 10, guide estimate 7.7
+- A_NightElf_Teldrassil: level-gated pickup: Taming the Beast (6102) needs 10, guide estimate 8.1
+- A_NightElf_Teldrassil: level-gated pickup: Tears of the Moon (2518) needs 8, guide estimate 7.0
+- A_NightElf_Teldrassil: level-gated pickup: Tenaron's Summons (920) needs 4, guide estimate 2.8
+- A_NightElf_Teldrassil: level-gated pickup: The Apple Falls (2241) needs 10, guide estimate 8.5
+- A_NightElf_Teldrassil: level-gated pickup: Training the Beast (6103) needs 10, guide estimate 8.2
+- A_NightElf_Teldrassil: level-gated pickup: Webwood Venom (916) needs 3, guide estimate 1.7
+- A_Redridge: level-gated pickup: A Watchful Eye (94) needs 20, guide estimate 15.9
+- A_Redridge: level-gated pickup: Mathias and the Defias (2360) needs 20, guide estimate 15.1
+- A_Redridge: level-gated pickup: Murloc Poachers (150) needs 20, guide estimate 18.4
+- A_Redridge: level-gated pickup: The Binding (1739) needs 20, guide estimate 15.8
+- A_Redridge: level-gated pickup: The Legend of Stalvan (66) needs 22, guide estimate 17.4
+- A_Redridge: level-gated pickup: The Tome of Valor (1649) needs 20, guide estimate 15.6
+- A_Redridge: level-gated pickup: The Tome of Valor (1650) needs 20, guide estimate 15.7
+- A_Stranglethorn: reduced-XP quest: Supply and Demand (575, level 31) at estimated level 37.1
+- A_Stranglethorn: reduced-XP quest: The Legend of Stalvan (80, level 28) at estimated level 34.1
+- A_Stranglethorn: reduced-XP quest: The Legend of Stalvan (97, level 28) at estimated level 34.3
+- A_Wetlands: level-gated pickup: MacKreel's Moonshine (647) needs 28, guide estimate 26.5
+- A_Wetlands: level-gated pickup: The Thandol Span (631) needs 28, guide estimate 26.7
+- A_Wetlands: level-gated pickup: The Thandol Span (632) needs 28, guide estimate 26.8
+- A_Wetlands: level-gated pickup: The Thandol Span (633) needs 28, guide estimate 26.9
+- H_Barrens: level-gated pickup: Blind Cazul (1508) needs 20, guide estimate 17.9
+- H_Barrens: level-gated pickup: Calling in the Reserves (5881) needs 23, guide estimate 18.3
+- H_Barrens: level-gated pickup: Devourer of Souls (1507) needs 20, guide estimate 17.8
+- H_Barrens: level-gated pickup: News of Dogran (1509) needs 20, guide estimate 18.0
+- H_Barrens: level-gated pickup: News of Dogran (1510) needs 20, guide estimate 18.1
+- H_Barrens: level-gated pickup: Report to Splintertree Post (9428) needs 18, guide estimate 14.6
+- H_Barrens: level-gated pickup: Wrenix of Ratchet (2382) needs 16, guide estimate 13.1
+- H_Barrens: level-gated pickup: Zando'zan (2379) needs 16, guide estimate 13.0
+- H_Barrens: reduced-XP quest: Kyle's Gone Missing! (11129, level 7) at estimated level 13.6
+- H_Barrens: reduced-XP quest: Return to Jahan (6364, level 10) at estimated level 16.5
+- H_Barrens: reduced-XP quest: Ride to Thunder Bluff (6362, level 10) at estimated level 16.3
+- H_Barrens: reduced-XP quest: Tal the Wind Rider Master (6363, level 10) at estimated level 16.4
+- H_BloodElf_Eversong: level-gated pickup: Beast Training (9673) needs 10, guide estimate 8.6
+- H_BloodElf_Eversong: level-gated pickup: Cleansing the Scar (9489) needs 5, guide estimate 3.7
+- H_BloodElf_Eversong: level-gated pickup: Corrupted Soil (8487) needs 7, guide estimate 5.9
+- H_BloodElf_Eversong: level-gated pickup: Darnassian Intrusions (9352) needs 5, guide estimate 4.0
+- H_BloodElf_Eversong: level-gated pickup: Fetch! (9402) needs 10, guide estimate 5.1
+- H_BloodElf_Eversong: level-gated pickup: Missing in the Ghostlands (9144) needs 10, guide estimate 7.3
+- H_BloodElf_Eversong: level-gated pickup: Ranger Sareyn (9358) needs 8, guide estimate 5.6
+- H_BloodElf_Eversong: level-gated pickup: Saltheril's Haven (9395) needs 8, guide estimate 5.7
+- H_BloodElf_Eversong: level-gated pickup: Summons from Knight-Lord Bloodvalor (9677) needs 12, guide estimate 5.0
+- H_BloodElf_Eversong: level-gated pickup: Taming the Beast (9484) needs 10, guide estimate 7.8
+- H_BloodElf_Eversong: level-gated pickup: Taming the Beast (9485) needs 10, guide estimate 8.1
+- H_BloodElf_Eversong: level-gated pickup: Taming the Beast (9486) needs 10, guide estimate 8.0
+- H_BloodElf_Eversong: level-gated pickup: The First Trial (9678) needs 12, guide estimate 9.3
+- H_BloodElf_Eversong: level-gated pickup: The Party Never Ends (9067) needs 7, guide estimate 5.8
+- H_BloodElf_Eversong: level-gated pickup: The Purest Water (9403) needs 10, guide estimate 5.2
+- H_BloodElf_Eversong: level-gated pickup: The Scorched Grove (9258) needs 8, guide estimate 5.6
+- H_BloodElf_Eversong: level-gated pickup: The Stone (9529) needs 10, guide estimate 5.1
+- H_BloodElf_Eversong: level-gated pickup: The Wayward Apprentice (9254) needs 7, guide estimate 5.7
+- H_BloodElf_Ghostlands: level-gated pickup: A Discreet Inquiry (10372) needs 16, guide estimate 11.1
+- H_BloodElf_Ghostlands: level-gated pickup: A Little Dash of Seasoning (9275) needs 16, guide estimate 13.1
+- H_BloodElf_Ghostlands: level-gated pickup: Greed (9491) needs 16, guide estimate 13.0
+- H_BloodElf_Ghostlands: level-gated pickup: Rogues of the Shattered Hand (10794) needs 20, guide estimate 16.6
+- H_BloodElf_Ghostlands: level-gated pickup: Shadowpine Weaponry (9214) needs 15, guide estimate 13.1
+- H_BloodElf_Ghostlands: level-gated pickup: The Sanctum of the Sun (9151) needs 17, guide estimate 12.5
+- H_OrcTroll_Durotar: level-gated pickup: Call of Fire (2983) needs 10, guide estimate 7.4
+- H_OrcTroll_Durotar: level-gated pickup: Carry Your Weight (791) needs 4, guide estimate 2.9
+- H_OrcTroll_Durotar: level-gated pickup: Creature of the Void (1501) needs 10, guide estimate 8.9
+- H_OrcTroll_Durotar: level-gated pickup: Gan'rul's Summons (1506) needs 10, guide estimate 7.4
+- H_OrcTroll_Durotar: level-gated pickup: Taming the Beast (6062) needs 10, guide estimate 7.5
+- H_OrcTroll_Durotar: level-gated pickup: Taming the Beast (6082) needs 10, guide estimate 7.8
+- H_OrcTroll_Durotar: level-gated pickup: Taming the Beast (6083) needs 10, guide estimate 7.6
+- H_OrcTroll_Durotar: level-gated pickup: The Admiral's Orders (830) needs 5, guide estimate 3.9
+- H_OrcTroll_Durotar: level-gated pickup: Training the Beast (6081) needs 10, guide estimate 7.9
 - H_Stranglethorn: reduced-XP quest: Supply and Demand (575, level 31) at estimated level 37.5
-- H_Tauren_Mulgore: level-gated pickup: Call of Earth (1519) needs 4, guide estimate 2.9
+- H_Tauren_Mulgore: level-gated pickup: A Sacred Burial (833) needs 7, guide estimate 5.4
+- H_Tauren_Mulgore: level-gated pickup: Back to Thunder Bluff (5932) needs 10, guide estimate 8.2
+- H_Tauren_Mulgore: level-gated pickup: Body and Heart (6002) needs 10, guide estimate 8.3
+- H_Tauren_Mulgore: level-gated pickup: Call of Earth (1519) needs 4, guide estimate 2.2
+- H_Tauren_Mulgore: level-gated pickup: Call of Fire (2984) needs 10, guide estimate 6.5
+- H_Tauren_Mulgore: level-gated pickup: Dwarven Digging (746) needs 6, guide estimate 4.3
+- H_Tauren_Mulgore: level-gated pickup: Great Bear Spirit (5930) needs 10, guide estimate 8.0
+- H_Tauren_Mulgore: level-gated pickup: Heeding the Call (5928) needs 10, guide estimate 6.6
+- H_Tauren_Mulgore: level-gated pickup: Hidden Enemies (5726) needs 9, guide estimate 6.1
+- H_Tauren_Mulgore: level-gated pickup: Kyle's Gone Missing! (11129) needs 5, guide estimate 3.8
+- H_Tauren_Mulgore: level-gated pickup: Mazzranache (766) needs 5, guide estimate 3.9
+- H_Tauren_Mulgore: level-gated pickup: Moonglade (5922) needs 10, guide estimate 7.9
+- H_Tauren_Mulgore: level-gated pickup: Sergra Darkthorn (860) needs 10, guide estimate 8.8
+- H_Tauren_Mulgore: level-gated pickup: Taming the Beast (6061) needs 10, guide estimate 6.6
+- H_Tauren_Mulgore: level-gated pickup: Taming the Beast (6087) needs 10, guide estimate 6.8
+- H_Tauren_Mulgore: level-gated pickup: Taming the Beast (6088) needs 10, guide estimate 7.0
+- H_Tauren_Mulgore: level-gated pickup: The Barrens Oases (886) needs 10, guide estimate 7.8
+- H_Tauren_Mulgore: level-gated pickup: The Hunter's Way (861) needs 10, guide estimate 7.2
+- H_Tauren_Mulgore: level-gated pickup: The Venture Co. (764) needs 6, guide estimate 4.8
+- H_Undead_Tirisfal: level-gated pickup: In Favor of Darkness (5651) needs 5, guide estimate 3.7

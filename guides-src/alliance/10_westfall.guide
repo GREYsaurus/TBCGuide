@@ -10,6 +10,15 @@
 @desc Farms of northern Westfall, Sentinel Hill and the Jangolode Mine, then the coast and the Defias chain up to Moonbrook. Leaves for Redridge at about 15-16.
 @next A_Redridge
 
+accept 184 Furlbrow's Deed [race=Dwarf,Night Elf,Gnome,Draenei; optional]
+accept 1097 Elmore's Task [race=Dwarf,Night Elf,Gnome,Draenei]
+accept 1685 Gakin's Summons [class=Warlock; race=Gnome; optional]
+accept 5635 Desperate Prayer [class=Priest; race=Dwarf; optional]
+accept 1638 A Warrior's Training [class=Warrior; race=Dwarf,Night Elf,Gnome,Draenei; optional]
+accept 123 The Collector [race=Dwarf,Night Elf,Gnome,Draenei; optional]
+turnin 123 The Collector [class=Warrior,Rogue,Mage; race=Gnome; optional]
+turnin 123 The Collector [race=Dwarf,Night Elf,Draenei; optional]
+turnin 184 Furlbrow's Deed [race=Dwarf,Night Elf,Gnome,Draenei; optional]
 accept Westfall Stew | Verna Furlbrow waits by the wagon at the Furlbrow farm, just over the Elwynn border.
 accept Poor Old Blanchy
 accept The Forgotten Heirloom
@@ -18,6 +27,19 @@ accept 38 Westfall Stew
 accept Goretusk Liver Pie
 accept The Killing Fields
 turnin Report to Gryan Stoutmantle [mark=star] | Sentinel Hill tower.
+accept 6181 A Swift Message [race=Human; optional]
+turnin 6181 A Swift Message [race=Human; optional]
+accept 6281 Continue to Stormwind [race=Human]
+turnin 61 Shipment to Stormwind [race=Human]
+turnin 1685 Gakin's Summons [class=Warlock; race=Human,Gnome; optional]
+turnin 123 The Collector [class=Warlock; race=Gnome; optional]
+turnin 6281 Continue to Stormwind [race=Human]
+turnin 1638 A Warrior's Training [class=Warrior; optional]
+accept 1639 Bartleby the Drunk [class=Warrior]
+turnin 1639 Bartleby the Drunk [class=Warrior]
+accept 1665 Bartleby's Mug [class=Warrior; race=Dwarf,Night Elf,Gnome,Draenei]
+turnin 1665 Bartleby's Mug [class=Warrior; race=Dwarf,Night Elf,Gnome,Draenei]
+turnin 5635 Desperate Prayer [class=Priest; race=Human,Dwarf; optional]
 accept 12 The People's Militia
 accept Patrolling Westfall
 accept Red Leather Bandanas

@@ -11,9 +11,32 @@
 @next H_Ashenvale
 
 turnin Letter to Jin'Zil [optional] | Witch Doctor Jin'Zil, if you took the letter in the Barrens.
+turnin 1510 News of Dogran [class=Warlock; race=Orc,Undead,Blood Elf]
+accept 1511 Ken'zigla's Draught [class=Warlock; race=Orc,Undead,Blood Elf]
+turnin 6461 Blood Feeders [class=Shaman; race=Orc,Tauren,Troll]
+turnin 6284 Arachnophobia [class=Shaman; race=Orc,Tauren,Troll]
+turnin 6401 Kaya's Alive
 accept Jin'Zil's Forest Magic | Witch Doctor Jin'Zil, Malaka'jin (south).
 accept Harpies Threaten | Maggran Earthbinder, Sun Rock Retreat.
 accept Trouble in the Deeps | Tsunaman. Turned in at Zoram'gar Outpost in Ashenvale (next guide).
+turnin 1095 Further Instructions
+accept 6641 Vorsha the Lasher [class=Shaman; race=Orc,Tauren,Troll]
+complete 6641 Vorsha the Lasher [class=Shaman; race=Orc,Tauren,Troll]
+turnin 6641 Vorsha the Lasher [class=Shaman; race=Orc,Tauren,Troll]
+turnin 1063 The Elder Crone
+accept 1064 Forsaken Aid [optional]
+turnin 1064 Forsaken Aid [optional]
+turnin 1511 Ken'zigla's Draught [class=Warlock; race=Orc,Undead,Blood Elf]
+accept 1515 Dogran's Captivity [class=Warlock; race=Orc,Undead,Blood Elf]
+turnin 1515 Dogran's Captivity [class=Warlock; race=Orc,Undead,Blood Elf]
+accept 1512 Love's Gift [class=Warlock; race=Orc,Undead,Blood Elf]
+accept 1535 Call of Water [class=Shaman; race=Orc,Tauren,Troll]
+complete 1535 Call of Water [class=Shaman; race=Orc,Tauren,Troll]
+turnin 1535 Call of Water [class=Shaman; race=Orc,Tauren,Troll]
+turnin 1512 Love's Gift [class=Warlock; race=Orc,Undead,Blood Elf]
+accept 2458 Deep Cover [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
+turnin 5642 Shadowguard [class=Priest; race=Troll]
+turnin 2458 Deep Cover [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
 accept Cenarius' Legacy | Braelyn Firehand.
 fp Sun Rock Retreat
 bind Sun Rock Retreat

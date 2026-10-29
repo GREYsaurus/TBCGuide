@@ -63,18 +63,19 @@ local pending = {}
 local throttleFrame = CreateFrame("Frame")
 throttleFrame:Hide()
 throttleFrame:SetScript("OnUpdate", function(self, elapsed)
-    local any = false
+    -- Collect due jobs first: a job may schedule another one, and adding keys during pairs() is invalid.
+    local due = {}
     for key, job in pairs(pending) do
         job.left = job.left - elapsed
-        if job.left <= 0 then
-            pending[key] = nil
-            local ok, err = pcall(job.fn)
-            if not ok then ns:Error(key .. ": " .. tostring(err)) end
-        else
-            any = true
-        end
+        if job.left <= 0 then due[#due + 1] = key end
     end
-    if not any and not next(pending) then self:Hide() end
+    for _, key in ipairs(due) do
+        local job = pending[key]
+        pending[key] = nil
+        local ok, err = pcall(job.fn)
+        if not ok then ns:Error(key .. ": " .. tostring(err)) end
+    end
+    if not next(pending) then self:Hide() end
 end)
 
 function ns:Throttle(key, delay, fn)

@@ -25,19 +25,16 @@ function OF:Create()
     self.frame = f
     tinsert(UISpecialFrames, "TBCGuideOrphanFrame")
 
-    local title = W.Text(f, "GameFontNormalLarge")
-    title:SetPoint("TOPLEFT", 12, -10)
-    title:SetText("Orphaned quests")
+    W.TitleBar(f, "Orphaned quests")
     self.info = W.Text(f, "GameFontHighlightSmall")
     self.info:SetPoint("TOPLEFT", 12, -32)
     self.info:SetWidth(336)
 
     for i = 1, ROWS do
-        local cb = CreateFrame("CheckButton", nil, f, "UICheckButtonTemplate")
-        cb:SetSize(20, 20)
+        local cb = W.Check(f, 16)
         cb:SetPoint("TOPLEFT", 10, -62 - (i - 1) * ROW_H)
         local text = W.Text(cb, "GameFontHighlightSmall")
-        text:SetPoint("LEFT", cb, "RIGHT", 2, 0)
+        text:SetPoint("LEFT", cb, "RIGHT", 8, 0)
         text:SetWidth(310)
         cb.label = text
         cb:SetScript("OnClick", function(self)

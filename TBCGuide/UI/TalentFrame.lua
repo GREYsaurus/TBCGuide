@@ -163,9 +163,7 @@ function TF:Create()
     W.CloseButton(f)
     tinsert(UISpecialFrames, "TBCGuideTalentFrame")
 
-    local title = W.Text(f, "GameFontNormalLarge")
-    title:SetPoint("TOPLEFT", 12, -10)
-    title:SetText("TBCGuide - Talents")
+    W.TitleBar(f, "TBCGuide - Talents")
 
     self.class = ns.Compat.PlayerInfo().class
 
@@ -220,6 +218,7 @@ function TF:Create()
         if label then label:SetText("Show build at level " .. TF.previewLevel) end
         TF:Render()
     end)
+    W.SkinSlider(slider, "TBCGuideTalentLevel")
     local low, high = _G["TBCGuideTalentLevelLow"], _G["TBCGuideTalentLevelHigh"]
     if low then low:SetText("10") end
     if high then high:SetText(tostring(ns.Target.maxLevel)) end

@@ -2,7 +2,7 @@
 ## Title: TBCGuide
 ## Notes: Free TBC Classic leveling guides (1-70), bundled quest database and talent guide. GPL-3.0.
 ## Author: GREYsaurus
-## Version: 0.6.0
+## Version: 0.7.0
 ## Category: Quests
 ## SavedVariables: TBCGuideDB
 ## SavedVariablesPerCharacter: TBCGuideCharDB
@@ -28,6 +28,7 @@ Database\QuestieTBC\Items.lua
 Database\RaceClass.lua
 Database\Overrides.lua
 Database\EscortQuests.lua
+Database\Dungeons.lua
 Database\QuestDB.lua
 
 # Guides (generated from guides-src/*.guide by tools/build.ps1)
@@ -43,6 +44,8 @@ Talents\Builds\Builds.xml
 # Gear scoring (researched profiles: docs/GEAR_RESEARCH.md)
 Gear\Profiles.lua
 Gear\Gear.lua
+Gear\Upgrade.lua
+Gear\AutoEquip.lua
 
 # Engine
 Core\QuestTracker.lua
@@ -55,6 +58,8 @@ Core\QuestAuto.lua
 Core\Orphans.lua
 Core\Marker.lua
 Core\Assist.lua
+Core\Group.lua
+Core\FlightTimer.lua
 
 # UI
 UI\Widgets.lua
@@ -69,6 +74,11 @@ UI\AutomationOptions.lua
 UI\OrphanFrame.lua
 UI\MarkerBar.lua
 UI\GearUI.lua
+UI\GearMarkers.lua
+UI\ActiveItems.lua
+UI\ActiveTargets.lua
+UI\LevelTracker.lua
+UI\MapExtras.lua
 
 # Commands, diagnostics, start-up
 Core\Commands.lua

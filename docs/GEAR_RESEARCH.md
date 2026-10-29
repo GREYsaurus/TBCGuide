@@ -76,6 +76,10 @@ Weights are per point of stat or rating, with AP/RAP/SP = 1. "Phase" is the gear
 - S1 (BM, P1, hit-capped preset): Agi 2.5, Str 0.15, AP 0.15, RAP 1, Hit 0.3, Crit 2.3, Haste 1.97, ArP 0.4, Int 0.01.
 - *Disagreement:* S2 and S3 rank Armor Penetration second, right after hit; S1 values it at 0.4. ArP's value grows with gear phase, so S1's P1 number is used and the conflict is recorded.
 - S2's Survival list differs (Agi first, hit cap 2%). There are no numbers for Marksmanship or Survival.
+- **Checked again 2026-10-29:** S2 has separate Marksmanship and Survival pages (updated 2026-01-12, "Reviewed and Updated for TBC Anniversary Realms").
+  - Marksmanship: Hit to 5% with raid buffs > ArP > Agi > AP > Crit.
+  - Survival: Agi > Crit > Hit to 2% with buffs > ArP > AP. Surefooted gives 3%, so 6% (95 rating) comes from gear without buffs.
+  - Both are now priority-only profiles (`hunter_mm_raid`, `hunter_sv_raid`).
 
 ### Mage: Arcane **Medium**; Fire and Frost **Low**
 - S1's mage defaults are for **Arcane** (P1): Int 1.29, Spi 0.89, SP 1, Crit 0.77, Haste 0.84, Mp5 0.61. S2's Arcane list (Hit to 76 > Int ≥ SP > Haste > Crit > Spi) agrees.
@@ -85,7 +89,8 @@ Weights are per point of stat or rating, with AP/RAP/SP = 1. "Phase" is the gear
 - S1 (Shadow, P1): Int 0.05, Spi 0.11, SP 1, Crit 0.163, Haste 1.0, Mp5 0. The sim file itself notes the haste value is uncertain.
 - *Disagreement:* S3 does not list Haste (SP > Hit > Crit > Int/Spi/Mp5); S2 lists Hit > SP > Haste > Crit.
 - **Holy:** priority only. S2: Haste > Healing > Crit > Spi > Int > Mp5. S3: Haste > Healing > Int/Spi > Crit > Mp5.
-- **Discipline:** no stat page exists (S2 returns 404).
+- **Discipline:** no stat page exists (S2 returns 404, checked again 2026-10-29).
+  - `priest_discipline_raid` uses the priest healer priority and says so in its assumptions.
 - S1 also has a "Smite" DPS sim. It's a niche spec and not proposed.
 
 ### Paladin: Retribution **Medium**; Holy and Protection **Low**
@@ -117,6 +122,9 @@ Weights are per point of stat or rating, with AP/RAP/SP = 1. "Phase" is the gear
 
 ## 5. Gaps
 
-- **No numerical weights at all:** Restoration Druid, Holy Priest, Discipline Priest, Holy Paladin, Protection Paladin, Protection Warrior, Arms Warrior, Fire Mage, Frost Mage, Marksmanship Hunter, Survival Hunter, Assassination and Subtlety Rogue (S2 has one Rogue page, written for Combat).
+- **No numerical weights at all:** Restoration Druid, Holy Priest, Discipline Priest, Holy Paladin, Protection Paladin, Protection Warrior, Arms Warrior, Fire Mage, Frost Mage, Marksmanship Hunter, Survival Hunter, Assassination and Subtlety Rogue.
+  - S2 and S3 each have one Rogue page for all specs (checked 2026-10-29), and its EP table is for Combat.
+  - Assassination and Subtlety are priority-only profiles with that page's order.
+  - Automatic upgrades estimate weights for all of these from the priority order. The method and its limits are in AUTO_EQUIP.md; the estimates are not attributed to any source.
 - **No PvP research.**
 - **Hit below cap:** S1's caster and Fury/BM presets are already hit-capped, so S1 has no value for hit below the cap. Only S2's Warlock numbers and S1/S2's Rogue numbers give one.

@@ -51,7 +51,9 @@ function D:Api()
         "GetQuestMoneyToGet", "C_QuestLog.GetMaxNumQuestsCanAccept", "Settings.RegisterCanvasLayoutSubcategory",
         -- raid markers
         "SetRaidTarget", "GetRaidTargetIndex", "UnitGUID", "IsInRaid", "UnitIsGroupLeader", "UnitIsGroupAssistant",
-        "InCombatLockdown",
+        "InCombatLockdown", "C_Container.PickupContainerItem", "PickupContainerItem", "EquipCursorItem",
+        "GetInventoryItemID", "IsEquippableItem", "C_Container.GetContainerNumFreeSlots", "GetContainerNumFreeSlots",
+        "CursorHasItem", "ClearCursor", "hooksecurefunc", "ContainerFrame_Update",
     }
     ns:Print("API availability:")
     for _, a in ipairs(apis) do

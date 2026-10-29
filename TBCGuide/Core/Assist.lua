@@ -527,6 +527,40 @@ function A:Init()
     self:ApplyFrames()
     self:ApplyNameplateDistance()
     self:CheckConflicts()
+    ns:Listen("TBCG_GUIDE_CHANGED", function() A:Preload() end)
+    C_Timer.After(5, function() A:Preload() end)
+end
+
+-- Pre load all data: ask the client for the item data the current guide's quests use (objective and
+-- quest-starting items) and your bag items, a few per frame, so tooltips and scoring never wait.
+function A:Preload()
+    if not prof().preloadData then return end
+    local ids, seen = {}, {}
+    local function add(id) if id and not seen[id] then seen[id] = true ids[#ids + 1] = id end end
+    local g = ns.Engine and ns.Engine.guide
+    for _, s in ipairs(g and g.steps or {}) do
+        if s.q then for _, id in ipairs(ns.DB.GetQuestItems(s.q) or {}) do add(id) end end
+    end
+    for bag = 0, C.NUM_BAGS do
+        for slot = 1, C.GetContainerNumSlots(bag) do
+            local it = C.GetContainerItem(bag, slot)
+            add(it and it.itemID)
+        end
+    end
+    local req = C.Has("C_Item.RequestLoadItemDataByID")
+    local info = C.Has("C_Item.GetItemInfo") or C.Has("GetItemInfo")
+    local i = 0
+    local function batch()
+        for _ = 1, 20 do
+            i = i + 1
+            local id = ids[i]
+            if not id then return end
+            if req then pcall(req, id) elseif info then info(id) end
+        end
+        C_Timer.After(0.2, batch)
+    end
+    batch()
+    return #ids
 end
 
 -- Key binding target (Bindings.xml).

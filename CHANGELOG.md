@@ -1,5 +1,45 @@
 # Changelog
 
+## 0.7.0
+
+### Added
+- **Automatic upgrades** (opt-in, Tips → Automatic Upgrades). TBCGuide equips gear from your bags for the spec profile you choose.
+  - **What it equips:** empty slots get any usable item; filled slots only a higher estimated spec score.
+  - **Never:** in combat, with an open merchant, trade, bank, mail or auction window, or when the binding is unknown. **Never unbound Bind-on-Equip items.**
+  - **How:** one change at a time, confirmed before an on-screen message (optionally also in chat).
+  - **Protection:** protected slots, plus `/tbcg gear exclude <item>`.
+  - Details: docs/AUTO_EQUIP.md.
+- **BoE upgrade markers:** a green arrow on unbound Bind-on-Equip upgrades in the default bags. The tooltip says what it replaces and the estimated spec-score change, and that you need to equip it yourself.
+- **Spec profiles for every spec:** Marksmanship and Survival Hunter, Discipline Priest, and Assassination and Subtlety Rogue, so all 28 specs have one; Feral cat and bear stay separate.
+  - The Spec profile dropdown lists only your class and is saved per character.
+  - Specs without published numbers use **estimated** weights for automatic upgrades, labelled as estimates.
+
+- **Settings window features built** (all were greyed out before):
+  - **General:**
+    - Active Item window (click to use quest items);
+    - Vendor Treasures (merchant items that are upgrades for your spec);
+    - flight timers (each route is timed the first time you fly it);
+    - Group Settings switch;
+    - junk coin indicator in bags;
+    - talent plan (`/tbcg talents plan`).
+  - **Guide Routing:** choose single dungeons, *Select Recommended* and *Select all*.
+  - **Targeting:** Active Target Frame (click-to-target buttons for the step's NPCs, optional party leader target).
+  - **Leveling Tracker:** time per level from played time, XP per hour, a leveling report (`/tbcg tracker`), level splits with history, compare and total.
+  - **Communications:** version checks, party announcements (completion, collection, flights; only to other TBCGuide users unless you allow it), automatic quest sharing.
+  - **Tips:** map pins for elite/rare mobs and treasure chests.
+  - **Advanced:** low-quality mode, pre-load item data.
+
+### Changed
+- **New look:** every TBCGuide window has a flat dark style with a blue accent.
+  - Title bars; flat buttons, checkboxes, inputs, sliders and tabs.
+  - The settings window has one tab row, and the guide window a slimmer progress bar.
+- **Removed:** the Look and Feel tab, and the options that had nothing to act on (XP rate, Solo Self Found, beta features, hearthstone batching, quest log size).
+
+### Fixed
+- The shared event throttle could stop with an error when one throttled job scheduled another.
+
+Not tested in the game client.
+
 ## 0.6.0
 
 ### Changed

@@ -103,10 +103,13 @@ function Gear:ItemData(item)
     if not item then return nil end
     local getInfo = compat().Has("C_Item.GetItemInfo") or compat().Has("GetItemInfo")
     if not getInfo then return nil, "unsupported" end
-    local name, link, _, ilvl, reqLevel, _, _, _, equipLoc, _, _, classID, subclassID = getInfo(item)
+    local name, link, quality, ilvl, reqLevel, _, _, _, equipLoc, texture, _, classID, subclassID, bindType = getInfo(item)
     if not name then return nil, "uncached" end
+    -- bindType is the item template's binding (0 none, 1 on pickup, 2 on equip, 3 on use, 4 quest),
+    -- not whether this copy is already bound; Gear/Upgrade.lua reads the instance state separately.
     local d = { name = name, link = link or item, ilvl = ilvl, reqLevel = reqLevel or 0, equipLoc = equipLoc,
-                classID = classID, subclassID = subclassID, stats = {}, unscored = {} }
+                classID = classID, subclassID = subclassID, quality = quality, texture = texture, bindType = bindType,
+                stats = {}, unscored = {} }
     d.id = tonumber(string.match(tostring(d.link), "item:(%d+)")) or (type(item) == "number" and item or nil)
     local getStats = compat().Has("C_Item.GetItemStats") or compat().Has("GetItemStats")
     if getStats then
@@ -117,6 +120,7 @@ function Gear:ItemData(item)
                 d.stats[key] = (d.stats[key] or 0) + v
             elseif self.UNSCORED_KEYS[k] then
                 d.unscored[self.UNSCORED_KEYS[k]] = true
+                if k == "ITEM_MOD_DAMAGE_PER_SECOND_SHORT" and type(v) == "number" then d.dps = v end
             end
         end
     else

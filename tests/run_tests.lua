@@ -236,6 +236,8 @@ dofile("tests/test_gear.lua")
 dofile("tests/test_minimap.lua")
 dofile("tests/test_config.lua")
 dofile("tests/test_dungeons.lua")
+dofile("tests/test_autoequip.lua")
+dofile("tests/test_features.lua")
 
 print(string.format("%d passed, %d failed", passes, failures))
 os.exit(failures == 0 and 0 or 1)

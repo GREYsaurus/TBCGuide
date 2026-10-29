@@ -28,10 +28,10 @@ local JUNK_CHECKS = {
 }
 
 local function check(p, x, y, label, get, set)
-    local cb = CreateFrame("CheckButton", nil, p, "UICheckButtonTemplate")
+    local cb = W.Check(p)
     cb:SetPoint("TOPLEFT", x, y)
     local text = W.Text(cb, "GameFontHighlight")
-    text:SetPoint("LEFT", cb, "RIGHT", 2, 0)
+    text:SetPoint("LEFT", cb, "RIGHT", 8, 0)
     text:SetText(label)
     cb:SetScript("OnClick", function(self) set(self:GetChecked() and true or false) end)
     cb.sync = function() cb:SetChecked(get() and true or false) end
@@ -101,7 +101,7 @@ function AO:Create()
     local ph = W.Text(p, "GameFontNormalSmall")
     ph:SetPoint("TOPLEFT", 334, y)
     ph:SetText("Protected items (item ID or link):")
-    local box = CreateFrame("EditBox", "TBCGuideProtectBox", p, "InputBoxTemplate")
+    local box = W.Input(p, "TBCGuideProtectBox", 200, 20)
     box:SetSize(110, 20)
     box:SetPoint("TOPLEFT", 340, y - 16)
     box:SetAutoFocus(false)

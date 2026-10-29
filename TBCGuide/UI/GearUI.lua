@@ -84,6 +84,9 @@ function GUI:OnTooltipSetItem(tt)
     if not lines then return end
     if hasEffects(tt) then lines[#lines + 1] = { "  equip/use effects and set bonuses are not scored", 0.6, 0.6, 0.6 } end
     for _, l in ipairs(lines) do tt:AddLine(l[1], l[2], l[3], l[4]) end
+    if ns.GearMarkers then pcall(ns.GearMarkers.AddToTooltip, ns.GearMarkers, tt) end
+    local id = tonumber(string.match(link, "item:(%d+)"))
+    if id and ns.Upgrade and ns.Upgrade:ItemExcluded(id) then tt:AddLine("  Excluded from automatic upgrades", 0.6, 0.6, 0.6) end
     tt:Show()
 end
 
@@ -218,6 +221,15 @@ function GUI:Overview()
     DEFAULT_CHAT_FRAME:AddMessage("  |cff999999Where to get better items is not listed: the bundled quest data has no reward items.|r")
 end
 
+-- /tbcg gear exclude|include <item link or id>: automatic upgrades never equip or replace it.
+function GUI:Exclude(arg, on)
+    local id = tonumber(string.match(arg or "", "item:(%d+)") or string.match(arg or "", "^%s*(%d+)%s*$"))
+    if not id then return ns:Print("Usage: /tbcg gear exclude <item link or id> (include to undo).") end
+    ns.Upgrade:Exclusions().items[id] = on or nil
+    ns:Print((on and "Excluded from" or "Allowed in") .. " automatic upgrades: " .. (string.match(arg, "|H.-|h.-|h") and arg or ("item " .. id)))
+    ns.AutoEquip:Schedule()
+end
+
 function GUI:ListProfiles()
     local info = ns.Gear:Context()
     ns:Print("Gear profiles for your class (current: " .. tostring(ns.char.gearProfile or "auto") .. "):")
@@ -230,11 +242,13 @@ end
 function GUI:SetProfile(id)
     if not id or id == "" or id == "auto" then
         ns.char.gearProfile = nil
-        return ns:Print("Gear profile: automatic (talents and level).")
+        if ns.AutoEquip then ns.AutoEquip:OnProfileChanged() end
+        return ns:Print("Gear profile: automatic (talents and level). Automatic upgrades wait until you choose a spec.")
     end
     local p = ns.Gear:ProfileById(id)
     if not p or p.class ~= ns.Gear:Context().class then return ns:Print("Unknown profile for your class: " .. id .. ". /tbcg gear profiles") end
     ns.char.gearProfile = id
+    if ns.AutoEquip then ns.AutoEquip:OnProfileChanged() end
     ns:Print("Gear profile: " .. profileLabel(p, true)
         .. ((ns.Gear:Context().level or 1) < (p.levelMin or 1) and " |cffff9933(made for level " .. p.levelMin .. "; approximate for you)|r" or ""))
 end
@@ -244,6 +258,9 @@ function GUI:Command(arg)
     if verb == "profiles" then return self:ListProfiles() end
     if verb == "profile" then return self:SetProfile(rest) end
     if verb == "options" then return self:Open() end
+    if verb == "exclude" or verb == "include" then return self:Exclude(rest, verb == "exclude") end
+    if verb == "auto" then return ns:Print("Automatic upgrades: " .. ns.AutoEquip:Status()
+        .. (ns.AutoEquip.lastError and (" (last problem: " .. ns.AutoEquip.lastError .. ")") or "")) end
     self:Overview()
 end
 
@@ -274,10 +291,10 @@ function GUI:Create()
     local y = -48
     for _, c in ipairs(CHECKS) do
         local key = c[1]
-        local cb = CreateFrame("CheckButton", nil, p, "UICheckButtonTemplate")
+        local cb = W.Check(p)
         cb:SetPoint("TOPLEFT", 16, y)
         local text = W.Text(cb, "GameFontHighlight")
-        text:SetPoint("LEFT", cb, "RIGHT", 2, 0)
+        text:SetPoint("LEFT", cb, "RIGHT", 8, 0)
         text:SetText(c[2])
         cb:SetScript("OnClick", function(s) prof()[key] = s:GetChecked() and true or false end)
         cb.sync = function() cb:SetChecked(prof()[key] and true or false) end
@@ -315,6 +332,7 @@ end
 function GUI:ResetSettings()
     for k, v in pairs(self.DEFAULTS) do prof()[k] = v end
     ns.char.gearProfile = nil
+    if ns.AutoEquip then ns.AutoEquip:OnProfileChanged() end
     self:Sync()
     ns:Print("Gear settings reset to defaults.")
 end

@@ -81,6 +81,13 @@ function Engine:Load(guideId, opts)
     return true
 end
 
+-- Whether the steps of dungeon `name` are left out: all dungeons off, or this one deselected.
+function Engine:DungeonOff(name)
+    local prof = ns.db.profile
+    if not prof.showDungeonSteps then return true end
+    return type(prof.dungeonOff) == "table" and prof.dungeonOff[name] == true
+end
+
 -- Whether quest q can only be taken after a dungeon quest that is excluded right now: one of its
 -- required prerequisites, or every one of its alternative prerequisites, is excluded and not done.
 function Engine:NeedsExcluded(q)
@@ -155,10 +162,11 @@ function Engine:Refresh(silent)
         if s[1] == "accept" and s.q then self.acceptIndex[s.q] = i end
     end
     -- Dungeon quests left out by "Include Dungeon Quests" (never ones already in the log).
+    -- A single dungeon can also be switched off (Guide Routing -> Dungeons).
     self.excludedDungeon = {}
-    if not prof.showDungeonSteps then
-        for _, s in ipairs(g.steps) do
-            if s.dungeon and s.q and not T:InLog(s.q) and not T:IsTurnedIn(s.q) then self.excludedDungeon[s.q] = true end
+    for _, s in ipairs(g.steps) do
+        if s.dungeon and s.q and self:DungeonOff(s.dungeon) and not T:InLog(s.q) and not T:IsTurnedIn(s.q) then
+            self.excludedDungeon[s.q] = true
         end
     end
     -- Quests that unlock another quest of this guide are never skipped as grey (the chain needs them).
@@ -180,7 +188,7 @@ function Engine:Refresh(silent)
         local st
         if not ns.Guides:StepApplies(s, ctx) then
             st = "na"
-        elseif (s.dungeon and not prof.showDungeonSteps and not (s.q and T:InLog(s.q))) or (s.elite and not prof.showElite)
+        elseif (s.dungeon and self:DungeonOff(s.dungeon) and not (s.q and T:InLog(s.q))) or (s.elite and not prof.showElite)
             or (s.optional and prof.speedRoute) then
             st = "na"
         elseif p.skipped[i] then

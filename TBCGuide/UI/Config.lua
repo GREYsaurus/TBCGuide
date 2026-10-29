@@ -11,7 +11,7 @@
 --   { type = "toggle", key | get/set, label, invert, tip, planned }
 --   { type = "range", key | get/set, label, min, max, step, percent }
 --   { type = "select", key | get/set, label, values = function() return { {value, text}, ... } end }
---   { type = "button", label, func, span, red }      (UIPanelButtonTemplate is red in Classic)
+--   { type = "button", label, func, span }           (flat TBCGuide button, UI/Widgets.lua)
 --   { type = "color", key, label }
 --   { type = "input", label, func(text), span }
 --   { type = "keybind", label, get, set }
@@ -54,6 +54,11 @@ function CF:Changed(it)
     if ns.Options and ns.Options.panel then ns.Options:Apply() end
     if ns.MinimapButton then ns.MinimapButton:Update() end
     if ns.Marker and ns.Marker.gen then ns.Marker:OnRefresh() end
+    if ns.AutoEquip and ns.db then ns.AutoEquip:Schedule() end -- re-evaluate upgrades and bag markers
+    for _, m in ipairs({ "ActiveItems", "ActiveTargets", "LevelTracker", "MapExtras" }) do
+        local mod = ns[m]
+        if mod and ns.db then pcall(mod.Update or mod.Refresh, mod) end
+    end
     if it and it.after then it.after() end
 end
 
@@ -71,25 +76,14 @@ end
 
 local PLANNED = "Not in TBCGuide yet. This option is shown so you can see what is planned; it does nothing."
 
-local function line(parent)
-    local t = parent:CreateTexture(nil, "ARTWORK")
-    t:SetHeight(1)
-    if t.SetColorTexture then t:SetColorTexture(0.75, 0.75, 0.75, 0.55) else t:SetTexture(0.75, 0.75, 0.75, 0.55) end
-    return t
-end
-
 local build = {}
 
+-- Section header: accent title on the left, a thin line to the right edge.
 function build.header(page, it, x, y, w)
-    local fs = W.Text(page, "GameFontNormalLarge", "CENTER")
-    fs:SetPoint("TOP", page, "TOPLEFT", x + w / 2, y - 4)
-    fs:SetText(it.text)
-    local l, r = line(page), line(page)
-    l:SetPoint("LEFT", page, "TOPLEFT", x, y - 13)
-    l:SetPoint("RIGHT", fs, "LEFT", -8, 0)
-    r:SetPoint("LEFT", fs, "RIGHT", 8, 0)
-    r:SetPoint("RIGHT", page, "TOPLEFT", x + w, y - 13)
-    return { height = 30, sync = function() end }
+    local fs, l = W.Section(page, it.text)
+    fs:SetPoint("TOPLEFT", page, "TOPLEFT", x + 4, y - 10)
+    l:SetPoint("RIGHT", page, "TOPLEFT", x + w - 4, y - 16)
+    return { height = 34, sync = function() end }
 end
 
 function build.desc(page, it, x, y, w)
@@ -110,11 +104,11 @@ function build.label(page, it, x, y, w)
 end
 
 function build.toggle(page, it, x, y, w)
-    local cb = CreateFrame("CheckButton", nil, page, "UICheckButtonTemplate")
-    cb:SetPoint("TOPLEFT", page, "TOPLEFT", x, y)
+    local cb = W.Check(page)
+    cb:SetPoint("TOPLEFT", page, "TOPLEFT", x + 6, y - 5)
     local text = W.Text(cb, "GameFontHighlight")
-    text:SetPoint("LEFT", cb, "RIGHT", 2, 1)
-    text:SetWidth(w - 34)
+    text:SetPoint("LEFT", cb, "RIGHT", 8, 0)
+    text:SetWidth(w - 40)
     text:SetWordWrap(false)
     text:SetText(it.label)
     cb.label = text
@@ -142,12 +136,13 @@ CF.sliderCount = 0
 function build.range(page, it, x, y, w)
     CF.sliderCount = CF.sliderCount + 1
     local name = "TBCGuideConfigSlider" .. CF.sliderCount
-    local title = W.Text(page, "GameFontNormal", "CENTER")
-    title:SetPoint("TOP", page, "TOPLEFT", x + w / 2, y)
+    local title = W.Text(page, "GameFontHighlight", "LEFT")
+    title:SetPoint("TOPLEFT", page, "TOPLEFT", x + 6, y)
     title:SetText(it.label)
     local s = CreateFrame("Slider", name, page, "OptionsSliderTemplate")
-    s:SetPoint("TOPLEFT", page, "TOPLEFT", x + 6, y - 18)
-    s:SetWidth(w - 24)
+    s:SetPoint("TOPLEFT", page, "TOPLEFT", x + 6, y - 20)
+    s:SetWidth(w - 100)
+    W.SkinSlider(s, name)
     s:SetMinMaxValues(it.min, it.max)
     s:SetValueStep(it.step or 1)
     if s.SetObeyStepOnDrag then s:SetObeyStepOnDrag(true) end
@@ -160,10 +155,8 @@ function build.range(page, it, x, y, w)
     if high then high:SetText(fmt(it.max)) end
     local mid = _G[name .. "Text"]
     if mid then mid:SetText("") end
-    local box = CreateFrame("EditBox", nil, page, "InputBoxTemplate")
-    box:SetSize(80, 18)
-    box:SetPoint("TOP", s, "BOTTOM", 0, -4)
-    box:SetAutoFocus(false)
+    local box = W.Input(page, nil, 64, 20)
+    box:SetPoint("LEFT", s, "RIGHT", 12, 0)
     box:SetJustifyH("CENTER")
     local syncing = false
     s:SetScript("OnValueChanged", function(_, v)
@@ -183,7 +176,7 @@ function build.range(page, it, x, y, w)
         title:SetTextColor(0.5, 0.5, 0.5)
         tooltip(s, it.label, PLANNED)
     end
-    local w2 = { height = 64, frame = s, box = box, item = it }
+    local w2 = { height = 54, frame = s, box = box, item = it }
     w2.sync = function()
         syncing = true
         local v = it.planned and (it.default or it.min) or getValue(it)
@@ -235,10 +228,8 @@ function build.input(page, it, x, y, w)
     local title = W.Text(page, "GameFontNormalSmall")
     title:SetPoint("TOPLEFT", page, "TOPLEFT", x + 4, y)
     title:SetText(it.label)
-    local box = CreateFrame("EditBox", nil, page, "InputBoxTemplate")
-    box:SetSize(w - 20, 22)
-    box:SetPoint("TOPLEFT", page, "TOPLEFT", x + 8, y - 16)
-    box:SetAutoFocus(false)
+    local box = W.Input(page, nil, w - 20, 22)
+    box:SetPoint("TOPLEFT", page, "TOPLEFT", x + 6, y - 18)
     box:SetScript("OnEnterPressed", function(b)
         local text = b:GetText()
         b:SetText("")
@@ -383,12 +374,7 @@ function CF:Show(id)
     page:Show()
     self.scroll:SetScrollChild(page)
     if self.scroll.SetVerticalScroll then self.scroll:SetVerticalScroll(0) end
-    for tid, tab in pairs(self.tabs) do
-        local on = tid == id
-        if on and PanelTemplates_SelectTab then PanelTemplates_SelectTab(tab)
-        elseif not on and PanelTemplates_DeselectTab then PanelTemplates_DeselectTab(tab) end
-        if on then tab:LockHighlight() else tab:UnlockHighlight() end
-    end
+    for tid, tab in pairs(self.tabs) do tab:SetSelected(tid == id) end
     self.current = id
     for _, w in ipairs(page.widgets) do w.sync() end
     self.frame:Show()
@@ -401,10 +387,7 @@ end
 
 -- Frame ----------------------------------------------------------------------------------------------------
 
-local TAB_ROWS = {
-    { "general", "guide", "targeting", "tracker", "comms", "tips", "help" },
-    { "look", "advanced", "profiles" },
-}
+local TABS = { "general", "guide", "targeting", "tracker", "comms", "tips", "advanced", "profiles", "help" }
 
 function CF:Create()
     if self.frame then return end
@@ -419,83 +402,69 @@ function CF:Create()
     f:RegisterForDrag("LeftButton")
     f:SetScript("OnDragStart", function(s) s:StartMoving() end)
     f:SetScript("OnDragStop", function(s) s:StopMovingOrSizing() end)
-    if f.SetBackdrop then
-        f:SetBackdrop({ bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark",
-            edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border", tile = true, tileSize = 32, edgeSize = 32,
-            insets = { left = 11, right = 12, top = 12, bottom = 11 } })
-    end
+    W.Skin(f)
     f:Hide()
     self.frame = f
     tinsert(UISpecialFrames, "TBCGuideConfigFrame") -- Escape closes it
 
-    self.title = W.Text(f, "GameFontNormalHuge")
-    self.title:SetPoint("TOPLEFT", 26, -24)
-
-    -- Round TBCGuide icon, top right
+    -- Title bar with the TBCGuide icon and version.
+    self.title = W.TitleBar(f, "")
     local icon = f:CreateTexture(nil, "ARTWORK")
-    icon:SetSize(54, 54)
-    icon:SetPoint("TOPRIGHT", -26, -18)
+    icon:SetSize(18, 18)
+    icon:SetPoint("LEFT", f.titleBar, "LEFT", 8, 0)
     icon:SetTexture("Interface\\Icons\\INV_Misc_Map_01")
-    if icon.SetMask then icon:SetMask("Interface\\CharacterFrame\\TempPortraitAlphaMask") end
-    local ring = f:CreateTexture(nil, "OVERLAY")
-    ring:SetSize(90, 90)
-    ring:SetPoint("TOPLEFT", icon, "TOPLEFT", -6, 6)
-    ring:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+    if icon.SetTexCoord then icon:SetTexCoord(0.08, 0.92, 0.08, 0.92) end
+    self.title:ClearAllPoints()
+    self.title:SetPoint("LEFT", icon, "RIGHT", 8, 0)
 
-    -- Top buttons
+    -- Quick actions under the title bar.
     local function top(label, x, y, w, fn, tip)
-        local b = W.Button(f, label, w, 28, fn)
+        local b = W.Button(f, label, w, 24, fn)
         b:SetPoint("TOPLEFT", f, "TOPLEFT", x, y)
         if tip then tooltip(b, label, tip) end
         return b
     end
-    top("Guide Browser", 24, -58, 210, function() ns.Browser:Toggle() end, "Choose or restart a guide.")
-    top("Talent Guide", 238, -58, 210, function() ns.TalentFrame:Toggle() end, "Talent builds and calculator.")
-    top("Report an Issue", 452, -58, 210, function() CF:ShowLink() end, "Shows the link to the TBCGuide issue tracker.")
-    top("Choose the Best Guide for Me", 24, -90, 300, function()
+    top("Guide Browser", 16, -38, 150, function() ns.Browser:Toggle() end, "Choose or restart a guide.")
+    top("Talent Guide", 172, -38, 150, function() ns.TalentFrame:Toggle() end, "Talent builds and calculator.")
+    top("Leveling Report", 328, -38, 150, function() ns.LevelTracker:ToggleReport() end, "Time per level and XP per hour.")
+    top("Report an Issue", 484, -38, 150, function() CF:ShowLink() end, "Shows the link to the TBCGuide issue tracker.")
+    top("Choose the Best Guide for Me", 640, -38, self.WIDTH - 656, function()
         local g, why = ns.Selector:Recommend()
         if g then ns.Engine:Load(g.id) ns.MainFrame:Show() ns:Print("Loaded " .. g.name .. " (" .. why .. ").")
         else ns:Print("No guide available for this character.") end
     end, "Loads the guide that fits your race, class and level.")
 
-    -- Tabs (two rows)
+    -- Tabs: one row, flat, accent underline on the selected one.
     self.tabs = {}
-    local tabY = { -128, -156 }
-    for row, ids in ipairs(TAB_ROWS) do
-        local x = 24
-        local width = (self.WIDTH - 48) / #ids
-        for _, id in ipairs(ids) do
-            local ok, tab = pcall(CreateFrame, "Button", "TBCGuideConfigTab_" .. id, f, "OptionsFrameTabButtonTemplate")
-            if not ok or not tab then tab = CreateFrame("Button", "TBCGuideConfigTab_" .. id, f, "UIPanelButtonTemplate") tab:SetHeight(24) end
-            tab:SetText(self.pageDefs[id].title)
-            tab:SetPoint("TOPLEFT", f, "TOPLEFT", x, tabY[row])
-            if PanelTemplates_TabResize then PanelTemplates_TabResize(tab, 0, width - 10) else tab:SetWidth(width - 10) end
-            tab:SetScript("OnClick", function() CF:Show(id) end)
-            self.tabs[id] = tab
-            x = x + width
-        end
+    local width = (self.WIDTH - 32) / #TABS
+    for i, id in ipairs(TABS) do
+        local tab = W.Tab(f, self.pageDefs[id].title, width, 28)
+        tab:SetPoint("TOPLEFT", f, "TOPLEFT", 16 + (i - 1) * width, -72)
+        tab:SetScript("OnClick", function() CF:Show(id) end)
+        self.tabs[id] = tab
     end
+    local tabLine = f:CreateTexture(nil, "ARTWORK")
+    tabLine:SetPoint("TOPLEFT", f, "TOPLEFT", 16, -100)
+    tabLine:SetPoint("TOPRIGHT", f, "TOPRIGHT", -16, -100)
+    tabLine:SetHeight(1)
+    W.Color(tabLine, W.THEME.border)
 
     -- Content box with a scroll frame
     local box = CreateFrame("Frame", nil, f, ns.Compat.BackdropTemplate)
-    box:SetPoint("TOPLEFT", 22, -182)
-    box:SetPoint("BOTTOMRIGHT", -22, 52)
-    if box.SetBackdrop then
-        box:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
-            tile = true, tileSize = 16, edgeSize = 16, insets = { left = 4, right = 4, top = 4, bottom = 4 } })
-        box:SetBackdropColor(0, 0, 0, 0.45)
-        box:SetBackdropBorderColor(0.6, 0.6, 0.6, 1)
-    end
+    box:SetPoint("TOPLEFT", 16, -108)
+    box:SetPoint("BOTTOMRIGHT", -16, 50)
+    W.Skin(box, "panel")
     local scroll = CreateFrame("ScrollFrame", "TBCGuideConfigScroll", box, "UIPanelScrollFrameTemplate")
     scroll:SetPoint("TOPLEFT", 10, -10)
     scroll:SetPoint("BOTTOMRIGHT", -30, 10)
+    W.SkinScroll(scroll, "TBCGuideConfigScroll")
     self.scroll = scroll
     self.scrollChild = CreateFrame("Frame", nil, scroll)
     self.scrollChild:SetSize(self.WIDTH - 44 - 40, 10)
     scroll:SetScrollChild(self.scrollChild)
     self.contentWidth = self.WIDTH - 44 - 50
 
-    W.Button(f, "Close", 120, 26, function() f:Hide() end):SetPoint("BOTTOMRIGHT", -24, 18)
+    W.Button(f, "Close", 110, 24, function() f:Hide() end):SetPoint("BOTTOMRIGHT", -16, 14)
     W.CloseButton(f)
 
     ns:Listen("TBCG_PROFILE_CHANGED", function() CF:SyncAll() end)

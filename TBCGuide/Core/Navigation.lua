@@ -159,7 +159,9 @@ local function createArrow()
     local acc = 0
     f:SetScript("OnUpdate", function(self, elapsed)
         acc = acc + elapsed
-        if acc < (ns.db.profile.arrowUpdateMs or 50) / 1000 then return end
+        local ms = ns.db.profile.arrowUpdateMs or 50
+        if ns.db.profile.lowQuality then ms = math.max(ms, 150) end -- Low Quality Settings
+        if acc < ms / 1000 then return end
         acc = 0
         local dist, angle = Nav:Vector()
         if not dist then

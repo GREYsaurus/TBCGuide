@@ -34,10 +34,10 @@ pages.general = { title = "General", items = function() return {
     T("worldMapButton", "Enable World Map Button", { tip = "A button on the world map that opens the guide browser." }),
     T("hideWindow", "Hide Window"),
     T("showArrow", "Hide waypoint arrow", { invert = true }),
-    planned("Hide Active Item window"),
-    planned("Enable Vendor Treasures", true),
-    planned("Show Flight Timers", true),
-    planned("Enable Group Settings"),
+    T("activeItems", "Hide Active Item window", { invert = true, tip = "Buttons for usable quest items in your bags; click one to use the item." }),
+    T("vendorTreasures", "Enable Vendor Treasures", { tip = "When a merchant opens, lists and marks the items it sells that are upgrades for your spec profile." }),
+    T("flightTimers", "Show Flight Timers", { tip = "A bar with the time left on a flight. Each route is timed the first time you fly it." }),
+    T("groupFeatures", "Enable Group Settings", { tip = "Master switch for the party features on the Communications tab and the leader's target on the Targeting tab." }),
     H("Automation"),
     { type = "toggle", label = "Quest auto accept/turn in",
       get = function() return prof().autoAccept and prof().autoTurnIn end,
@@ -51,7 +51,7 @@ pages.general = { title = "General", items = function() return {
     H("Inventory"),
     T("inventoryManager", "Enable Inventory Manager", { tip = "Master switch for junk selling, the junk list and junk deletion." }),
     { type = "newline" },
-    planned("Show junk item indicator"),
+    T("junkIndicator", "Show junk item indicator", { tip = "A coin on bag items the inventory manager would sell." }),
     { type = "toggle", key = "discardJunkFull", label = "Discard junk items if bag is full", span = 2,
       tip = "When your bags are full, deletes the junk item worth least at a vendor. Quest, guide and protected items are never touched." },
     T("junkModifierToggle", "Toggle junk with modified right click", { span = 2, tip = "Modifier + right-click an item in your bags to add it to (or remove it from) your junk list. Listed items are sold and deleted like grey items." }),
@@ -63,18 +63,13 @@ pages.general = { title = "General", items = function() return {
     { type = "button", label = "Reset Junk List", func = function() ns.Assist:ResetJunkList() end },
     H("Talents"),
     T("talentHints", "Enable Talents Guides", { tip = "Chat reminders to spend talent points, following your chosen build." }),
-    planned("Enable Talent Plan", true),
-    { type = "range", label = "Talent Plan Number", min = 1, max = 70, step = 1, planned = true, default = 5 },
+    T("talentPlan", "Enable Talent Plan", { tip = "On level-up, lists your build's next picks. Also /tbcg talents plan." }),
+    { type = "range", key = "talentPlanCount", label = "Talent Plan Number", min = 1, max = 70, step = 1, tip = "How many upcoming picks the plan lists." },
 } end }
 
 pages.guide = { title = "Guide Routing", items = function() return {
-    H("Experience"),
-    planned("Detect Rate", true),
-    { type = "range", label = "Experience rates", min = 1, max = 2, step = 0.05, percent = true, planned = true, default = 1 },
-    { type = "newline" },
     T("skipOverleveled", "Skip overleveled steps", { tip = "Skips picking up quests that are grey for your level, unless a later quest in the guide needs them." }),
     T("showElite", "Show Group Quests"),
-    planned("Solo Self Found Mode"),
     T("speedRoute", "Maximum-speed route", { tip = "Hides optional side quests." }),
     T("autoAdvance", "Advance steps automatically"),
     T("autoSelectGuide", "Pick a guide on first login"),
@@ -83,10 +78,40 @@ pages.guide = { title = "Guide Routing", items = function() return {
     H("Dungeons"),
     T("showDungeonSteps", "Include Dungeon Quests", { tip = "When disabled, TBCGuide skips dungeon quests and recommends an outdoor leveling route where available. Quests already in your log stay in the guide." }),
     { type = "newline" },
-    { type = "desc", text = "Choosing single dungeons is planned. Include Dungeon Quests above turns all of them on or off." },
-    { type = "button", label = "Select Recommended Dungeons", planned = true, span = 1 },
-    { type = "button", label = "Select all Dungeons", planned = true, span = 1 },
+    { type = "desc", text = "Pick single dungeons below. * = the guides have quests for it; the others are listed for completeness. Recommended = not outleveled and at most 8 levels above you." },
+    { type = "button", label = "Select Recommended Dungeons", func = function()
+        local lvl, off = UnitLevel and UnitLevel("player") or 1, {}
+        for _, d in ipairs(ns.Dungeons) do if not ns.DungeonRecommended(d, lvl) then off[d.name] = true end end
+        prof().dungeonOff = off
+        if ns.Engine.guide then ns.Engine:Refresh() end
+    end },
+    { type = "button", label = "Select all Dungeons", func = function()
+        prof().dungeonOff = {}
+        if ns.Engine.guide then ns.Engine:Refresh() end
+    end },
+    { type = "newline" },
 } end }
+
+-- One switch per dungeon of the player's faction.
+do
+    local base = pages.guide.items
+    pages.guide.items = function()
+        local out = base()
+        local faction = ns.Compat.PlayerInfo().faction
+        for _, d in ipairs(ns.DungeonsFor(faction)) do
+            out[#out + 1] = { type = "toggle", label = d.name .. (ns.DungeonHasQuests(d.name) and " *" or ""),
+                tip = string.format("Usually run at levels %d-%d.", d.min, d.max),
+                disabled = function() return not prof().showDungeonSteps end,
+                get = function() return not (type(prof().dungeonOff) == "table" and prof().dungeonOff[d.name]) end,
+                set = function(v)
+                    if type(prof().dungeonOff) ~= "table" then prof().dungeonOff = {} end
+                    prof().dungeonOff[d.name] = (not v) or nil
+                    if ns.Engine.guide then ns.Engine:Refresh() end
+                end }
+        end
+        return out
+    end
+end
 
 pages.targeting = { title = "Targeting", items = function() return {
     T("markEnabled", "Enable Targeting", { tip = "Raid markers: /tbcg mark, the marker bar and guide marking." }),
@@ -111,44 +136,47 @@ pages.targeting = { title = "Targeting", items = function() return {
       get = function() return prof().showMarkerBar end,
       set = function(v) if (prof().showMarkerBar and true or false) ~= v then ns.MarkerBar:Toggle() end end },
     H("Active Target Frame"),
-    planned("Enable Active Target Frame", true),
-    planned("Show Enemy Target", true),
-    planned("Show Friendly Target", true),
-    planned("Follow Party Leader Target"),
-    planned("Hide Targets Background"),
-    { type = "range", label = "Active Targets Scale", min = 0.8, max = 3, step = 0.05, percent = true, planned = true, default = 1 },
-    { type = "button", label = "Reset Window Position", planned = true },
+    T("activeTargets", "Enable Active Target Frame", { tip = "Click-to-target buttons for the current step's NPCs (/tar). Updates after combat." }),
+    T("atEnemy", "Show Enemy Target"),
+    T("atFriendly", "Show Friendly Target"),
+    T("atLeader", "Follow Party Leader Target", { tip = "Adds your party leader's target. Needs Enable Group Settings (General)." }),
+    T("atHideBg", "Hide Targets Background"),
+    { type = "range", key = "atScale", label = "Active Targets Scale", min = 0.8, max = 3, step = 0.05, percent = true },
+    { type = "button", label = "Reset Window Position", func = function() ns.ActiveTargets:ResetPosition() end },
 } end }
 
 pages.tracker = { title = "Leveling Tracker", items = function() return {
-    { type = "desc", text = "The leveling tracker is planned for a later version of TBCGuide." },
-    planned("Enable Leveling Tracker", true),
-    planned("Always Open Leveling Report With Character Panel"),
+    { type = "desc", text = "Tracks how long each level takes (played time from the server) and your XP per hour. Levels finished before you installed this version show as -." },
+    T("trackerEnabled", "Enable Leveling Tracker"),
+    T("trackerWithCharacter", "Always Open Leveling Report With Character Panel", { span = 2 }),
+    { type = "button", label = "Open Leveling Report", func = function() ns.LevelTracker:ToggleReport() end },
     H("Level Splits"),
-    planned("Enable Level Splits"),
-    planned("Compare Next Level"),
-    planned("Show Total Time Split", true),
-    planned("Hide Splits Background"),
-    { type = "range", label = "Level Splits History", min = 1, max = 70, planned = true, default = 10 },
-    { type = "range", label = "Level Splits Font Size", min = 9, max = 17, planned = true, default = 11 },
-    { type = "range", label = "Level Splits Opacity", min = 0.1, max = 1, step = 0.05, percent = true, planned = true, default = 0.9 },
+    T("splitsEnabled", "Enable Level Splits", { tip = "A small window with the time each recent level took." }),
+    T("splitsCompare", "Compare Next Level", { tip = "Shows how the running level compares with the previous one." }),
+    T("splitsTotal", "Show Total Time Split"),
+    T("splitsHideBg", "Hide Splits Background"),
+    { type = "range", key = "splitsHistory", label = "Level Splits History", min = 1, max = 70, step = 1 },
+    { type = "range", key = "splitsFont", label = "Level Splits Font Size", min = 9, max = 17, step = 1 },
+    { type = "range", key = "splitsAlpha", label = "Level Splits Opacity", min = 0.1, max = 1, step = 0.05, percent = true },
 } end }
 
 pages.comms = { title = "Communications", items = function() return {
-    planned("Enable Addon Version Checks", true),
+    T("versionCheck", "Enable Addon Version Checks", { tip = "Tells you when a group or guild member runs a newer TBCGuide." }),
     T("questNotify", "Chat messages for quest automation"),
     H("Announcements"),
     T("announceLevelEmote", "Announce Level Ups (Emote)"),
     T("announceLevelParty", "Announce Level Ups (Party Chat)"),
     T("announceLevelGuild", "Announce Level Ups (Guild Chat)"),
-    planned("Announce Step completion"),
-    planned("Announce Step collection"),
-    planned("Announce Step flying timers"),
-    planned("Ignore Questie announcements"),
+    T("announceComplete", "Announce Step completion", { tip = "Party chat when a guide quest's objectives are all done. Needs Enable Group Settings." }),
+    T("announceCollect", "Announce Step collection", { tip = "Party chat on guide quest progress, e.g. Wolf Meat: 3/8. Needs Enable Group Settings." }),
+    T("announceFlight", "Announce Step flying timers", { tip = "Party chat when you take a flight, with the arrival time once the route is known." }),
+    T("announceSkipQuestie", "Don't announce when Questie is loaded", { span = 2, tip = "Questie can announce quest progress itself; this avoids double messages." }),
     H("Grouping"),
-    planned("Send announcements without another TBCGuide user in group"),
+    { type = "desc", text = "Needs Enable Group Settings (General). Announcements go to party chat, never to raids." },
+    T("announceAlways", "Send announcements without another TBCGuide user in group", { span = 2,
+      tip = "Off: only announce when another party member runs TBCGuide (learned from version checks)." }),
     { type = "newline" },
-    planned("Automatic quest sharing"),
+    T("autoShareQuests", "Automatic quest sharing", { tip = "Shares a guide quest with your party right after you accept it." }),
 } end }
 
 pages.tips = { title = "Tips", items = function() return {
@@ -165,22 +193,25 @@ pages.tips = { title = "Tips", items = function() return {
     T("lowHealthAnim", "Enable Warning Sound"),
     T("lowHealthFlash", "Screen Edge Flash"),
     H("Dangerous Mobs Tracking"),
-    planned("Track Mobs on Map"),
+    T("trackMobsMap", "Track Mobs on Map", { tip = "World map pins for elite and rare mobs in the shown zone (bundled data)." }),
     T("trackRares", "Track Rare Mobs", { tip = "A chat alert and sound when a rare mob's nameplate appears (rares from the bundled database)." }),
     T("skipKilledRares", "Skip mobs already killed"),
-    planned("Track Treasures"),
+    T("trackTreasures", "Track Treasures", { tip = "World map pins for treasure chests in the shown zone." }),
     H("Item Upgrade"),
     T("gearEnabled", "Enable Item Upgrade"),
-    { type = "select", label = "Talents",
+    -- Profiles of the player's own class only, so another class's profile can never be active.
+    { type = "select", label = "Spec profile",
+      tip = "Used for tooltips, quest rewards and automatic upgrades. Saved for this character. Automatic upgrades need a spec chosen here.",
       values = function()
-          local o = { { "auto", "Automatic (talents and level)" } }
+          local o = { { "auto", "Automatic (tooltips only)" } }
           for _, p in ipairs(ns.Gear:ProfilesForClass(ns.Gear:Context().class)) do
-              o[#o + 1] = { p.id, (p.spec or p.role) .. " - " .. p.context }
+              local name = p.spec and ns.Upgrade:ProfileName(p) or (p.role .. ", leveling")
+              o[#o + 1] = { p.id, name .. (p.context == "pve-preraid" and " (pre-raid)" or "") .. (p.weights and "" or " *") }
           end
           return o
       end,
       get = function() return ns.char.gearProfile or "auto" end,
-      set = function(v) ns.char.gearProfile = (v ~= "auto") and v or nil end },
+      set = function(v) ns.char.gearProfile = (v ~= "auto") and v or nil ns.AutoEquip:OnProfileChanged() end },
     planned("Always Show Total EP"),
     T("gearQuestRewards", "Quest Reward Recommendation"),
     T("autoReward", "Quest Reward Automation"),
@@ -188,7 +219,46 @@ pages.tips = { title = "Tips", items = function() return {
     T("gearShowPercent", "Show score change (%)"),
     T("gearShowConfidence", "Show profile confidence"),
     planned("Enable Auctioneer"),
+    H("Automatic Upgrades"),
+    { type = "desc", text = "Equips gear from your bags when it is an upgrade for your spec profile (* = estimated from a stat priority). "
+        .. "Never in combat, never Bind-on-Equip items, nothing is sold or deleted. Estimates are spec scores, not DPS or healing." },
+    { type = "toggle", label = "Enable automatic upgrades",
+      tip = "Off by default. Needs a spec profile. Bind-on-Equip items are never equipped automatically.",
+      get = function() return prof().autoEquip end,
+      set = function(v)
+          if not v then prof().autoEquip = false return end
+          local p, why = ns.Upgrade:ActiveProfile()
+          if not p then prof().autoEquip = false ns:Print("Automatic upgrades: " .. why .. " (Spec profile).") return end
+          ns.Config:Confirm("Automatically equip upgrades for " .. ns.Upgrade:ProfileName(p) .. "?\n\n"
+              .. "Empty slots get any usable item; filled slots only a higher estimated spec score. "
+              .. "Never in combat, never Bind-on-Equip items, replaced items stay in your bags.",
+              function() prof().autoEquip = true ns.AutoEquip:Schedule() end)
+      end },
+    T("autoEquipEmpty", "Fill empty gear slots", { tip = "Any usable non-BoE item goes into an empty slot, even if it is not ideal for your spec." }),
+    { type = "range", key = "autoEquipMinPct", label = "Minimum upgrade", min = 0, max = 20, step = 0.5, decimals = 1, suffix = "%",
+      tip = "For occupied slots. 0 means any strictly higher score." },
+    T("equipNotify", "On-screen equip messages"),
+    T("equipChat", "Copy equip messages to chat"),
+    T("boeMarkers", "Mark Bind-on-Equip upgrades in bags", { tip = "A small arrow on BoE items that would be an upgrade. Equip them yourself." }),
+    { type = "button", label = "Clear excluded items",
+      tip = "Items excluded with /tbcg gear exclude <item> are allowed again.",
+      func = function() ns.Upgrade:Exclusions().items = {} ns.AutoEquip:Schedule() end },
+    H("Protected Slots (never changed automatically)"),
 } end }
+
+-- One toggle per gear slot, stored per character.
+do
+    local base = pages.tips.items
+    pages.tips.items = function()
+        local out = base()
+        for _, slot in ipairs(ns.Gear.SCORED_SLOTS) do
+            out[#out + 1] = { type = "toggle", label = ns.Gear.SLOT_NAMES[slot],
+                get = function() return ns.Upgrade:SlotExcluded(slot) end,
+                set = function(v) ns.Upgrade:Exclusions().slots[slot] = v and true or nil ns.AutoEquip:Schedule() end }
+        end
+        return out
+    end
+end
 
 pages.help = { title = "Help", items = function() return {
     H("Commands"),
@@ -207,68 +277,12 @@ pages.help = { title = "Help", items = function() return {
     { type = "desc", text = "Settings are profiles (Profiles tab), shared between characters that use the same profile. Guide progress, talents and junk-sale totals always belong to the character." },
 } end }
 
-pages.look = { title = "Look and Feel", items = function() return {
-    { type = "select", label = "Choose Theme", planned = true, values = function() return { { "tbcg", "TBCGuide" } } end,
-      get = function() return "tbcg" end },
-    { type = "button", label = "Preview Frame Positions", planned = true },
-    H("Text"),
-    { type = "color", label = "Kill", planned = true, default = { r = 1, g = 0.35, b = 0.2 } },
-    { type = "color", key = "colorFriendly", label = "Friendly" },
-    { type = "color", label = "Loot", planned = true, default = { r = 0.2, g = 0.8, b = 0.9 } },
-    { type = "color", key = "colorWarning", label = "Warning" },
-    { type = "color", key = "colorQuest", label = "Quest" },
-    { type = "color", label = "Buy", planned = true, default = { r = 0.1, g = 0.6, b = 0.1 } },
-    { type = "button", label = "Reset Colors", func = function()
-        local d = ns.PROFILE_DEFAULTS
-        for _, k in ipairs({ "colorFriendly", "colorQuest", "colorWarning" }) do prof()[k] = { r = d[k].r, g = d[k].g, b = d[k].b } end
-        ns.Config:Changed()
-    end },
-    H("Guide Window"),
-    { type = "range", key = "scale", label = "Window Scale", min = 0.6, max = 1.6, step = 0.05, percent = true, decimals = 2 },
-    { type = "range", key = "guideFontSize", label = "Guide Font Size", min = 9, max = 18, step = 1 },
-    { type = "range", key = "stepsShown", label = "Steps shown", min = 1, max = 8, step = 1 },
-    T("showStepList", "Show step list", { tip = "Shows the upcoming steps under the current one." }),
-    planned("Hide completed steps"),
-    planned("Show unused guides", true),
-    { type = "button", label = "Reset window positions", func = function()
-        ns.Config:Confirm("Reset the guide window and arrow positions? This reloads the UI.", function()
-            ns.db.frames.main = { point = "RIGHT", x = -60, y = 120, w = 320, h = 230, shown = true }
-            ns.db.frames.arrow = { point = "TOP", x = 0, y = -120 }
-            ReloadUI()
-        end)
-    end },
-    H("Waypoint Arrow"),
-    { type = "range", key = "arrowScale", label = "Arrow Scale", min = 0.2, max = 2, step = 0.05, percent = true, decimals = 2 },
-    { type = "range", label = "Arrow Text Size", min = 5, max = 20, planned = true, default = 9 },
-    { type = "button", label = "Reset Arrow Position", func = function()
-        ns.db.frames.arrow = { point = "TOP", x = 0, y = -120 }
-        local a = ns.Nav and ns.Nav.arrow
-        if a then a:ClearAllPoints() a:SetPoint("TOP", UIParent, "TOP", 0, -120) end
-    end },
-    H("Active Items"),
-    { type = "range", label = "Active Item Scale", min = 0.8, max = 3, step = 0.05, percent = true, planned = true, default = 1 },
-    planned("Hide Background"),
-    { type = "button", label = "Reset Window Position", planned = true },
-    H("Map Options"),
-    T("showMapPins", "Show the target on the world map"),
-    T("useTomTom", "Send waypoints to TomTom"),
-    planned("Hide Mini Map Pins"),
-    planned("Highlight active map pins"),
-    { type = "range", label = "Number of Map Pins", min = 0, max = 20, planned = true, default = 7 },
-    { type = "range", label = "Map Pin Scale", min = 0.05, max = 1, step = 0.05, percent = true, planned = true, default = 1 },
-    { type = "range", label = "Distance Between Pins", min = 0.05, max = 2, step = 0.05, decimals = 2, planned = true, default = 1 },
-    { type = "range", label = "Map Pin Background Opacity", min = 0, max = 1, step = 0.05, percent = true, planned = true, default = 0.35 },
-} end }
-
 pages.advanced = { title = "Advanced Settings", items = function() return {
-    planned("Enable Beta Features"),
     T("debug", "Enable Debug"),
-    planned("Low Quality Settings"),
-    planned("Hearthstone batching"),
-    { type = "range", label = "Batching window size (ms)", min = 1, max = 50, planned = true, default = 6 },
+    T("lowQuality", "Low Quality Settings", { tip = "Redraws the arrow at most every 150 ms and shows fewer map pins." }),
     { type = "range", key = "arrowUpdateMs", label = "Update Frequency (ms)", min = 5, max = 150, step = 5,
       tip = "How often the arrow is redrawn." },
-    planned("Pre load all data"),
+    T("preloadData", "Pre load all data", { tip = "Loads item data for your guide's quests and your bags at login, so tooltips and scoring do not wait." }),
     T("checkConflicts", "Check for Addon Incompatibility", { span = 2, tip = "At login, warns when another leveling guide add-on is loaded." }),
     H("Debug"),
     T("disableStepSkips", "Disable step skips", { tip = "Never skip steps automatically; you skip them yourself." }),
@@ -276,7 +290,6 @@ pages.advanced = { title = "Advanced Settings", items = function() return {
       get = function() return ns.Assist:LuaErrors() end, set = function(v) ns.Assist:LuaErrors(v) end,
       tip = "The game's own Lua error pop-up (scriptErrors setting)." },
     T("showMapPins", "Disable Map Pins", { invert = true }),
-    { type = "range", label = "Quest Log Size", min = 20, max = 40, planned = true, default = 25 },
 } end }
 
 local function profileNames(exclude)

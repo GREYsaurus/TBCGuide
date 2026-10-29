@@ -61,6 +61,35 @@ local profileDefaults = {
         gearQuestRewards = true,    -- rank reward choices in chat
         gearShowPercent = true,     -- relative score change (%), only when both scores are valid
         gearShowConfidence = true,
+        -- Automatic upgrades (Gear/AutoEquip.lua, docs/AUTO_EQUIP.md). Opt-in; never equips unbound BoE items.
+        autoEquip = false,          -- equip upgrades for the chosen spec profile
+        autoEquipEmpty = true,      -- fill empty gear slots with any usable non-BoE item
+        autoEquipMinPct = 0,        -- minimum estimated upgrade (%) for occupied slots; must also be > 0
+        equipNotify = true,         -- on-screen message after a confirmed equip
+        equipChat = false,          -- copy of that message in chat
+        boeMarkers = true,          -- marker on unequipped Bind-on-Equip upgrades in the bags
+        -- Features from the settings window (docs/SETTINGS.md)
+        activeItems = true,         -- active item window (usable quest items)
+        activeItemScale = 1,
+        vendorTreasures = true,     -- list/mark merchant items that are upgrades for your spec
+        flightTimers = true,        -- flight timer bar (learned per route)
+        groupFeatures = false,      -- master switch for the Grouping features
+        junkIndicator = false,      -- coin icon on junk items in the bags
+        talentPlan = true,          -- list the next picks of your build on level-up
+        talentPlanCount = 5,
+        dungeonOff = {},            -- [dungeon name] = true: that dungeon's quests are left out
+        activeTargets = true,       -- click-to-target window for the current step's NPCs
+        atEnemy = true, atFriendly = true, atLeader = false, atHideBg = false, atScale = 1,
+        trackerEnabled = true,      -- leveling tracker
+        trackerWithCharacter = false,
+        splitsEnabled = false, splitsCompare = false, splitsTotal = true, splitsHideBg = false,
+        splitsHistory = 10, splitsFont = 11, splitsAlpha = 0.9,
+        versionCheck = true,        -- tell me when a group or guild member has a newer TBCGuide
+        announceComplete = false, announceCollect = false, announceFlight = false,
+        announceSkipQuestie = false, announceAlways = false, autoShareQuests = false,
+        trackMobsMap = false, trackTreasures = false,
+        lowQuality = false,         -- slower arrow updates, fewer map pins
+        preloadData = false,        -- request item data for the guide and bags at login
         -- Settings window (UI/Config.lua); features in Core/Assist.lua
         showAllFrames = true,       -- master switch for the guide window and arrow
         hideWindow = false,
@@ -128,6 +157,7 @@ local charDefaults = {
     simTalents = {},    -- [class] = { [talentId] = rank } simulated allocation in the calculator
     junkStats = { items = 0, copper = 0 }, -- confirmed automatic junk sales (all time)
     gearProfile = nil,  -- chosen gear profile id (Gear/Profiles.lua); nil = automatic
+    gearExclude = { items = {}, slots = {} }, -- automatic upgrades never touch these items / inventory slots
     killedRares = {},   -- [npcID] = true: rares this character killed (skipKilledRares)
 }
 ns.PROFILE_DEFAULTS = profileDefaults
@@ -229,6 +259,15 @@ function ns:InitSavedVariables()
     if TBCGuideCharDB.gearProfile ~= nil and type(TBCGuideCharDB.gearProfile) ~= "string" then
         TBCGuideCharDB.gearProfile = nil
     end
+    for _, p in pairs(TBCGuideDB.profiles) do
+        if type(p) == "table" and p.dungeonOff ~= nil and type(p.dungeonOff) ~= "table" then p.dungeonOff = {} end
+    end
+    if type(TBCGuideCharDB.levelLog) ~= "table" then TBCGuideCharDB.levelLog = {} end
+    if type(TBCGuideDB.flightTimes) ~= "table" then TBCGuideDB.flightTimes = {} end
+    local gx = TBCGuideCharDB.gearExclude
+    if type(gx) ~= "table" then gx = {} TBCGuideCharDB.gearExclude = gx end
+    if type(gx.items) ~= "table" then gx.items = {} end
+    if type(gx.slots) ~= "table" then gx.slots = {} end
     if TBCGuideCharDB.activeGuide ~= nil and type(TBCGuideCharDB.activeGuide) ~= "string" then
         TBCGuideCharDB.activeGuide = nil
     end

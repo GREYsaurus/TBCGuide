@@ -179,6 +179,28 @@ function Talents:NextPick(build, live)
     return nil, #seq + 1, deviations
 end
 
+-- Talent plan: the next `n` picks of the build after what the character already has
+-- (Talent Plan Number in the settings), as { {talent=, rank=, level=} }.
+function Talents:Plan(build, live, n)
+    local seq = self:Expand(build)
+    local _, idx = self:NextPick(build, live)
+    local out = {}
+    for i = idx, math.min(#seq, idx + (n or 5) - 1) do
+        out[#out + 1] = { talent = seq[i].talent, rank = seq[i].rank, level = seq[i].level }
+    end
+    return out
+end
+
+function Talents:PrintPlan(build, live)
+    build = build or self:ActiveBuild()
+    if not build then return ns:Print("No talent build for your class.") end
+    local plan = self:Plan(build, live or self:ReadLive(), ns.db.profile.talentPlanCount or 5)
+    if #plan == 0 then return ns:Print("Talent plan: " .. build.name .. " is complete.") end
+    local parts = {}
+    for _, p in ipairs(plan) do parts[#parts + 1] = string.format("%d: %s %d", p.level, p.talent.name, p.rank) end
+    ns:Print("Talent plan (" .. build.name .. "): " .. table.concat(parts, ", "))
+end
+
 -- Chosen build for this character: saved choice, else first leveling build for the class.
 function Talents:ActiveBuild()
     local class = ns.Compat.PlayerInfo().class
@@ -203,6 +225,7 @@ function Talents:Init()
                 if p then
                     ns:Print(string.format("You have %d unspent talent point(s). Next for %s: |cffffd100%s|r rank %d.",
                         unspent, b.name, p.talent.name, p.rank))
+                    if ns.db.profile.talentPlan then Talents:PrintPlan(b, live) end
                 end
             end
         end)

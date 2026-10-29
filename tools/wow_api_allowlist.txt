@@ -234,3 +234,36 @@ ContainerFrameItemButton_OnModifiedClick # core; hooked with hooksecurefunc only
 C_AddOns                          # classic namespace (guarded)
 C_AddOns.IsAddOnLoaded
 IsAddOnLoaded                     # legacy fallback (guarded)
+
+# --- automatic upgrades (Gear/Upgrade.lua, Gear/AutoEquip.lua, UI/GearMarkers.lua) ---
+WorldFrame                        # core frame (owner of the hidden scan tooltip)
+ITEM_SOULBOUND                    # core global string
+ITEM_BIND_ON_EQUIP                # core global string
+ClearCursor                       # core
+NUM_CONTAINER_FRAMES              # core constant; guarded (falls back to 13)
+ContainerFrame_Update             # core; hooked with hooksecurefunc only, guarded
+
+# --- settings-window features (Core/Group.lua, Core/FlightTimer.lua, UI/LevelTracker.lua, UI/ActiveTargets.lua, vendor treasures) ---
+C_ChatInfo                        # classic; guarded
+C_ChatInfo.SendAddonMessage       # classic; guarded
+C_ChatInfo.RegisterAddonMessagePrefix # classic; guarded
+SendAddonMessage                  # core (pre-C_ChatInfo); guarded
+RegisterAddonMessagePrefix        # core (pre-C_ChatInfo); guarded
+GetQuestLogIndexByID              # core; guarded
+GetQuestLogPushable               # core; guarded
+QuestLogPushQuest                 # core; guarded
+UnitOnTaxi                        # core; guarded
+UnitIsFriend                      # core; guarded
+GetMerchantNumItems               # core; guarded
+GetMerchantItemLink               # core; guarded
+GetMerchantItemInfo               # core; guarded
+MERCHANT_ITEMS_PER_PAGE           # core constant; falls back to 10
+MerchantFrame                     # core frame; guarded
+MerchantFrame.page                # core field
+MerchantFrame.selectedTab         # core field
+MerchantFrame_UpdateMerchantInfo  # core; hooked with hooksecurefunc only, guarded
+RequestTimePlayed                 # core; guarded
+ChatFrame_DisplayTimePlayed       # core; wrapped once to hide the login /played lines TBCGuide asks for
+write:ChatFrame_DisplayTimePlayed # the wrapper passes every other call through unchanged
+CharacterFrame                    # core frame; guarded
+CharacterFrame.HookScript         # core

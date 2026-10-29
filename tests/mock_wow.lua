@@ -40,6 +40,9 @@ frameMeta = {
             SetShown = function(s, v) s.shown = v and true or false end,
             IsShown = function(s) return s.shown end,
             IsVisible = function(s) return s.shown end,
+            SetAttribute = function(s, k, v) local t = rawget(s, "attributes") or {} rawset(s, "attributes", t) t[k] = v end,
+            GetAttribute = function(s, k) local t = rawget(s, "attributes") return t and t[k] end,
+            SetScale = function(s, v) rawset(s, "scale", v) end,
             CreateTexture = function() return newObject("Texture") end,
             CreateFontString = function()
                 local fs = newObject("FontString")
@@ -220,7 +223,8 @@ C_Container = {
         if not b then return nil end
         local it = MOCK.items[b.itemID] or {}
         return { itemID = b.itemID, stackCount = b.count or 1, isLocked = b.locked or false, quality = it.quality,
-                 hyperlink = "|Hitem:" .. b.itemID .. "|h[" .. tostring(it.name) .. "]|h", hasNoValue = b.noValue or false }
+                 hyperlink = "|Hitem:" .. b.itemID .. "|h[" .. tostring(it.name) .. "]|h", hasNoValue = b.noValue or false,
+                 isBound = b.bound }
     end,
     GetContainerItemQuestInfo = function(bag, slot)
         local b = bagItem(bag, slot)
@@ -235,6 +239,61 @@ C_Container = {
         MOCK.bags[bag][slot] = nil
     end,
 }
+
+-- Equipping (Gear/AutoEquip.lua). The cursor holds { itemID=, bound=, bag=, slot= } in MOCK.cursorItem.
+MOCK.cursorItem = nil
+MOCK.freeOverride = nil      -- number: pretend this many free bag slots
+MOCK.equipFails = false      -- EquipCursorItem does nothing (item stays on the cursor)
+MOCK.equipCalls = {}
+MOCK.equippedBound = {}      -- [slot] = true once something was equipped there
+local function setCursor(c) MOCK.cursorItem = c MOCK.cursor = c ~= nil end
+function C_Container.PickupContainerItem(bag, slot)
+    local b = bagItem(bag, slot)
+    if MOCK.cursorItem then
+        local c = MOCK.cursorItem
+        MOCK.bags[bag] = MOCK.bags[bag] or {}
+        MOCK.bags[bag][slot] = { itemID = c.itemID, bound = c.bound }
+        setCursor(b and { itemID = b.itemID, bound = b.bound, bag = bag, slot = slot } or nil)
+        return
+    end
+    if not b or b.locked then return end
+    MOCK.bags[bag][slot] = nil
+    setCursor({ itemID = b.itemID, bound = b.bound, bag = bag, slot = slot })
+end
+function C_Container.GetContainerNumFreeSlots(bag)
+    if not MOCK.bags[bag] then return 0 end
+    if MOCK.freeOverride then return bag == 0 and MOCK.freeOverride or 0 end
+    local used = 0
+    for _ in pairs(MOCK.bags[bag]) do used = used + 1 end
+    return 16 - used
+end
+function ClearCursor() setCursor(nil) end
+MOCK.pickupContainerItem = C_Container.PickupContainerItem
+MOCK.getContainerNumFreeSlots = C_Container.GetContainerNumFreeSlots
+function GetInventoryItemID(unit, slot) return unit == "player" and MOCK.equipped[slot] or nil end
+local function freeSpot()
+    for bag = 0, 4 do
+        if MOCK.bags[bag] then for slot = 1, 16 do if not MOCK.bags[bag][slot] then return bag, slot end end end
+    end
+end
+function EquipCursorItem(slot)
+    local c = MOCK.cursorItem
+    table.insert(MOCK.equipCalls, { slot = slot, itemID = c and c.itemID })
+    if not c or MOCK.equipFails then return end
+    local it = MOCK.items[c.itemID] or {}
+    if (it.bindType == 2 and not c.bound) or it.askBind then MOCK.fire("EQUIP_BIND_CONFIRM", slot) return end
+    local out = {}
+    if MOCK.equipped[slot] then out[#out + 1] = MOCK.equipped[slot] end
+    if it.equipLoc == "INVTYPE_2HWEAPON" and MOCK.equipped[17] then out[#out + 1] = MOCK.equipped[17] MOCK.equipped[17] = nil end
+    MOCK.equipped[slot] = c.itemID
+    setCursor(nil)
+    for i, id in ipairs(out) do
+        local bag, s = c.bag, c.slot
+        if i > 1 or MOCK.bags[bag][s] then bag, s = freeSpot() end
+        MOCK.bags[bag][s] = { itemID = id, bound = true }
+    end
+    if not MOCK.holdEquipEvent then MOCK.fire("PLAYER_EQUIPMENT_CHANGED", slot) end
+end
 
 local function itemId(id)
     if type(id) == "string" then id = tonumber(string.match(id, "item:(%d+)")) end

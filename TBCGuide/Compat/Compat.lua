@@ -211,13 +211,16 @@ function C.GetContainerNumSlots(bag)
 end
 
 -- Returns a normalised record or nil for an empty slot:
--- { itemID=, count=, locked=bool, quality=, link=, noValue=bool }
+-- { itemID=, count=, locked=bool, quality=, link=, noValue=bool, bound=bool|nil }
+-- `bound` is this copy's binding state; nil when the client does not report it (legacy API).
 function C.GetContainerItem(bag, slot)
     if C_Container and C_Container.GetContainerItemInfo then
         local i = C_Container.GetContainerItemInfo(bag, slot)
         if not i then return nil end
+        local bound
+        if i.isBound ~= nil then bound = i.isBound and true or false end
         return { itemID = i.itemID, count = i.stackCount or 1, locked = i.isLocked and true or false,
-                 quality = i.quality, link = i.hyperlink, noValue = i.hasNoValue and true or false }
+                 quality = i.quality, link = i.hyperlink, noValue = i.hasNoValue and true or false, bound = bound }
     end
     if GetContainerItemInfo then
         local _, count, locked, quality, _, _, link, _, noValue, itemID = GetContainerItemInfo(bag, slot)

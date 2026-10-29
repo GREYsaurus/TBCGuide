@@ -1,14 +1,23 @@
 # Settings window
 
-`/tbcg options`, or left-click the minimap button, opens the TBCGuide settings window. It has two rows of tabs: **General, Guide Routing, Targeting, Leveling Tracker, Communications, Tips, Help** and **Look and Feel, Advanced Settings, Profiles**. Escape closes it. Changes apply immediately and are saved in your current profile.
+`/tbcg options`, or left-click the minimap button, opens the TBCGuide settings window. It has one row of tabs: **General, Guide Routing, Targeting, Leveling Tracker, Communications, Tips, Advanced Settings, Profiles, Help**. Escape closes it. Changes apply immediately and are saved in your current profile.
 
-Above the tabs are four buttons:
+Under the title bar are five buttons:
 - **Guide Browser** opens the guide browser.
 - **Talent Guide** opens the talent guide.
+- **Leveling Report** shows time per level and XP per hour.
 - **Report an Issue** shows a link to copy.
 - **Choose the Best Guide for Me** loads the guide that fits your race, class and level.
 
-Options shown **greyed out** are planned and do nothing yet; hovering one says so. Nothing in the window pretends to work. Not tested in the game client yet.
+**Greyed-out options** are planned and do nothing yet; hovering one says so. Four are left:
+- *Follow Party Leader Macro*;
+- *Quest Sellable Recommendation*;
+- *Always Show Total EP*;
+- *Enable Auctioneer*.
+
+None of this has been tested in the game client yet.
+
+**Look:** every TBCGuide window shares one flat dark style with a blue accent. The colours are in one table, `W.THEME` in `TBCGuide/UI/Widgets.lua`.
 
 ## What each tab controls
 
@@ -35,7 +44,15 @@ Options shown **greyed out** are planned and do nothing yet; hovering one says s
   - *Delete Cheapest Junk Item Keybind* (click, then press a key; right-click unbinds).
   - *Reset Junk List*.
   - Junk means grey items plus your junk list. Quest, quest-starting, guide-needed and protected items are never sold or deleted, and nothing is deleted in combat.
-- **Talents:** *Enable Talents Guides* turns on the chat reminders to spend talent points.
+- **Features:**
+  - *Hide Active Item window* (off by default): buttons for usable quest items in your bags. Click one to use the item. They update after combat, because secure buttons can't change in combat.
+  - *Enable Vendor Treasures* (on): when a merchant opens, lists and marks items it sells that are upgrades for your spec profile, the same estimate as automatic upgrades. Needs a spec profile.
+  - *Show Flight Timers* (on): a bar with the time left on a flight. TBCGuide ships no flight data, so each route is timed the first time you fly it and counts down after that.
+  - *Enable Group Settings* (off): master switch for the party features on the Communications tab and the leader's target on the Targeting tab.
+- **Inventory:** *Show junk item indicator* (off) puts a coin on bag items the inventory manager would sell.
+- **Talents:**
+  - *Enable Talents Guides* turns on the chat reminders to spend talent points.
+  - *Enable Talent Plan* and *Talent Plan Number* add your build's next picks to those reminders. `/tbcg talents plan` shows them any time.
 
 ### Guide Routing
 - *Skip overleveled steps* (on) skips picking up quests that are grey for your level, unless a later quest in the guide needs them.
@@ -45,7 +62,10 @@ Options shown **greyed out** are planned and do nothing yet; hovering one says s
   - **Already in your log:** a dungeon quest you have already accepted keeps its steps, and TBCGuide never abandons quests.
   - **Applies immediately,** and turning it back on restores the steps without touching your progress.
   - **Tagged today:** only Horde Ashenvale *Amongst the Ruins* (Blackfathom Deeps), because it's the only guide quest that needs an instance.
-- Choosing single dungeons is planned.
+- **Single dungeons:** one switch per dungeon of your faction. A dungeon marked * has quests in the guides; today that's only Blackfathom Deeps.
+  - **Select Recommended Dungeons** keeps the ones you haven't outleveled that start at most 8 levels above you.
+  - **Select all Dungeons** turns them all back on.
+  - Level ranges are the usual approximate ones (`TBCGuide/Database/Dungeons.lua`).
 
 ### Targeting
 - *Enable Targeting* turns raid markers on or off.
@@ -60,25 +80,68 @@ Options shown **greyed out** are planned and do nothing yet; hovering one says s
   - *Create Targeting Macro* keeps a "TBCGuide" macro with `/tar` lines for the current step's NPCs. Drag it to an action bar from the Macros window, General tab. It's never edited in combat.
   - *Notify on new target* prints one chat line when a current-step NPC first comes into view.
 - **Raid Marker Bar:** shows or hides the marker bar.
+- **Active Target Frame:** click-to-target buttons (`/tar <name>`) for the current step's NPCs.
+  - **Who:** enemies in red, quest givers and finishers in green.
+  - **Party leader:** *Follow Party Leader Target* adds your party leader's target. It needs *Enable Group Settings*.
+  - **Look:** background on or off, scale, and *Reset Window Position*.
+  - **Combat:** it updates after combat.
+
+### Leveling Tracker
+- **What it tracks:** how long each level takes, using played time from the server (asked for quietly at login), and your XP per hour this session.
+  - Levels finished before this version show as `-`.
+- **Leveling report:** `/tbcg tracker` or the button at the top of the window. It shows:
+  - the current level's time;
+  - XP per hour, and an estimate of when you'll level;
+  - total played time;
+  - your average time per level.
+
+  *Always Open Leveling Report With Character Panel* opens it with the character window.
+- **Level Splits:** a small window with the time each recent level took.
+  - *History* sets how many levels it shows.
+  - *Compare Next Level* compares the running level with the previous one.
+  - Also: total time, font size, opacity and hiding the background.
 
 ### Communications
-- Level-up announcements to emote, party or guild chat. All are off by default.
+- **Enable Addon Version Checks** (on): tells you once when a group or guild member runs a newer TBCGuide.
+  - Uses hidden add-on messages; nothing appears in chat.
+  - It's also how TBCGuide knows which party members use it.
+- **Level-up announcements** to emote, party or guild chat. All are off by default.
+- **Party announcements** (all off by default, and all need *Enable Group Settings*):
+  - *Announce Step completion*: a guide quest's objectives are all done.
+  - *Announce Step collection*: progress, such as *Wolf Meat: 3/8*.
+  - *Announce Step flying timers*: you took a flight, with the arrival time once the route is known.
+  - *Don't announce when Questie is loaded*: avoids double messages, since Questie can announce progress itself.
+  - **Never in raids.** They are only sent when another party member runs TBCGuide, unless *Send announcements without another TBCGuide user in group* is on.
+- *Automatic quest sharing*: shares a guide quest with your party right after you accept it.
 
 ### Tips
 - **Drowning:** warning, sound, threshold, screen-edge flash.
 - **Emergency Actions:** low-health warning, threshold, sound, flash.
 - **Rare mobs:** *Track Rare Mobs* gives a chat alert and sound when a rare's nameplate appears (rares from the bundled database). It can skip rares this character already killed.
-- **Item Upgrade:** gear scoring switches, the scoring profile ("Talents"), and quest reward recommendation and automation. See [GEAR_SCORING.md](GEAR_SCORING.md).
+- **Map pins:** both come from the bundled data, which covers quest NPCs and mobs, not every elite in the game.
+  - *Track Mobs on Map*: world map pins for elite and rare mobs in the zone shown.
+  - *Track Treasures*: pins for treasure chests.
+- **Item Upgrade:**
+  - gear scoring switches;
+  - the **Spec profile** (per character; your class's profiles only);
+  - quest reward recommendation and automation.
 
-### Look and Feel
-- **Text colours:** friendly NPCs, quests and warnings in the guide window, plus *Reset Colors*.
-- **Guide window:** scale, font size, number of steps shown, *Show step list*, reset window positions.
-- **Waypoint arrow:** scale, reset position.
-- **Map:** world map pin, TomTom waypoints.
+  See [GEAR_SCORING.md](GEAR_SCORING.md).
+- **Automatic Upgrades** (opt-in): see [AUTO_EQUIP.md](AUTO_EQUIP.md).
+  - **Equipping:** *Enable automatic upgrades* asks first and needs a spec profile. Unbound Bind-on-Equip items are never equipped automatically, and no setting changes that.
+  - **Other options:**
+    - *Fill empty gear slots*;
+    - *Minimum upgrade* (%);
+    - on-screen and chat equip messages;
+    - *Mark Bind-on-Equip upgrades in bags*;
+    - *Clear excluded items*.
+- **Protected Slots:** one switch per gear slot. Automatic upgrades never change a protected slot.
 
 ### Advanced Settings
 - *Enable Debug*.
 - *Update Frequency (ms)*: how often the arrow redraws.
+- *Low Quality Settings*: the arrow redraws at most every 150 ms, and the map shows fewer pins.
+- *Pre load all data*: at login, and when you change guide, asks the game for the item data your guide's quests and your bags use, so tooltips and scoring don't wait.
 - *Check for Addon Incompatibility*: warns at login when another leveling guide add-on is loaded.
 - **Debug section:**
   - *Disable step skips*: nothing is skipped automatically.
@@ -96,13 +159,22 @@ Options shown **greyed out** are planned and do nothing yet; hovering one says s
 - Settings saved before 0.5.0 become the **Default** profile automatically.
 - *Reload guides and UI* and *Reset Guide Progress* (asks first) are at the top.
 
-## Planned (shown greyed out)
+## Removed
 
-- **General:** Active Item window, Vendor Treasures, Flight Timers, Group Settings, junk item indicator in bags, talent plan.
-- **Guide Routing:** experience-rate detection, Solo Self Found mode, dungeon selection.
-- **Targeting:** follow-leader macro, Active Target frame.
-- **Leveling Tracker:** the whole tab.
-- **Communications:** version checks, step announcements, quest sharing.
-- **Tips:** map tracking of dangerous mobs and treasures, auctioneer and total EP display, sellable-quest-item hints.
-- **Look and Feel:** themes, kill, loot and buy colours, arrow text size, active items, extra map-pin options.
-- **Advanced:** beta features, low-quality mode, hearthstone batching, preloading, quest log size.
+**The Look and Feel tab** is gone. Its settings keep their current values but can no longer be changed in the window:
+- text colours;
+- guide window scale, font size, steps shown and step list;
+- arrow scale;
+- map pin and TomTom.
+
+**Options with nothing to act on in TBCGuide** were removed:
+- *Detect Rate* and *Experience rates*;
+- *Solo Self Found Mode*;
+- *Enable Beta Features*;
+- *Hearthstone batching* and its window size;
+- *Quest Log Size*: the TBC quest log is fixed at 25.
+
+## Still planned (shown greyed out)
+
+- **Targeting:** follow-leader macro.
+- **Tips:** sellable-quest-item hints, total EP display, auctioneer.

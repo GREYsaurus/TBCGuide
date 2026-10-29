@@ -36,21 +36,36 @@ ns.GearProfiles = {
           assumptions = "wowsims Combat talents, P1 raid preset, full raid buffs.",
           sources = { "S1 ui/rogue/sim.ts epWeights", "S2 EP table (Tier 4 column) agrees within 0.5" } },
 
+        { id = "rogue_assassination_raid", class = "ROGUE", spec = "Assassination", role = "Melee DPS", context = "pve-raid",
+          levelMin = 70, levelMax = 70, confidence = "low",
+          priority = { "exp", "hit", "agi", "haste", "crit", "arp" },
+          caps = { hit = 142, exp = 103 },
+          assumptions = "Priority only. Both sources publish one Rogue page for all specs; its EP table is the Combat one, so it is not reused for Assassination.",
+          sources = { "S2 icy-veins.com/tbc-classic/rogue-dps-pve-stat-priority (read 2026-10-29)",
+                      "S3 wowhead.com/tbc/guide/classes/rogue/dps-stat-priority-attributes-pve (read 2026-10-29)" } },
+        { id = "rogue_subtlety_raid", class = "ROGUE", spec = "Subtlety", role = "Melee DPS", context = "pve-raid",
+          levelMin = 70, levelMax = 70, confidence = "low",
+          priority = { "exp", "hit", "agi", "haste", "crit", "arp" },
+          caps = { hit = 142, exp = 103 },
+          assumptions = "Priority only; same single Rogue page as Assassination. Subtlety is rarely a raid spec in TBC.",
+          sources = { "S2 icy-veins.com/tbc-classic/rogue-dps-pve-stat-priority (read 2026-10-29)",
+                      "S3 wowhead.com/tbc/guide/classes/rogue/dps-stat-priority-attributes-pve (read 2026-10-29)" } },
+
         -- Warlock ----------------------------------------------------------------------------------
-        { id = "warlock_destruction_raid", class = "WARLOCK", spec = "Destruction", role = "Ranged DPS", context = "pve-raid",
+        { id = "warlock_destruction_raid", schools = { "Shadow" }, class = "WARLOCK", spec = "Destruction", role = "Ranged DPS", context = "pve-raid",
           levelMin = 70, levelMax = 70, confidence = "high", normalization = "SP = 1",
           weights = { sp = 1, spellcrit = 0.882, spellhit = 1.956, int = 0.261, sta = 0, spellhaste = 1.350 },
           caps = { spellhit = 202 },
           assumptions = "Shadow Destruction, T4/T5 gear. Spirit (0.094) counts only with Improved Drain Soul, so it is left out.",
           sources = { "S2 icy-veins.com/tbc-classic/destruction-warlock-dps-pve-stat-priority",
                       "S1 ui/warlock/sim.ts (P4, hit-capped) agrees on order" } },
-        { id = "warlock_affliction_raid", class = "WARLOCK", spec = "Affliction", role = "Ranged DPS", context = "pve-raid",
+        { id = "warlock_affliction_raid", schools = { "Shadow" }, class = "WARLOCK", spec = "Affliction", role = "Ranged DPS", context = "pve-raid",
           levelMin = 70, levelMax = 70, confidence = "medium", normalization = "SP = 1",
           weights = { sp = 1, spellcrit = 0.528, spellhit = 1.930, int = 0.156, sta = 0, spellhaste = 1.362 },
           caps = { spellhit = 202 },
           assumptions = "Unstable Affliction build, T4/T5 gear, Affliction spells not capped by Suppression (1.429 if they are).",
           sources = { "S2 icy-veins.com/tbc-classic/affliction-warlock-dps-pve-stat-priority" } },
-        { id = "warlock_demonology_raid", class = "WARLOCK", spec = "Demonology", role = "Ranged DPS", context = "pve-raid",
+        { id = "warlock_demonology_raid", schools = { "Shadow" }, class = "WARLOCK", spec = "Demonology", role = "Ranged DPS", context = "pve-raid",
           levelMin = 70, levelMax = 70, confidence = "medium", normalization = "SP = 1",
           weights = { sp = 1, spellcrit = 0.596, spellhit = 1.596, int = 0.220, sta = 0.058, spellhaste = 1.362 },
           caps = { spellhit = 202 },
@@ -69,14 +84,14 @@ ns.GearProfiles = {
           caps = { hit = 142, exp = 103 },
           assumptions = "wowsims P1 preset, full raid buffs. S2 and S3 priorities agree; S2 cites S1, so one source.",
           sources = { "S1 ui/enhancement_shaman/sim.ts epWeights" } },
-        { id = "shaman_elemental_raid", class = "SHAMAN", spec = "Elemental", role = "Ranged DPS", context = "pve-raid",
+        { id = "shaman_elemental_raid", schools = { "Nature" }, class = "SHAMAN", spec = "Elemental", role = "Ranged DPS", context = "pve-raid",
           levelMin = 70, levelMax = 70, confidence = "medium", normalization = "SP = 1",
           weights = { int = 0.33, sp = 1, spellcrit = 0.78, spellhaste = 1.25, mp5 = 0.08 },
           assumptions = "wowsims P1 preset (hit-capped: spell hit is not scored).",
           sources = { "S1 ui/elemental_shaman/sim.ts epWeights" } },
 
         -- Druid ------------------------------------------------------------------------------------
-        { id = "druid_balance_raid", class = "DRUID", spec = "Balance", role = "Ranged DPS", context = "pve-raid",
+        { id = "druid_balance_raid", schools = { "Arcane", "Nature" }, class = "DRUID", spec = "Balance", role = "Ranged DPS", context = "pve-raid",
           levelMin = 70, levelMax = 70, confidence = "medium", normalization = "SP = 1",
           weights = { int = 0.54, spi = 0.1, sp = 1, spellcrit = 0.84, spellhaste = 1.29 },
           assumptions = "wowsims P1 preset (hit-capped: spell hit is not scored). Guides rank SP above Haste.",
@@ -106,25 +121,38 @@ ns.GearProfiles = {
           assumptions = "wowsims P1 preset (hit-capped: hit is not scored). Guides value ArP far higher in later phases.",
           sources = { "S1 ui/hunter/sim.ts epWeights" } },
 
+        { id = "hunter_mm_raid", class = "HUNTER", spec = "Marksmanship", role = "Ranged DPS", context = "pve-raid",
+          levelMin = 70, levelMax = 70, confidence = "low",
+          priority = { "hit", "arp", "agi", "rap", "crit" },
+          caps = { hit = 142 },
+          assumptions = "Priority only. Cap 142 without raid buffs (the source's 79 assumes Improved Faerie Fire and a Draenei).",
+          sources = { "S2 icy-veins.com/tbc-classic/marksmanship-hunter-dps-pve-stat-priority (updated 2026-01-12, read 2026-10-29)" } },
+        { id = "hunter_sv_raid", class = "HUNTER", spec = "Survival", role = "Ranged DPS", context = "pve-raid",
+          levelMin = 70, levelMax = 70, confidence = "low",
+          priority = { "agi", "crit", "hit", "arp", "rap" },
+          caps = { hit = 95 },
+          assumptions = "Priority only. Surefooted gives 3% hit, so 6% (95 rating) comes from gear without raid buffs. Values raid-wide Expose Weakness, not personal damage.",
+          sources = { "S2 icy-veins.com/tbc-classic/survival-hunter-dps-pve-stat-priority (updated 2026-01-12, read 2026-10-29)" } },
+
         -- Mage -------------------------------------------------------------------------------------
-        { id = "mage_arcane_raid", class = "MAGE", spec = "Arcane", role = "Ranged DPS", context = "pve-raid",
+        { id = "mage_arcane_raid", schools = { "Arcane" }, class = "MAGE", spec = "Arcane", role = "Ranged DPS", context = "pve-raid",
           levelMin = 70, levelMax = 70, confidence = "medium", normalization = "SP = 1",
           weights = { int = 1.29, spi = 0.89, sp = 1, spellcrit = 0.77, spellhaste = 0.84, mp5 = 0.61 },
           assumptions = "wowsims Arcane talents, P1 preset (hit-capped: spell hit is not scored).",
           sources = { "S1 ui/mage/sim.ts epWeights" } },
-        { id = "mage_fire_raid", class = "MAGE", spec = "Fire", role = "Ranged DPS", context = "pve-raid",
+        { id = "mage_fire_raid", schools = { "Fire" }, class = "MAGE", spec = "Fire", role = "Ranged DPS", context = "pve-raid",
           levelMin = 70, levelMax = 70, confidence = "low",
           priority = { "spellhit", "sp", "spellhaste", "spellcrit", "int", "sta", "spi", "mp5" },
           caps = { spellhit = 165 },
           sources = { "S2 fire-mage-dps page", "S3 wowhead mage page (puts Haste above SP)" } },
-        { id = "mage_frost_raid", class = "MAGE", spec = "Frost", role = "Ranged DPS", context = "pve-raid",
+        { id = "mage_frost_raid", schools = { "Frost" }, class = "MAGE", spec = "Frost", role = "Ranged DPS", context = "pve-raid",
           levelMin = 70, levelMax = 70, confidence = "low",
           priority = { "spellhit", "sp", "spellhaste", "spellcrit", "int", "sta", "spi", "mp5" },
           caps = { spellhit = 127 },
           sources = { "S2 frost-mage-dps page" } },
 
         -- Priest -----------------------------------------------------------------------------------
-        { id = "priest_shadow_raid", class = "PRIEST", spec = "Shadow", role = "Ranged DPS", context = "pve-raid",
+        { id = "priest_shadow_raid", schools = { "Shadow" }, class = "PRIEST", spec = "Shadow", role = "Ranged DPS", context = "pve-raid",
           levelMin = 70, levelMax = 70, confidence = "medium", normalization = "SP = 1",
           weights = { int = 0.05, spi = 0.11, sp = 1, spellcrit = 0.163, spellhaste = 1.0, mp5 = 0 },
           assumptions = "wowsims P1 preset (hit-capped); the sim file itself flags the haste value as uncertain.",
@@ -133,6 +161,12 @@ ns.GearProfiles = {
           levelMin = 70, levelMax = 70, confidence = "low",
           priority = { "spellhaste", "heal", "spellcrit", "spi", "int", "mp5", "sta" },
           sources = { "S2 holy-priest-healer page", "S3 wowhead priest healer page" } },
+
+        { id = "priest_discipline_raid", class = "PRIEST", spec = "Discipline", role = "Healer", context = "pve-raid",
+          levelMin = 70, levelMax = 70, confidence = "low",
+          priority = { "spellhaste", "heal", "spellcrit", "spi", "int", "mp5", "sta" },
+          assumptions = "No TBC Discipline stat page exists (S2 404, checked again 2026-10-29). Uses the priest healer priority.",
+          sources = { "S2 holy-priest-healer page (used for Discipline)", "S3 wowhead priest healer page" } },
 
         -- Paladin ----------------------------------------------------------------------------------
         { id = "paladin_retribution_raid", class = "PALADIN", spec = "Retribution", role = "Melee DPS", context = "pve-raid",
@@ -182,5 +216,25 @@ ns.GearProfiles = {
         { id = "druid_feral_leveling", class = "DRUID", spec = "Feral", role = "Melee DPS", context = "leveling",
           levelMin = 1, levelMax = 69, confidence = "low", priority = { "agi", "str" },
           sources = { "S4 icy-veins druid-leveling-guide" } },
+    },
+
+    -- Heuristic layer for AUTOMATIC UPGRADES ONLY (Gear/Upgrade.lua). NOT from any source: these are
+    -- TBCGuide's own estimates, shown as "estimated" wherever they are used, and kept here so they can
+    -- be edited in one place (docs/AUTO_EQUIP.md explains them). Tooltips and quest rewards keep using
+    -- the sourced data above unchanged.
+    heuristic = {
+        -- Priority-only profiles: weight = budget[stat] x rank factor. The first listed stat gets
+        -- rankTop, the last rankBottom, linear in between; stats not listed count 0.
+        rankTop = 1.0, rankBottom = 0.4,
+        -- Approximate cost of one point of each stat relative to one point of a primary stat, so a
+        -- priority list can compare items with different stat types (TBC itemisation rule of thumb).
+        budget = { str = 1, agi = 1, sta = 1, int = 1, spi = 1, ap = 0.5, rap = 0.4, feralap = 0.4, sp = 0.86, heal = 0.45,
+                   hit = 1, spellhit = 1, crit = 1, spellcrit = 1, haste = 1, spellhaste = 1, exp = 1, arp = 0.14,
+                   mp5 = 2.5, def = 1, dodge = 1, parry = 1, block = 1, blockvalue = 0.65, armor = 0.02 },
+        -- Weapon DPS: 1 DPS adds 14 attack power worth of white damage on that hand (AP / 14 = DPS).
+        -- Valued at the profile's AP weight (RAP for a hunter's ranged slot); the off hand counts half.
+        weaponDpsPerAp = 14, offHandFactor = 0.5,
+        -- "+X damage done by <school> spells" counts as spell damage for profiles whose `schools`
+        -- include it (split evenly between listed schools), and 0 otherwise.
     },
 }

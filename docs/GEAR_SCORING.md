@@ -1,6 +1,8 @@
 # Gear scoring
 
-TBCGuide compares items with what you wear: on item tooltips, for quest rewards (ranked in chat when a quest offers a choice), and with `/tbcg gear` (also `/tbcgear`). It never equips, buys or chooses anything. Quest rewards are always picked by you.
+TBCGuide compares items with what you wear: on item tooltips, for quest rewards (ranked in chat when a quest offers a choice), and with `/tbcg gear` (also `/tbcgear`). Nothing on this page equips, buys or chooses anything. Quest rewards are picked by you unless you turn on *Quest auto rewards*.
+
+**Automatic upgrades** (opt-in) and the Bind-on-Equip bag markers use a separate evaluator with the profile you choose. For priority-only profiles it uses **estimated** weights, labelled as such. See [AUTO_EQUIP.md](AUTO_EQUIP.md).
 
 The stat weights come from researched sources, listed with their assumptions in [GEAR_RESEARCH.md](GEAR_RESEARCH.md). Nothing has been tested in the game client yet.
 
@@ -52,5 +54,5 @@ Profiles are plain data in `TBCGuide/Gear/Profiles.lua`; no code changes are nee
 
 1. Record the new source in `docs/GEAR_RESEARCH.md`: URL, date, game version and phase, context, assumptions, and whether it gives numbers.
 2. Edit or add the profile. Use the stat keys listed at the top of the file, keep `sources` and `assumptions` accurate, and set `confidence` by the rules in the research doc.
-3. Only add `weights` when a source publishes numbers. Otherwise use `priority`. Never derive numbers from a priority list.
+3. Only add `weights` when a source publishes numbers. Otherwise use `priority`. Don't write derived numbers into a profile. The only derived numbers are the automatic-upgrade estimates, made at runtime from the `heuristic` table in the same file and labelled as estimates (AUTO_EQUIP.md).
 4. Run the tests (`tests/run_tests.lua`). They check every profile's structure: unique id, valid class, confidence, level range, sources, known stat keys, weights *or* priority, and no numbers on leveling profiles.

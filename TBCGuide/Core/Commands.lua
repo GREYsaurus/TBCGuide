@@ -12,6 +12,8 @@ local HELP = {
     { "", "toggle the guide window" },
     { "guide", "open the guide browser" },
     { "talents", "open the talent guide / calculator" },
+    { "talents plan", "the next talent picks of your build" },
+    { "tracker", "leveling report (time per level, XP per hour)" },
     { "next", "mark the current step done" },
     { "prev", "go back one step" },
     { "skip", "skip the current step" },
@@ -35,6 +37,8 @@ local HELP = {
     { "gear", "equipped gear, empty slots and upgrades in your bags (also /tbcgear)" },
     { "gear profiles | profile <id|auto>", "list or choose the gear scoring profile" },
     { "gear options", "open gear scoring settings" },
+    { "gear auto", "automatic upgrade status" },
+    { "gear exclude|include <item>", "keep an item out of automatic upgrades (or allow it again)" },
     { "set <option> on|off", "change a setting from chat" },
     { "debug [api|talents|quest <id>|escort <id>|marks|errors]", "diagnostics" },
     { "help", "this list" },
@@ -54,8 +58,9 @@ commands.show = function() ns.MainFrame:Show() end
 commands.guide = function() ns.Browser:Toggle() end
 commands.guides = commands.guide
 commands.browser = commands.guide
-commands.talents = function() ns.TalentFrame:Toggle() end
+commands.talents = function(arg) if arg == "plan" then return ns.Talents:PrintPlan() end ns.TalentFrame:Toggle() end
 commands.talent = commands.talents
+commands.tracker = function() ns.LevelTracker:ToggleReport() end
 commands.next = function() ns.Engine:Next() end
 commands.prev = function() ns.Engine:Prev() end
 commands.skip = function() ns.Engine:Skip() end

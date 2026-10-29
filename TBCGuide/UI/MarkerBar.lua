@@ -82,10 +82,10 @@ function MB:CreateOptions()
     self.checks = {}
     for _, c in ipairs(CHECKS) do
         local key = c[1]
-        local cb = CreateFrame("CheckButton", nil, p, "UICheckButtonTemplate")
+        local cb = W.Check(p)
         cb:SetPoint("TOPLEFT", 16, y)
         local text = W.Text(cb, "GameFontHighlight")
-        text:SetPoint("LEFT", cb, "RIGHT", 2, 0)
+        text:SetPoint("LEFT", cb, "RIGHT", 8, 0)
         text:SetText(c[2])
         cb:SetScript("OnClick", function(self)
             ns.db.profile[key] = self:GetChecked() and true or false

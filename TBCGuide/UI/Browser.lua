@@ -36,9 +36,7 @@ function Browser:Create()
     W.CloseButton(f)
     tinsert(UISpecialFrames, "TBCGuideBrowser")
 
-    local title = W.Text(f, "GameFontNormalLarge")
-    title:SetPoint("TOPLEFT", 12, -10)
-    title:SetText("TBCGuide - Guides")
+    W.TitleBar(f, "TBCGuide - Guides")
 
     self:DefaultFilter()
 
@@ -76,25 +74,22 @@ function Browser:Create()
     chapterDD:SetPoint("LEFT", classDD, "RIGHT", -24, 0)
 
     -- Filter row 2: search, level fit
-    local search = CreateFrame("EditBox", "TBCGuideBrowserSearch", f, "InputBoxTemplate")
-    search:SetSize(150, 20)
-    search:SetPoint("TOPLEFT", 20, -66)
-    search:SetAutoFocus(false)
+    local search = W.Input(f, "TBCGuideBrowserSearch", 160, 20)
+    search:SetPoint("TOPLEFT", 14, -70)
     search:SetScript("OnTextChanged", function(self) Browser.filter.text = self:GetText(); Browser:Refresh() end)
     search:SetScript("OnEscapePressed", function(self) self:ClearFocus() end)
     local sl = W.Text(f, "GameFontHighlightSmall")
     sl:SetPoint("BOTTOMLEFT", search, "TOPLEFT", -4, 1)
     sl:SetText("Search zone / name")
 
-    local lvl = CreateFrame("CheckButton", nil, f, "UICheckButtonTemplate")
-    lvl:SetPoint("LEFT", search, "RIGHT", 10, 0)
-    lvl:SetSize(22, 22)
+    local lvl = W.Check(f, 16)
+    lvl:SetPoint("LEFT", search, "RIGHT", 12, 0)
     lvl:SetScript("OnClick", function(self)
         Browser.filter.level = self:GetChecked() and (UnitLevel("player") or 1) or nil
         Browser:Refresh()
     end)
     local ll = W.Text(f, "GameFontHighlightSmall")
-    ll:SetPoint("LEFT", lvl, "RIGHT", 2, 0)
+    ll:SetPoint("LEFT", lvl, "RIGHT", 6, 0)
     ll:SetText("Only my level")
 
     W.Button(f, "Recommended", 100, 20, function()
@@ -104,11 +99,12 @@ function Browser:Create()
             ns:Print("Recommended: " .. g.name .. " (" .. why .. ")")
             Browser:Refresh()
         end
-    end):SetPoint("TOPRIGHT", -16, -66)
+    end):SetPoint("TOPRIGHT", -14, -70)
 
     -- List
     local listBg = W.Panel(nil, f, 300, 300)
-    listBg:SetPoint("TOPLEFT", 12, -92)
+    W.Skin(listBg, "panel")
+    listBg:SetPoint("TOPLEFT", 12, -98)
     listBg:SetPoint("BOTTOMLEFT", 12, 40)
     listBg:SetWidth(300)
     local scroll, content = W.Scroll(listBg, "TBCGuideBrowserScroll")

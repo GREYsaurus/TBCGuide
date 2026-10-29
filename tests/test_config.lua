@@ -16,10 +16,10 @@ check(CF.frame ~= nil and _G.TBCGuideConfigFrame == CF.frame, "settings window c
 CF:Create()
 check(_G.TBCGuideConfigFrame == CF.frame, "created only once")
 check(string.find(CF.title:GetText(), "TBCGuide - Version", 1, true), "title shows the add-on name and version")
-local ids = { "general", "guide", "targeting", "tracker", "comms", "tips", "help", "look", "advanced", "profiles" }
+local ids = { "general", "guide", "targeting", "tracker", "comms", "tips", "help", "advanced", "profiles" }
 local tabCount = 0
 for _ in pairs(CF.tabs) do tabCount = tabCount + 1 end
-check(tabCount == 10, "two rows of tabs: 7 + 3")
+check(tabCount == 9, "two rows of tabs: 7 + 2 (Look and Feel removed)")
 CF:Show()
 check(CF.current == "general" and CF.frame:IsShown(), "opens on General")
 
@@ -39,7 +39,7 @@ for _, id in ipairs(ids) do
         end
     end
 end
-check(real >= 70 and plannedCount >= 30, "real controls: " .. real .. ", planned (disabled): " .. plannedCount)
+check(real >= 100 and plannedCount <= 4, "real controls: " .. real .. ", planned (disabled): " .. plannedCount)
 
 local function widget(page, label)
     for _, w in ipairs(CF.built[page].widgets) do
@@ -69,7 +69,9 @@ w.frame.scripts.OnClick(w.frame)
 check(prof().autoAccept == false and prof().autoTurnIn == false, "combined toggle sets accept and turn-in")
 w.frame:SetChecked(true)
 w.frame.scripts.OnClick(w.frame)
-w = widget("general", "Enable Vendor Treasures")
+w = widget("tips", "Enable Auctioneer")
+CF:Show("tips")
+w = widget("tips", "Enable Auctioneer")
 check(w.item.planned and w.frame.scripts.OnClick == nil, "planned options are disabled and do nothing")
 CF:Show("advanced")
 w = widget("advanced", "Update Frequency (ms)")

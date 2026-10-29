@@ -11,53 +11,53 @@
 @next H_Ashenvale
 
 turnin Letter to Jin'Zil [optional] | Witch Doctor Jin'Zil, if you took the letter in the Barrens.
+accept Jin'Zil's Forest Magic | Witch Doctor Jin'Zil, Malaka'jin (south).
 turnin 1510 News of Dogran [class=Warlock; race=Orc,Undead,Blood Elf]
 accept 1511 Ken'zigla's Draught [class=Warlock; race=Orc,Undead,Blood Elf]
 turnin 6461 Blood Feeders [class=Shaman; race=Orc,Tauren,Troll]
-turnin 6284 Arachnophobia [class=Shaman; race=Orc,Tauren,Troll]
-turnin 6401 Kaya's Alive
-accept Jin'Zil's Forest Magic | Witch Doctor Jin'Zil, Malaka'jin (south).
-accept Harpies Threaten | Maggran Earthbinder, Sun Rock Retreat.
-accept Trouble in the Deeps | Tsunaman. Turned in at Zoram'gar Outpost in Ashenvale (next guide).
-turnin 1095 Further Instructions
-accept 6641 Vorsha the Lasher [class=Shaman; race=Orc,Tauren,Troll]
-complete 6641 Vorsha the Lasher [class=Shaman; race=Orc,Tauren,Troll]
-turnin 6641 Vorsha the Lasher [class=Shaman; race=Orc,Tauren,Troll]
-turnin 1063 The Elder Crone
-accept 1064 Forsaken Aid [optional]
-turnin 1064 Forsaken Aid [optional]
-turnin 1511 Ken'zigla's Draught [class=Warlock; race=Orc,Undead,Blood Elf]
-accept 1515 Dogran's Captivity [class=Warlock; race=Orc,Undead,Blood Elf]
-turnin 1515 Dogran's Captivity [class=Warlock; race=Orc,Undead,Blood Elf]
-accept 1512 Love's Gift [class=Warlock; race=Orc,Undead,Blood Elf]
 accept 1535 Call of Water [class=Shaman; race=Orc,Tauren,Troll]
 complete 1535 Call of Water [class=Shaman; race=Orc,Tauren,Troll]
-turnin 1535 Call of Water [class=Shaman; race=Orc,Tauren,Troll]
-turnin 1512 Love's Gift [class=Warlock; race=Orc,Undead,Blood Elf]
+turnin 1535 Call of Water [class=Shaman; race=Orc,Tauren,Troll] | Turned in at The Barrens.
+turnin 1511 Ken'zigla's Draught [class=Warlock; race=Orc,Undead,Blood Elf] | Turned in at The Barrens.
+accept 1515 Dogran's Captivity [class=Warlock; race=Orc,Undead,Blood Elf]
+turnin 1515 Dogran's Captivity [class=Warlock; race=Orc,Undead,Blood Elf] | Turned in at The Barrens.
+accept 1512 Love's Gift [class=Warlock; race=Orc,Undead,Blood Elf]
+accept 6641 Vorsha the Lasher [class=Shaman; race=Orc,Tauren,Troll] | Escort quest: start it when you are ready to follow.
+complete 6641 Vorsha the Lasher [class=Shaman; race=Orc,Tauren,Troll] | Escort: stay close; it fails if the NPC dies.
+turnin 6641 Vorsha the Lasher [class=Shaman; race=Orc,Tauren,Troll] | Turned in at Ashenvale.
+turnin 1512 Love's Gift [class=Warlock; race=Orc,Undead,Blood Elf] | Turned in at Orgrimmar.
 accept 2458 Deep Cover [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
-turnin 5642 Shadowguard [class=Priest; race=Troll]
-turnin 2458 Deep Cover [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
+turnin 1063 The Elder Crone | Turned in at Thunder Bluff.
+accept 1064 Forsaken Aid [optional]
+turnin 1095 Further Instructions
+turnin 1064 Forsaken Aid [optional] | Turned in at Thunder Bluff.
+turnin 5642 Shadowguard [class=Priest; race=Troll] | Turned in at Orgrimmar.
+turnin 2458 Deep Cover [class=Rogue; race=Orc,Undead,Troll,Blood Elf] | Turned in at The Barrens.
+accept Trouble in the Deeps | Tsunaman. Turned in at Zoram'gar Outpost in Ashenvale (next guide).
 accept Cenarius' Legacy | Braelyn Firehand.
 fp Sun Rock Retreat
+turnin 6401 Kaya's Alive
+turnin 6284 Arachnophobia [class=Shaman; race=Orc,Tauren,Troll]
+accept Harpies Threaten | Maggran Earthbinder, Sun Rock Retreat.
 bind Sun Rock Retreat
+accept Elemental War
 accept 1090 Gerenzo's Orders | Piznik at the Windshear mine.
 complete Harpies Threaten | Bloodfury harpies on the ridge east of Sun Rock.
 complete Jin'Zil's Forest Magic | Venture Co. operators and Stonetalon creatures.
 complete 1090 Gerenzo's Orders | Venture Co. at Windshear Crag.
-complete Cenarius' Legacy
-turnin Harpies Threaten
-accept Bloodfury Bloodline
-accept Elemental War
-turnin Jin'Zil's Forest Magic
 turnin 1090 Gerenzo's Orders
+complete Cenarius' Legacy
 turnin Cenarius' Legacy
 accept Ordanus
+turnin Harpies Threaten
+accept Bloodfury Bloodline
 complete Bloodfury Bloodline
 complete Elemental War
 complete Ordanus | Ordanus is in the Sons of Cenarius camp.
 turnin Bloodfury Bloodline
-turnin Elemental War
 turnin Ordanus
+turnin Elemental War
+turnin Jin'Zil's Forest Magic
 level 24
 train | Orgrimmar or Thunder Bluff.
 note Take the Talondeep Path north-east into Ashenvale; Splintertree Post is the Horde town.

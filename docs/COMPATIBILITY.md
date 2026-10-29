@@ -76,3 +76,37 @@ None of these have been done yet. Tick them off on a real client:
 - [ ] In combat: marking by command and by the marker bar works. `/tbcg markbar` toggling is refused in combat.
 - [ ] Marker bar buttons mark and clear your target. If the client ever blocks addon marking, the chat message says so and the bar still works.
 - [ ] Raid marker settings page appears under TBCGuide, and changes persist after `/reload`.
+
+### 1.0 additions (not yet run in the game)
+
+**First-login setup** (docs/SETTINGS.md)
+- [ ] A new character sees the setup window about 2 seconds after login (not in combat). An existing character with progress does not.
+- [ ] Skip: no window again after `/reload`; the recommended guide loads; automatic upgrades stay off.
+- [ ] Close the window half-way, `/reload`: the choices are still there (resume). Settings → General → Open setup reopens it.
+- [ ] Finish with the opt-in ticked and a spec profile: automatic upgrades on. Ticked without a spec profile: stays off.
+
+**Bag add-ons** (docs/BAGS.md), each with an unbound BoE upgrade and a grey item in the bags
+- [ ] Bagnon 12.1.7: green arrow and junk coin on the right slots; tooltip lines; moving the item moves the arrow; bank and other characters show none.
+- [ ] AdiBags 1.10.29 (may need *Load out of date AddOns*): the same. The module *TBCGuide markers* is listed in AdiBags' modules.
+- [ ] Baganator 839: the arrow appears in its corner (Icons settings); choosing *TBCGuide* as the junk source shows its coin on the grey item.
+- [ ] With none installed: default bags unchanged, no Lua errors.
+
+**Non-English client** (docs/LOCALES.md)
+- [ ] On a German or French client: a BoE item shows the arrow (binding read from the client strings); a Soulbound item never does.
+- [ ] An item with an *Equip:* effect beyond its stats is marked uncertain (no arrow, no automatic equip).
+
+**Class trainer suggestions** (docs/TRAINER.md)
+- [ ] On a train step, the step lists spells your trainer actually has (compare with the trainer window); known spells are not listed.
+- [ ] With everything learned, the train step is skipped with "nothing important to train yet". *Off* restores plain train steps.
+- [ ] `/tbcg train`, `/tbcg train defer`, `/tbcg train waypoint` (arrow to a class trainer of your faction).
+- [ ] A warrior at 10 sees Defensive Stance as "from a class quest". A talent rank (e.g. Mortal Strike 2) appears only after the talent.
+- [ ] Nothing is bought unless *Trainer automation* is on.
+
+**Talent window** (docs/TALENTS.md)
+- [ ] Press N: numbered markers on the plan's next picks in the open tree, a panel to the right, and a tooltip line on talents.
+- [ ] Switching trees moves the markers; spending a point updates them. No point is spent by TBCGuide.
+- [ ] Spend a point off-plan: the panel counts the deviation. A spec with no plan (e.g. Subtlety) says so.
+- [ ] *Show Talent Suggestions* off: no markers, panel or tooltip line.
+
+**Levels 31-60** (docs/LEVELS_31_60.md)
+- [ ] Play a reordered 31-60 guide from a 0.7.0 save: the guide stays on the same step after updating.

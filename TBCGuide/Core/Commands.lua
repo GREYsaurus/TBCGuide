@@ -22,6 +22,7 @@ local HELP = {
     { "nextguide", "load the next guide in your route" },
     { "load <guideId>", "load a guide by id" },
     { "class", "class leveling tips" },
+    { "train", "spells your class trainer has for you (train defer | train waypoint)" },
     { "options", "open settings" },
     { "minimap", "show/hide the minimap button" },
     { "automation", "open quest automation / junk selling settings" },
@@ -61,6 +62,17 @@ commands.browser = commands.guide
 commands.talents = function(arg) if arg == "plan" then return ns.Talents:PrintPlan() end ns.TalentFrame:Toggle() end
 commands.talent = commands.talents
 commands.tracker = function() ns.LevelTracker:ToggleReport() end
+commands.train = function(arg)
+    arg = string.lower(arg or "")
+    if arg == "defer" or arg == "skip" then
+        ns.Trainer:Defer()
+        ns:Print("Trainer suggestions hidden until your next level. /tbcg train shows them again.")
+    elseif arg == "waypoint" or arg == "way" then
+        if not ns.Trainer:Waypoint() then ns:Print("No class trainer found for your faction in the database.") end
+    else
+        ns.Trainer:ViewAgain()
+    end
+end
 commands.next = function() ns.Engine:Next() end
 commands.prev = function() ns.Engine:Prev() end
 commands.skip = function() ns.Engine:Skip() end

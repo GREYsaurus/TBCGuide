@@ -192,6 +192,7 @@ function AE:OnProfileChanged()
     U():Reset()
     self.failed, self.displaced = {}, {}
     self:Schedule(0.2)
+    if ns.AHUpgrades then ns.AHUpgrades:Refresh() end -- re-score cached auctions, no rescan
 end
 
 function AE:Status()

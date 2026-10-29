@@ -12,15 +12,23 @@
 
 fp Chillwind Camp
 accept A Plague Upon Thee | Nathaniel Dumah, Chillwind Camp.
-accept The Wildlife Suffers Too | Mulgris Deepriver.
-accept Unfinished Business | Kirsta Deepshadow.
-accept Better Late Than Never | Janice Felstone at the Felstone Field farm.
 complete A Plague Upon Thee | Termite barrels in the farms.
 turnin A Plague Upon Thee
 accept 5904 A Plague Upon Thee
+accept The Wildlife Suffers Too | Mulgris Deepriver.
 complete The Wildlife Suffers Too | Diseased wolves.
 turnin The Wildlife Suffers Too
 accept 4985 The Wildlife Suffers Too
+complete 4985 The Wildlife Suffers Too | Diseased Grizzlies.
+turnin 4985 The Wildlife Suffers Too
+accept Better Late Than Never | Janice Felstone at the Felstone Field farm.
+complete Better Late Than Never
+turnin Better Late Than Never
+accept 5022 Better Late Than Never
+turnin 5022 Better Late Than Never | Turned in at Stormwind City.
+complete 5904 A Plague Upon Thee
+turnin 5904 A Plague Upon Thee
+accept Unfinished Business | Kirsta Deepshadow.
 complete Unfinished Business | Scarlet Medics and Hunters at the Northridge Lumber Camp.
 turnin Unfinished Business
 accept 6023 Unfinished Business
@@ -29,14 +37,6 @@ turnin 6023 Unfinished Business
 accept 6025 Unfinished Business
 complete 6025 Unfinished Business
 turnin 6025 Unfinished Business
-complete 4985 The Wildlife Suffers Too | Diseased Grizzlies.
-turnin 4985 The Wildlife Suffers Too
-complete 5904 A Plague Upon Thee
-turnin 5904 A Plague Upon Thee
-complete Better Late Than Never
-turnin Better Late Than Never
-accept 5022 Better Late Than Never
-turnin 5022 Better Late Than Never
 level 58
 train | Train before Outland.
 note At 58 head for the Dark Portal in the Blasted Lands. Fly to Nethergarde Keep (or from Stormwind) and take the quest Through the Dark Portal from the herald in Stormwind or Nethergarde.

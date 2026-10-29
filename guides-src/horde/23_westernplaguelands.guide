@@ -12,40 +12,40 @@
 
 accept Scarlet Diversions [zone=Tirisfal Glades] | High Executor Derrington, the Bulwark.
 complete Scarlet Diversions | Plant the banner at the Scarlet camp in the north and kill Scarlet troops.
-turnin Scarlet Diversions [zone=Tirisfal Glades]
+turnin Scarlet Diversions [zone=Tirisfal Glades] | Turned in at Tirisfal Glades.
 accept The Scourge Cauldrons [zone=Tirisfal Glades]
-accept A Plague Upon Thee [zone=Tirisfal Glades] | Mickey Levine, the Bulwark.
-accept The Wildlife Suffers Too | Mulgris Deepriver, the Weeping Cave.
 turnin The Scourge Cauldrons [zone=Tirisfal Glades] | Shadow Priestess Vandis.
 accept Target: Felstone Field [zone=Tirisfal Glades]
 complete Target: Felstone Field | The cauldron at Felstone Field; kill the Cauldron Lord for the key.
 turnin Target: Felstone Field
 accept Return to the Bulwark
-turnin Return to the Bulwark [zone=Tirisfal Glades]
+turnin Return to the Bulwark [zone=Tirisfal Glades] | Turned in at Tirisfal Glades.
 accept Target: Dalson's Tears [zone=Tirisfal Glades]
 complete Target: Dalson's Tears | The cauldron at Dalson's Tears.
 turnin Target: Dalson's Tears
 accept 5232 Return to the Bulwark
-turnin 5232 Return to the Bulwark [zone=Tirisfal Glades]
+turnin 5232 Return to the Bulwark [zone=Tirisfal Glades] | Turned in at Tirisfal Glades.
 accept Target: Writhing Haunt [zone=Tirisfal Glades]
 complete Target: Writhing Haunt | The cauldron at the Writhing Haunt.
-turnin Target: Writhing Haunt
-accept 5234 Return to the Bulwark
-turnin 5234 Return to the Bulwark [zone=Tirisfal Glades]
-accept Target: Gahrron's Withering [zone=Tirisfal Glades]
-complete Target: Gahrron's Withering | The cauldron at Gahrron's Withering.
-turnin Target: Gahrron's Withering
-accept 5236 Return to the Bulwark
-turnin 5236 Return to the Bulwark [zone=Tirisfal Glades]
-accept Mission Accomplished! [zone=Tirisfal Glades]
-turnin Mission Accomplished! [zone=Tirisfal Glades]
-complete A Plague Upon Thee | Termite barrels at the Northridge Lumber Camp.
-turnin A Plague Upon Thee [zone=Tirisfal Glades]
+accept The Wildlife Suffers Too | Mulgris Deepriver, the Weeping Cave.
 complete The Wildlife Suffers Too | Diseased wolves.
 turnin The Wildlife Suffers Too
 accept 4985 The Wildlife Suffers Too
 complete 4985 The Wildlife Suffers Too | Diseased Grizzlies.
 turnin 4985 The Wildlife Suffers Too
+turnin Target: Writhing Haunt
+accept 5234 Return to the Bulwark
+accept A Plague Upon Thee [zone=Tirisfal Glades] | Mickey Levine, the Bulwark.
+complete A Plague Upon Thee | Termite barrels at the Northridge Lumber Camp.
+turnin A Plague Upon Thee [zone=Tirisfal Glades] | Turned in at Tirisfal Glades.
+turnin 5234 Return to the Bulwark [zone=Tirisfal Glades] | Turned in at Tirisfal Glades.
+accept Target: Gahrron's Withering [zone=Tirisfal Glades]
+complete Target: Gahrron's Withering | The cauldron at Gahrron's Withering.
+turnin Target: Gahrron's Withering
+accept 5236 Return to the Bulwark
+turnin 5236 Return to the Bulwark [zone=Tirisfal Glades] | Turned in at Tirisfal Glades.
+accept Mission Accomplished! [zone=Tirisfal Glades]
+turnin Mission Accomplished! [zone=Tirisfal Glades] | Turned in at Tirisfal Glades.
 level 58
 train | Train before Outland.
 note At 58 head for the Dark Portal in the Blasted Lands. Take the quest Through the Dark Portal from the herald in Orgrimmar or the Undercity.

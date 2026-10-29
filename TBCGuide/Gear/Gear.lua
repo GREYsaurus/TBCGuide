@@ -109,12 +109,13 @@ function Gear:ItemData(item)
     -- not whether this copy is already bound; Gear/Upgrade.lua reads the instance state separately.
     local d = { name = name, link = link or item, ilvl = ilvl, reqLevel = reqLevel or 0, equipLoc = equipLoc,
                 classID = classID, subclassID = subclassID, quality = quality, texture = texture, bindType = bindType,
-                stats = {}, unscored = {} }
+                stats = {}, unscored = {}, statKeys = {} }
     d.id = tonumber(string.match(tostring(d.link), "item:(%d+)")) or (type(item) == "number" and item or nil)
     local getStats = compat().Has("C_Item.GetItemStats") or compat().Has("GetItemStats")
     if getStats then
         local raw = getStats(d.link)
         for k, v in pairs(raw or {}) do
+            d.statKeys[k] = true
             local key = self.STAT_KEYS[k]
             if key and type(v) == "number" then
                 d.stats[key] = (d.stats[key] or 0) + v

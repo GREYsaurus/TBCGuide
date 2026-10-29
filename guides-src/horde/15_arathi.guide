@@ -13,44 +13,44 @@
 fp Hammerfall
 bind Hammerfall
 accept Hammerfall | Gor'mul.
-turnin Hammerfall | Tor'gan.
-turnin The Hammer May Fall | Drum Fel.
-accept 672 Raising Spirits | Tor'gan.
-accept 677 Call to Arms | Drum Fel.
-accept Foul Magics
 accept The Princess Trapped | The Shards of Myzrael, south-east.
+accept Foul Magics
+turnin Hammerfall | Tor'gan.
+accept 672 Raising Spirits | Tor'gan.
 complete 672 Raising Spirits | Highland Striders.
 turnin 672 Raising Spirits
 accept 674 Raising Spirits
 complete 674 Raising Spirits
 turnin 674 Raising Spirits
 accept 675 Raising Spirits
+turnin The Hammer May Fall | Drum Fel.
+accept 677 Call to Arms | Drum Fel.
 complete 677 Call to Arms | Syndicate at Northfold Manor.
 complete Foul Magics | Syndicate mages.
 complete The Princess Trapped | Kobolds at Drywhisker Gorge.
 turnin 677 Call to Arms
 accept 678 Call to Arms
-turnin Foul Magics
 turnin The Princess Trapped
 accept Stones of Binding
 complete 678 Call to Arms | Stromgarde Keep.
 complete 675 Raising Spirits
-complete Stones of Binding
-turnin 678 Call to Arms
+turnin Foul Magics
 turnin 675 Raising Spirits
 accept 701 Guile of the Raptor | Tor'gan offers it once Raising Spirits is done.
 complete 701 Guile of the Raptor | Highland raptors.
 turnin 701 Guile of the Raptor
 accept 702 Guile of the Raptor
+complete Stones of Binding | Burning Key drops from Burning Exile. Cresting Key: loot Stone of East Binding.
+turnin 678 Call to Arms
 complete 702 Guile of the Raptor
 turnin 702 Guile of the Raptor
 accept 847 Guile of the Raptor
-turnin Stones of Binding
-accept Breaking the Keystone
-complete Breaking the Keystone
-turnin Breaking the Keystone
 complete 847 Guile of the Raptor
 turnin 847 Guile of the Raptor
+turnin Stones of Binding
+accept Breaking the Keystone
+complete Breaking the Keystone | Rod of Order drops from Fozruk.
+turnin Breaking the Keystone
 level 35
 train
 note Fly to Orgrimmar and take the zeppelin to Grom'gol Base Camp (Stranglethorn Vale).

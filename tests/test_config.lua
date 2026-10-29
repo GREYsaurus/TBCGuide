@@ -39,7 +39,7 @@ for _, id in ipairs(ids) do
         end
     end
 end
-check(real >= 100 and plannedCount <= 4, "real controls: " .. real .. ", planned (disabled): " .. plannedCount)
+check(real >= 100 and plannedCount == 0, "real controls: " .. real .. ", planned (disabled): " .. plannedCount)
 
 local function widget(page, label)
     for _, w in ipairs(CF.built[page].widgets) do
@@ -69,10 +69,9 @@ w.frame.scripts.OnClick(w.frame)
 check(prof().autoAccept == false and prof().autoTurnIn == false, "combined toggle sets accept and turn-in")
 w.frame:SetChecked(true)
 w.frame.scripts.OnClick(w.frame)
-w = widget("tips", "Enable Auctioneer")
 CF:Show("tips")
 w = widget("tips", "Enable Auctioneer")
-check(w.item.planned and w.frame.scripts.OnClick == nil, "planned options are disabled and do nothing")
+check(w and not w.item.planned and w.frame.scripts.OnClick ~= nil, "Enable Auctioneer is a working option")
 CF:Show("advanced")
 w = widget("advanced", "Update Frequency (ms)")
 w.frame:SetValue(100)

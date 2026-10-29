@@ -12,6 +12,7 @@
       "data/TBC/tbcNpcDB.lua",
       "data/TBC/tbcObjectDB.lua",
       "data/TBC/tbcItemDB.lua",
+      "support/QuestXP/xpDB-tbc.lua",
       "support/Zones/uiMapIdToAreaId.lua",
       "support/Zones/areaIdToUiMapId.lua",
       "support/Zones/subZoneToParentZone.lua",
@@ -29,7 +30,7 @@
     "source": "https://wago.tools (DB2 CSV exports of the game client)",
     "product": "wow_anniversary",
     "build": "2.5.6.70577",
-    "tables": ["Talent", "TalentTab", "SpellName", "Spell", "CharBaseInfo", "ChrRaces", "ChrClasses"],
+    "tables": ["Talent", "TalentTab", "SpellName", "Spell", "CharBaseInfo", "ChrRaces", "ChrClasses", "SkillLine", "SkillLineAbility", "SpellLevels", "SkillRaceClassInfo"],
     "urlTemplate": "https://wago.tools/db2/{table}/csv?build={build}"
   }
 }

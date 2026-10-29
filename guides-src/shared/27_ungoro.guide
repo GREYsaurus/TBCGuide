@@ -11,11 +11,11 @@
 @next A_Felwood [faction=Alliance]
 @next H_Felwood [faction=Horde]
 
-accept Beware of Pterrordax | The sign on the ramp down into the crater.
+accept Crystals of Power | J.D. Collie.
 accept Expedition Salvation | Williden Marshal, Marshal's Refuge.
 accept Alien Ecology | Hol'anyee Marshal.
 accept Roll the Bones | Spark Nilminer.
-accept Crystals of Power | J.D. Collie.
+accept Beware of Pterrordax | The sign on the ramp down into the crater.
 accept The Apes of Un'Goro | Torwa Pathfinder at the east side of the crater.
 accept The Fare of Lar'korwi
 fp Marshal's Refuge
@@ -30,21 +30,21 @@ complete Crystals of Power | Power crystals in the crater.
 complete The Scent of Lar'korwi | Raptor nests near the Terror Run.
 turnin The Scent of Lar'korwi
 accept The Bait for Lar'korwi
-complete The Bait for Lar'korwi [group=2]
+complete The Bait for Lar'korwi [group=2] | Lar'korwi's Head drops from Lar'korwi.
 turnin The Bait for Lar'korwi
 complete The Apes of Un'Goro | Un'Goro gorillas north-east.
 turnin The Apes of Un'Goro
 turnin Beware of Pterrordax
-turnin Expedition Salvation
-turnin Alien Ecology
 turnin Roll the Bones
+turnin Alien Ecology
+turnin Expedition Salvation
 turnin Crystals of Power
-accept The Northern Pylon
-accept The Eastern Pylon
-accept The Western Pylon
-complete The Northern Pylon
-complete The Eastern Pylon
-complete The Western Pylon
+accept The Northern Pylon | Escort quest: start it when you are ready to follow.
+accept The Eastern Pylon | Escort quest: start it when you are ready to follow.
+accept The Western Pylon | Escort quest: start it when you are ready to follow.
+complete The Northern Pylon | Escort: stay close; it fails if the NPC dies.
+complete The Eastern Pylon | Escort: stay close; it fails if the NPC dies.
+complete The Western Pylon | Escort: stay close; it fails if the NPC dies.
 turnin The Northern Pylon
 turnin The Eastern Pylon
 turnin The Western Pylon

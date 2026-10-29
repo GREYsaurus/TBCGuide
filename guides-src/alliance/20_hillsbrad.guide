@@ -12,56 +12,56 @@
 
 fp Southshore
 bind Southshore
+accept 9435 Missing Crystals
 accept Down the Coast | Lieutenant Farren Orinelle, Southshore.
-turnin 538 Southshore [optional]
-accept Soothing Turtle Bisque | Chef Jessen.
-accept Syndicate Assassins | Magistrate Henry Maleb, town hall.
-accept Bartolo's Yeti Fur Cloak | Bartolo Ginsetti.
-accept Costly Menace | Darren Malvew.
-accept Crushridge Bounty | Marshal Redpath.
-accept Hints of a New Plague? | Phin Odelic.
 complete Down the Coast | Murlocs on the coast south of Southshore.
 turnin Down the Coast
 accept 559 Farren's Proof
+accept Soothing Turtle Bisque | Chef Jessen.
 complete Soothing Turtle Bisque | Snapjaws along the coast.
 complete 559 Farren's Proof | Murloc heads from Torn Fin murlocs.
 turnin Soothing Turtle Bisque
 turnin 559 Farren's Proof
 accept 560 Farren's Proof
+accept Costly Menace | Darren Malvew.
+complete Costly Menace | Hillsbrad farms; kill the Syndicate.
+turnin Costly Menace
+turnin 637 Sully Balloo's Letter | Turned in at Ironforge.
+accept 683 Sara Balloo's Plea
+complete 9435 Missing Crystals | Shipment of Rare Crystals: loot Unopened Crate.
+accept 510 Foreboding Plans
+accept 511 Encrypted Letter | Needs level 30. If you are lower, TBCGuide skips it and moves on.
+turnin 683 Sara Balloo's Plea | Turned in at Ironforge.
+accept 686 A King's Tribute
+accept Syndicate Assassins | Magistrate Henry Maleb, town hall.
+complete Syndicate Assassins | Syndicate camp north-east of Southshore (Durnholde area).
+turnin Syndicate Assassins
+turnin 510 Foreboding Plans
+accept Crushridge Bounty | Marshal Redpath.
+complete Crushridge Bounty | Crushridge ogres north of Southshore.
+turnin Crushridge Bounty
 turnin 560 Farren's Proof | Marshal Redpath.
 accept 561 Farren's Proof
+accept Hints of a New Plague? | Phin Odelic.
+turnin 9435 Missing Crystals
 turnin 561 Farren's Proof
 accept Stormwind Ho!
 complete Stormwind Ho! | Daggerspine naga further south.
 turnin Stormwind Ho!
 accept Reassignment
-turnin 474 Defeat Nek'rosh [optional]
-turnin 292 The Eye of Paleth
-accept 293 Cleansing the Eye [optional]
-turnin 321 Lightforge Iron [optional]
-accept 322 Blessed Arm [optional]
-turnin 637 Sully Balloo's Letter
-accept 683 Sara Balloo's Plea
-turnin 683 Sara Balloo's Plea
-accept 686 A King's Tribute
-turnin 686 A King's Tribute
-accept 9435 Missing Crystals
-complete 9435 Missing Crystals
-accept 510 Foreboding Plans
-accept 511 Encrypted Letter
+turnin 538 Southshore [optional]
 turnin 511 Encrypted Letter
-accept 514 Letter to Stormpike [optional]
-turnin 510 Foreboding Plans
-turnin 9435 Missing Crystals
-turnin 514 Letter to Stormpike [optional]
-complete Syndicate Assassins | Syndicate camp north-east of Southshore (Durnholde area).
-turnin Syndicate Assassins
+accept 514 Letter to Stormpike [optional] | Needs level 30. If you are lower, TBCGuide skips it and moves on.
+accept Bartolo's Yeti Fur Cloak | Bartolo Ginsetti.
 complete Bartolo's Yeti Fur Cloak | Yetis in the Alterac foothills cave.
 turnin Bartolo's Yeti Fur Cloak
-complete Crushridge Bounty | Crushridge ogres north of Southshore.
-turnin Crushridge Bounty
-complete Costly Menace | Hillsbrad farms; kill the Syndicate.
-turnin Costly Menace
+turnin 514 Letter to Stormpike [optional] | Turned in at Ironforge.
+turnin 474 Defeat Nek'rosh [optional] | Turned in at Wetlands.
+turnin 292 The Eye of Paleth | Turned in at Wetlands.
+accept 293 Cleansing the Eye [optional]
+accept 322 Blessed Arm [optional]
+turnin 321 Lightforge Iron [optional]
+turnin 686 A King's Tribute | Turned in at Ironforge.
 complete Hints of a New Plague? | Forsaken courier on the road (patrols).
 turnin Hints of a New Plague?
 level 30

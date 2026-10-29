@@ -10,56 +10,77 @@
 @desc Thelsamar, the Stonewrought Dam, the Ironband excavation and the eastern farms. Finish with the Dark Threat Looms chain at the dam, then head to Redridge.
 @next A_Redridge
 
-accept 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Priest,Shaman,Mage; race=Draenei]
-accept 312 Tundra MacGrann's Stolen Stash [class=Warrior,Rogue,Priest,Druid; race=Night Elf]
-accept 312 Tundra MacGrann's Stolen Stash [race=Human]
-complete 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Priest,Shaman,Mage; race=Draenei]
-complete 312 Tundra MacGrann's Stolen Stash [class=Warrior,Rogue,Priest,Druid; race=Night Elf]
-complete 312 Tundra MacGrann's Stolen Stash [race=Human]
-turnin 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Priest,Shaman,Mage; race=Draenei]
-turnin 312 Tundra MacGrann's Stolen Stash [class=Warrior,Rogue,Priest,Druid; race=Night Elf]
-turnin 312 Tundra MacGrann's Stolen Stash [race=Human]
-accept 224 In Defense of the King's Lands | Mountaineer Cobbleflint, the first bunker south of the tunnel.
 accept The Trogg Threat | Captain Rugelfuss in the same bunker.
+accept 224 In Defense of the King's Lands | Mountaineer Cobbleflint, the first bunker south of the tunnel.
 complete 224 In Defense of the King's Lands | Troggs on the hills around the bunkers.
 complete The Trogg Threat | Trogg Stone Teeth drop from the same troggs.
 turnin 224 In Defense of the King's Lands
-accept 237 In Defense of the King's Lands
 turnin The Trogg Threat
+accept 237 In Defense of the King's Lands
+accept 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Priest,Shaman,Mage; race=Draenei]
+accept 312 Tundra MacGrann's Stolen Stash [class=Warrior,Rogue,Priest,Druid; race=Night Elf]
+accept 312 Tundra MacGrann's Stolen Stash [race=Human]
+complete 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Priest,Shaman,Mage; race=Draenei] | MacGrann's Dried Meats: loot MacGrann's Meat Locker.
+complete 312 Tundra MacGrann's Stolen Stash [class=Warrior,Rogue,Priest,Druid; race=Night Elf] | MacGrann's Dried Meats: loot MacGrann's Meat Locker.
+complete 312 Tundra MacGrann's Stolen Stash [race=Human] | MacGrann's Dried Meats: loot MacGrann's Meat Locker.
+turnin 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Priest,Shaman,Mage; race=Draenei]
+turnin 312 Tundra MacGrann's Stolen Stash [class=Warrior,Rogue,Priest,Druid; race=Night Elf]
+turnin 312 Tundra MacGrann's Stolen Stash [race=Human]
+accept 147 Manhunt [class=Warlock; race=Gnome; optional]
+complete 147 Manhunt [class=Warlock; race=Gnome; optional] | The Collector's Ring drops from Morgan the Collector.
+turnin 147 Manhunt [class=Warlock; race=Gnome; optional] | Turned in at Elwynn Forest.
+fp Thelsamar
+accept Thelsamar Blood Sausages
 turnin Stout to Kadrell | Mountaineer Kadrell, Thelsamar.
 accept Rat Catching
 accept Mountaineer Stormpike's Task
-accept 147 Manhunt [class=Warlock; race=Gnome; optional]
-complete 147 Manhunt [class=Warlock; race=Gnome; optional]
-turnin 147 Manhunt [class=Warlock; race=Gnome; optional]
-accept Thelsamar Blood Sausages
-fp Thelsamar
 bind Thelsamar
-complete Thelsamar Blood Sausages | Bears and spiders around Thelsamar.
-complete Rat Catching | Tunnel Rat Kobolds at the Silver Stream Mine, north of Thelsamar.
-turnin Thelsamar Blood Sausages
 accept 6387 Honor Students [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
 accept 6387 Honor Students [race=Gnome]
+complete Rat Catching | Tunnel Rat Kobolds at the Silver Stream Mine, north of Thelsamar.
+turnin Rat Catching
+complete Thelsamar Blood Sausages | Bears and spiders around Thelsamar.
+turnin Thelsamar Blood Sausages
 turnin 6387 Honor Students [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
 turnin 6387 Honor Students [race=Gnome]
 accept 6391 Ride to Ironforge [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
 accept 6391 Ride to Ironforge [race=Gnome]
-turnin 6391 Ride to Ironforge [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
-turnin 6391 Ride to Ironforge [race=Gnome]
-accept 6388 Gryth Thurden [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
-accept 6388 Gryth Thurden [race=Gnome]
-turnin 6388 Gryth Thurden [class=Warrior,Rogue; race=Dwarf]
-turnin 6388 Gryth Thurden [class=Warrior,Rogue,Warlock; race=Gnome]
-accept 6392 Return to Brock [class=Warrior,Rogue; race=Dwarf; optional]
-accept 6392 Return to Brock [class=Warrior,Rogue,Warlock; race=Gnome; optional]
-turnin 6388 Gryth Thurden [class=Paladin,Priest; race=Dwarf]
-turnin 6388 Gryth Thurden [class=Mage; race=Gnome]
-turnin 6392 Return to Brock [class=Warrior,Rogue; race=Dwarf,Gnome; optional]
-turnin 6392 Return to Brock [class=Warlock; race=Gnome; optional]
-turnin Rat Catching
 complete 237 In Defense of the King's Lands | Stonesplinter troggs at Grizzlepaw Ridge.
 turnin 237 In Defense of the King's Lands
 accept 263 In Defense of the King's Lands
+complete 263 In Defense of the King's Lands | Troggs at the southern Stonesplinter Valley.
+turnin 263 In Defense of the King's Lands
+accept 217 In Defense of the King's Lands
+complete 217 In Defense of the King's Lands | Kill Stonesplinter troggs in Stonesplinter Valley.
+turnin 217 In Defense of the King's Lands
+turnin 6391 Ride to Ironforge [class=Warrior,Paladin,Rogue,Priest; race=Dwarf] | Turned in at Ironforge.
+turnin 6391 Ride to Ironforge [race=Gnome] | Turned in at Ironforge.
+accept 6388 Gryth Thurden [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
+accept 6388 Gryth Thurden [race=Gnome]
+accept Bingles' Missing Supplies | Bingles Blastenheimer, on the hill north-east of Thelsamar.
+complete Bingles' Missing Supplies | Four pieces scattered at the Thelsamar lake islands.
+turnin Bingles' Missing Supplies
+accept Excavation Progress Report | Prospector Ironband, Ironband's Excavation Site.
+accept Crocolisk Hunting | Marek Ironheart at the Farstrider Lodge, east Loch Modan.
+complete Crocolisk Hunting | Loch Crocolisks along the eastern shore.
+turnin Crocolisk Hunting
+accept A Hunter's Boast | Daryl the Youngling, Farstrider Lodge.
+complete A Hunter's Boast | Mountain Buzzards and boars near the lodge.
+turnin A Hunter's Boast
+accept A Hunter's Challenge
+complete A Hunter's Challenge | Elder Mountain Boars south of the lodge.
+turnin A Hunter's Challenge
+turnin 6388 Gryth Thurden [class=Warrior,Rogue; race=Dwarf] | Turned in at Ironforge.
+turnin 6388 Gryth Thurden [class=Warrior,Rogue,Warlock; race=Gnome] | Turned in at Ironforge.
+turnin 6388 Gryth Thurden [class=Paladin,Priest; race=Dwarf] | Turned in at Ironforge.
+turnin 6388 Gryth Thurden [class=Mage; race=Gnome] | Turned in at Ironforge.
+accept 6392 Return to Brock [class=Warrior,Rogue; race=Dwarf; optional]
+accept 6392 Return to Brock [class=Warrior,Rogue,Warlock; race=Gnome; optional]
+accept 250 A Dark Threat Looms | Chief Engineer Hinderweir VII on the Stonewrought Dam.
+turnin 250 A Dark Threat Looms | The suspicious barrel is on the dam.
+accept 199 A Dark Threat Looms | Needs level 16. If you are lower, TBCGuide skips it and moves on.
+turnin 199 A Dark Threat Looms
+accept 161 A Dark Threat Looms | Needs level 16. If you are lower, TBCGuide skips it and moves on.
 turnin Mountaineer Stormpike's Task | Mountaineer Stormpike at the Dam.
 accept 1338 Stormpike's Order [class=Warrior; race=Draenei]
 accept 1338 Stormpike's Order [class=Warrior,Rogue; race=Dwarf,Night Elf]
@@ -67,43 +88,22 @@ accept 1338 Stormpike's Order [class=Warrior,Rogue,Warlock; race=Human,Gnome]
 accept Filthy Paws
 complete Filthy Paws | Kobold crates inside Silver Stream Mine.
 turnin Filthy Paws
-turnin 1338 Stormpike's Order [class=Warrior; race=Draenei]
-turnin 1338 Stormpike's Order [class=Warrior,Rogue; race=Dwarf,Night Elf]
-turnin 1338 Stormpike's Order [class=Warrior,Rogue,Warlock; race=Human,Gnome]
-accept Excavation Progress Report | Prospector Ironband, Ironband's Excavation Site.
-accept Gathering Idols | Magmar Fellhew at the excavation.
-turnin Excavation Progress Report | Jern Hornhelm in Thelsamar.
-accept Report to Ironforge
-accept Ironband's Excavation
-turnin Ironband's Excavation
-complete Gathering Idols | Troggs at the excavation site drop Carved Stone Idols.
-turnin Gathering Idols
-accept Crocolisk Hunting | Marek Ironheart at the Farstrider Lodge, east Loch Modan.
-accept A Hunter's Boast | Daryl the Youngling, Farstrider Lodge.
-accept Bingles' Missing Supplies | Bingles Blastenheimer, on the hill north-east of Thelsamar.
-complete A Hunter's Boast | Mountain Buzzards and boars near the lodge.
-turnin A Hunter's Boast
-accept A Hunter's Challenge
-complete Crocolisk Hunting | Loch Crocolisks along the eastern shore.
-complete Bingles' Missing Supplies | Four pieces scattered at the Thelsamar lake islands.
-turnin Bingles' Missing Supplies
-complete A Hunter's Challenge | Elder Mountain Boars south of the lodge.
-turnin A Hunter's Challenge
-turnin Crocolisk Hunting
-complete 263 In Defense of the King's Lands | Troggs at the southern Stonesplinter Valley.
-turnin 263 In Defense of the King's Lands
-accept 217 In Defense of the King's Lands
-complete 217 In Defense of the King's Lands | Kill Stonesplinter troggs in Stonesplinter Valley.
-turnin 217 In Defense of the King's Lands
-turnin Report to Ironforge [optional] | Prospector Stormpike in the Hall of Explorers, Ironforge. Train while you are there.
+turnin 1338 Stormpike's Order [class=Warrior; race=Draenei] | Turned in at Stormwind City.
+turnin 1338 Stormpike's Order [class=Warrior,Rogue; race=Dwarf,Night Elf] | Turned in at Stormwind City.
+turnin 1338 Stormpike's Order [class=Warrior,Rogue,Warlock; race=Human,Gnome] | Turned in at Stormwind City.
 accept Mercenaries | Magistrate Bluntnose, Thelsamar.
 complete Mercenaries | Mo'grosh ogres at the north-east of the loch.
 turnin Mercenaries
-accept 250 A Dark Threat Looms | Chief Engineer Hinderweir VII on the Stonewrought Dam.
-turnin 250 A Dark Threat Looms | The suspicious barrel is on the dam.
-accept 199 A Dark Threat Looms
-turnin 199 A Dark Threat Looms
-accept 161 A Dark Threat Looms
+turnin Excavation Progress Report | Jern Hornhelm in Thelsamar.
+accept Report to Ironforge
+accept Ironband's Excavation
+turnin 6392 Return to Brock [class=Warrior,Rogue; race=Dwarf,Gnome; optional]
+turnin 6392 Return to Brock [class=Warlock; race=Gnome; optional]
+turnin Report to Ironforge [optional] | Prospector Stormpike in the Hall of Explorers, Ironforge. Train while you are there.
+accept Gathering Idols | Magmar Fellhew at the excavation.
+turnin Ironband's Excavation
+complete Gathering Idols | Troggs at the excavation site drop Carved Stone Idols.
+turnin Gathering Idols
 turnin 161 A Dark Threat Looms [optional] | Ashlan Stonesmirk in the Wetlands. Leave it if you are going straight to Redridge.
 level 17 | Finish leftover kills here if you are not 17 yet.
 train

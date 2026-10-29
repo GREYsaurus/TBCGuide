@@ -9,11 +9,7 @@ Under the title bar are five buttons:
 - **Report an Issue** shows a link to copy.
 - **Choose the Best Guide for Me** loads the guide that fits your race, class and level.
 
-**Greyed-out options** are planned and do nothing yet; hovering one says so. Four are left:
-- *Follow Party Leader Macro*;
-- *Quest Sellable Recommendation*;
-- *Always Show Total EP*;
-- *Enable Auctioneer*.
+Every option in the window works; none is a greyed-out placeholder.
 
 None of this has been tested in the game client yet.
 
@@ -22,6 +18,7 @@ None of this has been tested in the game client yet.
 ## What each tab controls
 
 ### General
+- **First-login setup:** a new character gets a short setup window: guide, spec profile, and an explicit opt-in for automatic upgrades (off unless ticked, and only with a spec profile). Saved per character. *Skip* keeps the defaults; closing it keeps the choices for next time. *Open setup* (General) reopens it. Characters that already used TBCGuide are not asked.
 - **Window Management:** *Show all Enabled Frames* hides the guide window and arrow together when off. *Lock Frames* and *Autohide in Raids* do what they say.
 - **Features:** minimap button, world map button (opens the guide browser), *Hide Window* and *Hide waypoint arrow*.
 - **Automation:**
@@ -30,6 +27,7 @@ None of this has been tested in the game client yet.
   |---|---|---|
   | Quest auto accept/turn in | on | Guide quests only. More options: `/tbcg automation` |
   | Quest auto rewards | off | Takes a reward only when gear scoring shows one clear upgrade, or when your class can use none of them (then the most valuable). Otherwise you choose |
+  | Class Trainer Suggestions | Important only | Off / Important only / All: what your trainer has for you, checked against your spellbook; train steps with nothing new are skipped. Never buys (docs/TRAINER.md) |
   | Trainer automation | off | Learns every spell you can afford at your class trainer; spends gold |
   | Flight Path automation | on | On a "fly to" step, takes that flight when the flight map opens |
   | Innkeeper Bind automation | on | On a "set your hearthstone" step, picks the innkeeper's bind option and confirms it |
@@ -49,8 +47,15 @@ None of this has been tested in the game client yet.
   - *Enable Vendor Treasures* (on): when a merchant opens, lists and marks items it sells that are upgrades for your spec profile, the same estimate as automatic upgrades. Needs a spec profile.
   - *Show Flight Timers* (on): a bar with the time left on a flight. TBCGuide ships no flight data, so each route is timed the first time you fly it and counts down after that.
   - *Enable Group Settings* (off): master switch for the party features on the Communications tab and the leader's target on the Targeting tab.
+- **Window:**
+  - *Guide Window Scale* (60-160%);
+  - *Guide Font Size* (9-18);
+  - *Arrow Scale* (50-200%).
+
+  These apply as you drag, and the window and arrow stay where they are on screen. *Reset Window Settings* puts just these three back to their defaults.
 - **Inventory:** *Show junk item indicator* (off) puts a coin on bag items the inventory manager would sell.
 - **Talents:**
+  - *Show Talent Suggestions* (on): markers, a panel and tooltip lines in the default talent window for your spec profile's plan. Never spends points (docs/TALENTS.md).
   - *Enable Talents Guides* turns on the chat reminders to spend talent points.
   - *Enable Talent Plan* and *Talent Plan Number* add your build's next picks to those reminders. `/tbcg talents plan` shows them any time.
 
@@ -174,7 +179,14 @@ None of this has been tested in the game client yet.
 - *Hearthstone batching* and its window size;
 - *Quest Log Size*: the TBC quest log is fixed at 25.
 
-## Still planned (shown greyed out)
+**Removed before 1.0:** three placeholders that were never built:
+- *Follow Party Leader Macro*;
+- *Quest Sellable Recommendation*;
+- *Always Show Total EP*.
 
-- **Targeting:** follow-leader macro.
-- **Tips:** sellable-quest-item hints, total EP display, auctioneer.
+Gear scoring itself is unchanged.
+
+**Enable Auctioneer** (Tips → Item Upgrade, on): adds the auction house **Upgrades** tab. See [AUCTION.md](AUCTION.md).
+- **Scanning:** you start each scan yourself while the auction house is open.
+- **Prices:** they are the cheapest buyouts that scan saw, so old or partial scans may no longer match what's for sale.
+- **Never automatic:** nothing is ever bought.

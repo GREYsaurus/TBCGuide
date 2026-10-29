@@ -12,100 +12,105 @@
 @next A_Ashenvale
 
 accept Alien Predators | Vorkhan the Elekk Herder, Kessel's Crossing.
-accept A Favorite Treat | Aonar.
 turnin 9625 Elekks Are Serious Business [optional]
 accept The Kessel Run | Kessel.
+accept Saving Princess Stillpine | Princess Stillpine, inside the furbolg enclave.
 accept 9622 Warn Your People [class=Warrior,Paladin,Hunter,Priest,Mage]
 complete The Kessel Run | Talk to High Chief Stillpine, Exarch Menelaous and Admiral Odesyus back on Azuremyst.
-turnin 9564 Gurf's Dignity
-turnin 9582 Strength of One [class=Warrior; optional]
-turnin 9468 Call of Fire [class=Shaman; optional]
-accept 9461 Call of Fire [class=Shaman; optional]
-turnin 9622 Warn Your People [class=Warrior,Paladin,Hunter,Priest,Mage]
-turnin 9515 Warlord Sriss'tiz
-accept 9598 Redemption [class=Paladin]
-turnin 9598 Redemption [class=Paladin]
-accept 9600 Redemption [class=Paladin]
-turnin The Kessel Run
-accept Declaration of Power
+turnin 9564 Gurf's Dignity | Turned in at Azuremyst Isle.
+accept A Favorite Treat | Aonar.
 complete A Favorite Treat
-accept 9603 Beds, Bandages, and Beyond
 complete Alien Predators | Bloodmyst ravagers near the crossing.
 turnin A Favorite Treat
 turnin Alien Predators
+turnin The Kessel Run
+accept Declaration of Power
 complete Declaration of Power | Plant the Stillpine banner at the Bristlelimb Enclave south-east.
-accept Saving Princess Stillpine | Princess Stillpine, inside the furbolg enclave.
-complete Saving Princess Stillpine | Kill Bristlelimb furbolgs for the key.
-turnin Saving Princess Stillpine
 turnin Declaration of Power
 accept Report to Exarch Admetius
+turnin 9582 Strength of One [class=Warrior; optional] | Turned in at Azuremyst Isle.
+turnin 9468 Call of Fire [class=Shaman; optional] | Turned in at Azuremyst Isle.
+accept 9461 Call of Fire [class=Shaman; optional]
+turnin 9622 Warn Your People [class=Warrior,Paladin,Hunter,Priest,Mage] | Turned in at Azuremyst Isle.
+turnin 9515 Warlord Sriss'tiz | Turned in at Azuremyst Isle.
+accept Learning from the Crystals | Harbinger Mikolaas.
+complete Saving Princess Stillpine | Kill Bristlelimb furbolgs for the key.
 turnin Report to Exarch Admetius | Blood Watch.
 accept What Argus Means to Me
 turnin What Argus Means to Me
 accept Blood Watch
-accept Learning from the Crystals | Harbinger Mikolaas.
-accept Catch and Release | Morae.
-accept Know Thine Enemy | Vindicator Aalesia.
 accept Irradiated Crystal Shards | Vindicator Boros.
-accept Maatparm Mushroom Menagerie | Jessera of Mac'Aree.
+turnin Saving Princess Stillpine
+accept Catch and Release | Morae.
+accept 9603 Beds, Bandages, and Beyond
+accept 9598 Redemption [class=Paladin]
+turnin 9598 Redemption [class=Paladin] | Turned in at The Exodar.
+accept 9600 Redemption [class=Paladin]
 turnin 9603 Beds, Bandages, and Beyond
+accept Maatparm Mushroom Menagerie | Jessera of Mac'Aree.
 accept The Bear Necessities | Tracker Lyceon.
 accept Constrictor Vines
+accept Know Thine Enemy | Vindicator Aalesia.
 bind Blood Watch
-fp Blood Watch
+accept 9646 WANTED: Deathclaw
+complete Know Thine Enemy | Wrathscale naga at the Wrathscale Lair (west).
+complete Maatparm Mushroom Menagerie | Mushrooms near water.
+accept 9594 Signs of the Legion [optional]
 turnin Learning from the Crystals
 accept The Missing Survey Team
+complete Catch and Release | Use the tagging kit on a blood elf at Ruins of Loreth'Aran.
 turnin The Missing Survey Team | Draenei Cartographer east of Blood Watch.
 accept Salvaging the Data
 complete Salvaging the Data
-complete Blood Watch | Sunhawk agents at the Sunhawk camp south-west.
 turnin Salvaging the Data
 accept The Second Sample
-turnin Blood Watch
-accept Intercepting the Message
-complete Catch and Release | Use the tagging kit on a blood elf at Ruins of Loreth'Aran.
-accept 9576 Cruelfin's Necklace
-complete Know Thine Enemy | Wrathscale naga at the Wrathscale Lair (west).
-complete Constrictor Vines | Thorn Flayers west of Blood Watch.
-complete The Bear Necessities | Elder Brown Bears.
-accept 9548 Pilfered Equipment
-accept 9549 Artifacts of the Blacksilt
-accept 10065 Cutting a Path
-accept 9741 Critters of the Void
-complete 9548 Pilfered Equipment
-complete 9549 Artifacts of the Blacksilt
-complete Maatparm Mushroom Menagerie | Mushrooms near water.
-complete 9600 Redemption [class=Paladin]
-accept 9594 Signs of the Legion [optional]
-turnin 9576 Cruelfin's Necklace
-complete 9594 Signs of the Legion [optional]
-turnin Catch and Release
-accept Victims of Corruption
-turnin Know Thine Enemy
-accept Containing the Threat
-turnin Constrictor Vines
-turnin The Bear Necessities
-accept Culling the Flutterers
-turnin Maatparm Mushroom Menagerie
-accept Ysera's Tears
-accept 9687 Restoring Sanctity
 complete The Second Sample
-complete Intercepting the Message | Sunhawk Agents.
-accept 9671 Urgent Delivery
-turnin 9671 Urgent Delivery
 turnin The Second Sample
 accept The Final Sample
+accept 9576 Cruelfin's Necklace
+turnin 9576 Cruelfin's Necklace
+turnin Catch and Release
+accept Victims of Corruption
+complete 9594 Signs of the Legion [optional]
+turnin 9594 Signs of the Legion [optional]
+turnin Know Thine Enemy
+accept Containing the Threat
+complete Constrictor Vines | Thorn Flayers west of Blood Watch.
+turnin Constrictor Vines
+complete The Bear Necessities | Elder Brown Bears.
+complete 9600 Redemption [class=Paladin]
+turnin The Bear Necessities
+turnin Maatparm Mushroom Menagerie
+complete Irradiated Crystal Shards [optional] | Shards drop from many mobs on the isle.
+turnin Irradiated Crystal Shards [optional] | Hand in shards for rewards whenever you have 10.
+complete Blood Watch | Sunhawk agents at the Sunhawk camp south-west.
+turnin Blood Watch
+accept Intercepting the Message
+complete Intercepting the Message | Sunhawk Agents.
 turnin Intercepting the Message
 accept Translations...
 turnin Translations...
 accept Audience with the Prophet
-accept 9672 The Bloodcurse Legacy
+turnin 9461 Call of Fire [class=Shaman; optional] | Turned in at The Exodar.
+accept 9555 Call of Fire [class=Shaman]
 turnin Audience with the Prophet
 accept Truth or Fiction
+accept Culling the Flutterers
 turnin Truth or Fiction
 accept I Shoot Magic Into the Darkness
+accept 10063 Explorers' League, Is That Something for Gnomes?
+fp Blood Watch
+accept 9604 On the Wings of a Hippogryph
+accept 9687 Restoring Sanctity | Needs level 15. If you are lower, TBCGuide skips it and moves on.
+turnin 9600 Redemption [class=Paladin] | Turned in at The Exodar.
+complete The Final Sample | The large crystal at the Vector Coil.
+turnin 10063 Explorers' League, Is That Something for Gnomes?
+accept 9548 Pilfered Equipment
+accept 9549 Artifacts of the Blacksilt
+complete 9548 Pilfered Equipment | Clopper's Equipment: loot Clopper's Equipment.
+complete 9549 Artifacts of the Blacksilt | Crude Murloc Idol drops from Blacksilt Seer. Crude Murloc Knife drops from Blacksilt Shorestriker and Blacksilt Warrior.
 complete I Shoot Magic Into the Darkness | Axxarien, north-east.
-complete 9687 Restoring Sanctity
+complete 9687 Restoring Sanctity | Dragon Bone: loot Dragon Bone.
 complete Victims of Corruption | Corrupted treants.
 complete Culling the Flutterers | Mutated Flutterers.
 complete Containing the Threat | Satyrs and demons at Axxarien.
@@ -115,82 +120,81 @@ accept 9550 A Map to Where?
 turnin 9550 A Map to Where?
 accept 9557 Deciphering the Book
 turnin 9557 Deciphering the Book
-complete Irradiated Crystal Shards [optional] | Shards drop from many mobs on the isle.
-turnin I Shoot Magic Into the Darkness
-accept The Cryo-Core
+accept 9561 Nolkai's Words
+accept 9632 Newfound Allies
 turnin Victims of Corruption
-accept 9646 WANTED: Deathclaw
-turnin 9594 Signs of the Legion [optional]
-turnin Culling the Flutterers
-turnin Containing the Threat
-turnin Irradiated Crystal Shards [optional] | Hand in shards for rewards whenever you have 10.
 accept Searching for Galaen | Morae.
+accept Galaen's Journal - The Fate of Vindicator Saruan
 complete Searching for Galaen | Galaen's corpse is at the Bloodcurse Isle shore west.
 turnin Searching for Galaen
 accept Galaen's Fate
-accept Galaen's Journal - The Fate of Vindicator Saruan
+turnin I Shoot Magic Into the Darkness
+accept 9671 Urgent Delivery
+turnin 9671 Urgent Delivery
+accept The Cryo-Core
 complete Galaen's Fate
-complete The Cryo-Core | Sunhawk outpost at the Cryo-Core, south-west.
-turnin The Cryo-Core
-accept Don't Drink the Water
-turnin Galaen's Fate
+accept 9672 The Bloodcurse Legacy
 turnin Galaen's Journal - The Fate of Vindicator Saruan
 accept Matis the Cruel
 complete Matis the Cruel [group=2] | Patrols the Sunhawk camp roads.
-complete 9741 Critters of the Void
 turnin Matis the Cruel
+complete The Cryo-Core | Sunhawk outpost at the Cryo-Core, south-west.
+turnin The Cryo-Core
+accept Ysera's Tears
+turnin Culling the Flutterers
+turnin 9632 Newfound Allies | Turned in at Azuremyst Isle.
+accept 9741 Critters of the Void
+complete 9646 WANTED: Deathclaw | Deathclaw's Paw drops from Deathclaw.
+accept What We Know...
+complete 9741 Critters of the Void
+accept Don't Drink the Water
 complete Don't Drink the Water
 turnin 9741 Critters of the Void
 turnin Don't Drink the Water
 accept Limits of Physical Exhaustion
 complete Limits of Physical Exhaustion
 turnin Limits of Physical Exhaustion
-turnin 9687 Restoring Sanctity
-accept 9688 Into the Dream
-accept 9502 Call of Water [class=Shaman]
-turnin 9502 Call of Water [class=Shaman]
-accept 9501 Call of Water [class=Shaman]
-turnin 9501 Call of Water [class=Shaman]
-accept 9503 Call of Water [class=Shaman]
-complete 9503 Call of Water [class=Shaman]
-turnin 9503 Call of Water [class=Shaman]
 accept The Sun Gate
 complete The Sun Gate
 turnin The Sun Gate
+accept 9502 Call of Water [class=Shaman] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+turnin 9555 Call of Fire [class=Shaman] | Turned in at The Exodar.
+turnin 9502 Call of Water [class=Shaman] | Turned in at The Exodar.
+accept 9501 Call of Water [class=Shaman] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+turnin 9501 Call of Water [class=Shaman]
+accept 9503 Call of Water [class=Shaman] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+complete 9503 Call of Water [class=Shaman] | Foul Essence drops from Fouled Water Spirit.
+turnin 9503 Call of Water [class=Shaman]
+turnin 9604 On the Wings of a Hippogryph | Turned in at The Exodar.
+accept 9605 Hippogryph Master Stephanos
+turnin 9605 Hippogryph Master Stephanos | Turned in at The Exodar.
 complete Ysera's Tears | Pink pools north-east.
 turnin 9672 The Bloodcurse Legacy
 accept 9674 The Bloodcursed Naga
 complete 9674 The Bloodcursed Naga
 turnin 9674 The Bloodcursed Naga
 accept 9682 The Hopeless Ones...
-complete 9682 The Hopeless Ones...
+complete 9682 The Hopeless Ones... | Bloodcursed Soul drops from Bloodcursed Voyager.
 turnin 9682 The Hopeless Ones...
 accept 9683 Ending the Bloodcurse [class=Paladin,Hunter,Priest,Shaman,Mage; optional]
 complete 9683 Ending the Bloodcurse [class=Paladin,Hunter,Priest,Shaman,Mage; optional]
+turnin 9683 Ending the Bloodcurse [class=Paladin,Hunter,Priest,Shaman,Mage; optional]
+turnin 9687 Restoring Sanctity
+accept 9688 Into the Dream
 complete 9688 Into the Dream
+turnin 9688 Into the Dream
+turnin 9561 Nolkai's Words
 turnin Ysera's Tears
-accept 10063 Explorers' League, Is That Something for Gnomes?
-accept 9604 On the Wings of a Hippogryph
-turnin 9604 On the Wings of a Hippogryph
-accept 9605 Hippogryph Master Stephanos
-turnin 9600 Redemption [class=Paladin]
-turnin 9461 Call of Fire [class=Shaman; optional]
-accept 9555 Call of Fire [class=Shaman]
-turnin 9555 Call of Fire [class=Shaman]
-turnin 9605 Hippogryph Master Stephanos
-complete The Final Sample | The large crystal at the Vector Coil.
-turnin 10063 Explorers' League, Is That Something for Gnomes?
-complete 9646 WANTED: Deathclaw
-turnin The Final Sample
-accept 10064 Talk to the Hand
-turnin 9646 WANTED: Deathclaw
-accept 9561 Nolkai's Words
-accept 9632 Newfound Allies
-accept What We Know...
+turnin Containing the Threat
+turnin Galaen's Fate
 turnin What We Know...
 accept What We Don't Know...
 turnin What We Don't Know...
 accept Vindicator's Rest
+turnin The Final Sample
+accept 10064 Talk to the Hand
+turnin 9646 WANTED: Deathclaw
+accept 10065 Cutting a Path
 turnin 10064 Talk to the Hand
 turnin Vindicator's Rest | Vindicator Corin, Vindicator's Rest (west).
 accept Clearing the Way
@@ -200,14 +204,10 @@ complete Clearing the Way | Ravagers and Spiders at the camp.
 complete Oh, the Tangled Webs They Weave
 complete 10065 Cutting a Path
 complete Fouled Water Spirits
+turnin Fouled Water Spirits
 turnin Clearing the Way
 turnin Oh, the Tangled Webs They Weave
 turnin 10065 Cutting a Path
-turnin Fouled Water Spirits
-turnin 9561 Nolkai's Words
-turnin 9683 Ending the Bloodcurse [class=Paladin,Hunter,Priest,Shaman,Mage; optional]
-turnin 9688 Into the Dream
-turnin 9632 Newfound Allies
 level 19
 train | Exodar trainers.
 note Take the boat from Valaar's Berth (Azuremyst) to Auberdine, then follow the road south through Darkshore to Ashenvale.

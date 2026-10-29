@@ -10,92 +10,81 @@
 @desc Rebel Camp, Nesingwary's Expedition, Kurzen's compound, Grom'gol's neighbours and Booty Bay. A contested zone - watch for Horde players.
 @next A_Dustwallow
 
-accept Welcome to the Jungle | Barnil Stonepot, Nesingwary's Expedition.
-turnin Welcome to the Jungle
-accept 185 Tiger Mastery
-accept 190 Panther Mastery
-accept 194 Raptor Mastery
-accept The Second Rebellion | Sergeant Yohwa, Rebel Camp (north).
-accept Bad Medicine
-turnin 322 Blessed Arm [class=Warrior,Rogue,Warlock; race=Gnome; optional]
-turnin 322 Blessed Arm [class=Warrior,Paladin,Rogue,Priest,Warlock; race=Human; optional]
-turnin 322 Blessed Arm [class=Warrior,Paladin,Hunter,Priest,Shaman; race=Draenei; optional]
-turnin 322 Blessed Arm [race=Dwarf,Night Elf; optional]
+turnin 322 Blessed Arm [class=Warrior,Rogue,Warlock; race=Gnome; optional] | Turned in at Stormwind City.
+turnin 322 Blessed Arm [class=Warrior,Paladin,Rogue,Priest,Warlock; race=Human; optional] | Turned in at Stormwind City.
+turnin 322 Blessed Arm [class=Warrior,Paladin,Hunter,Priest,Shaman; race=Draenei; optional] | Turned in at Stormwind City.
+turnin 322 Blessed Arm [race=Dwarf,Night Elf; optional] | Turned in at Stormwind City.
+turnin 322 Blessed Arm [class=Mage; race=Human,Gnome,Draenei; optional] | Turned in at Stormwind City.
 accept 325 Armed and Ready [class=Warrior,Rogue,Warlock; race=Gnome; optional]
 accept 325 Armed and Ready [class=Warrior,Paladin,Rogue,Priest,Warlock; race=Human; optional]
 accept 325 Armed and Ready [class=Warrior,Paladin,Hunter,Priest,Shaman; race=Draenei; optional]
 accept 325 Armed and Ready [race=Dwarf,Night Elf; optional]
-accept 1274 The Missing Diplomat
-turnin 293 Cleansing the Eye [optional]
-turnin 322 Blessed Arm [class=Mage; race=Human,Gnome,Draenei; optional]
 accept 325 Armed and Ready [class=Mage; race=Human,Gnome,Draenei; optional]
-turnin 1274 The Missing Diplomat
-accept 1241 The Missing Diplomat
-turnin 1241 The Missing Diplomat
-accept 1242 The Missing Diplomat
-accept 10491 Call of Air [class=Shaman; race=Draenei]
-turnin 1242 The Missing Diplomat
-accept 1243 The Missing Diplomat
-turnin 1243 The Missing Diplomat
-turnin 75 The Legend of Stalvan
+accept 1274 The Missing Diplomat
+turnin 293 Cleansing the Eye [optional] | Turned in at Stormwind City.
+turnin 75 The Legend of Stalvan | Turned in at Elwynn Forest.
 accept 78 The Legend of Stalvan
-turnin 78 The Legend of Stalvan [class=Shaman; race=Draenei]
-accept 79 The Legend of Stalvan [class=Shaman; race=Draenei]
-turnin 79 The Legend of Stalvan [class=Shaman; race=Draenei]
-accept 80 The Legend of Stalvan [class=Shaman; race=Draenei]
-turnin 80 The Legend of Stalvan [class=Shaman; race=Draenei]
-accept 97 The Legend of Stalvan [class=Shaman; race=Draenei]
-turnin 97 The Legend of Stalvan [class=Shaman; race=Draenei]
-turnin 325 Armed and Ready [optional]
+turnin 325 Armed and Ready [optional] | Turned in at Duskwood.
 accept 55 Morbent Fel [optional]
 complete 55 Morbent Fel [optional]
-turnin 55 Morbent Fel [optional]
-turnin 78 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
-turnin 78 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
-accept 79 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
-accept 79 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
-turnin 79 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
-turnin 79 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
-accept 80 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
-accept 80 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
-turnin 80 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
-turnin 80 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
-accept 97 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
-accept 97 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
-turnin 97 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
-turnin 97 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
-accept 1245 The Missing Diplomat
-turnin 221 Worgen in the Woods
-accept Jungle Secrets | Private Thorsen.
-turnin Jungle Secrets | Lieutenant Doren.
-accept 223 Worgen in the Woods
-turnin 223 Worgen in the Woods
+turnin 55 Morbent Fel [optional] | Turned in at Duskwood.
 accept 1301 James Hyal [class=Mage; race=Human,Gnome,Draenei]
-turnin 1245 The Missing Diplomat
-accept 1246 The Missing Diplomat
-turnin 1246 The Missing Diplomat
-accept 1247 The Missing Diplomat
-turnin 1247 The Missing Diplomat
-accept 1248 The Missing Diplomat
 accept 1301 James Hyal [class=Warrior,Rogue,Warlock; race=Gnome]
 accept 1301 James Hyal [class=Warrior,Paladin,Rogue,Priest,Warlock; race=Human]
 accept 1301 James Hyal [class=Warrior,Paladin,Hunter,Priest,Shaman; race=Draenei]
 accept 1301 James Hyal [race=Dwarf,Night Elf]
-turnin 335 A Noble Brew [optional]
+turnin 335 A Noble Brew [optional] | Turned in at Stormwind City.
 accept 336 A Noble Brew
-turnin 336 A Noble Brew
-turnin 1248 The Missing Diplomat
-accept 1250 The Missing Diplomat
-turnin 1250 The Missing Diplomat
-turnin 10491 Call of Air [class=Shaman; race=Draenei]
+accept 1245 The Missing Diplomat
+turnin 78 The Legend of Stalvan [class=Shaman; race=Draenei] | Turned in at Duskwood.
+turnin 78 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei] | Turned in at Duskwood.
+turnin 78 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome] | Turned in at Duskwood.
+accept 79 The Legend of Stalvan [class=Shaman; race=Draenei]
+accept 79 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
+accept 79 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
+turnin 79 The Legend of Stalvan [class=Shaman; race=Draenei] | Turned in at Duskwood.
+turnin 79 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei] | Turned in at Duskwood.
+turnin 79 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome] | Turned in at Duskwood.
+accept 80 The Legend of Stalvan [class=Shaman; race=Draenei]
+accept 80 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
+accept 80 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
+turnin 80 The Legend of Stalvan [class=Shaman; race=Draenei] | Turned in at Duskwood.
+turnin 80 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei] | Turned in at Duskwood.
+turnin 80 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome] | Turned in at Duskwood.
+accept 97 The Legend of Stalvan [class=Shaman; race=Draenei]
+accept 97 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei]
+accept 97 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome]
+turnin 97 The Legend of Stalvan [class=Shaman; race=Draenei] | Turned in at Duskwood.
+turnin 97 The Legend of Stalvan [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei] | Turned in at Duskwood.
+turnin 97 The Legend of Stalvan [race=Human,Dwarf,Night Elf,Gnome] | Turned in at Duskwood.
+turnin 221 Worgen in the Woods | Turned in at Duskwood.
+accept 223 Worgen in the Woods
+turnin 223 Worgen in the Woods | Turned in at Duskwood.
+accept 10491 Call of Air [class=Shaman; race=Draenei]
+turnin 1245 The Missing Diplomat | Turned in at Stormwind City.
+accept 1246 The Missing Diplomat
+turnin 1246 The Missing Diplomat | Turned in at Stormwind City.
+accept 1247 The Missing Diplomat
+turnin 336 A Noble Brew | Turned in at Stormwind City.
+turnin 1274 The Missing Diplomat | Turned in at Stormwind City.
+accept 1241 The Missing Diplomat
+turnin 10491 Call of Air [class=Shaman; race=Draenei] | Turned in at The Exodar.
 accept 9552 Call of Air [class=Shaman; race=Draenei]
-turnin 9552 Call of Air [class=Shaman; race=Draenei]
+turnin 9552 Call of Air [class=Shaman; race=Draenei] | Turned in at Azuremyst Isle.
 accept 9553 Call of Air [class=Shaman; race=Draenei]
-turnin 9553 Call of Air [class=Shaman; race=Draenei]
+turnin 9553 Call of Air [class=Shaman; race=Draenei] | Turned in at Azuremyst Isle.
 accept 9554 Call of Air [class=Shaman; race=Draenei]
-turnin 9554 Call of Air [class=Shaman; race=Draenei]
-turnin 1301 James Hyal
+turnin 9554 Call of Air [class=Shaman; race=Draenei] | Turned in at The Exodar.
+accept Jungle Secrets | Private Thorsen.
+accept Bad Medicine
+accept The Second Rebellion | Sergeant Yohwa, Rebel Camp (north).
+turnin Jungle Secrets | Lieutenant Doren.
 accept Bookie Herod
+accept Welcome to the Jungle | Barnil Stonepot, Nesingwary's Expedition.
+turnin Welcome to the Jungle
+accept 194 Raptor Mastery
+accept 185 Tiger Mastery
+accept 190 Panther Mastery
 complete 185 Tiger Mastery | Young Stranglethorn Tigers.
 complete 190 Panther Mastery | Young Panthers.
 complete 194 Raptor Mastery | Stranglethorn Raptors.
@@ -108,31 +97,46 @@ turnin 190 Panther Mastery
 accept 191 Panther Mastery
 turnin 194 Raptor Mastery
 accept 195 Raptor Mastery
-turnin The Second Rebellion
-turnin Bad Medicine
-accept Special Forces
-turnin Bookie Herod
 complete 186 Tiger Mastery
 complete 191 Panther Mastery
 complete 195 Raptor Mastery
+turnin 195 Raptor Mastery
 turnin 186 Tiger Mastery
 turnin 191 Panther Mastery
-turnin 195 Raptor Mastery
 accept 187 Tiger Mastery
 accept 192 Panther Mastery
+fp Booty Bay
+turnin The Second Rebellion
+turnin Bad Medicine
+accept Special Forces
 complete Special Forces | Kurzen Commandos and Headshrinkers.
 turnin Special Forces
-fp Booty Bay
+turnin Bookie Herod
+turnin 1241 The Missing Diplomat | Turned in at Stormwind City.
+accept 1242 The Missing Diplomat
+turnin 1242 The Missing Diplomat | Turned in at Stormwind City.
+accept 1243 The Missing Diplomat
+turnin 1247 The Missing Diplomat | Turned in at Stormwind City.
+accept 1248 The Missing Diplomat
+accept 1250 The Missing Diplomat
+turnin 1250 The Missing Diplomat | Turned in at Wetlands.
+turnin 1248 The Missing Diplomat | Turned in at Wetlands.
+turnin 1301 James Hyal | Turned in at Wetlands.
+turnin 1243 The Missing Diplomat | Turned in at Duskwood.
 bind Booty Bay
-accept Supply and Demand | Drizzlik, Booty Bay.
 accept Singing Blue Shards | Crank Fizzlebub.
 accept Scaring Shaky | "Sea Wolf" MacKinley.
+accept Supply and Demand | Drizzlik, Booty Bay.
 complete Supply and Demand | Elder Saltwater Crocolisks and Snapjaws.
 complete Singing Blue Shards | Crystal Spine Basilisks.
 turnin Supply and Demand
 accept Some Assembly Required
 turnin Singing Blue Shards
 accept Venture Company Mining
+complete Scaring Shaky | Mistvale gorillas.
+turnin Scaring Shaky
+accept Return to MacKinley
+turnin Return to MacKinley
 complete Some Assembly Required | Snapjaw Crocolisks.
 complete Venture Company Mining | Venture Co. miners at the mines.
 turnin Some Assembly Required
@@ -141,10 +145,6 @@ complete 187 Tiger Mastery | Elder Stranglethorn Tigers.
 complete 192 Panther Mastery | Shadowmaw Panthers.
 turnin 187 Tiger Mastery
 turnin 192 Panther Mastery
-complete Scaring Shaky | Mistvale gorillas.
-turnin Scaring Shaky
-accept Return to MacKinley
-turnin Return to MacKinley
 level 38
 train | Fly to Ironforge/Stormwind to train.
 note Leave the remaining Tiger/Panther/Raptor Mastery chain for your second STV visit or skip it.

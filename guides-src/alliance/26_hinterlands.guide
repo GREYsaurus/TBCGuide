@@ -14,30 +14,30 @@ fp Aerie Peak
 bind Aerie Peak
 accept Troll Necklace Bounty | Fraggar Thundermantle.
 accept Skulk Rock Clean-up
-accept Witherbark Cages | Gryphon Master Talonaxe.
 accept Featherbeard's Endorsement | Ambassador Rualeth (draenei).
 accept A Gesture of Goodwill
 accept Preying on the Predators
+accept Witherbark Cages | Gryphon Master Talonaxe.
 complete Witherbark Cages | Witherbark trolls' cages around the Hinterlands.
 complete Troll Necklace Bounty | Any Witherbark trolls.
 complete Preying on the Predators
 complete A Gesture of Goodwill
 turnin Witherbark Cages
 accept The Altar of Zul
-turnin Troll Necklace Bounty
-turnin Preying on the Predators
-turnin A Gesture of Goodwill
+complete The Altar of Zul | Explore the altar (trolls are dense here).
+turnin The Altar of Zul
 complete Featherbeard's Endorsement
 turnin Featherbeard's Endorsement
 accept In Pursuit of Featherbeard
 turnin In Pursuit of Featherbeard
 accept Reclaiming the Eggs
-complete Reclaiming the Eggs
+turnin Preying on the Predators
+turnin A Gesture of Goodwill
+complete Reclaiming the Eggs | Gryphon Egg: loot Gryphon Egg.
 turnin Reclaiming the Eggs
+turnin Troll Necklace Bounty
 complete Skulk Rock Clean-up | Oozes at Skulk Rock.
 turnin Skulk Rock Clean-up
-complete The Altar of Zul | Explore the altar (trolls are dense here).
-turnin The Altar of Zul
 level 48
 train
 note Thadius Grimshade is in the Blasted Lands (Nethergarde Keep) - optional detour. Then fly to Gadgetzan and ride north-west into Un'Goro Crater.

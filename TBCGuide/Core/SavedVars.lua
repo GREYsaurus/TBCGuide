@@ -34,6 +34,7 @@ local profileDefaults = {
         showElite = true,
         speedRoute = false,       -- maximum-speed route: hide [optional] side quests (documented default: off)
         talentHints = true,       -- remind when talent points are unspent
+        showTalentSuggestions = true, -- markers, panel and tooltip lines in the default talent window (docs/TALENTS.md)
         -- Automation (docs/AUTOMATION.md). Quest automation only ever touches quests that have an
         -- open step in the active guide; escort quests and reward choices are always manual.
         autoAccept = true,          -- accept guide quests when their offer panel opens
@@ -90,6 +91,7 @@ local profileDefaults = {
         trackMobsMap = false, trackTreasures = false,
         lowQuality = false,         -- slower arrow updates, fewer map pins
         preloadData = false,        -- request item data for the guide and bags at login
+        auctioneer = true,          -- Upgrades tab in the auction house (UI/Auctioneer.lua); scans only on request
         -- Settings window (UI/Config.lua); features in Core/Assist.lua
         showAllFrames = true,       -- master switch for the guide window and arrow
         hideWindow = false,
@@ -97,6 +99,7 @@ local profileDefaults = {
         worldMapButton = true,      -- TBCGuide button on the world map
         autoReward = false,         -- choose a quest reward when gear scoring finds a clear winner
         trainerAuto = false,        -- learn affordable spells at your class trainer
+        trainerSuggestions = "important", -- Class Trainer Suggestions: "off", "important", "all" (docs/TRAINER.md)
         flightAuto = true,          -- fly to the current fly step's destination when the taxi map opens
         bindAuto = true,            -- confirm the hearthstone bind on the guide's bind step
         skipGossip = true,          -- pick the only gossip option when an NPC offers nothing else
@@ -175,6 +178,7 @@ function ns.FixProfile(p)
     local dm = p.defaultMarker
     if type(dm) ~= "number" or dm < 1 or dm > 8 then p.defaultMarker = 8 end
     if p.junkModifier ~= "CTRL" and p.junkModifier ~= "ALT" and p.junkModifier ~= "SHIFT" then p.junkModifier = "CTRL" end
+    if p.trainerSuggestions ~= "off" and p.trainerSuggestions ~= "important" and p.trainerSuggestions ~= "all" then p.trainerSuggestions = "important" end
     for _, k in ipairs({ "colorFriendly", "colorQuest", "colorWarning" }) do
         local c = p[k]
         if type(c) ~= "table" or type(c.r) ~= "number" or type(c.g) ~= "number" or type(c.b) ~= "number" then
@@ -263,6 +267,8 @@ function ns:InitSavedVariables()
         if type(p) == "table" and p.dungeonOff ~= nil and type(p.dungeonOff) ~= "table" then p.dungeonOff = {} end
     end
     if type(TBCGuideCharDB.levelLog) ~= "table" then TBCGuideCharDB.levelLog = {} end
+    if TBCGuideCharDB.setupDraft ~= nil and type(TBCGuideCharDB.setupDraft) ~= "table" then TBCGuideCharDB.setupDraft = nil end
+    if TBCGuideCharDB.trainerDeferLevel ~= nil and type(TBCGuideCharDB.trainerDeferLevel) ~= "number" then TBCGuideCharDB.trainerDeferLevel = nil end
     if type(TBCGuideDB.flightTimes) ~= "table" then TBCGuideDB.flightTimes = {} end
     local gx = TBCGuideCharDB.gearExclude
     if type(gx) ~= "table" then gx = {} TBCGuideCharDB.gearExclude = gx end
@@ -286,17 +292,44 @@ function ns:SetActiveProfile(name)
     })
 end
 
-function ns:GetProgress(guideId)
-    local p = ns.char.progress[guideId]
-    if not p then
-        p = { step = 1, done = {}, skipped = {} }
-        ns.char.progress[guideId] = p
+-- Saved progress is stored by step index. When a guide's steps were reordered (Guides/Layouts.lua),
+-- progress saved with the previous order is moved to the new indices once, so done and skipped
+-- steps stay attached to the same steps. Unknown older layouts are left as they are (quest steps
+-- re-check themselves against your quest log anyway).
+local function remap(set, map)
+    if type(set) ~= "table" then return {} end
+    local out = {}
+    for i, v in pairs(set) do
+        if type(i) == "number" then out[map[i] or i] = v end
     end
+    return out
+end
+
+function ns:ApplyLayout(guideId, p)
+    local L = ns.GuideLayouts and ns.GuideLayouts[guideId]
+    if not L or p.layout == L.layout then return p end
+    if (p.layout or 1) == L.layout - 1 and L.map then
+        p.done, p.skipped = remap(p.done, L.map), remap(p.skipped, L.map)
+        if p.levelSkip then p.levelSkip = remap(p.levelSkip, L.map) end
+        if type(p.step) == "number" then p.step = L.map[p.step] or p.step end
+    end
+    p.layout = L.layout
     return p
 end
 
+function ns:GetProgress(guideId)
+    local p = ns.char.progress[guideId]
+    if not p then
+        local L = ns.GuideLayouts and ns.GuideLayouts[guideId]
+        p = { step = 1, done = {}, skipped = {}, layout = L and L.layout or nil }
+        ns.char.progress[guideId] = p
+    end
+    return ns:ApplyLayout(guideId, p)
+end
+
 function ns:ResetProgress(guideId)
-    ns.char.progress[guideId] = { step = 1, done = {}, skipped = {} }
+    local L = ns.GuideLayouts and ns.GuideLayouts[guideId]
+    ns.char.progress[guideId] = { step = 1, done = {}, skipped = {}, layout = L and L.layout or nil }
 end
 
 function ns:ResetSettings()

@@ -174,6 +174,8 @@ namespace TBCGuideTools
         public List<string> Warnings = new List<string>();
         public string Summary;
         public BundledDb Db;
+        public List<string[]> AutoDungeon = new List<string[]>();  // guide, quest, title, instance, verb (tagged from data)
+        public List<string[]> MixedDungeon = new List<string[]>(); // guide, quest, title, place: some objectives inside an instance or raid
     }
 
     // ---------------------------------------------------------------- compiler
@@ -443,12 +445,17 @@ namespace TBCGuideTools
                     var rec = res.Db.Quests[q];
                     s.Title = BundledDb.Str(rec, BundledDb.Q_NAME);
                     CheckQuestFit(q, rec, where, g, s, res);
+                    // Dungeon quests come from the quest data: every objective place inside one instance
+                    // tags the pickup, objective and turn-in steps. A hand-written [dungeon=...] wins.
                     if (s.Dungeon == null)
                     {
                         string inst = InstanceOnly(res.Db, rec);
-                        if (inst != null)
-                            res.Warnings.Add(where + ": quest " + q + " (" + s.Title + ") can only be done inside " + inst
-                                + "; add [dungeon=" + inst + "] so 'Include Dungeon Quests' can leave it out");
+                        if (inst != null) { s.Dungeon = inst; res.AutoDungeon.Add(new[] { g.Id, q.ToString(), s.Title, inst, verb }); }
+                        else
+                        {
+                            string mixed = InstancePart(res.Db, rec);
+                            if (mixed != null && verb == "accept") res.MixedDungeon.Add(new[] { g.Id, q.ToString(), s.Title, mixed });
+                        }
                     }
                     if (verb == "accept")
                     {
@@ -918,14 +925,27 @@ namespace TBCGuideTools
             return n.Trim();
         }
 
-        // The instance a quest's objectives are confined to, or null. Every objective place (kill
-        // targets, objects, the NPCs and objects that drop quest items; an object without spawns
-        // counts by its zone) must be inside instances, and there must be at least one place.
-        static string InstanceOnly(BundledDb db, LTable rec)
+        // Raids and dungeons the bundled zone names call "... - Raid" or "... - Dungeon".
+        static bool IsRaidZone(BundledDb db, int zone)
         {
-            var obj = BundledDb.Tab(rec, BundledDb.Q_OBJ);
-            if (obj == null) return null;
+            string n;
+            return db.ZoneNames.TryGetValue(zone, out n) && n != null && n.Contains("Raid");
+        }
+
+        // An instance or raid holding SOME (not all) of a quest's objective places, for the audit list.
+        static string InstancePart(BundledDb db, LTable rec)
+        {
+            var zones = ObjectiveZones(db, rec);
+            var inside = zones.Where(z => IsInstanceZone(db, z) || IsRaidZone(db, z)).ToList();
+            if (inside.Count == 0) return null;
+            return (IsRaidZone(db, inside[0]) ? "raid: " : "partly: ") + InstanceName(db, inside[0]);
+        }
+
+        static List<int> ObjectiveZones(BundledDb db, LTable rec)
+        {
             var zones = new List<int>();
+            var obj = BundledDb.Tab(rec, BundledDb.Q_OBJ);
+            if (obj == null) return zones;
             Action<int> npc = id => { foreach (var sp in db.NpcSpawns(id)) zones.Add((int)sp[0]); };
             Action<int> thing = id =>
             {
@@ -950,7 +970,16 @@ namespace TBCGuideTools
                     foreach (var n in BundledDb.Ids(it, BundledDb.I_NPCDROPS)) npc(n);
                     foreach (var o in BundledDb.Ids(it, BundledDb.I_OBJDROPS)) thing(o);
                 }
-            if (zones.Count == 0 || zones.Any(z => !IsInstanceZone(db, z))) return null;
+            return zones;
+        }
+
+        // The instance a quest's objectives are confined to, or null. Every objective place (kill
+        // targets, objects, the NPCs and objects that drop quest items; an object without spawns
+        // counts by its zone) must be inside instances, and there must be at least one place.
+        static string InstanceOnly(BundledDb db, LTable rec)
+        {
+            var zones = ObjectiveZones(db, rec);
+            if (zones.Count == 0 || zones.Any(z => !IsInstanceZone(db, z) && !IsRaidZone(db, z))) return null;
             return InstanceName(db, zones[0]);
         }
 

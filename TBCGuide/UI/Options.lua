@@ -77,7 +77,7 @@ function Options:Create()
     scale:SetScript("OnValueChanged", function(_, v)
         ns.db.profile.scale = ns.Round(v, 2)
         _G["TBCGuideOptScaleText"]:SetText("Window scale: " .. ns.db.profile.scale)
-        if ns.MainFrame.frame then ns.MainFrame.frame:SetScale(ns.db.profile.scale) end
+        if ns.MainFrame.frame then ns.Widgets.Rescale(ns.MainFrame.frame, "main", ns.db.profile.scale) end
     end)
     self.scale = scale
 
@@ -109,7 +109,7 @@ function Options:Apply()
     if ns.Nav.arrow then ns.Nav.arrow:SetShown(ns.db.profile.showArrow and ns.Nav.target ~= nil and ns.Assist:FramesAllowed()) end
     if ns.Assist then ns.Assist:ApplyFrames() ns.Assist:ApplyNameplateDistance() end
     if ns.MainFrame.frame then
-        ns.MainFrame.frame:SetScale(ns.db.profile.scale or 1)
+        ns.Widgets.Rescale(ns.MainFrame.frame, "main", ns.db.profile.scale or 1)
         ns.MainFrame:Render()
     end
     ns.Nav:UpdateMapPin()

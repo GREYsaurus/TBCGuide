@@ -10,293 +10,279 @@
 @desc The Crossroads, Ratchet, the oases, the Kolkar and Razormane centaur, the Venture Co. and Camp Taurajo. All four Horde starting routes meet here.
 @next H_Stonetalon
 
-turnin Crossroads Conscription [optional] | Sergra Darkthorn, Crossroads.
-turnin Journey to the Crossroads [race=Tauren; optional]
-accept Plainstrider Menace | Sergra Darkthorn.
-accept 1505 Veteran Uzzek [class=Warrior; race=Undead,Tauren]
-turnin 1505 Veteran Uzzek [class=Warrior; race=Undead,Tauren]
-accept 1498 Path of Defense [class=Warrior; race=Undead,Tauren]
-accept 6365 Meats to Orgrimmar [race=Orc,Troll]
 accept 770 The Demon Scarred Cloak [race=Orc,Undead,Troll,Blood Elf; optional]
-accept 833 A Sacred Burial [race=Orc,Undead,Troll,Blood Elf]
-complete 833 A Sacred Burial [race=Orc,Undead,Troll,Blood Elf]
-turnin 833 A Sacred Burial [race=Orc,Undead,Troll,Blood Elf]
-turnin 770 The Demon Scarred Cloak [race=Orc,Undead,Troll,Blood Elf; optional]
-accept 2984 Call of Fire [class=Shaman; race=Orc,Troll]
+turnin 770 The Demon Scarred Cloak [race=Orc,Undead,Troll,Blood Elf; optional] | Turned in at Mulgore.
 accept 861 The Hunter's Way [class=Shaman; race=Orc,Troll; optional]
-accept 1503 Forged Steel [class=Warrior; race=Undead,Tauren]
-complete 1503 Forged Steel [class=Warrior; race=Undead,Tauren]
-turnin 1503 Forged Steel [class=Warrior; race=Undead,Tauren]
-accept The Forgotten Pools | Tonga Runetotem.
+accept 2984 Call of Fire [class=Shaman; race=Orc,Troll]
+accept 1505 Veteran Uzzek [class=Warrior; race=Undead,Tauren]
+accept 744 Preparation for Ceremony [class=Warrior,Hunter,Rogue,Warlock; race=Orc]
+accept 744 Preparation for Ceremony [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll]
+accept 744 Preparation for Ceremony [race=Undead,Blood Elf]
 accept 776 Rites of the Earthmother [class=Warrior,Hunter,Rogue,Warlock; race=Orc; optional]
 accept 776 Rites of the Earthmother [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll; optional]
 accept 776 Rites of the Earthmother [class=Warrior,Hunter,Druid; race=Tauren; optional]
 accept 776 Rites of the Earthmother [race=Undead,Blood Elf; optional]
-accept 744 Preparation for Ceremony [class=Warrior,Hunter,Rogue,Warlock; race=Orc]
-accept 744 Preparation for Ceremony [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll]
-accept 744 Preparation for Ceremony [race=Undead,Blood Elf]
-complete 744 Preparation for Ceremony [class=Warrior,Hunter,Rogue,Warlock; race=Orc]
-complete 744 Preparation for Ceremony [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll]
-complete 744 Preparation for Ceremony [race=Undead,Blood Elf]
-complete 776 Rites of the Earthmother [class=Warrior,Hunter,Rogue,Warlock; race=Orc; optional]
-complete 776 Rites of the Earthmother [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll; optional]
-complete 776 Rites of the Earthmother [race=Undead,Tauren,Blood Elf; optional]
-complete 861 The Hunter's Way [class=Shaman; race=Orc,Troll; optional]
-turnin 776 Rites of the Earthmother [class=Warrior,Hunter,Rogue,Warlock; race=Orc; optional]
-turnin 776 Rites of the Earthmother [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll; optional]
-turnin 776 Rites of the Earthmother [race=Undead,Tauren,Blood Elf; optional]
-turnin 744 Preparation for Ceremony [class=Warrior,Hunter,Rogue,Warlock; race=Orc]
-turnin 744 Preparation for Ceremony [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll]
-turnin 744 Preparation for Ceremony [race=Undead,Blood Elf]
-turnin 861 The Hunter's Way [class=Shaman; race=Orc,Troll; optional]
+complete 744 Preparation for Ceremony [class=Warrior,Hunter,Rogue,Warlock; race=Orc] | Azure Feather drops from Windfury Sorceress. Bronze Feather drops from Windfury Matriarch.
+complete 744 Preparation for Ceremony [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll] | Azure Feather drops from Windfury Sorceress. Bronze Feather drops from Windfury Matriarch.
+complete 744 Preparation for Ceremony [race=Undead,Blood Elf] | Azure Feather drops from Windfury Sorceress. Bronze Feather drops from Windfury Matriarch.
+complete 776 Rites of the Earthmother [class=Warrior,Hunter,Rogue,Warlock; race=Orc; optional] | Horn of Arra'chea drops from Arra'chea.
+complete 776 Rites of the Earthmother [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll; optional] | Horn of Arra'chea drops from Arra'chea.
+complete 776 Rites of the Earthmother [race=Undead,Tauren,Blood Elf; optional] | Horn of Arra'chea drops from Arra'chea.
+complete 861 The Hunter's Way [class=Shaman; race=Orc,Troll; optional] | Flatland Prowler Claw drops from Flatland Prowler.
+turnin 776 Rites of the Earthmother [class=Warrior,Hunter,Rogue,Warlock; race=Orc; optional] | Turned in at Thunder Bluff.
+turnin 776 Rites of the Earthmother [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll; optional] | Turned in at Thunder Bluff.
+turnin 776 Rites of the Earthmother [race=Undead,Tauren,Blood Elf; optional] | Turned in at Thunder Bluff.
+turnin 744 Preparation for Ceremony [class=Warrior,Hunter,Rogue,Warlock; race=Orc] | Turned in at Thunder Bluff.
+turnin 744 Preparation for Ceremony [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll] | Turned in at Thunder Bluff.
+turnin 744 Preparation for Ceremony [race=Undead,Blood Elf] | Turned in at Thunder Bluff.
+accept 833 A Sacred Burial [race=Orc,Undead,Troll,Blood Elf]
+complete 833 A Sacred Burial [race=Orc,Undead,Troll,Blood Elf]
+turnin 833 A Sacred Burial [race=Orc,Undead,Troll,Blood Elf] | Turned in at Mulgore.
+turnin 861 The Hunter's Way [class=Shaman; race=Orc,Troll; optional] | Turned in at Thunder Bluff.
 accept 860 Sergra Darkthorn [race=Orc,Undead,Troll,Blood Elf; optional]
-accept Disrupt the Attacks | Thork.
-accept Raptor Thieves | Gazrog.
-accept Fungal Spores | Apothecary Helbrim.
-accept 6361 A Bundle of Hides [race=Tauren]
-accept Harpy Raiders | Darsok Swiftdagger.
+turnin 1505 Veteran Uzzek [class=Warrior; race=Undead,Tauren]
+accept 1498 Path of Defense [class=Warrior; race=Undead,Tauren]
+accept 1503 Forged Steel [class=Warrior; race=Undead,Tauren]
+complete 1503 Forged Steel [class=Warrior; race=Undead,Tauren] | Forged Steel Bars: loot Stolen Iron Chest.
+turnin 1503 Forged Steel [class=Warrior; race=Undead,Tauren]
+accept The Forgotten Pools | Tonga Runetotem.
 turnin 860 Sergra Darkthorn [optional]
+turnin Crossroads Conscription [optional] | Sergra Darkthorn, Crossroads.
+accept Plainstrider Menace | Sergra Darkthorn.
+accept Harpy Raiders | Darsok Swiftdagger.
+turnin Journey to the Crossroads [race=Tauren; optional]
+accept Disrupt the Attacks | Thork.
 accept Centaur Bracers | Regthar Deathgate (at the Kolkar border).
+accept 6361 A Bundle of Hides [race=Tauren]
+accept Fungal Spores | Apothecary Helbrim.
 fp Crossroads
+accept Raptor Thieves | Gazrog.
+accept 6365 Meats to Orgrimmar [race=Orc,Troll]
 bind Crossroads
-complete Plainstrider Menace
-complete 924 The Demon Seed [race=Orc,Troll; optional]
-complete Raptor Thieves
-accept 858 Ignition [optional]
-complete 858 Ignition [optional]
-turnin 858 Ignition [optional]
-accept 863 The Escape [optional]
-complete 863 The Escape [optional]
-accept 1061 The Spirits of Stonetalon
-accept 2379 Zando'zan [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
-turnin 2379 Zando'zan [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
-accept 2382 Wrenix of Ratchet [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
+turnin 6361 A Bundle of Hides [race=Tauren]
+accept 6362 Ride to Thunder Bluff [race=Tauren]
+fp Ratchet
 complete Disrupt the Attacks | Razormane quilboars east of the Crossroads.
-turnin Plainstrider Menace
-accept The Zhevra
-turnin Disrupt the Attacks
-accept The Disruption Ends
-accept Supplies for the Crossroads
 turnin 6365 Meats to Orgrimmar [race=Orc,Troll]
 accept 6384 Ride to Orgrimmar [race=Orc,Troll]
+accept Chen's Empty Keg [optional]
+turnin 2984 Call of Fire [class=Shaman; race=Orc,Tauren,Troll]
+accept 1524 Call of Fire [class=Shaman; race=Tauren]
+accept 924 The Demon Seed [race=Undead,Blood Elf; optional]
+complete 1498 Path of Defense [class=Warrior; race=Orc,Undead,Tauren,Troll] | Singed Scale drops from Lightning Hide and Thunder Lizard.
+turnin 1498 Path of Defense [class=Warrior; race=Orc,Undead,Tauren,Troll]
+accept 895 WANTED: Baron Longshore
+accept Southsea Freebooters | Gazlowe, Ratchet.
+complete Southsea Freebooters | Pirates at the camp north of Ratchet.
+complete 895 WANTED: Baron Longshore | Baron Longshore's Head drops from Baron Longshore.
+turnin Southsea Freebooters
+turnin 895 WANTED: Baron Longshore
+accept 890 The Missing Shipment
+accept 742 The Ashenvale Hunt [class=Warrior,Hunter,Rogue,Warlock; race=Orc; optional] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+accept 742 The Ashenvale Hunt [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll; optional]
+accept 742 The Ashenvale Hunt [class=Warrior,Hunter,Druid; race=Tauren; optional]
+accept 742 The Ashenvale Hunt [race=Undead,Blood Elf; optional]
+turnin 6362 Ride to Thunder Bluff [race=Tauren] | Turned in at Thunder Bluff.
+accept 6363 Tal the Wind Rider Master [race=Tauren]
+turnin 6363 Tal the Wind Rider Master [class=Shaman; race=Tauren] | Turned in at Thunder Bluff.
+turnin 6363 Tal the Wind Rider Master [class=Warrior,Hunter,Druid; race=Tauren] | Turned in at Thunder Bluff.
+accept 6364 Return to Jahan [class=Warrior,Hunter,Druid; race=Tauren]
+accept 1195 The Sacred Flame [optional] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+accept 1507 Devourer of Souls [class=Warlock; race=Orc,Undead,Blood Elf] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+turnin 1507 Devourer of Souls [class=Warlock; race=Orc,Undead,Blood Elf] | Turned in at Orgrimmar.
+accept 1508 Blind Cazul [class=Warlock; race=Orc,Undead,Blood Elf] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+complete Plainstrider Menace
+complete Raptor Thieves
+accept 832 Burning Shadows [class=Warrior,Rogue,Priest,Mage; race=Undead; optional]
+accept 832 Burning Shadows [class=Paladin,Hunter,Rogue,Priest,Mage; race=Blood Elf; optional]
+turnin 832 Burning Shadows [class=Warrior,Rogue,Priest,Mage; race=Undead; optional] | Turned in at Orgrimmar.
+turnin 832 Burning Shadows [class=Paladin,Hunter,Rogue,Priest,Mage; race=Blood Elf; optional] | Turned in at Orgrimmar.
+turnin 10794 Rogues of the Shattered Hand [class=Rogue; race=Blood Elf; optional] | Turned in at Orgrimmar.
+accept 2379 Zando'zan [class=Rogue; race=Orc,Undead,Troll,Blood Elf] | Needs level 16. If you are lower, TBCGuide skips it and moves on.
+turnin 2379 Zando'zan [class=Rogue; race=Orc,Undead,Troll,Blood Elf] | Turned in at Orgrimmar.
+accept 2382 Wrenix of Ratchet [class=Rogue; race=Orc,Undead,Troll,Blood Elf] | Needs level 16. If you are lower, TBCGuide skips it and moves on.
+turnin 1508 Blind Cazul [class=Warlock; race=Orc,Undead,Blood Elf] | Turned in at Orgrimmar.
+accept 1509 News of Dogran [class=Warlock; race=Orc,Undead,Blood Elf] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+turnin 6384 Ride to Orgrimmar [race=Orc,Troll] | Turned in at Orgrimmar.
+accept 6385 Doras the Wind Rider Master [race=Orc,Troll]
+turnin 6385 Doras the Wind Rider Master [race=Orc,Troll] | Turned in at Orgrimmar.
+accept 6386 Return to the Crossroads. [race=Orc,Troll; optional]
+accept 11129 Kyle's Gone Missing! [race=Orc,Undead,Troll,Blood Elf]
+turnin 1524 Call of Fire [class=Shaman; race=Orc,Troll] | Turned in at Durotar.
+turnin 1524 Call of Fire [class=Shaman; race=Tauren] | Turned in at Durotar.
+accept 1525 Call of Fire [class=Shaman; race=Orc,Troll; optional]
+accept 1525 Call of Fire [class=Shaman; race=Tauren; optional]
+complete Centaur Bracers | Kolkar centaur west of the road.
+turnin Centaur Bracers
+accept Kolkar Leaders
+turnin 1509 News of Dogran [class=Warlock; race=Orc,Undead,Blood Elf]
+accept 1510 News of Dogran [class=Warlock; race=Orc,Undead,Blood Elf] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
 turnin Raptor Thieves
 accept 3281 Stolen Silver
+turnin Plainstrider Menace
+accept The Zhevra
 complete The Forgotten Pools | Explore the pool north of the Crossroads.
 turnin The Forgotten Pools
 accept The Stagnant Oasis
-accept 11129 Kyle's Gone Missing! [race=Orc,Undead,Troll,Blood Elf]
-turnin 6384 Ride to Orgrimmar [race=Orc,Troll]
-accept 6385 Doras the Wind Rider Master [race=Orc,Troll]
-turnin 6385 Doras the Wind Rider Master [race=Orc,Troll]
-accept 6386 Return to the Crossroads. [race=Orc,Troll; optional]
-accept 5726 Hidden Enemies [class=Warrior,Rogue,Priest,Mage; race=Undead; optional]
-accept 5726 Hidden Enemies [class=Paladin,Hunter,Rogue,Priest,Mage; race=Blood Elf; optional]
-turnin 1524 Call of Fire [class=Shaman; race=Orc,Troll]
-accept 1525 Call of Fire [class=Shaman; race=Orc,Troll; optional]
-accept 832 Burning Shadows [class=Warrior,Rogue,Priest,Mage; race=Undead; optional]
-accept 832 Burning Shadows [class=Paladin,Hunter,Rogue,Priest,Mage; race=Blood Elf; optional]
-complete 5726 Hidden Enemies [class=Warrior,Rogue,Priest,Mage; race=Undead; optional]
-complete 5726 Hidden Enemies [class=Paladin,Hunter,Rogue,Priest,Mage; race=Blood Elf; optional]
-turnin 5726 Hidden Enemies [class=Warrior,Rogue,Priest,Mage; race=Undead; optional]
-turnin 5726 Hidden Enemies [class=Paladin,Hunter,Rogue,Priest,Mage; race=Blood Elf; optional]
-turnin 832 Burning Shadows [class=Warrior,Rogue,Priest,Mage; race=Undead; optional]
-turnin 832 Burning Shadows [class=Paladin,Hunter,Rogue,Priest,Mage; race=Blood Elf; optional]
-accept 924 The Demon Seed [race=Undead,Blood Elf; optional]
+complete The Zhevra | Zhevra Runners.
+complete 11129 Kyle's Gone Missing! [race=Orc,Undead,Troll,Blood Elf]
+complete Fungal Spores | The Forgotten Pools.
+complete The Stagnant Oasis
+turnin The Stagnant Oasis
+accept Altered Beings
+turnin Disrupt the Attacks
+accept The Disruption Ends
+accept Supplies for the Crossroads
+complete 924 The Demon Seed [race=Orc,Troll; optional] | Click The Altar of Fire.
+complete 924 The Demon Seed [race=Undead,Blood Elf; optional] | Click The Altar of Fire.
 complete The Disruption Ends
 complete Supplies for the Crossroads | Crates at the Razormane camps.
 turnin The Disruption Ends
 turnin Supplies for the Crossroads
 accept Wharfmaster Dizzywig [optional] | From Apothecary Helbrim.
-complete 924 The Demon Seed [race=Undead,Blood Elf; optional]
-accept Southsea Freebooters | Gazlowe, Ratchet.
-accept Samophlange | Sputtervalve.
-accept 895 WANTED: Baron Longshore
-turnin 9626 Meeting the Warchief [race=Blood Elf; optional]
-accept 9428 Report to Splintertree Post [race=Blood Elf; optional]
-turnin 10794 Rogues of the Shattered Hand [class=Rogue; race=Blood Elf; optional]
-accept Raptor Horns | Mebok Mizzyrix.
-accept 1069 Deepmoss Spider Eggs
-accept Chen's Empty Keg [optional]
-turnin 2984 Call of Fire [class=Shaman; race=Orc,Tauren,Troll]
-accept 1524 Call of Fire [class=Shaman; race=Tauren]
-turnin 1524 Call of Fire [class=Shaman; race=Tauren]
-accept 1525 Call of Fire [class=Shaman; race=Tauren; optional]
-complete 1498 Path of Defense [class=Warrior; race=Orc,Undead,Tauren,Troll]
-complete 1525 Call of Fire [class=Shaman; race=Orc,Tauren,Troll; optional]
-turnin 6386 Return to the Crossroads. [race=Orc,Troll; optional]
-fp Ratchet
-turnin Chen's Empty Keg [optional] | Brewmaster Drohn.
-accept 821 Chen's Empty Keg
-complete Southsea Freebooters | Pirates at the camp north of Ratchet.
-complete 895 WANTED: Baron Longshore
-turnin Southsea Freebooters
-turnin 895 WANTED: Baron Longshore
-accept 890 The Missing Shipment
-turnin Wharfmaster Dizzywig [optional]
-turnin 890 The Missing Shipment | Wharfmaster Dizzywig, Ratchet docks.
-accept 892 The Missing Shipment
-accept 896 Miner's Fortune [optional]
-turnin 892 The Missing Shipment
-accept Stolen Booty
-complete Stolen Booty | Back to the pirate camp north of Ratchet for Tazan.
-turnin Stolen Booty
-complete The Zhevra | Zhevra Runners.
-complete 11129 Kyle's Gone Missing! [race=Orc,Undead,Troll,Blood Elf]
-turnin 924 The Demon Seed [race=Orc,Undead,Troll,Blood Elf; optional]
-turnin 1525 Call of Fire [class=Shaman; race=Orc,Tauren,Troll; optional]
-accept 1526 Call of Fire [class=Shaman; race=Orc,Tauren,Troll; optional]
-complete 1526 Call of Fire [class=Shaman; race=Orc,Tauren,Troll; optional]
-turnin 1526 Call of Fire [class=Shaman; race=Orc,Tauren,Troll; optional]
-accept 1527 Call of Fire [class=Shaman; race=Orc,Tauren,Troll]
-turnin 1527 Call of Fire [class=Shaman; race=Orc,Tauren,Troll]
-complete Fungal Spores | The Forgotten Pools.
-complete The Stagnant Oasis
-turnin The Zhevra
-accept Prowlers of the Barrens
 turnin Fungal Spores
 accept 853 Apothecary Zamah [race=Orc,Undead,Troll,Blood Elf]
-turnin 11129 Kyle's Gone Missing! [race=Orc,Undead,Troll,Blood Elf]
-turnin 853 Apothecary Zamah [race=Orc,Undead,Troll,Blood Elf]
-turnin 1498 Path of Defense [class=Warrior; race=Orc,Undead,Tauren,Troll]
 accept 853 Apothecary Zamah [race=Tauren]
-turnin 6361 A Bundle of Hides [race=Tauren]
-accept 6362 Ride to Thunder Bluff [race=Tauren]
-turnin 6362 Ride to Thunder Bluff [race=Tauren]
-accept 6363 Tal the Wind Rider Master [race=Tauren]
-turnin 853 Apothecary Zamah [race=Tauren]
-turnin 6002 Body and Heart [class=Druid; race=Tauren]
-turnin 6363 Tal the Wind Rider Master [class=Shaman; race=Tauren]
-turnin 6363 Tal the Wind Rider Master [class=Warrior,Hunter,Druid; race=Tauren]
-accept 6364 Return to Jahan [class=Warrior,Hunter,Druid; race=Tauren]
-turnin 6364 Return to Jahan [class=Warrior,Hunter,Druid; race=Tauren]
-accept 1818 Speak with Dillinger [class=Warrior; race=Orc,Undead,Troll; optional]
-turnin 1818 Speak with Dillinger [class=Warrior; race=Orc,Undead,Troll; optional]
-accept 1820 Speak with Coleman [class=Warrior; race=Orc,Undead,Troll; optional]
-turnin 1820 Speak with Coleman [class=Warrior; race=Orc,Undead,Troll; optional]
-turnin The Stagnant Oasis
-accept Altered Beings
-complete Centaur Bracers | Kolkar centaur west of the road.
-complete Harpy Raiders | Witchwing harpies north-west.
-turnin Harpy Raiders
-accept Harpy Lieutenants
-turnin Centaur Bracers
-accept Kolkar Leaders
+turnin The Zhevra
+accept Prowlers of the Barrens
+accept 1069 Deepmoss Spider Eggs | Needs level 15. If you are lower, TBCGuide skips it and moves on.
+accept Raptor Horns | Mebok Mizzyrix.
+turnin Chen's Empty Keg [optional] | Brewmaster Drohn.
+accept 821 Chen's Empty Keg
+turnin Wharfmaster Dizzywig [optional]
+turnin 890 The Missing Shipment | Wharfmaster Dizzywig, Ratchet docks.
+accept 896 Miner's Fortune [optional]
+accept 892 The Missing Shipment
+accept Samophlange | Sputtervalve.
+turnin 2382 Wrenix of Ratchet [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
+accept 2381 Plundering the Plunderers [class=Rogue; race=Orc,Undead,Troll,Blood Elf] | Needs level 16. If you are lower, TBCGuide skips it and moves on.
+complete 1525 Call of Fire [class=Shaman; race=Orc,Tauren,Troll; optional] | Fire Tar drops from Razormane Geomancer, Razormane Thornweaver and Razormane Water Seeker and others. Reagent Pouch drops from Burning Blade Cultist.
+turnin 924 The Demon Seed [race=Orc,Undead,Troll,Blood Elf; optional]
+accept 858 Ignition [optional]
+complete 858 Ignition [optional] | Ignition Key drops from Supervisor Lugwizzle.
+turnin 858 Ignition [optional]
 complete Samophlange | The Sludge Fen control console.
-turnin Samophlange
-accept 900 Samophlange
-complete 900 Samophlange
-turnin 900 Samophlange
-accept 901 Samophlange
-complete 901 Samophlange
-turnin 901 Samophlange
-accept 902 Samophlange [optional]
-complete 896 Miner's Fortune [optional]
+complete 896 Miner's Fortune [optional] | Cats Eye Emerald drops from Boss Copperplug, Venture Co. Enforcer and Venture Co. Overseer.
 complete Prowlers of the Barrens | Savannah Prowlers.
 complete Altered Beings | Oasis creatures.
 complete Raptor Horns | Sunscale Scytheclaws.
-complete 3281 Stolen Silver
+complete 3281 Stolen Silver | Stolen Silver: loot Stolen Silver.
 complete Kolkar Leaders | Barak Kodobane.
-complete 1069 Deepmoss Spider Eggs [class=Warrior,Hunter,Rogue,Warlock; race=Orc]
-complete 1069 Deepmoss Spider Eggs [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll]
-complete 1069 Deepmoss Spider Eggs [class=Warrior,Hunter,Druid; race=Tauren]
-complete 1069 Deepmoss Spider Eggs [race=Undead,Blood Elf]
-complete Harpy Lieutenants
-turnin Prowlers of the Barrens
-accept Echeyakee
-turnin Altered Beings
-accept 1507 Devourer of Souls [class=Warlock; race=Orc,Undead,Blood Elf]
-turnin 1507 Devourer of Souls [class=Warlock; race=Orc,Undead,Blood Elf]
-accept 1508 Blind Cazul [class=Warlock; race=Orc,Undead,Blood Elf]
-turnin 1508 Blind Cazul [class=Warlock; race=Orc,Undead,Blood Elf]
-accept 1509 News of Dogran [class=Warlock; race=Orc,Undead,Blood Elf]
-turnin 1509 News of Dogran [class=Warlock; race=Orc,Undead,Blood Elf]
-accept 1510 News of Dogran [class=Warlock; race=Orc,Undead,Blood Elf]
-turnin Raptor Horns
-turnin 1069 Deepmoss Spider Eggs [class=Warrior,Hunter,Rogue,Warlock; race=Orc]
-turnin 1069 Deepmoss Spider Eggs [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll]
-turnin 1069 Deepmoss Spider Eggs [class=Warrior,Hunter,Druid; race=Tauren]
-turnin 1069 Deepmoss Spider Eggs [race=Undead,Blood Elf]
+complete 1069 Deepmoss Spider Eggs [class=Warrior,Hunter,Rogue,Warlock; race=Orc] | Deepmoss Egg: loot Deepmoss Eggs.
+complete 1069 Deepmoss Spider Eggs [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll] | Deepmoss Egg: loot Deepmoss Eggs.
+complete 1069 Deepmoss Spider Eggs [class=Warrior,Hunter,Druid; race=Tauren] | Deepmoss Egg: loot Deepmoss Eggs.
+complete 1069 Deepmoss Spider Eggs [race=Undead,Blood Elf] | Deepmoss Egg: loot Deepmoss Eggs.
+complete 1069 Deepmoss Spider Eggs [class=Shaman; race=Orc,Tauren,Troll] | Deepmoss Egg: loot Deepmoss Eggs.
+accept 863 The Escape [optional] | Escort quest: start it when you are ready to follow.
+turnin Samophlange
+accept 900 Samophlange
+complete 900 Samophlange | Click Fuel Control Valve and Main Control Valve.
+turnin 900 Samophlange
+accept 901 Samophlange
+complete 901 Samophlange | Console Key drops from Tinkerer Sniggles.
+turnin 901 Samophlange
+accept 902 Samophlange [optional]
 turnin Kolkar Leaders
-accept 5881 Calling in the Reserves [class=Warrior,Hunter,Rogue,Warlock; race=Orc; optional]
-accept 5881 Calling in the Reserves [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll; optional]
-accept 5881 Calling in the Reserves [class=Warrior,Hunter,Druid; race=Tauren; optional]
-accept 5881 Calling in the Reserves [race=Undead,Blood Elf; optional]
 accept Verog the Dervish
+complete Harpy Raiders | Witchwing harpies north-west.
+turnin Harpy Raiders
+accept Harpy Lieutenants
+complete Harpy Lieutenants
 turnin Harpy Lieutenants
 accept Serena Bloodfeather
-turnin 2382 Wrenix of Ratchet [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
-accept 2381 Plundering the Plunderers [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
-turnin 902 Samophlange [optional]
-turnin 863 The Escape [optional]
-accept 1483 Ziz Fizziks [optional]
-turnin 896 Miner's Fortune [optional]
-complete 2381 Plundering the Plunderers [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
+turnin Prowlers of the Barrens
+accept Echeyakee
+complete 2381 Plundering the Plunderers [class=Rogue; race=Orc,Undead,Troll,Blood Elf] | Southsea Treasure drops from Polly.
 complete Echeyakee | Use the horn at Echeyakee's lair.
 turnin Echeyakee
 accept The Angry Scytheclaws
 accept Consumed by Hatred | Mankrik, Crossroads.
 accept Lost in Battle
+accept 1061 The Spirits of Stonetalon
+turnin 9626 Meeting the Warchief [race=Blood Elf; optional] | Turned in at Orgrimmar.
+accept 5726 Hidden Enemies [class=Warrior,Rogue,Priest,Mage; race=Undead; optional]
+accept 5726 Hidden Enemies [class=Paladin,Hunter,Rogue,Priest,Mage; race=Blood Elf; optional]
+complete 5726 Hidden Enemies [class=Warrior,Rogue,Priest,Mage; race=Undead; optional] | Lieutenant's Insignia drops from Burning Blade Apprentice and Burning Blade Fanatic.
+complete 5726 Hidden Enemies [class=Paladin,Hunter,Rogue,Priest,Mage; race=Blood Elf; optional] | Lieutenant's Insignia drops from Burning Blade Apprentice and Burning Blade Fanatic.
+turnin 5726 Hidden Enemies [class=Warrior,Rogue,Priest,Mage; race=Undead; optional] | Turned in at Orgrimmar.
+turnin 5726 Hidden Enemies [class=Paladin,Hunter,Rogue,Priest,Mage; race=Blood Elf; optional] | Turned in at Orgrimmar.
+accept 9428 Report to Splintertree Post [race=Blood Elf; optional]
+complete Lost in Battle | Mankrik's wife lies near Blackthorn Ridge.
+accept 878 Tribes at War
 complete The Angry Scytheclaws
 complete Consumed by Hatred
-complete 821 Chen's Empty Keg
-accept 742 The Ashenvale Hunt [class=Warrior,Hunter,Rogue,Warlock; race=Orc; optional]
-accept 742 The Ashenvale Hunt [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll; optional]
-accept 742 The Ashenvale Hunt [class=Warrior,Hunter,Druid; race=Tauren; optional]
-accept 742 The Ashenvale Hunt [race=Undead,Blood Elf; optional]
-complete Lost in Battle | Mankrik's wife lies near Blackthorn Ridge.
-accept 883 Lakota'mani [optional]
-turnin 883 Lakota'mani [optional]
-accept 878 Tribes at War
+turnin 1525 Call of Fire [class=Shaman; race=Orc,Tauren,Troll; optional] | Turned in at Durotar.
+accept 1526 Call of Fire [class=Shaman; race=Orc,Tauren,Troll; optional]
+complete 1526 Call of Fire [class=Shaman; race=Orc,Tauren,Troll; optional] | Glowing Ember drops from Minor Manifestation of Fire.
+turnin 1526 Call of Fire [class=Shaman; race=Orc,Tauren,Troll; optional]
+accept 1527 Call of Fire [class=Shaman; race=Orc,Tauren,Troll]
+turnin 1527 Call of Fire [class=Shaman; race=Orc,Tauren,Troll]
+turnin 3281 Stolen Silver
+complete 821 Chen's Empty Keg | Savannah Lion Tusk drops from Savannah Highmane, Savannah Huntress and Savannah Patriarch and others. Plainstrider Kidney drops from Fleeting Plainstrider, Grea
+turnin Lost in Battle
+turnin Consumed by Hatred
+turnin Altered Beings
+complete 863 The Escape [optional] | Escort: stay close; it fails if the NPC dies.
+turnin Raptor Horns
+turnin 1069 Deepmoss Spider Eggs [class=Warrior,Hunter,Rogue,Warlock; race=Orc]
+turnin 1069 Deepmoss Spider Eggs [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll]
+turnin 1069 Deepmoss Spider Eggs [class=Warrior,Hunter,Druid; race=Tauren]
+turnin 1069 Deepmoss Spider Eggs [race=Undead,Blood Elf]
+turnin 1069 Deepmoss Spider Eggs [class=Shaman; race=Orc,Tauren,Troll]
+turnin 821 Chen's Empty Keg
+turnin 896 Miner's Fortune [optional]
+turnin 902 Samophlange [optional]
+turnin 863 The Escape [optional]
+accept 1483 Ziz Fizziks [optional]
 complete 878 Tribes at War [class=Warrior,Hunter,Rogue,Warlock; race=Orc]
 complete 878 Tribes at War [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll]
 complete 878 Tribes at War [class=Warrior,Hunter,Druid; race=Tauren]
 complete 878 Tribes at War [race=Undead,Blood Elf]
+complete 878 Tribes at War [class=Shaman; race=Orc,Tauren,Troll]
 complete Serena Bloodfeather [group=2]
 complete Verog the Dervish
 turnin The Angry Scytheclaws
 accept Jorn Skyseer
-turnin 3281 Stolen Silver
-turnin Consumed by Hatred
-turnin 878 Tribes at War [class=Warrior,Hunter,Rogue,Warlock; race=Orc]
-turnin 878 Tribes at War [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll]
-turnin 878 Tribes at War [class=Warrior,Hunter,Druid; race=Tauren]
-turnin 878 Tribes at War [race=Undead,Blood Elf]
-turnin Lost in Battle
 turnin Serena Bloodfeather
 accept Letter to Jin'Zil [optional]
 turnin Verog the Dervish
 accept Hezrul Bloodmark
 turnin 1061 The Spirits of Stonetalon
 accept 1062 Goblin Invaders [class=Shaman; race=Orc,Tauren,Troll]
-accept 6548 Avenge My Village [class=Shaman; race=Orc,Tauren,Troll]
-complete 6548 Avenge My Village [class=Shaman; race=Orc,Tauren,Troll]
-turnin 6548 Avenge My Village [class=Shaman; race=Orc,Tauren,Troll]
-accept 6629 Kill Grundig Darkcloud [class=Shaman; race=Orc,Tauren,Troll; optional]
-complete 6629 Kill Grundig Darkcloud [class=Shaman; race=Orc,Tauren,Troll; optional]
-accept 6523 Protect Kaya [class=Shaman; race=Orc,Tauren,Troll; optional]
-complete 6523 Protect Kaya [class=Shaman; race=Orc,Tauren,Troll; optional]
 accept 6461 Blood Feeders [class=Shaman; race=Orc,Tauren,Troll]
+accept 6523 Protect Kaya [class=Shaman; race=Orc,Tauren,Troll; optional] | Escort quest: start it when you are ready to follow.
+complete 6523 Protect Kaya [class=Shaman; race=Orc,Tauren,Troll; optional] | Escort: stay close; it fails if the NPC dies.
 accept 6284 Arachnophobia [class=Shaman; race=Orc,Tauren,Troll]
-complete 6284 Arachnophobia [class=Shaman; race=Orc,Tauren,Troll]
-turnin 1483 Ziz Fizziks [optional]
+complete 6284 Arachnophobia [class=Shaman; race=Orc,Tauren,Troll] | Besseleth's Fang drops from Besseleth.
+turnin 1483 Ziz Fizziks [optional] | Turned in at Stonetalon Mountains.
 accept 1093 Super Reaper 6000 [class=Shaman; race=Orc,Tauren,Troll]
-complete 1093 Super Reaper 6000 [class=Shaman; race=Orc,Tauren,Troll]
+complete 1093 Super Reaper 6000 [class=Shaman; race=Orc,Tauren,Troll] | Super Reaper 6000 Blueprints drops from Venture Co. Operator.
 complete 1062 Goblin Invaders [class=Shaman; race=Orc,Tauren,Troll]
-complete 1069 Deepmoss Spider Eggs [class=Shaman; race=Orc,Tauren,Troll]
-turnin 1093 Super Reaper 6000 [class=Shaman; race=Orc,Tauren,Troll]
+turnin 1093 Super Reaper 6000 [class=Shaman; race=Orc,Tauren,Troll] | Turned in at Stonetalon Mountains.
 accept 1094 Further Instructions
+accept 5881 Calling in the Reserves [class=Warrior,Hunter,Rogue,Warlock; race=Orc; optional] | Needs level 23. If you are lower, TBCGuide skips it and moves on.
+accept 5881 Calling in the Reserves [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll; optional]
+accept 5881 Calling in the Reserves [class=Warrior,Hunter,Druid; race=Tauren; optional]
+accept 5881 Calling in the Reserves [race=Undead,Blood Elf; optional]
+turnin 11129 Kyle's Gone Missing! [race=Orc,Undead,Troll,Blood Elf] | Turned in at Mulgore.
+accept 1818 Speak with Dillinger [class=Warrior; race=Orc,Undead,Troll; optional]
+turnin 1818 Speak with Dillinger [class=Warrior; race=Orc,Undead,Troll; optional] | Turned in at Tirisfal Glades.
+accept 1820 Speak with Coleman [class=Warrior; race=Orc,Undead,Troll; optional]
+turnin 1820 Speak with Coleman [class=Warrior; race=Orc,Undead,Troll; optional] | Turned in at Tirisfal Glades.
+turnin 6002 Body and Heart [class=Druid; race=Tauren] | Turned in at Thunder Bluff.
+accept 27 A Lesson to Learn [class=Druid; race=Tauren]
+fp Camp Taurajo
+turnin 878 Tribes at War [class=Warrior,Hunter,Rogue,Warlock; race=Orc]
+turnin 878 Tribes at War [class=Warrior,Hunter,Rogue,Priest,Mage; race=Troll]
+turnin 878 Tribes at War [class=Warrior,Hunter,Druid; race=Tauren]
+turnin 878 Tribes at War [race=Undead,Blood Elf]
+turnin 878 Tribes at War [class=Shaman; race=Orc,Tauren,Troll]
+accept 883 Lakota'mani [optional]
+turnin 883 Lakota'mani [optional]
 complete 6461 Blood Feeders [class=Shaman; race=Orc,Tauren,Troll]
 turnin Jorn Skyseer | Camp Taurajo.
 accept Ishamuhale
-complete 878 Tribes at War [class=Shaman; race=Orc,Tauren,Troll]
-fp Camp Taurajo
 complete Ishamuhale
-turnin 2381 Plundering the Plunderers [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
-turnin 1094 Further Instructions
-accept 1095 Further Instructions
-turnin 1069 Deepmoss Spider Eggs [class=Shaman; race=Orc,Tauren,Troll]
-turnin 821 Chen's Empty Keg
-turnin 878 Tribes at War [class=Shaman; race=Orc,Tauren,Troll]
 complete Hezrul Bloodmark
 turnin Ishamuhale
 accept Enraged Thunder Lizards
@@ -305,23 +291,37 @@ complete Enraged Thunder Lizards
 turnin 884 Owatanka [optional]
 turnin Enraged Thunder Lizards
 accept Cry of the Thunderhawk
-turnin Hezrul Bloodmark
-accept 4021 Counterattack! [optional]
-complete 4021 Counterattack! [optional]
-turnin 4021 Counterattack! [optional]
-turnin 1062 Goblin Invaders [class=Shaman; race=Orc,Tauren,Troll]
-accept 1063 The Elder Crone
-turnin 6629 Kill Grundig Darkcloud [class=Shaman; race=Orc,Tauren,Troll; optional]
-turnin 6523 Protect Kaya [class=Shaman; race=Orc,Tauren,Troll; optional]
-accept 6401 Kaya's Alive
 complete Cry of the Thunderhawk
 turnin Cry of the Thunderhawk
 accept 874 Mahren Skyseer [optional]
-accept 5642 Shadowguard [class=Priest; race=Troll]
-accept 27 A Lesson to Learn [class=Druid; race=Tauren]
-turnin 27 A Lesson to Learn [class=Druid; race=Tauren]
-accept 1195 The Sacred Flame [optional]
-accept 1131 Steelsnap
+turnin 853 Apothecary Zamah [race=Orc,Undead,Troll,Blood Elf] | Turned in at Thunder Bluff.
+turnin 853 Apothecary Zamah [race=Tauren] | Turned in at Thunder Bluff.
+accept 5642 Shadowguard [class=Priest; race=Troll] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+turnin 1094 Further Instructions
+accept 1095 Further Instructions
+turnin 2381 Plundering the Plunderers [class=Rogue; race=Orc,Undead,Troll,Blood Elf]
+turnin 892 The Missing Shipment
+accept Stolen Booty
+complete Stolen Booty | Back to the pirate camp north of Ratchet for Tazan.
+turnin Stolen Booty
+turnin 6386 Return to the Crossroads. [race=Orc,Troll; optional]
+turnin 6364 Return to Jahan [class=Warrior,Hunter,Druid; race=Tauren]
+turnin Hezrul Bloodmark
+accept 4021 Counterattack! [optional]
+complete 4021 Counterattack! [optional] | Piece of Krom'zar's Banner: loot Krom'zar's Banner.
+turnin 4021 Counterattack! [optional]
+turnin 1062 Goblin Invaders [class=Shaman; race=Orc,Tauren,Troll]
+accept 1063 The Elder Crone
+accept 6548 Avenge My Village [class=Shaman; race=Orc,Tauren,Troll]
+complete 6548 Avenge My Village [class=Shaman; race=Orc,Tauren,Troll]
+turnin 6548 Avenge My Village [class=Shaman; race=Orc,Tauren,Troll]
+accept 6629 Kill Grundig Darkcloud [class=Shaman; race=Orc,Tauren,Troll; optional]
+complete 6629 Kill Grundig Darkcloud [class=Shaman; race=Orc,Tauren,Troll; optional]
+turnin 6629 Kill Grundig Darkcloud [class=Shaman; race=Orc,Tauren,Troll; optional]
+turnin 6523 Protect Kaya [class=Shaman; race=Orc,Tauren,Troll; optional]
+accept 6401 Kaya's Alive
+turnin 27 A Lesson to Learn [class=Druid; race=Tauren] | Turned in at Moonglade.
+accept 1131 Steelsnap | Needs level 20. If you are lower, TBCGuide skips it and moves on.
 level 22
 train | Orgrimmar or Thunder Bluff.
 note The Wailing Caverns (dungeon, 17-24) is in the oasis north-west of the Crossroads. Next: Stonetalon Mountains, via the road west from the Crossroads.

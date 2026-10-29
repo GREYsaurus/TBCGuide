@@ -13,15 +13,15 @@
 fp Feathermoon Stronghold
 bind Feathermoon Stronghold
 accept The Ruins of Solarsal | Shandris Feathermoon.
-accept The Missing Courier | Latronicus Moonspear.
 turnin The Ruins of Solarsal | The gazebo on the island south.
 accept Return to Feathermoon Stronghold
 turnin Return to Feathermoon Stronghold
 accept 3130 Against the Hatecrest
+accept The Missing Courier | Latronicus Moonspear.
 complete 3130 Against the Hatecrest | Hatecrest naga at the Ruins of Solarsal.
 turnin 3130 Against the Hatecrest
 accept 2869 Against the Hatecrest
-complete 2869 Against the Hatecrest
+complete 2869 Against the Hatecrest | Hatecrest Naga Scale drops from Hatecrest Serpent Guard, Hatecrest Warrior and Hatecrest Wave Rider and others.
 turnin 2869 Against the Hatecrest
 accept Against Lord Shalzaru
 complete Against Lord Shalzaru [group=2] | Lord Shalzaru, in the cave on the isle.
@@ -37,28 +37,28 @@ accept Psychometric Reading
 turnin Psychometric Reading
 accept The Woodpaw Gnolls
 complete The Woodpaw Gnolls | Woodpaw gnolls in the southern hills.
-turnin The Woodpaw Gnolls
-accept The Writhing Deep
-complete The Writhing Deep | Inside the Zukk'ash hive at the Writhing Deep.
-turnin The Writhing Deep
-accept Freed from the Hive
-turnin Freed from the Hive
-accept A Hero's Welcome
-turnin A Hero's Welcome
 accept Freedom for All Creatures | Kindal Moonweaver, at the camp east.
 complete Freedom for All Creatures [group=2] | Escort the sprite darters out of the Grimtotem compound.
 turnin Freedom for All Creatures
 accept 2970 Doling Justice
 complete 2970 Doling Justice | Grimtotem tauren at the compound.
 turnin 2970 Doling Justice
-accept The Giant Guardian | Rockbiter at the Twin Colossals.
-turnin The Giant Guardian
+turnin The Woodpaw Gnolls
+accept The Writhing Deep
+complete The Writhing Deep | Inside the Zukk'ash hive at the Writhing Deep.
+turnin The Writhing Deep
+accept Freed from the Hive | Escort quest: start it when you are ready to follow.
 accept Zapped Giants | Zorbin Fandazzle, the coast.
-accept Fuel for the Zapping
+accept Fuel for the Zapping | Needs level 45. If you are lower, TBCGuide skips it and moves on.
 complete Zapped Giants | Use the Zorbin's Ultra-Shrinker on Wave Striders and Land Walkers.
 complete Fuel for the Zapping | Water elementals on the coast.
 turnin Zapped Giants
 turnin Fuel for the Zapping
+turnin Freed from the Hive
+accept A Hero's Welcome
+turnin A Hero's Welcome
+accept The Giant Guardian | Rockbiter at the Twin Colossals.
+turnin The Giant Guardian
 level 46
 train
 note Fly to Ironforge, then to Aerie Peak in the Hinterlands (fly from Menethil if you lack the path).

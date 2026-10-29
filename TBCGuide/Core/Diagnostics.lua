@@ -54,6 +54,9 @@ function D:Api()
         "InCombatLockdown", "C_Container.PickupContainerItem", "PickupContainerItem", "EquipCursorItem",
         "GetInventoryItemID", "IsEquippableItem", "C_Container.GetContainerNumFreeSlots", "GetContainerNumFreeSlots",
         "CursorHasItem", "ClearCursor", "hooksecurefunc", "ContainerFrame_Update",
+        -- auction house (UI/Auctioneer.lua)
+        "QueryAuctionItems", "CanSendAuctionQuery", "GetNumAuctionItems", "GetAuctionItemInfo", "GetAuctionItemLink",
+        "AuctionFrameTab_OnClick", "PanelTemplates_SetNumTabs", "AuctionFrameBrowse_Search",
     }
     ns:Print("API availability:")
     for _, a in ipairs(apis) do

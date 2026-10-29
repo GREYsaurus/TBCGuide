@@ -116,10 +116,26 @@ end
 
 -- Whether a quest step should be skipped automatically for this character, and why.
 function Engine:AutoSkipReason(s, ctx)
-    if not s.q or ns.db.profile.disableStepSkips then return nil end
+    if ns.db.profile.disableStepSkips then return nil end
+    if s[1] == "train" and ns.Trainer then return ns.Trainer:SkipReason() end
+    if not s.q then return nil end
     if s[1] == "accept" then
         if T:IsTurnedIn(s.q) then return nil end -- counts as done, not skipped
-        local ok, why = ns.DB.IsQuestAvailable(s.q, ctx)
+        -- Below the quest's required level: skip it instead of blocking the guide. It comes back if
+        -- you reach the level before doing anything after it; once you have moved on it stays
+        -- skipped, so the guide never sends you back for it.
+        local lp = self.progress and self.progress.levelSkip
+        if lp and lp[s.index] and not T:InLog(s.q) and (self.maxDone or 0) > (s.index or 0) then
+            return "passed while below the required level"
+        end
+        local ok, why, req = ns.DB.IsQuestAvailable(s.q, ctx)
+        if not ok and why == "level" and not T:InLog(s.q) then
+            if self.progress then
+                self.progress.levelSkip = self.progress.levelSkip or {}
+                self.progress.levelSkip[s.index] = true
+            end
+            return "needs level " .. tostring(req) .. "; picked up if you reach it before moving on"
+        end
         if not ok and (why == "race" or why == "class" or why == "exclusive" or why == "too high level") then
             return "not available (" .. why .. ")"
         end
@@ -182,6 +198,10 @@ function Engine:Refresh(silent)
             end
         end
     end
+
+    -- Highest step you have marked done (level-skipped pickups behind it stay skipped).
+    self.maxDone = 0
+    for i in pairs(p.done) do if type(i) == "number" and i > self.maxDone then self.maxDone = i end end
 
     local firstOpen
     for i, s in ipairs(g.steps) do

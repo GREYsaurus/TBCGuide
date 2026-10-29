@@ -33,7 +33,7 @@ Information from Vanilla Classic or Retail was not used for ranges. The patch 2.
 
 It writes `docs/ROUTE_AUDIT.md` and `docs/generated/route-metrics.csv`, and compares against `docs/generated/route-metrics-baseline.csv` (the 0.1.0 routes). `build.ps1 all` now **fails** on any order or capacity error, so these defects cannot come back.
 
-XP per quest is not in the bundled data and was not invented. "Efficiency" in this model means **not wasting** steps, travel or log space. It does not attempt to rank quests by XP per hour.
+*(Up to 0.7.0.)* XP per quest was not in the bundled data and was not invented. Since the 1.0 route pass, the audit uses an XP model built on QuestieDB's TBC quest XP table and the post-2.3 XP-to-level table. Kill XP is a stated assumption. Details: [ROUTE_PASS_1.0.md](ROUTE_PASS_1.0.md). "Efficiency" in this model means **not wasting** steps, travel or log space. It does not attempt to rank quests by XP per hour.
 
 ## 3. Audit of the 0.1.0 guide database (baseline)
 

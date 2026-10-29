@@ -43,6 +43,7 @@ frameMeta = {
             SetAttribute = function(s, k, v) local t = rawget(s, "attributes") or {} rawset(s, "attributes", t) t[k] = v end,
             GetAttribute = function(s, k) local t = rawget(s, "attributes") return t and t[k] end,
             SetScale = function(s, v) rawset(s, "scale", v) end,
+            GetScale = function(s) return rawget(s, "scale") or 1 end,
             CreateTexture = function() return newObject("Texture") end,
             CreateFontString = function()
                 local fs = newObject("FontString")

@@ -12,15 +12,15 @@
 
 fp Revantusk Village
 bind Revantusk Village
-accept Snapjaws, Mon! | Katoom the Angler.
+accept Lard Lost His Lunch | Lard.
+accept Kidnapped Elder Torntusk! | Primal Torntusk.
+accept Vilebranch Hooligans | Smith Slagtree.
+accept Cannibalistic Cousins | Mystic Yayo'jin.
+accept Message to the Wildhammer | Otho Moji'ko.
 accept Stalking the Stalkers | Huntsman Markhor.
 accept Hunt the Savages
 accept Avenging the Fallen
-accept Vilebranch Hooligans | Smith Slagtree.
-accept Lard Lost His Lunch | Lard.
-accept Cannibalistic Cousins | Mystic Yayo'jin.
-accept Message to the Wildhammer | Otho Moji'ko.
-accept Kidnapped Elder Torntusk! | Primal Torntusk.
+accept Snapjaws, Mon! | Katoom the Angler.
 complete Snapjaws, Mon! | Turtles along the coast.
 complete Stalking the Stalkers | Silvermane Stalkers.
 complete Hunt the Savages | Savage Owlbeasts.
@@ -33,23 +33,23 @@ turnin Snapjaws, Mon!
 accept Gammerita, Mon!
 complete Gammerita, Mon! | Gammerita, the large turtle on the coast.
 turnin Gammerita, Mon!
-turnin Stalking the Stalkers
 turnin Hunt the Savages
+turnin Stalking the Stalkers
 turnin Avenging the Fallen
-turnin Vilebranch Hooligans
-turnin Lard Lost His Lunch
-turnin Cannibalistic Cousins
 turnin Message to the Wildhammer
 accept Another Message to the Wildhammer
-complete Another Message to the Wildhammer
+complete Another Message to the Wildhammer | Long Elegant Feather drops from Granistad, Kurdros and Wild Gryphon and others.
 turnin Another Message to the Wildhammer
+turnin Cannibalistic Cousins
 complete Kidnapped Elder Torntusk! | Elder Torntusk is held in the Vilebranch area.
 turnin Kidnapped Elder Torntusk!
 accept Recover the Key!
-complete Recover the Key!
+complete Recover the Key! | Shackle Key drops from Hitah'ya the Keeper.
 turnin Recover the Key!
 accept Return to Primal Torntusk
+turnin Vilebranch Hooligans
 turnin Return to Primal Torntusk
+turnin Lard Lost His Lunch
 level 49
 train
 note Fly to Gadgetzan and ride north-west into Un'Goro Crater.

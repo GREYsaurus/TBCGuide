@@ -97,6 +97,8 @@ function StepText:Details(s)
         end
     elseif s[1] == "turnin" and s.q and not ns.Tracker:InLog(s.q) and not ns.Tracker:IsTurnedIn(s.q) then
         lines[#lines + 1] = string.format(WARN, "Quest is not in your log - skip this step if you did not take it.")
+    elseif s[1] == "train" and ns.Trainer then
+        for _, l in ipairs(ns.Trainer:Lines(6)) do lines[#lines + 1] = l end
     elseif s[1] == "level" or s[1] == "grind" then
         local xp, maxXp = UnitXP("player"), UnitXPMax("player")
         if maxXp and maxXp > 0 then
@@ -125,6 +127,8 @@ function StepText:Target(s)
         if s[1] == "grind" then return s.z, s.x, s.y, s.location or (s.mobs and s.mobs[1]) end
         return s.z, s.x, s.y, s.npc or s.text
     end
+    -- Train steps without a place: the nearest class trainer of your faction (Classes/Trainer.lua).
+    if s[1] == "train" and ns.Trainer then return ns.Trainer:NearestTrainer() end
     if not s.q then return nil end
     if s[1] == "accept" then
         local npcs = ns.DB.GetQuestStartNPCs(s.q)

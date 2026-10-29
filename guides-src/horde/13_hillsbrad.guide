@@ -12,44 +12,44 @@
 
 fp Tarren Mill
 bind Tarren Mill
-accept 527 Battle of Hillsbrad | High Executor Darthalia.
-accept Elixir of Suffering | Apothecary Lydon.
 accept Souvenirs of Death | Deathguard Samsa.
-accept Time To Strike [optional] | Deathguard Lesh.
+accept The Hammer May Fall | Tallow, at the Tarren Mill area - leads to Hammerfall.
+accept Elixir of Suffering | Apothecary Lydon.
 accept 1066 Blood of Innocents [optional]
+accept Time To Strike [optional] | Deathguard Lesh.
+accept Prison Break In | Magus Wordeen Voidglare, south of Tarren Mill.
+accept 527 Battle of Hillsbrad | High Executor Darthalia.
 turnin Time To Strike [optional] | High Executor Darthalia, Tarren Mill.
 complete 527 Battle of Hillsbrad | Hillsbrad farmers and peasants on the farms.
 complete Elixir of Suffering | Hillsbrad farm creatures.
-complete 1066 Blood of Innocents [optional]
+complete 1066 Blood of Innocents [optional] | Vial of Innocent Blood drops from Syndicate Shadow Mage.
 complete Souvenirs of Death
 turnin 527 Battle of Hillsbrad
 accept 528 Battle of Hillsbrad
+turnin Souvenirs of Death
 turnin Elixir of Suffering
 turnin 1066 Blood of Innocents [optional]
 accept Elixir of Pain
-turnin Souvenirs of Death
+accept Elixir of Agony
+complete Elixir of Agony
+turnin Elixir of Agony
 complete 528 Battle of Hillsbrad
 complete Elixir of Pain | Mountain Lions.
-turnin 528 Battle of Hillsbrad
-accept 529 Battle of Hillsbrad
 turnin Elixir of Pain
 accept 502 Elixir of Pain [optional]
-turnin 502 Elixir of Pain [optional]
-accept Elixir of Agony
+complete Prison Break In
+turnin 528 Battle of Hillsbrad
+accept 529 Battle of Hillsbrad
 complete 529 Battle of Hillsbrad
 turnin 529 Battle of Hillsbrad
 accept 532 Battle of Hillsbrad
 complete 532 Battle of Hillsbrad
 turnin 532 Battle of Hillsbrad
-complete Elixir of Agony
-turnin Elixir of Agony
-accept Prison Break In | Magus Wordeen Voidglare, south of Tarren Mill.
-complete Prison Break In
 turnin Prison Break In
 accept Dalaran Patrols
 complete Dalaran Patrols
 turnin Dalaran Patrols
-accept The Hammer May Fall | Tallow, at the Tarren Mill area - leads to Hammerfall.
+turnin 502 Elixir of Pain [optional]
 level 30
 train | Undercity trainers.
 note Fly to Orgrimmar via the Undercity zeppelin, then fly to Freewind Post (Thousand Needles).

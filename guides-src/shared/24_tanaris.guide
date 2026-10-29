@@ -13,20 +13,22 @@
 
 fp Gadgetzan
 bind Gadgetzan
-accept Wastewander Justice | Chief Engineer Bilgewhizzle, Gadgetzan.
-accept Water Pouch Bounty | Spigot Operator Luglunket.
 accept Gadgetzan Water Survey | Senior Surveyor Fizzledowser.
 accept WANTED: Caliph Scorpidsting [elite; group=3; optional]
+complete WANTED: Caliph Scorpidsting [elite; group=3; optional] | Caliph Scorpidsting's Head drops from Caliph Scorpidsting.
+turnin WANTED: Caliph Scorpidsting [optional]
+accept Wastewander Justice | Chief Engineer Bilgewhizzle, Gadgetzan.
+accept Water Pouch Bounty | Spigot Operator Luglunket.
 complete Wastewander Justice | Wastewander bandits east of Gadgetzan.
 complete Water Pouch Bounty | Same bandits drop Wastewander Water Pouches.
+turnin Water Pouch Bounty
 complete Gadgetzan Water Survey | Use the tool at the Noxious Lair water hole.
 turnin Wastewander Justice
 accept More Wastewander Justice
-turnin Water Pouch Bounty
-turnin Gadgetzan Water Survey
-accept Noxious Lair Investigation
 complete More Wastewander Justice
 turnin More Wastewander Justice
+turnin Gadgetzan Water Survey
+accept Noxious Lair Investigation
 complete Noxious Lair Investigation | Centipaar insects at the Noxious Lair.
 turnin Noxious Lair Investigation
 accept The Scrimshank Redemption
@@ -36,17 +38,15 @@ accept 110 Insect Part Analysis
 turnin 110 Insect Part Analysis | Alchemist Pestlezugg.
 accept 113 Insect Part Analysis
 turnin 113 Insect Part Analysis
-accept Southsea Shakedown | Security Chief Bilgewhizzle at Steamwheedle Port.
-accept Pirate Hats Ahoy! | Haughty Modiste.
-complete Southsea Shakedown | Pirates at Lost Rigger Cove.
-complete Pirate Hats Ahoy!
-turnin Southsea Shakedown
-turnin Pirate Hats Ahoy!
-accept The Dunemaul Compound [optional]
+accept The Dunemaul Compound [optional] | Needs level 44. If you are lower, TBCGuide skips it and moves on.
 complete The Dunemaul Compound [optional] | Dunemaul ogres.
 turnin The Dunemaul Compound [optional]
-complete WANTED: Caliph Scorpidsting [elite; group=3; optional]
-turnin WANTED: Caliph Scorpidsting [optional]
+accept Pirate Hats Ahoy! | Haughty Modiste.
+accept Southsea Shakedown | Security Chief Bilgewhizzle at Steamwheedle Port.
+complete Southsea Shakedown | Pirates at Lost Rigger Cove.
+complete Pirate Hats Ahoy! | Southsea Pirate Hat drops from Southsea Dock Worker, Southsea Freebooter and Southsea Pirate and others.
+turnin Southsea Shakedown
+turnin Pirate Hats Ahoy!
 level 44
 train
 note Alliance: fly to Thalanaar or take the boat to Feathermoon Stronghold. Horde: fly to Camp Mojache in Feralas.

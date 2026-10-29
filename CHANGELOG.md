@@ -1,5 +1,38 @@
 # Changelog
 
+## 0.9.0
+
+Our biggest update yet: a first-login setup, bag add-on support, non-English client support, class trainer suggestions, talent suggestions in the talent window, an auction house upgrades tab, and a full route pass from level 1 to 60.
+
+### Changed
+- **1-30 routes tidied:** the 25 guides that got quests in 0.6.0 were reordered within their travel segments, keeping every quest, chain and gate.
+  - **Travel:** per-character travel on those guides is 36% lower than in 0.7.0 (an approximate, map-distance measure).
+  - **Gated pickups:** the ones the new XP model flags fell from 206 to 116.
+  - **Notes:** 514 notes taken from the bundled data were added (drop sources, objects, elites, escorts, turn-in zones, level needed).
+
+  Details and the method: docs/ROUTE_PASS_1.0.md.
+- **31-60 routes tidied:** the 18 guides from Thousand Needles / Arathi to Western Plaguelands were reordered within their travel segments (summed travel -29%, every quest and chain kept), with 62 data notes. Saved progress follows. Coverage matrix and status: docs/LEVELS_31_60.md.
+- **Pickups you're too low for** are skipped with the reason instead of blocking the guide. They come back if you reach the level before moving on.
+- **Saved progress** follows the reordered steps (`Guides/Layouts.lua`).
+
+### Added
+- **Auction house Upgrades tab** (*Enable Auctioneer*): a scan you start, with progress, cancel and partial/stale labels, and upgrades for your spec grouped by slot, scored exactly like automatic upgrades.
+  - **Filters:** price, minimum % and slot, with a sort by % or price.
+  - **Never automatic:** nothing is ever bought.
+
+  See docs/AUCTION.md.
+- **Window settings** (General): guide window scale, font size and arrow scale, with a reset.
+- **First-login setup:** pick a guide and a spec profile, and opt in to automatic upgrades explicitly (off unless ticked). Saved per character; skip, resume after a reload, or reopen from Settings → General. Existing characters are not interrupted.
+- **Bag add-ons:** the BoE upgrade arrow and junk markers also work in Bagnon, AdiBags and Baganator (docs/BAGS.md). Not yet tested in game.
+- **Non-English clients:** tooltip reading uses the client's own strings for binding and effects; unread equip effects make an upgrade uncertain instead of being ignored (docs/LOCALES.md).
+- **Dungeon quests** are tagged from quest data in the compiler, with hand tags winning. The route XP model no longer counts dungeon quest XP (docs/DUNGEONS.md).
+- **Class trainer suggestions** (*Class Trainer Suggestions*: Off / Important only / All): train steps list the spell ranks your trainer has for you, from the client's own spell tables checked against your spellbook. Train steps with nothing new are skipped. Talent ranks only after the talent, class-quest spells listed apart, `/tbcg train` (defer, waypoint). Never buys anything (docs/TRAINER.md).
+- **Talent suggestions in the talent window** (*Show Talent Suggestions*): numbered markers on your plan's next picks, a panel with the plan, deviations and what blocks the next pick, and tooltip lines. Follows your spec profile (21 of 28 have a plan). Never spends points (docs/TALENTS.md).
+- **Route audit XP model:** QuestieDB TBC quest XP and the post-2.3 XP table, a per-character travel measure, and `docs/generated/level-gates.csv`.
+
+### Removed
+- The unfinished *Follow Party Leader Macro*, *Quest Sellable Recommendation* and *Always Show Total EP* options. The settings window has no greyed-out placeholders left.
+
 ## 0.7.0
 
 ### Added

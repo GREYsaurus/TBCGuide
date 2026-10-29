@@ -11,29 +11,26 @@
 @next A_Duskwood
 
 accept 9429 Travel to Darkshire [race=Draenei]
-accept 2281 Redridge Rendezvous [class=Rogue; race=Human,Dwarf,Night Elf,Gnome]
-accept 2360 Mathias and the Defias [class=Rogue; race=Human,Dwarf,Night Elf,Gnome]
+accept 66 The Legend of Stalvan | Needs level 22. If you are lower, TBCGuide skips it and moves on.
 accept 1642 The Tome of Divinity [class=Paladin; race=Human]
-turnin 1642 The Tome of Divinity [class=Paladin; race=Human]
+turnin 1642 The Tome of Divinity [class=Paladin; race=Human] | Turned in at Stormwind City.
 accept 1643 The Tome of Divinity [class=Paladin; race=Human]
-turnin 1643 The Tome of Divinity [class=Paladin; race=Human]
-accept 1644 The Tome of Divinity [class=Paladin; race=Human]
-turnin 1644 The Tome of Divinity [class=Paladin; race=Human]
-accept 1780 The Tome of Divinity [class=Paladin; race=Human]
-turnin 1780 The Tome of Divinity [class=Paladin; race=Human]
-accept 1781 The Tome of Divinity [class=Paladin; race=Human]
-turnin 1781 The Tome of Divinity [class=Paladin; race=Human]
-accept 1649 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
-turnin 1649 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
-accept 1650 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
-turnin 1738 Heartswood [class=Warlock; race=Human,Gnome; optional]
-accept 1739 The Binding [class=Warlock; race=Human,Gnome; optional]
-complete 1739 The Binding [class=Warlock; race=Human,Gnome; optional]
-turnin 1739 The Binding [class=Warlock; race=Human,Gnome; optional]
-accept 94 A Watchful Eye [optional]
 accept Encroaching Gnolls | Guard Parker at the Elwynn border bridge.
+accept 2360 Mathias and the Defias [class=Rogue; race=Human,Dwarf,Night Elf,Gnome] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+accept 2281 Redridge Rendezvous [class=Rogue; race=Human,Dwarf,Night Elf,Gnome] | Needs level 16. If you are lower, TBCGuide skips it and moves on.
+turnin 1643 The Tome of Divinity [class=Paladin; race=Human] | Turned in at Stormwind City.
+accept 1644 The Tome of Divinity [class=Paladin; race=Human]
+turnin 1644 The Tome of Divinity [class=Paladin; race=Human] | Turned in at Stormwind City.
+accept 1780 The Tome of Divinity [class=Paladin; race=Human]
+accept 1649 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+accept 94 A Watchful Eye [optional] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+turnin 1649 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei] | Turned in at Stormwind City.
+accept 1650 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+turnin 1780 The Tome of Divinity [class=Paladin; race=Human] | Turned in at Stormwind City.
+accept 1781 The Tome of Divinity [class=Paladin; race=Human]
+turnin 1781 The Tome of Divinity [class=Paladin; race=Human] | Turned in at Stormwind City.
+turnin 1097 Elmore's Task | Turned in at Stormwind City.
 turnin Encroaching Gnolls | Deputy Feldon, further east on the road.
-turnin 1097 Elmore's Task
 accept 6661 Deeprun Rat Roundup [class=Paladin,Priest; race=Dwarf; optional]
 accept 6661 Deeprun Rat Roundup [class=Mage; race=Gnome; optional]
 accept 6661 Deeprun Rat Roundup [class=Paladin,Priest,Mage; race=Human; optional]
@@ -51,65 +48,61 @@ turnin 6661 Deeprun Rat Roundup [class=Paladin,Priest,Shaman,Mage; race=Draenei;
 turnin 6661 Deeprun Rat Roundup [class=Priest,Druid; race=Night Elf; optional]
 accept Assessing the Threat
 fp Lakeshire
-turnin 65 The Defias Brotherhood [race=Human; optional] | Wiley the Black in the Lakeshire inn (if you brought it from Westfall).
-accept Dry Times
-accept A Free Lunch
+turnin 1738 Heartswood [class=Warlock; race=Human,Gnome; optional] | Turned in at Stormwind City.
+accept 1739 The Binding [class=Warlock; race=Human,Gnome; optional] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+complete 1739 The Binding [class=Warlock; race=Human,Gnome; optional]
+turnin 1739 The Binding [class=Warlock; race=Human,Gnome; optional] | Turned in at Stormwind City.
 accept The Lost Tools | Foreman Oslow at the broken bridge.
 accept The Price of Shoes | Verner Osgood, south of the bridge.
-accept Redridge Goulash | Chef Breanna in the inn.
-accept Wanted: Lieutenant Fangore
-accept 34 An Unwelcome Guest
-complete 34 An Unwelcome Guest
-turnin 34 An Unwelcome Guest
-accept 66 The Legend of Stalvan
 accept Wanted: Gath'Ilzogg
+accept Wanted: Lieutenant Fangore
+turnin 65 The Defias Brotherhood [race=Human; optional] | Wiley the Black in the Lakeshire inn (if you brought it from Westfall).
+accept 34 An Unwelcome Guest | Needs level 18. If you are lower, TBCGuide skips it and moves on.
+complete 34 An Unwelcome Guest | Bellygrub's Tusk drops from Bellygrub.
+turnin 34 An Unwelcome Guest
+accept Redridge Goulash | Chef Breanna in the inn.
+accept Dry Times
+accept A Free Lunch
 bind Lakeshire
-accept Hilary's Necklace | Shawn, at the dock south of the bridge.
+accept Solomon's Law
+accept Missing In Action [optional; group=2] | Corporal Keeshan at Render's Camp - escort quest.
+turnin The Price of Shoes | Smith Argus, the Goldshire blacksmith (Elwynn). Combine with a training trip.
+accept Return to Verner
+complete Wanted: Lieutenant Fangore [elite; group=3; optional]
+turnin 94 A Watchful Eye [optional]
+accept 248 Looking Further [optional] | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+complete Wanted: Gath'Ilzogg [elite; group=3; optional]
+turnin 248 Looking Further [optional]
 complete The Lost Tools | Underwater by the broken bridge, a box on the lake bed.
 turnin The Lost Tools
 accept The Everstill Bridge
+accept Hilary's Necklace | Shawn, at the dock south of the bridge.
 complete Hilary's Necklace | Murlocs on the lake; the necklace is in a glinting mud pile underwater.
 turnin Hilary's Necklace
+complete Assessing the Threat | Redridge gnolls west of Lakeshire.
+turnin 2281 Redridge Rendezvous [class=Rogue; race=Human,Dwarf,Night Elf,Gnome]
+accept 2282 Alther's Mill [class=Rogue; race=Human,Dwarf,Night Elf,Gnome; optional]
+complete Redridge Goulash | Tarantulas, condors and goretusks.
+complete The Everstill Bridge | Redridge Mystics and Brutes west of the lake.
+turnin Assessing the Threat
 turnin A Free Lunch | Guard Parker at the west bridge.
 accept Visit the Herbalist
 turnin Visit the Herbalist | Martie Jainrose, the farm north-west of Lakeshire.
 accept Delivering Daffodils
-turnin Delivering Daffodils | Darcy in the Lakeshire inn.
-complete Assessing the Threat | Redridge gnolls west of Lakeshire.
-complete Redridge Goulash | Tarantulas, condors and goretusks.
-complete The Everstill Bridge | Redridge Mystics and Brutes west of the lake.
-turnin Assessing the Threat
 turnin Redridge Goulash
-turnin The Everstill Bridge
-accept Solomon's Law
 accept Selling Fish | Dockmaster Baren on the dock.
-accept 150 Murloc Poachers
-turnin 2281 Redridge Rendezvous [class=Rogue; race=Human,Dwarf,Night Elf,Gnome]
-accept 2282 Alther's Mill [class=Rogue; race=Human,Dwarf,Night Elf,Gnome; optional]
+accept 150 Murloc Poachers | Needs level 20. If you are lower, TBCGuide skips it and moves on.
+turnin Delivering Daffodils | Darcy in the Lakeshire inn.
 complete Selling Fish | Murlocs drop Spotted Sunfish.
-complete 2282 Alther's Mill [class=Rogue; race=Human,Dwarf,Night Elf,Gnome; optional]
+complete 2282 Alther's Mill [class=Rogue; race=Human,Dwarf,Night Elf,Gnome; optional] | Token of Thievery: loot Lucius's Lockbox.
 complete Solomon's Law | Blackrock orcs along the north-east road and Stonewatch Falls.
 complete Dry Times
 turnin Dry Times
-turnin Selling Fish
-turnin 150 Murloc Poachers
-turnin 2282 Alther's Mill [class=Rogue; race=Human,Dwarf,Night Elf,Gnome; optional]
 turnin Solomon's Law
-accept Blackrock Menace | Marshal Marris at the east house of Lakeshire.
-complete Blackrock Menace | Blackrock orcs in the Render's Camp area north of Lakeshire.
-turnin Blackrock Menace
-accept Missing In Action [optional; group=2] | Corporal Keeshan at Render's Camp - escort quest.
-complete Missing In Action [optional]
-turnin Missing In Action [optional]
-complete Wanted: Lieutenant Fangore [elite; group=3; optional]
-turnin 94 A Watchful Eye [optional]
-accept 248 Looking Further [optional]
-complete Wanted: Gath'Ilzogg [elite; group=3; optional]
-turnin 248 Looking Further [optional]
 turnin Wanted: Lieutenant Fangore [optional]
 turnin Wanted: Gath'Ilzogg [optional]
-turnin The Price of Shoes | Smith Argus, the Goldshire blacksmith (Elwynn). Combine with a training trip.
-accept Return to Verner
+turnin Selling Fish
+turnin 150 Murloc Poachers
 turnin Return to Verner
 accept A Baying of Gnolls
 complete A Baying of Gnolls | Gnolls around Alther's Mill and Stonewatch.
@@ -117,6 +110,13 @@ turnin A Baying of Gnolls
 accept Howling in the Hills
 complete Howling in the Hills | Yowler is a gnoll at Stonewatch Keep.
 turnin Howling in the Hills
+turnin The Everstill Bridge
+complete Missing In Action [optional]
+turnin Missing In Action [optional]
+accept Blackrock Menace | Marshal Marris at the east house of Lakeshire.
+complete Blackrock Menace | Blackrock orcs in the Render's Camp area north of Lakeshire.
+turnin Blackrock Menace
+turnin 2282 Alther's Mill [class=Rogue; race=Human,Dwarf,Night Elf,Gnome; optional]
 level 20
 train | Stormwind or Lakeshire area trainers.
 note Leave by the south road from Lakeshire to Darkshire (Duskwood).

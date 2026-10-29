@@ -49,7 +49,7 @@ function A:ApplyFrames()
     if mf then mf:SetShown(ns.db.frames.main.shown ~= false and self:FramesAllowed()) end
     local nav = ns.Nav
     if nav and nav.arrow then
-        nav.arrow:SetScale(prof().arrowScale or 1)
+        ns.Widgets.Rescale(nav.arrow, "arrow", prof().arrowScale or 1)
         nav.arrow:SetShown(prof().showArrow and nav.target ~= nil and self:FramesAllowed())
     end
     if self.mapButton then self.mapButton:SetShown(prof().worldMapButton and true or false) end

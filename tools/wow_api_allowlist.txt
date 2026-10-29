@@ -267,3 +267,25 @@ ChatFrame_DisplayTimePlayed       # core; wrapped once to hide the login /played
 write:ChatFrame_DisplayTimePlayed # the wrapper passes every other call through unchanged
 CharacterFrame                    # core frame; guarded
 CharacterFrame.HookScript         # core
+
+# --- auction house upgrades (UI/Auctioneer.lua); legacy auction API of the Classic clients ---
+AuctionFrame                      # Blizzard_AuctionUI (load on demand); guarded
+AuctionFrame.numTabs              # tab count used by PanelTemplates
+AuctionFrameTab_OnClick           # hooked with hooksecurefunc only, guarded
+AuctionFrameBrowse_Search         # guarded; runs the Browse tab search for a selected result
+BrowseName                        # Browse tab search box; guarded
+QueryAuctionItems                 # hooked with hooksecurefunc to notice other searches, guarded
+PanelTemplates_SetNumTabs         # core; guarded
+PanelTemplates_EnableTab          # core; guarded
+GetCoinTextureString              # core; guarded (falls back to text)
+time                              # core (seconds since the epoch, for scan timestamps); guarded
+
+# --- bag add-on adapters (UI/BagAdapters.lua); optional, every use guarded ---
+BagBrother                        # optional (Bagnon core); post-hook on ContainerItem.Update
+LibStub                           # optional (Ace3 in AdiBags); guarded
+GetLocale                         # core; guarded
+Baganator                         # optional; public plugin API (Baganator.API), guarded
+IsSpellKnown                      # core; trainer suggestions (guarded)
+IsPlayerSpell                     # fallback for IsSpellKnown (guarded)
+PanelTemplates_GetSelectedTab     # core (guarded); selected tab of the default talent window
+MAX_NUM_TALENTS                   # Blizzard_TalentUI constant (fallback 40)

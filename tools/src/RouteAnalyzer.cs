@@ -14,9 +14,10 @@
 //   * travel       - per guide: straight-line distance between consecutive located steps (zone
 //                    map percent; comparable only within one zone), zone changes, and hub
 //                    revisits (returning to a place already visited and left).
-// The "estimated level" at a step interpolates between @levels and the guide's own "level N"
-// checkpoints. It is
-// a planning estimate, NOT a measurement; no XP/hour figure is ever produced.
+// The "model level" at a step comes from an XP model (see XpModel below): quest XP from QuestieDB's
+// TBC quest XP table, the post-2.3 XP-to-level table, and a documented assumption for kill XP. Without
+// the XP table (run `build.ps1 fetch`) it falls back to interpolating @levels. Either way it is a
+// planning estimate, NOT a measurement; no XP/hour figure is ever produced.
 // Output: docs/ROUTE_AUDIT.md and docs/generated/route-metrics.csv. If
 // docs/generated/route-metrics-baseline.csv exists, the report compares against it.
 
@@ -34,13 +35,17 @@ namespace TBCGuideTools
         public string Id, Name;
         public int Steps, Quests, Located, ZoneChanges, Clusters, Revisits, LowXp, HeavyLowXp, LevelGated, Abandoned, Escort, Group;
         public double Distance;
+        public double RouteDistSum; public int RouteCount; // per race/class route, only the steps that route sees
+        // XP model per guide, summed over routes: model level in/out, quests-only level in/out, grind levels.
+        public double XpIn, XpOut, QIn, QOut, Lift; public int XpRoutes;
+        public double RouteDistance { get { return RouteCount > 0 ? RouteDistSum / RouteCount : 0; } }
 
-        public static string Header = "guide,steps,quests,distance,zoneChanges,hubRevisits,lowXp,heavyLowXp,levelGated,abandoned,escort,group";
+        public static string Header = "guide,steps,quests,distance,zoneChanges,hubRevisits,lowXp,heavyLowXp,levelGated,abandoned,escort,group,routeDistance";
         public string Csv()
         {
             return string.Join(",", new[] { Id, Steps.ToString(), Quests.ToString(), Distance.ToString("0.0", CultureInfo.InvariantCulture),
                 ZoneChanges.ToString(), Revisits.ToString(), LowXp.ToString(), HeavyLowXp.ToString(), LevelGated.ToString(),
-                Abandoned.ToString(), Escort.ToString(), Group.ToString() });
+                Abandoned.ToString(), Escort.ToString(), Group.ToString(), RouteDistance.ToString("0.0", CultureInfo.InvariantCulture) });
         }
     }
 
@@ -53,13 +58,91 @@ namespace TBCGuideTools
         public Dictionary<string, string> MaxLogAt = new Dictionary<string, string>();
         public List<string> Findings = new List<string>();                          // per-guide detail lines
         public int Routes;
+        public bool XpModel;
+        public Dictionary<string, double> StepLevel = new Dictionary<string, double>(); // "source:line" -> lowest model level on arrival
+        public List<string[]> Gates = new List<string[]>(); // guide, src:line, quest, title, req, model level, quests-only level, route
+    }
+
+    // ---------------------------------------------------------------- XP model
+    // Inputs (all documented in docs/ROUTE_OPTIMIZATION.md):
+    //  * quest XP: QuestieDB support/QuestXP/xpDB-tbc.lua, the TBC value in each line's comment
+    //    ("TBC: <questLevel>: <xp>/<difficulty>"), i.e. the full reward at or below quest level + 5;
+    //  * reduced quest XP above that: 80/60/40/20/10 % at +6/+7/+8/+9/+10 levels (warcraft.wiki.gg,
+    //    "Experience point", Quest XP), rounded to 5;
+    //  * XP to next level: the post-patch-2.3 table (warcraft.wiki.gg, "Experience to level",
+    //    "pre-Wrath" table), which is the TBC Classic ruleset;
+    //  * kill XP: NOT data. Assumed to add KillShare x the quest XP earned (0.5 = kills are a third
+    //    of all XP), a common rule of thumb for quest-driven leveling. Discovery XP, rested XP,
+    //    groups and dungeons are not counted. "level N" / "grind N" steps lift the model to N.
+    public sealed class XpModel
+    {
+        public static readonly int[] ToNext = { 0,
+            400, 900, 1400, 2100, 2800, 3600, 4500, 5400, 6500, 7600,
+            8700, 9800, 11000, 12300, 13600, 15000, 16400, 17800, 19300, 20800,
+            22400, 24000, 25500, 27200, 28900, 30500, 32200, 33900, 36300, 38800,
+            41600, 44600, 48000, 51400, 55000, 58700, 62400, 66200, 70200, 74300,
+            78500, 82800, 87100, 91600, 96300, 101000, 105800, 110700, 115700, 120900,
+            126100, 131500, 137000, 142500, 148200, 154000, 159900, 165800, 172000, 494000,
+            574700, 614400, 650300, 682300, 710200, 734100, 753700, 768900, 779700 };
+        public const double KillShare = 0.5;
+        public Dictionary<int, int[]> Quest = new Dictionary<int, int[]>(); // id -> { questLevel, xp }
+
+        public static XpModel Load(string root)
+        {
+            string p = Path.Combine(root, ".cache", "upstream", "questiedb", "support", "QuestXP", "xpDB-tbc.lua");
+            if (!File.Exists(p)) return null;
+            var m = new XpModel();
+            var rx = new System.Text.RegularExpressions.Regex(@"^\s*\[(\d+)\]\s*=\s*\{[^}]*\},.*TBC:\s*(-?\d+):\s*(\d+)/");
+            foreach (var line in File.ReadLines(p))
+            {
+                var mm = rx.Match(line);
+                if (mm.Success) m.Quest[int.Parse(mm.Groups[1].Value)] = new[] { int.Parse(mm.Groups[2].Value), int.Parse(mm.Groups[3].Value) };
+            }
+            return m.Quest.Count > 0 ? m : null;
+        }
+
+        public int Reward(int quest, int level)
+        {
+            int[] q;
+            if (!Quest.TryGetValue(quest, out q) || q[1] <= 0) return 0;
+            int diff = level - q[0];
+            double f = diff <= 5 ? 1 : diff == 6 ? 0.8 : diff == 7 ? 0.6 : diff == 8 ? 0.4 : diff == 9 ? 0.2 : 0.1;
+            return (int)(Math.Round(q[1] * f / 5) * 5);
+        }
+
+        // Character progress along a route.
+        public sealed class State
+        {
+            public int Level = 1; public double Xp; public int QLevel = 1; public double QXp; // QLevel/QXp: quests only
+            public int Grinds;
+            static void Add(ref int level, ref double xp, double gain)
+            {
+                xp += gain;
+                while (level < 70 && xp >= ToNext[level]) { xp -= ToNext[level]; level++; }
+            }
+            public void TurnIn(XpModel m, int quest)
+            {
+                int r = m.Reward(quest, Level);
+                Add(ref Level, ref Xp, r * (1 + KillShare));
+                Add(ref QLevel, ref QXp, m.Reward(quest, QLevel));
+            }
+            public double Lifted; // levels added by level/grind steps (the grinding the quests leave)
+            public void Reach(int level)
+            {
+                if (Level < level) { Lifted += level - Exact; Level = level; Xp = 0; Grinds++; }
+                if (QLevel < level) { QLevel = level; QXp = 0; }
+            }
+            public double Exact { get { return Level + (Level < 70 ? Xp / ToNext[Level] : 0); } }
+            public double QExact { get { return QLevel + (QLevel < 70 ? QXp / ToNext[QLevel] : 0); } }
+        }
     }
 
     public static class RouteAnalyzer
     {
         const int LogCap = 25;          // TBC quest log size
         const int LogWarn = 22;
-        const double HubRadius = 3.5;   // map percent: steps closer than this are "the same place"
+        const double HubRadius = 3.5;
+        const double ZoneChangeCost = 25;   // per-route travel: a zone change, as a fixed approximation   // map percent: steps closer than this are "the same place"
 
         static bool StepApplies(CStep s, string race, string cls, string faction)
         {
@@ -103,6 +186,8 @@ namespace TBCGuideTools
 
             // Quests turned in anywhere on a route are known per route; pre-compute positions.
             var combos = Validator.LoadCombos(addOnDir);
+            var xpm = XpModel.Load(root);
+            a.XpModel = xpm != null;
             var lowXpSeen = new HashSet<string>();
             var gatedSeen = new HashSet<string>();
             var abandonedSeen = new HashSet<string>();
@@ -117,17 +202,49 @@ namespace TBCGuideTools
                 foreach (var g in route.Guides)
                     for (int i = 0; i < g.Steps.Count; i++)
                         if (StepApplies(g.Steps[i], race, cls, faction)) flat.Add(Tuple.Create(g, i, g.Steps[i]));
+                // Per-route travel: what this race/class actually walks in each guide. Same metric as
+                // Travel(): straight lines in zone-map percent, zone changes cost ZoneChangeCost.
+                foreach (var grp in flat.GroupBy(f => f.Item1))
+                {
+                    double d = 0; int lz = -1; double px = 0, py = 0;
+                    foreach (var f in grp)
+                    {
+                        var st = f.Item3;
+                        if (st.X < 0 || st.Zone <= 0) continue;
+                        if (lz == st.Zone) d += Math.Sqrt((st.X - px) * (st.X - px) + (st.Y - py) * (st.Y - py));
+                        else if (lz > 0) d += ZoneChangeCost;
+                        lz = st.Zone; px = st.X; py = st.Y;
+                    }
+                    var gm2 = a.Guides[grp.Key.Id];
+                    gm2.RouteDistSum += d; gm2.RouteCount++;
+                }
                 var turninPos = new Dictionary<int, int>();
                 for (int k = 0; k < flat.Count; k++)
                     if (flat[k].Item3.Kind == "turnin" && flat[k].Item3.Quest > 0 && !turninPos.ContainsKey(flat[k].Item3.Quest))
                         turninPos[flat[k].Item3.Quest] = k;
 
+                var xs = new XpModel.State();
+                CGuide xg = null; double xin = 0, qin = 0, lin = 0;
+                Action closeGuide = () =>
+                {
+                    if (xg == null || xpm == null) return;
+                    var m = a.Guides[xg.Id];
+                    m.XpIn += xin; m.XpOut += xs.Exact; m.QIn += qin; m.QOut += xs.QExact; m.Lift += xs.Lifted - lin; m.XpRoutes++;
+                };
                 var log = new Dictionary<int, string>();   // quest -> guide id where accepted
                 var done = new HashSet<int>();
                 int peak = 0; string peakAt = "";
                 for (int k = 0; k < flat.Count; k++)
                 {
                     var g = flat[k].Item1; var s = flat[k].Item3; int q = s.Quest;
+                    if (g != xg) { closeGuide(); xg = g; xin = xs.Exact; qin = xs.QExact; lin = xs.Lifted; }
+                    if (xpm != null)
+                    {
+                        string sk = g.Source + ":" + s.Line;
+                        double cur; double lv = xs.Exact;
+                        if (!a.StepLevel.TryGetValue(sk, out cur) || lv < cur) a.StepLevel[sk] = lv;
+                    }
+                    if ((s.Kind == "level" || s.Kind == "grind") && s.Level > 0) { xs.Reach(s.Level); continue; }
                     if (q <= 0) continue;
                     string where = g.Id + " (" + (s.Title ?? q.ToString()) + ") [" + g.Source + ":" + s.Line + "]";
                     LTable rec; db.Quests.TryGetValue(q, out rec);
@@ -151,11 +268,19 @@ namespace TBCGuideTools
                                 if (later.Count > 0)
                                     a.Errors.Add(key + ": " + where + ": all prerequisites (any of " + string.Join("/", single.Select(x => x.ToString()).ToArray()) + ") come LATER on this route " + At(flat[turninPos[later[0]]]));
                             }
-                            double est = EstLevel(g, flat[k].Item2);
+                            double est = xpm != null ? xs.Exact : EstLevel(g, flat[k].Item2);
                             int req = BundledDb.Num(rec, BundledDb.Q_REQ), ql = BundledDb.Num(rec, BundledDb.Q_LEVEL);
                             var gm = a.Guides[g.Id];
                             string tag = g.Id + "#" + q;
-                            if (req > est + 1.0 && gatedSeen.Add(tag)) { gm.LevelGated++; a.Findings.Add(g.Id + ": level-gated pickup: " + s.Title + " (" + q + ") needs " + req + ", guide estimate " + est.ToString("0.0", CultureInfo.InvariantCulture)); }
+                            bool gated = xpm != null ? req > xs.Level : req > est + 1.0;
+                            if (gated && gatedSeen.Add(tag))
+                            {
+                                gm.LevelGated++;
+                                a.Gates.Add(new[] { g.Id, g.Source + ":" + s.Line, q.ToString(), s.Title, req.ToString(), est.ToString("0.0", CultureInfo.InvariantCulture),
+                                    xpm != null ? xs.QLevel.ToString() : "", key });
+                                a.Findings.Add(g.Id + ": level-gated pickup: " + s.Title + " (" + q + ") needs " + req + ", model level " + est.ToString("0.0", CultureInfo.InvariantCulture)
+                                    + (xpm != null ? " (quests only: " + xs.QLevel + ")" : "") + " [" + g.Source + ":" + s.Line + ", " + key + "]");
+                            }
                             if (ql > 0 && est - ql >= 6 && !s.Optional && lowXpSeen.Add(tag))
                             {
                                 gm.LowXp++;
@@ -168,6 +293,8 @@ namespace TBCGuideTools
                     }
                     else if (s.Kind == "turnin")
                     {
+                        // Dungeon quest XP is left out: gates must hold for players who skip dungeons.
+                        if (xpm != null && s.Dungeon == null && !done.Contains(q) && (log.ContainsKey(q) || StartsFromItem(rec))) xs.TurnIn(xpm, q);
                         if (!log.ContainsKey(q) && !done.Contains(q) && !StartsFromItem(rec) && !s.Optional)
                             a.Warnings.Add(key + ": " + where + ": turn-in of a quest never accepted on this route");
                         log.Remove(q);
@@ -179,6 +306,7 @@ namespace TBCGuideTools
                             a.Errors.Add(key + ": " + where + ": complete step before the quest is accepted");
                     }
                 }
+                closeGuide();
                 a.MaxLog[key] = peak; a.MaxLogAt[key] = peakAt;
                 if (peak > LogCap) a.Errors.Add(key + ": quest log would hold " + peak + " quests (cap " + LogCap + ") at " + peakAt);
                 else if (peak > LogWarn) a.Warnings.Add(key + ": quest log peaks at " + peak + "/" + LogCap + " at " + peakAt);
@@ -264,14 +392,31 @@ namespace TBCGuideTools
             var csv = new List<string> { GuideMetrics.Header };
             csv.AddRange(a.Guides.Values.OrderBy(m => m.Id, StringComparer.Ordinal).Select(m => m.Csv()));
             File.WriteAllLines(Path.Combine(gen, "route-metrics.csv"), csv.ToArray());
+            var gates = new List<string> { "guide,source,quest,title,requiredLevel,modelLevel,questsOnlyLevel,route" };
+            gates.AddRange(a.Gates.Select(x => string.Join(",", x.Select(v => "\"" + (v ?? "").Replace("\"", "'") + "\"").ToArray())));
+            File.WriteAllLines(Path.Combine(gen, "level-gates.csv"), gates.ToArray());
+            var lv = new List<string> { "step,modelLevel" };
+            lv.AddRange(a.StepLevel.OrderBy(x => x.Key, StringComparer.Ordinal).Select(x => x.Key + "," + x.Value.ToString("0.00", CultureInfo.InvariantCulture)));
+            File.WriteAllLines(Path.Combine(gen, "step-levels.csv"), lv.ToArray());
             var baseline = ReadCsv(Path.Combine(gen, "route-metrics-baseline.csv"));
+            // XP per guide (averages over the race/class routes that walk it).
+            var gx = new List<string> { "guide,routes,modelIn,modelOut,questsOnlyIn,questsOnlyOut,grindLevels" };
+            Func<double, string> F = v => v.ToString("0.00", CultureInfo.InvariantCulture);
+            foreach (var m in a.Guides.Values.Where(m => m.XpRoutes > 0).OrderBy(m => m.Id, StringComparer.Ordinal))
+            {
+                double n = m.XpRoutes;
+                gx.Add(m.Id + "," + m.XpRoutes + "," + F(m.XpIn / n) + "," + F(m.XpOut / n) + "," + F(m.QIn / n) + "," + F(m.QOut / n) + "," + F(m.Lift / n));
+            }
+            File.WriteAllLines(Path.Combine(gen, "guide-xp.csv"), gx.ToArray());
 
             var sb = new StringBuilder();
             sb.AppendLine("# Route audit");
             sb.AppendLine();
             sb.AppendLine("Generated by `tools/build.ps1 routes` (tools/src/RouteAnalyzer.cs). Do not edit by hand.");
             sb.AppendLine();
-            sb.AppendLine("Every race/class route is walked step by step. **Estimated level** interpolates between each guide's `@levels` and its own `level N` checkpoints; it is a planning estimate, not a measurement. Distances are straight lines in zone-map percent, comparable only within the same guide. No XP-per-hour figures are claimed. Method and limits: `docs/ROUTE_OPTIMIZATION.md`.");
+            sb.AppendLine(a.XpModel
+                ? "Every race/class route is walked step by step. **Model level** comes from the XP model: QuestieDB's TBC quest XP for each turn-in, the post-2.3 XP-to-level table, plus an ASSUMED kill XP of half the quest XP (no rested, discovery, group or dungeon XP; dungeon quest turn-ins add nothing). `level`/`grind` steps lift it to their level. It is a planning estimate, not a measurement. Distances are straight lines in zone-map percent, comparable only within the same guide. Method and limits: `docs/ROUTE_OPTIMIZATION.md`."
+                : "Every race/class route is walked step by step. **Estimated level** interpolates between each guide's `@levels` and its own `level N` checkpoints (the XP table was not found; run `build.ps1 fetch`). It is a planning estimate, not a measurement. Distances are straight lines in zone-map percent, comparable only within the same guide. Method and limits: `docs/ROUTE_OPTIMIZATION.md`.");
             sb.AppendLine();
             sb.AppendLine("## Summary");
             sb.AppendLine();
@@ -291,8 +436,8 @@ namespace TBCGuideTools
             bool cmp = baseline.Count > 0;
             sb.AppendLine(cmp ? "Values in brackets are the baseline (`docs/generated/route-metrics-baseline.csv`, the 0.1.0 routes)." : "No baseline file found.");
             sb.AppendLine();
-            sb.AppendLine("| Guide | Steps | Quests | Distance | Hub revisits | Reduced-XP | Level-gated | Never turned in | Escort/event | Group |");
-            sb.AppendLine("|---|---|---|---|---|---|---|---|---|---|");
+            sb.AppendLine("| Guide | Steps | Quests | Distance | Per-character travel | Hub revisits | Reduced-XP | Level-gated | Never turned in | Escort/event | Group |");
+            sb.AppendLine("|---|---|---|---|---|---|---|---|---|---|---|");
             foreach (var m in a.Guides.Values.OrderBy(x => x.Id, StringComparer.Ordinal))
             {
                 string[] b; baseline.TryGetValue(m.Id, out b);
@@ -304,8 +449,8 @@ namespace TBCGuideTools
                     double d; if (double.TryParse(bv, NumberStyles.Float, CultureInfo.InvariantCulture, out d)) bv = d.ToString("0", CultureInfo.InvariantCulture);
                     return bv == s ? s : s + " (" + bv + ")";
                 };
-                sb.AppendLine(string.Format("| {0} | {1} | {2} | {3} | {4} | {5} | {6} | {7} | {8} | {9} |", m.Id,
-                    cell(m.Steps, 1), cell(m.Quests, 2), cell(m.Distance, 3), cell(m.Revisits, 5), cell(m.LowXp, 6),
+                sb.AppendLine(string.Format("| {0} | {1} | {2} | {3} | {4} | {5} | {6} | {7} | {8} | {9} | {10} |", m.Id,
+                    cell(m.Steps, 1), cell(m.Quests, 2), cell(m.Distance, 3), cell(m.RouteDistance, 12), cell(m.Revisits, 5), cell(m.LowXp, 6),
                     cell(m.LevelGated, 8), cell(m.Abandoned, 9), cell(m.Escort, 10), cell(m.Group, 11)));
             }
             sb.AppendLine();

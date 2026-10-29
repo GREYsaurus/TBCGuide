@@ -157,6 +157,7 @@ namespace TBCGuideTools
             File.WriteAllText(Path.Combine(addOnDir, "Database", "RaceClass.lua"), rc.ToString(), new UTF8Encoding(false));
             summary.Add("talents total: " + total);
             summary.Add("race/class combinations: " + comboCount);
+            summary.Add(TrainingTables.Export(db2Dir, addOnDir, build));
             return string.Join(Environment.NewLine, summary.ToArray());
         }
     }

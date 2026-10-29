@@ -1,0 +1,497 @@
+guide,side,quest,title,questLevel,requiredLevel
+A_Arathi,Alliance,635,Crystal in the Mountains,35,30
+A_Arathi,Alliance,663,Land Ho!,35,35
+A_Arathi,Alliance,691,Worth Its Weight in Gold,36,30
+A_Stranglethorn,Alliance,188,Tiger Mastery,37,28
+A_Stranglethorn,Alliance,189,Bloodscalp Ears,35,30
+A_Stranglethorn,Alliance,193,Panther Mastery,40,28
+A_Stranglethorn,Alliance,196,Raptor Mastery,41,28
+A_Stranglethorn,Alliance,197,Raptor Mastery,43,28
+A_Stranglethorn,Alliance,198,Supplies to Private Thorsen,32,30
+A_Stranglethorn,Alliance,201,Investigate the Camp,32,28
+A_Stranglethorn,Alliance,202,Colonel Kurzen,40,30
+A_Stranglethorn,Alliance,205,Troll Witchery,40,30
+A_Stranglethorn,Alliance,207,Kurzen's Mystery,38,30
+A_Stranglethorn,Alliance,208,Big Game Hunter,43,28
+A_Stranglethorn,Alliance,209,Skullsplitter Tusks,42,37
+A_Stranglethorn,Alliance,210,Krazek's Cookery,37,32
+A_Stranglethorn,Alliance,213,Hostile Takeover,36,31
+A_Stranglethorn,Alliance,328,The Hidden Key,37,30
+A_Stranglethorn,Alliance,329,The Spy Revealed!,37,30
+A_Stranglethorn,Alliance,330,Patrol Schedules,37,30
+A_Stranglethorn,Alliance,331,Report to Doren,37,30
+A_Stranglethorn,Alliance,338,The Green Hills of Stranglethorn,40,30
+A_Stranglethorn,Alliance,339,Chapter I,40,30
+A_Stranglethorn,Alliance,340,Chapter II,40,30
+A_Stranglethorn,Alliance,341,Chapter III,40,30
+A_Stranglethorn,Alliance,342,Chapter IV,40,30
+A_Stranglethorn,Alliance,576,Keep An Eye Out,42,37
+A_Stranglethorn,Alliance,578,The Stone of the Tides,37,32
+A_Stranglethorn,Alliance,587,Up to Snuff,41,37
+A_Stranglethorn,Alliance,594,Message in a Bottle,42,42
+A_Stranglethorn,Alliance,595,The Bloodsail Buccaneers,41,37
+A_Stranglethorn,Alliance,597,The Bloodsail Buccaneers,41,37
+A_Stranglethorn,Alliance,599,The Bloodsail Buccaneers,41,37
+A_Stranglethorn,Alliance,601,Water Elementals,37,32
+A_Stranglethorn,Alliance,602,Magical Analysis,37,32
+A_Stranglethorn,Alliance,603,Ansirem's Key,37,34
+A_Stranglethorn,Alliance,604,The Bloodsail Buccaneers,42,37
+A_Stranglethorn,Alliance,608,The Bloodsail Buccaneers,42,37
+A_Stranglethorn,Alliance,609,Voodoo Dues,44,30
+A_Stranglethorn,Alliance,610,"""Pretty Boy"" Duncan",39,32
+A_Stranglethorn,Alliance,611,The Curse of the Tides,40,32
+A_Stranglethorn,Alliance,613,Cracking Maury's Foot,44,30
+A_Stranglethorn,Alliance,615,The Captain's Cutlass,42,35
+A_Stranglethorn,Alliance,616,The Haunted Isle,37,32
+A_Stranglethorn,Alliance,617,Akiris by the Bundle,43,38
+A_Stranglethorn,Alliance,618,Facing Negolash,42,35
+A_Stranglethorn,Alliance,621,Zanzil's Secret,44,35
+A_Stranglethorn,Alliance,622,Return to Corporal Kaleb,37,32
+A_Stranglethorn,Alliance,623,Akiris by the Bundle,43,38
+A_Stranglethorn,Alliance,624,Cortello's Riddle,43,37
+A_Stranglethorn,Alliance,625,Cortello's Riddle,43,37
+A_Stranglethorn,Alliance,627,Favor for Krazek,37,32
+A_Stranglethorn,Alliance,628,Excelsior,38,31
+A_Stranglethorn,Alliance,630,Message in a Bottle,42,42
+A_Stranglethorn,Alliance,8551,The Captain's Chest,42,40
+A_Stranglethorn,Alliance,8553,The Captain's Cutlass,42,35
+A_Stranglethorn,Alliance,8554,Facing Negolash,42,35
+A_Dustwallow,Alliance,1177,Hungry!,36,32
+A_Dustwallow,Alliance,1203,Jarl Needs a Blade,35,30
+A_Dustwallow,Alliance,1204,Mudrock Soup and Bugs,38,33
+A_Dustwallow,Alliance,1206,Jarl Needs Eyes,35,30
+A_Dustwallow,Alliance,1218,Marsh Frog Legs,35,30
+A_Dustwallow,Alliance,1219,The Orc Report,35,30
+A_Dustwallow,Alliance,1220,Captain Vimes,35,30
+A_Dustwallow,Alliance,1222,Stinky's Escape,37,30
+A_Dustwallow,Alliance,1252,Lieutenant Paval Reethe,35,30
+A_Dustwallow,Alliance,1253,The Black Shield,35,30
+A_Dustwallow,Alliance,1258,... and Bugs,40,33
+A_Dustwallow,Alliance,1259,Lieutenant Paval Reethe,40,30
+A_Dustwallow,Alliance,1260,Morgan Stern,38,33
+A_Dustwallow,Alliance,1271,Feast at the Blue Recluse,37,30
+A_Dustwallow,Alliance,1282,They Call Him Smiling Jim,35,30
+A_Dustwallow,Alliance,1284,Suspicious Hoofprints,35,30
+A_Dustwallow,Alliance,1285,Daelin's Men,38,30
+A_Dustwallow,Alliance,1286,The Deserters,38,30
+A_Dustwallow,Alliance,1287,The Deserters,38,30
+A_Dustwallow,Alliance,1319,The Black Shield,35,30
+A_Dustwallow,Alliance,1320,The Black Shield,35,30
+A_Dustwallow,Alliance,11136,A Disturbing Development,36,32
+A_Dustwallow,Alliance,11143,A Grim Connection,38,33
+A_Dustwallow,Alliance,11144,Confirming the Suspicion,38,33
+A_Dustwallow,Alliance,11148,Arms of the Grimtotems,38,33
+A_Dustwallow,Alliance,11149,Tabetha's Assistance,39,35
+A_Dustwallow,Alliance,11150,Raze Direhorn Post!,39,35
+A_Dustwallow,Alliance,11151,Justice for the Hyals,39,35
+A_Dustwallow,Alliance,11152,Peace at Last,39,35
+A_Dustwallow,Alliance,11158,Bloodfen Feathers,39,35
+A_Dustwallow,Alliance,11159,Spirits of Stonemaul Hold,41,35
+A_Dustwallow,Alliance,11160,Banner of the Stonemaul,39,35
+A_Dustwallow,Alliance,11161,The Essence of Enmity,39,35
+A_Dustwallow,Alliance,11162,Challenge to the Black Flight,41,35
+A_Dustwallow,Alliance,11174,Corrosion Prevention,40,35
+A_Dustwallow,Alliance,11177,The Hermit of Swamplight Manor,36,30
+A_Dustwallow,Alliance,11180,What's Haunting Witch Hill?,36,30
+A_Dustwallow,Alliance,11181,The Witch's Bane,36,30
+A_Dustwallow,Alliance,11183,Cleansing Witch Hill,36,30
+A_Dustwallow,Alliance,11184,WANTED: Goreclaw the Ravenous,39,35
+A_Dustwallow,Alliance,11194,Is it Real?,36,30
+A_Dustwallow,Alliance,11198,Take Down Tethyr!,36,30
+A_Dustwallow,Alliance,11207,Secure the Cargo!,39,35
+A_Dustwallow,Alliance,11208,Delivery for Drazzit,39,35
+A_Dustwallow,Alliance,11209,Nat's Bargain,37,30
+A_Dustwallow,Alliance,11210,"Oh, It's Real",37,30
+A_Dustwallow,Alliance,11211,Help for Mudsprocket,39,38
+A_Dustwallow,Alliance,11212,Tabetha's Farm,37,37
+A_Dustwallow,Alliance,11214,Mission to Mudsprocket,39,39
+A_Dustwallow,Alliance,11217,Catch a Dragon by the Tail,40,37
+A_Dustwallow,Alliance,11223,Return to Jaina,37,33
+A_Feralas,Alliance,2766,Find OOX-22/FE!,45,40
+A_Feralas,Alliance,2767,Rescue OOX-22/FE!,45,40
+A_Feralas,Alliance,2821,The Mark of Quality,46,40
+A_Feralas,Alliance,2845,Wandering Shay,49,44
+A_Feralas,Alliance,2871,Delivering the Relic,45,40
+A_Feralas,Alliance,2879,The Stave of Equinex,50,42
+A_Feralas,Alliance,2939,In Search of Knowledge,47,42
+A_Feralas,Alliance,2940,Feralas: A History,47,42
+A_Feralas,Alliance,2941,The Borrower,48,42
+A_Feralas,Alliance,2942,The Morrow Stone,50,42
+A_Feralas,Alliance,2943,Return to Troyas,48,42
+A_Feralas,Alliance,2944,The Super Snapper FX,48,42
+A_Feralas,Alliance,2972,Doling Justice,47,40
+A_Feralas,Alliance,2982,The High Wilderness,44,39
+A_Feralas,Alliance,3445,The Sunken Temple,51,46
+A_Feralas,Alliance,3841,An Orphan Looking For a Home,47,40
+A_Feralas,Alliance,3842,A Short Incubation,47,40
+A_Feralas,Alliance,3843,The Newest Member of the Family,47,40
+A_Feralas,Alliance,4267,Rise of the Silithid,46,40
+A_Feralas,Alliance,4281,Thalanaar Delivery,44,39
+A_Feralas,Alliance,4297,Food for Baby,47,40
+A_Feralas,Alliance,4298,Becoming a Parent,48,40
+A_Feralas,Alliance,7733,Improved Quality,48,40
+A_Hinterlands,Alliance,485,Find OOX-09/HL!,48,43
+A_Hinterlands,Alliance,836,Rescue OOX-09/HL!,48,43
+A_Hinterlands,Alliance,1450,Gryphon Master Talonaxe,43,38
+A_Hinterlands,Alliance,1451,Rhapsody Shindigger,43,38
+A_Hinterlands,Alliance,1452,Rhapsody's Kalimdor Kocktail,43,38
+A_Hinterlands,Alliance,1469,Rhapsody's Tale,43,38
+A_Hinterlands,Alliance,2990,Thadius Grimshade,47,40
+A_Hinterlands,Alliance,2992,The Divination,47,42
+A_Hinterlands,Alliance,2993,Return to the Hinterlands,47,42
+A_Hinterlands,Alliance,2994,Saving Sharpbeak,51,40
+A_Hinterlands,Alliance,4787,The Ancient Egg,50,40
+A_Felwood,Alliance,939,Flute of Xavaric,54,49
+A_Felwood,Alliance,4103,Salve via Hunting,55,48
+A_Felwood,Alliance,4261,Ancient Spirit,56,49
+A_Felwood,Alliance,4441,Felbound Ancients,54,49
+A_Felwood,Alliance,4442,Purified!,54,49
+A_Felwood,Alliance,5158,Seeking Spiritual Aid,52,48
+A_Felwood,Alliance,5159,Cleansed Water Returns to Felwood,54,48
+A_Felwood,Alliance,5165,Dousing the Flames of Protection,55,48
+A_Felwood,Alliance,5202,A Strange Red Key,55,49
+A_Felwood,Alliance,5203,Rescue From Jaedenar,55,49
+A_Felwood,Alliance,5204,Retribution of the Light,57,49
+A_Felwood,Alliance,5242,A Final Blow,58,48
+A_Felwood,Alliance,5249,To Winterspring!,56,53
+A_Felwood,Alliance,5385,The Remains of Trey Lightforge,57,49
+A_Felwood,Alliance,8462,Speak to Nafien,55,45
+A_Felwood,Alliance,8465,Speak to Salfa,55,45
+A_Felwood,Alliance,8470,Deadwood Ritual Totem,55,45
+A_BurningSteppes,Alliance,4022,A Taste of Flame,54,52
+A_BurningSteppes,Alliance,4023,A Taste of Flame,54,52
+A_BurningSteppes,Alliance,4283,FIFTY! YEP!,56,50
+A_BurningSteppes,Alliance,4296,Tablet of the Seven,50,50
+A_BurningSteppes,Alliance,4808,Felnok Steelspring,54,50
+A_BurningSteppes,Alliance,5522,Leonid Barthalomew,60,58
+A_WesternPlaguelands,Alliance,211,"Alas, Andorhal",60,50
+A_WesternPlaguelands,Alliance,4971,A Matter of Time,56,53
+A_WesternPlaguelands,Alliance,4972,Counting Out Time,56,53
+A_WesternPlaguelands,Alliance,4986,Glyphed Oaken Branch,56,52
+A_WesternPlaguelands,Alliance,5050,Good Luck Charm,52,50
+A_WesternPlaguelands,Alliance,5051,Two Halves Become One,54,50
+A_WesternPlaguelands,Alliance,5058,Mrs. Dalson's Diary,55,52
+A_WesternPlaguelands,Alliance,5060,Locked Away,55,52
+A_WesternPlaguelands,Alliance,5092,Clear the Way,52,50
+A_WesternPlaguelands,Alliance,5097,All Along the Watchtowers,56,50
+A_WesternPlaguelands,Alliance,5154,The Annals of Darrowshire,56,50
+A_WesternPlaguelands,Alliance,5162,Wrath of the Blue Flight,60,57
+A_WesternPlaguelands,Alliance,5164,Catalogue of the Wayward,60,57
+A_WesternPlaguelands,Alliance,5166,Breastplate of the Chromatic Flight,60,57
+A_WesternPlaguelands,Alliance,5167,Legplates of the Chromatic Defier,60,57
+A_WesternPlaguelands,Alliance,5215,The Scourge Cauldrons,53,50
+A_WesternPlaguelands,Alliance,5216,Target: Felstone Field,53,50
+A_WesternPlaguelands,Alliance,5217,Return to Chillwind Camp,53,50
+A_WesternPlaguelands,Alliance,5219,Target: Dalson's Tears,55,50
+A_WesternPlaguelands,Alliance,5220,Return to Chillwind Camp,55,50
+A_WesternPlaguelands,Alliance,5222,Target: Writhing Haunt,55,50
+A_WesternPlaguelands,Alliance,5223,Return to Chillwind Camp,55,50
+A_WesternPlaguelands,Alliance,5225,Target: Gahrron's Withering,58,50
+A_WesternPlaguelands,Alliance,5226,Return to Chillwind Camp,58,50
+A_WesternPlaguelands,Alliance,5238,Mission Accomplished!,58,50
+A_WesternPlaguelands,Alliance,5344,The Last Barov,60,52
+A_WesternPlaguelands,Alliance,5401,Argent Dawn Commission,55,50
+A_WesternPlaguelands,Alliance,5461,"The Human, Ras Frostwhisper",60,57
+A_WesternPlaguelands,Alliance,5462,"The Dying, Ras Frostwhisper",60,57
+A_WesternPlaguelands,Alliance,5465,Soulbound Keepsake,60,57
+A_WesternPlaguelands,Alliance,5505,The Key to Scholomance,60,55
+A_WesternPlaguelands,Alliance,5507,Mantles of the Dawn,60,55
+A_WesternPlaguelands,Alliance,5521,Chromatic Mantle of the Dawn,60,55
+A_WesternPlaguelands,Alliance,5524,Chromatic Mantle of the Dawn,60,55
+A_WesternPlaguelands,Alliance,5533,Scholomance,55,55
+A_WesternPlaguelands,Alliance,5537,Skeletal Fragments,57,55
+A_WesternPlaguelands,Alliance,5538,Mold Rhymes With...,57,55
+A_WesternPlaguelands,Alliance,5803,Araj's Scarab,60,55
+A_WesternPlaguelands,Alliance,5861,Find Myranda,60,52
+A_WesternPlaguelands,Alliance,5862,Scarlet Subterfuge,60,52
+A_WesternPlaguelands,Alliance,5944,In Dreams,60,52
+A_WesternPlaguelands,Alliance,6184,Flint Shadowmore,60,56
+A_WesternPlaguelands,Alliance,6389,A Plague Upon Thee,55,48
+A_WesternPlaguelands,Alliance,9446,Tomb of the Lightbringer,58,55
+A_WesternPlaguelands,Alliance,9474,The Mark of the Lightbringer,58,55
+H_ThousandNeedles,Horde,1106,Martek the Exiled,35,26
+H_ThousandNeedles,Horde,1107,Encrusted Tail Fins,35,28
+H_ThousandNeedles,Horde,1112,Parts for Kravel,36,30
+H_ThousandNeedles,Horde,1114,Delivery to the Gnomes,36,30
+H_ThousandNeedles,Horde,1115,The Rumormonger,36,30
+H_ThousandNeedles,Horde,1117,Rumors for Kravel,36,30
+H_ThousandNeedles,Horde,1147,The Swarm Grows,35,29
+H_ThousandNeedles,Horde,1148,Parts of the Swarm,35,28
+H_ThousandNeedles,Horde,1178,Goblin Sponsorship,37,29
+H_ThousandNeedles,Horde,1180,Goblin Sponsorship,37,29
+H_ThousandNeedles,Horde,1181,Goblin Sponsorship,37,29
+H_ThousandNeedles,Horde,1182,Goblin Sponsorship,37,29
+H_ThousandNeedles,Horde,1183,Goblin Sponsorship,37,29
+H_ThousandNeedles,Horde,1184,Parts of the Swarm,35,28
+H_ThousandNeedles,Horde,1186,The Eighteenth Pilot,37,29
+H_ThousandNeedles,Horde,1394,Final Passage,36,25
+H_ThousandNeedles,Horde,5361,Family Tree,35,32
+H_ThousandNeedles,Horde,5762,Hemet Nesingwary Jr.,31,28
+H_Arathi,Horde,635,Crystal in the Mountains,35,30
+H_Arathi,Horde,639,Sigil of Strom,37,32
+H_Arathi,Horde,663,Land Ho!,35,35
+H_Stranglethorn,Horde,187,Tiger Mastery,35,28
+H_Stranglethorn,Horde,188,Tiger Mastery,37,28
+H_Stranglethorn,Horde,189,Bloodscalp Ears,35,30
+H_Stranglethorn,Horde,192,Panther Mastery,38,28
+H_Stranglethorn,Horde,193,Panther Mastery,40,28
+H_Stranglethorn,Horde,196,Raptor Mastery,41,28
+H_Stranglethorn,Horde,197,Raptor Mastery,43,28
+H_Stranglethorn,Horde,201,Investigate the Camp,32,28
+H_Stranglethorn,Horde,208,Big Game Hunter,43,28
+H_Stranglethorn,Horde,209,Skullsplitter Tusks,42,37
+H_Stranglethorn,Horde,213,Hostile Takeover,36,31
+H_Stranglethorn,Horde,338,The Green Hills of Stranglethorn,40,30
+H_Stranglethorn,Horde,339,Chapter I,40,30
+H_Stranglethorn,Horde,340,Chapter II,40,30
+H_Stranglethorn,Horde,341,Chapter III,40,30
+H_Stranglethorn,Horde,342,Chapter IV,40,30
+H_Stranglethorn,Horde,571,Mok'thardin's Enchantment,41,33
+H_Stranglethorn,Horde,572,Mok'thardin's Enchantment,41,33
+H_Stranglethorn,Horde,573,Mok'thardin's Enchantment,44,33
+H_Stranglethorn,Horde,576,Keep An Eye Out,42,37
+H_Stranglethorn,Horde,584,Bloodscalp Clan Heads,41,30
+H_Stranglethorn,Horde,585,Speaking with Nezzliok,40,36
+H_Stranglethorn,Horde,587,Up to Snuff,41,37
+H_Stranglethorn,Horde,594,Message in a Bottle,42,42
+H_Stranglethorn,Horde,595,The Bloodsail Buccaneers,41,37
+H_Stranglethorn,Horde,597,The Bloodsail Buccaneers,41,37
+H_Stranglethorn,Horde,598,Split Bone Necklace,42,30
+H_Stranglethorn,Horde,599,The Bloodsail Buccaneers,41,37
+H_Stranglethorn,Horde,604,The Bloodsail Buccaneers,42,37
+H_Stranglethorn,Horde,608,The Bloodsail Buccaneers,42,37
+H_Stranglethorn,Horde,609,Voodoo Dues,44,30
+H_Stranglethorn,Horde,613,Cracking Maury's Foot,44,30
+H_Stranglethorn,Horde,617,Akiris by the Bundle,43,38
+H_Stranglethorn,Horde,621,Zanzil's Secret,44,35
+H_Stranglethorn,Horde,624,Cortello's Riddle,43,37
+H_Stranglethorn,Horde,625,Cortello's Riddle,43,37
+H_Stranglethorn,Horde,628,Excelsior,38,31
+H_Stranglethorn,Horde,629,The Vile Reef,37,30
+H_Stranglethorn,Horde,630,Message in a Bottle,42,42
+H_Stranglethorn,Horde,638,Trollbane,37,32
+H_Stranglethorn,Horde,8551,The Captain's Chest,42,40
+H_Stranglethorn,Horde,8553,The Captain's Cutlass,42,35
+H_Stranglethorn,Horde,8554,Facing Negolash,42,35
+H_Stranglethorn,Horde,9436,Bloodscalp Insight,34,30
+H_Stranglethorn,Horde,9457,An Unusual Patron,36,30
+H_Dustwallow,Horde,1173,Challenge Overlord Mok'Morokk,45,38
+H_Dustwallow,Horde,1177,Hungry!,36,32
+H_Dustwallow,Horde,1203,Jarl Needs a Blade,35,30
+H_Dustwallow,Horde,1205,Deadmire,45,35
+H_Dustwallow,Horde,1206,Jarl Needs Eyes,35,30
+H_Dustwallow,Horde,1218,Marsh Frog Legs,35,30
+H_Dustwallow,Horde,1238,The Lost Report,35,30
+H_Dustwallow,Horde,1239,The Severed Head,35,30
+H_Dustwallow,Horde,1240,The Troll Witchdoctor,35,30
+H_Dustwallow,Horde,1261,Marg Speaks,40,30
+H_Dustwallow,Horde,1262,Report to Zor,40,30
+H_Dustwallow,Horde,1270,Stinky's Escape,37,30
+H_Dustwallow,Horde,1273,Questioning Reethe,37,30
+H_Dustwallow,Horde,7541,Service to the Horde,40,30
+H_Dustwallow,Horde,9437,Twilight of the Dawn Runner,37,33
+H_Dustwallow,Horde,11158,Bloodfen Feathers,39,35
+H_Dustwallow,Horde,11159,Spirits of Stonemaul Hold,41,35
+H_Dustwallow,Horde,11160,Banner of the Stonemaul,39,35
+H_Dustwallow,Horde,11161,The Essence of Enmity,39,35
+H_Dustwallow,Horde,11162,Challenge to the Black Flight,41,35
+H_Dustwallow,Horde,11174,Corrosion Prevention,40,35
+H_Dustwallow,Horde,11184,WANTED: Goreclaw the Ravenous,39,35
+H_Dustwallow,Horde,11186,Signs of Treachery?,38,35
+H_Dustwallow,Horde,11207,Secure the Cargo!,39,35
+H_Dustwallow,Horde,11208,Delivery for Drazzit,39,35
+H_Dustwallow,Horde,11211,Help for Mudsprocket,39,38
+H_Dustwallow,Horde,11213,Check Up on Tabetha,37,37
+H_Dustwallow,Horde,11215,Help Mudsprocket,39,38
+H_Dustwallow,Horde,11217,Catch a Dragon by the Tail,40,37
+H_Dustwallow,Horde,11225,The Hermit of Witch Hill,36,32
+H_Feralas,Horde,2766,Find OOX-22/FE!,45,40
+H_Feralas,Horde,2767,Rescue OOX-22/FE!,45,40
+H_Feralas,Horde,2822,The Mark of Quality,46,40
+H_Feralas,Horde,2862,War on the Woodpaw,42,39
+H_Feralas,Horde,2863,Alpha Strike,43,39
+H_Feralas,Horde,2902,Woodpaw Investigation,43,39
+H_Feralas,Horde,2903,The Battle Plans,43,39
+H_Feralas,Horde,2973,A New Cloak's Sheen,45,38
+H_Feralas,Horde,2974,A Grim Discovery,45,38
+H_Feralas,Horde,2975,The Ogres of Feralas,43,38
+H_Feralas,Horde,2976,A Grim Discovery,45,38
+H_Feralas,Horde,2978,The Gordunni Scroll,43,38
+H_Feralas,Horde,2979,Dark Ceremony,46,38
+H_Feralas,Horde,2980,The Ogres of Feralas,44,38
+H_Feralas,Horde,2987,Gordunni Cobalt,43,38
+H_Feralas,Horde,3002,The Gordunni Orb,47,38
+H_Feralas,Horde,3121,A Strange Request,45,40
+H_Feralas,Horde,3122,Return to Witch Doctor Uzer'i,45,40
+H_Feralas,Horde,3124,Hippogryph Muisek,47,40
+H_Feralas,Horde,3125,Faerie Dragon Muisek,45,40
+H_Feralas,Horde,3126,Treant Muisek,50,40
+H_Feralas,Horde,3127,Mountain Giant Muisek,50,40
+H_Feralas,Horde,3128,Natural Materials,50,40
+H_Feralas,Horde,3129,Weapons of Spirit,50,40
+H_Feralas,Horde,7730,Zukk'ash Infestation,45,39
+H_Feralas,Horde,7731,Stinglasher,47,39
+H_Feralas,Horde,7732,Zukk'ash Report,48,39
+H_Feralas,Horde,7734,Improved Quality,48,40
+H_Hinterlands,Horde,77,A Sticky Situation,48,42
+H_Hinterlands,Horde,485,Find OOX-09/HL!,48,43
+H_Hinterlands,Horde,836,Rescue OOX-09/HL!,48,43
+H_Hinterlands,Horde,1444,Return to Fel'Zerul,44,40
+H_Hinterlands,Horde,2742,Rin'ji is Trapped!,47,42
+H_Hinterlands,Horde,2782,Rin'ji's Secret,47,45
+H_Hinterlands,Horde,2932,Grim Message,42,35
+H_Hinterlands,Horde,2933,Venom Bottles,43,41
+H_Hinterlands,Horde,2934,Undamaged Venom Sac,45,40
+H_Hinterlands,Horde,2935,Consult Master Gadrin,45,43
+H_Hinterlands,Horde,4787,The Ancient Egg,50,40
+H_Hinterlands,Horde,7843,The Final Message to the Wildhammer,50,44
+H_Hinterlands,Horde,7849,Separation Anxiety,50,46
+H_Hinterlands,Horde,7850,Dark Vessels,50,46
+H_Hinterlands,Horde,7861,Wanted: Vile Priestess Hexx and Her Minions,51,44
+H_Hinterlands,Horde,7862,Job Opening: Guard Captain of Revantusk Village,51,44
+H_Hinterlands,Horde,8273,Oran's Gratitude,47,42
+H_Felwood,Horde,4521,Wild Guardians,56,52
+H_Felwood,Horde,4741,Wild Guardians,58,52
+H_Felwood,Horde,5158,Seeking Spiritual Aid,52,48
+H_Felwood,Horde,5159,Cleansed Water Returns to Felwood,54,48
+H_Felwood,Horde,5165,Dousing the Flames of Protection,55,48
+H_Felwood,Horde,5202,A Strange Red Key,55,49
+H_Felwood,Horde,5203,Rescue From Jaedenar,55,49
+H_Felwood,Horde,5204,Retribution of the Light,57,49
+H_Felwood,Horde,5242,A Final Blow,58,48
+H_Felwood,Horde,5385,The Remains of Trey Lightforge,57,49
+H_Felwood,Horde,5882,Salve via Hunting,55,48
+H_Felwood,Horde,6162,A Husband's Last Battle,51,46
+H_Felwood,Horde,8462,Speak to Nafien,55,45
+H_Felwood,Horde,8465,Speak to Salfa,55,45
+H_Felwood,Horde,8470,Deadwood Ritual Totem,55,45
+H_WesternPlaguelands,Horde,105,"Alas, Andorhal",60,50
+H_WesternPlaguelands,Horde,838,Scholomance,55,55
+H_WesternPlaguelands,Horde,964,Skeletal Fragments,57,55
+H_WesternPlaguelands,Horde,4971,A Matter of Time,56,53
+H_WesternPlaguelands,Horde,4972,Counting Out Time,56,53
+H_WesternPlaguelands,Horde,4987,Glyphed Oaken Branch,56,52
+H_WesternPlaguelands,Horde,5021,Better Late Than Never,52,50
+H_WesternPlaguelands,Horde,5023,Better Late Than Never,52,50
+H_WesternPlaguelands,Horde,5050,Good Luck Charm,52,50
+H_WesternPlaguelands,Horde,5051,Two Halves Become One,54,50
+H_WesternPlaguelands,Horde,5058,Mrs. Dalson's Diary,55,52
+H_WesternPlaguelands,Horde,5060,Locked Away,55,52
+H_WesternPlaguelands,Horde,5098,All Along the Watchtowers,56,50
+H_WesternPlaguelands,Horde,5154,The Annals of Darrowshire,56,50
+H_WesternPlaguelands,Horde,5162,Wrath of the Blue Flight,60,57
+H_WesternPlaguelands,Horde,5164,Catalogue of the Wayward,60,57
+H_WesternPlaguelands,Horde,5166,Breastplate of the Chromatic Flight,60,57
+H_WesternPlaguelands,Horde,5167,Legplates of the Chromatic Defier,60,57
+H_WesternPlaguelands,Horde,5342,The Last Barov,60,52
+H_WesternPlaguelands,Horde,5405,Argent Dawn Commission,55,50
+H_WesternPlaguelands,Horde,5461,"The Human, Ras Frostwhisper",60,57
+H_WesternPlaguelands,Horde,5462,"The Dying, Ras Frostwhisper",60,57
+H_WesternPlaguelands,Horde,5465,Soulbound Keepsake,60,57
+H_WesternPlaguelands,Horde,5504,Mantles of the Dawn,60,55
+H_WesternPlaguelands,Horde,5511,The Key to Scholomance,60,55
+H_WesternPlaguelands,Horde,5514,Mold Rhymes With...,57,55
+H_WesternPlaguelands,Horde,5521,Chromatic Mantle of the Dawn,60,55
+H_WesternPlaguelands,Horde,5524,Chromatic Mantle of the Dawn,60,55
+H_WesternPlaguelands,Horde,5804,Araj's Scarab,60,55
+H_WesternPlaguelands,Horde,5861,Find Myranda,60,52
+H_WesternPlaguelands,Horde,5862,Scarlet Subterfuge,60,52
+H_WesternPlaguelands,Horde,5944,In Dreams,60,52
+H_WesternPlaguelands,Horde,6004,Unfinished Business,56,50
+H_WesternPlaguelands,Horde,6023,Unfinished Business,57,51
+H_WesternPlaguelands,Horde,6025,Unfinished Business,58,51
+H_WesternPlaguelands,Horde,6390,A Plague Upon Thee,55,51
+H_WesternPlaguelands,Horde,9443,The So-Called Mark of the Lightbringer,58,55
+H_WesternPlaguelands,Horde,9444,Defiling Uther's Tomb,58,55
+Both_Tanaris,Alliance,162,Rise of the Silithid,49,39
+Both_Tanaris,Alliance,351,Find OOX-17/TN!,48,43
+Both_Tanaris,Alliance,648,Rescue OOX-17/TN!,48,43
+Both_Tanaris,Alliance,2605,The Thirsty Goblin,49,44
+Both_Tanaris,Alliance,2606,In Good Taste,49,44
+Both_Tanaris,Alliance,2641,Sprinkle's Secret Ingredient,49,44
+Both_Tanaris,Alliance,2661,Delivery for Marin,49,44
+Both_Tanaris,Alliance,2662,Noggenfogger Elixir,49,44
+Both_Tanaris,Alliance,2741,The Super Egg-O-Matic,47,39
+Both_Tanaris,Alliance,2872,Stoley's Debt,45,40
+Both_Tanaris,Alliance,2873,Stoley's Shipment,45,40
+Both_Tanaris,Alliance,2874,Deliver to MacKinley,45,40
+Both_Tanaris,Alliance,2875,WANTED: Andre Firebeard,45,38
+Both_Tanaris,Alliance,2876,Ship Schedules,45,40
+Both_Tanaris,Alliance,3022,Handle With Care,47,42
+Both_Tanaris,Alliance,3161,Gahz'ridian,48,43
+Both_Tanaris,Alliance,3520,Screecher Spirits,44,40
+Both_Tanaris,Horde,32,Rise of the Silithid,48,39
+Both_Tanaris,Horde,243,Into the Field,46,38
+Both_Tanaris,Horde,351,Find OOX-17/TN!,48,43
+Both_Tanaris,Horde,379,Slake That Thirst,46,38
+Both_Tanaris,Horde,648,Rescue OOX-17/TN!,48,43
+Both_Tanaris,Horde,654,Tanaris Field Sampling,46,41
+Both_Tanaris,Horde,841,Another Power Source?,46,38
+Both_Tanaris,Horde,2605,The Thirsty Goblin,49,44
+Both_Tanaris,Horde,2606,In Good Taste,49,44
+Both_Tanaris,Horde,2641,Sprinkle's Secret Ingredient,49,44
+Both_Tanaris,Horde,2661,Delivery for Marin,49,44
+Both_Tanaris,Horde,2662,Noggenfogger Elixir,49,44
+Both_Tanaris,Horde,2741,The Super Egg-O-Matic,47,39
+Both_Tanaris,Horde,2872,Stoley's Debt,45,40
+Both_Tanaris,Horde,2873,Stoley's Shipment,45,40
+Both_Tanaris,Horde,2874,Deliver to MacKinley,45,40
+Both_Tanaris,Horde,2875,WANTED: Andre Firebeard,45,38
+Both_Tanaris,Horde,2876,Ship Schedules,45,40
+Both_Tanaris,Horde,3161,Gahz'ridian,48,43
+Both_Tanaris,Horde,3520,Screecher Spirits,44,40
+Both_UngoroCrater,Alliance,974,Finding the Source,55,51
+Both_UngoroCrater,Alliance,980,The New Springs,55,51
+Both_UngoroCrater,Alliance,3844,It's a Secret to Everybody,52,47
+Both_UngoroCrater,Alliance,3845,It's a Secret to Everybody,52,47
+Both_UngoroCrater,Alliance,3884,Williden's Journal,50,48
+Both_UngoroCrater,Alliance,3908,It's a Secret to Everybody,52,47
+Both_UngoroCrater,Alliance,3909,The Videre Elixir,52,47
+Both_UngoroCrater,Alliance,3912,Meet at the Grave,52,47
+Both_UngoroCrater,Alliance,3913,A Grave Situation,52,47
+Both_UngoroCrater,Alliance,3914,Linken's Sword,52,47
+Both_UngoroCrater,Alliance,3941,A Gnome's Assistance,52,47
+Both_UngoroCrater,Alliance,3942,Linken's Memory,54,47
+Both_UngoroCrater,Alliance,3961,Linken's Adventure,54,47
+Both_UngoroCrater,Alliance,3962,It's Dangerous to Go Alone,56,47
+Both_UngoroCrater,Alliance,4005,Aquementas,54,47
+Both_UngoroCrater,Alliance,4084,Silver Heart,54,47
+Both_UngoroCrater,Alliance,4141,Muigin and Larion,52,47
+Both_UngoroCrater,Alliance,4142,A Visit to Gregan,52,47
+Both_UngoroCrater,Alliance,4143,Haze of Evil,52,47
+Both_UngoroCrater,Alliance,4144,Bloodpetal Sprouts,53,47
+Both_UngoroCrater,Alliance,4243,Chasing A-Me 01,53,48
+Both_UngoroCrater,Alliance,4244,Chasing A-Me 01,53,48
+Both_UngoroCrater,Alliance,4245,Chasing A-Me 01,53,48
+Both_UngoroCrater,Alliance,4301,The Mighty U'cha,55,50
+Both_UngoroCrater,Alliance,4491,A Little Help From My Friends,55,50
+Both_UngoroCrater,Alliance,4492,Lost!,55,50
+Both_UngoroCrater,Alliance,4502,Volcanic Activity,55,49
+Both_UngoroCrater,Alliance,4503,Shizzle's Flyer,51,49
+Both_UngoroCrater,Horde,974,Finding the Source,55,51
+Both_UngoroCrater,Horde,980,The New Springs,55,51
+Both_UngoroCrater,Horde,3844,It's a Secret to Everybody,52,47
+Both_UngoroCrater,Horde,3845,It's a Secret to Everybody,52,47
+Both_UngoroCrater,Horde,3884,Williden's Journal,50,48
+Both_UngoroCrater,Horde,3908,It's a Secret to Everybody,52,47
+Both_UngoroCrater,Horde,3909,The Videre Elixir,52,47
+Both_UngoroCrater,Horde,3912,Meet at the Grave,52,47
+Both_UngoroCrater,Horde,3913,A Grave Situation,52,47
+Both_UngoroCrater,Horde,3914,Linken's Sword,52,47
+Both_UngoroCrater,Horde,3941,A Gnome's Assistance,52,47
+Both_UngoroCrater,Horde,3942,Linken's Memory,54,47
+Both_UngoroCrater,Horde,3961,Linken's Adventure,54,47
+Both_UngoroCrater,Horde,3962,It's Dangerous to Go Alone,56,47
+Both_UngoroCrater,Horde,4005,Aquementas,54,47
+Both_UngoroCrater,Horde,4084,Silver Heart,54,47
+Both_UngoroCrater,Horde,4145,Larion and Muigin,52,48
+Both_UngoroCrater,Horde,4147,Marvon's Workshop,52,48
+Both_UngoroCrater,Horde,4148,Bloodpetal Zapper,53,47
+Both_UngoroCrater,Horde,4243,Chasing A-Me 01,53,48
+Both_UngoroCrater,Horde,4244,Chasing A-Me 01,53,48
+Both_UngoroCrater,Horde,4245,Chasing A-Me 01,53,48
+Both_UngoroCrater,Horde,4301,The Mighty U'cha,55,50
+Both_UngoroCrater,Horde,4491,A Little Help From My Friends,55,50
+Both_UngoroCrater,Horde,4492,Lost!,55,50
+Both_UngoroCrater,Horde,4502,Volcanic Activity,55,49
+Both_UngoroCrater,Horde,4503,Shizzle's Flyer,51,49

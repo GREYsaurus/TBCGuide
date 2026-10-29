@@ -94,16 +94,6 @@ end
 -- A hidden tooltip shows what GetItemStats cannot: this copy's binding, red "cannot use" lines,
 -- school damage and effects (use, chance on hit, unusual equip effects, set bonuses).
 
--- Equip lines GetItemStats already reports as stats (enUS client text).
-local STAT_EQUIP = {
-    "^Equip: Increases damage and healing done by magical spells", "^Equip: Increases healing done",
-    "^Equip: Improves .- rating by %d+", "^Equip: Increases your .- rating by %d+", "^Equip: Increases defense rating",
-    "^Equip: Increases attack power by %d+", "^Equip: Increases ranged attack power by %d+",
-    "^Equip: Restores %d+ mana per 5 sec", "^Equip: Increases the block value of your shield",
-    "^Equip: Your attacks ignore %d+ of your opponent's armor", "^Equip: Increases your spell penetration",
-    "^Equip: Increases spell damage", "^Equip: Increases spell power",
-}
-
 local function scanner()
     if U.tip then return U.tip end
     if not CreateFrame then return nil end
@@ -114,8 +104,8 @@ local function scanner()
     return t
 end
 
--- Lines { text, r, g, b } of a bag item ("bag", bag, slot), a merchant item ("merchant", index)
--- or an equipped item ("inv", slot).
+-- Lines { text, r, g, b } of a bag item ("bag", bag, slot), a merchant item ("merchant", index),
+-- an item link ("link", link) or an equipped item ("inv", slot).
 function U.ScanLines(kind, a, b)
     local t = scanner()
     if not t or not t.ClearLines then return nil end
@@ -124,6 +114,9 @@ function U.ScanLines(kind, a, b)
     if kind == "bag" then
         local f = t.SetBagItem
         ok = f and pcall(f, t, a, b)
+    elseif kind == "link" then
+        local f = t.SetHyperlink
+        ok = f and pcall(f, t, a)
     elseif kind == "merchant" then
         local f = t.SetMerchantItem
         ok = f and pcall(f, t, a)
@@ -147,30 +140,10 @@ function U.ScanLines(kind, a, b)
     return out
 end
 
--- Facts from tooltip lines: { bound = true|false|nil, boe = bool, red = bool, effects = {...}, schoolDmg = {School=n} }
-function U:Classify(lines)
-    local r = { effects = {}, schoolDmg = {} }
-    if not lines then return r end
-    local soul, boe = ITEM_SOULBOUND or "Soulbound", ITEM_BIND_ON_EQUIP or "Binds when equipped"
-    for i, l in ipairs(lines) do
-        local t = l[1]
-        if t == soul then r.bound = true end
-        if t == boe then r.boe = true if r.bound == nil then r.bound = false end end
-        -- Red text (the client's own "you cannot use this" colour) on any line but the name.
-        if i > 1 and l[2] and l[2] > 0.99 and (l[3] or 1) < 0.2 and (l[4] or 1) < 0.2 then r.red = true end
-        local sch, amt = string.match(t, "^Equip: Increases damage done by (%a+) spells and effects by up to (%d+)")
-        if sch then
-            r.schoolDmg[sch] = (r.schoolDmg[sch] or 0) + tonumber(amt)
-        elseif string.find(t, "^Use:") then r.effects[#r.effects + 1] = "use effect"
-        elseif string.find(t, "^Chance on hit:") then r.effects[#r.effects + 1] = "chance-on-hit effect"
-        elseif string.find(t, "^%(%d+%) Set:") or string.find(t, "^Set:") then r.effects[#r.effects + 1] = "set bonus"
-        elseif string.find(t, "^Equip:") then
-            local known = false
-            for _, pat in ipairs(STAT_EQUIP) do if string.find(t, pat) then known = true break end end
-            if not known then r.effects[#r.effects + 1] = "equip effect" end
-        end
-    end
-    return r
+-- Facts from tooltip lines (Core/TooltipText.lua; locale-aware). `d` supplies GetItemStats keys so
+-- non-English clients can tell stat lines from effects.
+function U:Classify(lines, d)
+    return ns.TooltipText.Classify(lines, d and d.statKeys)
 end
 
 -- Item records -----------------------------------------------------------------------------------------
@@ -183,7 +156,7 @@ function U:BagItem(bag, slot)
     if not d then return nil, why or "uncached" end
     if not G():IsEquippable(d) then return nil, "not equipment" end
     d.bag, d.slot, d.locked, d.boundFlag = bag, slot, c.locked, c.bound
-    d.tip = self:Classify(self.ScanLines("bag", bag, slot))
+    d.tip = self:Classify(self.ScanLines("bag", bag, slot), d)
     return d
 end
 
@@ -195,7 +168,7 @@ function U:EquippedItem(slot)
     local d, why = G():ItemData(link)
     if not d then return nil, why or "uncached" end
     d.invSlot = slot
-    d.tip = self:Classify(self.ScanLines("inv", slot))
+    d.tip = self:Classify(self.ScanLines("inv", slot), d)
     return d
 end
 
@@ -371,7 +344,8 @@ function U:Evaluate(d, ctx)
     if best.empty then
         e.kind = "empty"
     elseif best.delta > EPS and best.newScore > EPS then
-        local minPct = tonumber(prof().autoEquipMinPct) or 0
+        -- ctx.minPct lets a caller with its own filter (the auction Upgrades tab) see every upgrade.
+        local minPct = tonumber(ctx.minPct or prof().autoEquipMinPct) or 0
         if best.pct then
             if best.pct >= minPct and best.pct > EPS then e.kind = "upgrade" else e.reason = "below your minimum upgrade" end
         elseif minPct <= 0 then

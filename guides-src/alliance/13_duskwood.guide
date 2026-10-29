@@ -10,33 +10,35 @@
 @desc Darkshire, the Raven Hill area and the western farms. Ends at about 25, then by boat or road to the Wetlands.
 @next A_Wetlands
 
-accept Raven Hill | Elaine Carevin, Darkshire.
-accept Deliveries to Sven
-accept The Hermit
 accept 174 Look To The Stars [optional]
 turnin 174 Look To The Stars [optional]
 accept 175 Look To The Stars [optional]
 turnin 175 Look To The Stars [optional]
 accept 177 Look To The Stars [optional]
+accept Raven Hill | Elaine Carevin, Darkshire.
+accept Deliveries to Sven
+accept The Hermit
+accept 173 Worgen in the Woods | Needs level 23. If you are lower, TBCGuide skips it and moves on.
 accept 337 An Old History Book [optional]
+fp Darkshire
+accept The Totem of Infliction | Madame Eva.
 accept The Night Watch | Commander Althea Ebonlocke, Darkshire town hall.
 turnin 66 The Legend of Stalvan
-accept 67 The Legend of Stalvan
+accept 67 The Legend of Stalvan | Needs level 22. If you are lower, TBCGuide skips it and moves on.
 turnin 9429 Travel to Darkshire [race=Draenei]
-accept 173 Worgen in the Woods
 accept Seasoned Wolf Kabobs | Chef Grual.
-accept The Totem of Infliction | Madame Eva.
-fp Darkshire
 bind Darkshire
-complete The Night Watch | Skeletons and ghouls at Tranquil Gardens Cemetery, south-east of Darkshire.
-turnin The Night Watch
-accept 57 The Night Watch
+turnin 1650 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei] | Turned in at Westfall.
+accept 1651 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei] | Escort quest: start it when you are ready to follow.
+complete 1651 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei] | Escort: stay close; it fails if the NPC dies.
+turnin 1651 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei] | Turned in at Westfall.
+accept 1652 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
 accept Eight-Legged Menaces | Watcher Dodds on the bridge on the road to Westfall.
 complete Seasoned Wolf Kabobs | Nightbane Shadow Weavers and wolves.
 complete Eight-Legged Menaces | Pygmy Venom Web Spiders around the road.
 turnin Eight-Legged Menaces
-turnin The Hermit | Abercrombie's hut, north of Raven Hill.
-accept Supplies from Darkshire
+accept 5061 Aquatic Form [class=Druid; race=Night Elf]
+turnin 5061 Aquatic Form [class=Druid; race=Night Elf] | Turned in at Darnassus.
 turnin Raven Hill | Jitters, north of the Raven Hill houses.
 accept Jitters' Growling Gut
 turnin Deliveries to Sven | Sven Yorgen's camp, far west.
@@ -44,151 +46,149 @@ accept Sven's Revenge
 accept Wolves at Our Heels | Lars, next to Sven.
 complete Wolves at Our Heels
 turnin Wolves at Our Heels
-accept 225 The Weathered Grave
-turnin 2360 Mathias and the Defias [class=Rogue; race=Human,Dwarf,Night Elf,Gnome]
-turnin 67 The Legend of Stalvan
-accept 68 The Legend of Stalvan
-turnin 1650 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
-accept 1651 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
-complete 1651 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
-turnin 1651 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
-accept 1652 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
-accept 5061 Aquatic Form [class=Druid; race=Night Elf]
-turnin 5061 Aquatic Form [class=Druid; race=Night Elf]
+accept 225 The Weathered Grave | Needs level 25. If you are lower, TBCGuide skips it and moves on.
 complete Sven's Revenge | The dirt mound is south of Darkshire's road, near the river.
-turnin Sven's Revenge
-accept Sven's Camp
-turnin Supplies from Darkshire | Madame Eva, Darkshire.
-accept Ghost Hair Thread
+turnin The Hermit | Abercrombie's hut, north of Raven Hill.
+accept Supplies from Darkshire
+accept 335 A Noble Brew [optional] | Needs level 25. If you are lower, TBCGuide skips it and moves on.
+turnin Seasoned Wolf Kabobs
 turnin Jitters' Growling Gut | Chef Grual.
 accept Dusky Crab Cakes
-turnin Seasoned Wolf Kabobs
+turnin Supplies from Darkshire | Madame Eva, Darkshire.
+accept Ghost Hair Thread
+complete 177 Look To The Stars [optional] | Mary's Looking Glass drops from Insane Ghoul.
+turnin 177 Look To The Stars [optional]
+accept 181 Look To The Stars [optional]
 turnin Ghost Hair Thread | Blind Mary, house south-east of Darkshire.
 accept Return the Comb
+complete The Night Watch | Skeletons and ghouls at Tranquil Gardens Cemetery, south-east of Darkshire.
+turnin The Night Watch
+accept 57 The Night Watch
 complete Dusky Crab Cakes | Crabs along the coast in western Duskwood.
 complete 57 The Night Watch | Skeletal Fiends and Healers at the graveyard.
 turnin 57 The Night Watch
 accept 58 The Night Watch
 turnin Return the Comb
 accept Deliver the Thread
-turnin Dusky Crab Cakes
-accept Return to Jitters
-turnin 68 The Legend of Stalvan
-accept 69 The Legend of Stalvan
-turnin 225 The Weathered Grave
-turnin Return to Jitters
+accept 9509 Call of Water [class=Shaman; race=Draenei]
+turnin Sven's Revenge
+accept Sven's Camp
+turnin 9509 Call of Water [class=Shaman; race=Draenei] | Turned in at The Exodar.
+turnin Sven's Camp
+accept The Shadowy Figure
 turnin Deliver the Thread
 accept Zombie Juice
-turnin Zombie Juice | Tavernkeep Smitts, Darkshire inn.
-accept Gather Rot Blossoms
 accept 128 Blackrock Bounty [optional]
 accept 19 Tharil'zun [optional]
 accept 115 Shadow Magic [optional]
-complete 19 Tharil'zun [optional]
-complete 115 Shadow Magic [optional]
+complete 19 Tharil'zun [optional] | Tharil'zun's Head drops from Tharil'zun.
+complete 115 Shadow Magic [optional] | Midnight Orb drops from Blackrock Shadowcaster.
 complete 128 Blackrock Bounty [optional]
-turnin 19 Tharil'zun [optional]
-turnin 115 Shadow Magic [optional]
-turnin 128 Blackrock Bounty [optional]
-complete 173 Worgen in the Woods
-turnin 173 Worgen in the Woods
-accept 221 Worgen in the Woods
+turnin 19 Tharil'zun [optional] | Turned in at Redridge Mountains.
+turnin 115 Shadow Magic [optional] | Turned in at Redridge Mountains.
+turnin 128 Blackrock Bounty [optional] | Turned in at Redridge Mountains.
+turnin Dusky Crab Cakes
+accept Return to Jitters
+turnin Zombie Juice | Tavernkeep Smitts, Darkshire inn.
+accept Gather Rot Blossoms
 complete Gather Rot Blossoms | Skeletons in Raven Hill Cemetery.
-complete 177 Look To The Stars [optional]
 turnin Gather Rot Blossoms
 accept Juice Delivery
+turnin The Shadowy Figure
+accept 265 The Shadowy Search Continues [class=Warrior; race=Night Elf,Gnome; optional]
+accept 265 The Shadowy Search Continues [class=Warrior,Paladin; race=Human,Dwarf,Draenei; optional]
+accept 265 The Shadowy Search Continues [class=Rogue,Mage,Warlock; race=Gnome; optional]
+accept 265 The Shadowy Search Continues [class=Rogue,Priest,Mage,Warlock; race=Human; optional]
+accept 265 The Shadowy Search Continues [class=Hunter,Rogue,Priest; race=Dwarf; optional]
+accept 265 The Shadowy Search Continues [class=Hunter,Priest,Shaman,Mage; race=Draenei; optional]
+accept 265 The Shadowy Search Continues [class=Hunter,Rogue,Priest,Druid; race=Night Elf; optional]
+turnin 67 The Legend of Stalvan
+accept 68 The Legend of Stalvan
+turnin 337 An Old History Book [optional] | Turned in at Stormwind City.
+accept 538 Southshore [optional]
 turnin Juice Delivery
 accept Ghoulish Effigy
 complete 58 The Night Watch
 complete Ghoulish Effigy | Ghouls at Raven Hill Cemetery.
 turnin Ghoulish Effigy
 accept Ogre Thieves
-turnin 177 Look To The Stars [optional]
-accept 181 Look To The Stars [optional]
-turnin Sven's Camp
-accept The Shadowy Figure
 complete Ogre Thieves | Splinter Fist ogres at Vul'Gol Ogre Mound.
-complete 181 Look To The Stars [optional]
+complete 181 Look To The Stars [optional] | Ogre's Monocle drops from Zzarc' Vul.
 turnin Ogre Thieves
 accept Note to the Mayor
-turnin 58 The Night Watch
-turnin The Shadowy Figure
-accept 265 The Shadowy Search Continues [class=Warrior; race=Night Elf,Gnome; optional]
-accept 265 The Shadowy Search Continues [class=Warrior,Paladin; race=Human,Dwarf,Draenei; optional]
+turnin 2360 Mathias and the Defias [class=Rogue; race=Human,Dwarf,Night Elf,Gnome] | Turned in at Westfall.
+turnin Note to the Mayor
+accept 251 Translate Abercrombie's Note
+turnin 68 The Legend of Stalvan
+accept 69 The Legend of Stalvan
 turnin 265 The Shadowy Search Continues [class=Warrior; race=Night Elf,Gnome; optional]
 turnin 265 The Shadowy Search Continues [class=Warrior,Paladin; race=Human,Dwarf,Draenei; optional]
-accept 266 Inquire at the Inn [class=Warrior; race=Night Elf,Gnome; optional]
-accept 266 Inquire at the Inn [class=Warrior,Paladin; race=Human,Dwarf,Draenei; optional]
-turnin 266 Inquire at the Inn [class=Warrior; race=Night Elf,Gnome; optional]
-turnin 266 Inquire at the Inn [class=Warrior,Paladin; race=Human,Dwarf,Draenei; optional]
-accept 453 Finding the Shadowy Figure [class=Warrior; race=Night Elf,Gnome; optional]
-accept 453 Finding the Shadowy Figure [class=Warrior,Paladin; race=Human,Dwarf,Draenei; optional]
-accept 265 The Shadowy Search Continues [class=Rogue,Mage,Warlock; race=Gnome; optional]
-accept 265 The Shadowy Search Continues [class=Rogue,Priest,Mage,Warlock; race=Human; optional]
-accept 265 The Shadowy Search Continues [class=Hunter,Rogue,Priest; race=Dwarf; optional]
-accept 265 The Shadowy Search Continues [class=Hunter,Priest,Shaman,Mage; race=Draenei; optional]
-accept 265 The Shadowy Search Continues [class=Hunter,Rogue,Priest,Druid; race=Night Elf; optional]
 turnin 265 The Shadowy Search Continues [class=Rogue,Mage,Warlock; race=Gnome; optional]
 turnin 265 The Shadowy Search Continues [class=Rogue,Priest,Mage,Warlock; race=Human; optional]
 turnin 265 The Shadowy Search Continues [class=Hunter,Rogue,Priest; race=Dwarf; optional]
 turnin 265 The Shadowy Search Continues [class=Hunter,Priest,Shaman,Mage; race=Draenei; optional]
 turnin 265 The Shadowy Search Continues [class=Hunter,Rogue,Priest,Druid; race=Night Elf; optional]
+accept 266 Inquire at the Inn [class=Warrior; race=Night Elf,Gnome; optional]
+accept 266 Inquire at the Inn [class=Warrior,Paladin; race=Human,Dwarf,Draenei; optional]
 accept 266 Inquire at the Inn [class=Rogue,Mage,Warlock; race=Gnome; optional]
 accept 266 Inquire at the Inn [class=Rogue,Priest,Mage,Warlock; race=Human; optional]
 accept 266 Inquire at the Inn [class=Hunter,Rogue,Priest; race=Dwarf; optional]
 accept 266 Inquire at the Inn [class=Hunter,Priest,Shaman,Mage; race=Draenei; optional]
 accept 266 Inquire at the Inn [class=Hunter,Rogue,Priest,Druid; race=Night Elf; optional]
-turnin 266 Inquire at the Inn [class=Rogue,Mage,Warlock; race=Gnome; optional]
-turnin 266 Inquire at the Inn [class=Rogue,Priest,Mage,Warlock; race=Human; optional]
-turnin 266 Inquire at the Inn [class=Hunter,Rogue,Priest; race=Dwarf; optional]
-turnin 266 Inquire at the Inn [class=Hunter,Priest,Shaman,Mage; race=Draenei; optional]
-turnin 266 Inquire at the Inn [class=Hunter,Rogue,Priest,Druid; race=Night Elf; optional]
-accept 453 Finding the Shadowy Figure [class=Rogue,Mage,Warlock; race=Gnome; optional]
-accept 453 Finding the Shadowy Figure [class=Rogue,Priest,Mage,Warlock; race=Human; optional]
-accept 453 Finding the Shadowy Figure [class=Hunter,Rogue,Priest; race=Dwarf; optional]
-accept 453 Finding the Shadowy Figure [class=Hunter,Priest,Shaman,Mage; race=Draenei; optional]
-accept 453 Finding the Shadowy Figure [class=Hunter,Rogue,Priest,Druid; race=Night Elf; optional]
-turnin 453 Finding the Shadowy Figure [optional]
-accept 268 Return to Sven
-turnin Note to the Mayor
-accept 251 Translate Abercrombie's Note
+turnin 225 The Weathered Grave
 turnin 251 Translate Abercrombie's Note
 accept 401 Wait for Sirra to Finish
 turnin 401 Wait for Sirra to Finish
 accept 252 Translation to Ello
 turnin 252 Translation to Ello
+turnin 58 The Night Watch
+turnin 266 Inquire at the Inn [class=Warrior; race=Night Elf,Gnome; optional]
+turnin 266 Inquire at the Inn [class=Warrior,Paladin; race=Human,Dwarf,Draenei; optional]
+turnin 266 Inquire at the Inn [class=Rogue,Mage,Warlock; race=Gnome; optional]
+turnin 266 Inquire at the Inn [class=Rogue,Priest,Mage,Warlock; race=Human; optional]
+turnin 266 Inquire at the Inn [class=Hunter,Rogue,Priest; race=Dwarf; optional]
+turnin 266 Inquire at the Inn [class=Hunter,Priest,Shaman,Mage; race=Draenei; optional]
+turnin 266 Inquire at the Inn [class=Hunter,Rogue,Priest,Druid; race=Night Elf; optional]
+accept 453 Finding the Shadowy Figure [class=Warrior; race=Night Elf,Gnome; optional]
+accept 453 Finding the Shadowy Figure [class=Warrior,Paladin; race=Human,Dwarf,Draenei; optional]
+accept 453 Finding the Shadowy Figure [class=Rogue,Mage,Warlock; race=Gnome; optional]
+accept 453 Finding the Shadowy Figure [class=Rogue,Priest,Mage,Warlock; race=Human; optional]
+accept 453 Finding the Shadowy Figure [class=Hunter,Rogue,Priest; race=Dwarf; optional]
+accept 453 Finding the Shadowy Figure [class=Hunter,Priest,Shaman,Mage; race=Draenei; optional]
+accept 453 Finding the Shadowy Figure [class=Hunter,Rogue,Priest,Druid; race=Night Elf; optional]
+turnin 69 The Legend of Stalvan | Turned in at Elwynn Forest.
 complete The Totem of Infliction | Ogres, worgen and spiders throughout Duskwood.
+accept 70 The Legend of Stalvan
+complete 70 The Legend of Stalvan | An Undelivered Letter: loot Gizmorium Shipping Crate and Storage Chest.
+turnin 70 The Legend of Stalvan | Turned in at Stormwind City.
+accept 72 The Legend of Stalvan
+turnin 72 The Legend of Stalvan
+accept 74 The Legend of Stalvan
+turnin Return to Jitters
+turnin 453 Finding the Shadowy Figure [optional]
+accept 268 Return to Sven
 turnin 268 Return to Sven
 accept 323 Proving Your Worth
 complete 323 Proving Your Worth
 turnin 323 Proving Your Worth
 accept 269 Seeking Wisdom [optional]
-turnin 69 The Legend of Stalvan
-accept 70 The Legend of Stalvan
-complete 70 The Legend of Stalvan
-accept 335 A Noble Brew [optional]
-turnin 70 The Legend of Stalvan
-accept 72 The Legend of Stalvan
-turnin 72 The Legend of Stalvan
-accept 74 The Legend of Stalvan
-turnin 1652 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei]
 accept 2923 Tinkmaster Overspark
-turnin 269 Seeking Wisdom [optional]
+turnin 1652 The Tome of Valor [class=Paladin; race=Human,Dwarf,Draenei] | Turned in at Stormwind City.
+turnin 269 Seeking Wisdom [optional] | Turned in at Stormwind City.
 accept 270 The Doomed Fleet [optional]
-turnin 337 An Old History Book [optional]
-accept 538 Southshore [optional]
-turnin 74 The Legend of Stalvan
+turnin 74 The Legend of Stalvan | Turned in at Elwynn Forest.
 accept 75 The Legend of Stalvan
-complete 75 The Legend of Stalvan
-complete 335 A Noble Brew [class=Shaman; race=Draenei; optional]
+complete 75 The Legend of Stalvan | A Faded Journal Page: loot Marshal Haggard's Chest.
+complete 335 A Noble Brew [class=Shaman; race=Draenei; optional] | Tear of Tilloa: loot Tear of Tilloa. Musquash Root: loot Musquash Root.
+complete 335 A Noble Brew [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei; optional] | Tear of Tilloa: loot Tear of Tilloa. Musquash Root: loot Musquash Root.
+complete 335 A Noble Brew [race=Human,Dwarf,Night Elf,Gnome; optional] | Tear of Tilloa: loot Tear of Tilloa. Musquash Root: loot Musquash Root.
 turnin The Totem of Infliction
+complete 173 Worgen in the Woods
+turnin 173 Worgen in the Woods
+accept 221 Worgen in the Woods
 turnin 181 Look To The Stars [optional]
-complete 335 A Noble Brew [class=Warrior,Paladin,Hunter,Priest,Mage; race=Draenei; optional]
-complete 335 A Noble Brew [race=Human,Dwarf,Night Elf,Gnome; optional]
-accept 9509 Call of Water [class=Shaman; race=Draenei]
-turnin 9509 Call of Water [class=Shaman; race=Draenei]
 complete 221 Worgen in the Woods
-turnin 2923 Tinkmaster Overspark
+turnin 2923 Tinkmaster Overspark | Turned in at Ironforge.
 level 25
 train
 note Fly to Ironforge or Stormwind, then the boat or Dun Algaz pass to Menethil Harbor, Wetlands.

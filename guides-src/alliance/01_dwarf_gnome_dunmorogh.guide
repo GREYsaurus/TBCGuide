@@ -12,14 +12,14 @@
 @desc Dwarf and gnome starting route. Coldridge Valley to about level 5, then Kharanos, the Barleybrew and Amberstill farms and the eastern pass. Ends at about level 11 at the gate to Loch Modan.
 @next A_LochModan
 
-accept Dwarven Outfitters | Sten Stoutarm, in front of Anvilmar.
-accept The Troll Cave | Grelin Whitebeard's camp south-west of Anvilmar.
 accept The Boar Hunter | Talin Keeneye, west of Anvilmar.
 accept A Refugee's Quandary | Felix Whindlebolt, north of Anvilmar.
+accept Dwarven Outfitters | Sten Stoutarm, in front of Anvilmar.
 complete Dwarven Outfitters | Wolves around Anvilmar drop Tough Wolf Meat.
 turnin Dwarven Outfitters
 accept 3106 Simple Rune [class=Warrior; race=Dwarf] | Sten Stoutarm gives your class letter now.
 accept 3107 Consecrated Rune [class=Paladin; race=Dwarf]
+accept 233 Coldridge Valley Mail Delivery
 accept 3108 Etched Rune [class=Hunter; race=Dwarf]
 accept 3109 Encrypted Rune [class=Rogue; race=Dwarf]
 accept 3110 Hallowed Rune [class=Priest; race=Dwarf]
@@ -28,42 +28,42 @@ accept 3113 Encrypted Memorandum [class=Rogue; race=Gnome]
 accept 3114 Glyphic Memorandum [class=Mage; race=Gnome]
 accept 3115 Tainted Memorandum [class=Warlock; race=Gnome]
 accept A New Threat
-accept 233 Coldridge Valley Mail Delivery
 complete A New Threat | Rockjaw Troggs and Burly Rockjaw Troggs in the valley.
 complete The Boar Hunter | Small Crag Boars west of Anvilmar.
 complete A Refugee's Quandary | Felix's chest, box and bucket are in the camps of the trolls.
 turnin A New Threat
+turnin 3107 Consecrated Rune [class=Paladin; race=Dwarf]
+turnin 3108 Etched Rune [class=Hunter; race=Dwarf]
+turnin 3110 Hallowed Rune [class=Priest; race=Dwarf]
+turnin 3115 Tainted Memorandum [class=Warlock; race=Gnome]
+accept 1599 Beginnings [class=Warlock; race=Gnome] | Alamar Grimm.
+turnin 3114 Glyphic Memorandum [class=Mage; race=Gnome]
+turnin 3106 Simple Rune [class=Warrior; race=Dwarf] | Your class trainer inside Anvilmar.
+turnin 3112 Simple Memorandum [class=Warrior; race=Gnome]
 turnin A Refugee's Quandary
+turnin 3109 Encrypted Rune [class=Rogue; race=Dwarf]
+turnin 3113 Encrypted Memorandum [class=Rogue; race=Gnome]
 turnin 233 Coldridge Valley Mail Delivery
 accept 234 Coldridge Valley Mail Delivery
 turnin The Boar Hunter
-turnin 3106 Simple Rune [class=Warrior; race=Dwarf] | Your class trainer inside Anvilmar.
-turnin 3107 Consecrated Rune [class=Paladin; race=Dwarf]
-turnin 3108 Etched Rune [class=Hunter; race=Dwarf]
-turnin 3109 Encrypted Rune [class=Rogue; race=Dwarf]
-turnin 3110 Hallowed Rune [class=Priest; race=Dwarf]
-turnin 3112 Simple Memorandum [class=Warrior; race=Gnome]
-turnin 3113 Encrypted Memorandum [class=Rogue; race=Gnome]
-turnin 3114 Glyphic Memorandum [class=Mage; race=Gnome]
-turnin 3115 Tainted Memorandum [class=Warlock; race=Gnome]
-accept 1599 Beginnings [class=Warlock; race=Gnome] | Alamar Grimm.
+accept The Troll Cave | Grelin Whitebeard's camp south-west of Anvilmar.
 train | Classes train inside Anvilmar.
 complete The Troll Cave | Frostmane Troll Whelps in the cave west of Grelin.
 complete 1599 Beginnings [class=Warlock; race=Gnome] | Frostmane Novices around the troll camps drop Feather Charms.
+turnin 1599 Beginnings [class=Warlock; race=Gnome]
 turnin 234 Coldridge Valley Mail Delivery
 turnin The Troll Cave
 accept The Stolen Journal
-accept Scalding Mornbrew Delivery | Nori Pridedrift at Grelin's camp. Deliver fast; the brew cools.
 complete The Stolen Journal | Grik'nir the Cold is at the back of the troll cave.
 turnin The Stolen Journal
 accept 282 Senir's Observations
+accept Scalding Mornbrew Delivery | Nori Pridedrift at Grelin's camp. Deliver fast; the brew cools.
 turnin Scalding Mornbrew Delivery | Durnan Furcutter inside Anvilmar.
 accept Bring Back the Mug
 turnin Bring Back the Mug
-turnin 1599 Beginnings [class=Warlock; race=Gnome]
+accept Supplies to Tannok [optional] | Hands Springsprocket stands at the tunnel too.
 turnin 282 Senir's Observations | Mountaineer Thalos at the tunnel out of the valley.
 accept 420 Senir's Observations
-accept Supplies to Tannok [optional] | Hands Springsprocket stands at the tunnel too.
 turnin 420 Senir's Observations | Senir Whitebeard in Kharanos.
 accept Frostmane Hold
 turnin Supplies to Tannok [optional] | Tannok Frosthammer inside the Thunderbrew Distillery.
@@ -73,20 +73,16 @@ turnin 5625 Garments of the Light [class=Priest; race=Dwarf]
 bind Kharanos
 accept Beer Basted Boar Ribs
 accept Tools for Steelgrill
-accept Ammo for Rumbleshot
+accept Operation Recombobulation | Razzle Sprysprocket in the gnome building of Kharanos.
 accept Stocking Jetsteam | Pilot Bellowfiz, north side of Kharanos.
 accept The Grizzled Den | Pilot Stonegear, same house.
-accept Operation Recombobulation | Razzle Sprysprocket in the gnome building of Kharanos.
+accept Ammo for Rumbleshot
 train | Your trainer is in Kharanos.
-turnin Tools for Steelgrill | Beldin Steelgrill at Steelgrill's Depot, east of Kharanos.
-complete The Grizzled Den | Wendigos in the cave south of Kharanos.
-accept 312 Tundra MacGrann's Stolen Stash [class=Hunter; race=Dwarf]
-complete 312 Tundra MacGrann's Stolen Stash [class=Hunter; race=Dwarf]
-turnin 312 Tundra MacGrann's Stolen Stash [class=Hunter; race=Dwarf]
+complete Operation Recombobulation | Leper Gnomes at the Gnomeregan entrance and the tunnel west of Kharanos.
+turnin Operation Recombobulation
 complete Stocking Jetsteam | Boars and bears south of Kharanos.
 turnin Stocking Jetsteam
 accept Evershine
-turnin The Grizzled Den
 complete Frostmane Hold | Explore Frostmane Hold, the troll cave west of Kharanos.
 accept Bitter Rivals | Marleth Barleybrew, Brewnall Village.
 accept The Perfect Stout | Rejold Barleybrew, Brewnall Village.
@@ -97,51 +93,55 @@ complete Beer Basted Boar Ribs | Crag boar ribs and Rhapsody Malt (buy the malt 
 complete The Perfect Stout | Shimmerweed is carried by the Frostmane trolls west of Brewnall.
 turnin A Favor for Evershine
 accept Return to Bellowfiz
-turnin The Perfect Stout
-accept Shimmer Stout
-turnin Frostmane Hold
-accept The Reports
+turnin Return to Bellowfiz
+complete The Grizzled Den | Wendigos in the cave south of Kharanos.
+turnin The Grizzled Den
+turnin Tools for Steelgrill | Beldin Steelgrill at Steelgrill's Depot, east of Kharanos.
 turnin Bitter Rivals | The barrel stands inside the Thunderbrew Distillery.
 accept Return to Marleth
-turnin Return to Bellowfiz
-accept 6064 Taming the Beast [class=Hunter; race=Dwarf]
-complete 6064 Taming the Beast [class=Hunter; race=Dwarf]
-turnin 6064 Taming the Beast [class=Hunter; race=Dwarf]
-accept 6084 Taming the Beast [class=Hunter; race=Dwarf]
-complete 6084 Taming the Beast [class=Hunter; race=Dwarf]
-turnin 6084 Taming the Beast [class=Hunter; race=Dwarf]
-accept 6085 Taming the Beast [class=Hunter; race=Dwarf]
-complete 6085 Taming the Beast [class=Hunter; race=Dwarf]
-turnin 6085 Taming the Beast [class=Hunter; race=Dwarf]
-accept 6086 Training the Beast [class=Hunter; race=Dwarf]
-turnin 6086 Training the Beast [class=Hunter; race=Dwarf]
 turnin Beer Basted Boar Ribs
+accept 6064 Taming the Beast [class=Hunter; race=Dwarf] | Escort quest: start it when you are ready to follow. Needs level 10. If you are lower, TBCGuide skips it and moves on.
+complete 6064 Taming the Beast [class=Hunter; race=Dwarf] | Escort: stay close; it fails if the NPC dies.
+turnin 6064 Taming the Beast [class=Hunter; race=Dwarf]
+accept 6084 Taming the Beast [class=Hunter; race=Dwarf] | Escort quest: start it when you are ready to follow. Needs level 10. If you are lower, TBCGuide skips it and moves on.
+complete 6084 Taming the Beast [class=Hunter; race=Dwarf] | Escort: stay close; it fails if the NPC dies.
+turnin 6084 Taming the Beast [class=Hunter; race=Dwarf]
+accept 6085 Taming the Beast [class=Hunter; race=Dwarf] | Escort quest: start it when you are ready to follow. Needs level 10. If you are lower, TBCGuide skips it and moves on.
+complete 6085 Taming the Beast [class=Hunter; race=Dwarf] | Escort: stay close; it fails if the NPC dies.
+turnin 6085 Taming the Beast [class=Hunter; race=Dwarf]
+accept 6086 Training the Beast [class=Hunter; race=Dwarf] | Needs level 10. If you are lower, TBCGuide skips it and moves on.
+turnin Frostmane Hold
+accept The Reports
+turnin Ammo for Rumbleshot | Hegnar Rumbleshot's camp at the lake east of Kharanos.
+accept 312 Tundra MacGrann's Stolen Stash [class=Hunter; race=Dwarf]
 accept 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
 accept 312 Tundra MacGrann's Stolen Stash [race=Gnome]
-complete 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
-complete 312 Tundra MacGrann's Stolen Stash [race=Gnome]
+complete 312 Tundra MacGrann's Stolen Stash [class=Hunter; race=Dwarf] | MacGrann's Dried Meats: loot MacGrann's Meat Locker.
+complete 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Rogue,Priest; race=Dwarf] | MacGrann's Dried Meats: loot MacGrann's Meat Locker.
+complete 312 Tundra MacGrann's Stolen Stash [race=Gnome] | MacGrann's Dried Meats: loot MacGrann's Meat Locker.
+turnin 312 Tundra MacGrann's Stolen Stash [class=Hunter; race=Dwarf]
 turnin 312 Tundra MacGrann's Stolen Stash [class=Warrior,Paladin,Rogue,Priest; race=Dwarf]
 turnin 312 Tundra MacGrann's Stolen Stash [race=Gnome]
-complete Operation Recombobulation | Leper Gnomes at the Gnomeregan entrance and the tunnel west of Kharanos.
-turnin Operation Recombobulation
 turnin Return to Marleth
-turnin Ammo for Rumbleshot | Hegnar Rumbleshot's camp at the lake east of Kharanos.
+turnin The Perfect Stout
+accept Shimmer Stout
+turnin 6086 Training the Beast [class=Hunter; race=Dwarf] | Turned in at Ironforge.
 accept Protecting the Herd | Rudra Amberstill at the Amberstill Ranch.
-accept Those Blasted Troggs! | Foreman Stonebrow, Gol'Bolar Quarry.
+complete Protecting the Herd | Vagash is a wandering yeti on the hill above the ranch.
+turnin Protecting the Herd
 accept The Public Servant
+accept Those Blasted Troggs! | Foreman Stonebrow, Gol'Bolar Quarry.
 complete Those Blasted Troggs! | Troggs in the quarry.
 complete The Public Servant | Troggs inside the quarry mine.
 turnin Those Blasted Troggs!
 turnin The Public Servant
-complete Protecting the Herd | Vagash is a wandering yeti on the hill above the ranch.
-turnin Protecting the Herd
+turnin The Reports [optional] | Senator Barin Redstone in Ironforge - do it if you go to Ironforge to train.
+turnin Shimmer Stout | Mountaineer Barleybrew guards the tunnel to Loch Modan.
+accept Stout to Kadrell
 accept The Lost Pilot | Pilot Hammerfoot, near the North Gate Pass.
 turnin The Lost Pilot
 accept A Pilot's Revenge
 complete A Pilot's Revenge | Mangeclaw prowls nearby.
 turnin A Pilot's Revenge
-turnin Shimmer Stout | Mountaineer Barleybrew guards the tunnel to Loch Modan.
-accept Stout to Kadrell
-turnin The Reports [optional] | Senator Barin Redstone in Ironforge - do it if you go to Ironforge to train.
 level 11
 note Go through the South Gate tunnel into Loch Modan.

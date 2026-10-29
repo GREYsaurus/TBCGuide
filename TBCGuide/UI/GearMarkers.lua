@@ -13,8 +13,11 @@
 local _, ns = ...
 
 -- Overlay textures by button, kept outside the button table (bag buttons belong to Blizzard's UI).
+-- external: buttons of bag add-ons (UI/BagAdapters.lua) -> function returning bag, slot (or nil
+-- when the button shows something other than the player's own bags: bank, offline characters).
 local M = { marks = {}, junk = {}, queue = {}, overlays = setmetatable({}, { __mode = "k" }),
-            coins = setmetatable({}, { __mode = "k" }), vendor = {} }
+            coins = setmetatable({}, { __mode = "k" }), vendor = {}, external = setmetatable({}, { __mode = "k" }),
+            tipOnly = setmetatable({}, { __mode = "k" }) } -- buttons whose add-on draws the marker itself (Baganator)
 ns.GearMarkers = M
 
 local function prof() return ns.db.profile end
@@ -38,9 +41,10 @@ function M:Update(list)
     -- Junk indicator: the same items the inventory manager would sell.
     self.junk = {}
     if prof().junkIndicator and prof().inventoryManager and ns.Vendor then
-        for _, j in ipairs(ns.Vendor:Scan()) do self.junk[j.bag .. ":" .. j.slot] = true end
+        for _, j in ipairs(ns.Vendor:Scan()) do self.junk[j.bag .. ":" .. j.slot] = j.itemID or true end
     end
     self:RefreshAll()
+    if ns.BagAdapters then ns.BagAdapters:Refresh() end
 end
 
 local function coin(button)
@@ -67,41 +71,69 @@ local function overlay(button)
     return t
 end
 
--- Marks one bag frame's buttons; clears every button whose bag/slot has no current mark, so a
--- reused button never keeps a stale icon.
+-- The one place markers are drawn, for the default bags and every bag add-on. `bag`/`slot` = the
+-- player-bag slot the button shows, or nil (bank, offline character, empty): then nothing is shown.
+-- A mark only shows while the slot still holds the item it was computed for, so a moved or
+-- recycled button never keeps a stale icon. Both markers can show at once (arrow top left, coin
+-- bottom left); neither hides the other.
+function M:Decorate(b, bag, slot, shown)
+    local key = (bag and slot) and (bag .. ":" .. slot) or nil
+    local e = key and self.marks[key]
+    local j = key and self.junk[key]
+    if (e or j) and key then
+        local cur = ns.Compat.GetContainerItem(bag, slot)
+        local id = cur and cur.itemID
+        if e and e.item.id ~= id then e = nil end
+        if j and j ~= true and j ~= id then j = nil end
+    end
+    if j and shown ~= false then
+        local c = coin(b)
+        if c then c:Show() end
+    elseif self.coins[b] then
+        self.coins[b]:Hide()
+    end
+    if e and shown ~= false then
+        local t = overlay(b)
+        if t then t:Show() end
+    elseif self.overlays[b] then
+        self.overlays[b]:Hide()
+    end
+end
+
+-- Default bag frames.
 function M:RefreshFrame(frame)
     if not frame or not frame.GetID or not frame.GetName then return end
     local name, bag = frame:GetName(), frame:GetID()
     if not name or not bag then return end
+    local shown = frame.IsShown and frame:IsShown()
+    local own = bag >= 0 and bag <= ns.Compat.NUM_BAGS
     for i = 1, frame.size or 36 do
         local b = _G[name .. "Item" .. i]
         if not b then break end
-        local key = bag .. ":" .. (b.GetID and b:GetID() or i)
-        local e = self.marks[key]
-        local shown = frame.IsShown and frame:IsShown()
-        if self.junk[key] and shown then
-            local c = coin(b)
-            if c then c:Show() end
-        elseif self.coins[b] then
-            self.coins[b]:Hide()
-        end
-        if e and shown then
-            local t = overlay(b)
-            if t then t:Show() end
-        elseif self.overlays[b] then
-            self.overlays[b]:Hide()
-        end
+        self:Decorate(b, own and bag or nil, b.GetID and b:GetID() or i, shown)
     end
+end
+
+-- A bag add-on's button (adapter supplies how to read its bag/slot).
+function M:RegisterButton(b, resolve)
+    self.external[b] = resolve
+    local ok, bag, slot = pcall(resolve, b)
+    self:Decorate(b, ok and bag or nil, ok and slot or nil, b.IsVisible and b:IsVisible() or nil)
 end
 
 function M:RefreshAll()
     for i = 1, NUM_CONTAINER_FRAMES or self.MAX_FRAMES do self:RefreshFrame(_G["ContainerFrame" .. i]) end
+    for b, resolve in pairs(self.external) do
+        local ok, bag, slot = pcall(resolve, b)
+        self:Decorate(b, ok and bag or nil, ok and slot or nil, b.IsVisible and b:IsVisible() or nil)
+    end
 end
 
 -- Tooltip lines for a bag slot (marker details for BoE items, the upgrade verdict for others).
-function M:TooltipLines(bag, slot)
+function M:TooltipLines(bag, slot, itemID)
     local e = ns.Upgrade.last[bag .. ":" .. slot]
     if not e or not e.ok or not e.kind then return nil end
+    if itemID and e.item.id ~= itemID then return nil end -- the slot holds something else now
     local p = ns.Upgrade:ActiveProfile()
     if not p then return nil end
     local lines = {}
@@ -129,11 +161,23 @@ end
 function M:AddToTooltip(tt)
     if not prof().gearEnabled or not tt.GetOwner then return end
     local owner = tt:GetOwner()
-    local parent = owner and owner.GetParent and owner:GetParent()
-    if not (owner and parent and owner.GetID and parent.GetID) then return end
-    local pname = parent.GetName and parent:GetName()
-    if not (pname and string.find(pname, "^ContainerFrame%d+$")) then return end
-    local lines = self:TooltipLines(parent:GetID(), owner:GetID())
+    if not owner then return end
+    local bag, slot
+    local resolve = self.external[owner] or self.tipOnly[owner]
+    if resolve then
+        local ok, b, s = pcall(resolve, owner)
+        if ok then bag, slot = b, s end
+    else
+        local parent = owner.GetParent and owner:GetParent()
+        if not (parent and owner.GetID and parent.GetID) then return end
+        local pname = parent.GetName and parent:GetName()
+        if not (pname and string.find(pname, "^ContainerFrame%d+$")) then return end
+        bag, slot = parent:GetID(), owner:GetID()
+        if bag < 0 or bag > ns.Compat.NUM_BAGS then return end
+    end
+    if not (bag and slot) then return end
+    local _, link = tt:GetItem()
+    local lines = self:TooltipLines(bag, slot, link and tonumber(string.match(link, "item:(%d+)")))
     for _, l in ipairs(lines or {}) do tt:AddLine(l[1], l[2][1], l[2][2], l[2][3]) end
 end
 
@@ -217,7 +261,7 @@ function M:ScanMerchant()
         local link = GetMerchantItemLink(i)
         local d = link and ns.Gear:ItemData(link)
         if d and ns.Gear:IsEquippable(d) then
-            d.tip = ns.Upgrade:Classify(ns.Upgrade.ScanLines("merchant", i))
+            d.tip = ns.Upgrade:Classify(ns.Upgrade.ScanLines("merchant", i), d)
             local e = ns.Upgrade:Evaluate(d, ctx)
             if e.ok and (e.kind == "empty" or (e.kind == "upgrade" and not e.uncertain)) then
                 self.vendor[i] = e

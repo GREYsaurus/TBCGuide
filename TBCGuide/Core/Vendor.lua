@@ -96,6 +96,17 @@ function Vendor:Classify(item, info, guideItems, isQuestSlot)
     return true
 end
 
+-- Whether the item in a player-bag slot is junk by TBCGuide's rules (grey or on the junk list, and
+-- not a quest, guide-needed or protected item). Used by the bag markers and bag add-on plugins.
+function Vendor:IsJunkAt(bag, slot)
+    local C = ns.Compat
+    local item = C.GetContainerItem(bag, slot)
+    if not item or not item.itemID then return false end
+    local info = C.GetItemInfo(item.itemID or item.link)
+    if not info then return nil end -- not loaded yet: unknown, not "not junk"
+    return (self:Classify(item, info, self:GuideItems(), C.ContainerItemIsQuestItem(bag, slot))) and true or false
+end
+
 -- Builds the list of bag slots to sell now.
 function Vendor:Scan()
     local C = ns.Compat

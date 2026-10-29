@@ -55,7 +55,7 @@ function CF:Changed(it)
     if ns.MinimapButton then ns.MinimapButton:Update() end
     if ns.Marker and ns.Marker.gen then ns.Marker:OnRefresh() end
     if ns.AutoEquip and ns.db then ns.AutoEquip:Schedule() end -- re-evaluate upgrades and bag markers
-    for _, m in ipairs({ "ActiveItems", "ActiveTargets", "LevelTracker", "MapExtras" }) do
+    for _, m in ipairs({ "ActiveItems", "ActiveTargets", "LevelTracker", "MapExtras", "AHUpgrades" }) do
         local mod = ns[m]
         if mod and ns.db then pcall(mod.Update or mod.Refresh, mod) end
     end
@@ -221,7 +221,7 @@ function build.button(page, it, x, y, w)
     local b = W.Button(page, it.label, w - 8, 26, function() if not it.planned then it.func() CF:SyncAll() end end)
     b:SetPoint("TOPLEFT", page, "TOPLEFT", x, y - 2)
     if it.planned then b:Disable() tooltip(b, it.label, PLANNED) elseif it.tip then tooltip(b, it.label, it.tip) end
-    return { height = 34, frame = b, sync = function() if it.disabled then if it.disabled() then b:Disable() else b:Enable() end end end }
+    return { height = 34, frame = b, item = it, sync = function() if it.disabled then if it.disabled() then b:Disable() else b:Enable() end end end }
 end
 
 function build.input(page, it, x, y, w)

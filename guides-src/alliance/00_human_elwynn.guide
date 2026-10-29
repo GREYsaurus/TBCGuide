@@ -23,22 +23,22 @@ complete Kobold Camp Cleanup | Kobold Vermin are in the camp just north-west of 
 complete Wolves Across the Border | Kill wolves around the valley for Tough Wolf Meat.
 turnin Wolves Across the Border
 turnin Kobold Camp Cleanup
+accept Investigate Echo Ridge
 accept 3100 Simple Letter [class=Warrior]
 accept 3101 Consecrated Letter [class=Paladin]
 accept 3102 Encrypted Letter [class=Rogue]
 accept 3103 Hallowed Letter [class=Priest]
 accept 3104 Glyphic Letter [class=Mage]
 accept 3105 Tainted Letter [class=Warlock]
-accept Investigate Echo Ridge
 accept Brotherhood of Thieves
 accept Milly Osworth
+turnin 3105 Tainted Letter [class=Warlock]
+accept 1598 The Stolen Tome [class=Warlock] | Drusilla La Salle.
 turnin 3100 Simple Letter [class=Warrior]
 turnin 3101 Consecrated Letter [class=Paladin]
 turnin 3102 Encrypted Letter [class=Rogue]
 turnin 3103 Hallowed Letter [class=Priest]
 turnin 3104 Glyphic Letter [class=Mage]
-turnin 3105 Tainted Letter [class=Warlock]
-accept 1598 The Stolen Tome [class=Warlock] | Drusilla La Salle.
 train | Learn your level 2-4 abilities while you are here.
 turnin Milly Osworth
 accept Milly's Harvest
@@ -56,48 +56,45 @@ complete 1598 The Stolen Tome [class=Warlock] | The Stolen Books are at the same
 complete Skirmish at Echo Ridge | Kill Kobold Laborers inside Echo Ridge Mine.
 turnin Bounty on Garrick Padfoot
 turnin Skirmish at Echo Ridge
+accept Report to Goldshire
 turnin Grape Manifest | Brother Neals is at the top of the abbey bell tower.
 turnin 1598 The Stolen Tome [class=Warlock]
-accept Report to Goldshire
 train | Level 4 abilities.
 accept Rest and Relaxation | Falkhaan Isenstrider stands on the road south of the valley.
 turnin Report to Goldshire
 accept The Fargodeep Mine
+accept 5624 Garments of the Light [class=Priest] | Needs level 5. If you are lower, TBCGuide skips it and moves on.
 turnin Rest and Relaxation
-accept 5624 Garments of the Light [class=Priest]
 bind Goldshire
 accept Kobold Candles
 accept Gold Dust Exchange
 complete 5624 Garments of the Light [class=Priest]
 accept A Fishy Peril
 train | Visit your trainer in Goldshire when you reach level 6.
-turnin A Fishy Peril
-accept Further Concerns
-accept Lost Necklace | "Auntie" Bernice Stonefield is at the Stonefield Farm, south-west of Goldshire.
-accept Princess Must Die!
-complete The Fargodeep Mine | Explore the Fargodeep Mine entrance south of the farms.
+accept 5635 Desperate Prayer [class=Priest; optional] | Needs level 10. If you are lower, TBCGuide skips it and moves on.
 complete Kobold Candles | Kobolds in and around Fargodeep Mine.
+turnin Kobold Candles
+complete The Fargodeep Mine | Explore the Fargodeep Mine entrance south of the farms.
+turnin The Fargodeep Mine
+accept Lost Necklace | "Auntie" Bernice Stonefield is at the Stonefield Farm, south-west of Goldshire.
 complete Gold Dust Exchange | Same kobolds; collect Gold Dust.
 turnin Lost Necklace | Billy Maclure is at the Maclure Vineyards.
 accept Pie for Billy
-accept Young Lovers
 complete Pie for Billy | Kill boars around the farms for Chunks of Boar Meat.
 turnin Pie for Billy
 accept Back to Billy
-turnin Young Lovers | Tommy Joe Stonefield is by the stream west of the Stonefield Farm.
-accept Speak with Gramma
-turnin Speak with Gramma
-accept Note to William
 turnin Back to Billy
 accept Goldtooth
+accept Young Lovers
+turnin Young Lovers | Tommy Joe Stonefield is by the stream west of the Stonefield Farm.
+accept Speak with Gramma
 complete Goldtooth | Goldtooth is deep inside Fargodeep Mine (lower level).
 turnin Goldtooth
+accept Princess Must Die!
 complete Princess Must Die! | Princess is in the Brackwell Pumpkin Patch, south-east of the farms. Bring a friend if you are under level 8.
 turnin Princess Must Die!
-turnin The Fargodeep Mine
-accept The Jasperlode Mine
-turnin Kobold Candles
-accept 61 Shipment to Stormwind
+turnin Speak with Gramma
+accept Note to William
 turnin Gold Dust Exchange
 turnin Note to William
 accept Collecting Kelp
@@ -105,7 +102,11 @@ turnin 5624 Garments of the Light [class=Priest]
 complete Collecting Kelp | Murlocs at Crystal Lake east of Goldshire drop Crystal Kelp Fronds.
 turnin Collecting Kelp
 accept The Escape
-turnin The Escape | Maybell Maclure is at the Maclure Vineyards.
+accept 61 Shipment to Stormwind
+accept The Jasperlode Mine
+turnin A Fishy Peril
+accept Further Concerns
+accept 1685 Gakin's Summons [class=Warlock; optional] | Needs level 10. If you are lower, TBCGuide skips it and moves on.
 complete The Jasperlode Mine | Explore the Jasperlode Mine, north-east of Goldshire.
 turnin Further Concerns | Guard Thomas is on the bridge to Eastvale.
 accept Find the Lost Guards
@@ -115,45 +116,44 @@ turnin Find the Lost Guards
 accept Discover Rolf's Fate
 turnin Discover Rolf's Fate
 accept Report to Thomas
+accept A Bundle of Trouble
 complete Bounty on Murlocs | Murlocs along the river north of the bridge.
 complete Protect the Frontier | Prowlers and young forest bears in Eastvale.
-turnin Report to Thomas
-accept Deliver Thomas' Report
-accept 184 Furlbrow's Deed [optional]
-turnin Bounty on Murlocs
-turnin Protect the Frontier
 accept Red Linen Goods | Sara Timberlain is at the Eastvale Logging Camp.
-accept A Bundle of Trouble
 complete Red Linen Goods | Defias around the Eastvale farms drop Red Linen Bandanas.
 complete A Bundle of Trouble | Collect Bundles of Wood near the trees of the logging camp.
 turnin Red Linen Goods
-turnin A Bundle of Trouble
+turnin Bounty on Murlocs
+turnin Protect the Frontier
+turnin Report to Thomas
+accept Deliver Thomas' Report
+accept 184 Furlbrow's Deed [optional]
+turnin 184 Furlbrow's Deed [optional] | Turned in at Westfall.
+turnin The Escape | Maybell Maclure is at the Maclure Vineyards.
 turnin Deliver Thomas' Report
 accept Cloth and Leather Armor
 turnin The Jasperlode Mine
 accept Westbrook Garrison Needs Help!
+accept Report to Gryan Stoutmantle | From Marshal Dughan in Goldshire.
+accept 1097 Elmore's Task
+accept 1638 A Warrior's Training [class=Warrior; optional] | Needs level 10. If you are lower, TBCGuide skips it and moves on.
+accept Wanted: "Hogger" [elite; group=3] | The poster is next to Deputy Rainer. Hogger is level 11 elite - group up or skip.
 turnin Westbrook Garrison Needs Help! | Deputy Rainer is at the Westbrook Garrison, west Elwynn.
 accept Riverpaw Gnoll Bounty
-accept Wanted: "Hogger" [elite; group=3] | The poster is next to Deputy Rainer. Hogger is level 11 elite - group up or skip.
 accept 123 The Collector [optional]
 complete Riverpaw Gnoll Bounty | Gnolls south of the garrison drop Painted Gnoll Armbands.
 turnin Riverpaw Gnoll Bounty
-turnin 184 Furlbrow's Deed [optional]
 complete Wanted: "Hogger" [elite; group=3; optional]
+accept 1665 Bartleby's Mug [class=Warrior] | Needs level 10. If you are lower, TBCGuide skips it and moves on.
+turnin 1665 Bartleby's Mug [class=Warrior] | Turned in at Stormwind City.
+turnin A Bundle of Trouble
+turnin Cloth and Leather Armor | Return to Sara Timberlain only if you are passing Eastvale; otherwise skip.
 turnin Wanted: "Hogger" [optional]
 turnin 123 The Collector [class=Warrior,Paladin,Rogue,Priest,Mage; optional]
 turnin 123 The Collector [class=Warlock; optional]
 accept 147 Manhunt [class=Warlock; optional]
-complete 147 Manhunt [class=Warlock; optional]
+complete 147 Manhunt [class=Warlock; optional] | The Collector's Ring drops from Morgan the Collector.
 turnin 147 Manhunt [class=Warlock; optional]
-turnin Cloth and Leather Armor | Return to Sara Timberlain only if you are passing Eastvale; otherwise skip.
-accept 1665 Bartleby's Mug [class=Warrior]
-turnin 1665 Bartleby's Mug [class=Warrior]
-accept Report to Gryan Stoutmantle | From Marshal Dughan in Goldshire.
-accept 1097 Elmore's Task
-accept 1685 Gakin's Summons [class=Warlock; optional]
-accept 5635 Desperate Prayer [class=Priest; optional]
-accept 1638 A Warrior's Training [class=Warrior; optional]
 grind 10 Riverpaw Outrunner, Riverpaw Runt @ south of Westbrook Garrison [at=27.8,81.2] | Only if you are short of level 10: keep killing the bounty gnolls until you ding.
 train | Level 10 training (warriors: defensive stance quest; warlocks: Voidwalker quest).
 note Head west on the road into Westfall.

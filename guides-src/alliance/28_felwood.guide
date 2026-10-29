@@ -10,30 +10,30 @@
 @desc Emerald Sanctuary, Jaedenar, the corrupted moonwells and Talonbranch Glade.
 @next A_BurningSteppes
 
-accept Forces of Jaedenar | Greta Mosshoof, Emerald Sanctuary.
-accept Verifying the Corruption | Taronn Redfeather.
-accept Cleansing Felwood | Arathandris Silversky.
+accept Deadwood of the North | Nafien.
+complete Deadwood of the North | Deadwood furbolgs in northern Felwood.
+turnin Deadwood of the North
 accept The Corruption of the Jadefire | Eridan Bluewind.
-complete Forces of Jaedenar | Jaedenar cultists.
-turnin Forces of Jaedenar
-accept Collection of the Corrupt Water
-complete Collection of the Corrupt Water | Fill the vessel at the corrupted moonwell in Jaedenar.
-turnin Collection of the Corrupt Water
-complete Verifying the Corruption | Explore the area north of Shatter Scar Vale.
-turnin Verifying the Corruption
 complete The Corruption of the Jadefire | Jadefire satyrs at Jadefire Glen.
 turnin The Corruption of the Jadefire
 accept Further Corruption
 complete Further Corruption | Xavathras, Jadefire Glen.
 turnin Further Corruption
-complete Cleansing Felwood | Cenarion Plant Salve - gather from Felwood.
-turnin Cleansing Felwood
+accept Verifying the Corruption | Taronn Redfeather.
+complete Verifying the Corruption | Explore the area north of Shatter Scar Vale.
+turnin Verifying the Corruption
+accept Forces of Jaedenar | Greta Mosshoof, Emerald Sanctuary.
+complete Forces of Jaedenar | Jaedenar cultists.
+turnin Forces of Jaedenar
+accept Collection of the Corrupt Water
+complete Collection of the Corrupt Water | Fill the vessel at the corrupted moonwell in Jaedenar.
+turnin Collection of the Corrupt Water
 fp Talonbranch Glade
 accept Timbermaw Ally | Grazle, Timbermaw Hold area.
-accept Deadwood of the North | Nafien.
-complete Deadwood of the North | Deadwood furbolgs in northern Felwood.
-turnin Deadwood of the North
 turnin Timbermaw Ally
+accept Cleansing Felwood | Arathandris Silversky.
+complete Cleansing Felwood | Cenarion Plant Salve - gather from Felwood.
+turnin Cleansing Felwood
 level 54
 train
 note Seeking Spiritual Aid continues in Winterspring - optional. Fly to Ironforge, then to Morgan's Vigil in the Burning Steppes.

@@ -23,26 +23,31 @@ accept Rescue the Survivors!
 accept Botanist Taerix | From Proenitus.
 turnin Botanist Taerix
 accept Volatile Mutations
-accept Inoculation | Vindicator Aldar.
-accept Spare Parts | Technician Zhanaa.
 complete Rescue the Survivors! | Use the Gift of the Naaru racial on the injured draenei around the vale.
 complete Volatile Mutations | Volatile Mutations east of the crash site.
-turnin Rescue the Survivors!
 turnin Volatile Mutations
 accept What Must Be Done...
+accept 9421 Shaman Training [class=Shaman]
+accept Spare Parts | Technician Zhanaa.
+accept Inoculation | Vindicator Aldar.
+accept 9288 Hunter Training [class=Hunter]
+turnin Rescue the Survivors!
+accept 9291 Priest Training [class=Priest]
+accept 9287 Paladin Training [class=Paladin]
 accept Botanical Legwork
 complete Spare Parts | Emitter spare parts on the ground in the vale.
 complete Inoculation | Use the inoculating crystal on Nestlewood Owlkins.
 complete What Must Be Done... | Mutated Root Lashers at the lake.
 complete Botanical Legwork | Corrupted Flowers.
-turnin What Must Be Done...
 turnin Botanical Legwork
+turnin What Must Be Done...
 accept Healing the Lake
+complete Healing the Lake | Use the Pure Energy at the lake.
+turnin Healing the Lake
+accept 9290 Mage Training [class=Mage]
 turnin Spare Parts
 turnin Inoculation
 accept The Missing Scout
-complete Healing the Lake | Use the Pure Energy at the lake.
-turnin Healing the Lake
 turnin The Missing Scout | Tolaan, south-west of the vale.
 accept The Blood Elves
 complete The Blood Elves | Blood elf scouts west of the crash site.
@@ -56,153 +61,148 @@ accept The Emitter
 turnin The Emitter
 accept Travel to Azure Watch
 accept 9289 Warrior Training [class=Warrior] | From your class trainer at the crash site (level 2).
-accept 9287 Paladin Training [class=Paladin]
-accept 9288 Hunter Training [class=Hunter]
-accept 9291 Priest Training [class=Priest]
-accept 9421 Shaman Training [class=Shaman]
-accept 9290 Mage Training [class=Mage]
 train | Trainers at the crash site.
+turnin 9290 Mage Training [class=Mage]
+turnin 9421 Shaman Training [class=Shaman]
+accept 9449 Call of Earth [class=Shaman] | Firmanvaar (level 4).
 turnin 9289 Warrior Training [class=Warrior]
-turnin 9287 Paladin Training [class=Paladin]
 turnin 9288 Hunter Training [class=Hunter]
 turnin 9291 Priest Training [class=Priest]
-turnin 9421 Shaman Training [class=Shaman]
-turnin 9290 Mage Training [class=Mage]
-accept 9449 Call of Earth [class=Shaman] | Firmanvaar (level 4).
+turnin 9287 Paladin Training [class=Paladin]
 turnin 9449 Call of Earth [class=Shaman] | Spirit of the Vale at the Sacred Grove, north-west of the crash site.
 accept 9450 Call of Earth [class=Shaman]
 complete 9450 Call of Earth [class=Shaman] | Restless Spirits of Earth around the grove.
 turnin 9450 Call of Earth [class=Shaman]
 accept 9451 Call of Earth [class=Shaman]
 turnin 9451 Call of Earth [class=Shaman] | Back to Firmanvaar for your Earth Totem.
-turnin Travel to Azure Watch | Technician Dyvuun, Azure Watch.
-accept Red Snapper - Very Tasty! | Diktynna, on the beach.
-accept 9612 A Hearty Thanks! [optional]
 accept 9455 Strange Findings [optional]
 accept Word from Azure Watch [optional]
+accept Red Snapper - Very Tasty! | Diktynna, on the beach.
+accept 9612 A Hearty Thanks! [optional] | Needs level 8. If you are lower, TBCGuide skips it and moves on.
+accept Learning the Language | Cryptographer Aurren.
 accept Medicinal Purpose | Anchorite Fateema, Azure Watch.
 turnin 9612 A Hearty Thanks! [optional]
 turnin 9455 Strange Findings [optional]
 accept 9456 Nightstalker Clean Up, Isle 2... [optional]
-turnin Word from Azure Watch [optional] | Caregiver Chellan, the Azure Watch inn.
+turnin Travel to Azure Watch | Technician Dyvuun, Azure Watch.
 accept 9586 Help Tavara [class=Priest]
-accept Learning the Language | Cryptographer Aurren.
+turnin Word from Azure Watch [optional] | Caregiver Chellan, the Azure Watch inn.
 bind Azure Watch
-complete Red Snapper - Very Tasty!
-turnin Red Snapper - Very Tasty!
-accept Find Acteon!
-turnin Find Acteon!
-accept 9454 The Great Moongraze Hunt
 complete Medicinal Purpose | Skittering Crawlers drop Skittering Crawler Meat.
-complete 9586 Help Tavara [class=Priest]
 turnin Medicinal Purpose
 accept An Alternative Alternative
-accept 10428 The Missing Fisherman
-complete 9454 The Great Moongraze Hunt | Moongraze Stags.
-turnin 9454 The Great Moongraze Hunt
-accept 10324 The Great Moongraze Hunt
 complete An Alternative Alternative | Azure Snapdragon bulbs around the trees.
 turnin An Alternative Alternative
 complete Learning the Language
-turnin Learning the Language
-accept Totem of Coo
-turnin 9586 Help Tavara [class=Priest]
+complete Red Snapper - Very Tasty!
+accept 9454 The Great Moongraze Hunt
+complete 9454 The Great Moongraze Hunt | Moongraze Stags.
+turnin 9454 The Great Moongraze Hunt
+accept 10324 The Great Moongraze Hunt
 complete 10324 The Great Moongraze Hunt
 turnin 10324 The Great Moongraze Hunt
-accept A Small Start | Admiral Odesyus, Odesyus' Landing (south coast).
 accept Cookie's Jumbo Gumbo
+accept A Small Start | Admiral Odesyus, Odesyus' Landing (south coast).
 complete A Small Start
 complete Cookie's Jumbo Gumbo | Skittering Crawlers.
 turnin A Small Start
 accept I've Got a Plant
 complete I've Got a Plant
-turnin Cookie's Jumbo Gumbo
 turnin I've Got a Plant
 accept Tree's Company
-accept Reclaiming the Ruins
+turnin Cookie's Jumbo Gumbo
 accept Precious and Fragile Things Need Special Handling
+accept Reclaiming the Ruins
 complete Reclaiming the Ruins | Wrathscale naga at the ruins.
 complete Precious and Fragile Things Need Special Handling | Ancient relics at the ruins.
 turnin Reclaiming the Ruins
 accept 9515 Warlord Sriss'tiz
 turnin Precious and Fragile Things Need Special Handling
+turnin Red Snapper - Very Tasty!
+accept Find Acteon!
+turnin Learning the Language
+accept Totem of Coo
+accept 10428 The Missing Fisherman
 complete Tree's Company
 turnin 10428 The Missing Fisherman
-accept 9527 All That Remains
-complete 9527 All That Remains
-turnin 9527 All That Remains
-turnin Tree's Company
-accept Show Gnomercy
-complete Show Gnomercy
-turnin Show Gnomercy
-accept Deliver Them From Evil...
 complete 9515 Warlord Sriss'tiz [class=Warrior,Paladin,Priest,Shaman,Mage]
+complete 9515 Warlord Sriss'tiz [class=Hunter]
 turnin Totem of Coo | Follow the totem chain across the isle.
 accept Totem of Tikti
 turnin Totem of Tikti
 accept Totem of Yor
 turnin Totem of Yor
 accept Totem of Vark
+accept 9527 All That Remains
+complete 9527 All That Remains | Remains of Cowlen's Family drops from Aberrant Owlbeast and Deranged Owlbeast.
+turnin 9527 All That Remains
+turnin Tree's Company
+accept Show Gnomercy
+complete Show Gnomercy
+turnin Show Gnomercy
+accept Deliver Them From Evil...
 turnin Totem of Vark
 accept The Prophecy of Akida
 complete The Prophecy of Akida | Free the Stillpine captives at the Bristlelimb furbolg camps.
 complete 9456 Nightstalker Clean Up, Isle 2... [optional]
 turnin The Prophecy of Akida | Arugoo of the Stillpine, Stillpine Hold.
 accept Stillpine Hold
-turnin 9456 Nightstalker Clean Up, Isle 2... [optional]
+complete 9586 Help Tavara [class=Priest]
+turnin 9586 Help Tavara [class=Priest]
 turnin Stillpine Hold
-accept Beasts of the Apocalypse!
 accept Murlocs... Why Here? Why Now?
+accept Beasts of the Apocalypse!
 complete Beasts of the Apocalypse! | Ravagers south of Stillpine Hold.
 complete Murlocs... Why Here? Why Now? | Murlocs at the lake by the hold.
 accept 9564 Gurf's Dignity
 turnin Beasts of the Apocalypse!
 turnin Murlocs... Why Here? Why Now?
-accept 9616 Bandits! [optional]
-turnin 9616 Bandits! [optional]
+accept Search Stillpine Hold
+turnin Search Stillpine Hold
+accept Blood Crystals
 accept Chieftain Oomooroo
 complete Chieftain Oomooroo | Inside Stillpine Hold.
 turnin Chieftain Oomooroo
 accept 9570 The Kurken is Lurkin'
-complete 9570 The Kurken is Lurkin'
+complete 9570 The Kurken is Lurkin' | The Kurken's Hide drops from The Kurken.
 turnin 9570 The Kurken is Lurkin'
 accept 9571 The Kurken's Hide
-turnin 9571 The Kurken's Hide
-accept Search Stillpine Hold
-turnin Search Stillpine Hold
-accept Blood Crystals
 turnin Blood Crystals
 accept 9622 Warn Your People [class=Shaman]
+turnin 9571 The Kurken's Hide
+accept 9582 Strength of One [class=Warrior; optional]
+turnin Find Acteon!
+accept 9757 Seek Huntress Kella Nightbow [class=Hunter]
+accept 9464 Call of Fire [class=Shaman; optional]
+turnin 9456 Nightstalker Clean Up, Isle 2... [optional]
+accept 9616 Bandits! [optional]
+turnin 9616 Bandits! [optional]
 turnin 9622 Warn Your People [class=Shaman]
 turnin Deliver Them From Evil...
 accept 9623 Coming of Age
-accept 9464 Call of Fire [class=Shaman; optional]
-accept 9757 Seek Huntress Kella Nightbow [class=Hunter]
-accept 9582 Strength of One [class=Warrior; optional]
 turnin 9757 Seek Huntress Kella Nightbow [class=Hunter]
-accept 9591 Taming the Beast [class=Hunter]
-complete 9591 Taming the Beast [class=Hunter]
-complete 9515 Warlord Sriss'tiz [class=Hunter]
+accept 9591 Taming the Beast [class=Hunter] | Escort quest: start it when you are ready to follow.
+complete 9591 Taming the Beast [class=Hunter] | Escort: stay close; it fails if the NPC dies.
 turnin 9591 Taming the Beast [class=Hunter]
-accept 9592 Taming the Beast [class=Hunter]
-turnin 9623 Coming of Age
-accept 9625 Elekks Are Serious Business [optional]
-complete 9592 Taming the Beast [class=Hunter]
+accept 9592 Taming the Beast [class=Hunter] | Escort quest: start it when you are ready to follow.
+complete 9592 Taming the Beast [class=Hunter] | Escort: stay close; it fails if the NPC dies.
 turnin 9592 Taming the Beast [class=Hunter]
-accept 9593 Taming the Beast [class=Hunter]
-complete 9593 Taming the Beast [class=Hunter]
+accept 9593 Taming the Beast [class=Hunter] | Escort quest: start it when you are ready to follow.
+complete 9593 Taming the Beast [class=Hunter] | Escort: stay close; it fails if the NPC dies.
 turnin 9593 Taming the Beast [class=Hunter]
 accept 9675 Beast Training [class=Hunter]
-turnin 9675 Beast Training [class=Hunter]
+turnin 9675 Beast Training [class=Hunter] | Turned in at The Exodar.
 turnin 9464 Call of Fire [class=Shaman; optional]
 accept 9465 Call of Fire [class=Shaman]
 complete 9582 Strength of One [class=Warrior; optional]
-complete 9465 Call of Fire [class=Shaman]
+complete 9465 Call of Fire [class=Shaman] | Ritual Torch drops from Crazed Wildkin.
 turnin 9465 Call of Fire [class=Shaman]
 accept 9467 Call of Fire [class=Shaman]
-complete 9467 Call of Fire [class=Shaman]
+complete 9467 Call of Fire [class=Shaman] | Hauteur's Ashes drops from Hauteur.
 turnin 9467 Call of Fire [class=Shaman]
 accept 9468 Call of Fire [class=Shaman; optional]
+turnin 9623 Coming of Age | Turned in at The Exodar.
+accept 9625 Elekks Are Serious Business [optional]
 level 10
 train
 note Head north over the bridge at Wrathscale Point into Bloodmyst Isle.

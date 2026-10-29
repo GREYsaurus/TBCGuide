@@ -5,6 +5,7 @@ Players never run any of this. The released add-on already contains the generate
 ```
 tools/upstream.json  --fetch-->  .cache/  --import-questie-->  TBCGuide/Database/QuestieTBC/*.lua
                                           --import-client--->  TBCGuide/Talents/Data/TalentTrees.lua
+                                                               TBCGuide/Classes/TrainingData.lua
                                                                TBCGuide/Database/RaceClass.lua
 guides-src/*.guide  --guides (uses the generated DB)-->  TBCGuide/Guides/Compiled/*.lua
 ```
@@ -62,6 +63,7 @@ If quests changed upstream, the guide compiler reports any guide step whose ques
 | `Database/QuestieTBC/Npcs.lua`, `Objects.lua`, `Items.lua` | QuestieDB TBC entity tables | `QuestieImport.cs` |
 | `Database/QuestieTBC/Zones.lua` | QuestieDB `support/Zones/*` | `QuestieImport.cs` |
 | `Talents/Data/TalentTrees.lua` | client DB2 `Talent`, `TalentTab`, `SpellName` | `ClientTables.cs` |
+| `Classes/TrainingData.lua` | client DB2 `SkillLine`, `SkillRaceClassInfo`, `SkillLineAbility`, `SpellLevels`, `Spell`, `SpellName`, `Talent` | `TrainingTables.cs` (rules: docs/TRAINER.md) |
 | `Database/RaceClass.lua` | client DB2 `CharBaseInfo`, `ChrRaces` | `ClientTables.cs` |
 | `Guides/Compiled/*.lua` | `guides-src/*.guide` + the files above | `GuideCompiler.cs` |
 

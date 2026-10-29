@@ -104,6 +104,25 @@ function W.Movable(f, key, handle)
     end
 end
 
+-- Changes a movable frame's scale without moving it on screen: the bottom-left corner stays put,
+-- and the saved position (ns.db.frames[key]) is rewritten in the new scale's units.
+function W.Rescale(f, key, scale)
+    scale = scale or 1
+    local old = f:GetScale() or 1
+    if math.abs(old - scale) < 0.001 then return end
+    local left, bottom = f:GetLeft(), f:GetBottom()
+    f:SetScale(scale)
+    if type(left) ~= "number" or type(bottom) ~= "number" then return end
+    local x, y = left * old / scale, bottom * old / scale
+    f:ClearAllPoints()
+    f:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", x, y)
+    if key and ns.db and ns.db.frames then
+        local rec = ns.db.frames[key] or {}
+        rec.point, rec.x, rec.y = "BOTTOMLEFT", x, y
+        ns.db.frames[key] = rec
+    end
+end
+
 -- Hover/press feedback through HookScript, so callers can still set their own OnEnter tooltips.
 local function hoverBorder(f)
     f:HookScript("OnEnter", function(s)

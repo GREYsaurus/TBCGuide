@@ -13,16 +13,12 @@
 fp Brackenwall Village
 bind Brackenwall Village
 accept Inspecting the Ruins | Krog, Brackenwall.
-accept Theramore Spies | Nazeer Bloodpike.
 accept Identifying the Brood | Draz'Zilb.
-accept Army of the Black Dragon | Tharg.
-accept Overlord Mok'Morokk's Concern
-accept What's Haunting Witch Hill? | Mordant Grimsby.
 complete Inspecting the Ruins | The burned Shady Rest Inn.
 turnin Inspecting the Ruins
-accept Suspicious Hoofprints | The hoofprints are at the Shady Rest Inn.
 accept 1269 Lieutenant Paval Reethe [optional]
 accept 1251 The Black Shield | The black shield lies at the Shady Rest Inn too.
+accept Suspicious Hoofprints | The hoofprints are at the Shady Rest Inn.
 turnin Suspicious Hoofprints
 turnin 1269 Lieutenant Paval Reethe [optional]
 turnin 1251 The Black Shield
@@ -32,64 +28,68 @@ turnin 1321 The Black Shield
 accept 1322 The Black Shield
 turnin 1322 The Black Shield
 accept 1323 The Black Shield
+accept Overlord Mok'Morokk's Concern
 complete 1323 The Black Shield
 turnin 1323 The Black Shield
 accept 1276 The Black Shield
-turnin 1276 The Black Shield
+accept Army of the Black Dragon | Tharg.
+accept What's Haunting Witch Hill? | Mordant Grimsby.
+turnin 1276 The Black Shield | Turned in at Thunder Bluff.
 accept Return to Krog | Mosarn, right after The Black Shield.
 turnin Return to Krog
 accept More than Coincidence
 accept The Grimtotem Plot
+accept Theramore Spies | Nazeer Bloodpike.
 complete Theramore Spies | Theramore infiltrators around Brackenwall.
 complete Identifying the Brood | Black dragonspawn in the south.
 complete Army of the Black Dragon
-complete Overlord Mok'Morokk's Concern
+complete Overlord Mok'Morokk's Concern | Mok'Morokk's Snuff: loot Mok'Morokk's Snuff. Mok'Morokk's Grog: loot Mok'Morokk's Grog.
 complete What's Haunting Witch Hill? | Witch Hill, north.
-complete More than Coincidence
+complete More than Coincidence | Blackhoof Armaments drops from Drywallow Crocolisk, Grimtotem Breaker and Withervine Creeper and others.
 turnin Theramore Spies
 accept The Theramore Docks
-complete The Theramore Docks
+complete The Theramore Docks | Captain's Documents: loot Captain's Footlocker.
 turnin The Theramore Docks
+turnin What's Haunting Witch Hill?
+accept The Witch's Bane
 turnin Identifying the Brood
 accept 1170 The Brood of Onyxia
+turnin Overlord Mok'Morokk's Concern
 turnin 1170 The Brood of Onyxia
 accept 1171 The Brood of Onyxia
 turnin 1171 The Brood of Onyxia
 accept 1172 The Brood of Onyxia
-turnin Army of the Black Dragon
-turnin Overlord Mok'Morokk's Concern
-turnin What's Haunting Witch Hill?
-accept The Witch's Bane
-turnin More than Coincidence
 complete 1172 The Brood of Onyxia | Destroy the eggs in Wyrmbog.
-complete The Witch's Bane
+complete The Witch's Bane | Witchbane drops from Risen Husk and Risen Spirit.
 complete The Grimtotem Plot
 turnin 1172 The Brood of Onyxia
-turnin The Witch's Bane
-accept Cleansing Witch Hill
+turnin More than Coincidence
 turnin The Grimtotem Plot
 accept Seek Out Tabetha
+turnin Army of the Black Dragon
+turnin The Witch's Bane
+accept Cleansing Witch Hill
 turnin Seek Out Tabetha
 accept Raze Direhorn Post!
 complete Raze Direhorn Post!
 complete Cleansing Witch Hill
 turnin Raze Direhorn Post!
 accept Justice Dispensed
-turnin Cleansing Witch Hill
-complete Justice Dispensed
-turnin Justice Dispensed
-accept The Grimtotem Weapon [optional]
 accept Direhorn Raiders [optional]
 accept The Zeppelin Crash [optional]
+accept The Grimtotem Weapon [optional]
 accept The Reagent Thief [optional]
+complete Justice Dispensed
+turnin Justice Dispensed
 complete The Grimtotem Weapon [optional]
 complete Direhorn Raiders [optional]
 complete The Zeppelin Crash [optional]
-complete The Reagent Thief [optional]
-turnin The Grimtotem Weapon [optional]
-turnin Direhorn Raiders [optional]
+complete The Reagent Thief [optional] | Marsh Venom drops from Darkfang Creeper and Noxious Shredder.
+turnin Cleansing Witch Hill
 turnin The Zeppelin Crash [optional]
+turnin Direhorn Raiders [optional]
 turnin The Reagent Thief [optional]
+turnin The Grimtotem Weapon [optional]
 level 41
 train
 note Fly to Gadgetzan (Tanaris).

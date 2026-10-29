@@ -1,4 +1,4 @@
-# TBCGuide build script (Windows PowerShell 5.1+ / PowerShell 7).
+﻿# TBCGuide build script (Windows PowerShell 5.1+ / PowerShell 7).
 # Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus)
 # SPDX-License-Identifier: GPL-3.0-only
 #
@@ -123,6 +123,11 @@ function Invoke-Guides {
     $log = Join-Path $Root "docs\generated\guide-warnings.log"
     New-Item -ItemType Directory -Force (Split-Path $log) | Out-Null
     (@($res.Errors | ForEach-Object { "ERROR $_" }) + @($res.Warnings)) | Set-Content $log -Encoding UTF8
+    # Dungeon audit: quests tagged from quest data, and quests with only some objectives inside.
+    $dg = Join-Path $Root "docs\generated\dungeon-quests.csv"
+    (@("guide,quest,title,instance,step") + @($res.AutoDungeon | ForEach-Object { ($_ | ForEach-Object { '"' + ($_ -replace '"','""') + '"' }) -join "," })) | Set-Content $dg -Encoding UTF8
+    $mx = Join-Path $Root "docs\generated\dungeon-mixed.csv"
+    (@("guide,quest,title,place") + @($res.MixedDungeon | ForEach-Object { ($_ | ForEach-Object { '"' + ($_ -replace '"','""') + '"' }) -join "," })) | Set-Content $mx -Encoding UTF8
     if ($res.Errors.Count -gt 0) {
         $res.Errors | Select-Object -First 200 | ForEach-Object { Write-Host "  ERROR $_" -ForegroundColor Red }
         throw "Guide compilation failed with $($res.Errors.Count) error(s)."

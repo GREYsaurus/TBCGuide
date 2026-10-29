@@ -6,7 +6,7 @@
 -- even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 -- See the GNU General Public License for more details. The complete license text is in LICENSE.
 --
--- Every control either changes a real setting or is marked `planned` (shown disabled, does nothing).
+-- Every control changes a real setting. (UI/Config.lua can still render `planned` items, but 1.0 has none.)
 -- Settings live in the active profile (ns.db.profile); see Core/SavedVars.lua for defaults.
 
 local _, ns = ...
@@ -16,7 +16,6 @@ local function T(key, label, extra)
     for k, v in pairs(extra or {}) do it[k] = v end
     return it
 end
-local function planned(label, default) return { type = "toggle", label = label, planned = true, default = default } end
 local function H(text) return { type = "header", text = text } end
 local function prof() return ns.db.profile end
 
@@ -29,6 +28,8 @@ pages.general = { title = "General", items = function() return {
     T("showAllFrames", "Show all Enabled Frames", { tip = "Shows the guide window and the arrow. Off hides both." }),
     T("locked", "Lock Frames"),
     T("autohideRaid", "Autohide in Raids", { tip = "Hides the guide window and arrow while you are in a raid group." }),
+    { type = "button", label = "Open setup", tip = "The first-login setup: starting guide, spec profile and automatic upgrades.",
+      func = function() ns.Config.frame:Hide() ns.Welcome:Open() end },
     H("Features"),
     T("showMinimapButton", "Enable Minimap Button"),
     T("worldMapButton", "Enable World Map Button", { tip = "A button on the world map that opens the guide browser." }),
@@ -44,10 +45,24 @@ pages.general = { title = "General", items = function() return {
       set = function(v) prof().autoAccept, prof().autoTurnIn = v, v ns.QuestAuto:Rebuild() end,
       tip = "Guide quests only. Escort quests are never accepted automatically. More options: /tbcg automation." },
     T("autoReward", "Quest auto rewards", { tip = "Takes a reward only when gear scoring shows one clear upgrade, or when your class can use none of them (then the most valuable). Otherwise you choose." }),
+    { type = "select", key = "trainerSuggestions", label = "Class Trainer Suggestions",
+      values = function() return { { "off", "Off" }, { "important", "Important only" }, { "all", "All" } } end,
+      tip = "Lists the spell ranks your class trainer has for you, checked against your spellbook. Train steps with nothing to learn are skipped. Never buys anything.",
+      after = function() if ns.Engine then ns.Engine:Refresh() end end },
     T("trainerAuto", "Trainer automation", { tip = "Learns every spell you can afford when you open your class trainer. Spends gold. Hold Shift to skip." }),
     T("flightAuto", "Flight Path automation", { tip = "On a 'fly to' step, takes the flight to that destination when the flight map opens. Hold Shift to skip." }),
     T("bindAuto", "Innkeeper Bind automation", { tip = "On a 'set your hearthstone' step, picks the innkeeper's bind option and confirms it." }),
     T("skipGossip", "Skip Gossip", { tip = "Picks the only option when an NPC has one option and no quests. Hold Shift to skip." }),
+    H("Window"),
+    { type = "range", key = "scale", label = "Guide Window Scale", min = 0.6, max = 1.6, step = 0.05, percent = true, decimals = 2 },
+    { type = "range", key = "guideFontSize", label = "Guide Font Size", min = 9, max = 18, step = 1 },
+    { type = "range", key = "arrowScale", label = "Arrow Scale", min = 0.5, max = 2, step = 0.05, percent = true, decimals = 2 },
+    { type = "button", label = "Reset Window Settings", tip = "Puts guide window scale, font size and arrow scale back to their defaults. Positions are kept.",
+      func = function()
+          local d = ns.PROFILE_DEFAULTS
+          prof().scale, prof().guideFontSize, prof().arrowScale = d.scale, d.guideFontSize, d.arrowScale
+          ns.Config:Changed()
+      end },
     H("Inventory"),
     T("inventoryManager", "Enable Inventory Manager", { tip = "Master switch for junk selling, the junk list and junk deletion." }),
     { type = "newline" },
@@ -63,6 +78,8 @@ pages.general = { title = "General", items = function() return {
     { type = "button", label = "Reset Junk List", func = function() ns.Assist:ResetJunkList() end },
     H("Talents"),
     T("talentHints", "Enable Talents Guides", { tip = "Chat reminders to spend talent points, following your chosen build." }),
+    T("showTalentSuggestions", "Show Talent Suggestions", { tip = "In the default talent window: numbered markers on your plan's next picks, a panel with the plan, and a tooltip line. Follows your spec profile. Never spends points.",
+      after = function() if ns.TalentHints then ns.TalentHints:Refresh() end end }),
     T("talentPlan", "Enable Talent Plan", { tip = "On level-up, lists your build's next picks. Also /tbcg talents plan." }),
     { type = "range", key = "talentPlanCount", label = "Talent Plan Number", min = 1, max = 70, step = 1, tip = "How many upcoming picks the plan lists." },
 } end }
@@ -130,7 +147,6 @@ pages.targeting = { title = "Targeting", items = function() return {
     T("targetMacro", "Create Targeting Macro", { tip = "Keeps a 'TBCGuide' macro that targets the current step's NPCs (/tar). Put it on an action bar.",
       after = function() ns.Assist:UpdateMacro() end }),
     T("targetNotify", "Notify on new target", { tip = "A chat line when an NPC from the current step first comes into view." }),
-    planned("Follow Party Leader Macro"),
     H("Raid Marker Bar"),
     { type = "toggle", label = "Show the raid marker bar",
       get = function() return prof().showMarkerBar end,
@@ -181,7 +197,6 @@ pages.comms = { title = "Communications", items = function() return {
 
 pages.tips = { title = "Tips", items = function() return {
     T("tipsEnabled", "Enable Tips"),
-    planned("Quest Sellable Recommendation", true),
     H("Drowning"),
     T("drownWarn", "Enable Warning"),
     T("drownSound", "Enable Warning Sound"),
@@ -212,13 +227,12 @@ pages.tips = { title = "Tips", items = function() return {
       end,
       get = function() return ns.char.gearProfile or "auto" end,
       set = function(v) ns.char.gearProfile = (v ~= "auto") and v or nil ns.AutoEquip:OnProfileChanged() end },
-    planned("Always Show Total EP"),
     T("gearQuestRewards", "Quest Reward Recommendation"),
     T("autoReward", "Quest Reward Automation"),
     T("gearTooltip", "Disable Tooltips", { invert = true }),
     T("gearShowPercent", "Show score change (%)"),
     T("gearShowConfidence", "Show profile confidence"),
-    planned("Enable Auctioneer"),
+    T("auctioneer", "Enable Auctioneer", { tip = "Adds an Upgrades tab to the auction house. You start each scan yourself while the auction house is open; prices are the listings that scan saw, so old or partial scans may no longer match what is for sale. Nothing is ever bought." }),
     H("Automatic Upgrades"),
     { type = "desc", text = "Equips gear from your bags when it is an upgrade for your spec profile (* = estimated from a stat priority). "
         .. "Never in combat, never Bind-on-Equip items, nothing is sold or deleted. Estimates are spec scores, not DPS or healing." },

@@ -10,36 +10,36 @@
 @desc Morgan's Vigil, the Firegut ogres, the Blackrock orcs and The True Masters chain. Blackrock Depths and Spire quests are optional group content.
 @next A_WesternPlaguelands
 
-fp Morgan's Vigil
 accept Dragonkin Menace | Helendis Riverhorn.
-accept Extinguish the Firegut | Oralius.
-accept Broodling Essence | Tinkee Steamboil, Flame Crest.
-complete Extinguish the Firegut | Firegut ogres at Dreadmaul Rock.
-turnin Extinguish the Firegut
-accept Gor'tesh the Brute Lord
 complete Dragonkin Menace | Black Broodlings, Dragonkin Felbinders and dragonspawn.
 turnin Dragonkin Menace
 accept 4183 The True Masters
-complete Broodling Essence | Use the essence collector on broodlings.
-turnin Broodling Essence
+accept Extinguish the Firegut | Oralius.
+complete Extinguish the Firegut | Firegut ogres at Dreadmaul Rock.
+turnin Extinguish the Firegut
+accept Gor'tesh the Brute Lord
 complete Gor'tesh the Brute Lord [group=2] | Top of Dreadmaul Rock.
 turnin Gor'tesh the Brute Lord
 accept Ogre Head On A Stick = Party
-complete Ogre Head On A Stick = Party
+complete Ogre Head On A Stick = Party | Click Soft Dirt Mound.
 turnin Ogre Head On A Stick = Party
+fp Morgan's Vigil
 turnin 4183 The True Masters | Magistrate Solomon in Lakeshire.
 accept 4184 The True Masters
+accept Broodling Essence | Tinkee Steamboil, Flame Crest.
+complete Broodling Essence | Use the essence collector on broodlings.
+turnin Broodling Essence
+turnin Reassignment | Major Samuelson, also in Stormwind Keep.
 turnin 4184 The True Masters | Highlord Bolvar Fordragon, Stormwind Keep.
 turnin Warn Bolvar! [optional] | Bolvar again, while you are in the keep.
-turnin Reassignment | Major Samuelson, also in Stormwind Keep.
-accept 4185 The True Masters
-turnin 4185 The True Masters
+accept 4185 The True Masters | Escort quest: start it when you are ready to follow.
+turnin 4185 The True Masters | Turned in at Stormwind City.
 accept 4186 The True Masters
-turnin 4186 The True Masters
+turnin 4186 The True Masters | Turned in at Redridge Mountains.
 accept 4223 The True Masters
 turnin 4223 The True Masters
-accept 4224 The True Masters
-complete 4224 The True Masters
+accept 4224 The True Masters | Escort quest: start it when you are ready to follow.
+complete 4224 The True Masters | Escort: stay close; it fails if the NPC dies.
 turnin 4224 The True Masters
 level 55
 train

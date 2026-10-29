@@ -50,6 +50,14 @@ Stated plainly, so nobody mistakes "files exist" for "finished and tested".
 - Builds are **legal** (verified against client tables) but their **quality** is the project's judgement and is untested. Talent descriptions come from the client tooltip at runtime.
 - Reading your actual talents works only for your own class (TBC API limit). Talents are mapped by tree, tier and column. If the client orders trees differently from the data, `/tbcg debug talents` reports mismatches.
 - The calculator does not apply talents to your character (no auto-learn). That is deliberate.
+- **Talent window suggestions** use TBCGuide's own plans, not plans from Icy Veins or Wowhead; 7 of 28 spec profiles have no plan (docs/TALENTS.md). The markers and panel depend on the default talent window's frame names and are untested in 2.5.6.
+
+## 1.0 additions
+
+- **Bag add-ons** (Bagnon, AdiBags, Baganator) are supported from their source code and are not yet tested in the game (docs/BAGS.md).
+- **Non-English clients:** binding and use/proc/set effects are read with the client's own strings. Equip-effect text is not, so such items count as uncertain, and school-damage gear is never equipped automatically there (docs/LOCALES.md).
+- **Trainer suggestions** come from client spell tables. Class-quest spells are a hand list, and costs, pet skills and poison recipes are not covered (docs/TRAINER.md).
+- **Levels 31-60** were reordered and annotated, but quest density is unchanged: the XP model has players grinding about 16-17 of the 28 levels from 30 to 58, and nine zones are not visited (docs/LEVELS_31_60.md).
 
 ## UI and navigation
 

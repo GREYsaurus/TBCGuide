@@ -12,62 +12,62 @@
 
 fp Grom'gol
 bind Grom'gol
-accept Hunt for Yenniku | Nimboya, Grom'gol.
-accept Bloody Bone Necklaces | Kin'weelay.
-accept The Defense of Grom'gol | Commander Aggro'gosh.
 accept Mok'thardin's Enchantment | Far Seer Mok'thardin.
+accept The Defense of Grom'gol | Commander Aggro'gosh.
+accept Bloody Bone Necklaces | Kin'weelay.
 accept Welcome to the Jungle | Barnil Stonepot, Nesingwary's Expedition.
 turnin Welcome to the Jungle
+accept 194 Raptor Mastery
 accept 185 Tiger Mastery
 accept 190 Panther Mastery
-accept 194 Raptor Mastery
+accept Hunt for Yenniku | Nimboya, Grom'gol.
 complete Hunt for Yenniku | Bloodscalp trolls west of Grom'gol.
 complete Bloody Bone Necklaces | Bloodscalp trolls.
 complete The Defense of Grom'gol | Raptors around Grom'gol.
-complete Mok'thardin's Enchantment
+complete Mok'thardin's Enchantment | Shadowmaw Claw drops from Elder Shadowmaw Panther and Shadowmaw Panther. Pristine Tigress Fang drops from Stranglethorn Tigress.
 complete 185 Tiger Mastery
 complete 190 Panther Mastery
 complete 194 Raptor Mastery
 turnin Hunt for Yenniku
 accept Headhunting
-turnin Bloody Bone Necklaces
 turnin The Defense of Grom'gol
 accept 569 The Defense of Grom'gol
-turnin Mok'thardin's Enchantment
+turnin Bloody Bone Necklaces
 turnin 185 Tiger Mastery
 accept 186 Tiger Mastery
 turnin 190 Panther Mastery
 accept 191 Panther Mastery
-turnin 194 Raptor Mastery
-accept 195 Raptor Mastery
-complete Headhunting
+complete Headhunting | Shrunken Head drops from Bloodscalp Headhunter.
 complete 569 The Defense of Grom'gol
 complete 186 Tiger Mastery
 complete 191 Panther Mastery
-complete 195 Raptor Mastery
-turnin Headhunting
-turnin 569 The Defense of Grom'gol
 turnin 186 Tiger Mastery
 turnin 191 Panther Mastery
+turnin 194 Raptor Mastery
+accept 195 Raptor Mastery
+complete 195 Raptor Mastery
 turnin 195 Raptor Mastery
+turnin Headhunting
+turnin 569 The Defense of Grom'gol
+turnin Mok'thardin's Enchantment
 fp Booty Bay
-accept Supply and Demand | Drizzlik, Booty Bay.
 accept Singing Blue Shards | Crank Fizzlebub.
 accept Scaring Shaky | "Sea Wolf" MacKinley.
-complete Supply and Demand
-complete Singing Blue Shards
-complete Scaring Shaky
+accept Supply and Demand | Drizzlik, Booty Bay.
+complete Supply and Demand | Large River Crocolisk Skin drops from River Crocolisk.
+complete Singing Blue Shards | Singing Crystal Shard drops from Cold Eye Basilisk, Crystal Spine Basilisk and Stone Maw Basilisk and others.
+complete Scaring Shaky | Mistvale Giblets drops from Elder Mistvale Gorilla.
 turnin Supply and Demand
 accept Some Assembly Required
 turnin Singing Blue Shards
 accept Venture Company Mining
+complete Some Assembly Required | Snapjaw Crocolisk Skin drops from Snapjaw Crocolisk.
 turnin Scaring Shaky
 accept Return to MacKinley
-complete Some Assembly Required
-complete Venture Company Mining
+turnin Return to MacKinley
+complete Venture Company Mining | Singing Blue Crystal drops from Venture Co. Foreman, Venture Co. Strip Miner and Venture Co. Surveyor and others.
 turnin Some Assembly Required
 turnin Venture Company Mining
-turnin Return to MacKinley
 level 39
 train
 note Fly to Brackenwall Village in Dustwallow Marsh (via Orgrimmar and the zeppelin if you lack the path).

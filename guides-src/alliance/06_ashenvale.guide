@@ -10,70 +10,70 @@
 @desc Maestra's Post, Astranaar, the Zoram Strand and Raene's Cleansing chain. Draenei and night elves meet here, then take the Auberdine boat to Menethil for the Wetlands.
 @next A_Wetlands
 
-turnin Onward to Ashenvale [optional] | Astranaar.
-accept 970 The Tower of Althalaxx [optional] | Delgren the Purifier at Maestra's Post.
-accept Bathran's Hair | Orendil Broadleaf, Maestra's Post.
-complete Bathran's Hair | Bathran's Haven, north of Maestra's Post.
-turnin Bathran's Hair
-accept Orendil's Cure
-complete 970 The Tower of Althalaxx [optional] | Dark Strand cultists at Ordil'Aran.
-turnin 970 The Tower of Althalaxx [optional]
-accept 973 The Tower of Althalaxx [optional]
 accept The Ancient Statuette | Talen at the Zoram Strand.
 complete The Ancient Statuette | In the naga ruins on the strand.
 turnin The Ancient Statuette
 accept Ruuzel
+accept Bathran's Hair | Orendil Broadleaf, Maestra's Post.
+complete Bathran's Hair | Bathran's Haven, north of Maestra's Post.
+turnin Bathran's Hair
+accept Orendil's Cure
+accept 970 The Tower of Althalaxx [optional] | Delgren the Purifier at Maestra's Post.
+complete 970 The Tower of Althalaxx [optional] | Dark Strand cultists at Ordil'Aran.
+turnin 970 The Tower of Althalaxx [optional]
+accept 973 The Tower of Althalaxx [optional]
 fp Astranaar
+turnin Onward to Ashenvale [optional] | Astranaar.
 bind Astranaar
 accept Raene's Cleansing | Raene Wolfrunner, Astranaar.
 accept Culling the Threat
-accept The Zoram Strand | Shindrell Swiftfire.
-turnin 9432 Travel to Astranaar [race=Draenei; optional]
 accept A Helping Hand | Vindicator Palanaar (draenei, Astranaar).
-turnin Orendil's Cure | Pelturas Whitemoon, Astranaar.
-accept Elune's Tear
+turnin 9432 Travel to Astranaar [race=Draenei; optional]
+complete 973 The Tower of Althalaxx [class=Warlock; race=Human,Gnome; optional] | Ilkrud Magthrull's Tome drops from Ilkrud Magthrull.
+complete 973 The Tower of Althalaxx [class=Warrior,Rogue,Mage; race=Gnome; optional] | Ilkrud Magthrull's Tome drops from Ilkrud Magthrull.
+complete 973 The Tower of Althalaxx [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional] | Ilkrud Magthrull's Tome drops from Ilkrud Magthrull.
+complete 973 The Tower of Althalaxx [race=Dwarf,Night Elf,Draenei; optional] | Ilkrud Magthrull's Tome drops from Ilkrud Magthrull.
+accept The Zoram Strand | Shindrell Swiftfire.
 complete The Zoram Strand | Wrathtail naga at the strand.
-complete Ruuzel [group=2] | Ruuzel patrols the island off the strand.
-turnin Ruuzel
 turnin The Zoram Strand
-turnin 4740 WANTED: Murkdeep! [optional]
-turnin 741 The Absent Minded Prospector [optional]
-accept 942 The Absent Minded Prospector [optional]
-turnin 994 Escape Through Force [class=Warrior,Rogue,Mage; race=Gnome; optional]
-turnin 994 Escape Through Force [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
-turnin 994 Escape Through Force [race=Dwarf,Night Elf,Draenei; optional]
-complete Raene's Cleansing | Teronis' corpse is at the Zoram Strand ruins.
-turnin Raene's Cleansing
-accept 1023 Raene's Cleansing
-complete Elune's Tear | The tear lies on the isle in Lake Iris.
-turnin Elune's Tear
-accept The Ruins of Stardust
-complete The Ruins of Stardust | Stardust Covered Bushes south of Astranaar.
-complete 973 The Tower of Althalaxx [class=Warlock; race=Human,Gnome; optional]
 turnin 973 The Tower of Althalaxx [class=Warlock; race=Human,Gnome; optional]
-complete 973 The Tower of Althalaxx [class=Warrior,Rogue,Mage; race=Gnome; optional]
-complete 973 The Tower of Althalaxx [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
-complete 973 The Tower of Althalaxx [race=Dwarf,Night Elf,Draenei; optional]
-turnin The Ruins of Stardust
-complete Culling the Threat
-turnin Culling the Threat
 turnin 973 The Tower of Althalaxx [class=Warrior,Rogue,Mage; race=Gnome; optional]
 turnin 973 The Tower of Althalaxx [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional]
 turnin 973 The Tower of Althalaxx [race=Dwarf,Night Elf,Draenei; optional]
+complete Raene's Cleansing | Teronis' corpse is at the Zoram Strand ruins.
+turnin Raene's Cleansing
+accept 1023 Raene's Cleansing
+complete Ruuzel [group=2] | Ruuzel patrols the island off the strand.
+turnin Ruuzel
+turnin 4740 WANTED: Murkdeep! [optional] | Turned in at Darkshore.
+turnin 994 Escape Through Force [class=Warrior,Rogue,Mage; race=Gnome; optional] | Turned in at Darkshore.
+turnin 994 Escape Through Force [class=Warrior,Paladin,Rogue,Priest,Mage; race=Human; optional] | Turned in at Darkshore.
+turnin 994 Escape Through Force [race=Dwarf,Night Elf,Draenei; optional] | Turned in at Darkshore.
+complete Culling the Threat
+turnin Culling the Threat
 complete 1023 Raene's Cleansing | Gnarled ancients near the lake drop the Glowing Soul Gem.
 turnin 1023 Raene's Cleansing
 accept An Aggressive Defense
 complete An Aggressive Defense | Foulweald furbolgs south of Astranaar.
 turnin An Aggressive Defense
+turnin Orendil's Cure | Pelturas Whitemoon, Astranaar.
+accept Elune's Tear
+complete Elune's Tear | The tear lies on the isle in Lake Iris.
+turnin Elune's Tear
+accept The Ruins of Stardust
+complete The Ruins of Stardust | Stardust Covered Bushes south of Astranaar.
+turnin The Ruins of Stardust
+turnin 1716 Devourer of Souls [class=Warlock; race=Human,Gnome] | Turned in at The Barrens.
+accept 1738 Heartswood [class=Warlock; race=Human,Gnome; optional]
 accept Elemental Bracers | Sentinel Velene Starstrike, Silverwind Refuge.
 complete Elemental Bracers | Befouled Water Elementals at Mystral Lake; divine the bracers at the lake.
 turnin Elemental Bracers
 accept Mage Summoner
 complete Mage Summoner | Sarilus Foulborne camps beside Mystral Lake.
-turnin 1716 Devourer of Souls [class=Warlock; race=Human,Gnome]
-accept 1738 Heartswood [class=Warlock; race=Human,Gnome; optional]
-complete 1738 Heartswood [class=Warlock; race=Human,Gnome; optional]
+complete 1738 Heartswood [class=Warlock; race=Human,Gnome; optional] | Heartswood drops from Dark Strand Excavator.
 turnin Mage Summoner
+turnin 741 The Absent Minded Prospector [optional] | Turned in at Darnassus.
+accept 942 The Absent Minded Prospector [optional]
 turnin A Helping Hand [optional]
 level 24
 train | Darnassus or Exodar trainers; Astranaar has some classes only.

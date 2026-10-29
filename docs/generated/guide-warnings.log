@@ -35,9 +35,8 @@ horde/05_silverpine.guide:60: 'The Engraved Ring' has no objective locations in 
 horde/05_silverpine.guide:71: 'Rot Hide Origins' has no objective locations in the database; add [at=x,y] or a goto
 horde/05_silverpine.guide:75: 'Thule Ravenclaw' has no objective locations in the database; add [at=x,y] or a goto
 horde/10_barrens.guide:71: 'Samophlange' has no objective locations in the database; add [at=x,y] or a goto
-horde/11_stonetalon.guide:22: 'Trouble in the Deeps' has no objective locations in the database; add [at=x,y] or a goto
-horde/11_stonetalon.guide:24: 'Gerenzo's Orders' has no objective locations in the database; add [at=x,y] or a goto
-horde/12_ashenvale.guide:27: 'Torek's Assault' has no objective locations in the database; add [at=x,y] or a goto
+horde/11_stonetalon.guide:23: 'Gerenzo's Orders' has no objective locations in the database; add [at=x,y] or a goto
+horde/12_ashenvale.guide:28: 'Torek's Assault' has no objective locations in the database; add [at=x,y] or a goto
 horde/14_thousandneedles.guide:27: 'Serpent Wild' has no objective locations in the database; add [at=x,y] or a goto
 horde/15_arathi.guide:25: 'Raising Spirits' has no objective locations in the database; add [at=x,y] or a goto
 horde/15_arathi.guide:37: 'Raising Spirits' has no objective locations in the database; add [at=x,y] or a goto

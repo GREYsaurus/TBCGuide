@@ -15,7 +15,7 @@ Every race/class route is walked step by step. **Estimated level** interpolates 
 | Reduced-XP pickups (6+ levels below estimate) | 1 |
 | Level-gated pickups | 18 |
 | Accepted, never turned in | 0 |
-| Hub revisits (all guides) | 448 |
+| Hub revisits (all guides) | 447 |
 
 ## Per guide
 
@@ -54,7 +54,7 @@ Values in brackets are the baseline (`docs/generated/route-metrics-baseline.csv`
 | Both_Tanaris | 49 (52) | 12 (15) | 61 (63) | 1 | 0 | 0 (1) | 0 (3) | 0 | 2 |
 | Both_UngoroCrater | 51 (55) | 13 (17) | 316 (323) | 3 (4) | 0 | 0 (1) | 0 (4) | 3 | 1 (2) |
 | H_Arathi | 52 | 14 | 163 | 3 | 0 | 0 | 0 | 0 | 0 |
-| H_Ashenvale | 38 (42) | 8 (10) | 489 (492) | 12 (13) | 0 | 0 (1) | 0 (1) | 1 (2) | 2 (3) |
+| H_Ashenvale | 39 (42) | 9 (10) | 489 (492) | 12 (13) | 0 | 0 (1) | 0 (1) | 1 (2) | 5 (3) |
 | H_Barrens | 115 (117) | 37 (41) | 281 (299) | 12 (13) | 0 | 0 | 0 (7) | 0 (1) | 1 |
 | H_BladesEdge | 50 (51) | 15 (16) | 215 (245) | 7 (8) | 0 | 0 | 0 (1) | 1 | 0 |
 | H_BloodElf_Eversong | 131 (118) | 45 (41) | 509 (583) | 14 (16) | 0 | 0 | 0 (4) | 1 | 0 |
@@ -69,7 +69,7 @@ Values in brackets are the baseline (`docs/generated/route-metrics-baseline.csv`
 | H_OrcTroll_Durotar | 137 (105) | 48 (33) | 406 (371) | 16 (14) | 0 | 0 | 0 (2) | 0 | 0 |
 | H_Shadowmoon | 57 | 18 | 89 | 5 | 0 | 0 | 0 | 0 | 0 |
 | H_Silverpine | 75 (76) | 27 (28) | 190 (191) | 7 (8) | 0 | 0 | 0 (1) | 1 | 2 (3) |
-| H_Stonetalon | 38 (37) | 9 (8) | 222 | 5 | 0 | 0 | 0 | 1 | 0 |
+| H_Stonetalon | 36 (37) | 9 (8) | 225 (222) | 4 (5) | 0 | 0 | 0 | 1 | 0 |
 | H_Stranglethorn | 69 (70) | 19 (20) | 278 | 5 | 1 | 0 | 0 (1) | 0 | 0 |
 | H_Tauren_Mulgore | 103 (90) | 35 (30) | 280 (258) | 11 (9) | 0 | 1 | 0 (2) | 3 | 0 |
 | H_Terokkar | 95 (96) | 33 (34) | 351 | 13 | 0 | 0 | 0 (1) | 0 | 1 (2) |

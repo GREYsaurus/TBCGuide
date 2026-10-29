@@ -18,21 +18,21 @@ check(ns.db.minimap.angle == MB.DEFAULT_ANGLE and b.point and b.point[1] == "CEN
 local r = math.rad(MB.DEFAULT_ANGLE)
 check(math.abs(b.point[4] - math.cos(r) * 80) < 1e-6 and math.abs(b.point[5] - math.sin(r) * 80) < 1e-6, "sits on the minimap edge (radius 70 + 10)")
 
--- Left-click opens settings; a second click closes them -----------------------------------------------
-InterfaceOptionsFrame:Hide()
-local opened = MOCK.optionsOpened
+-- Left-click opens the TBCGuide settings window; a second click closes it --------------------------
+local cfg = ns.Config.frame
+local function settingsShown() return cfg:IsShown() end
+cfg:Hide()
 b.scripts.OnClick(b, "LeftButton")
-check(MOCK.optionsOpened > opened and InterfaceOptionsFrame:IsShown(), "left-click opens the settings window")
+check(settingsShown(), "left-click opens the settings window")
 b.scripts.OnClick(b, "LeftButton")
-check(not InterfaceOptionsFrame:IsShown(), "clicking again closes it")
+check(not settingsShown(), "clicking again closes it")
 -- settings not created yet (clicked right after login): a message, no error
-local panel = ns.Options.panel
-ns.Options.panel = nil
+ns.Config.frame = nil
 local before = #MOCK.printed
 local ok = pcall(b.scripts.OnClick, b, "LeftButton")
 check(ok and #MOCK.printed > before and string.find(MOCK.printed[#MOCK.printed], "not ready", 1, true), "settings not ready: explained, no error")
-ns.Options.panel = panel
-InterfaceOptionsFrame:Hide()
+ns.Config.frame = cfg
+cfg:Hide()
 
 -- Right-click toggles the guide window ----------------------------------------------------------------
 local mf = ns.MainFrame.frame
@@ -41,7 +41,7 @@ b.scripts.OnClick(b, "RightButton")
 check(mf and mf:IsShown() ~= wasShown, "right-click toggles the guide window")
 b.scripts.OnClick(b, "RightButton")
 check(mf and mf:IsShown() == wasShown, "right-click again restores it")
-check(not InterfaceOptionsFrame:IsShown(), "right-click does not open settings")
+check(not settingsShown(), "right-click does not open settings")
 
 -- Tooltip --------------------------------------------------------------------------------------------
 GameTooltip.lines = {}
@@ -60,21 +60,19 @@ MOCK.cursorX, MOCK.cursorY = 900, 600 -- left of the centre -> 180 degrees
 b.scripts.OnUpdate(b, 0.05)
 b.scripts.OnDragStop(b)
 check(ns.db.minimap.angle == 180 and b.scripts.OnUpdate == nil, "angle saved once when the drag ends")
-opened = MOCK.optionsOpened
 b.scripts.OnClick(b, "LeftButton") -- the mouse-up that ends the drag
-check(MOCK.optionsOpened == opened and not InterfaceOptionsFrame:IsShown(), "releasing a drag does not open settings")
+check(not settingsShown(), "releasing a drag does not open settings")
 b.scripts.OnMouseDown(b)
 b.scripts.OnClick(b, "LeftButton")
-check(MOCK.optionsOpened > opened, "the next real click works again")
-InterfaceOptionsFrame:Hide()
+check(settingsShown(), "the next real click works again")
+cfg:Hide()
 -- a client that sends no click after a drag must not swallow the next real click
 b.scripts.OnDragStart(b)
 b.scripts.OnDragStop(b)
-opened = MOCK.optionsOpened
 b.scripts.OnMouseDown(b)
 b.scripts.OnClick(b, "LeftButton")
-check(MOCK.optionsOpened > opened, "no click after a drag: the next press still opens settings")
-InterfaceOptionsFrame:Hide()
+check(settingsShown(), "no click after a drag: the next press still opens settings")
+cfg:Hide()
 
 -- Persistence across /reload, and invalid saved data -------------------------------------------------
 ns:InitSavedVariables()

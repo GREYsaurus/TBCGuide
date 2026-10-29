@@ -6,17 +6,20 @@
 -- even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 -- See the GNU General Public License for more details. The complete license text is in LICENSE.
 --
--- TBCGuideDB      (account-wide): UI/profile settings
+-- TBCGuideDB      (account-wide): settings profiles, protection lists, frame positions
+--   .profiles[name]       one table per profile (the settings below)
+--   .profileKeys[char]    "Name - Realm" -> profile name used by that character
+--   .defaultProfile       profile new characters start with
 -- TBCGuideCharDB  (per character): active guide, per-guide progress, simulated talents
 -- Both are validated on load; anything malformed is reset field-by-field, never wholesale.
+-- ns.db is a view of TBCGuideDB whose `profile` field is the active profile; every other field
+-- reads and writes TBCGuideDB itself, so the profile table is never saved twice.
 
 local _, ns = ...
 
 local SCHEMA = 1
 
-local accountDefaults = {
-    schema = SCHEMA,
-    profile = {
+local profileDefaults = {
         debug = false,
         autoAdvance = true,       -- move to the next step when a reliable completion signal arrives
         autoSelectGuide = true,   -- pick a guide automatically on first login
@@ -27,7 +30,7 @@ local accountDefaults = {
         scale = 1,
         locked = false,
         hideCompletedOptional = false,
-        showDungeonSteps = true,
+        showDungeonSteps = true,  -- Include Dungeon Quests: steps tagged [dungeon=...] (docs/GUIDE_FORMAT.md)
         showElite = true,
         speedRoute = false,       -- maximum-speed route: hide [optional] side quests (documented default: off)
         talentHints = true,       -- remind when talent points are unspent
@@ -58,7 +61,49 @@ local accountDefaults = {
         gearQuestRewards = true,    -- rank reward choices in chat
         gearShowPercent = true,     -- relative score change (%), only when both scores are valid
         gearShowConfidence = true,
-    },
+        -- Settings window (UI/Config.lua); features in Core/Assist.lua
+        showAllFrames = true,       -- master switch for the guide window and arrow
+        hideWindow = false,
+        autohideRaid = false,       -- hide the guide window and arrow while in a raid group
+        worldMapButton = true,      -- TBCGuide button on the world map
+        autoReward = false,         -- choose a quest reward when gear scoring finds a clear winner
+        trainerAuto = false,        -- learn affordable spells at your class trainer
+        flightAuto = true,          -- fly to the current fly step's destination when the taxi map opens
+        bindAuto = true,            -- confirm the hearthstone bind on the guide's bind step
+        skipGossip = true,          -- pick the only gossip option when an NPC offers nothing else
+        inventoryManager = true,    -- master switch for junk selling, junk list and junk deletion
+        junkModifierToggle = false, -- mark/unmark items as junk with modifier + right-click in bags
+        junkModifier = "CTRL",
+        discardJunkFull = false,    -- delete the cheapest junk item when the bags are full
+        skipOverleveled = true,     -- skip accept steps of quests that are grey for you
+        disableStepSkips = false,   -- never skip steps automatically (debug)
+        maxNameplateDistance = false, -- raise the nameplate CVar to its maximum (41 yards)
+        markFriendly = true,        -- also mark the quest giver/finisher of the current step
+        markInGroup = true,         -- allow automatic marking while in a group
+        targetMacro = true,         -- keep a "TBCGuide" macro targeting the current step's NPCs
+        targetNotify = true,        -- chat note when a current-step mob or NPC first comes into view
+        announceLevelEmote = false, announceLevelParty = false, announceLevelGuild = false,
+        tipsEnabled = true,
+        drownWarn = true, drownSound = true, drownFlash = true, drownThreshold = 20,
+        lowHealthWarn = true, lowHealthThreshold = 20, lowHealthFlash = false, lowHealthAnim = true,
+        trackRares = false,         -- chat alert when a rare mob's nameplate appears
+        skipKilledRares = false,    -- ...but not for rares this character already killed
+        colorFriendly = { r = 0.4, g = 0.8, b = 1 },  -- NPC names in step text
+        colorQuest = { r = 1, g = 0.82, b = 0 },      -- quest names
+        colorWarning = { r = 1, g = 0.47, b = 0.27 }, -- warnings
+        guideFontSize = 12,
+        showStepList = true,        -- show upcoming steps under the current one
+        arrowScale = 1,
+        arrowUpdateMs = 50,
+        checkConflicts = true,      -- warn about other guide add-ons that act on the same NPCs
+}
+
+local accountDefaults = {
+    schema = SCHEMA,
+    profiles = {},
+    profileKeys = {},
+    defaultProfile = "Default",
+    junkList = {},          -- [itemID] = true: items the player marked as junk
     protectedItems = {},    -- [itemID] = true: never sold automatically
     protectedClasses = {},  -- [itemClassID] = true/false: overrides Vendor.CLASSES defaults
     escortExtra = {},       -- [questID] = true: extra quests that must never be auto-accepted
@@ -83,7 +128,32 @@ local charDefaults = {
     simTalents = {},    -- [class] = { [talentId] = rank } simulated allocation in the calculator
     junkStats = { items = 0, copper = 0 }, -- confirmed automatic junk sales (all time)
     gearProfile = nil,  -- chosen gear profile id (Gear/Profiles.lua); nil = automatic
+    killedRares = {},   -- [npcID] = true: rares this character killed (skipKilledRares)
 }
+ns.PROFILE_DEFAULTS = profileDefaults
+
+-- "Name - Realm" for the current character.
+function ns.CharKey()
+    local name = UnitName and UnitName("player") or "Unknown"
+    local realm = GetRealmName and GetRealmName() or "Realm"
+    return tostring(name) .. " - " .. tostring(realm)
+end
+
+-- Fills a profile table with defaults and repairs invalid values.
+function ns.FixProfile(p)
+    ns.Merge(p, profileDefaults)
+    local dm = p.defaultMarker
+    if type(dm) ~= "number" or dm < 1 or dm > 8 then p.defaultMarker = 8 end
+    if p.junkModifier ~= "CTRL" and p.junkModifier ~= "ALT" and p.junkModifier ~= "SHIFT" then p.junkModifier = "CTRL" end
+    for _, k in ipairs({ "colorFriendly", "colorQuest", "colorWarning" }) do
+        local c = p[k]
+        if type(c) ~= "table" or type(c.r) ~= "number" or type(c.g) ~= "number" or type(c.b) ~= "number" then
+            local d = profileDefaults[k]
+            p[k] = { r = d.r, g = d.g, b = d.b }
+        end
+    end
+    return p
+end
 
 local function sanitizeProgress(p)
     if type(p) ~= "table" then return {} end
@@ -103,8 +173,21 @@ function ns:InitSavedVariables()
     local fresh = type(TBCGuideDB) ~= "table" or next(TBCGuideDB) == nil
     if type(TBCGuideDB) ~= "table" then TBCGuideDB = {} end
     if type(TBCGuideCharDB) ~= "table" then TBCGuideCharDB = {} end
+    -- Before 0.5.0 there was a single TBCGuideDB.profile; it becomes the "Default" profile.
+    local legacy = type(TBCGuideDB.profile) == "table" and TBCGuideDB.profile or nil
+    TBCGuideDB.profile = nil
     ns.Merge(TBCGuideDB, accountDefaults)
     ns.Merge(TBCGuideCharDB, charDefaults)
+    for _, key in ipairs({ "profiles", "profileKeys", "junkList" }) do
+        if type(TBCGuideDB[key]) ~= "table" then TBCGuideDB[key] = {} end
+    end
+    local profiles = TBCGuideDB.profiles
+    for name, p in pairs(profiles) do
+        if type(name) ~= "string" or type(p) ~= "table" then profiles[name] = nil end
+    end
+    if legacy and not profiles.Default then profiles.Default = legacy end
+    if type(TBCGuideDB.defaultProfile) ~= "string" then TBCGuideDB.defaultProfile = "Default" end
+    if type(TBCGuideCharDB.killedRares) ~= "table" then TBCGuideCharDB.killedRares = {} end
     TBCGuideCharDB.progress = sanitizeProgress(TBCGuideCharDB.progress)
     if type(TBCGuideCharDB.history) ~= "table" then TBCGuideCharDB.history = {} end
     if type(TBCGuideCharDB.simTalents) ~= "table" then TBCGuideCharDB.simTalents = {} end
@@ -116,18 +199,29 @@ function ns:InitSavedVariables()
     local mig = TBCGuideDB.migrations
     if not mig.objectiveMarking then
         mig.objectiveMarking = true
-        if not fresh and TBCGuideDB.profile.autoMarkObjectives == false then
-            TBCGuideDB.profile.autoMarkObjectives = true
+        local flipped = false
+        for _, p in pairs(profiles) do
+            if not fresh and p.autoMarkObjectives == false then p.autoMarkObjectives = true flipped = true end
+        end
+        if flipped then
             ns.migrationNote = "raid markers now also mark the mobs of your current kill steps. "
                 .. "Turn this off with /tbcg set autoMarkObjectives off."
         end
     end
+    -- Active profile for this character.
+    local key = ns.CharKey()
+    local active = TBCGuideDB.profileKeys[key]
+    if type(active) ~= "string" or type(profiles[active]) ~= "table" then
+        active = TBCGuideDB.defaultProfile
+        if type(profiles[active]) ~= "table" and active ~= "Default" and type(profiles.Default) == "table" then active = "Default" end
+        TBCGuideDB.profileKeys[key] = active
+    end
+    profiles[active] = profiles[active] or {}
+    for _, p in pairs(profiles) do ns.FixProfile(p) end
     local mm = TBCGuideDB.minimap
     if type(mm) ~= "table" then TBCGuideDB.minimap = { angle = 220 } mm = TBCGuideDB.minimap end
     local ang = tonumber(mm.angle)
     if not ang or ang ~= ang or ang == math.huge or ang == -math.huge then mm.angle = 220 else mm.angle = ang % 360 end
-    local dm = TBCGuideDB.profile.defaultMarker
-    if type(dm) ~= "number" or dm < 1 or dm > 8 then TBCGuideDB.profile.defaultMarker = 8 end
     local js = TBCGuideCharDB.junkStats
     if type(js) ~= "table" or type(js.items) ~= "number" or type(js.copper) ~= "number" then
         TBCGuideCharDB.junkStats = { items = 0, copper = 0 }
@@ -141,8 +235,16 @@ function ns:InitSavedVariables()
     -- Future migrations: if TBCGuideDB.schema < N then ... end
     TBCGuideDB.schema = SCHEMA
     TBCGuideCharDB.schema = SCHEMA
-    ns.db = TBCGuideDB
+    ns:SetActiveProfile(active)
     ns.char = TBCGuideCharDB
+end
+
+-- Points ns.db at TBCGuideDB with `profile` = the named profile (which must exist).
+function ns:SetActiveProfile(name)
+    ns.db = setmetatable({ profile = TBCGuideDB.profiles[name], profileName = name }, {
+        __index = TBCGuideDB,
+        __newindex = TBCGuideDB,
+    })
 end
 
 function ns:GetProgress(guideId)

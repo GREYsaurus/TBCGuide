@@ -19,10 +19,11 @@ accept Satyr Horns | Pixel.
 accept The Lost Pages | Gurda Ragescar.
 fp Splintertree Post
 bind Splintertree Post
-accept 6921 Amongst the Ruins | Je'neu Sancrea, Zoram'gar Outpost (west coast).
+turnin Trouble in the Deeps [optional] | Je'neu Sancrea, Zoram'gar Outpost (west coast).
+accept 6921 Amongst the Ruins [dungeon=Blackfathom Deeps] | Je'neu Sancrea. Needs the Blackfathom Deeps dungeon.
 fp Zoram'gar Outpost
-complete 6921 Amongst the Ruins | The Zoram Strand ruins.
-turnin 6921 Amongst the Ruins
+complete 6921 Amongst the Ruins [dungeon=Blackfathom Deeps] | The Fathom Stone is inside the Blackfathom Deeps instance (entrance at the Zoram Strand).
+turnin 6921 Amongst the Ruins [dungeon=Blackfathom Deeps]
 complete Ashenvale Outrunners | Ashenvale Outrunners, stealthy night elves around Splintertree.
 complete Torek's Assault [group=2]
 complete Between a Rock and a Thistlefur | Thistlefur furbolgs at Thistlefur Village.

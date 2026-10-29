@@ -80,13 +80,14 @@ end
 -- Returns sell(bool), reason. Unknown => keep. Pure function of its inputs (tested headless).
 function Vendor:Classify(item, info, guideItems, isQuestSlot)
     if not item or not item.itemID then return false, "no item id" end
-    if item.quality ~= POOR then return false, "not junk quality" end
+    local listed = ns.db.junkList and ns.db.junkList[item.itemID]
+    if item.quality ~= POOR and not listed then return false, "not junk quality" end
     if ns.db.protectedItems[item.itemID] then return false, "protected item" end
     if guideItems and guideItems[item.itemID] then return false, "needed by a quest" end
     if isQuestSlot then return false, "quest item" end
     if ns.DB.ItemStartsQuest(item.itemID) then return false, "starts a quest" end
     if not info then return false, "item info not loaded" end
-    if info.quality ~= nil and info.quality ~= POOR then return false, "not junk quality" end
+    if info.quality ~= nil and info.quality ~= POOR and not listed then return false, "not junk quality" end
     if info.bindType == QUEST_BIND then return false, "quest item" end
     if info.classID == nil then return false, "unknown item class" end
     if self:IsClassProtected(info.classID) then return false, "protected category" end
@@ -103,7 +104,7 @@ function Vendor:Scan()
     for bag = 0, C.NUM_BAGS do
         for slot = 1, C.GetContainerNumSlots(bag) do
             local item = C.GetContainerItem(bag, slot)
-            if item and item.quality == POOR then
+            if item and (item.quality == POOR or (ns.db.junkList and ns.db.junkList[item.itemID])) then
                 local info = C.GetItemInfo(item.itemID or item.link)
                 local ok = self:Classify(item, info, guideItems, C.ContainerItemIsQuestItem(bag, slot))
                 if ok then
@@ -117,7 +118,7 @@ function Vendor:Scan()
 end
 
 function Vendor:OnMerchantShow()
-    if not ns.db.profile.autoSellJunk then return end
+    if not (ns.db.profile.autoSellJunk and ns.db.profile.inventoryManager) then return end
     if ns.Compat.IsModifierHeld() then
         if ns.db.profile.sellNotify then ns:Print("Shift held: junk not sold this time.") end
         return

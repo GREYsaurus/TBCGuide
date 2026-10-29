@@ -39,7 +39,8 @@ namespace TBCGuideTools
             "issecurevariable","geterrorhandler","seterrorhandler","setfenv","getfenv" });
 
         static readonly HashSet<string> OwnGlobalsWrite = new HashSet<string>(new[] {
-            "TBCGuide","TBCGuideDB","TBCGuideCharDB","SLASH_TBCGUIDE1","SLASH_TBCGUIDE2","SLASH_TBCGEAR1" });
+            "TBCGuide","TBCGuideDB","TBCGuideCharDB","SLASH_TBCGUIDE1","SLASH_TBCGUIDE2","SLASH_TBCGEAR1",
+            "BINDING_HEADER_TBCGUIDE","BINDING_NAME_TBCGUIDE_DELETEJUNK","TBCGuide_DeleteCheapestJunk" });
 
         public static LintResult Run(string addOnDir, string allowlistPath)
         {

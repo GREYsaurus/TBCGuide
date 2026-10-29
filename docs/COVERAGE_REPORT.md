@@ -8,15 +8,15 @@ It reports what the automated checks found. It is **not** evidence of in-game te
 | Item | Count |
 |---|---|
 | Guides | 54 (41 Azeroth, 13 Outland) |
-| Guide steps | 4331 |
-| Quest steps (accept/complete/turn-in) | 3699 |
+| Guide steps | 4330 |
+| Quest steps (accept/complete/turn-in) | 3698 |
 | Distinct quests referenced | 1282 |
 | Steps with database-derived coordinates | 2959 |
 | Steps with hand-written coordinates (unverified) | 1 |
 | Race/class combinations | 52 |
 | Talent builds | 21 (21 pass validation) |
 | Validation | validate: 0 error(s), 0 warning(s) |
-| Compiler warnings | 72 (see docs/generated/guide-warnings.log) |
+| Compiler warnings | 71 (see docs/generated/guide-warnings.log) |
 
 ## Race/class routes (level 1 to 70)
 
@@ -99,8 +99,8 @@ Each race/class combination is followed from its racial start guide through the 
 | Redridge Mountains | Alliance | 15-21 | Redridge Mountains | 68 | 21 | 8 |
 | Ashenvale | Alliance | 19-25 | Ashenvale | 57 | 16 | 6 |
 | Duskwood | Alliance | 20-25 | Duskwood | 74 | 25 | 0 |
-| Stonetalon Mountains (Sun Rock Retreat) | Horde | 21-25 | Stonetalon Mountains | 38 | 9 | 1 |
-| Ashenvale (Splintertree Post) | Horde | 23-28 | Ashenvale | 38 | 8 | 2 |
+| Stonetalon Mountains (Sun Rock Retreat) | Horde | 21-25 | Stonetalon Mountains | 36 | 9 | 1 |
+| Ashenvale (Splintertree Post) | Horde | 23-28 | Ashenvale | 39 | 9 | 3 |
 | Wetlands | Alliance | 24-29 | Wetlands | 77 | 24 | 0 |
 | Hillsbrad Foothills (Tarren Mill) | Horde | 27-31 | Hillsbrad Foothills | 46 | 12 | 2 |
 | Hillsbrad Foothills (Southshore) | Alliance | 28-31 | Hillsbrad Foothills | 45 | 12 | 0 |
@@ -170,7 +170,7 @@ Each race/class combination is followed from its racial start guide through the 
 ## Data awaiting verification
 
 - Guide **routes, ordering and notes** are original and were written without in-game testing. Quest ids, names, faction/race/class limits and NPC coordinates come from the database, but the practical route (XP sufficiency, travel efficiency) needs play-testing.
-- **71 complete-steps** have no objective location in the data (escort, talk or event quests). The arrow cannot target them; the step text still shows the objective.
+- **70 complete-steps** have no objective location in the data (escort, talk or event quests). The arrow cannot target them; the step text still shows the objective.
 - **1 prerequisite warnings**: a quest's prerequisite is not turned in on the route (usually an alternative chain). The engine auto-skips unavailable quests at runtime.
 - **Class advice** text (Classes/ClassAdvice.lua) is marked unverified. Ability training levels are from developer knowledge.
 - **Talent builds** are legal against the 2.5.6 client tables, but how good they are is a judgement call, not something tested.

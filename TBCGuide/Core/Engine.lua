@@ -81,14 +81,46 @@ function Engine:Load(guideId, opts)
     return true
 end
 
+-- Whether quest q can only be taken after a dungeon quest that is excluded right now: one of its
+-- required prerequisites, or every one of its alternative prerequisites, is excluded and not done.
+function Engine:NeedsExcluded(q)
+    local rec = ns.DB.GetQuestByID(q)
+    if not rec then return false end
+    local ex = self.excludedDungeon
+    for _, p in ipairs(rec.preGroup or {}) do
+        if ex[p] and not T:IsTurnedIn(p) then return true end
+    end
+    local single = rec.preSingle or {}
+    if #single == 0 then return false end
+    for _, p in ipairs(single) do
+        if not ex[p] or T:IsTurnedIn(p) then return false end
+    end
+    return true
+end
+
+-- A quest is grey (little or no XP) when the player is more than GetQuestGreenRange() levels above
+-- it; without that API the TBC value for most levels (8) is used.
+function Engine:IsGrey(q)
+    local lvl = ns.DB.GetQuestLevel(q)
+    if not lvl or lvl <= 0 then return false end
+    local range = GetQuestGreenRange and GetQuestGreenRange() or 8
+    return (UnitLevel("player") or 1) - lvl > range
+end
+
 -- Whether a quest step should be skipped automatically for this character, and why.
 function Engine:AutoSkipReason(s, ctx)
-    if not s.q then return nil end
+    if not s.q or ns.db.profile.disableStepSkips then return nil end
     if s[1] == "accept" then
         if T:IsTurnedIn(s.q) then return nil end -- counts as done, not skipped
         local ok, why = ns.DB.IsQuestAvailable(s.q, ctx)
         if not ok and (why == "race" or why == "class" or why == "exclusive" or why == "too high level") then
             return "not available (" .. why .. ")"
+        end
+        if ns.db.profile.skipOverleveled and not T:InLog(s.q) and self:IsGrey(s.q) and not (self.prereqOf and self.prereqOf[s.q]) then
+            return "grey quest for your level"
+        end
+        if self.excludedDungeon and next(self.excludedDungeon) and not T:InLog(s.q) and self:NeedsExcluded(s.q) then
+            return "needs a dungeon quest (Include Dungeon Quests is off)"
         end
     elseif s[1] == "turnin" or s[1] == "complete" then
         if not T:InLog(s.q) and not T:IsTurnedIn(s.q) then
@@ -122,13 +154,33 @@ function Engine:Refresh(silent)
     for i, s in ipairs(g.steps) do
         if s[1] == "accept" and s.q then self.acceptIndex[s.q] = i end
     end
+    -- Dungeon quests left out by "Include Dungeon Quests" (never ones already in the log).
+    self.excludedDungeon = {}
+    if not prof.showDungeonSteps then
+        for _, s in ipairs(g.steps) do
+            if s.dungeon and s.q and not T:InLog(s.q) and not T:IsTurnedIn(s.q) then self.excludedDungeon[s.q] = true end
+        end
+    end
+    -- Quests that unlock another quest of this guide are never skipped as grey (the chain needs them).
+    if self.prereqGuide ~= g then
+        self.prereqGuide, self.prereqOf = g, {}
+        for _, s in ipairs(g.steps) do
+            if s[1] == "accept" and s.q then
+                local q = ns.DB.GetQuestByID(s.q)
+                if q then
+                    for _, p in ipairs(q.preGroup or {}) do self.prereqOf[p] = true end
+                    for _, p in ipairs(q.preSingle or {}) do self.prereqOf[p] = true end
+                end
+            end
+        end
+    end
 
     local firstOpen
     for i, s in ipairs(g.steps) do
         local st
         if not ns.Guides:StepApplies(s, ctx) then
             st = "na"
-        elseif (s.dungeon and not prof.showDungeonSteps) or (s.elite and not prof.showElite)
+        elseif (s.dungeon and not prof.showDungeonSteps and not (s.q and T:InLog(s.q))) or (s.elite and not prof.showElite)
             or (s.optional and prof.speedRoute) then
             st = "na"
         elseif p.skipped[i] then

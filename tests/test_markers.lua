@@ -305,14 +305,14 @@ local savedDB = TBCGuideDB
 TBCGuideDB = { profile = { autoMarkObjectives = false } }
 ns.migrationNote = nil
 ns:InitSavedVariables()
-check(TBCGuideDB.profile.autoMarkObjectives == true and ns.migrationNote ~= nil, "old saved setting switched on once, with a note")
-TBCGuideDB.profile.autoMarkObjectives = false -- the player turns it off again
+check(ns.db.profile.autoMarkObjectives == true and ns.migrationNote ~= nil, "old saved setting switched on once, with a note")
+ns.db.profile.autoMarkObjectives = false -- the player turns it off again
 ns.migrationNote = nil
 ns:InitSavedVariables()
-check(TBCGuideDB.profile.autoMarkObjectives == false and ns.migrationNote == nil, "the player's later choice is kept")
+check(ns.db.profile.autoMarkObjectives == false and ns.migrationNote == nil, "the player's later choice is kept")
 TBCGuideDB = nil
 ns:InitSavedVariables()
-check(TBCGuideDB.profile.autoMarkObjectives == true and ns.migrationNote == nil, "new install: on by default, no note")
+check(ns.db.profile.autoMarkObjectives == true and ns.migrationNote == nil, "new install: on by default, no note")
 TBCGuideDB = savedDB
 ns:InitSavedVariables()
 prof = ns.db.profile
@@ -350,7 +350,7 @@ for _, cmd in ipairs({ "markers", "marker", "marker bogus", "mark bogus", "debug
     local okc, err = slash(cmd)
     check(okc, "/tbcg " .. cmd .. " -> " .. tostring(err))
 end
-TBCGuideDB.profile.defaultMarker = 42
+ns.db.profile.defaultMarker = 42
 ns:InitSavedVariables()
 check(ns.db.profile.defaultMarker == 8, "invalid default marker repaired")
 check(#ns.errors == 0, "no captured errors after marker tests: " .. table.concat(ns.errors, " | "))

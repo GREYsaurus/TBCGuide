@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.5.0
+
+### Fixed
+- Horde *Trouble in the Deeps* is now turned in at Zoram'gar Outpost in Ashenvale, where its quest giver is. Before, the Stonetalon guide asked you to turn it in there, with an empty objective step. The note for *Amongst the Ruins* now says the Fathom Stone is inside Blackfathom Deeps.
+
+### Added
+- **Settings window** (`/tbcg options`, minimap button). It has two rows of tabs (General, Guide Routing, Targeting, Leveling Tracker, Communications, Tips, Help / Look and Feel, Advanced Settings, Profiles) with gold section headers, checkboxes, sliders, dropdowns, colour swatches and a key-binding button. Options that are planned but not built yet are shown greyed out and do nothing. See docs/SETTINGS.md.
+- **Profiles:** create, switch, copy from, delete, reset, and set as default for new characters. Existing settings become the "Default" profile.
+- **NPC automation:** flight path (fly to the guide's destination), innkeeper bind on bind steps, skip single-option gossip, and trainer automation (off by default). Hold Shift to skip.
+- **Quest auto rewards** (off by default): only a clear gear-score upgrade, or the most valuable reward when your class can use none of them.
+- **Junk:** a junk list (modifier + right-click in bags), a key binding that deletes the cheapest junk item, and optional discarding when bags are full. A master *Inventory Manager* switch covers all of them.
+- **Routing:** skip overleveled (grey) quest pickups unless a later quest needs them, and *Disable step skips* for debugging.
+- **Include Dungeon Quests** (Guide Routing; on by default): off leaves dungeon quest steps out of the route, skips follow-ups that need them and moves straight on. Quests already in your log keep their steps. The only guide quest that needs an instance, Horde Ashenvale *Amongst the Ruins* (Blackfathom Deeps), is now tagged. The compiler warns about untagged quests whose objectives are only inside instances.
+- **Targeting:** mark friendly quest NPCs, allow or forbid marking in groups, a "TBCGuide" targeting macro, a note when a step NPC comes into view, and maximum nameplate distance.
+- **Tips:** drowning and low-health warnings (sound, screen flash, thresholds) and rare-mob alerts.
+- **Look and feel:** step text colours, guide font size, step list toggle, arrow scale and update rate.
+- **Other:** world map button, level-up announcements (emote/party/guild, off by default), and a warning when another leveling guide add-on is loaded.
+
+
 ## 0.4.1
 
 ### Added

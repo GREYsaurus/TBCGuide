@@ -238,9 +238,19 @@ function QA:OnQuestComplete()
     local ok, _, onGuide = self:CanTurnIn(q)
     if not ok then return end
     local choices = GetNumQuestChoices and GetNumQuestChoices()
+    if type(choices) == "number" and choices > 1 and prof().autoReward and ns.GearUI then
+        -- Opt-in (Quest auto rewards, off by default): only a clear gear-score winner is taken.
+        local pick, why = ns.GearUI:AutoRewardChoice()
+        if pick then
+            self:Expect("turnin", q)
+            ns:Print("Chose reward " .. tostring(pick.link) .. " (" .. why .. "; Quest auto rewards).")
+            GetQuestReward(pick.index)
+            return
+        end
+    end
     if type(choices) ~= "number" or choices > 1 then
-        -- MANDATORY: the player picks the reward. Leave the panel open; progress follows the
-        -- QUEST_TURNED_IN event once they click Complete Quest.
+        -- The player picks the reward (unless Quest auto rewards found a clear winner above).
+        -- Leave the panel open; progress follows QUEST_TURNED_IN once they click Complete Quest.
         self.waitingReward[q] = true
         if onGuide or prof().questNotify then
             ns:Print("|cffffd100Choose your reward|r for " .. questTitle(q) .. ", then click Complete Quest.")

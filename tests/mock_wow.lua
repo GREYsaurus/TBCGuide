@@ -133,6 +133,7 @@ function UnitClass() return MOCK.player.class, MOCK.player.class end
 function UnitFactionGroup() return MOCK.player.faction end
 function UnitLevel() return MOCK.player.level end
 function UnitName() return MOCK.player.name end
+function GetRealmName() return MOCK.realm or "Testrealm" end
 function UnitXP() return 50 end
 function UnitXPMax() return 100 end
 function GetRealZoneText() return MOCK.zone end

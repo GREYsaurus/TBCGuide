@@ -32,7 +32,7 @@ function Nav:SetTarget(areaId, x, y, label)
     self.target = { area = areaId, mapId = mapId, x = x, y = y, label = label or "" }
     self:UpdateTomTom()
     self:UpdateMapPin()
-    if self.arrow then self.arrow:SetShown(ns.db.profile.showArrow) end
+    if self.arrow then self.arrow:SetShown(ns.db.profile.showArrow and ns.Assist:FramesAllowed()) end
 end
 
 function Nav:Clear()
@@ -159,7 +159,7 @@ local function createArrow()
     local acc = 0
     f:SetScript("OnUpdate", function(self, elapsed)
         acc = acc + elapsed
-        if acc < 0.05 then return end
+        if acc < (ns.db.profile.arrowUpdateMs or 50) / 1000 then return end
         acc = 0
         local dist, angle = Nav:Vector()
         if not dist then

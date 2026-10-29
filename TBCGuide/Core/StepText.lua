@@ -11,10 +11,20 @@ local _, ns = ...
 local StepText = {}
 ns.StepText = StepText
 
-local QUEST = "|cffffd100%s|r"
-local NPC = "|cff66ccff%s|r"
 local DIM = "|cff999999%s|r"
-local WARN = "|cffff7744%s|r"
+-- Colours are profile settings (Look and Feel > Text); these wrap a string in them.
+local function hex(c, def)
+    c = type(c) == "table" and c or def
+    return string.format("|cff%02x%02x%02x%%s|r", math.floor(c.r * 255 + 0.5), math.floor(c.g * 255 + 0.5), math.floor(c.b * 255 + 0.5))
+end
+local QUEST, NPC, WARN
+local function refreshColours()
+    local p = ns.db and ns.db.profile or {}
+    QUEST = hex(p.colorQuest, { r = 1, g = 0.82, b = 0 })
+    NPC = hex(p.colorFriendly, { r = 0.4, g = 0.8, b = 1 })
+    WARN = hex(p.colorWarning, { r = 1, g = 0.47, b = 0.27 })
+end
+refreshColours()
 
 local function questName(s)
     return (s.q and ns.DB.GetQuestName(s.q)) or s.title or ("quest " .. tostring(s.q))
@@ -30,6 +40,7 @@ end
 
 -- Main line of a step.
 function StepText:Title(s)
+    refreshColours()
     local k = s[1]
     if k == "accept" then
         local who = s.npc and (" from " .. string.format(NPC, s.npc)) or ""
@@ -67,6 +78,7 @@ end
 
 -- Detail lines (objectives, notes, warnings) under the title.
 function StepText:Details(s)
+    refreshColours()
     local lines = {}
     if s[1] == "complete" and s.q then
         local e = ns.Tracker:GetEntry(s.q)

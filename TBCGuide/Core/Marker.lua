@@ -103,6 +103,14 @@ function M:BuildRule()
             elseif p.autoMarkObjectives and s[1] == "complete" then
                 local npcs = objectiveNpcs(s)
                 if npcs then parts[#parts + 1] = { npcs = npcs, step = i } end
+            elseif p.markFriendly and i == cur and (s[1] == "accept" or s[1] == "turnin") and s.q then
+                local q = ns.DB.GetQuestByID(s.q)
+                local list = q and (s[1] == "accept" and q.startNpcs or q.endNpcs)
+                if list and list[1] then
+                    local npcs = {}
+                    for _, id in ipairs(list) do npcs[id] = true end
+                    parts[#parts + 1] = { npcs = npcs, step = i }
+                end
             end
         end
     end
@@ -257,6 +265,7 @@ function M:Consider(unit)
     if not icon then return self:Note("not an NPC of the current step", name) end
     self.lastSeen[guid] = GetTime()
     if self.blocked then return self:Note("blocked by the client", name) end
+    if not prof().markInGroup and ns.Assist and ns.Assist:InGroup() then return self:Note("marking in groups is off", name) end
     if self.stopped then return self:Note("paused for this step", name) end
     if self.handsOff[guid] then return self:Note("left alone (someone else's icon, or changed by hand)", name) end
     if UnitIsDead and UnitIsDead(unit) then return self:Note("dead", name) end

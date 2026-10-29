@@ -9,6 +9,9 @@
 local addonName, ns = ...
 
 ns.name = addonName
+-- Key binding labels (Bindings.xml)
+BINDING_HEADER_TBCGUIDE = "TBCGuide"
+BINDING_NAME_TBCGUIDE_DELETEJUNK = "Delete cheapest junk item"
 ns.QDB = { quests = {}, npcs = {}, objects = {}, items = {}, zones = {} }
 ns.modules = {}
 

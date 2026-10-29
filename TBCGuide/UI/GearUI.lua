@@ -97,6 +97,34 @@ end
 
 -- Quest rewards ---------------------------------------------------------------------------------------
 
+-- Reward to choose automatically (Quest auto rewards, opt-in), or nil to leave it to the player.
+-- Taken only when (a) a numeric profile scores one reward strictly above every other one and as
+-- an upgrade, or (b) the class can use none of the rewards: then the one worth most at a vendor.
+-- Returns { index, link }, reason.
+function GUI:AutoRewardChoice()
+    local rows = self:RankRewards()
+    if not rows or #rows < 2 then return nil end
+    for _, r in ipairs(rows) do
+        if not r.link or r.res.reason == "item not loaded yet" then return nil end
+    end
+    local best, second = rows[1], rows[2]
+    if best.res.ok and best.res.numeric and best.res.delta and best.res.delta > 0 then
+        local d2 = second.res.ok and second.res.numeric and second.res.delta
+        if not d2 or best.res.delta > d2 then return { index = best.index, link = best.link }, "best gear score" end
+        return nil
+    end
+    local allUnusable = true
+    for _, r in ipairs(rows) do if not r.res.unusable then allUnusable = false end end
+    if not allUnusable then return nil end
+    local pick, value = nil, -1
+    for _, r in ipairs(rows) do
+        local info = ns.Compat.GetItemInfo(r.link)
+        local v = info and info.sellPrice or 0
+        if v > value then pick, value = r, v end
+    end
+    if pick and value > 0 then return { index = pick.index, link = pick.link }, "none usable; most valuable" end
+end
+
 -- Ranks the reward choices of the open quest dialog. Returns rows { index, link, res } best first,
 -- or nil when there is nothing to rank. Uncached items are reported, never guessed.
 function GUI:RankRewards()

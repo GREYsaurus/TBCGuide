@@ -17,7 +17,7 @@ local CHECKS = {
     { "showArrow", "Show the navigation arrow" },
     { "showMapPins", "Show the current target on the world map" },
     { "useTomTom", "Send waypoints to TomTom (if installed)" },
-    { "showDungeonSteps", "Show dungeon quest steps" },
+    { "showDungeonSteps", "Include Dungeon Quests" },
     { "showElite", "Show elite / group quest steps" },
     { "speedRoute", "Maximum-speed route: hide optional side quests" },
     { "talentHints", "Remind me to spend talent points (chat)" },
@@ -88,6 +88,12 @@ function Options:Create()
     end):SetPoint("TOPLEFT", 16, y - 70)
 
     W.Button(p, "Reset current guide progress", 200, 22, function() ns.Engine:Reset() end):SetPoint("TOPLEFT", 200, y - 70)
+    W.Button(p, "Open the TBCGuide settings window", 260, 26, function()
+        if ns.Config.frame then
+            if HideUIPanel and (SettingsPanel or InterfaceOptionsFrame) then HideUIPanel(SettingsPanel or InterfaceOptionsFrame) end
+            ns.Config:Show()
+        end
+    end):SetPoint("TOPRIGHT", -16, -16)
 
     p:SetScript("OnShow", function() Options:Sync() end)
     ns.Compat.RegisterOptionsPanel(p, "TBCGuide")
@@ -100,7 +106,12 @@ function Options:Sync()
 end
 
 function Options:Apply()
-    if ns.Nav.arrow then ns.Nav.arrow:SetShown(ns.db.profile.showArrow and ns.Nav.target ~= nil) end
+    if ns.Nav.arrow then ns.Nav.arrow:SetShown(ns.db.profile.showArrow and ns.Nav.target ~= nil and ns.Assist:FramesAllowed()) end
+    if ns.Assist then ns.Assist:ApplyFrames() ns.Assist:ApplyNameplateDistance() end
+    if ns.MainFrame.frame then
+        ns.MainFrame.frame:SetScale(ns.db.profile.scale or 1)
+        ns.MainFrame:Render()
+    end
     ns.Nav:UpdateMapPin()
     ns.Nav:UpdateTomTom()
     if ns.MinimapButton then ns.MinimapButton:Update() end

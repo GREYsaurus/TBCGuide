@@ -160,7 +160,7 @@ function Main:Create()
     ns:On("ZONE_CHANGED_NEW_AREA", function() Main:Render() end)
 
     if ns.db.frames.main.minimized then self:SetMinimized(true) end
-    f:SetShown(ns.db.frames.main.shown ~= false)
+    f:SetShown(ns.db.frames.main.shown ~= false and ns.Assist:FramesAllowed())
     self:Render()
 end
 
@@ -183,14 +183,17 @@ function Main:ToggleMinimized() self:SetMinimized(not ns.db.frames.main.minimize
 function Main:Toggle()
     if not self.frame then return end
     local show = not self.frame:IsShown()
-    self.frame:SetShown(show)
     ns.db.frames.main.shown = show
+    self.frame:SetShown(show and ns.Assist:FramesAllowed())
+    if show and not ns.Assist:FramesAllowed() then
+        ns:Print("The guide window is hidden by your settings (Show all Enabled Frames, Hide Window or Autohide in Raids).")
+    end
 end
 
 function Main:Show()
     if not self.frame then return end
-    self.frame:Show()
     ns.db.frames.main.shown = true
+    self.frame:SetShown(ns.Assist:FramesAllowed())
 end
 
 function Main:Render()
@@ -219,7 +222,7 @@ function Main:Render()
 
     if ns.db.frames.main.minimized then return end
 
-    local items = E:Upcoming(ns.db.profile.stepsShown or 4)
+    local items = E:Upcoming(ns.db.profile.showStepList and (ns.db.profile.stepsShown or 4) or 1)
     if #items == 0 then
         local nextG = ns.Selector:NextAfter(g, ns.Compat.PlayerInfo())
         self.empty:SetText("Guide finished!" .. (nextG and ("\nNext: |cffffd100" .. nextG.name .. "|r (/tbcg nextguide)") or "\nOpen /tbcg guide to continue."))
@@ -235,6 +238,13 @@ function Main:Render()
         r.step, r.stepIndex = s, idx
         r:SetWidth(width)
         r.icon:SetTexture(stepIcon(s, E.status[idx]))
+        local size = ns.db.profile.guideFontSize
+        if size and r.title.GetFont then
+            local font = r.title:GetFont()
+            if font then r.title:SetFont(font, size) end
+            font = r.detail:GetFont()
+            if font then r.detail:SetFont(font, math.max(8, size - 2)) end
+        end
         r.title:SetText(ns.StepText:Title(s))
         local details = (n == 1) and ns.StepText:Details(s) or {}
         r.detail:SetText(table.concat(details, "\n"))

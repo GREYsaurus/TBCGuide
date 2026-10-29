@@ -52,27 +52,17 @@ function MB:CursorAngle()
     return math.deg(math.atan2(cy / scale - my, cx / scale - mx)) % 360
 end
 
--- The settings window is the client's options window; a second click closes it again.
-local function optionsWindow()
-    local f = SettingsPanel or InterfaceOptionsFrame
-    if f and f.IsShown and f:IsShown() then return f end
-end
-
+-- Left-click toggles the TBCGuide settings window (UI/Config.lua).
 function MB:OnClick(button)
     if self.dragged then self.dragged = false return end -- releasing a drag is not a click
     if button == "RightButton" then
         if ns.MainFrame and ns.MainFrame.Toggle then ns.MainFrame:Toggle() end
         return
     end
-    local open = optionsWindow()
-    if open then
-        if HideUIPanel then HideUIPanel(open) else open:Hide() end
-        return
-    end
-    if not (ns.Options and ns.Options.panel) then
+    if not (ns.Config and ns.Config.frame) then
         return ns:Print("Settings are not ready yet. Try again in a moment, or type /tbcg options.")
     end
-    ns.Options:Open()
+    ns.Config:Toggle()
 end
 
 function MB:ShowTooltip(owner)

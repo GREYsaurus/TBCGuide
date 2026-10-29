@@ -1,0 +1,5 @@
+<Bindings>
+	<Binding name="TBCGUIDE_DELETEJUNK" header="TBCGUIDE">
+		TBCGuide_DeleteCheapestJunk()
+	</Binding>
+</Bindings>

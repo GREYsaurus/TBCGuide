@@ -55,6 +55,8 @@ If a name is ambiguous (e.g. the three "Rite of Vision" quests), the compiler st
 
 `[optional]`, `[elite]`, `[group]` or `[group=3]`, `[dungeon=Shadowfang Keep]`, `[class=Warrior,Paladin]`, `[race=Human]`, `[zone=Orgrimmar]`, `[at=x,y]` (explicit coordinates; marked unverified), `[obj=2]`, `[unverified]`, `[mark=skull]` / `[mark=cross:Lieutenant Benedict]` / `[mark=star:1234]` (raid marker; see docs/RAID_MARKERS.md). Separate several flags with `;` inside one bracket: `[elite; group=3; optional]`.
 
+**Dungeon quests:** tag every step (accept, complete, turn-in) of a quest that can only be done inside an instance with `[dungeon=<instance>]`. The *Include Dungeon Quests* setting leaves tagged steps out of the route. Follow-up quests that need an excluded dungeon quest are skipped automatically, so don't tag those. Don't tag an outdoor quest that only sends you towards a dungeon (a breadcrumb, or objectives at the entrance). The compiler warns when a quest's objectives are found only inside instances in the bundled data but its step has no tag.
+
 ### What the compiler adds for you
 
 - the quest title, giver/finisher NPC name and coordinates (the spawn nearest the previous step);

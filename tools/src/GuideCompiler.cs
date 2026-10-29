@@ -443,6 +443,13 @@ namespace TBCGuideTools
                     var rec = res.Db.Quests[q];
                     s.Title = BundledDb.Str(rec, BundledDb.Q_NAME);
                     CheckQuestFit(q, rec, where, g, s, res);
+                    if (s.Dungeon == null)
+                    {
+                        string inst = InstanceOnly(res.Db, rec);
+                        if (inst != null)
+                            res.Warnings.Add(where + ": quest " + q + " (" + s.Title + ") can only be done inside " + inst
+                                + "; add [dungeon=" + inst + "] so 'Include Dungeon Quests' can leave it out");
+                    }
                     if (verb == "accept")
                     {
                         st.Accepted.Add(q);
@@ -886,6 +893,65 @@ namespace TBCGuideTools
             if (lx >= 0 && z == lz) return Math.Sqrt((sp[1] - lx) * (sp[1] - lx) + (sp[2] - ly) * (sp[2] - ly));
             if (z == guideZone) return 1000;
             return 5000;
+        }
+
+        // ------------------------------------------------------------------ dungeon quests
+        // Instance zones are recognised from the bundled zone names ("... - Dungeon", plus the few
+        // instances QuestieDB names without that suffix and its "fake ID for <instance>" sub-zones).
+        static readonly string[] InstanceWords = { "Dungeon", "The Blood Furnace", "Scholomance", "Culling of Stratholme", "fake ID for" };
+
+        static bool IsInstanceZone(BundledDb db, int zone)
+        {
+            string n;
+            if (!db.ZoneNames.TryGetValue(zone, out n) || n == null) return false;
+            foreach (var w in InstanceWords) if (n.Contains(w)) return true;
+            return false;
+        }
+
+        static string InstanceName(BundledDb db, int zone)
+        {
+            string n = db.ZoneNames[zone];
+            int i = n.IndexOf(" - ");
+            n = i > 0 ? n.Substring(0, i) : n;
+            int f = n.IndexOf("(fake ID for ");
+            if (f >= 0) n = n.Substring(f + 13).TrimEnd(')');
+            return n.Trim();
+        }
+
+        // The instance a quest's objectives are confined to, or null. Every objective place (kill
+        // targets, objects, the NPCs and objects that drop quest items; an object without spawns
+        // counts by its zone) must be inside instances, and there must be at least one place.
+        static string InstanceOnly(BundledDb db, LTable rec)
+        {
+            var obj = BundledDb.Tab(rec, BundledDb.Q_OBJ);
+            if (obj == null) return null;
+            var zones = new List<int>();
+            Action<int> npc = id => { foreach (var sp in db.NpcSpawns(id)) zones.Add((int)sp[0]); };
+            Action<int> thing = id =>
+            {
+                var sp = db.ObjSpawns(id);
+                if (sp.Count > 0) { foreach (var x in sp) zones.Add((int)x[0]); return; }
+                LTable o;
+                if (db.Objects.TryGetValue(id, out o)) { int oz = BundledDb.Num(o, BundledDb.O_ZONE); if (oz > 0) zones.Add(oz); }
+            };
+            foreach (var key in new[] { "c", "k" })
+            {
+                var l = obj.Get(key) as LTable;
+                if (l != null) foreach (var id in l.IntList()) npc(id);
+            }
+            var ol = obj.Get("o") as LTable;
+            if (ol != null) foreach (var id in ol.IntList()) thing(id);
+            var il = obj.Get("i") as LTable;
+            if (il != null)
+                foreach (var id in il.IntList())
+                {
+                    LTable it;
+                    if (!db.Items.TryGetValue(id, out it)) continue;
+                    foreach (var n in BundledDb.Ids(it, BundledDb.I_NPCDROPS)) npc(n);
+                    foreach (var o in BundledDb.Ids(it, BundledDb.I_OBJDROPS)) thing(o);
+                }
+            if (zones.Count == 0 || zones.Any(z => !IsInstanceZone(db, z))) return null;
+            return InstanceName(db, zones[0]);
         }
 
         static bool ObjectiveLocation(BundledDb db, LTable rec, int zone, double lx, double ly, out int oz, out double ox, out double oy)

@@ -173,3 +173,64 @@ GetMinimapShape                   # optional; defined by minimap add-ons (square
 HideUIPanel                       # core; closes the options window on a second click (guarded)
 SettingsPanel                     # guarded (new Settings UI on newer Classic builds)
 InterfaceOptionsFrame             # guarded (legacy options window)
+
+# --- settings window and its features (UI/Config.lua, Core/Assist.lua, Core/Profiles.lua) ---
+# All calls are nil-checked; none runs in combat where the client restricts it.
+GetRealmName                      # core
+IsControlKeyDown                  # core
+IsAltKeyDown                      # core
+UnitHealth                        # core
+UnitHealthMax                     # core
+UnitIsDeadOrGhost                 # core
+UIErrorsFrame                     # core frame
+RaidWarningFrame                  # core frame
+RaidNotice_AddMessage             # core
+ChatTypeInfo                      # core table
+ChatTypeInfo.RAID_WARNING
+PlaySound                         # core
+SOUNDKIT                          # classic table (guarded)
+SOUNDKIT.RAID_WARNING
+ShowUIPanel                       # core
+StaticPopup_Hide                  # core
+CLOSE                             # core global string
+ColorPickerFrame                  # core frame (colour swatches)
+PanelTemplates_TabResize          # core (guarded)
+PanelTemplates_SelectTab          # core (guarded)
+PanelTemplates_DeselectTab        # core (guarded)
+NumTaxiNodes                      # core (flight path automation)
+TaxiNodeName                      # core
+TaxiNodeGetType                   # core (guarded)
+TakeTaxiNode                      # core
+GetNumTrainerServices             # core (trainer automation)
+GetTrainerServiceInfo             # core
+GetTrainerServiceCost             # core
+BuyTrainerService                 # core
+GetGossipOptions                  # legacy fallback (guarded)
+SelectGossipOption                # legacy fallback (guarded)
+GetNumGossipAvailableQuests       # legacy fallback (guarded)
+GetNumGossipActiveQuests          # legacy fallback (guarded)
+ConfirmBinder                     # core (innkeeper bind automation)
+GetMirrorTimerProgress            # core (breath warning)
+GetCVar                           # core (nameplate distance, Lua errors)
+SetCVar                           # core
+SendChatMessage                   # core (level-up announcements: EMOTE, PARTY, GUILD only)
+IsInGuild                         # core
+IsInGroup                         # classic (guarded)
+GetNumGroupMembers                # classic (guarded)
+GetQuestGreenRange                # core (grey-quest check, guarded)
+GetMacroIndexByName               # core (targeting macro)
+GetNumMacros                      # core
+CreateMacro                       # core; only out of combat
+EditMacro                         # core; only out of combat
+MAX_ACCOUNT_MACROS                # core constant (guarded)
+GetBindingKey                     # core (junk key binding)
+SetBinding                        # core
+SaveBindings                      # core
+GetCurrentBindingSet              # core
+GetContainerNumFreeSlots          # legacy fallback (guarded)
+PickupContainerItem               # legacy fallback (guarded)
+DeleteCursorItem                  # core; deletes only the junk item TBCGuide just picked up
+ContainerFrameItemButton_OnModifiedClick # core; hooked with hooksecurefunc only
+C_AddOns                          # classic namespace (guarded)
+C_AddOns.IsAddOnLoaded
+IsAddOnLoaded                     # legacy fallback (guarded)

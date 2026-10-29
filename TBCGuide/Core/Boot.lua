@@ -46,6 +46,8 @@ ns:On("PLAYER_LOGIN", function()
     stage("raid markers", function() ns.Marker:Init() end)
     stage("gear scoring", function() ns.GearUI:Create() end)
     stage("navigation", function() ns.Nav:Init() end)
+    stage("assist", function() ns.Assist:Init() end)
+    stage("settings window", function() ns.Config:Create() end)
 
     stage("guide selection", function()
         local active = ns.char.activeGuide

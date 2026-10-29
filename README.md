@@ -16,6 +16,7 @@ Everything is in the base install. There are no guide packs, accounts, subscript
 - **Maximum-speed route option:** hides optional side quests.
 - **Raid markers (new in 0.3.0):** `/tbcg mark skull`, a marker bar, and guide steps that mark their quest NPC or kill target. Only NPCs the step names are marked, matched by NPC ID, and markers you or others set are never overwritten. See [docs/RAID_MARKERS.md](docs/RAID_MARKERS.md).
 
+- **Settings window and profiles (new in 0.5.0):** every option on tabs, with per-character profiles, plus flight, inn and gossip automation, junk tools, drowning and low-health warnings, a targeting macro and more. See [docs/SETTINGS.md](docs/SETTINGS.md).
 - **Gear scoring (new in 0.4.0):** item tooltips show how an item compares with what you wear, and quest rewards are ranked in chat (you still choose). Scores use stat weights researched from TBC sources, with confidence shown. Specs and levels without published numbers get a stat-by-stat comparison instead of an invented score. See [docs/GEAR_SCORING.md](docs/GEAR_SCORING.md).
 
 Details and defaults: [docs/AUTOMATION.md](docs/AUTOMATION.md).
@@ -58,7 +59,7 @@ More detail, including building from source, is in [INSTALL.md](INSTALL.md).
 | `/tbcg nextguide` | Load the next guide in your route |
 | `/tbcg reset` | Reset the current guide's progress |
 | `/tbcg class` | Class leveling tips |
-| `/tbcg options` | Settings (also the minimap button: left-click settings, right-click guide window) |
+| `/tbcg options` | The settings window (also the minimap button: left-click settings, right-click guide window) |
 | `/tbcg minimap` | Show/hide the minimap button |
 | `/tbcg automation` | Quest automation and junk-selling settings |
 | `/tbcg orphans` | Review and abandon quests your route will never turn in |

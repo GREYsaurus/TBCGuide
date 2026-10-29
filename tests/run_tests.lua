@@ -233,6 +233,7 @@ TEST = { check = check, ns = ns }
 dofile("tests/test_automation.lua")
 dofile("tests/test_markers.lua")
 dofile("tests/test_gear.lua")
+dofile("tests/test_minimap.lua")
 
 print(string.format("%d passed, %d failed", passes, failures))
 os.exit(failures == 0 and 0 or 1)

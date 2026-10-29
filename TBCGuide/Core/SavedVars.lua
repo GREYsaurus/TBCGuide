@@ -45,12 +45,13 @@ local accountDefaults = {
         -- Raid markers (docs/RAID_MARKERS.md)
         markEnabled = true,         -- /tbcg mark, the marker bar and guide marking
         autoMark = true,            -- mark NPCs the current guide step names with [mark=...]
-        autoMarkObjectives = false, -- also mark kill objectives of unmarked steps (default icon)
+        autoMarkObjectives = true,  -- also mark kill objectives / item droppers of the current steps
         markReplace = false,        -- automatic marking may replace an existing icon
         markClearOnAdvance = true,  -- remove our automatic icons when the step changes
         markNotify = true,          -- chat messages for marking results
         defaultMarker = 8,          -- 1 star .. 8 skull
         showMarkerBar = false,
+        showMinimapButton = true,   -- minimap button (left-click: settings, right-click: guide window)
         -- Gear scoring (docs/GEAR_RESEARCH.md); read-only, never equips or chooses anything
         gearEnabled = true,
         gearTooltip = true,         -- score lines on item tooltips
@@ -61,6 +62,8 @@ local accountDefaults = {
     protectedItems = {},    -- [itemID] = true: never sold automatically
     protectedClasses = {},  -- [itemClassID] = true/false: overrides Vendor.CLASSES defaults
     escortExtra = {},       -- [questID] = true: extra quests that must never be auto-accepted
+    migrations = {},        -- [name] = true: one-time setting changes already applied
+    minimap = { angle = 220 }, -- minimap button position: degrees around the minimap
     frames = {
         main = { point = "RIGHT", x = -60, y = 120, w = 320, h = 230, minimized = false, shown = true },
         browser = { point = "CENTER", x = 0, y = 0 },
@@ -97,6 +100,7 @@ local function sanitizeProgress(p)
 end
 
 function ns:InitSavedVariables()
+    local fresh = type(TBCGuideDB) ~= "table" or next(TBCGuideDB) == nil
     if type(TBCGuideDB) ~= "table" then TBCGuideDB = {} end
     if type(TBCGuideCharDB) ~= "table" then TBCGuideCharDB = {} end
     ns.Merge(TBCGuideDB, accountDefaults)
@@ -104,9 +108,24 @@ function ns:InitSavedVariables()
     TBCGuideCharDB.progress = sanitizeProgress(TBCGuideCharDB.progress)
     if type(TBCGuideCharDB.history) ~= "table" then TBCGuideCharDB.history = {} end
     if type(TBCGuideCharDB.simTalents) ~= "table" then TBCGuideCharDB.simTalents = {} end
-    for _, key in ipairs({ "protectedItems", "protectedClasses", "escortExtra" }) do
+    for _, key in ipairs({ "protectedItems", "protectedClasses", "escortExtra", "migrations" }) do
         if type(TBCGuideDB[key]) ~= "table" then TBCGuideDB[key] = {} end
     end
+    -- After 0.4.0: objective marking became the default (before, only 5 guide steps marked anything).
+    -- Saved settings from earlier versions still hold the old default, so turn it on once.
+    local mig = TBCGuideDB.migrations
+    if not mig.objectiveMarking then
+        mig.objectiveMarking = true
+        if not fresh and TBCGuideDB.profile.autoMarkObjectives == false then
+            TBCGuideDB.profile.autoMarkObjectives = true
+            ns.migrationNote = "raid markers now also mark the mobs of your current kill steps. "
+                .. "Turn this off with /tbcg set autoMarkObjectives off."
+        end
+    end
+    local mm = TBCGuideDB.minimap
+    if type(mm) ~= "table" then TBCGuideDB.minimap = { angle = 220 } mm = TBCGuideDB.minimap end
+    local ang = tonumber(mm.angle)
+    if not ang or ang ~= ang or ang == math.huge or ang == -math.huge then mm.angle = 220 else mm.angle = ang % 360 end
     local dm = TBCGuideDB.profile.defaultMarker
     if type(dm) ~= "number" or dm < 1 or dm > 8 then TBCGuideDB.profile.defaultMarker = 8 end
     local js = TBCGuideCharDB.junkStats

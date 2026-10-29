@@ -101,14 +101,29 @@ function D:Run(arg)
     if cmd == "marks" then
         local M = ns.Marker
         local r = M.rule
-        ns:Print("raid markers: " .. (r and ("step marks " .. M.Label(r.icon)) or "no marker rule for this step")
-            .. (M.blocked and ", BLOCKED by the client" or "") .. (M.stopped and ", paused after failures" or ""))
+        local p = ns.db.profile
+        ns:Print("raid markers: " .. (r and "rule active" or ("no rule: " .. tostring(M.noRuleWhy)))
+            .. (M.blocked and ", BLOCKED by the client" or "") .. (M.stopped and ", paused for this step" or ""))
+        line(string.format("settings: markEnabled=%s autoMark=%s autoMarkObjectives=%s markReplace=%s",
+            tostring(p.markEnabled), tostring(p.autoMark), tostring(p.autoMarkObjectives), tostring(p.markReplace)))
         local ok, why = ns.Compat.CanMark()
-        line("can mark now: " .. tostring(ok) .. (why and (" (" .. why .. ")") or ""))
+        line("can mark now: " .. tostring(ok) .. (why and (" (" .. why .. ")") or "")
+            .. (SetRaidTarget and "" or "; SetRaidTarget is MISSING in this client"))
         if r then
-            local ids = {}
-            for id in pairs(r.npcs) do ids[#ids + 1] = id .. " " .. tostring(ns.DB.GetNPCName(id)) end
-            line("npcs: " .. table.concat(ids, ", "))
+            local byIcon = {}
+            for id, icon in pairs(r.types) do
+                byIcon[icon] = byIcon[icon] or {}
+                table.insert(byIcon[icon], id .. " " .. tostring(ns.DB.GetNPCName(id)))
+            end
+            for icon, ids in pairs(byIcon) do
+                table.sort(ids)
+                line(M.Label(icon) .. (M.holder[icon] and " (on a mob now)" or "") .. ": " .. table.concat(ids, ", "))
+            end
+        end
+        local last = M.last
+        if last then
+            line(string.format("last decision: %s%s, %ds ago", last.reason, last.name and (" - " .. tostring(last.name)) or "",
+                math.floor((GetTime() - (last.at or 0)) + 0.5)))
         end
         return
     end

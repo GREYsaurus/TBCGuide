@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.1
+
+### Added
+- **Minimap button.** Left-click opens the TBCGuide settings, and clicking again closes them. Right-click shows or hides the guide window. Drag it around the minimap; the position is saved when you let go and kept across reloads. Square minimaps from other add-ons are supported. *Show the minimap button* on the settings page and `/tbcg minimap` hide or show it; `/tbcg options` always opens settings. Native code, no libraries.
+
+### Fixed
+- **Raid markers marked almost nothing.** Only 5 guide steps carried a `[mark]`, and marking a step's kill objectives was off by default. It is now on by default. Settings saved by older versions are switched on once, with a chat note; `/tbcg set autoMarkObjectives off` turns it off.
+- **After the first marked mob died, no other mob of that step was marked.** The game removes a dead mob's icon without an icon event, and the add-on kept waiting for the dead mob. Deaths are now read from the combat log (`UNIT_DIED`, only for units TBCGuide marked). A held icon is also released when its mob is visible without it, or has not been seen for 60 seconds. A dead mob losing its icon no longer pauses marking for the step.
+- **Kill steps done together are covered at once.** The current step and the open `complete` steps right after it each get their own icon: default marker first, then skull, cross, square, and so on, at most 4. Icons stay with their mob type when one step finishes, and still-valid icons are not cleared and re-set on a step change.
+- `/tbcg debug marks` shows the settings, each icon's NPCs, why there is no rule, and the last marking decision. Attempts and refusals go to the debug log.
+
+
 ## 0.4.0
 
 ### Added

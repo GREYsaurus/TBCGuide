@@ -65,7 +65,7 @@ end
 local CHECKS = {
     { "markEnabled", "Enable raid markers (commands, bar and guide marking)" },
     { "autoMark", "Mark NPCs named by the current guide step" },
-    { "autoMarkObjectives", "Also mark kill objectives of steps without a marker (default icon)" },
+    { "autoMarkObjectives", "Also mark the mobs of the current kill steps (one icon per mob type)" },
     { "markReplace", "Allow automatic marking to replace an existing marker" },
     { "markClearOnAdvance", "Remove my automatic markers when the step changes" },
     { "markNotify", "Chat messages when marking succeeds or fails" },

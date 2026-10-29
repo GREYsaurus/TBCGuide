@@ -21,6 +21,7 @@ local HELP = {
     { "load <guideId>", "load a guide by id" },
     { "class", "class leveling tips" },
     { "options", "open settings" },
+    { "minimap", "show/hide the minimap button" },
     { "automation", "open quest automation / junk selling settings" },
     { "orphans", "review and abandon quests your route will never turn in" },
     { "mark [icon]", "mark your target (skull, cross, square, moon, triangle, diamond, circle, star)" },
@@ -61,6 +62,7 @@ commands.skip = function() ns.Engine:Skip() end
 commands.reset = function() ns.Engine:Reset() end
 commands.options = function() ns.Options:Open() end
 commands.config = commands.options
+commands.minimap = function() ns.MinimapButton:Toggle() end
 commands.help = printHelp
 commands.orphans = function() ns.OrphanFrame:Toggle() end
 

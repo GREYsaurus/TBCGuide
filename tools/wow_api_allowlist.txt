@@ -149,6 +149,7 @@ QuestLogFrame                     # core frame; guarded (button is skipped if mi
 # Marker.lua detects ADDON_ACTION_BLOCKED/FORBIDDEN and falls back to the secure marker bar.
 SetRaidTarget                     # core; called via Compat (pcall) and from secure macro buttons
 GetRaidTargetIndex                # core
+CombatLogGetCurrentEventInfo      # classic (1.13+/2.5+); guarded; only UNIT_DIED of units TBCGuide marked is read
 UnitGUID                          # core
 strsplit                          # core string helper
 UnitIsDead                        # core
@@ -164,3 +165,11 @@ InCombatLockdown                  # core; secure frames are not shown/hidden in 
 # GetItemStats, GetInventoryItemLink and GetCombatRating are reached through ns.Compat.Has (by name,
 # nil-guarded), so they are not listed as global reads. Run /tbcg debug api to confirm them in the client.
 ItemRefTooltip                    # core frame (chat link tooltip); hooked with HookScript only
+
+# --- minimap button (UI/MinimapButton.lua) ---
+Minimap                           # core frame; the button is parented to it
+GetCursorPosition                 # core; read only while the button is being dragged
+GetMinimapShape                   # optional; defined by minimap add-ons (square minimaps), nil-checked
+HideUIPanel                       # core; closes the options window on a second click (guarded)
+SettingsPanel                     # guarded (new Settings UI on newer Classic builds)
+InterfaceOptionsFrame             # guarded (legacy options window)

@@ -21,6 +21,7 @@ local CHECKS = {
     { "showElite", "Show elite / group quest steps" },
     { "speedRoute", "Maximum-speed route: hide optional side quests" },
     { "talentHints", "Remind me to spend talent points (chat)" },
+    { "showMinimapButton", "Show the minimap button" },
     { "locked", "Lock window positions" },
     { "debug", "Debug messages" },
 }
@@ -102,6 +103,7 @@ function Options:Apply()
     if ns.Nav.arrow then ns.Nav.arrow:SetShown(ns.db.profile.showArrow and ns.Nav.target ~= nil) end
     ns.Nav:UpdateMapPin()
     ns.Nav:UpdateTomTom()
+    if ns.MinimapButton then ns.MinimapButton:Update() end
     if ns.Engine.guide then ns.Engine:Refresh() end
 end
 

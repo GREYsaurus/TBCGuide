@@ -39,6 +39,7 @@ ns:On("PLAYER_LOGIN", function()
     stage("browser", function() ns.Browser:Create() end)
     stage("talent window", function() ns.TalentFrame:Create() end)
     stage("options", function() ns.Options:Create() end)
+    stage("minimap button", function() ns.MinimapButton:Create() end)
     stage("automation options", function() ns.AutomationOptions:Create() end)
     stage("orphaned quests", function() ns.OrphanFrame:Create() end)
     stage("marker bar", function() ns.MarkerBar:Create() ns.MarkerBar:CreateOptions() end)
@@ -58,6 +59,11 @@ ns:On("PLAYER_LOGIN", function()
             end
         end
     end)
+
+    if ns.migrationNote then
+        ns:Print(ns.migrationNote)
+        ns.migrationNote = nil
+    end
 
     local iface = ns.Compat.GetInterface()
     if iface ~= 0 and (iface < ns.Target.minInterface or iface > ns.Target.maxInterface) then

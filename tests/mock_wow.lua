@@ -62,6 +62,8 @@ frameMeta = {
             SetParent = function(s, p) s.parent = p end,
             GetValue = function(s) return s.value or 0 end,
             SetValue = function(s, v) s.value = v; if s.scripts.OnValueChanged then s.scripts.OnValueChanged(s, v) end end,
+            SetPoint = function(s, ...) s.point = { ... } end,
+            ClearAllPoints = function(s) s.point = nil end,
         }
         if special[key] then return special[key] end
         return function() return nil end
@@ -78,6 +80,17 @@ end
 
 UIParent = newObject("Frame")
 WorldMapFrame = newObject("Frame")
+-- Minimap: 140 px wide, centred at (1000, 600), scale 1. The cursor is MOCK.cursorX/Y.
+Minimap = newObject("Frame")
+Minimap.GetCenter = function() return 1000, 600 end
+Minimap.GetWidth = function() return 140 end
+Minimap.GetEffectiveScale = function() return 1 end
+MOCK.cursorX, MOCK.cursorY = 0, 0
+function GetCursorPosition() return MOCK.cursorX, MOCK.cursorY end
+InterfaceOptionsFrame = newObject("Frame")
+InterfaceOptionsFrame.shown = false
+MOCK.optionsOpened = 0
+function HideUIPanel(f) f:Hide() end
 DEFAULT_CHAT_FRAME = { AddMessage = function(_, msg) table.insert(MOCK.printed, msg) end }
 UISpecialFrames = {}
 SlashCmdList = {}
@@ -168,7 +181,7 @@ function UIDropDownMenu_AddButton() end
 function UIDropDownMenu_SetText() end
 function CloseDropDownMenus() end
 function InterfaceOptions_AddCategory() end
-function InterfaceOptionsFrame_OpenToCategory() end
+function InterfaceOptionsFrame_OpenToCategory() MOCK.optionsOpened = MOCK.optionsOpened + 1; InterfaceOptionsFrame:Show() end
 function ReloadUI() end
 function hooksecurefunc() end
 
@@ -362,6 +375,16 @@ function SetRaidTarget(u, i)
         MOCK.icons[x.guid] = i
     end
     MOCK.fire("RAID_TARGET_UPDATE")
+end
+-- Combat log: MOCK.cleu = { timestamp, subevent, hideCaster, srcGUID, srcName, srcFlags, srcRaidFlags, destGUID, ... }
+function CombatLogGetCurrentEventInfo() return unpack(MOCK.cleu or {}) end
+-- A unit dies: like the real client, its raid icon disappears WITHOUT a RAID_TARGET_UPDATE event.
+function MOCK.kill(u)
+    u.dead = true
+    MOCK.icons[u.guid] = nil
+    MOCK.cleu = { MOCK.time, "UNIT_DIED", false, "", "", 0, 0, u.guid }
+    MOCK.fire("COMBAT_LOG_EVENT_UNFILTERED")
+    MOCK.cleu = nil
 end
 function IsInRaid() return MOCK.inRaid end
 function UnitIsGroupLeader() return MOCK.leader end

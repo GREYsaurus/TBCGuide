@@ -19,6 +19,7 @@ local function slash(cmd) return pcall(SlashCmdList["TBCGUIDE"], cmd) end
 local function reset()
     MOCK.units, MOCK.icons, MOCK.markCalls, MOCK.markDenied = {}, {}, 0, false
     MOCK.inRaid, MOCK.leader, MOCK.assist, MOCK.combat = false, false, false, false
+    M.marked, M.markedNpc, M.holder, M.lastSeen = {}, {}, {}, {} -- a fresh world: no marked units remain
 end
 local function target(u) MOCK.units.target = u; MOCK.fire("PLAYER_TARGET_CHANGED"); MOCK.tick(0.6) end
 local function iconOf(u) return MOCK.icons[u.guid] end
@@ -83,7 +84,7 @@ MOCK.questLog, MOCK.completed = {}, {}
 ns.Tracker.turnedIn = {}
 ns.Tracker:Scan()
 local idx = loadStepWith("H_OrcTroll_Durotar", function(s) return s[1] == "complete" and s.q == 790 end)
-check(ns.Engine.current == idx and M.rule and M.rule.icon == 8 and M.rule.npcs[3281], "guide step carries a skull rule for Sarkoth")
+check(ns.Engine.current == idx and M.rule and M.rule.types[3281] == 8, "guide step carries a skull rule for Sarkoth")
 
 local sarkoth = MOCK.creature(3281, 11, "Sarkoth")
 mark = #MOCK.printed
@@ -135,8 +136,10 @@ target(marked)
 check(iconOf(marked) == 8, "existing marker replaced only when markReplace is on")
 prof.markReplace = false
 
--- 9) Guide advances: our icon is removed (markClearOnAdvance), others' icons stay
+-- 9) Guide advances: our icon is removed (markClearOnAdvance), others' icons stay. Objective
+-- marking is off here so the next step does not name Sarkoth again (see 9b for that case).
 reset()
+prof.autoMarkObjectives = false
 M:OnStep()
 local s1 = MOCK.creature(3281, 21, "Sarkoth")
 target(s1)
@@ -154,24 +157,165 @@ target(s2)
 ns.Engine:Load("A_Human_Elwynn")
 MOCK.tick(0.6)
 check(iconOf(s2) == nil, "switching guide clears our icon")
+prof.autoMarkObjectives = true
 
--- step without a marker: nothing is marked unless the objective rule is enabled
+-- 9b) The next step names the same NPC with the same icon: the icon stays, no clear-and-remark
 reset()
-local j = loadStepWith("A_Human_Elwynn", function(s) return s[1] == "complete" and not s.mark and s.q end)
-local q = ns.Engine.guide.steps[j].q
-local creatures = ns.DB.GetQuestByID(q).objectives.creatures
-if creatures[1] then
-    local mob = MOCK.creature(creatures[1], 31, "objective mob")
-    target(mob)
-    check(M.rule == nil and iconOf(mob) == nil, "unmarked step: nothing marked")
-    prof.autoMarkObjectives = true
-    M:OnStep()
-    target(mob)
-    check(iconOf(mob) == prof.defaultMarker, "opt-in objective marking uses the default marker")
-    prof.autoMarkObjectives = false
+loadStepWith("H_OrcTroll_Durotar", function(s) return s[1] == "complete" and s.q == 790 end)
+local keep = MOCK.creature(3281, 23, "Sarkoth")
+target(keep)
+local callsBefore = MOCK.markCalls
+ns.Engine:Skip()
+MOCK.tick(0.6)
+if M.rule and M.rule.types[3281] == 8 then
+    check(iconOf(keep) == 8 and MOCK.markCalls == callsBefore, "icon still wanted by the next step is kept, not cleared and re-set")
 else
-    check(true, "unmarked step: (no kill objective in this quest)")
+    check(iconOf(keep) == nil, "icon no longer wanted is cleared")
 end
+
+-- 11) Objective marking (default on): a step without [mark] marks its kill objective by NPC id
+reset()
+check(prof.autoMarkObjectives == true, "objective marking is on by default")
+local j = loadStepWith("A_Human_Elwynn", function(s)
+    local qq = s[1] == "complete" and not s.mark and s.q and ns.DB.GetQuestByID(s.q)
+    return qq and qq.objectives.creatures[1] ~= nil
+end)
+local q = ns.Engine.guide.steps[j].q
+local objMob = ns.DB.GetQuestByID(q).objectives.creatures[1]
+check(M.rule and M.rule.types[objMob] == prof.defaultMarker, "kill objective gets the default marker")
+local mob = MOCK.creature(objMob, 31, "objective mob")
+target(mob)
+check(iconOf(mob) == prof.defaultMarker, "objective mob marked when targeted")
+prof.autoMarkObjectives = false
+M:OnStep()
+local mob2 = MOCK.creature(objMob, 32, "objective mob")
+MOCK.units.target = nil
+target(mob2)
+check(M.rule == nil and iconOf(mob2) == nil and string.find(M.noRuleWhy, "autoMarkObjectives", 1, true),
+    "objective marking off: nothing marked, reason recorded")
+prof.autoMarkObjectives = true
+
+-- 12) A marked mob dies: the game drops its icon silently; the next mob of the step gets it
+reset()
+j = loadStepWith("A_Human_Elwynn", function(s)
+    local qq = s[1] == "complete" and not s.mark and s.q and ns.DB.GetQuestByID(s.q)
+    return qq and qq.objectives.creatures[1] ~= nil
+end)
+local first = MOCK.creature(objMob, 41, "objective mob")
+target(first)
+check(iconOf(first) == prof.defaultMarker, "first mob marked")
+local second = MOCK.creature(objMob, 42, "objective mob")
+MOCK.units.mouseover = second
+MOCK.fire("UPDATE_MOUSEOVER_UNIT")
+MOCK.tick(0.6)
+check(iconOf(second) == nil, "while the first lives, the second is not marked")
+MOCK.kill(first)
+MOCK.units.target = nil -- corpse no longer targeted or visible
+MOCK.units.mouseover = nil
+target(second)
+check(iconOf(second) == prof.defaultMarker and not M.stopped, "after the first dies the next mob is marked; marking is not paused")
+-- dead unit still visible when an icon event fires: treated as a death, not a manual change
+local third = MOCK.creature(objMob, 43, "objective mob")
+MOCK.units.focus = second
+MOCK.kill(second)
+MOCK.fire("RAID_TARGET_UPDATE")
+target(third)
+check(iconOf(third) == prof.defaultMarker and not M.stopped, "visible corpse without its icon does not pause marking")
+MOCK.units.focus = nil
+-- holder out of sight for a long time (no death seen): released after the timeout
+local fourth = MOCK.creature(objMob, 44, "objective mob")
+MOCK.units.target = nil
+MOCK.tick(0.1)
+target(fourth)
+check(iconOf(fourth) == nil, "living holder out of sight keeps the icon for a while")
+MOCK.time = MOCK.time + 61
+MOCK.units.target = nil
+local fifth = MOCK.creature(objMob, 45, "objective mob")
+target(fifth)
+check(iconOf(fifth) == prof.defaultMarker, "holder unseen for over a minute: icon moves to the next mob")
+
+-- 13) Several kill steps done together: each mob type gets its own icon
+reset()
+-- Dun Morogh: "complete A New Threat" (troggs 707/724) is followed by "complete The Boar Hunter" (708).
+-- (Durotar's makrura parts drop from more than 3 NPC types, so they are deliberately not marked.)
+loadStepWith("A_DwarfGnome_DunMorogh", function(s) return s[1] == "complete" and s.q == 170 end)
+local r = M.rule
+local troggIcon, boarIcon = r and r.types[707], r and r.types[708]
+check(troggIcon and boarIcon and troggIcon ~= boarIcon and r.types[724] == troggIcon,
+    "parallel kill steps: each mob type has its own icon; variants of one objective share it")
+check(troggIcon == prof.defaultMarker, "the first kill step uses the default marker")
+local count = 0
+for _ in pairs(r and r.icons or {}) do count = count + 1 end
+check(count <= M.MAX_TYPES, "no more than " .. M.MAX_TYPES .. " icons handed out")
+local trogg = MOCK.creature(707, 51, "Rockjaw Trogg")
+local boar = MOCK.creature(708, 52, "Small Crag Boar")
+target(trogg)
+target(boar)
+check(iconOf(trogg) == troggIcon and iconOf(boar) == boarIcon, "both mob types marked with their own icons")
+-- the earlier step finishes: the later step's mobs stay covered, the finished one is dropped
+local idx170
+for i, s in ipairs(ns.Engine.guide.steps) do if s[1] == "complete" and s.q == 170 then idx170 = i break end end
+MOCK.units.nameplate1 = trogg -- still in view, so its icon can be removed
+ns.Engine:MarkDone(idx170)
+MOCK.tick(0.6)
+check(M.rule and M.rule.types[708] == boarIcon and M.rule.types[707] == nil and iconOf(boar) == boarIcon and iconOf(trogg) == nil,
+    "finishing one kill step keeps the other's icon and clears the finished one's")
+
+-- 14) Combat and groups: marking is allowed in combat and in a party; a raid needs leader/assist
+reset()
+loadStepWith("H_OrcTroll_Durotar", function(s) return s[1] == "complete" and s.q == 790 end)
+MOCK.combat = true
+local inCombat = MOCK.creature(3281, 61, "Sarkoth")
+target(inCombat)
+check(iconOf(inCombat) == 8, "marks in combat (SetRaidTarget is not combat-restricted here)")
+MOCK.combat = false
+reset()
+M:OnStep()
+MOCK.inRaid = true
+mark = #MOCK.printed
+local raidMob = MOCK.creature(3281, 62, "Sarkoth")
+target(raidMob)
+check(iconOf(raidMob) == nil and MOCK.markCalls == 0 and printedSince(mark, "leader and assistants"), "raid without assist: not marked, explained once")
+check(M.last and string.find(M.last.reason, "not permitted", 1, true), "diagnostics record the permission refusal")
+MOCK.inRaid = false
+
+-- 15) Disabled in settings
+reset()
+prof.markEnabled = false
+M:OnStep()
+local off = MOCK.creature(3281, 71, "Sarkoth")
+target(off)
+check(M.rule == nil and iconOf(off) == nil and MOCK.markCalls == 0 and string.find(M.noRuleWhy, "markEnabled", 1, true),
+    "markEnabled off: nothing marked, reason recorded")
+prof.markEnabled = true
+prof.autoMark = false
+M:OnStep()
+target(off)
+check(iconOf(off) == nil and string.find(M.noRuleWhy, "autoMark", 1, true), "autoMark off: nothing marked")
+prof.autoMark = true
+M:OnStep()
+
+-- 16) Diagnostics
+mark = #MOCK.printed
+local okd, errd = slash("debug marks")
+check(okd and printedSince(mark, "raid markers:") and printedSince(mark, "settings:"), "/tbcg debug marks reports rule and settings: " .. tostring(errd))
+
+-- 17) Migration: settings saved by 0.3.x/0.4.0 (objective marking off) are switched on once
+local savedDB = TBCGuideDB
+TBCGuideDB = { profile = { autoMarkObjectives = false } }
+ns.migrationNote = nil
+ns:InitSavedVariables()
+check(TBCGuideDB.profile.autoMarkObjectives == true and ns.migrationNote ~= nil, "old saved setting switched on once, with a note")
+TBCGuideDB.profile.autoMarkObjectives = false -- the player turns it off again
+ns.migrationNote = nil
+ns:InitSavedVariables()
+check(TBCGuideDB.profile.autoMarkObjectives == false and ns.migrationNote == nil, "the player's later choice is kept")
+TBCGuideDB = nil
+ns:InitSavedVariables()
+check(TBCGuideDB.profile.autoMarkObjectives == true and ns.migrationNote == nil, "new install: on by default, no note")
+TBCGuideDB = savedDB
+ns:InitSavedVariables()
+prof = ns.db.profile
 
 -- 10) Client denies / blocks marking ------------------------------------------------------------
 reset()

@@ -58,7 +58,8 @@ More detail, including building from source, is in [INSTALL.md](INSTALL.md).
 | `/tbcg nextguide` | Load the next guide in your route |
 | `/tbcg reset` | Reset the current guide's progress |
 | `/tbcg class` | Class leveling tips |
-| `/tbcg options` | Settings |
+| `/tbcg options` | Settings (also the minimap button: left-click settings, right-click guide window) |
+| `/tbcg minimap` | Show/hide the minimap button |
 | `/tbcg automation` | Quest automation and junk-selling settings |
 | `/tbcg orphans` | Review and abandon quests your route will never turn in |
 | `/tbcg protect <item>` / `unprotect` / `protected` | Junk-selling protection list |

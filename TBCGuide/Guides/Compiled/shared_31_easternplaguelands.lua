@@ -19,6 +19,7 @@ ns.Guides:Register({
     {"note",text="Ride the road east across the zone to Light's Hope Chapel.",v=1},
     {"fp",npc="Khaelyn Steelwing",z=139,x=81.6,y=59.3,place="Light's Hope Chapel",faction="Alliance",v=1},
     {"fp",npc="Georgia",z=139,x=80.2,y=57,place="Light's Hope Chapel",faction="Horde",v=1},
+    {"turnin",q=6030,title="Duke Nicholas Zverenhoff",npc="Duke Nicholas Zverenhoff",z=139,x=81.4,y=59.8,text="Duke Nicholas Zverenhoff, Light's Hope Chapel (from Winterspring).",optional=true,v=1},
     {"accept",q=6021,title="Zaeldarr the Outcast",npc="Caretaker Alen",z=139,x=79.6,y=63.9,text="Caretaker Alen, Light's Hope Chapel.",v=1},
     {"complete",q=5542,title="Demon Dogs",text="Plaguehounds and Frenzied Plaguehounds around Light's Hope and the north; Plaguehound Runts in the south.",v=1},
     {"complete",q=5544,title="Carrion Grubbage",text="Slabs of Carrion Worm Meat from Carrion Grubs, often next to the plaguehounds.",v=1},

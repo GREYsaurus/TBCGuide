@@ -55,3 +55,24 @@ Every Outland zone is represented. The level-70 content (Isle of Quel'Danas, rep
 
 - **Coverage is still thin late:** Shadowmoon (18 quests per faction, 12-13% of the zone) and Netherstorm (35 quests, 23%). Players are usually 69-70 there, and the model grinds 0.6 levels in Shadowmoon.
 - **Terokkar and Nagrand** have about 1.25 grind levels each and many unused solo quests (`docs/generated/coverage-outland.csv`, 901 candidates). Those were not reviewed one by one in this pass.
+
+## Pass 2 (after 0.9.1)
+
+**About the coverage percentages above:** their denominators count every quest the data places in a zone. In Terokkar, for example, many of those are **BETA** quests that never shipped, plus item-started, party, elite and Shattrath-chain quests. The percentages understate real coverage; quest counts and grind levels are the better measure.
+
+**Added (both factions unless noted):**
+- **Terokkar:** Warden Treelos (It's Watching You!) at Cenarion Thicket. At the Auchindoun refugee camp: Before Darkness Falls, then Cabal Orders and The Shadow Tomb as optional (they start from a drop).
+- **Nagrand:** Aeris Landing (Stealing from Thieves, Matters of Security, Gava'xi, A Head Full of Ivory) and Wazat's I Must Have Them!. Alliance also gets Otonbu's and Poli'lukluk's Sunspring quests.
+
+| Guide | Grind levels 0.9.1 → now | Quests |
+|---|---|---|
+| A_Terokkar | 1.25 → 1.15 | 33 → 37 |
+| H_Terokkar | 1.28 → 1.18 | 33 → 37 |
+| A_Nagrand | 1.22 → 1.05 | 36 → 43 |
+| H_Nagrand | 1.24 → 1.12 | 39 → 44 |
+
+**Why the drop is small:** an Outland level takes several hundred thousand XP, so a dozen 11-12k quests move the model by about a tenth of a level.
+
+**Deferred:**
+- **The Kirrik / Veil and Tomb of Lights chains:** they need a Shattrath back-and-forth chain the route does not run, plus a party-flagged step.
+- **Shadowmoon and Netherstorm:** not expanded. Players are usually 69-70 there and the model grinds only 0.6 level in Shadowmoon. Their unused quests were not reviewed one by one; the ones looked at were mostly level-70 reputation or group quests.

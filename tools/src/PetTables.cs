@@ -1,0 +1,123 @@
+// TBCGuide build tooling - hunter pet and warlock demon abilities from the client DB2 tables.
+// Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus)
+// SPDX-License-Identifier: GPL-3.0-only
+//
+// Input (tools/upstream.json clientTables): CreatureFamily, SkillLineAbility, SpellName, Spell,
+// SpellLevels, SpellEffect, ItemSparse, ItemEffect, Talent.
+// Output: TBCGuide/Classes/PetData.lua (docs/PETS.md)
+//   hunter.families[familyId] = { name, skills = { spell ids of the family's own skill line } }
+//   hunter.skills[spellId]     = { name, rank, level }  (level 0 = not in the client tables; the
+//                                 Beast Training window shows it in game)
+//   hunter.general             = spell ids every family can learn (CreatureFamily SkillLine_1 = 270)
+//   demons[familyId]           = { name, skills = { {spell, name, rank, level, item, price, itemLevel} } }
+//                                 item/price/itemLevel: the Grimoire that teaches that rank (ItemSparse
+//                                 BuyPrice, base price before any reputation discount); none = the demon
+//                                 knows it when summoned.
+// Left out: "(DND)" helpers, scaling auras, "Effect" spells, the old pet talents (Pet Hardiness,
+// Aggression, Recovery, Resistance) and hunter talents (Intimidation, Ferocious Inspiration).
+// Old Grimoires that teach nothing in this client (no learn-spell effect) are ignored.
+
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+
+namespace TBCGuideTools
+{
+    public static class PetTables
+    {
+        static readonly Regex Skip = new Regex(@"\(DND\)|Scaling|Effect$|^Pet (Hardiness|Aggression|Recovery|Resistance)$|^Intercept Stun$");
+        static readonly int[] DemonFamilies = { 23, 16, 17, 15, 29 }; // Imp, Voidwalker, Succubus, Felhunter, Felguard
+
+        public static string Export(string db2Dir, string addOnDir, string build)
+        {
+            Func<string, string> P = t => Path.Combine(db2Dir, t + ".csv");
+            foreach (var t in new[] { "CreatureFamily", "SpellEffect", "ItemEffect", "ItemSparse" })
+                if (!File.Exists(P(t))) return "pets: skipped (" + t + ".csv missing; run fetch)";
+            var name = new Dictionary<int, string>();
+            foreach (var r in Csv.Read(P("SpellName"))) name[Csv.I(r, "ID")] = r["Name_lang"];
+            var sub = new Dictionary<int, string>();
+            foreach (var r in Csv.Read(P("Spell"))) sub[Csv.I(r, "ID")] = r["NameSubtext_lang"];
+            var level = new Dictionary<int, int>();
+            foreach (var r in Csv.Read(P("SpellLevels"))) if (Csv.I(r, "DifficultyID") == 0) level[Csv.I(r, "SpellID")] = Csv.I(r, "BaseLevel");
+            var talent = new HashSet<int>();
+            foreach (var r in Csv.Read(P("Talent"))) for (int k = 0; k < 9; k++) { int s = Csv.I(r, "SpellRank_" + k); if (s > 0) talent.Add(s); }
+            var byLine = new Dictionary<int, List<int>>();
+            foreach (var r in Csv.Read(P("SkillLineAbility")))
+            {
+                List<int> l; int sk = Csv.I(r, "SkillLine");
+                if (!byLine.TryGetValue(sk, out l)) byLine[sk] = l = new List<int>();
+                l.Add(Csv.I(r, "Spell"));
+            }
+            // Grimoires: item -> teaching spell -> learned demon spell (SpellEffect 36 = learn spell).
+            var learns = new Dictionary<int, int>();
+            foreach (var r in Csv.Read(P("SpellEffect")))
+                if (Csv.I(r, "Effect") == 36 && Csv.I(r, "EffectTriggerSpell") > 0) learns[Csv.I(r, "SpellID")] = Csv.I(r, "EffectTriggerSpell");
+            var itemSpell = new Dictionary<int, int>();
+            foreach (var r in Csv.Read(P("ItemEffect"))) itemSpell[Csv.I(r, "ParentItemID")] = Csv.I(r, "SpellID");
+            var grimoire = new Dictionary<int, int[]>(); // demon spell -> item, price, required level
+            foreach (var r in Csv.Read(P("ItemSparse")))
+            {
+                if (!r["Display_lang"].StartsWith("Grimoire of")) continue;
+                int item = Csv.I(r, "ID"), teach, learned;
+                if (!itemSpell.TryGetValue(item, out teach) || !learns.TryGetValue(teach, out learned)) continue;
+                grimoire[learned] = new[] { item, Csv.I(r, "BuyPrice"), Csv.I(r, "RequiredLevel") };
+            }
+
+            Func<int, bool> keep = sp => name.ContainsKey(sp) && !Skip.IsMatch(name[sp]) && !talent.Contains(sp);
+            Func<int, int> rankOf = sp => { string s; sub.TryGetValue(sp, out s); var m = Regex.Match(s ?? "", @"^Rank (\d+)$"); return m.Success ? int.Parse(m.Groups[1].Value) : 0; };
+            Func<int, int> lv = sp => { int x; return level.TryGetValue(sp, out x) ? x : 0; };
+
+            var sb = new StringBuilder();
+            sb.Append("-- TBCGuide - hunter pet and warlock demon abilities (docs/PETS.md)\n");
+            sb.Append("-- GENERATED by tools/build.ps1 import-client from client CreatureFamily/SkillLineAbility/SpellLevels/\n");
+            sb.Append("-- SpellEffect/ItemSparse/ItemEffect (build " + build + "). DO NOT EDIT. Names are English, for reading;\n");
+            sb.Append("-- the add-on shows the client's own spell names.\n");
+            sb.Append("local _, ns = ...\n");
+            sb.Append("ns.PetData = {\n  build = " + LuaWriter.Str(build) + ",\n  hunter = {\n    families = {\n");
+            var fams = Csv.Read(P("CreatureFamily"));
+            var hunterSkills = new SortedDictionary<int, int>();
+            List<int> general = new List<int>();
+            int famCount = 0;
+            foreach (var f in fams.OrderBy(f => Csv.I(f, "ID")))
+            {
+                int id = Csv.I(f, "ID"), s0 = Csv.I(f, "SkillLine_0"), s1 = Csv.I(f, "SkillLine_1");
+                if (s1 != 270 || s0 == 0) continue; // tameable families carry the general hunter-pet line
+                List<int> l; byLine.TryGetValue(s0, out l);
+                var own = (l ?? new List<int>()).Where(keep).Distinct().OrderBy(x => x).ToList();
+                foreach (var sp in own) hunterSkills[sp] = 1;
+                sb.Append("      [" + id + "] = { name = " + LuaWriter.Str(f["Name_lang"]) + ", skills = { " + string.Join(", ", own.Select(x => x.ToString()).ToArray()) + " } },\n");
+                famCount++;
+                if (general.Count == 0) { List<int> g; byLine.TryGetValue(270, out g); general = (g ?? new List<int>()).Where(keep).Distinct().OrderBy(x => x).ToList(); }
+            }
+            foreach (var sp in general) hunterSkills[sp] = 1;
+            sb.Append("    },\n    general = { " + string.Join(", ", general.Select(x => x.ToString()).ToArray()) + " },\n    skills = {\n");
+            foreach (var sp in hunterSkills.Keys)
+                sb.Append("      [" + sp + "] = { " + LuaWriter.Str(name[sp]) + ", " + rankOf(sp) + ", " + lv(sp) + " },\n");
+            sb.Append("    },\n  },\n  demons = {\n");
+            int demonSkills = 0, grimoires = 0;
+            foreach (int id in DemonFamilies)
+            {
+                var f = fams.First(x => Csv.I(x, "ID") == id);
+                List<int> l; byLine.TryGetValue(Csv.I(f, "SkillLine_0"), out l);
+                var own = (l ?? new List<int>()).Where(keep).Distinct().OrderBy(x => name[x]).ThenBy(rankOf).ToList();
+                sb.Append("    [" + id + "] = { name = " + LuaWriter.Str(f["Name_lang"]) + ", skills = {\n");
+                foreach (var sp in own)
+                {
+                    int[] g; grimoire.TryGetValue(sp, out g);
+                    sb.Append("      { " + sp + ", " + LuaWriter.Str(name[sp]) + ", " + rankOf(sp) + ", " + lv(sp)
+                        + (g != null ? ", item = " + g[0] + ", price = " + g[1] + ", itemLevel = " + g[2] : "") + " },\n");
+                    demonSkills++; if (g != null) grimoires++;
+                }
+                sb.Append("    } },\n");
+            }
+            sb.Append("  },\n}\n");
+            File.WriteAllText(Path.Combine(addOnDir, "Classes", "PetData.lua"), sb.ToString(), new UTF8Encoding(false));
+            return string.Format("pets: {0} hunter families, {1} hunter pet skills ({2} general); {3} demon skills, {4} taught by a Grimoire",
+                famCount, hunterSkills.Count, general.Count, demonSkills, grimoires);
+        }
+    }
+}

@@ -245,6 +245,7 @@ dofile("tests/test_routes10.lua")
 dofile("tests/test_locales_bags_setup.lua")
 dofile("tests/test_trainer.lua")
 dofile("tests/test_talent_hints.lua")
+dofile("tests/test_costs_pets.lua")
 
 print(string.format("%d passed, %d failed", passes, failures))
 os.exit(failures == 0 and 0 or 1)

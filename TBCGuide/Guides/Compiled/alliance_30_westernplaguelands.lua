@@ -11,6 +11,7 @@ ns.Guides:Register({
     {"accept",q=5090,title="A Call to Arms: The Plaguelands!",npc="Courier Hammerfall",z=1537,x=55.9,y=81.4,text="Courier Hammerfall walks around Ironforge (Crier Goodman in Stormwind has the same quest). Needed for the Chillwind Camp chain.",v=1},
     {"fp",npc="Bibilfaz Featherwhistle",z=28,x=42.9,y=85.1,place="Chillwind Camp",v=1},
     {"turnin",q=5090,title="A Call to Arms: The Plaguelands!",npc="Commander Ashlam Valorfist",z=28,x=42.7,y=84,text="Commander Ashlam Valorfist, Chillwind Camp.",v=1},
+    {"turnin",q=6028,title="The Everlook Report",npc="Argent Officer Pureheart",z=28,x=43,y=83.6,text="Argent Officer Pureheart, Chillwind Camp (from Winterspring).",optional=true,v=1},
     {"accept",q=5092,title="Clear the Way",npc="Commander Ashlam Valorfist",z=28,x=42.7,y=84,v=1},
     {"accept",q=5903,title="A Plague Upon Thee",npc="Nathaniel Dumah",z=28,x=43.4,y=84.8,text="Nathaniel Dumah, Chillwind Camp.",v=1},
     {"accept",q=4984,title="The Wildlife Suffers Too",npc="Mulgris Deepriver",z=28,x=53.7,y=64.7,text="Mulgris Deepriver.",v=1},

@@ -15,6 +15,9 @@ accept Crystals of Power | J.D. Collie.
 accept Expedition Salvation | Williden Marshal, Marshal's Refuge.
 accept Alien Ecology | Hol'anyee Marshal.
 accept Roll the Bones | Spark Nilminer.
+accept Shizzle's Flyer | Shizzle, Marshal's Refuge.
+accept Muigin and Larion [faction=Alliance] | Muigin, Marshal's Refuge.
+accept Larion and Muigin [faction=Horde] | Larion, Marshal's Refuge.
 accept Beware of Pterrordax | The sign on the ramp down into the crater.
 accept The Apes of Un'Goro | Torwa Pathfinder at the east side of the crater.
 accept The Fare of Lar'korwi
@@ -27,6 +30,9 @@ complete Expedition Salvation | Supply crates around the crater.
 complete Alien Ecology | Use the gorishi scent gland on the hive at the Slithering Scar (southwest).
 complete Roll the Bones | Dinosaur bones on the ground.
 complete Crystals of Power | Power crystals in the crater.
+complete Shizzle's Flyer | Webbed scales from Young Diemetradons and Fledgling Pterrordaxes around the crater.
+complete Muigin and Larion [faction=Alliance] | Bloodpetals from Bloodpetal Lashers, Trappers and Flayers.
+complete Larion and Muigin [faction=Horde] | Bloodpetal Lashers, Trappers and Flayers.
 complete The Scent of Lar'korwi | Raptor nests near the Terror Run.
 turnin The Scent of Lar'korwi
 accept The Bait for Lar'korwi
@@ -39,6 +45,9 @@ turnin Roll the Bones
 turnin Alien Ecology
 turnin Expedition Salvation
 turnin Crystals of Power
+turnin Shizzle's Flyer
+turnin Muigin and Larion [faction=Alliance]
+turnin Larion and Muigin [faction=Horde]
 accept The Northern Pylon | Escort quest: start it when you are ready to follow.
 accept The Eastern Pylon | Escort quest: start it when you are ready to follow.
 accept The Western Pylon | Escort quest: start it when you are ready to follow.
@@ -51,5 +60,8 @@ turnin The Western Pylon
 accept Making Sense of It
 turnin Making Sense of It
 level 51
+accept Finding the Source | Needs level 51. Krakle, at the hot springs on the west side of Fire Plume Ridge.
+complete Finding the Source | Use Krakle's Thermometer at the hottest vent up on Fire Plume Ridge.
+turnin Finding the Source
 train
 note Alliance: fly to Talonbranch Glade (Felwood). Horde: fly to Bloodvenom Post (Felwood).

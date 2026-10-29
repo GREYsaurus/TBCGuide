@@ -1,0 +1,52 @@
+# TBCGuide - Winterspring (54-56), both factions
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide Both_Winterspring
+@name Winterspring (Everlook)
+@faction Both
+@levels 54-56
+@zone Winterspring
+@chapter Azeroth
+@desc Through the Timbermaw tunnel from Felwood: Salfa's Winterfall quest, Everlook's yeti and Shardtooth hunts, and Jaron Stoneshaper's lost wildkin supplies, then back out through the tunnel. Neutral hub, same route for both factions.
+@next A_BurningSteppes [faction=Alliance]
+@next H_WesternPlaguelands [faction=Horde]
+
+note From Nafien in north Felwood, walk through Timbermaw Hold (the tunnel behind him). The Timbermaw furbolgs inside leave you alone unless you have killed their kin. Salfa waits at the Winterspring exit.
+turnin Speak to Salfa | Salfa, at the Winterspring end of the tunnel.
+accept Winterfall Activity | Salfa. The Winterfall camp is far east, past Everlook.
+note Ride east along the road to Everlook.
+fp Everlook
+accept 3783 Are We There, Yeti? | Umi Rumplesnicker, Everlook.
+accept Ursius of the Shardtooth | Storm Shadowhoof, Everlook.
+accept 6604 Enraged Wildkin [faction=Alliance] | Harlo Wigglesworth, Everlook.
+accept 6028 The Everlook Report [faction=Alliance] | Gregor Greystone. Turned in at Chillwind Camp (Western Plaguelands).
+accept 6029 The Everlook Report [faction=Horde] | Gregor Greystone. Turned in at the Bulwark (Western Plaguelands).
+accept Duke Nicholas Zverenhoff | Gregor Greystone. Turned in at Light's Hope Chapel (Eastern Plaguelands).
+accept Trouble in Winterspring! | Meggi Peppinrocker, Everlook. Turned in to Donova Snowden on the way out.
+complete Ursius of the Shardtooth | Ursius, a big bear in the hills north of Everlook.
+complete Winterfall Activity | Winterfall Shamans, Den Watchers and Ursa at the Winterfall Village east of Everlook.
+turnin Ursius of the Shardtooth | Storm Shadowhoof.
+accept Brumeran of the Chillwind
+complete 3783 Are We There, Yeti? | Thick Yeti Fur from Rogue Ice Thistle yetis on the road west of Everlook.
+turnin 6604 Enraged Wildkin [faction=Alliance] | Jaron Stoneshaper at the Ruins of Kel'Theril, north of the road.
+accept 4861 Enraged Wildkin [faction=Alliance]
+turnin 3783 Are We There, Yeti? | Umi Rumplesnicker, Everlook.
+accept 977 Are We There, Yeti?
+turnin 4861 Enraged Wildkin [faction=Alliance] | The damaged crate south of Everlook, on the road to Frostwhisper Gorge.
+accept 4863 Enraged Wildkin [faction=Alliance]
+turnin 4863 Enraged Wildkin [faction=Alliance] | Jaron's Wagon, a little further south.
+accept 4864 Enraged Wildkin [faction=Alliance]
+complete 4864 Enraged Wildkin [faction=Alliance] | Jaron's Supplies by the wagon; the Blue-feathered Amulet drops from Crazed Owlbeasts around it.
+complete Brumeran of the Chillwind | Brumeran, a chimaera in the south of the zone.
+complete 977 Are We There, Yeti? | Pristine Yeti Horn from the Ice Thistle Matriarch, east of Everlook.
+turnin Brumeran of the Chillwind | Storm Shadowhoof, Everlook.
+turnin 977 Are We There, Yeti? | Umi Rumplesnicker.
+turnin 4864 Enraged Wildkin [faction=Alliance] | Jaron Stoneshaper at the Ruins of Kel'Theril.
+turnin Trouble in Winterspring! | Donova Snowden at the hot springs south of the tunnel exit.
+accept Threat of the Winterfall
+complete Threat of the Winterfall | Winterfall Pathfinders, Den Watchers and Totemics in the two furbolg camps around Donova.
+turnin Threat of the Winterfall
+turnin Winterfall Activity | Salfa, back at the tunnel.
+level 55
+train
+note Alliance: go back through the tunnel and fly from Talonbranch Glade to Ironforge, then on to the Burning Steppes. Horde: fly from Everlook (or Bloodvenom Post) to Orgrimmar, then to the Undercity and ride to the Bulwark.

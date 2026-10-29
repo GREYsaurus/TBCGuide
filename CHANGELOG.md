@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.9.2
+
+### Added
+- **Winterspring** (both factions, through the Timbermaw tunnel from Felwood) and **Horde Swamp of Sorrows** (Stonard).
+- **More quests on existing routes:**
+  - Mudsprocket in Dustwallow (both factions);
+  - Andre Firebeard, Gahz'ridian and The Thirsty Goblin in Tanaris;
+  - Shizzle's Flyer, the bloodpetal quests and Finding the Source in Un'Goro;
+  - the Revantusk board in Horde Hinterlands;
+  - the Cabal quests and Warden Treelos in Terokkar;
+  - Aeris Landing and Wazat in Nagrand, plus Sunspring for Alliance.
+- **Less grinding:** in the route model, grinding from 30 to 58 falls from 12.3 to 10.5 levels (Alliance) and from 12.2 to 9.4 (Horde). See docs/LEVELS_31_60.md.
+- **Assassination talent plan** from Wowhead's TBC leveling build (docs/TALENTS.md).
+- **Training costs** on train steps: from the trainer you have open, or as last seen. Partial totals are marked, and the list says whether you can afford it.
+- **Pet and demon skills** (`/tbcg pet`): hunter pet skills (family, pet level, training points, Beast Training) and warlock Grimoires (level, base price, demon trainer). See docs/PETS.md.
+
+### Changed
+- **Felwood** now leads into Winterspring.
+- **Saved progress** follows guides reordered in any release since 0.7.0.
+
+
 ## 0.9.1
 
 ### Added

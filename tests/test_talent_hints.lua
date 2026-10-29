@@ -38,7 +38,17 @@ for class, m in pairs(PB.specs) do
     end
 end
 print("  talent plans: " .. mapped .. " spec names mapped (" .. ivPlans .. " from Icy Veins); no plan: " .. (#missingSpecs > 0 and table.concat(missingSpecs, ", ") or "none"))
-check(mapped == 27 and #missingSpecs == 0 and ivPlans == 26, "all 27 spec names (28 profiles; Feral cat and bear share one) have a plan; 26 from Icy Veins, Assassination is TBCGuide's own")
+check(mapped == 27 and #missingSpecs == 0 and ivPlans == 26, "all 27 spec names (28 profiles; Feral cat and bear share one) have a plan; 26 from Icy Veins, Assassination from Wowhead")
+local ass = Talents:BuildForProfile(ns.Gear:ProfileById("rogue_assassination_raid"))
+local aseq = Talents:Expand(ass)
+check(ass.id == "rogue_assassination_wh" and ass.source.site == "Wowhead" and #aseq == 61, "Assassination follows the Wowhead plan, 61 points")
+local at60 = Talents:RanksAt(ass, 51)
+check(at60[1719] == 1 and at60[270] == 5 and at60[186] == 5 and at60[261] == 5 and aseq[41].talent.id == 1719, "level 60 matches the source build (Mutilate at 50, 41/5/5)")
+check(aseq[52].talent.id == 181 and aseq[57].talent.id == 1827 and aseq[60].talent.id == 276, "levels 61-69 follow the source's order")
+local saveTB2 = ns.char.talentBuild
+ns.char.talentBuild = "rogue_mutilate_70"
+check(Talents:Get(ns.char.talentBuild).id == "rogue_assassination_wh", "the old Mutilate build id resolves to the new plan")
+ns.char.talentBuild = saveTB2
 check(#(Talents:Expand(Talents.builds.warlock_destro_iv)) == 59, "Destruction: the source build spends 59 points and the plan says so (no invented points)")
 local demo = Talents:Expand(Talents.builds.warlock_demo_iv)
 check(demo[1].talent.tab == 2 and demo[1].level == 10, "Demonology plan starts in Demonology at level 10 (no Affliction-first respec)")

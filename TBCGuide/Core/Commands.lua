@@ -23,6 +23,7 @@ local HELP = {
     { "load <guideId>", "load a guide by id" },
     { "class", "class leveling tips" },
     { "train", "spells your class trainer has for you (train defer | train waypoint)" },
+    { "pet", "hunter pet skills and warlock Grimoires still to learn (pet defer | pet waypoint)" },
     { "options", "open settings" },
     { "minimap", "show/hide the minimap button" },
     { "automation", "open quest automation / junk selling settings" },
@@ -62,6 +63,18 @@ commands.browser = commands.guide
 commands.talents = function(arg) if arg == "plan" then return ns.Talents:PrintPlan() end ns.TalentFrame:Toggle() end
 commands.talent = commands.talents
 commands.tracker = function() ns.LevelTracker:ToggleReport() end
+commands.pet = function(arg)
+    arg = string.lower(arg or "")
+    if arg == "defer" or arg == "skip" then
+        ns.PetSkills:Defer()
+        ns:Print("Pet and demon skill reminders hidden until your next level. /tbcg pet shows them again.")
+    elseif arg == "waypoint" or arg == "way" then
+        if not ns.PetSkills:Waypoint() then ns:Print("No pet or demon trainer of your faction found in the database.") end
+    else
+        ns.char.petDeferLevel = nil
+        ns.PetSkills:Report()
+    end
+end
 commands.train = function(arg)
     arg = string.lower(arg or "")
     if arg == "defer" or arg == "skip" then

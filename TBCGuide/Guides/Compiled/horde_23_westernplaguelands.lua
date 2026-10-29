@@ -10,6 +10,7 @@ ns.Guides:Register({
   steps={
     {"accept",q=5094,title="A Call to Arms: The Plaguelands!",npc="Harbinger Balthazad",z=1497,x=63.9,y=44.1,text="Harbinger Balthazad in the Undercity (Warcaller Gorlach in Orgrimmar has the same quest). Needed for the Bulwark chain.",v=1},
     {"turnin",q=5094,title="A Call to Arms: The Plaguelands!",npc="High Executor Derrington",z=85,x=83.1,y=68.9,text="High Executor Derrington, the Bulwark.",v=1},
+    {"turnin",q=6029,title="The Everlook Report",npc="Argent Officer Garush",z=85,x=83.2,y=68.4,text="Argent Officer Garush, the Bulwark (from Winterspring).",optional=true,v=1},
     {"accept",q=5096,title="Scarlet Diversions",npc="High Executor Derrington",z=85,x=83.1,y=68.9,text="High Executor Derrington, the Bulwark.",v=1},
     {"complete",q=5096,title="Scarlet Diversions",text="Plant the banner at the Scarlet camp in the north and kill Scarlet troops.",v=1},
     {"turnin",q=5096,title="Scarlet Diversions",npc="High Executor Derrington",z=85,x=83.1,y=68.9,text="Turned in at Tirisfal Glades.",v=1},

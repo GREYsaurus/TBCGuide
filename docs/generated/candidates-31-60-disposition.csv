@@ -56,11 +56,11 @@ A_Stranglethorn,Alliance,630,Message in a Bottle,42,42,Deferred,needs a quest th
 A_Stranglethorn,Alliance,8551,The Captain's Chest,42,40,Unverified,not reviewed in this pass,rule
 A_Stranglethorn,Alliance,8553,The Captain's Cutlass,42,35,Deferred,needs a quest the route does not do (8552),rule
 A_Stranglethorn,Alliance,8554,Facing Negolash,42,35,Deferred,needs a quest the route does not do (8553),rule
-A_Dustwallow,Alliance,1177,Hungry!,36,32,Unverified,not reviewed in this pass,rule
+A_Dustwallow,Alliance,1177,Hungry!,36,32,Unverified,Mirefin Puddlejumper has no spawn data,yes
 A_Dustwallow,Alliance,1203,Jarl Needs a Blade,35,30,Deferred,needs a quest the route does not do (1206),rule
 A_Dustwallow,Alliance,1204,Mudrock Soup and Bugs,38,33,Deferred,needs a quest the route does not do (1260),rule
 A_Dustwallow,Alliance,1206,Jarl Needs Eyes,35,30,Deferred,needs a quest the route does not do (1218),rule
-A_Dustwallow,Alliance,1218,Marsh Frog Legs,35,30,Unverified,not reviewed in this pass,rule
+A_Dustwallow,Alliance,1218,Marsh Frog Legs,35,30,Deferred,starts the Witch Hill hermit chain in the north; not on the route's loop,yes
 A_Dustwallow,Alliance,1219,The Orc Report,35,30,Unverified,not reviewed in this pass,rule
 A_Dustwallow,Alliance,1220,Captain Vimes,35,30,Deferred,needs a quest the route does not do (1219),rule
 A_Dustwallow,Alliance,1222,Stinky's Escape,37,30,Deferred,escort or event (party flag in the data),rule
@@ -77,7 +77,7 @@ A_Dustwallow,Alliance,1286,The Deserters,38,30,Deferred,needs a quest the route 
 A_Dustwallow,Alliance,1287,The Deserters,38,30,Deferred,needs a quest the route does not do (1286),rule
 A_Dustwallow,Alliance,1319,The Black Shield,35,30,Deferred,needs a quest the route does not do (1253),rule
 A_Dustwallow,Alliance,1320,The Black Shield,35,30,Deferred,needs a quest the route does not do (1319),rule
-A_Dustwallow,Alliance,11136,A Disturbing Development,36,32,Unverified,not reviewed in this pass,rule
+A_Dustwallow,Alliance,11136,A Disturbing Development,36,32,Deferred,Theramore breadcrumb chain needs earlier Theramore quests the route skips,yes
 A_Dustwallow,Alliance,11143,A Grim Connection,38,33,Deferred,"needs a quest the route does not do (1284,1287,1320)",rule
 A_Dustwallow,Alliance,11144,Confirming the Suspicion,38,33,Deferred,needs a quest the route does not do (11143),rule
 A_Dustwallow,Alliance,11148,Arms of the Grimtotems,38,33,Deferred,needs a quest the route does not do (11143),rule
@@ -85,27 +85,27 @@ A_Dustwallow,Alliance,11149,Tabetha's Assistance,39,35,Deferred,"needs a quest t
 A_Dustwallow,Alliance,11150,Raze Direhorn Post!,39,35,Deferred,needs a quest the route does not do (11149),rule
 A_Dustwallow,Alliance,11151,Justice for the Hyals,39,35,Deferred,needs a quest the route does not do (11150),rule
 A_Dustwallow,Alliance,11152,Peace at Last,39,35,Deferred,needs a quest the route does not do (11151),rule
-A_Dustwallow,Alliance,11158,Bloodfen Feathers,39,35,Unverified,not reviewed in this pass,rule
+A_Dustwallow,Alliance,11158,Bloodfen Feathers,39,35,Added,on a route,yes
 A_Dustwallow,Alliance,11159,Spirits of Stonemaul Hold,41,35,Deferred,needs a quest the route does not do (11161),rule
-A_Dustwallow,Alliance,11160,Banner of the Stonemaul,39,35,Deferred,needs a quest the route does not do (11158),rule
-A_Dustwallow,Alliance,11161,The Essence of Enmity,39,35,Deferred,needs a quest the route does not do (11158),rule
+A_Dustwallow,Alliance,11160,Banner of the Stonemaul,39,35,Unverified,not reviewed in this pass,rule
+A_Dustwallow,Alliance,11161,The Essence of Enmity,39,35,Unverified,not reviewed in this pass,rule
 A_Dustwallow,Alliance,11162,Challenge to the Black Flight,41,35,Deferred,needs a quest the route does not do (11159),rule
-A_Dustwallow,Alliance,11174,Corrosion Prevention,40,35,Unverified,not reviewed in this pass,rule
-A_Dustwallow,Alliance,11177,The Hermit of Swamplight Manor,36,30,Unverified,not reviewed in this pass,rule
+A_Dustwallow,Alliance,11174,Corrosion Prevention,40,35,Added,on a route,yes
+A_Dustwallow,Alliance,11177,The Hermit of Swamplight Manor,36,30,Deferred,breadcrumb into the Witch Hill hermit chain,yes
 A_Dustwallow,Alliance,11180,What's Haunting Witch Hill?,36,30,Added,on a route,rule
 A_Dustwallow,Alliance,11181,The Witch's Bane,36,30,Added,on a route,rule
 A_Dustwallow,Alliance,11183,Cleansing Witch Hill,36,30,Added,on a route,rule
-A_Dustwallow,Alliance,11184,WANTED: Goreclaw the Ravenous,39,35,Unverified,not reviewed in this pass,rule
-A_Dustwallow,Alliance,11194,Is it Real?,36,30,Unverified,not reviewed in this pass,rule
+A_Dustwallow,Alliance,11184,WANTED: Goreclaw the Ravenous,39,35,Added,on a route,yes
+A_Dustwallow,Alliance,11194,Is it Real?,36,30,Deferred,Nat Pagle fishing chain,yes
 A_Dustwallow,Alliance,11198,Take Down Tethyr!,36,30,Deferred,escort or event (party flag in the data),rule
-A_Dustwallow,Alliance,11207,Secure the Cargo!,39,35,Unverified,not reviewed in this pass,rule
-A_Dustwallow,Alliance,11208,Delivery for Drazzit,39,35,Deferred,needs a quest the route does not do (11207),rule
+A_Dustwallow,Alliance,11207,Secure the Cargo!,39,35,Added,on a route,yes
+A_Dustwallow,Alliance,11208,Delivery for Drazzit,39,35,Unverified,not reviewed in this pass,rule
 A_Dustwallow,Alliance,11209,Nat's Bargain,37,30,Deferred,needs a quest the route does not do (11194),rule
 A_Dustwallow,Alliance,11210,"Oh, It's Real",37,30,Deferred,needs a quest the route does not do (11209),rule
-A_Dustwallow,Alliance,11211,Help for Mudsprocket,39,38,Unverified,not reviewed in this pass,rule
-A_Dustwallow,Alliance,11212,Tabetha's Farm,37,37,Unverified,not reviewed in this pass,rule
-A_Dustwallow,Alliance,11214,Mission to Mudsprocket,39,39,Unverified,not reviewed in this pass,rule
-A_Dustwallow,Alliance,11217,Catch a Dragon by the Tail,40,37,Unverified,not reviewed in this pass,rule
+A_Dustwallow,Alliance,11211,Help for Mudsprocket,39,38,Added,on a route,yes
+A_Dustwallow,Alliance,11212,Tabetha's Farm,37,37,Deferred,breadcrumb to Tabetha; the route reaches her anyway,yes
+A_Dustwallow,Alliance,11214,Mission to Mudsprocket,39,39,Already covered,Help for Mudsprocket leads there instead,yes
+A_Dustwallow,Alliance,11217,Catch a Dragon by the Tail,40,37,Added,on a route,yes
 A_Dustwallow,Alliance,11223,Return to Jaina,37,33,Unverified,not reviewed in this pass,rule
 A_Feralas,Alliance,2766,Find OOX-22/FE!,45,40,Deferred,starts from an item drop,rule
 A_Feralas,Alliance,2767,Rescue OOX-22/FE!,45,40,Deferred,escort or event (party flag in the data),rule
@@ -136,7 +136,7 @@ A_Hinterlands,Alliance,1450,Gryphon Master Talonaxe,43,38,Deferred,needs a quest
 A_Hinterlands,Alliance,1451,Rhapsody Shindigger,43,38,Deferred,needs a quest the route does not do (1450),rule
 A_Hinterlands,Alliance,1452,Rhapsody's Kalimdor Kocktail,43,38,Deferred,needs a quest the route does not do (1451),rule
 A_Hinterlands,Alliance,1469,Rhapsody's Tale,43,38,Deferred,needs a quest the route does not do (1452),rule
-A_Hinterlands,Alliance,2990,Thadius Grimshade,47,40,Unverified,not reviewed in this pass,rule
+A_Hinterlands,Alliance,2990,Thadius Grimshade,47,40,Deferred,sends you to the Blasted Lands; off route,yes
 A_Hinterlands,Alliance,2992,The Divination,47,42,Deferred,escort or event (party flag in the data),rule
 A_Hinterlands,Alliance,2993,Return to the Hinterlands,47,42,Deferred,needs a quest the route does not do (2992),rule
 A_Hinterlands,Alliance,2994,Saving Sharpbeak,51,40,Deferred,needs a quest the route does not do (2993),rule
@@ -153,16 +153,16 @@ A_Felwood,Alliance,5202,A Strange Red Key,55,49,Deferred,starts from an item dro
 A_Felwood,Alliance,5203,Rescue From Jaedenar,55,49,Deferred,follows A Strange Red Key,yes
 A_Felwood,Alliance,5204,Retribution of the Light,57,49,Deferred,follows A Strange Red Key,yes
 A_Felwood,Alliance,5242,A Final Blow,58,48,Deferred,Jaedenar chain via the Barrens,yes
-A_Felwood,Alliance,5249,To Winterspring!,56,53,Deferred,turned in outside the zones the route visits,rule
+A_Felwood,Alliance,5249,To Winterspring!,56,53,Unverified,not reviewed in this pass,rule
 A_Felwood,Alliance,5385,The Remains of Trey Lightforge,57,49,Deferred,follows A Strange Red Key,yes
 A_Felwood,Alliance,8462,Speak to Nafien,55,45,Unverified,not reviewed in this pass,rule
-A_Felwood,Alliance,8465,Speak to Salfa,55,45,Deferred,turned in outside the zones the route visits,rule
+A_Felwood,Alliance,8465,Speak to Salfa,55,45,Added,on a route,rule
 A_Felwood,Alliance,8470,Deadwood Ritual Totem,55,45,Deferred,starts from an item drop,rule
 A_BurningSteppes,Alliance,4022,A Taste of Flame,54,52,Deferred,escort or event (party flag in the data),rule
 A_BurningSteppes,Alliance,4023,A Taste of Flame,54,52,Unverified,not reviewed in this pass,rule
 A_BurningSteppes,Alliance,4283,FIFTY! YEP!,56,50,Unverified,not reviewed in this pass,rule
 A_BurningSteppes,Alliance,4296,Tablet of the Seven,50,50,Unverified,not reviewed in this pass,rule
-A_BurningSteppes,Alliance,4808,Felnok Steelspring,54,50,Deferred,turned in outside the zones the route visits,rule
+A_BurningSteppes,Alliance,4808,Felnok Steelspring,54,50,Unverified,not reviewed in this pass,rule
 A_BurningSteppes,Alliance,5522,Leonid Barthalomew,60,58,Deferred,needs a quest the route does not do (4735),rule
 A_WesternPlaguelands,Alliance,211,"Alas, Andorhal",60,50,Unverified,not reviewed in this pass,rule
 A_WesternPlaguelands,Alliance,4971,A Matter of Time,56,53,Added,on a route,yes
@@ -276,11 +276,11 @@ H_Stranglethorn,Horde,8554,Facing Negolash,42,35,Deferred,needs a quest the rout
 H_Stranglethorn,Horde,9436,Bloodscalp Insight,34,30,Unverified,not reviewed in this pass,rule
 H_Stranglethorn,Horde,9457,An Unusual Patron,36,30,Deferred,needs a quest the route does not do (9436),rule
 H_Dustwallow,Horde,1173,Challenge Overlord Mok'Morokk,45,38,Deferred,escort or event (party flag in the data),rule
-H_Dustwallow,Horde,1177,Hungry!,36,32,Unverified,not reviewed in this pass,rule
+H_Dustwallow,Horde,1177,Hungry!,36,32,Unverified,Mirefin Puddlejumper has no spawn data,yes
 H_Dustwallow,Horde,1203,Jarl Needs a Blade,35,30,Deferred,needs a quest the route does not do (1206),rule
-H_Dustwallow,Horde,1205,Deadmire,45,35,Unverified,not reviewed in this pass,rule
+H_Dustwallow,Horde,1205,Deadmire,45,35,Deferred,turned in at Thunder Bluff,yes
 H_Dustwallow,Horde,1206,Jarl Needs Eyes,35,30,Deferred,needs a quest the route does not do (1218),rule
-H_Dustwallow,Horde,1218,Marsh Frog Legs,35,30,Unverified,not reviewed in this pass,rule
+H_Dustwallow,Horde,1218,Marsh Frog Legs,35,30,Deferred,starts the Witch Hill hermit chain in the north; not on the route's loop,yes
 H_Dustwallow,Horde,1238,The Lost Report,35,30,Unverified,not reviewed in this pass,rule
 H_Dustwallow,Horde,1239,The Severed Head,35,30,Deferred,needs a quest the route does not do (1238),rule
 H_Dustwallow,Horde,1240,The Troll Witchdoctor,35,30,Deferred,needs a quest the route does not do (1239),rule
@@ -289,22 +289,22 @@ H_Dustwallow,Horde,1262,Report to Zor,40,30,Deferred,needs a quest the route doe
 H_Dustwallow,Horde,1270,Stinky's Escape,37,30,Deferred,escort or event (party flag in the data),rule
 H_Dustwallow,Horde,1273,Questioning Reethe,37,30,Deferred,escort or event (party flag in the data),rule
 H_Dustwallow,Horde,7541,Service to the Horde,40,30,Deferred,needs a quest the route does not do (1262),rule
-H_Dustwallow,Horde,9437,Twilight of the Dawn Runner,37,33,Unverified,not reviewed in this pass,rule
-H_Dustwallow,Horde,11158,Bloodfen Feathers,39,35,Unverified,not reviewed in this pass,rule
+H_Dustwallow,Horde,9437,Twilight of the Dawn Runner,37,33,Deferred,Ithania is far north at the Shady Rest end; not on the loop,yes
+H_Dustwallow,Horde,11158,Bloodfen Feathers,39,35,Added,on a route,yes
 H_Dustwallow,Horde,11159,Spirits of Stonemaul Hold,41,35,Deferred,needs a quest the route does not do (11161),rule
-H_Dustwallow,Horde,11160,Banner of the Stonemaul,39,35,Deferred,needs a quest the route does not do (11158),rule
-H_Dustwallow,Horde,11161,The Essence of Enmity,39,35,Deferred,needs a quest the route does not do (11158),rule
+H_Dustwallow,Horde,11160,Banner of the Stonemaul,39,35,Unverified,not reviewed in this pass,rule
+H_Dustwallow,Horde,11161,The Essence of Enmity,39,35,Unverified,not reviewed in this pass,rule
 H_Dustwallow,Horde,11162,Challenge to the Black Flight,41,35,Deferred,needs a quest the route does not do (11159),rule
-H_Dustwallow,Horde,11174,Corrosion Prevention,40,35,Unverified,not reviewed in this pass,rule
-H_Dustwallow,Horde,11184,WANTED: Goreclaw the Ravenous,39,35,Unverified,not reviewed in this pass,rule
-H_Dustwallow,Horde,11186,Signs of Treachery?,38,35,Unverified,not reviewed in this pass,rule
-H_Dustwallow,Horde,11207,Secure the Cargo!,39,35,Unverified,not reviewed in this pass,rule
-H_Dustwallow,Horde,11208,Delivery for Drazzit,39,35,Deferred,needs a quest the route does not do (11207),rule
-H_Dustwallow,Horde,11211,Help for Mudsprocket,39,38,Unverified,not reviewed in this pass,rule
-H_Dustwallow,Horde,11213,Check Up on Tabetha,37,37,Unverified,not reviewed in this pass,rule
-H_Dustwallow,Horde,11215,Help Mudsprocket,39,38,Unverified,not reviewed in this pass,rule
-H_Dustwallow,Horde,11217,Catch a Dragon by the Tail,40,37,Unverified,not reviewed in this pass,rule
-H_Dustwallow,Horde,11225,The Hermit of Witch Hill,36,32,Unverified,not reviewed in this pass,rule
+H_Dustwallow,Horde,11174,Corrosion Prevention,40,35,Added,on a route,yes
+H_Dustwallow,Horde,11184,WANTED: Goreclaw the Ravenous,39,35,Added,on a route,yes
+H_Dustwallow,Horde,11186,Signs of Treachery?,38,35,Deferred,turned in at Brackenwall; not on the route's loop,yes
+H_Dustwallow,Horde,11207,Secure the Cargo!,39,35,Added,on a route,yes
+H_Dustwallow,Horde,11208,Delivery for Drazzit,39,35,Unverified,not reviewed in this pass,rule
+H_Dustwallow,Horde,11211,Help for Mudsprocket,39,38,Added,on a route,yes
+H_Dustwallow,Horde,11213,Check Up on Tabetha,37,37,Deferred,breadcrumb to Tabetha; the route reaches her anyway,yes
+H_Dustwallow,Horde,11215,Help Mudsprocket,39,38,Already covered,Help for Mudsprocket leads there instead,yes
+H_Dustwallow,Horde,11217,Catch a Dragon by the Tail,40,37,Added,on a route,yes
+H_Dustwallow,Horde,11225,The Hermit of Witch Hill,36,32,Deferred,breadcrumb into the Witch Hill hermit chain,yes
 H_Feralas,Horde,2766,Find OOX-22/FE!,45,40,Deferred,starts from an item drop,rule
 H_Feralas,Horde,2767,Rescue OOX-22/FE!,45,40,Deferred,escort or event (party flag in the data),rule
 H_Feralas,Horde,2822,The Mark of Quality,46,40,Added,on a route,rule
@@ -340,15 +340,15 @@ H_Hinterlands,Horde,1444,Return to Fel'Zerul,44,40,Deferred,needs a quest the ro
 H_Hinterlands,Horde,2742,Rin'ji is Trapped!,47,42,Deferred,escort or event (party flag in the data),rule
 H_Hinterlands,Horde,2782,Rin'ji's Secret,47,45,Deferred,needs a quest the route does not do (2742),rule
 H_Hinterlands,Horde,2932,Grim Message,42,35,Deferred,escort or event (party flag in the data),rule
-H_Hinterlands,Horde,2933,Venom Bottles,43,41,Unverified,not reviewed in this pass,rule
+H_Hinterlands,Horde,2933,Venom Bottles,43,41,Deferred,"turned in at Hillsbrad (Tarren Mill), off the Horde route",yes
 H_Hinterlands,Horde,2934,Undamaged Venom Sac,45,40,Deferred,needs a quest the route does not do (2933),rule
 H_Hinterlands,Horde,2935,Consult Master Gadrin,45,43,Deferred,needs a quest the route does not do (2934),rule
 H_Hinterlands,Horde,4787,The Ancient Egg,50,40,Deferred,needs a quest the route does not do (3527),rule
 H_Hinterlands,Horde,7843,The Final Message to the Wildhammer,50,44,Deferred,escort or event (party flag in the data),rule
-H_Hinterlands,Horde,7849,Separation Anxiety,50,46,Unverified,not reviewed in this pass,rule
-H_Hinterlands,Horde,7850,Dark Vessels,50,46,Unverified,not reviewed in this pass,rule
-H_Hinterlands,Horde,7861,Wanted: Vile Priestess Hexx and Her Minions,51,44,Unverified,not reviewed in this pass,rule
-H_Hinterlands,Horde,7862,Job Opening: Guard Captain of Revantusk Village,51,44,Unverified,not reviewed in this pass,rule
+H_Hinterlands,Horde,7849,Separation Anxiety,50,46,Added,on a route,yes
+H_Hinterlands,Horde,7850,Dark Vessels,50,46,Added,on a route,yes
+H_Hinterlands,Horde,7861,Wanted: Vile Priestess Hexx and Her Minions,51,44,Added,on a route,yes
+H_Hinterlands,Horde,7862,Job Opening: Guard Captain of Revantusk Village,51,44,Added,on a route,yes
 H_Hinterlands,Horde,8273,Oran's Gratitude,47,42,Deferred,needs a quest the route does not do (2782),rule
 H_Felwood,Horde,4521,Wild Guardians,56,52,Unverified,not reviewed in this pass,rule
 H_Felwood,Horde,4741,Wild Guardians,58,52,Deferred,needs a quest the route does not do (4521),rule
@@ -363,7 +363,7 @@ H_Felwood,Horde,5385,The Remains of Trey Lightforge,57,49,Deferred,follows A Str
 H_Felwood,Horde,5882,Salve via Hunting,55,48,Added,on a route,rule
 H_Felwood,Horde,6162,A Husband's Last Battle,51,46,Unverified,not reviewed in this pass,rule
 H_Felwood,Horde,8462,Speak to Nafien,55,45,Unverified,not reviewed in this pass,rule
-H_Felwood,Horde,8465,Speak to Salfa,55,45,Deferred,turned in outside the zones the route visits,rule
+H_Felwood,Horde,8465,Speak to Salfa,55,45,Added,on a route,rule
 H_Felwood,Horde,8470,Deadwood Ritual Totem,55,45,Deferred,starts from an item drop,rule
 H_WesternPlaguelands,Horde,105,"Alas, Andorhal",60,50,Unverified,not reviewed in this pass,rule
 H_WesternPlaguelands,Horde,838,Scholomance,55,55,Unverified,not reviewed in this pass,rule
@@ -403,46 +403,46 @@ H_WesternPlaguelands,Horde,6025,Unfinished Business,58,51,Added,on a route,rule
 H_WesternPlaguelands,Horde,6390,A Plague Upon Thee,55,51,Deferred,needs a quest the route does not do (5902),rule
 H_WesternPlaguelands,Horde,9443,The So-Called Mark of the Lightbringer,58,55,Unverified,not reviewed in this pass,rule
 H_WesternPlaguelands,Horde,9444,Defiling Uther's Tomb,58,55,Deferred,needs a quest the route does not do (9443),rule
-Both_Tanaris,Alliance,162,Rise of the Silithid,49,39,Unverified,not reviewed in this pass,rule
+Both_Tanaris,Alliance,162,Rise of the Silithid,49,39,Deferred,breadcrumb turned in at Darnassus,yes
 Both_Tanaris,Alliance,351,Find OOX-17/TN!,48,43,Deferred,starts from an item drop,rule
 Both_Tanaris,Alliance,648,Rescue OOX-17/TN!,48,43,Deferred,escort or event (party flag in the data),rule
-Both_Tanaris,Alliance,2605,The Thirsty Goblin,49,44,Unverified,not reviewed in this pass,rule
-Both_Tanaris,Alliance,2606,In Good Taste,49,44,Deferred,needs a quest the route does not do (2605),rule
+Both_Tanaris,Alliance,2605,The Thirsty Goblin,49,44,Added,on a route,yes
+Both_Tanaris,Alliance,2606,In Good Taste,49,44,Unverified,not reviewed in this pass,rule
 Both_Tanaris,Alliance,2641,Sprinkle's Secret Ingredient,49,44,Deferred,needs a quest the route does not do (2606),rule
 Both_Tanaris,Alliance,2661,Delivery for Marin,49,44,Deferred,needs a quest the route does not do (2641),rule
 Both_Tanaris,Alliance,2662,Noggenfogger Elixir,49,44,Deferred,needs a quest the route does not do (2661),rule
-Both_Tanaris,Alliance,2741,The Super Egg-O-Matic,47,39,Unverified,not reviewed in this pass,rule
-Both_Tanaris,Alliance,2872,Stoley's Debt,45,40,Unverified,not reviewed in this pass,rule
+Both_Tanaris,Alliance,2741,The Super Egg-O-Matic,47,39,Deferred,eggs are in Feralas and the turn-in is back in Gadgetzan; no route passes both in order,yes
+Both_Tanaris,Alliance,2872,Stoley's Debt,45,40,Deferred,breadcrumb from Stranglethorn; turns into a Tanaris chain the route does not run,yes
 Both_Tanaris,Alliance,2873,Stoley's Shipment,45,40,Deferred,needs a quest the route does not do (2872),rule
 Both_Tanaris,Alliance,2874,Deliver to MacKinley,45,40,Deferred,needs a quest the route does not do (2873),rule
-Both_Tanaris,Alliance,2875,WANTED: Andre Firebeard,45,38,Unverified,not reviewed in this pass,rule
+Both_Tanaris,Alliance,2875,WANTED: Andre Firebeard,45,38,Added,on a route,yes
 Both_Tanaris,Alliance,2876,Ship Schedules,45,40,Deferred,starts from an item drop,rule
-Both_Tanaris,Alliance,3022,Handle With Care,47,42,Unverified,not reviewed in this pass,rule
-Both_Tanaris,Alliance,3161,Gahz'ridian,48,43,Unverified,not reviewed in this pass,rule
-Both_Tanaris,Alliance,3520,Screecher Spirits,44,40,Unverified,not reviewed in this pass,rule
-Both_Tanaris,Horde,32,Rise of the Silithid,48,39,Unverified,not reviewed in this pass,rule
+Both_Tanaris,Alliance,3022,Handle With Care,47,42,Deferred,Alliance breadcrumb turned in on Teldrassil,yes
+Both_Tanaris,Alliance,3161,Gahz'ridian,48,43,Added,on a route,yes
+Both_Tanaris,Alliance,3520,Screecher Spirits,44,40,Unverified,Screecher Spirit has no spawn data,yes
+Both_Tanaris,Horde,32,Rise of the Silithid,48,39,Deferred,breadcrumb turned in at Orgrimmar,yes
 Both_Tanaris,Horde,243,Into the Field,46,38,Deferred,needs a quest the route does not do (238),rule
 Both_Tanaris,Horde,351,Find OOX-17/TN!,48,43,Deferred,starts from an item drop,rule
 Both_Tanaris,Horde,379,Slake That Thirst,46,38,Deferred,needs a quest the route does not do (243),rule
 Both_Tanaris,Horde,648,Rescue OOX-17/TN!,48,43,Deferred,escort or event (party flag in the data),rule
 Both_Tanaris,Horde,654,Tanaris Field Sampling,46,41,Deferred,starts from an item drop,rule
 Both_Tanaris,Horde,841,Another Power Source?,46,38,Deferred,needs a quest the route does not do (379),rule
-Both_Tanaris,Horde,2605,The Thirsty Goblin,49,44,Unverified,not reviewed in this pass,rule
-Both_Tanaris,Horde,2606,In Good Taste,49,44,Deferred,needs a quest the route does not do (2605),rule
+Both_Tanaris,Horde,2605,The Thirsty Goblin,49,44,Added,on a route,yes
+Both_Tanaris,Horde,2606,In Good Taste,49,44,Unverified,not reviewed in this pass,rule
 Both_Tanaris,Horde,2641,Sprinkle's Secret Ingredient,49,44,Deferred,needs a quest the route does not do (2606),rule
 Both_Tanaris,Horde,2661,Delivery for Marin,49,44,Deferred,needs a quest the route does not do (2641),rule
 Both_Tanaris,Horde,2662,Noggenfogger Elixir,49,44,Deferred,needs a quest the route does not do (2661),rule
-Both_Tanaris,Horde,2741,The Super Egg-O-Matic,47,39,Unverified,not reviewed in this pass,rule
-Both_Tanaris,Horde,2872,Stoley's Debt,45,40,Unverified,not reviewed in this pass,rule
+Both_Tanaris,Horde,2741,The Super Egg-O-Matic,47,39,Deferred,eggs are in Feralas and the turn-in is back in Gadgetzan; no route passes both in order,yes
+Both_Tanaris,Horde,2872,Stoley's Debt,45,40,Deferred,breadcrumb from Stranglethorn; turns into a Tanaris chain the route does not run,yes
 Both_Tanaris,Horde,2873,Stoley's Shipment,45,40,Deferred,needs a quest the route does not do (2872),rule
 Both_Tanaris,Horde,2874,Deliver to MacKinley,45,40,Deferred,needs a quest the route does not do (2873),rule
-Both_Tanaris,Horde,2875,WANTED: Andre Firebeard,45,38,Unverified,not reviewed in this pass,rule
+Both_Tanaris,Horde,2875,WANTED: Andre Firebeard,45,38,Added,on a route,yes
 Both_Tanaris,Horde,2876,Ship Schedules,45,40,Deferred,starts from an item drop,rule
-Both_Tanaris,Horde,3161,Gahz'ridian,48,43,Unverified,not reviewed in this pass,rule
-Both_Tanaris,Horde,3520,Screecher Spirits,44,40,Unverified,not reviewed in this pass,rule
-Both_UngoroCrater,Alliance,974,Finding the Source,55,51,Unverified,not reviewed in this pass,rule
-Both_UngoroCrater,Alliance,980,The New Springs,55,51,Deferred,needs a quest the route does not do (974),rule
-Both_UngoroCrater,Alliance,3844,It's a Secret to Everybody,52,47,Unverified,not reviewed in this pass,rule
+Both_Tanaris,Horde,3161,Gahz'ridian,48,43,Added,on a route,yes
+Both_Tanaris,Horde,3520,Screecher Spirits,44,40,Unverified,Screecher Spirit has no spawn data,yes
+Both_UngoroCrater,Alliance,974,Finding the Source,55,51,Added,on a route,yes
+Both_UngoroCrater,Alliance,980,The New Springs,55,51,Unverified,not reviewed in this pass,rule
+Both_UngoroCrater,Alliance,3844,It's a Secret to Everybody,52,47,Deferred,starts a chain that continues in Winterspring and Tanaris,yes
 Both_UngoroCrater,Alliance,3845,It's a Secret to Everybody,52,47,Deferred,needs a quest the route does not do (3844),rule
 Both_UngoroCrater,Alliance,3884,Williden's Journal,50,48,Deferred,starts from an item drop,rule
 Both_UngoroCrater,Alliance,3908,It's a Secret to Everybody,52,47,Deferred,needs a quest the route does not do (3845),rule
@@ -456,21 +456,21 @@ Both_UngoroCrater,Alliance,3961,Linken's Adventure,54,47,Deferred,needs a quest 
 Both_UngoroCrater,Alliance,3962,It's Dangerous to Go Alone,56,47,Deferred,elite objective (group),rule
 Both_UngoroCrater,Alliance,4005,Aquementas,54,47,Deferred,needs a quest the route does not do (4084),rule
 Both_UngoroCrater,Alliance,4084,Silver Heart,54,47,Deferred,needs a quest the route does not do (3942),rule
-Both_UngoroCrater,Alliance,4141,Muigin and Larion,52,47,Unverified,not reviewed in this pass,rule
-Both_UngoroCrater,Alliance,4142,A Visit to Gregan,52,47,Deferred,needs a quest the route does not do (4141),rule
+Both_UngoroCrater,Alliance,4141,Muigin and Larion,52,47,Added,on a route,yes
+Both_UngoroCrater,Alliance,4142,A Visit to Gregan,52,47,Unverified,not reviewed in this pass,rule
 Both_UngoroCrater,Alliance,4143,Haze of Evil,52,47,Deferred,needs a quest the route does not do (4142),rule
 Both_UngoroCrater,Alliance,4144,Bloodpetal Sprouts,53,47,Deferred,needs a quest the route does not do (4143),rule
-Both_UngoroCrater,Alliance,4243,Chasing A-Me 01,53,48,Unverified,not reviewed in this pass,rule
+Both_UngoroCrater,Alliance,4243,Chasing A-Me 01,53,48,Deferred,escort chain (A-Me 01),yes
 Both_UngoroCrater,Alliance,4244,Chasing A-Me 01,53,48,Deferred,needs a quest the route does not do (4243),rule
 Both_UngoroCrater,Alliance,4245,Chasing A-Me 01,53,48,Deferred,escort or event (party flag in the data),rule
-Both_UngoroCrater,Alliance,4301,The Mighty U'cha,55,50,Unverified,not reviewed in this pass,rule
+Both_UngoroCrater,Alliance,4301,The Mighty U'cha,55,50,Deferred,U'cha is a tough named gorilla at the end of the ape chain,yes
 Both_UngoroCrater,Alliance,4491,A Little Help From My Friends,55,50,Deferred,escort or event (party flag in the data),rule
-Both_UngoroCrater,Alliance,4492,Lost!,55,50,Unverified,not reviewed in this pass,rule
-Both_UngoroCrater,Alliance,4502,Volcanic Activity,55,49,Unverified,not reviewed in this pass,rule
-Both_UngoroCrater,Alliance,4503,Shizzle's Flyer,51,49,Unverified,not reviewed in this pass,rule
-Both_UngoroCrater,Horde,974,Finding the Source,55,51,Unverified,not reviewed in this pass,rule
-Both_UngoroCrater,Horde,980,The New Springs,55,51,Deferred,needs a quest the route does not do (974),rule
-Both_UngoroCrater,Horde,3844,It's a Secret to Everybody,52,47,Unverified,not reviewed in this pass,rule
+Both_UngoroCrater,Alliance,4492,Lost!,55,50,Deferred,escort-style rescue,yes
+Both_UngoroCrater,Alliance,4502,Volcanic Activity,55,49,Deferred,turned in at Ratchet (the Barrens),yes
+Both_UngoroCrater,Alliance,4503,Shizzle's Flyer,51,49,Added,on a route,yes
+Both_UngoroCrater,Horde,974,Finding the Source,55,51,Added,on a route,yes
+Both_UngoroCrater,Horde,980,The New Springs,55,51,Unverified,not reviewed in this pass,rule
+Both_UngoroCrater,Horde,3844,It's a Secret to Everybody,52,47,Deferred,starts a chain that continues in Winterspring and Tanaris,yes
 Both_UngoroCrater,Horde,3845,It's a Secret to Everybody,52,47,Deferred,needs a quest the route does not do (3844),rule
 Both_UngoroCrater,Horde,3884,Williden's Journal,50,48,Deferred,starts from an item drop,rule
 Both_UngoroCrater,Horde,3908,It's a Secret to Everybody,52,47,Deferred,needs a quest the route does not do (3845),rule
@@ -484,17 +484,17 @@ Both_UngoroCrater,Horde,3961,Linken's Adventure,54,47,Deferred,needs a quest the
 Both_UngoroCrater,Horde,3962,It's Dangerous to Go Alone,56,47,Deferred,elite objective (group),rule
 Both_UngoroCrater,Horde,4005,Aquementas,54,47,Deferred,needs a quest the route does not do (4084),rule
 Both_UngoroCrater,Horde,4084,Silver Heart,54,47,Deferred,needs a quest the route does not do (3942),rule
-Both_UngoroCrater,Horde,4145,Larion and Muigin,52,48,Unverified,not reviewed in this pass,rule
-Both_UngoroCrater,Horde,4147,Marvon's Workshop,52,48,Deferred,needs a quest the route does not do (4145),rule
+Both_UngoroCrater,Horde,4145,Larion and Muigin,52,48,Added,on a route,yes
+Both_UngoroCrater,Horde,4147,Marvon's Workshop,52,48,Unverified,not reviewed in this pass,rule
 Both_UngoroCrater,Horde,4148,Bloodpetal Zapper,53,47,Deferred,needs a quest the route does not do (4146),rule
-Both_UngoroCrater,Horde,4243,Chasing A-Me 01,53,48,Unverified,not reviewed in this pass,rule
+Both_UngoroCrater,Horde,4243,Chasing A-Me 01,53,48,Deferred,escort chain (A-Me 01),yes
 Both_UngoroCrater,Horde,4244,Chasing A-Me 01,53,48,Deferred,needs a quest the route does not do (4243),rule
 Both_UngoroCrater,Horde,4245,Chasing A-Me 01,53,48,Deferred,escort or event (party flag in the data),rule
-Both_UngoroCrater,Horde,4301,The Mighty U'cha,55,50,Unverified,not reviewed in this pass,rule
+Both_UngoroCrater,Horde,4301,The Mighty U'cha,55,50,Deferred,U'cha is a tough named gorilla at the end of the ape chain,yes
 Both_UngoroCrater,Horde,4491,A Little Help From My Friends,55,50,Deferred,escort or event (party flag in the data),rule
-Both_UngoroCrater,Horde,4492,Lost!,55,50,Unverified,not reviewed in this pass,rule
-Both_UngoroCrater,Horde,4502,Volcanic Activity,55,49,Unverified,not reviewed in this pass,rule
-Both_UngoroCrater,Horde,4503,Shizzle's Flyer,51,49,Unverified,not reviewed in this pass,rule
+Both_UngoroCrater,Horde,4492,Lost!,55,50,Deferred,escort-style rescue,yes
+Both_UngoroCrater,Horde,4502,Volcanic Activity,55,49,Deferred,turned in at Ratchet (the Barrens),yes
+Both_UngoroCrater,Horde,4503,Shizzle's Flyer,51,49,Added,on a route,yes
 A_Desolace,Alliance,1052,Down the Scarlet Path,40,34,Unverified,not reviewed in this pass,rule
 A_Desolace,Alliance,1369,Broken Tears,33,30,Unverified,not reviewed in this pass,rule
 A_Desolace,Alliance,1370,Stealing Supplies,35,30,Excluded,Gelkis side (route takes Magram),yes
@@ -565,7 +565,11 @@ H_Badlands,Horde,728,To the Undercity for Yagyin's Digest,40,30,Deferred,needs a
 H_Badlands,Horde,734,This Is Going to Be Hard,42,35,Deferred,needs a quest the route does not do (714),rule
 H_Badlands,Horde,737,Forbidden Knowledge,40,30,Deferred,"needs a quest the route does not do (735,736)",rule
 H_Badlands,Horde,777,This Is Going to Be Hard,42,35,Deferred,needs a quest the route does not do (734),rule
-H_Badlands,Horde,1420,Report to Helgrum,40,30,Deferred,turned in outside the zones the route visits,rule
+H_Badlands,Horde,1420,Report to Helgrum,40,30,Unverified,not reviewed in this pass,rule
+H_SwampOfSorrows,Horde,1116,Dream Dust in the Swamp,36,30,Deferred,needs a quest the route does not do (1115),rule
+H_SwampOfSorrows,Horde,1392,Noboru the Cudgel,39,29,Deferred,starts from an item drop,rule
+H_SwampOfSorrows,Horde,1393,Galen's Escape,38,30,Deferred,escort or event (party flag in the data),rule
+H_SwampOfSorrows,Horde,1429,The Atal'ai Exile,44,38,Unverified,not reviewed in this pass,rule
 Both_SearingGorge,Alliance,3367,Suntara Stones,46,41,Deferred,escort with an Ironforge round trip (Suntara Stones chain),yes
 Both_SearingGorge,Alliance,3368,Suntara Stones,46,41,Deferred,needs a quest the route does not do (3367),rule
 Both_SearingGorge,Alliance,3372,Release Them,46,41,Deferred,needs a quest the route does not do (3371),rule
@@ -584,6 +588,61 @@ Both_SearingGorge,Horde,4450,Ledger from Tanaris,46,43,Deferred,needs trips to T
 Both_SearingGorge,Horde,4451,The Key to Freedom,47,43,Deferred,starts from an item drop,rule
 Both_SearingGorge,Horde,7701,WANTED: Overseer Maltorius,50,45,Deferred,Overseer Maltorius is in the Slag Pit with elites,yes
 Both_SearingGorge,Horde,7722,What the Flux?,50,45,Deferred,plans are in the Slag Pit with elites,yes
+Both_Winterspring,Alliance,969,Luck Be With You,60,55,Unverified,not reviewed in this pass,rule
+Both_Winterspring,Alliance,975,Cache of Mau'ari,60,55,Deferred,needs a quest the route does not do (969),rule
+Both_Winterspring,Alliance,4809,Chillwind Horns,54,50,Deferred,needs a quest the route does not do (4808),rule
+Both_Winterspring,Alliance,4810,Return to Tinkee,54,50,Deferred,needs a quest the route does not do (4809),rule
+Both_Winterspring,Alliance,4842,Strange Sources,56,51,Deferred,needs a quest the route does not do (980),rule
+Both_Winterspring,Alliance,4901,Guardians of the Altar,59,53,Deferred,escort or event (party flag in the data),rule
+Both_Winterspring,Alliance,4902,Wildkin of Elune,57,53,Deferred,needs a quest the route does not do (4901),rule
+Both_Winterspring,Alliance,5056,Shy-Rotam,60,53,Unverified,not reviewed in this pass,rule
+Both_Winterspring,Alliance,5057,Past Endeavors,60,53,Deferred,needs a quest the route does not do (5056),rule
+Both_Winterspring,Alliance,5063,Cap of the Scarlet Savant,60,57,Deferred,needs a quest the route does not do (5047),rule
+Both_Winterspring,Alliance,5067,Leggings of Arcana,60,57,Deferred,needs a quest the route does not do (5047),rule
+Both_Winterspring,Alliance,5068,Breastplate of Bloodthirst,60,57,Deferred,needs a quest the route does not do (5047),rule
+Both_Winterspring,Alliance,5083,Winterfall Firewater,56,52,Deferred,starts from an item drop,rule
+Both_Winterspring,Alliance,5084,Falling to Corruption,56,52,Deferred,needs a quest the route does not do (5083),rule
+Both_Winterspring,Alliance,5085,Mystery Goo,56,52,Deferred,needs a quest the route does not do (5084),rule
+Both_Winterspring,Alliance,5086,Toxic Horrors,56,52,Deferred,needs a quest the route does not do (5085),rule
+Both_Winterspring,Alliance,5087,Winterfall Runners,57,52,Deferred,needs a quest the route does not do (5086),rule
+Both_Winterspring,Alliance,5121,High Chief Winterfall,59,52,Deferred,needs a quest the route does not do (5087),rule
+Both_Winterspring,Alliance,5123,The Final Piece,59,52,Deferred,starts from an item drop,rule
+Both_Winterspring,Alliance,5124,Fiery Plate Gauntlets,60,58,Deferred,needs a quest the route does not do (5103),rule
+Both_Winterspring,Alliance,5128,Words of the High Chief,59,52,Deferred,needs a quest the route does not do (5123),rule
+Both_Winterspring,Alliance,5161,Wrath of the Blue Flight,60,57,Deferred,needs a quest the route does not do (5160),rule
+Both_Winterspring,Alliance,5163,"Are We There, Yeti?",58,52,Unverified,not reviewed in this pass,rule
+Both_Winterspring,Alliance,5244,The Ruins of Kel'Theril,56,53,Unverified,not reviewed in this pass,rule
+Both_Winterspring,Alliance,5245,Troubled Spirits of Kel'Theril,56,53,Deferred,needs a quest the route does not do (5244),rule
+Both_Winterspring,Alliance,5252,Remorseful Highborne,58,53,Deferred,needs a quest the route does not do (5248),rule
+Both_Winterspring,Alliance,5253,The Crystal of Zin-Malor,58,53,Deferred,needs a quest the route does not do (5252),rule
+Both_Winterspring,Alliance,6606,A Little Luck,60,55,Unverified,not reviewed in this pass,rule
+Both_Winterspring,Alliance,8471,Winterfall Ritual Totem,56,50,Deferred,starts from an item drop,rule
+Both_Winterspring,Horde,969,Luck Be With You,60,55,Unverified,not reviewed in this pass,rule
+Both_Winterspring,Horde,975,Cache of Mau'ari,60,55,Deferred,needs a quest the route does not do (969),rule
+Both_Winterspring,Horde,4809,Chillwind Horns,54,50,Deferred,needs a quest the route does not do (4808),rule
+Both_Winterspring,Horde,4810,Return to Tinkee,54,50,Deferred,needs a quest the route does not do (4809),rule
+Both_Winterspring,Horde,4842,Strange Sources,56,51,Deferred,needs a quest the route does not do (980),rule
+Both_Winterspring,Horde,4882,Guarding Secrets,59,52,Deferred,starts from an item drop,rule
+Both_Winterspring,Horde,4883,Guarding Secrets,59,52,Deferred,needs a quest the route does not do (4882),rule
+Both_Winterspring,Horde,5056,Shy-Rotam,60,53,Unverified,not reviewed in this pass,rule
+Both_Winterspring,Horde,5057,Past Endeavors,60,53,Deferred,needs a quest the route does not do (5056),rule
+Both_Winterspring,Horde,5063,Cap of the Scarlet Savant,60,57,Deferred,needs a quest the route does not do (5047),rule
+Both_Winterspring,Horde,5067,Leggings of Arcana,60,57,Deferred,needs a quest the route does not do (5047),rule
+Both_Winterspring,Horde,5068,Breastplate of Bloodthirst,60,57,Deferred,needs a quest the route does not do (5047),rule
+Both_Winterspring,Horde,5083,Winterfall Firewater,56,52,Deferred,starts from an item drop,rule
+Both_Winterspring,Horde,5084,Falling to Corruption,56,52,Deferred,needs a quest the route does not do (5083),rule
+Both_Winterspring,Horde,5085,Mystery Goo,56,52,Deferred,needs a quest the route does not do (5084),rule
+Both_Winterspring,Horde,5086,Toxic Horrors,56,52,Deferred,needs a quest the route does not do (5085),rule
+Both_Winterspring,Horde,5087,Winterfall Runners,57,52,Deferred,needs a quest the route does not do (5086),rule
+Both_Winterspring,Horde,5121,High Chief Winterfall,59,52,Deferred,needs a quest the route does not do (5087),rule
+Both_Winterspring,Horde,5123,The Final Piece,59,52,Deferred,starts from an item drop,rule
+Both_Winterspring,Horde,5124,Fiery Plate Gauntlets,60,58,Deferred,needs a quest the route does not do (5103),rule
+Both_Winterspring,Horde,5128,Words of the High Chief,59,52,Deferred,needs a quest the route does not do (5123),rule
+Both_Winterspring,Horde,5161,Wrath of the Blue Flight,60,57,Deferred,needs a quest the route does not do (5160),rule
+Both_Winterspring,Horde,5163,"Are We There, Yeti?",58,52,Unverified,not reviewed in this pass,rule
+Both_Winterspring,Horde,6605,A Strange One,54,50,Unverified,not reviewed in this pass,rule
+Both_Winterspring,Horde,6606,A Little Luck,60,55,Unverified,not reviewed in this pass,rule
+Both_Winterspring,Horde,8471,Winterfall Ritual Totem,56,50,Deferred,starts from an item drop,rule
 Both_EasternPlaguelands,Alliance,5065,The Lost Tablets of Mosh'aru,58,49,Deferred,needs a quest the route does not do (3528),rule
 Both_EasternPlaguelands,Alliance,5152,Auntie Marlene,56,50,Unverified,not reviewed in this pass,rule
 Both_EasternPlaguelands,Alliance,5153,A Strange Historian,56,50,Deferred,needs a quest the route does not do (5152),rule

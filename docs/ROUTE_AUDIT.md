@@ -13,9 +13,9 @@ Every race/class route is walked step by step. **Model level** comes from the XP
 | Warnings | 31 |
 | Peak quest log (worst route) | 22 / 25 |
 | Reduced-XP pickups (6+ levels below estimate) | 32 |
-| Level-gated pickups | 135 |
+| Level-gated pickups | 138 |
 | Accepted, never turned in | 0 |
-| Hub revisits (all guides) | 397 |
+| Hub revisits (all guides) | 420 |
 
 ## Per guide
 
@@ -33,30 +33,31 @@ Values in brackets are the baseline (`docs/generated/route-metrics-baseline.csv`
 | A_Draenei_Azuremyst | 204 (131) | 77 (45) | 421 (384) | 434 | 12 (9) | 0 | 2 (4) | 0 (2) | 4 (1) | 0 |
 | A_Draenei_Bloodmyst | 205 (125) | 78 (42) | 336 (276) | 634 | 22 (6) | 1 (0) | 11 (4) | 0 | 2 | 1 |
 | A_Duskwood | 190 (78) | 65 (29) | 207 (571) | 772 | 19 (13) | 0 | 4 (0) | 0 (4) | 1 (0) | 0 |
-| A_Dustwallow | 75 (78) | 23 (27) | 236 (429) | 215 | 3 (7) | 0 | 0 | 0 (6) | 1 | 0 |
+| A_Dustwallow | 93 (78) | 29 (27) | 304 (429) | 282 | 6 (7) | 0 | 0 | 0 (6) | 1 | 0 |
 | A_DwarfGnome_DunMorogh | 145 (101) | 50 (34) | 255 (322) | 320 | 13 (15) | 0 | 7 (3) | 0 | 3 (0) | 0 |
-| A_Felwood | 38 (36) | 9 | 146 (247) | 92 | 0 (4) | 0 | 0 | 0 (1) | 0 | 0 |
+| A_Felwood | 39 (36) | 10 (9) | 146 (247) | 92 | 0 (4) | 0 | 0 | 0 (1) | 0 | 0 |
 | A_Feralas | 60 (63) | 19 (22) | 272 (344) | 272 | 3 | 0 | 2 (0) | 0 (3) | 2 (3) | 2 |
 | A_Hellfire | 177 | 60 (61) | 494 (804) | 519 | 18 (35) | 0 | 8 (0) | 0 (3) | 0 | 1 (2) |
 | A_Hillsbrad | 65 (47) | 25 (14) | 26 (44) | 226 | 1 (0) | 0 | 5 (3) | 0 (3) | 0 | 0 |
 | A_Hinterlands | 39 (40) | 9 (10) | 93 (111) | 93 | 1 (5) | 0 | 0 | 0 (1) | 0 | 0 |
 | A_Human_Elwynn | 164 (143) | 59 (48) | 392 (467) | 455 | 13 (16) | 0 | 7 (2) | 0 | 0 | 2 |
 | A_LochModan | 106 (72) | 29 (24) | 133 (517) | 382 | 5 (11) | 0 | 4 (0) | 0 (2) | 0 | 0 (1) |
-| A_Nagrand | 104 (105) | 36 (37) | 192 (367) | 192 | 1 (4) | 0 | 0 | 0 (1) | 2 | 1 (2) |
+| A_Nagrand | 126 (105) | 43 (37) | 291 (367) | 291 | 3 (4) | 0 | 0 | 0 (1) | 2 | 1 (2) |
 | A_NightElf_Teldrassil | 178 (92) | 63 (30) | 313 (214) | 471 | 13 (7) | 0 | 3 (1) | 0 (1) | 6 (0) | 0 |
 | A_Redridge | 118 (69) | 41 (22) | 243 (289) | 370 | 10 (13) | 0 | 12 (0) | 0 (1) | 1 | 3 |
 | A_Shadowmoon | 57 | 18 | 76 (132) | 76 | 1 (2) | 0 | 0 | 0 | 0 | 0 |
 | A_Stranglethorn | 147 (76) | 47 (25) | 311 (269) | 484 | 6 | 12 (0) | 0 | 0 (5) | 0 | 0 |
-| A_Terokkar | 96 (97) | 33 (34) | 292 (390) | 367 | 5 (11) | 0 | 0 | 0 (1) | 1 | 2 (3) |
-| A_WesternPlaguelands | 81 (41) | 26 (12) | 452 (288) | 527 | 9 (5) | 0 | 0 | 0 (3) | 0 | 0 |
+| A_Terokkar | 108 (97) | 37 (34) | 327 (390) | 402 | 5 (11) | 0 | 0 | 0 (1) | 1 | 2 (3) |
+| A_WesternPlaguelands | 82 (41) | 27 (12) | 453 (288) | 528 | 9 (5) | 0 | 0 | 0 (3) | 0 | 0 |
 | A_Westfall | 78 (56) | 27 (16) | 83 (253) | 167 | 5 (7) | 0 | 2 (0) | 0 | 0 | 2 |
 | A_Wetlands | 113 (79) | 41 (26) | 229 (255) | 429 | 8 (9) | 0 | 8 (0) | 0 (2) | 0 | 0 |
 | A_Zangarmarsh | 117 (115) | 39 (41) | 174 (365) | 174 | 3 (9) | 0 | 0 | 0 (5) | 1 (2) | 0 (1) |
-| Both_EasternPlaguelands | 44 | 10 | 279 | 300 | 2 | 0 | 0 | 0 | 0 | 0 |
+| Both_EasternPlaguelands | 45 | 11 | 280 | 300 | 3 | 0 | 0 | 0 | 0 | 0 |
 | Both_Netherstorm | 105 (107) | 35 (37) | 220 (440) | 220 | 7 (14) | 0 | 0 | 0 (2) | 0 (1) | 1 |
 | Both_SearingGorge | 50 | 13 | 33 | 30 | 1 | 0 | 0 | 0 | 2 | 0 |
-| Both_Tanaris | 49 (52) | 12 (15) | 39 (63) | 35 | 0 (1) | 0 | 1 | 0 (3) | 0 | 2 |
-| Both_UngoroCrater | 51 (55) | 13 (17) | 309 (323) | 309 | 3 (4) | 0 | 0 (1) | 0 (4) | 3 | 1 (2) |
+| Both_Tanaris | 58 (52) | 15 | 113 (63) | 109 | 3 (1) | 0 | 3 (1) | 0 (3) | 0 | 2 |
+| Both_UngoroCrater | 63 (55) | 17 | 390 (323) | 385 | 7 (4) | 0 | 0 (1) | 0 (4) | 3 | 1 (2) |
+| Both_Winterspring | 48 | 15 | 164 | 123 | 4 | 0 | 0 | 0 | 0 | 0 |
 | H_Arathi | 52 | 14 | 103 (163) | 103 | 2 (3) | 0 | 0 | 0 | 0 | 0 |
 | H_Ashenvale | 58 (42) | 18 (10) | 258 (492) | 258 | 6 (13) | 0 | 0 (1) | 0 (1) | 2 | 5 (3) |
 | H_Badlands | 33 | 6 | 91 | 91 | 3 | 0 | 2 | 0 | 0 | 0 |
@@ -65,23 +66,24 @@ Values in brackets are the baseline (`docs/generated/route-metrics-baseline.csv`
 | H_BloodElf_Eversong | 243 (118) | 93 (41) | 442 (583) | 520 | 14 (16) | 1 (0) | 4 (0) | 0 (4) | 4 (1) | 0 |
 | H_BloodElf_Ghostlands | 193 (103) | 70 (35) | 396 (440) | 498 | 18 (16) | 0 | 4 (1) | 0 (1) | 1 (0) | 1 |
 | H_Desolace | 35 | 7 | 212 | 212 | 4 | 0 | 0 | 0 | 0 | 0 |
-| H_Dustwallow | 91 (90) | 29 | 248 (301) | 298 | 8 (12) | 0 | 0 | 0 (1) | 0 | 0 |
-| H_Felwood | 38 (36) | 9 | 150 (274) | 150 | 1 (5) | 0 | 0 | 0 (1) | 1 | 0 |
+| H_Dustwallow | 109 (90) | 35 (29) | 286 (301) | 336 | 11 (12) | 0 | 0 | 0 (1) | 0 | 0 |
+| H_Felwood | 39 (36) | 10 (9) | 150 (274) | 150 | 1 (5) | 0 | 0 | 0 (1) | 1 | 0 |
 | H_Feralas | 54 (28) | 14 (5) | 106 (130) | 105 | 2 (3) | 0 | 0 (5) | 0 | 0 | 0 |
 | H_Hellfire | 142 (146) | 51 (55) | 442 (748) | 467 | 10 (15) | 0 | 6 (0) | 0 (4) | 0 | 0 |
 | H_Hillsbrad | 51 (48) | 14 (15) | 140 (122) | 140 | 1 | 0 | 3 (0) | 0 (4) | 0 | 0 |
-| H_Hinterlands | 51 (52) | 13 (14) | 54 (70) | 54 | 1 | 0 | 0 | 0 (1) | 0 | 0 |
-| H_Nagrand | 114 | 39 | 155 (336) | 205 | 3 (9) | 0 | 0 | 0 | 3 | 1 |
+| H_Hinterlands | 63 (52) | 17 (14) | 66 (70) | 66 | 1 | 0 | 0 | 0 (1) | 0 | 0 |
+| H_Nagrand | 130 (114) | 44 (39) | 267 (336) | 317 | 4 (9) | 0 | 0 | 0 | 3 | 1 |
 | H_OrcTroll_Durotar | 215 (105) | 70 (33) | 367 (371) | 445 | 11 (14) | 0 | 7 (0) | 0 (2) | 4 (0) | 0 |
 | H_Shadowmoon | 57 | 18 | 65 (89) | 65 | 3 (5) | 0 | 0 | 0 | 0 | 0 |
 | H_Silverpine | 75 (76) | 27 (28) | 190 (191) | 340 | 7 (8) | 0 | 0 | 0 (1) | 1 | 2 (3) |
 | H_Stonetalon | 59 (37) | 23 (8) | 160 (222) | 237 | 8 (5) | 0 | 0 | 0 | 2 (1) | 0 |
 | H_Stranglethorn | 69 (70) | 19 (20) | 236 (278) | 146 | 4 (5) | 4 (1) | 0 | 0 (1) | 0 | 0 |
+| H_SwampOfSorrows | 41 | 10 | 210 | 186 | 2 | 0 | 1 | 0 | 0 | 0 |
 | H_Tauren_Mulgore | 162 (90) | 60 (30) | 248 (258) | 452 | 13 (9) | 0 | 1 | 0 (2) | 8 (3) | 0 |
-| H_Terokkar | 95 (96) | 33 (34) | 230 (351) | 305 | 7 (13) | 0 | 0 | 0 (1) | 0 | 1 (2) |
+| H_Terokkar | 107 (96) | 37 (34) | 265 (351) | 340 | 7 (13) | 0 | 0 | 0 (1) | 0 | 1 (2) |
 | H_ThousandNeedles | 135 (56) | 42 (16) | 146 (246) | 473 | 8 | 0 | 0 | 0 (2) | 4 (1) | 0 |
 | H_Undead_Tirisfal | 119 (97) | 40 (30) | 119 (216) | 177 | 7 (5) | 0 | 4 (0) | 0 | 0 | 0 |
-| H_WesternPlaguelands | 63 (47) | 20 (14) | 30 (10) | 255 | 4 (7) | 0 | 0 | 0 | 1 | 0 |
+| H_WesternPlaguelands | 64 (47) | 21 (14) | 31 (10) | 256 | 4 (7) | 0 | 0 | 0 | 1 | 0 |
 | H_Zangarmarsh | 111 (108) | 37 (38) | 251 (397) | 251 | 6 (10) | 0 | 0 | 0 (3) | 1 | 0 |
 
 ## Peak quest log per route
@@ -246,7 +248,9 @@ None.
 - A_Wetlands: level-gated pickup: The Thandol Span (632) needs 28, model level 26.6 (quests only: 26) [alliance/14_wetlands.guide:76, Human/WARRIOR]
 - A_Wetlands: level-gated pickup: The Thandol Span (633) needs 28, model level 26.7 (quests only: 26) [alliance/14_wetlands.guide:78, Human/WARRIOR]
 - A_Wetlands: level-gated pickup: Uncovering the Past (299) needs 25, model level 24.3 (quests only: 24) [alliance/14_wetlands.guide:41, NightElf/WARRIOR]
-- Both_Tanaris: level-gated pickup: The Dunemaul Compound (5863) needs 44, model level 42.1 (quests only: 41) [shared/24_tanaris.guide:41, Human/WARRIOR]
+- Both_Tanaris: level-gated pickup: Gahz'ridian (3161) needs 43, model level 42.9 (quests only: 42) [shared/24_tanaris.guide:53, Human/WARRIOR]
+- Both_Tanaris: level-gated pickup: The Dunemaul Compound (5863) needs 44, model level 42.5 (quests only: 41) [shared/24_tanaris.guide:41, Human/WARRIOR]
+- Both_Tanaris: level-gated pickup: The Thirsty Goblin (2605) needs 44, model level 43.1 (quests only: 42) [shared/24_tanaris.guide:56, Human/WARRIOR]
 - H_Badlands: level-gated pickup: Badlands Reagent Run (2258) needs 36, model level 36.0 (quests only: 35) [horde/15b_badlands.guide:15, Orc/WARRIOR]
 - H_Badlands: level-gated pickup: Unclaimed Baggage (9439) needs 36, model level 36.0 (quests only: 35) [horde/15b_badlands.guide:17, Orc/WARRIOR]
 - H_Barrens: level-gated pickup: Blind Cazul (1508) needs 20, model level 12.3 (quests only: 11) [horde/10_barrens.guide:93, Orc/WARLOCK]
@@ -306,6 +310,7 @@ None.
 - H_Stranglethorn: reduced-XP quest: Supply and Demand (575, level 31) at estimated level 38.6
 - H_Stranglethorn: reduced-XP quest: Tiger Mastery (185, level 31) at estimated level 38.0
 - H_Stranglethorn: reduced-XP quest: Welcome to the Jungle (583, level 30) at estimated level 38.0
+- H_SwampOfSorrows: level-gated pickup: Continued Threat (1428) needs 41, model level 39.4 (quests only: 39) [horde/16b_swampofsorrows.guide:36, Orc/WARRIOR]
 - H_Tauren_Mulgore: level-gated pickup: Call of Earth (1519) needs 4, model level 1.0 (quests only: 1) [horde/01_tauren_mulgore.guide:16, Tauren/SHAMAN]
 - H_Undead_Tirisfal: level-gated pickup: At War With The Scarlet Crusade (427) needs 5, model level 4.9 (quests only: 4) [horde/02_undead_tirisfal.guide:62, Scourge/WARRIOR]
 - H_Undead_Tirisfal: level-gated pickup: Garments of Darkness (5650) needs 5, model level 5.0 (quests only: 4) [horde/02_undead_tirisfal.guide:64, Scourge/PRIEST]

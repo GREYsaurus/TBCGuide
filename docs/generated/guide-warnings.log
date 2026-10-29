@@ -32,8 +32,9 @@ alliance/25_feralas.guide:41: 'Freedom for All Creatures' has no objective locat
 alliance/25_feralas.guide:48: 'The Writhing Deep' has no objective locations in the database; add [at=x,y] or a goto
 alliance/26_hinterlands.guide:29: 'Featherbeard's Endorsement' has no objective locations in the database; add [at=x,y] or a goto
 alliance/29_burningsteppes.guide:42: 'The True Masters' has no objective locations in the database; add [at=x,y] or a goto
-alliance/30_westernplaguelands.guide:22: 'Better Late Than Never' has no objective locations in the database; add [at=x,y] or a goto
-alliance/30_westernplaguelands.guide:65: 'A Plague Upon Thee' has no objective locations in the database; add [at=x,y] or a goto
+alliance/30_westernplaguelands.guide:16: turn-in of 'The Everlook Report' (6028) with no earlier accept on this faction's routes
+alliance/30_westernplaguelands.guide:23: 'Better Late Than Never' has no objective locations in the database; add [at=x,y] or a goto
+alliance/30_westernplaguelands.guide:66: 'A Plague Upon Thee' has no objective locations in the database; add [at=x,y] or a goto
 horde/00_orc_troll_durotar.guide:138: 'Taming the Beast' has no objective locations in the database; add [at=x,y] or a goto
 horde/00_orc_troll_durotar.guide:141: 'Taming the Beast' has no objective locations in the database; add [at=x,y] or a goto
 horde/00_orc_troll_durotar.guide:144: 'Taming the Beast' has no objective locations in the database; add [at=x,y] or a goto
@@ -84,9 +85,10 @@ horde/17_dustwallow.guide:26: 'The Black Shield' has no objective locations in t
 horde/17_dustwallow.guide:32: 'The Black Shield' has no objective locations in the database; add [at=x,y] or a goto
 horde/17_dustwallow.guide:82: 'Justice Dispensed' has no objective locations in the database; add [at=x,y] or a goto
 horde/17_dustwallow.guide:86: 'The Zeppelin Crash' has no objective locations in the database; add [at=x,y] or a goto
-horde/21_hinterlands.guide:44: 'Kidnapped Elder Torntusk!' has no objective locations in the database; add [at=x,y] or a goto
+horde/21_hinterlands.guide:52: 'Kidnapped Elder Torntusk!' has no objective locations in the database; add [at=x,y] or a goto
 horde/22_felwood.guide:23: 'Corrupted Sabers' has no objective locations in the database; add [at=x,y] or a goto
-horde/23_westernplaguelands.guide:16: 'Scarlet Diversions' has no objective locations in the database; add [at=x,y] or a goto
+horde/23_westernplaguelands.guide:15: turn-in of 'The Everlook Report' (6029) with no earlier accept on this faction's routes
+horde/23_westernplaguelands.guide:17: 'Scarlet Diversions' has no objective locations in the database; add [at=x,y] or a goto
 outland/a66_nagrand.guide:64: 'Corki's Ransom' has no objective locations in the database; add [at=x,y] or a goto
 outland/a69_shadowmoon.guide:37: 'The Deathforge' has no objective locations in the database; add [at=x,y] or a goto
 outland/a69_shadowmoon.guide:63: 'Find the Deserter' has no objective locations in the database; add [at=x,y] or a goto
@@ -102,9 +104,10 @@ outland/h66_nagrand.guide:66: 'He Will Walk The Earth...' has no objective locat
 outland/h69_shadowmoon.guide:37: 'The Deathforge' has no objective locations in the database; add [at=x,y] or a goto
 outland/h69_shadowmoon.guide:57: 'Invasion Point: Cataclysm' has no objective locations in the database; add [at=x,y] or a goto
 outland/h69_shadowmoon.guide:63: 'Find the Deserter' has no objective locations in the database; add [at=x,y] or a goto
-shared/27_ungoro.guide:45: 'The Northern Pylon' has no objective locations in the database; add [at=x,y] or a goto
-shared/27_ungoro.guide:46: 'The Eastern Pylon' has no objective locations in the database; add [at=x,y] or a goto
-shared/27_ungoro.guide:47: 'The Western Pylon' has no objective locations in the database; add [at=x,y] or a goto
+shared/27_ungoro.guide:54: 'The Northern Pylon' has no objective locations in the database; add [at=x,y] or a goto
+shared/27_ungoro.guide:55: 'The Eastern Pylon' has no objective locations in the database; add [at=x,y] or a goto
+shared/27_ungoro.guide:56: 'The Western Pylon' has no objective locations in the database; add [at=x,y] or a goto
+shared/28b_winterspring.guide:15: turn-in of 'Speak to Salfa' (8465) with no earlier accept on this faction's routes
 alliance/00_human_elwynn.guide:66 (Garments of the Light): prerequisite 5623 'In Favor of the Light' is not turned in anywhere on Alliance routes (one of several alternatives)
 alliance/00_human_elwynn.guide:147 (Bartleby's Mug): prerequisite 1640 'Beat Bartleby' is not turned in anywhere on Alliance routes (one of several alternatives)
 alliance/01_dwarf_gnome_dunmorogh.guide:70 (Garments of the Light): prerequisite 5626 'In Favor of the Light' is not turned in anywhere on Alliance routes (one of several alternatives)

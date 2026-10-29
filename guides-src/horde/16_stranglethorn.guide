@@ -8,7 +8,7 @@
 @zone Stranglethorn Vale
 @chapter Azeroth
 @desc Grom'gol Base Camp, Nesingwary's Expedition, the Bloodscalp and Skullsplitter trolls, and Booty Bay. A contested zone - watch for Alliance players.
-@next H_Dustwallow
+@next H_SwampOfSorrows
 
 fp Grom'gol
 bind Grom'gol
@@ -70,4 +70,4 @@ turnin Some Assembly Required
 turnin Venture Company Mining
 level 39
 train
-note Fly to Brackenwall Village in Dustwallow Marsh (via Orgrimmar and the zeppelin if you lack the path).
+note Next: the Swamp of Sorrows, north through Duskwood and Deadwind Pass.

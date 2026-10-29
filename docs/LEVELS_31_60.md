@@ -115,3 +115,55 @@ How the reasons were assigned:
 
 - **Guide compiler:** steps in a shared (`Both`) guide can now carry `[faction=Alliance|Horde]` and resolve faction-only quests. The runtime already filtered such steps; the compiler had been ignoring the flag.
 - **Saved progress:** layouts now chain. A character who saved on 0.7.0 or on 0.9.0 is moved to the same step in the current order (`Guides/Layouts.lua`, `ns:ApplyLayout`).
+
+## Pass 2 (after 0.9.1)
+
+**Measured how:** with the same model and data on the guides of `06e788d` (0.9.1) and the current guides. The model is unchanged.
+
+**Gate changes:** two `level` steps were lowered, because the following guide's quests need no more.
+- **Felwood:** 54 → 53. Winterspring follows, and its quests need 52-53.
+- **Swamp of Sorrows:** 41 → 40. Dustwallow's quests need 38-39.
+
+Those are content changes, not model changes. One pickup was moved behind the gate that unlocks it: *Finding the Source*, now after Un'Goro's `level 51` step.
+
+| Band | Alliance 0.9.1 | Alliance now | Horde 0.9.1 | Horde now |
+|---|---|---|---|---|
+| 30-40 | 4.54 | 4.54 | 3.11 | 2.90 |
+| 40-50 | 4.28 | 3.18 | 4.75 | 3.21 |
+| 50-58 | 3.44 | 2.81 | 4.36 | 3.29 |
+| **30-58** | **12.26** | **10.53** | **12.22** | **9.40** |
+| Distinct quests, 30-58 guides | 237 | 268 | 221 | 266 |
+| Pickups above the model's level, 30-58 | 3 | 5 | 3 | 6 |
+
+**Gated pickups:** the new ones are optional or noted, and the engine skips each until you reach its level: Gahz'ridian (43), The Thirsty Goblin (44), Continued Threat (41).
+
+**Added:**
+
+| Guide | Faction | Distinct quests | Notes |
+|---|---|---|---|
+| Both_Winterspring (new) | both; Enraged Wildkin chain Alliance-only | 15 | Entered via Speak to Salfa from Felwood's Nafien. Everlook hunts, Winterfall, Kel'Theril. The Everlook Report is turned in at WPL and Duke Nicholas at EPL. |
+| H_SwampOfSorrows (new) | Horde | 10 | Stonard, Misty Reed Strand (Threat From the Sea chain), Magtoor |
+| A_ and H_Dustwallow | both | +6 each | Moxie's crash quests, Help for Mudsprocket, Bloodfen Feathers, Goreclaw, Catch a Dragon by the Tail |
+| Both_Tanaris | both | +3 | Andre Firebeard; Gahz'ridian and The Thirsty Goblin (optional, level-gated) |
+| Both_UngoroCrater | both | +4 | Shizzle's Flyer, Muigin and Larion / Larion and Muigin (by faction), Finding the Source |
+| H_Hinterlands | Horde | +4 | the Revantusk board: Separation Anxiety, Dark Vessels, Job Opening, Hexx (optional) |
+| A_ and H_Felwood | both | +1 each | Speak to Salfa (the Winterspring link) |
+
+**Felwood:** the old "2.2 levels" was Felwood's own gate (54) on top of thin content. Felwood plus Winterspring now model at 1.14 + 1.35 (Alliance) and 0.94 + 1.35 (Horde), against 2.24 / 2.21 for Felwood alone before. Winterspring adds about 0.6 level of quest XP; the rest is still grinding.
+
+**Candidates:** 741 rows in `candidates-31-60-disposition.csv`.
+
+| Status | Count |
+|---|---|
+| Added | 74 |
+| Already covered | 2 |
+| Deferred | 464 |
+| Excluded | 5 |
+| Unverified | 196 |
+
+Most of the priority zones (Tanaris, Hinterlands, Un'Goro, Dustwallow) were reviewed by hand. 4 Tanaris, 4 Un'Goro and 16 Dustwallow candidates remain unverified, mainly the Theramore breadcrumb chains and quests whose objectives have no spawn data.
+
+**Remaining:**
+- **Grinding:** about 10.5 (Alliance) and 9.4 (Horde) levels from 30 to 58. The largest single gaps are Arathi (Alliance, 1.84), Tanaris's level-44 gate, Winterspring (1.35) and Desolace and Badlands (Horde, 1.39 each).
+- **Unvisited:** Azshara, Silithus and the Blasted Lands.
+- **Fallback:** the `level` steps stay the explicit instruction.

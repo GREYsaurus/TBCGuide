@@ -6,7 +6,7 @@ ns.Guides:Register({
   id="H_Felwood", name="Felwood (Bloodvenom Post)", faction="Horde", chapter="Azeroth",
   minLevel=51, maxLevel=54, zone=361, zoneName="Felwood",
   desc="Bloodvenom Post, the corrupted moonwells, Jaedenar, Shatter Scar Vale and the Timbermaw furbolgs.",
-  next={{id="H_WesternPlaguelands"},},
+  next={{id="Both_Winterspring"},},
   steps={
     {"accept",q=8460,title="Timbermaw Ally",npc="Grazle",z=361,x=50.9,y=85,text="Grazle, near the Timbermaw Hold tunnel.",v=1},
     {"turnin",q=8460,title="Timbermaw Ally",npc="Grazle",z=361,x=50.9,y=85,v=1},
@@ -35,7 +35,8 @@ ns.Guides:Register({
     {"accept",q=8461,title="Deadwood of the North",npc="Nafien",z=361,x=64.8,y=8.1,text="Nafien.",v=1},
     {"complete",q=8461,title="Deadwood of the North",text="Deadwood furbolgs.",v=1},
     {"turnin",q=8461,title="Deadwood of the North",npc="Nafien",z=361,x=64.8,y=8.1,v=1},
-    {"level",level=54,v=1},
+    {"accept",q=8465,title="Speak to Salfa",npc="Nafien",z=361,x=64.8,y=8.1,text="Nafien. Turned in at the Winterspring end of the Timbermaw tunnel.",v=1},
+    {"level",level=53,v=1},
     {"train",text="No druid trainer in this zone - train at the next town or capital.",classes={"DRUID"},v=1},
     {"train",text="No hunter trainer in this zone - train at the next town or capital.",classes={"HUNTER"},v=1},
     {"train",text="No mage trainer in this zone - train at the next town or capital.",classes={"MAGE"},v=1},
@@ -45,6 +46,6 @@ ns.Guides:Register({
     {"train",text="No shaman trainer in this zone - train at the next town or capital.",classes={"SHAMAN"},v=1},
     {"train",text="No warlock trainer in this zone - train at the next town or capital.",classes={"WARLOCK"},v=1},
     {"train",text="No warrior trainer in this zone - train at the next town or capital.",classes={"WARRIOR"},v=1},
-    {"note",text="Fly to the Undercity and ride east to the Bulwark (Tirisfal/Western Plaguelands border).",v=1},
+    {"note",text="Next: Winterspring, through the Timbermaw Hold tunnel behind Nafien.",v=1},
   },
 })

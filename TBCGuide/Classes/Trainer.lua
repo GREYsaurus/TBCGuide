@@ -116,11 +116,12 @@ function TR.Group(list)
         local key = e.name
         local g = at[key]
         if not g then
-            g = { name = TR.SpellName(e), prio = e.prio, ranks = {}, first = e }
+            g = { name = TR.SpellName(e), prio = e.prio, ranks = {}, first = e, entries = {} }
             at[key] = g
             out[#out + 1] = g
         end
         if e.rank > 0 then g.ranks[#g.ranks + 1] = e.rank end
+        g.entries[#g.entries + 1] = e
     end
     return out
 end
@@ -169,6 +170,107 @@ function TR:SkipReason()
     return nil
 end
 
+-- Training costs --------------------------------------------------------------------------------------
+-- The client tables carry no trainer prices, so prices come from the trainer window itself:
+--   "current": the class trainer you have open right now (GetTrainerServiceCost, which already
+--              includes any reputation discount you get there);
+--   "seen":    what a class trainer charged a character of this account before (saved in
+--              TBCGuideDB.trainCosts); another trainer or reputation can change it;
+--   nil:       unknown - never guessed.
+-- Amounts are integer copper. Nothing here buys anything.
+TR.live = {}
+
+local function costCache()
+    local db = ns.db
+    if type(db.trainCosts) ~= "table" then db.trainCosts = {} end
+    return db.trainCosts
+end
+
+-- Localized name + rank number -> entry, for matching trainer services to the data.
+function TR:NameIndex(class)
+    self.nameIndex = self.nameIndex or {}
+    if self.nameIndex[class] then return self.nameIndex[class] end
+    local idx = {}
+    for _, e in ipairs(self:Entries(class)) do
+        idx[string.lower(TR.SpellName(e)) .. "#" .. e.rank] = e
+    end
+    self.nameIndex[class] = idx
+    return idx
+end
+
+function TR:ScanTrainer()
+    if IsTradeskillTrainer and IsTradeskillTrainer() then return end
+    if not (GetNumTrainerServices and GetTrainerServiceInfo and GetTrainerServiceCost) then return end
+    local idx = self:NameIndex(ns.Compat.PlayerInfo().class)
+    local cache, now, found = costCache(), time and time() or 0, 0
+    self.live = {}
+    for i = 1, GetNumTrainerServices() or 0 do
+        local name, rankText, kind = GetTrainerServiceInfo(i)
+        if name and kind ~= "header" then
+            local rank = tonumber(string.match(rankText or "", "(%d+)")) or 0
+            local e = idx[string.lower(name) .. "#" .. rank]
+            local c = GetTrainerServiceCost(i)
+            if e and type(c) == "number" and c >= 0 then
+                self.live[e.id] = c
+                cache[e.id] = { c = c, t = now }
+                found = found + 1
+            end
+        end
+    end
+    self.trainerOpen = found > 0
+    ns:Fire("TBCG_TRAINER_CHANGED")
+end
+
+-- copper, "current" | "seen" | nil
+function TR:Cost(e)
+    if self.trainerOpen and self.live[e.id] then return self.live[e.id], "current" end
+    local c = costCache()[e.id]
+    if type(c) == "table" and type(c.c) == "number" then return c.c, "seen" end
+    return nil, nil
+end
+
+-- The bill for a list of entries: total copper of the known prices, how many prices are unknown
+-- or only "seen", and whether the total is complete.
+function TR:Bill(list)
+    local b = { total = 0, unknown = 0, seen = 0, n = #list }
+    for _, e in ipairs(list) do
+        local c, kind = self:Cost(e)
+        if c then
+            b.total = b.total + c
+            if kind == "seen" then b.seen = b.seen + 1 end
+        else
+            b.unknown = b.unknown + 1
+        end
+    end
+    b.complete = b.unknown == 0
+    return b
+end
+
+local function money(c) return ns.Compat.FormatMoney(c) end
+
+function TR.BillText(b, label)
+    if b.n == 0 then return nil end
+    if b.total == 0 and b.unknown == b.n then return label .. ": cost unknown until you open a class trainer." end
+    local t = label .. ": " .. money(b.total)
+    if not b.complete then t = t .. " |cffffaa55(partial: " .. b.unknown .. " price(s) unknown)|r" end
+    if b.seen > 0 then t = t .. " |cff999999(" .. b.seen .. " last seen at a trainer)|r" end
+    if b.complete then
+        local have = GetMoney and GetMoney() or 0
+        t = t .. (have >= b.total and " - you can afford it." or (" - you are " .. money(b.total - have) .. " short."))
+    end
+    return t
+end
+
+local function groupCost(g)
+    local total, unknown = 0, false
+    for _, e in ipairs(g.entries) do
+        local c = TR:Cost(e)
+        if c then total = total + c else unknown = true end
+    end
+    if unknown and total == 0 then return "" end
+    return " |cffcccccc" .. money(total) .. (unknown and "+?" or "") .. "|r"
+end
+
 -- Lines for a train step (and the report): the top suggestions, then quest spells.
 function TR:Lines(max)
     local lines = {}
@@ -186,9 +288,19 @@ function TR:Lines(max)
     max = max or 6
     for i, g in ipairs(groups) do
         if i > max then lines[#lines + 1] = "... and " .. (#groups - max) .. " more (/tbcg train)" break end
-        lines[#lines + 1] = "- " .. TR.GroupText(g) .. (g.prio ~= 1 and (" |cff999999" .. PRIO_NAME[g.prio] .. "|r") or "")
+        lines[#lines + 1] = "- " .. TR.GroupText(g) .. groupCost(g) .. (g.prio ~= 1 and (" |cff999999" .. PRIO_NAME[g.prio] .. "|r") or "")
     end
     for _, e in ipairs(a.quest) do lines[#lines + 1] = "- " .. TR.SpellName(e) .. " |cff999999(" .. e.quest .. ")|r" end
+    -- Totals: everything listed; with "All", important and the rest separately too.
+    local imp, rest = {}, {}
+    for _, e in ipairs(a.ready) do if e.prio == 1 then imp[#imp + 1] = e else rest[#rest + 1] = e end end
+    local t = TR.BillText(self:Bill(a.ready), "Total")
+    if t then lines[#lines + 1] = t end
+    if #rest > 0 and #imp > 0 then
+        lines[#lines + 1] = TR.BillText(self:Bill(imp), "Important")
+        lines[#lines + 1] = TR.BillText(self:Bill(rest), "Useful and optional")
+    end
+    if ns.PetSkills then for _, l in ipairs(ns.PetSkills:Lines(3)) do lines[#lines + 1] = l end end
     return lines
 end
 
@@ -196,12 +308,19 @@ end
 TR.CAPITALS = { Alliance = { 1519, 1537, 1657, 3557 }, Horde = { 1637, 1497, 1638, 3487 } }
 function TR:NearestTrainer()
     local info = ns.Compat.PlayerInfo()
+    return self:NearestNPC(info.class and (info.class:sub(1, 1) .. info.class:sub(2):lower() .. " Trainer"))
+end
+
+-- Nearest friendly NPC with this English sub-name in the bundled data ("Warrior Trainer",
+-- "Demon Trainer", "Pet Trainer"): same zone first, else your faction's capitals.
+TR.nearestBy = {}
+function TR:NearestNPC(sub)
+    local info = ns.Compat.PlayerInfo()
     local mapId0 = ns.Compat.GetPlayerMapPosition()
-    -- The NPC scan is cached per class, faction and map (same answer until you change zone).
-    local key = tostring(info.class) .. tostring(info.faction) .. tostring(mapId0)
-    local c = self.nearest
+    -- The NPC scan is cached per sub-name, faction and map (same answer until you change zone).
+    local key = tostring(sub) .. tostring(info.faction) .. tostring(mapId0)
+    local c = self.nearestBy[sub or ""]
     if c and c.key == key and c.t then return c.t[1], c.t[2], c.t[3], c.t[4] end
-    local sub = info.class and (info.class:sub(1, 1) .. info.class:sub(2):lower() .. " Trainer")
     local side = info.faction == "Alliance" and "A" or "H"
     local N = ns.QDB.NPC
     local mapId, px, py = ns.Compat.GetPlayerMapPosition()
@@ -224,7 +343,7 @@ function TR:NearestTrainer()
         end
     end
     local t = best or cap
-    self.nearest = { key = key, t = t }
+    self.nearestBy[sub or ""] = { key = key, t = t }
     if t then return t[1], t[2], t[3], t[4] end
     return nil
 end
@@ -251,6 +370,8 @@ function TR:Report(force)
     local parts = {}
     for _, g in ipairs(groups) do parts[#parts + 1] = TR.GroupText(g) end
     if #parts > 0 then ns:Print("Class trainer has: " .. table.concat(parts, ", ") .. ".") end
+    local bill = TR.BillText(self:Bill(a.ready), "Cost")
+    if bill and #parts > 0 then ns:Print(bill) end
     for _, e in ipairs(a.quest) do ns:Print("From a class quest: " .. TR.SpellName(e) .. " - " .. e.quest .. ".") end
     local nxt = self:NextTrainStep()
     if nxt then ns:Print("Your route trains next at step " .. nxt .. ".") end
@@ -286,5 +407,8 @@ function TR:Init()
         -- Spellbook updates after the event: check a moment later.
         C_Timer.After(1, function() TR:OnLevelUp(tonumber(level) or UnitLevel("player")) if ns.Engine then ns.Engine:Refresh() end end)
     end)
+    ns:On("TRAINER_SHOW", function() C_Timer.After(0.1, function() TR:ScanTrainer() end) end)
+    ns:On("TRAINER_UPDATE", function() TR:ScanTrainer() end)
+    ns:On("TRAINER_CLOSED", function() TR.trainerOpen, TR.live = false, {} ns:Fire("TBCG_TRAINER_CHANGED") end)
     ns:On("LEARNED_SPELL_IN_TAB", function() TR.skipCache = nil ns:Throttle("trainer-refresh", 0.5, function() if ns.Engine then ns.Engine:Refresh() end end) end)
 end

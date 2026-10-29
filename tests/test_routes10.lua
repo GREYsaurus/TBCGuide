@@ -25,14 +25,20 @@ check(ns:GetProgress("A_Human_Elwynn").layout == (ns.GuideLayouts.A_Human_Elwynn
 
 -- Two reorders in a row (0.7.0 -> 0.9.0 -> now): progress from either release lands on the same step.
 local W = ns.GuideLayouts.A_WesternPlaguelands
-check(W and W.layout == 3 and W.maps[2] and W.maps[3], "A_WesternPlaguelands has two chained maps")
-local a7, a9
-for k, v in pairs(W.maps[2]) do if W.maps[3][v] then a7, a9 = k, v break end end
+check(W and W.layout >= 3 and W.maps[2] and W.maps[3], "A_WesternPlaguelands has chained maps (one per release that reordered it)")
+-- Follow one 0.7.0 step through every map; a save from any release must land on the same step.
+local function walk(i, from)
+    for v = from + 1, W.layout do i = W.maps[v] and W.maps[v][i] or i end
+    return i
+end
+local a7
+for k in pairs(W.maps[2]) do a7 = k break end
+local a9 = W.maps[2][a7] or a7
 ns.char.progress.A_WesternPlaguelands = { step = a7, done = { [a7] = true }, skipped = {} }
 local p7 = ns:GetProgress("A_WesternPlaguelands")
 ns.char.progress.A_WesternPlaguelands = { step = a9, done = { [a9] = true }, skipped = {}, layout = 2 }
 local p9 = ns:GetProgress("A_WesternPlaguelands")
-check(p7.layout == 3 and p9.layout == 3 and p7.step == W.maps[3][a9] and p9.step == p7.step and p7.done[p7.step], "0.7.0 and 0.9.0 progress both reach the current step")
+check(p7.layout == W.layout and p9.layout == W.layout and p7.step == walk(a7, 1) and p9.step == p7.step and p7.done[p7.step], "0.7.0 and 0.9.0 progress both reach the current step")
 ns:ResetProgress("A_WesternPlaguelands")
 -- every map is one-to-one and names a real guide
 for id, lay in pairs(ns.GuideLayouts) do

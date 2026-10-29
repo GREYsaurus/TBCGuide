@@ -122,5 +122,21 @@ complete 9858 Talbuk Mastery
 turnin 9858 Talbuk Mastery
 turnin 9850 Clefthoof Mastery
 turnin 9855 Windroc Mastery
+note Ride west to Aeris Landing, the Consortium camp by the lake south-west of Sunspring Post.
+accept Stealing from Thieves | Gezhe, Aeris Landing.
+accept Matters of Security | Zerid, Aeris Landing.
+accept Gava'xi | Zerid. Needs level 65.
+accept A Head Full of Ivory | Shadrek, Aeris Landing.
+complete Stealing from Thieves | Oshu'gun Crystal Fragments from Vir'aani Raiders north of Oshu'gun, south of the camp.
+complete Matters of Security | Voidspawn around Oshu'gun.
+complete Gava'xi | Gava'xi, near Oshu'gun.
+turnin Stealing from Thieves | Gezhe.
+turnin Matters of Security | Zerid.
+turnin Gava'xi
+accept I Must Have Them! | Wazat, in east-central Nagrand.
+complete I Must Have Them! | Air Elemental Gas from Dust Howlers in the east of Nagrand.
+complete A Head Full of Ivory | Pairs of Ivory Tusks from Wild Elekks in the east of Nagrand.
+turnin I Must Have Them! | Wazat.
+turnin A Head Full of Ivory | Shadrek, back at Aeris Landing.
 level 67
 note Fly to Shattrath, then to Thunderlord Stronghold in Blade's Edge (or ride north from Zangarmarsh).

@@ -13,6 +13,7 @@
 accept 5090 A Call to Arms: The Plaguelands! [zone=Ironforge] | Courier Hammerfall walks around Ironforge (Crier Goodman in Stormwind has the same quest). Needed for the Chillwind Camp chain.
 fp Chillwind Camp
 turnin 5090 A Call to Arms: The Plaguelands! | Commander Ashlam Valorfist, Chillwind Camp.
+turnin 6028 The Everlook Report [optional] | Argent Officer Pureheart, Chillwind Camp (from Winterspring).
 accept Clear the Way
 accept A Plague Upon Thee | Nathaniel Dumah, Chillwind Camp.
 accept The Wildlife Suffers Too | Mulgris Deepriver.

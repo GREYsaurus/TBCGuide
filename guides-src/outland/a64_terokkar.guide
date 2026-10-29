@@ -86,6 +86,9 @@ accept Letting Earthbinder Tavgren Know
 accept 9961 What's Wrong at Cenarion Thicket? | Jenai Starwhisper.
 turnin 9961 What's Wrong at Cenarion Thicket? | Earthbinder Tavgren, Cenarion Thicket (north).
 turnin Letting Earthbinder Tavgren Know
+accept It's Watching You! | Warden Treelos, Cenarion Thicket.
+complete It's Watching You! | Naphthal'ar, the watcher in the Thicket's ruined tower.
+turnin It's Watching You!
 accept Digging Through Bones | Chief Archaeologist Letoll, Bone Wastes.
 accept An Improper Burial | Commander Ra'vaj, Sha'tari Base Camp (southwest).
 complete An Improper Burial
@@ -104,5 +107,14 @@ turnin For the Fallen
 accept Terokkarantula | Group quest: Terokkarantula is elite.
 complete Terokkarantula [group=2] | Elite: Terokkarantula; bring help or skip.
 turnin Terokkarantula
+note Ride to the Lower City refugee camp just north-east of Auchindoun, in the middle of the Bone Wastes.
+accept Before Darkness Falls | Mekeda, at the refugee camp.
+complete Before Darkness Falls | Cabal Skirmishers and Spell-weavers west of the camp.
+turnin Before Darkness Falls
+accept Cabal Orders [optional] | Only if the Cabal Orders dropped from the Cabal cultists. Turned in to Mekeda.
+turnin Cabal Orders [optional] | Mekeda.
+accept The Shadow Tomb [optional]
+complete The Shadow Tomb [optional] | The Drape of Arunen and the Gavel of K'alen from the Cabal chests in the Shadow Tomb crypts west of the camp.
+turnin The Shadow Tomb [optional]
 level 65
 note Ride west from Shattrath into Nagrand; Telaar is the Alliance town in the south.

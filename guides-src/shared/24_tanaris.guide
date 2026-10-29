@@ -42,11 +42,20 @@ accept The Dunemaul Compound [optional] | Needs level 44. If you are lower, TBCG
 complete The Dunemaul Compound [optional] | Dunemaul ogres.
 turnin The Dunemaul Compound [optional]
 accept Pirate Hats Ahoy! | Haughty Modiste.
+accept WANTED: Andre Firebeard | The wanted poster in Gadgetzan. Turned in at Steamwheedle Port.
 accept Southsea Shakedown | Security Chief Bilgewhizzle at Steamwheedle Port.
 complete Southsea Shakedown | Pirates at Lost Rigger Cove.
+complete WANTED: Andre Firebeard | Andre Firebeard at Lost Rigger Cove, in the pirate camp on the coast.
 complete Pirate Hats Ahoy! | Southsea Pirate Hat drops from Southsea Dock Worker, Southsea Freebooter and Southsea Pirate and others.
 turnin Southsea Shakedown
+turnin WANTED: Andre Firebeard | Security Chief Bilgewhizzle, Steamwheedle Port.
 turnin Pirate Hats Ahoy!
+accept Gahz'ridian [optional] | Marvon Rivetseeker, south of Gadgetzan. Needs level 43.
+complete Gahz'ridian [optional] | Wear the Gahz'ridian Detector helmet he gives you and dig up Gahz'ridian Ornaments in the Gahz'ridian ruins, south-west.
+turnin Gahz'ridian [optional]
+accept The Thirsty Goblin [optional] | Marin Noggenfogger, Gadgetzan. Needs level 44.
+complete The Thirsty Goblin [optional] | Laden Dew Glands from Thistleshrub Dew Collectors in the south-west of Tanaris.
+turnin The Thirsty Goblin [optional]
 level 44
 train
 note Alliance: fly to Thalanaar or take the boat to Feathermoon Stronghold. Horde: fly to Camp Mojache in Feralas.

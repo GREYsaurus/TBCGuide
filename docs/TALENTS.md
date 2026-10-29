@@ -29,7 +29,7 @@ The plan follows the **spec profile** (setup window, or Settings → Tips → Sp
 
 ## Source policy
 
-Every plan comes from the guides linked from the Icy Veins TBC Classic leveling index (https://www.icy-veins.com/tbc-classic/leveling-guides) except Assassination, for which no build was found (see the mapping).
+Every plan comes from the guides linked from the Icy Veins TBC Classic leveling index (https://www.icy-veins.com/tbc-classic/leveling-guides) except Assassination, which uses Wowhead's TBC Assassination leveling build (an approved exception, below).
 
 **Where the point order comes from:** each guide's build is a talent-calculator link (`...talent-calculator#tc-<points>`). The Icy Veins calculator script (`tbc-talent-calculator-*.js`, read on 2026-10-29) shows that the string is the **ordered list of points**, one character per point, in the order they were added. Characters map to talents through the calculator's own talent table, which carries each talent's rank-1 spell id.
 
@@ -64,7 +64,7 @@ All guides were last updated by Icy Veins on 2026-01-12 (page metadata).
 | Priest | Shadow | shadow-priest-leveling-guide (first, 61-point build) | priest_shadow_iv | 14/0/47 | source |
 | Rogue | Combat | combat-rogue-leveling-guide | rogue_combat_iv | 20/41/0 | source |
 | Rogue | Subtlety | subtlety-rogue-leveling-guide | rogue_sub_iv | 20/0/41 | source |
-| Rogue | Assassination | **none found** (see gaps) | rogue_mutilate_70 (TBCGuide's own) | 41/20/0 | TBCGuide |
+| Rogue | Assassination | **Wowhead** (approved exception): wowhead.com/tbc/guide/classes/rogue/assassination/leveling-tips | rogue_assassination_wh | 43/13/5 at 70 (41/5/5 at 60) | derived 10-60, source 61-69, derived 70 |
 | Shaman | Elemental | elemental-shaman-leveling-guide | shaman_ele_iv | 41/0/20 | source |
 | Shaman | Enhancement | enhancement-shaman-leveling-guide | shaman_enh_iv | 17/44/0 | source |
 | Shaman | Restoration | restoration-shaman-leveling-guide | shaman_resto_iv | 0/5/56 | source |
@@ -101,7 +101,7 @@ Checks at every point, in order:
 
 | Result | Plans |
 |---|---|
-| 61 points, every point legal | 26 Icy Veins plans, plus Assassination (TBCGuide's own) |
+| 61 points, every point legal | 26 Icy Veins plans, plus Assassination (Wowhead) |
 | 59 points, every point legal | Destruction (source spends 59) |
 | Errors | none |
 
@@ -137,9 +137,28 @@ New, with no previous plan: Restoration Druid, Marksmanship, Survival, Arcane, F
 
 **Removed:** the old Hunter BM level-70 build; one BM plan now runs 10-70.
 
+## Assassination (Wowhead)
+
+The Icy Veins leveling index has no Assassination guide, so the Wowhead TBC Assassination leveling guide was used, with approval.
+
+| Levels | Points | Source |
+|---|---|---|
+| 10-60 | Wowhead's level-60 build, talent calculator `rogue/205323105002132501051-005-05` (41/5/5). | The final build is the source's. The order of those 51 points is **TBCGuide's**: Malice, Ruthlessness, Murder, Relentless Strikes, Lethality, Puncturing Wounds, Improved Eviscerate 2, Cold Blood, Improved Kidney Shot, Seal Fate, Vigor, Quick Recovery, Fleet Footed, Find Weakness, Mutilate at 50, Lightning Reflexes, Opportunity. |
+| 61-65 | Precision | source |
+| 66-68 | Improved Slice and Dice | source |
+| 69 | Improved Eviscerate 3/3 | source |
+| 70 | Remorseless Attacks 1/2 | **TBCGuide's choice.** The source says to respec at 70; TBCGuide never respecs, so it places the last point instead. |
+
+**How the build was checked:**
+- **Decoding:** the string was read against the client's Rogue talent data, ordered by tier and column.
+- **Cross-check:** every rank matched the rendered calculator's tree, position by position. The page's own talent ids (Lethality 269, Seal Fate 283, Mutilate 1719) are the client ids.
+- **Validation:** every point is legal (ranks, tiers, prerequisites, 61 points).
+- **Weapons:** the plan notes the source's weapon advice, two slow daggers (about 1.7 speed or more), and that Mutilate needs you behind the target.
+- **Old saved choices:** the old id `rogue_mutilate_70` resolves to this plan.
+
 ## Gaps
 
-- **Assassination Rogue:** no Assassination leveling guide on the Icy Veins TBC leveling index. The Rogue class overview has no build, and the Rogue PvE builds page lists only Combat builds. The profile keeps TBCGuide's own Mutilate plan, labelled in the panel as TBCGuide's, not Icy Veins'. Wowhead was not used.
+- **Assassination Rogue:** now from Wowhead (see above). Its 10-60 order and the level-70 point are TBCGuide's.
 - **Destruction:** sourced from the PvE builds page, not a leveling guide (above).
 
 ## In-game checklist (not yet done)

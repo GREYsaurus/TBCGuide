@@ -219,6 +219,7 @@ Talents.ALIASES = {
     mage_frost_leveling = "mage_frost_aoe_iv", mage_fire_70 = "mage_fire_iv",
     warlock_aff_leveling = "warlock_aff_iv", warlock_destro_70 = "warlock_destro_iv",
     druid_feral_leveling = "druid_feral_iv", druid_balance_70 = "druid_balance_iv",
+    rogue_mutilate_70 = "rogue_assassination_wh",
 }
 
 function Talents:Get(id)

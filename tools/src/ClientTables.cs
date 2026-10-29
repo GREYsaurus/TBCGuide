@@ -158,6 +158,7 @@ namespace TBCGuideTools
             summary.Add("talents total: " + total);
             summary.Add("race/class combinations: " + comboCount);
             summary.Add(TrainingTables.Export(db2Dir, addOnDir, build));
+            summary.Add(PetTables.Export(db2Dir, addOnDir, build));
             return string.Join(Environment.NewLine, summary.ToArray());
         }
     }

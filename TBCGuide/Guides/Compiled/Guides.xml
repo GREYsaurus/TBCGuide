@@ -38,6 +38,7 @@
   <Script file="horde_15_arathi.lua"/>
   <Script file="horde_15b_badlands.lua"/>
   <Script file="horde_16_stranglethorn.lua"/>
+  <Script file="horde_16b_swampofsorrows.lua"/>
   <Script file="horde_17_dustwallow.lua"/>
   <Script file="horde_20_feralas.lua"/>
   <Script file="horde_21_hinterlands.lua"/>
@@ -59,5 +60,6 @@
   <Script file="shared_24_tanaris.lua"/>
   <Script file="shared_26b_searinggorge.lua"/>
   <Script file="shared_27_ungoro.lua"/>
+  <Script file="shared_28b_winterspring.lua"/>
   <Script file="shared_31_easternplaguelands.lua"/>
 </Ui>

@@ -136,6 +136,7 @@ local accountDefaults = {
     profileKeys = {},
     defaultProfile = "Default",
     junkList = {},          -- [itemID] = true: items the player marked as junk
+    trainCosts = {},        -- [spellID] = { c = copper, t = time }: class trainer prices last seen (Classes/Trainer.lua)
     protectedItems = {},    -- [itemID] = true: never sold automatically
     protectedClasses = {},  -- [itemClassID] = true/false: overrides Vendor.CLASSES defaults
     escortExtra = {},       -- [questID] = true: extra quests that must never be auto-accepted
@@ -212,7 +213,7 @@ function ns:InitSavedVariables()
     TBCGuideDB.profile = nil
     ns.Merge(TBCGuideDB, accountDefaults)
     ns.Merge(TBCGuideCharDB, charDefaults)
-    for _, key in ipairs({ "profiles", "profileKeys", "junkList" }) do
+    for _, key in ipairs({ "profiles", "profileKeys", "junkList", "trainCosts" }) do
         if type(TBCGuideDB[key]) ~= "table" then TBCGuideDB[key] = {} end
     end
     local profiles = TBCGuideDB.profiles
@@ -269,6 +270,8 @@ function ns:InitSavedVariables()
     if type(TBCGuideCharDB.levelLog) ~= "table" then TBCGuideCharDB.levelLog = {} end
     if TBCGuideCharDB.setupDraft ~= nil and type(TBCGuideCharDB.setupDraft) ~= "table" then TBCGuideCharDB.setupDraft = nil end
     if TBCGuideCharDB.trainerDeferLevel ~= nil and type(TBCGuideCharDB.trainerDeferLevel) ~= "number" then TBCGuideCharDB.trainerDeferLevel = nil end
+    if TBCGuideCharDB.petDeferLevel ~= nil and type(TBCGuideCharDB.petDeferLevel) ~= "number" then TBCGuideCharDB.petDeferLevel = nil end
+    if TBCGuideCharDB.petSkills ~= nil and type(TBCGuideCharDB.petSkills) ~= "table" then TBCGuideCharDB.petSkills = nil end
     if type(TBCGuideDB.flightTimes) ~= "table" then TBCGuideDB.flightTimes = {} end
     local gx = TBCGuideCharDB.gearExclude
     if type(gx) ~= "table" then gx = {} TBCGuideCharDB.gearExclude = gx end

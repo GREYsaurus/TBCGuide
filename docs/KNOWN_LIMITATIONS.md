@@ -57,7 +57,8 @@ Stated plainly, so nobody mistakes "files exist" for "finished and tested".
 - **Bag add-ons** (Bagnon, AdiBags, Baganator) are supported from their source code and are not yet tested in the game (docs/BAGS.md).
 - **Non-English clients:** binding and use/proc/set effects are read with the client's own strings. Equip-effect text is not, so such items count as uncertain, and school-damage gear is never equipped automatically there (docs/LOCALES.md).
 - **Trainer suggestions** come from client spell tables. Class-quest spells are a hand list, and costs, pet skills and poison recipes are not covered (docs/TRAINER.md).
-- **Levels 31-60:** four zones were added and the thinnest guides expanded, but in the XP model players still grind about 12 of the 28 levels from 30 to 58. Six zones are still not visited, and 230 candidate quests were not reviewed (docs/LEVELS_31_60.md).
+- **Levels 31-60:** in the XP model players still grind about 9.4 (Horde) to 10.5 (Alliance) of the 28 levels from 30 to 58. Azshara, Silithus and the Blasted Lands are not visited, and 196 candidate quests are not yet reviewed (docs/LEVELS_31_60.md).
+- **Training costs** exist only for spells seen at a trainer. **Pet and demon skills** cannot see stabled pets or name beasts to tame (docs/PETS.md).
 - **Outland** was reordered and annotated. Shadowmoon and Netherstorm still use under a quarter of their zones' quests (docs/OUTLAND.md).
 - **Talent plans** come from Icy Veins calculator strings; their point order is the author's click order. Assassination has no Icy Veins build, and Destruction spends 59 points (docs/TALENTS.md).
 

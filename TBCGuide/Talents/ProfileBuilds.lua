@@ -8,8 +8,9 @@
 --
 -- Spec profile (Gear/Profiles.lua: class + spec) -> talent plan (Talents/Builds/*.lua). Every plan
 -- runs from the first talent point (level 10) to 70 without a respec. Sources: the Icy Veins TBC
--- Classic leveling guides (Talents/Builds/IcyVeins.lua); Assassination has no Icy Veins build and
--- keeps TBCGuide's own plan. Mapping and source record: docs/TALENTS.md.
+-- Classic leveling guides (Talents/Builds/IcyVeins.lua); Assassination, which has no Icy Veins build,
+-- uses Wowhead's TBC Assassination leveling build (Talents/Builds/Rogue.lua, an approved exception).
+-- Mapping and source record: docs/TALENTS.md.
 --   plan: the default; variants: other plans for the same spec the player may pick in the TBCGuide
 --   talent window (/tbcg talents). A spec missing here has no plan and the window says so.
 -- The talent plan never changes gear scoring: weights belong to the spec profile alone.
@@ -21,7 +22,7 @@ ns.TalentProfileBuilds = {
         WARRIOR = { Arms = { plan = "warrior_arms_iv" }, Fury = { plan = "warrior_fury_iv" }, Protection = { plan = "warrior_prot_iv" } },
         PALADIN = { Retribution = { plan = "paladin_ret_iv" }, Holy = { plan = "paladin_holy_iv" }, Protection = { plan = "paladin_prot_iv" } },
         HUNTER = { ["Beast Mastery"] = { plan = "hunter_bm_iv" }, Marksmanship = { plan = "hunter_mm_iv" }, Survival = { plan = "hunter_sv_iv" } },
-        ROGUE = { Combat = { plan = "rogue_combat_iv" }, Subtlety = { plan = "rogue_sub_iv" }, Assassination = { plan = "rogue_mutilate_70" } },
+        ROGUE = { Combat = { plan = "rogue_combat_iv" }, Subtlety = { plan = "rogue_sub_iv" }, Assassination = { plan = "rogue_assassination_wh" } },
         PRIEST = { Shadow = { plan = "priest_shadow_iv" }, Holy = { plan = "priest_holy_iv" }, Discipline = { plan = "priest_disc_iv" } },
         SHAMAN = { Enhancement = { plan = "shaman_enh_iv" }, Elemental = { plan = "shaman_ele_iv" }, Restoration = { plan = "shaman_resto_iv" } },
         MAGE = { Frost = { plan = "mage_frost_aoe_iv", variants = { "mage_frost_st_iv" } }, Fire = { plan = "mage_fire_iv" }, Arcane = { plan = "mage_arcane_iv" } },
@@ -55,6 +56,9 @@ function ns.Talents:SourceLine(b)
     if not s then return "Source unknown." end
     if s.site == "Icy Veins" then
         return "Talents: Icy Veins TBC Classic leveling guide (point order from its talent calculator)."
+    end
+    if s.site == "Wowhead" then
+        return "Talents: Wowhead TBC Assassination leveling build; order to 60 and the level-70 point are TBCGuide's."
     end
     return "Talents: TBCGuide's own plan. " .. (s.note or "")
 end

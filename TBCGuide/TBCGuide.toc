@@ -2,7 +2,7 @@
 ## Title: TBCGuide
 ## Notes: Free TBC Classic leveling guides (1-70), bundled quest database and talent guide. GPL-3.0.
 ## Author: GREYsaurus
-## Version: 0.9.1
+## Version: 0.9.2
 ## Category: Quests
 ## SavedVariables: TBCGuideDB
 ## SavedVariablesPerCharacter: TBCGuideCharDB
@@ -41,6 +41,8 @@ Classes\ClassAdvice.lua
 Classes\TrainingData.lua
 Classes\TrainingNotes.lua
 Classes\Trainer.lua
+Classes\PetData.lua
+Classes\PetSkills.lua
 Talents\Data\TalentTrees.lua
 Talents\Talents.lua
 Talents\Builds\Builds.xml

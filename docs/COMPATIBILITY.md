@@ -121,3 +121,13 @@ None of these have been done yet. Tick them off on a real client:
 - [ ] **Alliance WPL:** Courier Hammerfall in Ironforge gives the call to arms, and the cauldron chain flows through Chillwind Camp.
 - [ ] **Horde Feralas and Blade's Edge:** the new loops run in order with no step pointing back across the zone.
 - [ ] **Saved progress:** a 0.9.0 (or 0.7.0) save on a reordered guide (e.g. A_WesternPlaguelands, H_Hellfire) stays on the same step.
+
+### Coverage pass 2 (not yet run in the game)
+
+- [ ] **Felwood → Winterspring:** Speak to Salfa leads through the Timbermaw tunnel. The Everlook quests accept at 53-54. Alliance sees Enraged Wildkin; Horde does not.
+- [ ] **Horde Stranglethorn → Swamp of Sorrows → Dustwallow:** Stonard and the Misty Reed Strand quests, and the flight out from Stonard.
+- [ ] **Dustwallow:** Moxie's quests and the Mudsprocket loop, then the flight to Gadgetzan.
+- [ ] **Training costs:** open a class trainer. Train-step lines show prices and a total that matches the trainer. Close it, and the prices show as last seen. A profession trainer does not change them.
+- [ ] **Hunter:** call a pet. `/tbcg pet` names its family (also on a non-English client if it has a family skill). Open Beast Training and the training-point costs appear. Nothing is tamed or abandoned.
+- [ ] **Warlock:** `/tbcg pet` asks you to summon each demon once. After summoning, Grimoires you still need are listed, ones in your bags are marked, and after using one it drops off.
+- [ ] **Assassination:** with the Assassination profile, talent-window markers follow the Wowhead plan, and Mutilate is suggested at 50.

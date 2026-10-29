@@ -8,11 +8,12 @@
 @zone Felwood
 @chapter Azeroth
 @desc Emerald Sanctuary, Jaedenar, the corrupted moonwells and Talonbranch Glade.
-@next A_BurningSteppes
+@next Both_Winterspring
 
 accept Deadwood of the North | Nafien.
 complete Deadwood of the North | Deadwood furbolgs in northern Felwood.
 turnin Deadwood of the North
+accept Speak to Salfa | Nafien. Turned in at the Winterspring end of the Timbermaw tunnel.
 accept The Corruption of the Jadefire | Eridan Bluewind.
 complete The Corruption of the Jadefire | Jadefire satyrs at Jadefire Glen.
 turnin The Corruption of the Jadefire
@@ -37,6 +38,6 @@ turnin Cleansing Felwood
 accept Salve via Hunting | Arathandris Silversky. Needs Cleansing Felwood turned in.
 complete Salve via Hunting | Corrupted Soul Shards from Cursed Oozes in the Ruins of Constellas, west of the road.
 turnin Salve via Hunting
-level 54
+level 53
 train
-note Fly to Ironforge, then to Morgan's Vigil in the Burning Steppes.
+note Next: Winterspring, through the Timbermaw Hold tunnel behind Nafien.

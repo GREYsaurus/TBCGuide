@@ -8,7 +8,7 @@
 @zone Felwood
 @chapter Azeroth
 @desc Bloodvenom Post, the corrupted moonwells, Jaedenar, Shatter Scar Vale and the Timbermaw furbolgs.
-@next H_WesternPlaguelands
+@next Both_Winterspring
 
 accept Timbermaw Ally | Grazle, near the Timbermaw Hold tunnel.
 turnin Timbermaw Ally
@@ -37,6 +37,7 @@ turnin Verifying the Corruption
 accept Deadwood of the North | Nafien.
 complete Deadwood of the North | Deadwood furbolgs.
 turnin Deadwood of the North
-level 54
+accept Speak to Salfa | Nafien. Turned in at the Winterspring end of the Timbermaw tunnel.
+level 53
 train
-note Fly to the Undercity and ride east to the Bulwark (Tirisfal/Western Plaguelands border).
+note Next: Winterspring, through the Timbermaw Hold tunnel behind Nafien.

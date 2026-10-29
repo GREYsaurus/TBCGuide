@@ -21,11 +21,19 @@ accept Stalking the Stalkers | Huntsman Markhor.
 accept Hunt the Savages
 accept Avenging the Fallen
 accept Snapjaws, Mon! | Katoom the Angler.
+accept Separation Anxiety | Huntsman Markhor, Revantusk Village. Needs level 46.
+accept Dark Vessels | Primal Torntusk. Needs level 46.
+accept Job Opening: Guard Captain of Revantusk Village | The Call to Arms! board in Revantusk Village.
+accept Wanted: Vile Priestess Hexx and Her Minions [optional] | Same board. Hexx is guarded; bring help or skip.
 complete Snapjaws, Mon! | Turtles along the coast.
 complete Stalking the Stalkers | Silvermane Stalkers.
 complete Hunt the Savages | Savage Owlbeasts.
 complete Avenging the Fallen | Wildhammer dwarves.
 complete Vilebranch Hooligans | Vilebranch trolls.
+complete Job Opening: Guard Captain of Revantusk Village | Vilebranch Berserkers, Shadow Hunters and Blood Drinkers in the same troll camps.
+complete Dark Vessels | Vessels of Tainted Blood on the ground in the Vilebranch camps.
+complete Separation Anxiety | Huntsman Malkhor's Skull and Bones, in the piles of skulls and bones in the Vilebranch camps.
+complete Wanted: Vile Priestess Hexx and Her Minions [optional] | Vile Priestess Hexx and her Aman'zasi Guards at the temple south of the troll camps.
 complete Lard Lost His Lunch | The Wildhammer camp by the coast.
 complete Cannibalistic Cousins | Vilebranch Scalpers.
 complete Message to the Wildhammer | Highvale area Wildhammer.
@@ -50,6 +58,10 @@ accept Return to Primal Torntusk
 turnin Vilebranch Hooligans
 turnin Return to Primal Torntusk
 turnin Lard Lost His Lunch
+turnin Job Opening: Guard Captain of Revantusk Village | Primal Torntusk.
+turnin Dark Vessels
+turnin Wanted: Vile Priestess Hexx and Her Minions [optional]
+turnin Separation Anxiety | Huntsman Markhor.
 level 49
 train
 note Next: the Searing Gorge, west of Kargath.

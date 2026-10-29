@@ -118,27 +118,21 @@ A_Dustwallow,Alliance,11149,Tabetha's Assistance,39,35
 A_Dustwallow,Alliance,11150,Raze Direhorn Post!,39,35
 A_Dustwallow,Alliance,11151,Justice for the Hyals,39,35
 A_Dustwallow,Alliance,11152,Peace at Last,39,35
-A_Dustwallow,Alliance,11158,Bloodfen Feathers,39,35
 A_Dustwallow,Alliance,11159,Spirits of Stonemaul Hold,41,35
 A_Dustwallow,Alliance,11160,Banner of the Stonemaul,39,35
 A_Dustwallow,Alliance,11161,The Essence of Enmity,39,35
 A_Dustwallow,Alliance,11162,Challenge to the Black Flight,41,35
-A_Dustwallow,Alliance,11174,Corrosion Prevention,40,35
 A_Dustwallow,Alliance,11177,The Hermit of Swamplight Manor,36,30
 A_Dustwallow,Alliance,11180,What's Haunting Witch Hill?,36,30
 A_Dustwallow,Alliance,11181,The Witch's Bane,36,30
 A_Dustwallow,Alliance,11183,Cleansing Witch Hill,36,30
-A_Dustwallow,Alliance,11184,WANTED: Goreclaw the Ravenous,39,35
 A_Dustwallow,Alliance,11194,Is it Real?,36,30
 A_Dustwallow,Alliance,11198,Take Down Tethyr!,36,30
-A_Dustwallow,Alliance,11207,Secure the Cargo!,39,35
 A_Dustwallow,Alliance,11208,Delivery for Drazzit,39,35
 A_Dustwallow,Alliance,11209,Nat's Bargain,37,30
 A_Dustwallow,Alliance,11210,"Oh, It's Real",37,30
-A_Dustwallow,Alliance,11211,Help for Mudsprocket,39,38
 A_Dustwallow,Alliance,11212,Tabetha's Farm,37,37
 A_Dustwallow,Alliance,11214,Mission to Mudsprocket,39,39
-A_Dustwallow,Alliance,11217,Catch a Dragon by the Tail,40,37
 A_Dustwallow,Alliance,11223,Return to Jaina,37,33
 A_Feralas,Alliance,2766,Find OOX-22/FE!,45,40
 A_Feralas,Alliance,2767,Rescue OOX-22/FE!,45,40
@@ -188,7 +182,6 @@ A_Felwood,Alliance,5242,A Final Blow,58,48
 A_Felwood,Alliance,5249,To Winterspring!,56,53
 A_Felwood,Alliance,5385,The Remains of Trey Lightforge,57,49
 A_Felwood,Alliance,8462,Speak to Nafien,55,45
-A_Felwood,Alliance,8465,Speak to Salfa,55,45
 A_Felwood,Alliance,8470,Deadwood Ritual Totem,55,45
 A_BurningSteppes,Alliance,4022,A Taste of Flame,54,52
 A_BurningSteppes,Alliance,4023,A Taste of Flame,54,52
@@ -329,6 +322,10 @@ H_Stranglethorn,Horde,8553,The Captain's Cutlass,42,35
 H_Stranglethorn,Horde,8554,Facing Negolash,42,35
 H_Stranglethorn,Horde,9436,Bloodscalp Insight,34,30
 H_Stranglethorn,Horde,9457,An Unusual Patron,36,30
+H_SwampOfSorrows,Horde,1116,Dream Dust in the Swamp,36,30
+H_SwampOfSorrows,Horde,1392,Noboru the Cudgel,39,29
+H_SwampOfSorrows,Horde,1393,Galen's Escape,38,30
+H_SwampOfSorrows,Horde,1429,The Atal'ai Exile,44,38
 H_Dustwallow,Horde,1173,Challenge Overlord Mok'Morokk,45,38
 H_Dustwallow,Horde,1177,Hungry!,36,32
 H_Dustwallow,Horde,1203,Jarl Needs a Blade,35,30
@@ -344,20 +341,14 @@ H_Dustwallow,Horde,1270,Stinky's Escape,37,30
 H_Dustwallow,Horde,1273,Questioning Reethe,37,30
 H_Dustwallow,Horde,7541,Service to the Horde,40,30
 H_Dustwallow,Horde,9437,Twilight of the Dawn Runner,37,33
-H_Dustwallow,Horde,11158,Bloodfen Feathers,39,35
 H_Dustwallow,Horde,11159,Spirits of Stonemaul Hold,41,35
 H_Dustwallow,Horde,11160,Banner of the Stonemaul,39,35
 H_Dustwallow,Horde,11161,The Essence of Enmity,39,35
 H_Dustwallow,Horde,11162,Challenge to the Black Flight,41,35
-H_Dustwallow,Horde,11174,Corrosion Prevention,40,35
-H_Dustwallow,Horde,11184,WANTED: Goreclaw the Ravenous,39,35
 H_Dustwallow,Horde,11186,Signs of Treachery?,38,35
-H_Dustwallow,Horde,11207,Secure the Cargo!,39,35
 H_Dustwallow,Horde,11208,Delivery for Drazzit,39,35
-H_Dustwallow,Horde,11211,Help for Mudsprocket,39,38
 H_Dustwallow,Horde,11213,Check Up on Tabetha,37,37
 H_Dustwallow,Horde,11215,Help Mudsprocket,39,38
-H_Dustwallow,Horde,11217,Catch a Dragon by the Tail,40,37
 H_Dustwallow,Horde,11225,The Hermit of Witch Hill,36,32
 H_Feralas,Horde,2766,Find OOX-22/FE!,45,40
 H_Feralas,Horde,2767,Rescue OOX-22/FE!,45,40
@@ -389,10 +380,6 @@ H_Hinterlands,Horde,2934,Undamaged Venom Sac,45,40
 H_Hinterlands,Horde,2935,Consult Master Gadrin,45,43
 H_Hinterlands,Horde,4787,The Ancient Egg,50,40
 H_Hinterlands,Horde,7843,The Final Message to the Wildhammer,50,44
-H_Hinterlands,Horde,7849,Separation Anxiety,50,46
-H_Hinterlands,Horde,7850,Dark Vessels,50,46
-H_Hinterlands,Horde,7861,Wanted: Vile Priestess Hexx and Her Minions,51,44
-H_Hinterlands,Horde,7862,Job Opening: Guard Captain of Revantusk Village,51,44
 H_Hinterlands,Horde,8273,Oran's Gratitude,47,42
 H_Felwood,Horde,4521,Wild Guardians,56,52
 H_Felwood,Horde,4741,Wild Guardians,58,52
@@ -406,7 +393,6 @@ H_Felwood,Horde,5242,A Final Blow,58,48
 H_Felwood,Horde,5385,The Remains of Trey Lightforge,57,49
 H_Felwood,Horde,6162,A Husband's Last Battle,51,46
 H_Felwood,Horde,8462,Speak to Nafien,55,45
-H_Felwood,Horde,8465,Speak to Salfa,55,45
 H_Felwood,Horde,8470,Deadwood Ritual Totem,55,45
 H_WesternPlaguelands,Horde,105,"Alas, Andorhal",60,50
 H_WesternPlaguelands,Horde,838,Scholomance,55,55
@@ -444,7 +430,6 @@ H_WesternPlaguelands,Horde,9444,Defiling Uther's Tomb,58,55
 Both_Tanaris,Alliance,162,Rise of the Silithid,49,39
 Both_Tanaris,Alliance,351,Find OOX-17/TN!,48,43
 Both_Tanaris,Alliance,648,Rescue OOX-17/TN!,48,43
-Both_Tanaris,Alliance,2605,The Thirsty Goblin,49,44
 Both_Tanaris,Alliance,2606,In Good Taste,49,44
 Both_Tanaris,Alliance,2641,Sprinkle's Secret Ingredient,49,44
 Both_Tanaris,Alliance,2661,Delivery for Marin,49,44
@@ -453,10 +438,8 @@ Both_Tanaris,Alliance,2741,The Super Egg-O-Matic,47,39
 Both_Tanaris,Alliance,2872,Stoley's Debt,45,40
 Both_Tanaris,Alliance,2873,Stoley's Shipment,45,40
 Both_Tanaris,Alliance,2874,Deliver to MacKinley,45,40
-Both_Tanaris,Alliance,2875,WANTED: Andre Firebeard,45,38
 Both_Tanaris,Alliance,2876,Ship Schedules,45,40
 Both_Tanaris,Alliance,3022,Handle With Care,47,42
-Both_Tanaris,Alliance,3161,Gahz'ridian,48,43
 Both_Tanaris,Alliance,3520,Screecher Spirits,44,40
 Both_Tanaris,Horde,32,Rise of the Silithid,48,39
 Both_Tanaris,Horde,243,Into the Field,46,38
@@ -465,7 +448,6 @@ Both_Tanaris,Horde,379,Slake That Thirst,46,38
 Both_Tanaris,Horde,648,Rescue OOX-17/TN!,48,43
 Both_Tanaris,Horde,654,Tanaris Field Sampling,46,41
 Both_Tanaris,Horde,841,Another Power Source?,46,38
-Both_Tanaris,Horde,2605,The Thirsty Goblin,49,44
 Both_Tanaris,Horde,2606,In Good Taste,49,44
 Both_Tanaris,Horde,2641,Sprinkle's Secret Ingredient,49,44
 Both_Tanaris,Horde,2661,Delivery for Marin,49,44
@@ -474,9 +456,7 @@ Both_Tanaris,Horde,2741,The Super Egg-O-Matic,47,39
 Both_Tanaris,Horde,2872,Stoley's Debt,45,40
 Both_Tanaris,Horde,2873,Stoley's Shipment,45,40
 Both_Tanaris,Horde,2874,Deliver to MacKinley,45,40
-Both_Tanaris,Horde,2875,WANTED: Andre Firebeard,45,38
 Both_Tanaris,Horde,2876,Ship Schedules,45,40
-Both_Tanaris,Horde,3161,Gahz'ridian,48,43
 Both_Tanaris,Horde,3520,Screecher Spirits,44,40
 Both_SearingGorge,Alliance,3367,Suntara Stones,46,41
 Both_SearingGorge,Alliance,3368,Suntara Stones,46,41
@@ -496,7 +476,6 @@ Both_SearingGorge,Horde,4450,Ledger from Tanaris,46,43
 Both_SearingGorge,Horde,4451,The Key to Freedom,47,43
 Both_SearingGorge,Horde,7701,WANTED: Overseer Maltorius,50,45
 Both_SearingGorge,Horde,7722,What the Flux?,50,45
-Both_UngoroCrater,Alliance,974,Finding the Source,55,51
 Both_UngoroCrater,Alliance,980,The New Springs,55,51
 Both_UngoroCrater,Alliance,3844,It's a Secret to Everybody,52,47
 Both_UngoroCrater,Alliance,3845,It's a Secret to Everybody,52,47
@@ -512,7 +491,6 @@ Both_UngoroCrater,Alliance,3961,Linken's Adventure,54,47
 Both_UngoroCrater,Alliance,3962,It's Dangerous to Go Alone,56,47
 Both_UngoroCrater,Alliance,4005,Aquementas,54,47
 Both_UngoroCrater,Alliance,4084,Silver Heart,54,47
-Both_UngoroCrater,Alliance,4141,Muigin and Larion,52,47
 Both_UngoroCrater,Alliance,4142,A Visit to Gregan,52,47
 Both_UngoroCrater,Alliance,4143,Haze of Evil,52,47
 Both_UngoroCrater,Alliance,4144,Bloodpetal Sprouts,53,47
@@ -523,8 +501,6 @@ Both_UngoroCrater,Alliance,4301,The Mighty U'cha,55,50
 Both_UngoroCrater,Alliance,4491,A Little Help From My Friends,55,50
 Both_UngoroCrater,Alliance,4492,Lost!,55,50
 Both_UngoroCrater,Alliance,4502,Volcanic Activity,55,49
-Both_UngoroCrater,Alliance,4503,Shizzle's Flyer,51,49
-Both_UngoroCrater,Horde,974,Finding the Source,55,51
 Both_UngoroCrater,Horde,980,The New Springs,55,51
 Both_UngoroCrater,Horde,3844,It's a Secret to Everybody,52,47
 Both_UngoroCrater,Horde,3845,It's a Secret to Everybody,52,47
@@ -540,7 +516,6 @@ Both_UngoroCrater,Horde,3961,Linken's Adventure,54,47
 Both_UngoroCrater,Horde,3962,It's Dangerous to Go Alone,56,47
 Both_UngoroCrater,Horde,4005,Aquementas,54,47
 Both_UngoroCrater,Horde,4084,Silver Heart,54,47
-Both_UngoroCrater,Horde,4145,Larion and Muigin,52,48
 Both_UngoroCrater,Horde,4147,Marvon's Workshop,52,48
 Both_UngoroCrater,Horde,4148,Bloodpetal Zapper,53,47
 Both_UngoroCrater,Horde,4243,Chasing A-Me 01,53,48
@@ -550,7 +525,61 @@ Both_UngoroCrater,Horde,4301,The Mighty U'cha,55,50
 Both_UngoroCrater,Horde,4491,A Little Help From My Friends,55,50
 Both_UngoroCrater,Horde,4492,Lost!,55,50
 Both_UngoroCrater,Horde,4502,Volcanic Activity,55,49
-Both_UngoroCrater,Horde,4503,Shizzle's Flyer,51,49
+Both_Winterspring,Alliance,969,Luck Be With You,60,55
+Both_Winterspring,Alliance,975,Cache of Mau'ari,60,55
+Both_Winterspring,Alliance,4809,Chillwind Horns,54,50
+Both_Winterspring,Alliance,4810,Return to Tinkee,54,50
+Both_Winterspring,Alliance,4842,Strange Sources,56,51
+Both_Winterspring,Alliance,4901,Guardians of the Altar,59,53
+Both_Winterspring,Alliance,4902,Wildkin of Elune,57,53
+Both_Winterspring,Alliance,5056,Shy-Rotam,60,53
+Both_Winterspring,Alliance,5057,Past Endeavors,60,53
+Both_Winterspring,Alliance,5063,Cap of the Scarlet Savant,60,57
+Both_Winterspring,Alliance,5067,Leggings of Arcana,60,57
+Both_Winterspring,Alliance,5068,Breastplate of Bloodthirst,60,57
+Both_Winterspring,Alliance,5083,Winterfall Firewater,56,52
+Both_Winterspring,Alliance,5084,Falling to Corruption,56,52
+Both_Winterspring,Alliance,5085,Mystery Goo,56,52
+Both_Winterspring,Alliance,5086,Toxic Horrors,56,52
+Both_Winterspring,Alliance,5087,Winterfall Runners,57,52
+Both_Winterspring,Alliance,5121,High Chief Winterfall,59,52
+Both_Winterspring,Alliance,5123,The Final Piece,59,52
+Both_Winterspring,Alliance,5124,Fiery Plate Gauntlets,60,58
+Both_Winterspring,Alliance,5128,Words of the High Chief,59,52
+Both_Winterspring,Alliance,5161,Wrath of the Blue Flight,60,57
+Both_Winterspring,Alliance,5163,"Are We There, Yeti?",58,52
+Both_Winterspring,Alliance,5244,The Ruins of Kel'Theril,56,53
+Both_Winterspring,Alliance,5245,Troubled Spirits of Kel'Theril,56,53
+Both_Winterspring,Alliance,5252,Remorseful Highborne,58,53
+Both_Winterspring,Alliance,5253,The Crystal of Zin-Malor,58,53
+Both_Winterspring,Alliance,6606,A Little Luck,60,55
+Both_Winterspring,Alliance,8471,Winterfall Ritual Totem,56,50
+Both_Winterspring,Horde,969,Luck Be With You,60,55
+Both_Winterspring,Horde,975,Cache of Mau'ari,60,55
+Both_Winterspring,Horde,4809,Chillwind Horns,54,50
+Both_Winterspring,Horde,4810,Return to Tinkee,54,50
+Both_Winterspring,Horde,4842,Strange Sources,56,51
+Both_Winterspring,Horde,4882,Guarding Secrets,59,52
+Both_Winterspring,Horde,4883,Guarding Secrets,59,52
+Both_Winterspring,Horde,5056,Shy-Rotam,60,53
+Both_Winterspring,Horde,5057,Past Endeavors,60,53
+Both_Winterspring,Horde,5063,Cap of the Scarlet Savant,60,57
+Both_Winterspring,Horde,5067,Leggings of Arcana,60,57
+Both_Winterspring,Horde,5068,Breastplate of Bloodthirst,60,57
+Both_Winterspring,Horde,5083,Winterfall Firewater,56,52
+Both_Winterspring,Horde,5084,Falling to Corruption,56,52
+Both_Winterspring,Horde,5085,Mystery Goo,56,52
+Both_Winterspring,Horde,5086,Toxic Horrors,56,52
+Both_Winterspring,Horde,5087,Winterfall Runners,57,52
+Both_Winterspring,Horde,5121,High Chief Winterfall,59,52
+Both_Winterspring,Horde,5123,The Final Piece,59,52
+Both_Winterspring,Horde,5124,Fiery Plate Gauntlets,60,58
+Both_Winterspring,Horde,5128,Words of the High Chief,59,52
+Both_Winterspring,Horde,5161,Wrath of the Blue Flight,60,57
+Both_Winterspring,Horde,5163,"Are We There, Yeti?",58,52
+Both_Winterspring,Horde,6605,A Strange One,54,50
+Both_Winterspring,Horde,6606,A Little Luck,60,55
+Both_Winterspring,Horde,8471,Winterfall Ritual Totem,56,50
 Both_EasternPlaguelands,Alliance,5065,The Lost Tablets of Mosh'aru,58,49
 Both_EasternPlaguelands,Alliance,5152,Auntie Marlene,56,50
 Both_EasternPlaguelands,Alliance,5153,A Strange Historian,56,50

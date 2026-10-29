@@ -45,7 +45,6 @@ A_Zangarmarsh,Alliance,9919,Sporeggar,64,60
 A_Zangarmarsh,Alliance,10104,Concerns About Tuurem,62,62
 A_Zangarmarsh,Alliance,10116,Wanted: Chieftain Mummaki,64,58
 A_Zangarmarsh,Alliance,10355,Withered Flesh,62,60
-A_Terokkar,Alliance,9951,It's Watching You!,64,62
 A_Terokkar,Alliance,9957,What's Wrong at Cenarion Thicket?,63,62
 A_Terokkar,Alliance,10009,Crackin' Some Skulls,68,66
 A_Terokkar,Alliance,10010,It's Just That Easy?,68,66
@@ -68,10 +67,7 @@ A_Terokkar,Alliance,10863,Secrets of the Arakkoa,63,62
 A_Terokkar,Alliance,10873,Taken in the Night,65,63
 A_Terokkar,Alliance,10874,Veil Shalas: Signal Fires,65,62
 A_Terokkar,Alliance,10877,The Dread Relic,66,63
-A_Terokkar,Alliance,10878,Before Darkness Falls,63,62
 A_Terokkar,Alliance,10879,The Skettis Offensive,65,62
-A_Terokkar,Alliance,10880,Cabal Orders,64,62
-A_Terokkar,Alliance,10881,The Shadow Tomb,64,62
 A_Terokkar,Alliance,10887,Escaping the Tomb,64,62
 A_Terokkar,Alliance,10889,Return to Shattrath,65,62
 A_Terokkar,Alliance,10896,The Infested Protectors,65,62
@@ -92,16 +88,10 @@ A_Nagrand,Alliance,9861,The Howling Wind,67,64
 A_Nagrand,Alliance,9862,Murkblood Corrupters,67,64
 A_Nagrand,Alliance,9871,Murkblood Invaders,67,64
 A_Nagrand,Alliance,9873,Ortor My Old Friend...,67,64
-A_Nagrand,Alliance,9874,Stopping the Spread,67,64
-A_Nagrand,Alliance,9878,Solving the Problem,67,64
 A_Nagrand,Alliance,9879,The Totem of Kar'dash,67,64
-A_Nagrand,Alliance,9882,Stealing from Thieves,66,64
 A_Nagrand,Alliance,9893,Obsidian Warbeads,67,64
 A_Nagrand,Alliance,9897,I'm Saved!,65,64
-A_Nagrand,Alliance,9900,Gava'xi,67,65
 A_Nagrand,Alliance,9913,The Consortium Needs You!,66,64
-A_Nagrand,Alliance,9914,A Head Full of Ivory,66,64
-A_Nagrand,Alliance,9925,Matters of Security,66,64
 A_Nagrand,Alliance,9938,Wanted: Durn the Hungerer,67,66
 A_Nagrand,Alliance,9967,The Ring of Blood: The Blue Brothers,67,65
 A_Nagrand,Alliance,9970,The Ring of Blood: Rokdar the Sundered Lord,67,65
@@ -115,7 +105,6 @@ A_Nagrand,Alliance,10001,The Master Planner,68,66
 A_Nagrand,Alliance,10004,Patience and Understanding,68,66
 A_Nagrand,Alliance,10011,Forge Camp: Annihilated,68,66
 A_Nagrand,Alliance,10076,Oshu'gun Crystal Powder,67,64
-A_Nagrand,Alliance,10109,I Must Have Them!,66,64
 A_Nagrand,Alliance,10111,Bring Me The Egg!,66,64
 A_Nagrand,Alliance,10251,The Master's Grand Design?,67,65
 A_Nagrand,Alliance,10252,Vision of the Dead,67,64
@@ -608,7 +597,6 @@ H_Zangarmarsh,Horde,9912,The Cenarion Expedition,62,61
 H_Zangarmarsh,Horde,9919,Sporeggar,64,60
 H_Zangarmarsh,Horde,10105,News for Rakoria,62,62
 H_Zangarmarsh,Horde,10117,Wanted: Chieftain Mummaki,64,58
-H_Terokkar,Horde,9951,It's Watching You!,64,62
 H_Terokkar,Horde,9957,What's Wrong at Cenarion Thicket?,63,62
 H_Terokkar,Horde,10009,Crackin' Some Skulls,68,66
 H_Terokkar,Horde,10010,It's Just That Easy?,68,66
@@ -631,10 +619,7 @@ H_Terokkar,Horde,10862,Surrender to the Horde,63,62
 H_Terokkar,Horde,10873,Taken in the Night,65,63
 H_Terokkar,Horde,10874,Veil Shalas: Signal Fires,65,62
 H_Terokkar,Horde,10877,The Dread Relic,66,63
-H_Terokkar,Horde,10878,Before Darkness Falls,63,62
 H_Terokkar,Horde,10879,The Skettis Offensive,65,62
-H_Terokkar,Horde,10880,Cabal Orders,64,62
-H_Terokkar,Horde,10881,The Shadow Tomb,64,62
 H_Terokkar,Horde,10887,Escaping the Tomb,64,62
 H_Terokkar,Horde,10889,Return to Shattrath,65,62
 H_Terokkar,Horde,10896,The Infested Protectors,65,62
@@ -658,15 +643,11 @@ H_Nagrand,Horde,9861,The Howling Wind,67,64
 H_Nagrand,Horde,9862,Murkblood Corrupters,67,64
 H_Nagrand,Horde,9868,The Totem of Kar'dash,67,64
 H_Nagrand,Horde,9872,Murkblood Invaders,67,64
-H_Nagrand,Horde,9882,Stealing from Thieves,66,64
 H_Nagrand,Horde,9893,Obsidian Warbeads,67,64
 H_Nagrand,Horde,9897,I'm Saved!,65,64
-H_Nagrand,Horde,9900,Gava'xi,67,65
 H_Nagrand,Horde,9910,Standards and Practices,65,64
 H_Nagrand,Horde,9913,The Consortium Needs You!,66,64
-H_Nagrand,Horde,9914,A Head Full of Ivory,66,64
 H_Nagrand,Horde,9916,Bleeding Hollow Supply Crates,66,64
-H_Nagrand,Horde,9925,Matters of Security,66,64
 H_Nagrand,Horde,9937,Wanted: Durn the Hungerer,67,66
 H_Nagrand,Horde,9967,The Ring of Blood: The Blue Brothers,67,65
 H_Nagrand,Horde,9970,The Ring of Blood: Rokdar the Sundered Lord,67,65
@@ -687,7 +668,6 @@ H_Nagrand,Horde,10082,The Agitated Ancestors,68,66
 H_Nagrand,Horde,10085,A Visit With The Ancestors,68,66
 H_Nagrand,Horde,10101,When Spirits Speak,68,66
 H_Nagrand,Horde,10102,A Secret Revealed,68,66
-H_Nagrand,Horde,10109,I Must Have Them!,66,64
 H_Nagrand,Horde,10111,Bring Me The Egg!,66,64
 H_Nagrand,Horde,10168,What the Soul Sees,68,66
 H_Nagrand,Horde,10170,Return to the Greatmother,68,66

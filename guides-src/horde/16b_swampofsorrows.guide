@@ -1,0 +1,45 @@
+# TBCGuide - Swamp of Sorrows (39-42), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_SwampOfSorrows
+@name Swamp of Sorrows (Stonard)
+@faction Horde
+@levels 39-42
+@zone Swamp of Sorrows
+@chapter Azeroth
+@desc Stonard: the captured beasts, the Pool of Tears artifacts and the crocolisk hunts, Magtoor's draenethyst crystals, then the Misty Reed Strand where Tok'Kar and Katar fight the murlocs of the coast.
+@next H_Dustwallow
+
+note From Grom'gol ride north through Duskwood (Alliance zone: keep off the roads) and east through Deadwind Pass into the Swamp of Sorrows.
+accept Draenethyst Crystals | Magtoor, a Lost One in the hut at the west end of the swamp. He is friendly.
+fp Stonard
+accept Little Morsels | Cersei Dusksinger, Stonard.
+accept Pool of Tears | Fel'zerul, Stonard.
+accept 698 Lack of Surplus | Dar, just outside Stonard.
+accept Fresh Meat | Dar.
+complete 698 Lack of Surplus | Unprepared Sawtooth Flanks from Sawtooth Crocolisks around the lakes east of Stonard.
+complete Little Morsels | The captured crocolisk, jaguar and tarantula in the north-east of the swamp.
+complete Draenethyst Crystals | Draenethyst Crystals on the ground in the same north-east area.
+complete Pool of Tears | Atal'ai Artifacts on the ground around the Pool of Tears, east of Stonard.
+turnin 698 Lack of Surplus | Tok'Kar at the Misty Reed Strand, south-east coast.
+accept 699 Lack of Surplus
+complete 699 Lack of Surplus | Sawtooth Snapper Claws from Sawtooth Snappers on the east coast, north of Tok'Kar.
+complete Fresh Meat | Monstrous Crawler Legs from Monstrous Crawlers on the same east coast.
+turnin 699 Lack of Surplus | Tok'Kar.
+accept 1422 Threat From the Sea
+turnin 1422 Threat From the Sea | Katar, next to Tok'Kar.
+accept 1426 Threat From the Sea
+complete 1426 Threat From the Sea | Marsh Murlocs, Inkspewers and Flesheaters on the beach south of Katar.
+turnin 1426 Threat From the Sea
+accept 1427 Threat From the Sea
+turnin 1427 Threat From the Sea | Tok'Kar.
+accept Continued Threat [optional] | Katar. Needs level 41; skipped if you are lower.
+complete Continued Threat [optional] | Marsh Inkspewers, Flesheaters and Oracles on the same beach.
+turnin Continued Threat [optional]
+turnin Little Morsels | Stonard.
+turnin Pool of Tears | Fel'zerul.
+turnin Fresh Meat | Dar.
+turnin Draenethyst Crystals | Magtoor, at the west end of the swamp.
+level 40
+train | Fly from Stonard to Orgrimmar to train.
+note Fly from Stonard to Orgrimmar and on to Brackenwall Village in Dustwallow Marsh (zeppelin route if you lack the path).

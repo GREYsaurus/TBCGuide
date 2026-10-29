@@ -90,6 +90,24 @@ turnin The Zeppelin Crash [optional]
 turnin Direhorn Raiders [optional]
 turnin The Reagent Thief [optional]
 turnin The Grimtotem Weapon [optional]
+accept Corrosion Prevention | Moxie Steelgrille at the crashed zeppelin, east of Tabetha's farm.
+accept Secure the Cargo! | Moxie Steelgrille.
+complete Corrosion Prevention | Corrosive, Acidic and Bubbling Swamp Oozes between Tabetha's farm and the crash.
+complete Secure the Cargo! | Zeppelin Cargo scattered north of the crash.
+turnin Corrosion Prevention | Moxie Steelgrille.
+turnin Secure the Cargo!
+accept Help for Mudsprocket | Tabetha, at her farm.
+turnin Help for Mudsprocket | Drazzit Dripvalve, Mudsprocket (the goblin camp south of the marsh).
+fp Mudsprocket
+accept Bloodfen Feathers | Brogg, Mudsprocket.
+accept WANTED: Goreclaw the Ravenous | The wanted poster in Mudsprocket.
+accept Catch a Dragon by the Tail | Gizzix Grimegurgle.
+complete Bloodfen Feathers | Bloodfen Feathers from Bloodfen Razormaws west of Mudsprocket.
+complete WANTED: Goreclaw the Ravenous | Goreclaw, a raptor among the Razormaws.
+complete Catch a Dragon by the Tail | Wyrmtails from Searing Whelps south of Mudsprocket.
+turnin Bloodfen Feathers
+turnin WANTED: Goreclaw the Ravenous | Drazzit Dripvalve.
+turnin Catch a Dragon by the Tail
 level 41
 train
-note Fly to Gadgetzan (Tanaris).
+note Fly from Mudsprocket to Gadgetzan (Tanaris).

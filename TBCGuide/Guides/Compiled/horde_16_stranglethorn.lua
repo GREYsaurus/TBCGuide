@@ -6,7 +6,7 @@ ns.Guides:Register({
   id="H_Stranglethorn", name="Stranglethorn Vale (Grom'gol)", faction="Horde", chapter="Azeroth",
   minLevel=34, maxLevel=40, zone=33, zoneName="Stranglethorn Vale",
   desc="Grom'gol Base Camp, Nesingwary's Expedition, the Bloodscalp and Skullsplitter trolls, and Booty Bay. A contested zone - watch for Alliance players.",
-  next={{id="H_Dustwallow"},},
+  next={{id="H_SwampOfSorrows"},},
   steps={
     {"fp",npc="Thysta",z=33,x=32.5,y=29.4,place="Grom'gol",v=1},
     {"bind",npc="Innkeeper Thulbek",z=33,x=31.5,y=29.8,place="Grom'gol",v=1},
@@ -76,6 +76,6 @@ ns.Guides:Register({
     {"train",text="No shaman trainer in this zone - train at the next town or capital.",classes={"SHAMAN"},v=1},
     {"train",text="No warlock trainer in this zone - train at the next town or capital.",classes={"WARLOCK"},v=1},
     {"train",text="No warrior trainer in this zone - train at the next town or capital.",classes={"WARRIOR"},v=1},
-    {"note",text="Fly to Brackenwall Village in Dustwallow Marsh (via Orgrimmar and the zeppelin if you lack the path).",v=1},
+    {"note",text="Next: the Swamp of Sorrows, north through Duskwood and Deadwind Pass.",v=1},
   },
 })

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0
+
+### Added
+- **Gear scoring.** Item tooltips compare an item with what you wear. Quest reward choices are ranked in chat; you still choose, and a reward is never picked automatically. `/tbcg gear` (also `/tbcgear`) lists equipped items, empty slots and upgrades in your bags.
+- **Researched profiles:** stat weights come from wowsims/tbc and Icy Veins TBC pages, with sources, assumptions and confidence recorded in docs/GEAR_RESEARCH.md. Specs and levels without published numbers get a stat-by-stat comparison instead of an invented score. Level-70 weights are never applied to leveling characters automatically.
+- **Caps and slots:** hit and expertise count only up to the profile's cap. Two-handers, dual wielding, off-hands, rings and trinkets, and class armor and weapon types are handled. Weapon DPS, sockets, equip effects and set bonuses are listed as not scored.
+- *Gear* settings page and `/tbcg gear profiles`, `/tbcg gear profile <id|auto>`. See docs/GEAR_SCORING.md.
+
+
 ## 0.3.2
 
 ### Fixed

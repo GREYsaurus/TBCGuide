@@ -43,6 +43,7 @@ ns:On("PLAYER_LOGIN", function()
     stage("orphaned quests", function() ns.OrphanFrame:Create() end)
     stage("marker bar", function() ns.MarkerBar:Create() ns.MarkerBar:CreateOptions() end)
     stage("raid markers", function() ns.Marker:Init() end)
+    stage("gear scoring", function() ns.GearUI:Create() end)
     stage("navigation", function() ns.Nav:Init() end)
 
     stage("guide selection", function()

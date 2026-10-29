@@ -31,6 +31,9 @@ local HELP = {
     { "protect <itemID|link>", "never sell this item automatically (unprotect to undo)" },
     { "protected", "list protected items and junk-sale totals" },
     { "escort add|remove <questID>", "extra quests that must never be auto-accepted (escort list)" },
+    { "gear", "equipped gear, empty slots and upgrades in your bags (also /tbcgear)" },
+    { "gear profiles | profile <id|auto>", "list or choose the gear scoring profile" },
+    { "gear options", "open gear scoring settings" },
     { "set <option> on|off", "change a setting from chat" },
     { "debug [api|talents|quest <id>|escort <id>|marks|errors]", "diagnostics" },
     { "help", "this list" },
@@ -80,6 +83,7 @@ commands.markbar = function() ns.MarkerBar:Toggle() end
 commands.markers = function() ns.MarkerBar:OpenOptions() end
 commands.orphaned = commands.orphans
 commands.automation = function() ns.AutomationOptions:Open() end
+commands.gear = function(arg) ns.GearUI:Command(arg) end
 
 commands.protect = function(arg)
     local id = ns.Vendor.ParseItem(arg)
@@ -191,4 +195,16 @@ function ns:RegisterCommands()
     SLASH_TBCGUIDE1 = "/tbcg"
     SLASH_TBCGUIDE2 = "/tbcguide"
     SlashCmdList["TBCGUIDE"] = dispatch
+    -- /tbcgear is a shortcut for /tbcg gear, unless another add-on already owns it.
+    local taken = false
+    for key, value in pairs(_G) do
+        if type(key) == "string" and string.sub(key, 1, 6) == "SLASH_" and string.sub(key, 1, 13) ~= "SLASH_TBCGEAR"
+            and type(value) == "string" and string.lower(value) == "/tbcgear" then
+            taken = true
+        end
+    end
+    if not taken then
+        SLASH_TBCGEAR1 = "/tbcgear"
+        SlashCmdList["TBCGEAR"] = function(msg) dispatch("gear " .. (msg or "")) end
+    end
 end

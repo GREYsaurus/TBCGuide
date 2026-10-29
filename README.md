@@ -16,6 +16,8 @@ Everything is in the base install. There are no guide packs, accounts, subscript
 - **Maximum-speed route option:** hides optional side quests.
 - **Raid markers (new in 0.3.0):** `/tbcg mark skull`, a marker bar, and guide steps that mark their quest NPC or kill target. Only NPCs the step names are marked, matched by NPC ID, and markers you or others set are never overwritten. See [docs/RAID_MARKERS.md](docs/RAID_MARKERS.md).
 
+- **Gear scoring (new in 0.4.0):** item tooltips show how an item compares with what you wear, and quest rewards are ranked in chat (you still choose). Scores use stat weights researched from TBC sources, with confidence shown. Specs and levels without published numbers get a stat-by-stat comparison instead of an invented score. See [docs/GEAR_SCORING.md](docs/GEAR_SCORING.md).
+
 Details and defaults: [docs/AUTOMATION.md](docs/AUTOMATION.md).
 
 > **Status:** 0.1.0 has been loaded and played in the game client by the author. The 0.2.0 additions (quest automation, junk selling, orphaned quests and the route fixes) pass the offline checks: Lua 5.1 lint, the guide compiler, the content validator, the route audit, and 284 headless tests run under a real Lua 5.1 interpreter. **They have not been run in the client yet.** The in-game checklist is in `docs/COMPATIBILITY.md`, and limitations are in `docs/KNOWN_LIMITATIONS.md`.
@@ -63,6 +65,8 @@ More detail, including building from source, is in [INSTALL.md](INSTALL.md).
 | `/tbcg escort add\|remove <questID>` | Extra quests that must never be auto-accepted |
 | `/tbcg mark [icon]` / `unmark` | Mark your target with a raid icon (skull, cross, ...) or clear it |
 | `/tbcg marker <icon>` / `markbar` / `markers` | Default marker, marker bar, raid marker settings |
+| `/tbcg gear` (or `/tbcgear`) | Equipped gear, empty slots and upgrades in your bags |
+| `/tbcg gear profiles` / `gear profile <id\|auto>` / `gear options` | List or choose the gear scoring profile; gear settings |
 | `/tbcg set <option> on\|off` | Change any on/off setting from chat |
 | `/tbcg debug` / `debug api` / `debug talents` / `debug quest <id>` | Diagnostics |
 | `/tbcg help` | All commands |

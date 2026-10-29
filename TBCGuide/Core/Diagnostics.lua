@@ -44,6 +44,7 @@ function D:Api()
         -- automation
         "C_Container.GetContainerItemInfo", "GetContainerItemInfo", "C_Container.UseContainerItem", "UseContainerItem",
         "C_Container.GetContainerItemQuestInfo", "GetContainerItemQuestInfo", "GetItemInfo", "GetMoney",
+        "GetItemStats", "GetInventoryItemLink", "GetCombatRating", "GetQuestItemLink",
         "C_GossipInfo.GetAvailableQuests", "C_GossipInfo.SelectAvailableQuest", "C_GossipInfo.GetActiveQuests",
         "C_GossipInfo.SelectActiveQuest", "GetGossipAvailableQuests", "GetAvailableQuestInfo", "GetActiveQuestID",
         "GetQuestID", "AcceptQuest", "CompleteQuest", "IsQuestCompletable", "GetNumQuestChoices", "GetQuestReward",

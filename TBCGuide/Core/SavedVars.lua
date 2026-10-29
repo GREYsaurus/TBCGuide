@@ -51,6 +51,12 @@ local accountDefaults = {
         markNotify = true,          -- chat messages for marking results
         defaultMarker = 8,          -- 1 star .. 8 skull
         showMarkerBar = false,
+        -- Gear scoring (docs/GEAR_RESEARCH.md); read-only, never equips or chooses anything
+        gearEnabled = true,
+        gearTooltip = true,         -- score lines on item tooltips
+        gearQuestRewards = true,    -- rank reward choices in chat
+        gearShowPercent = true,     -- relative score change (%), only when both scores are valid
+        gearShowConfidence = true,
     },
     protectedItems = {},    -- [itemID] = true: never sold automatically
     protectedClasses = {},  -- [itemClassID] = true/false: overrides Vendor.CLASSES defaults
@@ -73,6 +79,7 @@ local charDefaults = {
     talentBuild = nil,  -- chosen build id for this character
     simTalents = {},    -- [class] = { [talentId] = rank } simulated allocation in the calculator
     junkStats = { items = 0, copper = 0 }, -- confirmed automatic junk sales (all time)
+    gearProfile = nil,  -- chosen gear profile id (Gear/Profiles.lua); nil = automatic
 }
 
 local function sanitizeProgress(p)
@@ -105,6 +112,9 @@ function ns:InitSavedVariables()
     local js = TBCGuideCharDB.junkStats
     if type(js) ~= "table" or type(js.items) ~= "number" or type(js.copper) ~= "number" then
         TBCGuideCharDB.junkStats = { items = 0, copper = 0 }
+    end
+    if TBCGuideCharDB.gearProfile ~= nil and type(TBCGuideCharDB.gearProfile) ~= "string" then
+        TBCGuideCharDB.gearProfile = nil
     end
     if TBCGuideCharDB.activeGuide ~= nil and type(TBCGuideCharDB.activeGuide) ~= "string" then
         TBCGuideCharDB.activeGuide = nil

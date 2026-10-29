@@ -78,7 +78,6 @@ end
 
 UIParent = newObject("Frame")
 WorldMapFrame = newObject("Frame")
-GameTooltip = newObject("GameTooltip")
 DEFAULT_CHAT_FRAME = { AddMessage = function(_, msg) table.insert(MOCK.printed, msg) end }
 UISpecialFrames = {}
 SlashCmdList = {}
@@ -223,12 +222,48 @@ C_Container = {
     end,
 }
 
-function GetItemInfo(id)
+local function itemId(id)
     if type(id) == "string" then id = tonumber(string.match(id, "item:(%d+)")) end
+    return id
+end
+function MOCK.link(id) return "|cffffffff|Hitem:" .. id .. "::::::::70:::::|h[" .. tostring(MOCK.items[id] and MOCK.items[id].name) .. "]|h|r" end
+-- MOCK.items[id] may also carry gear fields: equipLoc=, ilvl=, reqLevel=, subclassID=, stats={ITEM_MOD_*=n}
+function GetItemInfo(id)
+    id = itemId(id)
     local it = MOCK.items[id]
     if not it or it.uncached then return nil end
-    return it.name, "link", it.quality, 1, 1, "type", "subtype", 1, "", "icon", it.sellPrice, it.classID, 0, it.bindType or 0
+    return it.name, MOCK.link(id), it.quality, it.ilvl or 1, it.reqLevel or 1, "type", "subtype", 1, it.equipLoc or "",
+        "icon", it.sellPrice, it.classID, it.subclassID or 0, it.bindType or 0
 end
+function GetItemStats(link)
+    local it = MOCK.items[itemId(link)]
+    if not it then return nil end
+    local out = {}
+    for k, v in pairs(it.stats or {}) do out[k] = v end
+    return out
+end
+MOCK.equipped = {}   -- [inventory slot] = itemID
+MOCK.ratings = {}    -- [CR index] = rating
+function GetInventoryItemLink(unit, slot)
+    local id = unit == "player" and MOCK.equipped[slot]
+    return id and MOCK.link(id) or nil
+end
+function GetCombatRating(i) return MOCK.ratings[i] or 0 end
+MOCK.questChoices = {} -- [i] = itemID for the open reward panel
+function GetQuestItemLink(kind, i) local id = kind == "choice" and MOCK.questChoices[i] return id and MOCK.link(id) or nil end
+
+-- Tooltips: GetItem returns MOCK.tooltipItem's link; AddLine records lines.
+local function tooltip(name)
+    local tt = CreateFrame("GameTooltip", name)
+    tt.lines = {}
+    tt.GetItem = function(s) local id = s.item return id and MOCK.items[id] and MOCK.items[id].name, id and MOCK.link(id) end
+    tt.AddLine = function(s, text) table.insert(s.lines, text) end
+    tt.NumLines = function(s) return #s.lines + 1 end
+    tt.GetName = function() return name end
+    return tt
+end
+GameTooltip = tooltip("GameTooltip")
+ItemRefTooltip = tooltip("ItemRefTooltip")
 function GetMoney() return MOCK.money end
 function CursorHasItem() return MOCK.cursor end
 function IsShiftKeyDown() return MOCK.shift end

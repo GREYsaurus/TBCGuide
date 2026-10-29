@@ -6,7 +6,7 @@ ns.Guides:Register({
   id="H_Arathi", name="Arathi Highlands (Hammerfall)", faction="Horde", chapter="Azeroth",
   minLevel=32, maxLevel=35, zone=45, zoneName="Arathi Highlands",
   desc="Hammerfall: the raising spirits and raptor quests, Call to Arms at Stromgarde, the sigils and the Shards of Myzrael.",
-  next={{id="H_Stranglethorn"},},
+  next={{id="H_Badlands"},},
   steps={
     {"fp",npc="Urda",z=45,x=73,y=32.7,place="Hammerfall",v=1},
     {"bind",npc="Innkeeper Adegwa",z=45,x=73.8,y=32.5,place="Hammerfall",v=1},

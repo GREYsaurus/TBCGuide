@@ -188,7 +188,10 @@ function TF:Create()
         return items
     end, function(v)
         TF.build = ns.Talents.builds[v]
-        if TF.class == ns.Compat.PlayerInfo().class then ns.char.talentBuild = v end
+        if TF.class == ns.Compat.PlayerInfo().class then
+            ns.char.talentBuild = v
+            if ns.TalentHints then ns.TalentHints:Refresh() end -- a Frost variant changes the talent-window plan
+        end
         TF:Render()
     end, function() return TF.build and TF.build.name or "Choose build" end)
     buildDD:SetPoint("LEFT", classDD, "RIGHT", -24, 0)
@@ -326,6 +329,7 @@ function TF:Render()
         lines[#lines + 1] = "|cffffd100" .. b.name .. "|r"
         lines[#lines + 1] = (b.kind or "") .. (b.role and (" - " .. b.role) or "")
         if b.summary then lines[#lines + 1] = "\n" .. b.summary end
+        lines[#lines + 1] = "|cff999999" .. ns.Talents:SourceLine(b) .. "|r"
         if b.notes then
             lines[#lines + 1] = ""
             for _, n in ipairs(b.notes) do lines[#lines + 1] = "- " .. n end

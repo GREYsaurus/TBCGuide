@@ -407,6 +407,12 @@ namespace TBCGuideTools
             string v;
             if (flags.TryGetValue("class", out v)) s.Classes = ParseClasses(v, where, res);
             if (flags.TryGetValue("race", out v)) s.Races = ParseRaces(v, where, res);
+            if (flags.TryGetValue("faction", out v))
+            {
+                if (v != "Alliance" && v != "Horde") res.Errors.Add(where + ": [faction=] must be Alliance or Horde");
+                else if (g.Faction != "Both" && g.Faction != v) res.Errors.Add(where + ": [faction=" + v + "] in a " + g.Faction + " guide");
+                else s.Faction = v;
+            }
             if (flags.ContainsKey("optional")) s.Optional = true;
             if (flags.ContainsKey("elite")) s.Elite = true;
             if (flags.TryGetValue("group", out v)) { int gs; s.Group = int.TryParse(v, out gs) ? gs : 0; }
@@ -758,10 +764,12 @@ namespace TBCGuideTools
             int prev;
             if (verb != "accept" && st.AcceptedByName.TryGetValue(key, out prev) && cands.Contains(prev)) return prev;
 
-            int fmask = g.Faction == "Alliance" ? ALLIANCE_MASK : g.Faction == "Horde" ? HORDE_MASK : (ALLIANCE_MASK | HORDE_MASK);
+            // A [faction=...] step in a shared guide resolves like a step of that faction's guide.
+            string fac = s.Faction ?? g.Faction;
+            int fmask = fac == "Alliance" ? ALLIANCE_MASK : fac == "Horde" ? HORDE_MASK : (ALLIANCE_MASK | HORDE_MASK);
             var races = s.Races ?? g.Races;
             int rmask = races != null ? RaceMaskOf(races) : fmask;
-            bool both = g.Faction == "Both";
+            bool both = fac == "Both";
             var classes = s.Classes ?? g.Classes;
             var filtered = cands.Where(id =>
             {
@@ -830,12 +838,13 @@ namespace TBCGuideTools
         static void CheckQuestFit(int q, LTable rec, string where, CGuide g, CStep s, CompileResult res)
         {
             int races = BundledDb.Num(rec, BundledDb.Q_RACES);
-            int fmask = g.Faction == "Alliance" ? ALLIANCE_MASK : HORDE_MASK;
-            if (g.Faction == "Both")
+            string fac = s.Faction ?? g.Faction; // [faction=] steps in a shared guide check like that faction
+            int fmask = fac == "Alliance" ? ALLIANCE_MASK : HORDE_MASK;
+            if (fac == "Both")
             {
                 if (races != 0 && ((races & ALLIANCE_MASK) == 0 || (races & HORDE_MASK) == 0)) res.Errors.Add(where + ": quest " + q + " is faction-specific; not allowed in a Both guide");
             }
-            else if (races != 0 && (races & fmask) == 0) res.Errors.Add(where + ": quest " + q + " is not available to " + g.Faction);
+            else if (races != 0 && (races & fmask) == 0) res.Errors.Add(where + ": quest " + q + " is not available to " + fac);
             var rlist = s.Races ?? g.Races;
             if (races != 0 && rlist != null)
             {

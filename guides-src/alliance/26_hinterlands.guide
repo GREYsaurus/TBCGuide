@@ -8,7 +8,7 @@
 @zone The Hinterlands
 @chapter Azeroth
 @desc Aerie Peak, the Witherbark trolls, Skulk Rock, the Featherbeard chain and the Altar of Zul.
-@next Both_UngoroCrater
+@next Both_SearingGorge
 
 fp Aerie Peak
 bind Aerie Peak
@@ -40,4 +40,4 @@ complete Skulk Rock Clean-up | Oozes at Skulk Rock.
 turnin Skulk Rock Clean-up
 level 48
 train
-note Thadius Grimshade is in the Blasted Lands (Nethergarde Keep) - optional detour. Then fly to Gadgetzan and ride north-west into Un'Goro Crater.
+note Thadius Grimshade is in the Blasted Lands (Nethergarde Keep) - optional detour. Next: the Searing Gorge.

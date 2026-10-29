@@ -1,80 +1,117 @@
-# Levels 31-60: route pass and status
+# Levels 31-60: coverage pass
 
-This covers the 18 guides from Thousand Needles / Arathi (29-35) to Western Plaguelands (55-58), plus their handoffs. Method and tools: the same as the 1-30 pass (`docs/ROUTE_PASS_1.0.md`). Generated numbers: `docs/generated/guide-xp.csv`, `route-metrics.csv`, `level-gates.csv` and `coverage-31-60.csv`.
+This pass adds routes for four zones no guide visited, expands the thinnest existing guides, and re-measures progression against 0.9.0 under the same model.
 
-## What changed
+Tools: `tools/build.ps1 routes` (route audit and XP model) and the coverage and disposition scripts described below.
 
-- **Reorder:** steps were reordered within their travel segments in 15 of the 18 guides. Every quest, chain, prerequisite and level gate was kept. Summed segment travel fell from **4,372 to 3,121** (-29%). This is the same approximate measure as before: map-percent straight lines, plus a fixed cost per zone change.
-- **Notes:** 62 notes from the bundled data were added: drop sources, objects, escorts, turn-in zones, and "needs level N" on the 4 gated pickups.
-- **Train steps:** each guide already had one. Each now lists what your trainer has (`docs/TRAINER.md`) and is skipped when there is nothing new. A train step without a place points the arrow at the nearest class trainer of your faction.
-- **Dungeon tags:** tags now come from the quest data (`docs/DUNGEONS.md`). The 31-60 routes contain **no** dungeon-only quests, so nothing new was tagged.
-- **Saved progress:** `Guides/Layouts.lua` now maps old step positions to new ones for all 40 reordered guides (1-30 and 31-60), with every step matched. Characters keep their place.
+Generated files in `docs/generated/`:
+- `guide-xp.csv`
+- `route-metrics.csv`
+- `level-gates.csv`
+- `coverage-31-60.csv`
+- `candidates-31-60-disposition.csv`
 
-## Handoffs (checked)
+**Everything here is a static check or a modelled estimate. None of it has been played in the game.**
 
-- **30 → 31:** every Alliance route reaches *Arathi Highlands* through Wetlands → Hillsbrad, and every Horde route reaches *Thousand Needles* through Hillsbrad. The audit walks all 52 race/class routes; 0 errors.
-- **58 → Outland:** both Western Plaguelands guides end with `level 58`, a train step and the Dark Portal note. The Hellfire guides start with the optional *Through the Dark Portal* herald quest.
+## The model (unchanged in this pass)
 
-## Matrix
+`tools/src/RouteAnalyzer.cs` walks every race/class route step by step:
 
-**Columns:**
+| Item | How the model treats it |
+|---|---|
+| Quest XP | QuestieDB's TBC XP per quest, with the level penalty (full XP up to 5 levels above the quest; less beyond). |
+| XP table | The post-2.3 XP-to-level table. |
+| Kill XP | **Assumed** at half the quest XP earned (`KillShare = 0.5`). It is not data. |
+| Rested and discovery XP | None. |
+| Dungeons | No dungeon quest XP and no dungeon kills. |
+| Optional, elite and group quests on the route | Counted, as if done. |
+| `level` and `grind` steps | Lift the model to that level. The lift is reported as **grind levels**: the levels the player must grind because quests (plus the assumed kills) do not get them there. |
 
-- **Quests:** distinct quests the guide uses.
-- **Zone coverage:** that faction's quests the data places in the zone (level window -3/+4, not class, profession or repeatable) that any route uses.
-- **Model:** the XP-model level entering → leaving the guide, averaged over the routes.
-- **Grind:** levels the guide's `level` steps add on top of quest XP.
-- **Travel:** per-character travel after the reorder.
+The model was not changed to make these numbers look better. One measurement was added: per-guide XP (`guide-xp.csv`), which records the model level entering and leaving each guide, the quests-only level and the grind levels. It reads the same walk; it doesn't change it.
 
-| Guide | Side | Levels | Quests | Zone coverage | Model | Grind | Travel | Gated | Group |
-|---|---|---|---|---|---|---|---|---|---|
-| A_Arathi | A | 30-34 | 7 | 4/7 (57%) | 30 → 33 | 1.84 | 80 | 0 | 4 |
-| A_Stranglethorn | A | 32-40 | 47 | 20/74 (27%) | 33 → 38 | 3.05 | 484 | 0 | 0 |
-| A_Dustwallow | A | 36-41 | 23 | 23/74 (31%) | 38 → 41 | 1.62 | 215 | 0 | 0 |
-| Both_Tanaris | A | 41-45 | 12 | 12/29 (41%) | 41 → 44 | 1.95 | 35 | 1 | 2 |
-| A_Feralas | A | 43-47 | 19 | 19/42 (45%) | 44 → 46 | 0.86 | 272 | 2 | 2 |
-| A_Hinterlands | A | 45-49 | 9 | 9/20 (45%) | 46 → 48 | 1.23 | 93 | 0 | 0 |
-| Both_UngoroCrater | A | 48-52 | 13 | 13/41 (32%) | 48.5 → 51 | 1.32 | 309 | 1 | 1 |
-| A_Felwood | A | 51-54 | 8 | 7/24 (29%) | 51 → 54 | 2.31 | 92 | 0 | 0 |
-| A_BurningSteppes | A | 53-56 | 13 | 11/17 (65%) | 54 → 55 | 0.37 | 133 | 0 | 1 |
-| A_WesternPlaguelands | A | 55-58 | 9 | 9/54 (17%) | 55 → 58 | 2.41 | 98 | 0 | 0 |
-| H_ThousandNeedles | H | 29-33 | 42 | 20/38 (53%) | 30 → 32.9 | 0.00 | 473 | 0 | 0 |
-| H_Arathi | H | 32-35 | 14 | 12/15 (80%) | 32.9 → 35 | 0.93 | 103 | 0 | 0 |
-| H_Stranglethorn | H | 34-40 | 19 | 18/63 (29%) | 35 → 39 | 2.84 | 146 | 0 | 0 |
-| H_Dustwallow | H | 37-42 | 29 | 29/59 (49%) | 39 → 41 | 0.26 | 298 | 0 | 0 |
-| Both_Tanaris | H | 41-45 | 12 | 12/32 (38%) | 41 → 44 | 1.95 | 35 | 1 | 2 |
-| H_Feralas | H | 43-47 | 4 | 4/32 (12%) | 44 → 46 | 1.60 | 36 | 0 | 0 |
-| H_Hinterlands | H | 44-50 | 13 | 13/30 (43%) | 46 → 49 | 1.71 | 54 | 0 | 0 |
-| Both_UngoroCrater | H | 48-52 | 13 | 13/40 (32%) | 48.5 → 51 | 1.32 | 309 | 1 | 1 |
-| H_Felwood | H | 51-54 | 8 | 7/22 (32%) | 51 → 54 | 2.31 | 151 | 0 | 0 |
-| H_WesternPlaguelands | H | 54-58 | 14 | 13/51 (25%) | 54 → 58 | 3.04 | 208 | 0 | 0 |
+**What "16-17 levels of grinding" meant:** in 0.9.0, the grind levels of the guides from level 30 to 58 summed to 16.96 for Alliance and 15.96 for Horde. That is, about 60% of those 28 levels came from `level` steps rather than from quest XP plus the assumed kill XP.
 
-**Zones no route visits** (that faction's quests, quest level 30-60): Desolace 38 A / 35 H, Badlands 29 / 22, Swamp of Sorrows 13 / 19, Searing Gorge 26 / 19, Azshara 20 / 29, Winterspring 41 / 34, Eastern Plaguelands 55 / 60, Silithus 54 / 54, Blasted Lands 19 / 21.
+## Before and after (same model, same data)
 
-## XP gates and assumptions
+Both columns come from the same tooling run on the guides of commit `69914bd` (0.9.0) and on the current guides.
 
-**XP model** (`tools/src/RouteAnalyzer.cs`):
+**Grind levels by band:** each guide counts in the band of its entry level.
 
-- QuestieDB's TBC quest XP with the level penalty;
-- the post-2.3 XP table;
-- kill XP **assumed** at half the quest XP;
-- **no** rested, discovery, group or dungeon XP, and no XP for dungeon quests;
-- `level`/`grind` steps lift the model to their level.
+| Band | Alliance 0.9.0 | Alliance now | Horde 0.9.0 | Horde now |
+|---|---|---|---|---|
+| 30-40 | 6.51 | 4.54 | 4.03 | 3.11 |
+| 40-50 | 5.36 | 4.28 | 6.58 | 4.75 |
+| 50-58 | 5.09 | 3.44 | 5.35 | 4.36 |
+| **30-58** | **16.96** | **12.26** | **15.96** | **12.22** |
+| Distinct quests, 30-58 guides | 160 | 237 | 168 | 221 |
+| Pickups above the model's level, 30-58 | 4 | 3 | 2 | 3 |
 
-These are planning estimates, not measurements.
+**Grinding is reduced, not solved.** About 44% of the 30-58 levels still come from `level` steps in the model. The `level` steps stay in the guides as the explicit fallback: each says which level to reach before moving on, and some name mobs near the hub.
 
-**Result:** from 30 to 58 the model has an Alliance character grinding about **17 of the 28 levels**, and a Horde character about **16**. The existing `level` steps cover this: the guides tell you to reach each level before moving on, and the 4 pickups above their level are skipped and come back once you reach it. Players who do dungeons or have rested XP will be well ahead of the model.
+## New guides
 
-## Status per guide
+| Guide | Faction | Levels | Distinct quests | Zone coverage | Placement |
+|---|---|---|---|---|---|
+| A_Desolace (Nijel's Point) | Alliance | 33-37 | 21 | 20/36 | Arathi → **Desolace** → Stranglethorn. The Reclaimers breadcrumb is picked up in Ironforge on the way. |
+| H_Desolace (Ghost Walker Post, Shadowprey) | Horde | 33-36 | 7 | 6/32 | Thousand Needles → **Desolace** → Arathi |
+| A_Badlands | Alliance | 38-41 | 15 | 11/28 | Stranglethorn → **Badlands** → Dustwallow; the Ironforge follow-ups are on the way out |
+| H_Badlands (Kargath) | Horde | 35-38 | 6 | 5/17 | Arathi → **Badlands** → Stranglethorn. The trip to Kargath is on foot through the Wetlands and Loch Modan, and the guide says so. |
+| Both_SearingGorge (Thorium Point) | both | 47-50 | 13 | 13/25 A, 13/19 H | Hinterlands → **Searing Gorge** → Un'Goro |
+| Both_EasternPlaguelands (Light's Hope) | both, plus Horde-only Nathanos steps | 56-58 | 10 | 8/55 A, 10/60 H | Western Plaguelands → **Eastern Plaguelands** → Hellfire. The `level 58` gate and the Dark Portal note moved here. |
 
-| Guide | Order | Notes | Gates | Train | Handoff | Quest density |
-|---|---|---|---|---|---|---|
-| All 18 above | reordered (15) / unchanged (3: A_Stranglethorn, H_ThousandNeedles, H_Dustwallow already optimal for the measure) | done | checked; level steps in place | suggestions + waypoint | checked | **open**: see checkpoint |
+The Desolace routes take the Magram side of the centaur choice. The Gelkis quests are listed as excluded.
 
-## Checkpoint: not done in this pass
+## Thin guides
 
-The one large gap is **quest density**. The 31-60 guides use 12-80% of their zones' quests and skip nine zones entirely, which is why the model needs so much grinding. Closing that means writing new routes (Desolace, Badlands, Searing Gorge, Swamp of Sorrows, Azshara, Winterspring, Eastern Plaguelands, Silithus) and extending the thin ones (Horde Feralas 4 quests, Alliance Arathi 7, Felwood 8, Western Plaguelands 9). That is guide-writing work for a separate pass.
+The 0.9.0 counts were unique quests per guide, from `route-metrics.csv`.
 
-- **Starting list:** the 496 eligible quests not on any route, in `docs/generated/coverage-31-60.csv`.
-- **Rules:** same as the 1-30 pass: original routes, compiler checks, route audit at 0 errors.
+| Guide | 0.9.0 | Now | What changed |
+|---|---|---|---|
+| H_Feralas | 4 | 14 | Rewritten around Camp Mojache: the Woodpaw chain and Zukk'ash hive, the Grimtotem and sprite darter pair, two Gordunni ogre quests and the yeti hides, plus the existing harpy and giant quests. |
+| A_Arathi | 7 | 7 | **Not expanded.** Faldir's Cove needs level 35, and Worth Its Weight in Gold needs a Stormwind breadcrumb the route doesn't pass. Both are deferred in the disposition record. Desolace now follows Arathi instead. |
+| A_Felwood | 8 | 9 | Added Salve via Hunting. Corrected a wrong note: Seeking Spiritual Aid goes to the Barrens, not Winterspring. The Jaedenar chain is deferred because of that Barrens trip. |
+| H_Felwood | 8 | 9 | Salve via Hunting. |
+| A_Western Plaguelands | 9 | 26 | Rewritten around Chillwind Camp's cauldron chain (four cauldrons, Mission Accomplished), Andorhal's watchtowers, Chromie's two quests and the Dalson cabinet. The Ironforge call-to-arms breadcrumb is picked up on the way. |
+| H_Western Plaguelands | 14 | 20 | Added the watchtowers, Chromie and the Dalson cabinet. Added the Undercity call-to-arms breadcrumb: the data requires it for Scarlet Diversions, and no route picked it up before. |
 
-Nothing here has been played in the game.
+## Remaining gaps
+
+| Guide (model) | Grind levels now | Why it stays |
+|---|---|---|
+| Felwood (both) | 2.2 | Felwood's other quests are repeatable salve turn-ins, profession or class quests, or chains that leave the zone. Winterspring (55-60) is still unvisited. |
+| Tanaris (both) | 1.75 | Unchanged in this pass. |
+| A_Arathi | 1.84 | See above. |
+| H_Hinterlands | 1.71 | Unchanged. |
+| H_Western Plaguelands | 1.67 | The Horde chain was already in place; the additions cut it from 3.04. |
+| H_Desolace, H_Badlands | 1.39 each | Horde Desolace and Badlands have fewer good solo quests than the Alliance versions. |
+
+**Still unvisited:** Swamp of Sorrows, Azshara, Winterspring, Silithus, the Blasted Lands and Alliance Thousand Needles.
+
+**Fallback:** where the model still needs grinding, the guide's `level` step stops progress until you reach the level. Pickups above your level are skipped with the reason and come back when you reach the level.
+
+## Handoffs (checked by the route audit, 0 errors on all 52 routes)
+
+- **Alliance 30→31:** Wetlands → Hillsbrad → Arathi → Desolace.
+- **Horde 30→31:** Hillsbrad → Thousand Needles → Desolace → Arathi.
+- **Late Azeroth → Outland:** Western Plaguelands now ends at `level 57` and leads to the Eastern Plaguelands. That guide ends with `level 58`, a train step and the Dark Portal note, then links to A_Hellfire or H_Hellfire by faction.
+
+## Candidates
+
+`docs/generated/candidates-31-60-disposition.csv` covers the 496 candidates from 0.9.0 plus the candidates in the four new zones: 682 in all.
+
+| Status | Count | Meaning |
+|---|---|---|
+| Added | 44 | now on a route |
+| Deferred | 403 | Has a stated reason. Common ones: escort or event, starts from an item drop, elite objective, needs a quest the route skips, turned in outside the route's zones, level fit. |
+| Excluded | 5 | the Gelkis side of the Desolace centaur choice |
+| Unverified | 230 | Not reviewed in this pass; the rule check found no blocker. These are the next things to look at. |
+
+How the reasons were assigned:
+- **Manual review** (`reviewed=yes`): quests I read while writing the routes.
+- **Rule-based** (`reviewed=rule`): read from the data. The rules check for the party flag, an item start, an elite objective NPC, prerequisites not on the route, and a turn-in zone the route never visits.
+- **Never counted as baseline XP:** repeatable, class, profession and dungeon quests are left out of the candidate list entirely.
+
+## Shared-system changes this pass needed
+
+- **Guide compiler:** steps in a shared (`Both`) guide can now carry `[faction=Alliance|Horde]` and resolve faction-only quests. The runtime already filtered such steps; the compiler had been ignoring the flag.
+- **Saved progress:** layouts now chain. A character who saved on 0.7.0 or on 0.9.0 is moved to the same step in the current order (`Guides/Layouts.lua`, `ns:ApplyLayout`).

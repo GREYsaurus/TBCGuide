@@ -6,7 +6,7 @@ ns.Guides:Register({
   id="A_Hinterlands", name="The Hinterlands (Aerie Peak)", faction="Alliance", chapter="Azeroth",
   minLevel=45, maxLevel=49, zone=47, zoneName="The Hinterlands",
   desc="Aerie Peak, the Witherbark trolls, Skulk Rock, the Featherbeard chain and the Altar of Zul.",
-  next={{id="Both_UngoroCrater"},},
+  next={{id="Both_SearingGorge"},},
   steps={
     {"fp",npc="Guthrum Thunderfist",z=47,x=11.1,y=46.2,place="Aerie Peak",v=1},
     {"bind",npc="Innkeeper Thulfram",z=47,x=14.2,y=41.6,place="Aerie Peak",v=1},
@@ -46,6 +46,6 @@ ns.Guides:Register({
     {"train",text="No shaman trainer in this zone - train at the next town or capital.",classes={"SHAMAN"},v=1},
     {"train",text="No warlock trainer in this zone - train at the next town or capital.",classes={"WARLOCK"},v=1},
     {"train",text="No warrior trainer in this zone - train at the next town or capital.",classes={"WARRIOR"},v=1},
-    {"note",text="Thadius Grimshade is in the Blasted Lands (Nethergarde Keep) - optional detour. Then fly to Gadgetzan and ride north-west into Un'Goro Crater.",v=1},
+    {"note",text="Thadius Grimshade is in the Blasted Lands (Nethergarde Keep) - optional detour. Next: the Searing Gorge.",v=1},
   },
 })

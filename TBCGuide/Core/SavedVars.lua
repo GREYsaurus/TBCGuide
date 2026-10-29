@@ -308,10 +308,15 @@ end
 function ns:ApplyLayout(guideId, p)
     local L = ns.GuideLayouts and ns.GuideLayouts[guideId]
     if not L or p.layout == L.layout then return p end
-    if (p.layout or 1) == L.layout - 1 and L.map then
-        p.done, p.skipped = remap(p.done, L.map), remap(p.skipped, L.map)
-        if p.levelSkip then p.levelSkip = remap(p.levelSkip, L.map) end
-        if type(p.step) == "number" then p.step = L.map[p.step] or p.step end
+    -- Walk every layout change since the one the progress was saved with: maps[v] moves layout
+    -- v-1 to v (`map` alone is the older form, for the last step only).
+    for v = (p.layout or 1) + 1, L.layout do
+        local m = (L.maps and L.maps[v]) or (v == L.layout and L.map)
+        if m then
+            p.done, p.skipped = remap(p.done, m), remap(p.skipped, m)
+            if p.levelSkip then p.levelSkip = remap(p.levelSkip, m) end
+            if type(p.step) == "number" then p.step = m[p.step] or p.step end
+        end
     end
     p.layout = L.layout
     return p

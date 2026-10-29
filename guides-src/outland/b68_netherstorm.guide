@@ -13,55 +13,53 @@
 
 fp Area 52
 bind Area 52
+accept Flora of the Eco-Domes | Aurine Moonblaze, Eco-Dome Midrealm.
 accept Off To Area 52 [optional] | Netherologist Coppernickels at the Netherstorm bridge.
-turnin Off To Area 52 [optional]
-accept You're Hired! | Rocket-Chief Fuselage.
 accept Recharging the Batteries | Bot-Specialist Alley.
 accept Securing the Shaleskin Shale | Boots.
 accept Consortium Crystal Collection | Nether-Stalker Khay'ji.
-accept Wanted: Annihilator Servo!
-complete You're Hired!
+turnin Off To Area 52 [optional]
+accept You're Hired! | Rocket-Chief Fuselage.
+complete You're Hired! | Etherlithium Matrix Crystal: loot Etherlithium Matrix Crystal.
 complete Recharging the Batteries
-complete Securing the Shaleskin Shale
-complete Consortium Crystal Collection
+complete Securing the Shaleskin Shale | Shaleskin Shale drops from Shaleskin Flayer.
+complete Consortium Crystal Collection | Arklon Crystal Artifact drops from Pentatharon.
 turnin You're Hired!
 accept Report to Engineering
 accept Invaluable Asset Zapping
-turnin Recharging the Batteries
-turnin Securing the Shaleskin Shale
-accept That Little Extra Kick
 turnin Consortium Crystal Collection
 accept A Heap of Ethereals
+turnin Securing the Shaleskin Shale
+accept That Little Extra Kick
+accept Wanted: Annihilator Servo!
 turnin Report to Engineering
 accept Essence for the Engines
-complete Invaluable Asset Zapping
-complete That Little Extra Kick
-complete A Heap of Ethereals
-complete Essence for the Engines
-turnin Invaluable Asset Zapping
-accept Dr. Boom!
-turnin That Little Extra Kick
-turnin A Heap of Ethereals
-accept Warp-Raider Nesaad
+complete Invaluable Asset Zapping | Click Hyper Rotational Dig-A-Matic and Servo-Pneumatic Dredging Claw.
+complete That Little Extra Kick | Nether Ray Stinger drops from Nether Ray.
+complete A Heap of Ethereals | Zaxxis Insignia drops from Warp-Raider Nesaad, Zaxxis Raider and Zaxxis Stalker.
+complete Essence for the Engines | Mana Wraith Essence drops from Mana Wraith.
 turnin Essence for the Engines
 accept Elemental Power Extraction
+turnin A Heap of Ethereals
+accept Warp-Raider Nesaad
+turnin Invaluable Asset Zapping
+accept Dr. Boom!
 complete Dr. Boom!
 complete Warp-Raider Nesaad
-complete Elemental Power Extraction
-complete Wanted: Annihilator Servo!
+complete Elemental Power Extraction | Elemental Power: loot Elemental Power.
+complete Wanted: Annihilator Servo! | Annihilator Servo drops from Arcane Annihilator.
 turnin Dr. Boom!
-turnin Warp-Raider Nesaad
-accept Request for Assistance
 turnin Elemental Power Extraction
+accept The Archmage's Staff | Ravandwyr, the Kirin'Var village.
+complete The Archmage's Staff | Archmage Vargoth's Staff drops from Ekkorash the Inquisitor.
+turnin The Archmage's Staff
+accept Rebuilding the Staff
+complete Rebuilding the Staff | Flawless Crystal Shard drops from Disembodied Exarch, Disembodied Protector and Disembodied Vindicator.
+turnin Rebuilding the Staff
+accept Curse of the Violet Tower
 turnin Wanted: Annihilator Servo!
-turnin Request for Assistance | Gahruj, Midrealm Post.
-accept Rightful Repossession
-complete Rightful Repossession
-turnin Rightful Repossession
-accept An Audience with the Prince
-turnin An Audience with the Prince
 accept Pick Your Part | Papa Wheeler, Ruins of Farahlon.
-complete Pick Your Part
+complete Pick Your Part | Ethereal Technology: loot Ethereal Technology.
 turnin Pick Your Part
 accept In A Scrap With The Legion
 accept Help Mama Wheeler
@@ -69,47 +67,49 @@ complete In A Scrap With The Legion
 turnin In A Scrap With The Legion
 turnin Help Mama Wheeler
 accept One Demon's Trash...
-complete One Demon's Trash...
+complete One Demon's Trash... | Fel Reaver Part: loot Fel Reaver Part.
 turnin One Demon's Trash...
 accept Declawing Doomclaw
-complete Declawing Doomclaw
+complete Declawing Doomclaw | Doomclaw's Hand drops from Doomclaw.
 turnin Declawing Doomclaw
 accept Warn Area 52!
 turnin Warn Area 52!
 accept Doctor Vomisa, Ph.T.
 turnin Doctor Vomisa, Ph.T.
-accept You, Robot
-complete You, Robot
+accept You, Robot | Group quest: Negatron is elite.
+complete You, Robot | Elite: Negatron; bring help or skip.
 turnin You, Robot
 accept Back to the Chief!
 turnin Back to the Chief!
-accept The Archmage's Staff | Ravandwyr, the Kirin'Var village.
-complete The Archmage's Staff
-turnin The Archmage's Staff
-accept Rebuilding the Staff
-complete Rebuilding the Staff
-turnin Rebuilding the Staff
-accept Curse of the Violet Tower
+turnin Warp-Raider Nesaad
+accept Request for Assistance
+turnin That Little Extra Kick
+turnin Recharging the Batteries
 complete Curse of the Violet Tower
 turnin Curse of the Violet Tower
+turnin Request for Assistance | Gahruj, Midrealm Post.
+accept Rightful Repossession
+complete Rightful Repossession | Box of Surveying Equipment: loot Box of Surveying Equipment.
+turnin Rightful Repossession
+accept An Audience with the Prince
 accept New Opportunities | Mehrdad, the Stormspire.
-accept Flora of the Eco-Domes | Aurine Moonblaze, Eco-Dome Midrealm.
 fp The Stormspire
-complete New Opportunities
+complete New Opportunities | Ivory Bell: loot Ivory Bell.
 complete Flora of the Eco-Domes
 turnin New Opportunities
+accept Run a Diagnostic!
+complete Run a Diagnostic! | Diagnostic Results: loot Diagnostic Equipment.
+turnin Run a Diagnostic!
+accept Deal With the Saboteurs
+complete Deal With the Saboteurs
+turnin Deal With the Saboteurs
+turnin An Audience with the Prince
 turnin Flora of the Eco-Domes
 accept Creatures of the Eco-Domes
 complete Creatures of the Eco-Domes
 turnin Creatures of the Eco-Domes
 accept When Nature Goes Too Far
-complete When Nature Goes Too Far [group=2]
+complete When Nature Goes Too Far [group=2] | Hulking Hydra Heart drops from Markaru.
 turnin When Nature Goes Too Far
-accept Run a Diagnostic!
-complete Run a Diagnostic!
-turnin Run a Diagnostic!
-accept Deal With the Saboteurs
-complete Deal With the Saboteurs
-turnin Deal With the Saboteurs
 level 69
 note Fly to Shadowmoon Valley (via Shattrath) for the last levels.

@@ -31,7 +31,7 @@ function TH:Build()
     local info = ns.Compat.PlayerInfo()
     local p = ns.char.gearProfile and ns.Gear:ProfileById(ns.char.gearProfile)
     if p and p.class == info.class then
-        local b, why = ns.Talents:BuildForProfile(p, info.level)
+        local b, why = ns.Talents:BuildForProfile(p)
         return b, why, p
     end
     return ns.Talents:ActiveBuild(), nil, nil
@@ -162,10 +162,10 @@ function TH:PanelText(st)
         if st.blocked then L[#L + 1] = "|cffff7777Next pick " .. st.blocked .. ".|r" end
     end
     if st.deviations > 0 then
-        L[#L + 1] = string.format("|cffffaa55Your talents differ from this plan by %d point(s). Suggestions continue with the plan's next missing pick.|r", st.deviations)
+        L[#L + 1] = string.format("|cffffaa55Your talents differ from this plan by %d point(s). Suggestions continue with the plan's next missing pick; matching the plan exactly would need a respec (TBCGuide never resets talents).|r", st.deviations)
     end
     if st.unspent and st.unspent > 0 then L[#L + 1] = st.unspent .. " point(s) to spend - click the talent yourself." end
-    L[#L + 1] = "|cff999999" .. ns.TalentProfileBuilds.source .. "|r"
+    L[#L + 1] = "|cff999999" .. ns.Talents:SourceLine(st.build) .. "|r"
     return table.concat(L, "\n")
 end
 

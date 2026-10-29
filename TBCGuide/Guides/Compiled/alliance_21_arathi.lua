@@ -6,7 +6,7 @@ ns.Guides:Register({
   id="A_Arathi", name="Arathi Highlands (Refuge Pointe)", faction="Alliance", chapter="Azeroth",
   minLevel=30, maxLevel=34, zone=45, zoneName="Arathi Highlands",
   desc="Refuge Pointe, Northfold Manor, Stromgarde and the Shards of Myzrael. Then south to Stranglethorn.",
-  next={{id="A_Stranglethorn"},},
+  next={{id="A_Desolace"},},
   steps={
     {"accept",q=642,title="The Princess Trapped",npc="Shards of Myzrael",z=45,x=62.5,y=33.7,text="The Shards of Myzrael object, south-east of Refuge Pointe.",v=1},
     {"complete",q=642,title="The Princess Trapped",text="Kill Kobolds at Drywhisker Gorge for Iridescent Shards.",v=1},
@@ -40,6 +40,6 @@ ns.Guides:Register({
     {"train",text="No shaman trainer in this zone - train at the next town or capital.",classes={"SHAMAN"},v=1},
     {"train",text="No warlock trainer in this zone - train at the next town or capital.",classes={"WARLOCK"},v=1},
     {"train",text="No warrior trainer in this zone - train at the next town or capital.",classes={"WARRIOR"},v=1},
-    {"note",text="Fly from Refuge Pointe to Ironforge or Stormwind, then on to Booty Bay or Rebel Camp (northern Stranglethorn).",v=1},
+    {"note",text="Next: Desolace in Kalimdor. Fly from Refuge Pointe to Ironforge first (a Desolace quest starts there).",v=1},
   },
 })

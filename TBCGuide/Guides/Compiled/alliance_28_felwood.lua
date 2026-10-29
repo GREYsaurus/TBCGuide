@@ -32,6 +32,9 @@ ns.Guides:Register({
     {"accept",q=4101,title="Cleansing Felwood",npc="Arathandris Silversky",z=361,x=54.2,y=86.8,text="Arathandris Silversky.",v=1},
     {"complete",q=4101,title="Cleansing Felwood",text="Cenarion Plant Salve - gather from Felwood.",v=1},
     {"turnin",q=4101,title="Cleansing Felwood",npc="Arathandris Silversky",z=361,x=54.2,y=86.8,v=1},
+    {"accept",q=4103,title="Salve via Hunting",npc="Arathandris Silversky",z=361,x=54.2,y=86.8,text="Arathandris Silversky. Needs Cleansing Felwood turned in.",v=1},
+    {"complete",q=4103,title="Salve via Hunting",text="Corrupted Soul Shards from Cursed Oozes in the Ruins of Constellas, west of the road.",v=1},
+    {"turnin",q=4103,title="Salve via Hunting",npc="Arathandris Silversky",z=361,x=54.2,y=86.8,v=1},
     {"level",level=54,v=1},
     {"train",npc="Golhine the Hooded",z=361,x=61.9,y=24.5,classes={"DRUID"},v=1},
     {"train",npc="Kaerbrus",z=361,x=61.9,y=23.6,classes={"HUNTER"},v=1},
@@ -42,6 +45,6 @@ ns.Guides:Register({
     {"train",text="No shaman trainer in this zone - train at the next town or capital.",classes={"SHAMAN"},v=1},
     {"train",text="No warlock trainer in this zone - train at the next town or capital.",classes={"WARLOCK"},v=1},
     {"train",text="No warrior trainer in this zone - train at the next town or capital.",classes={"WARRIOR"},v=1},
-    {"note",text="Seeking Spiritual Aid continues in Winterspring - optional. Fly to Ironforge, then to Morgan's Vigil in the Burning Steppes.",v=1},
+    {"note",text="Fly to Ironforge, then to Morgan's Vigil in the Burning Steppes.",v=1},
   },
 })

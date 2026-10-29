@@ -1,0 +1,53 @@
+# TBCGuide - Searing Gorge (47-50), both factions
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide Both_SearingGorge
+@name Searing Gorge (Thorium Point)
+@faction Both
+@levels 47-50
+@zone Searing Gorge
+@chapter Azeroth
+@desc Thorium Point's bounty board and Hansel Heavyhands' hunts, then Kalaran Windblade's chain: the Flawless Flame, the Twilight shamans and setting the sentry braziers ablaze. Neutral hub, same route for both factions.
+@next Both_UngoroCrater
+
+note Alliance: fly to Thelsamar, ride south into the Badlands and west past Kargath (Horde town) into the Searing Gorge. Horde: fly to Kargath and ride west. Thorium Point is in the north-west of the Gorge. Most quests here need level 45.
+fp Thorium Point
+accept STOLEN: Smithing Tuyere and Lookout's Spyglass | The Wanted board at Thorium Point.
+accept JOB OPPORTUNITY: Culling the Competition | Same board.
+accept Curse These Fat Fingers | Hansel Heavyhands.
+accept Fiery Menace! | Hansel Heavyhands.
+accept Incendosaurs? Whateverosaur is More Like It | Hansel Heavyhands.
+accept Divine Retribution | Kalaran Windblade, sitting by the ruined tower south of Thorium Point.
+turnin Divine Retribution
+accept The Flawless Flame
+complete Fiery Menace! | Greater Lava Spiders all around Thorium Point.
+complete Incendosaurs? Whateverosaur is More Like It | Incendosaurs at the lava lake east of Thorium Point.
+complete The Flawless Flame [obj=1] | Heart of Flame from Blazing Elementals in the middle of the Gorge.
+complete JOB OPPORTUNITY: Culling the Competition | Dark Iron Taskmasters and Slavers around the Cauldron.
+complete STOLEN: Smithing Tuyere and Lookout's Spyglass | Tuyere from Dark Iron Steamsmiths, Spyglass from Dark Iron Lookouts, around the Cauldron.
+complete Curse These Fat Fingers | Heavy War Golems in the south-west of the Gorge.
+complete The Flawless Flame [obj=2] | Golem Oil from Tempered War Golems in the south-east.
+turnin The Flawless Flame | Kalaran Windblade.
+accept Forging the Shaft
+complete Forging the Shaft | Thorium Plated Dagger drops from Dark Iron Geologists at the dig in the east.
+turnin Forging the Shaft | Kalaran Windblade.
+accept The Flame's Casing
+complete The Flame's Casing | Symbol of Ragnaros drops from Twilight Dark Shamans at the Twilight camp in the west.
+turnin The Flame's Casing
+accept 3453 The Torch of Retribution
+turnin 3453 The Torch of Retribution
+accept 3454 The Torch of Retribution
+turnin 3454 The Torch of Retribution | Take the Torch of Retribution from beside Kalaran.
+accept Squire Maltrake
+turnin Squire Maltrake | Squire Maltrake appears next to the torch.
+accept Set Them Ablaze!
+complete Set Them Ablaze! | Light the two Sentry Braziers at the south edge of the Gorge, by the Blackrock Mountain bridge. Dark Iron sentries stand nearby.
+turnin Set Them Ablaze! | Squire Maltrake.
+turnin STOLEN: Smithing Tuyere and Lookout's Spyglass | Taskmaster Scrange, Thorium Point.
+turnin JOB OPPORTUNITY: Culling the Competition
+turnin Curse These Fat Fingers | Hansel Heavyhands.
+turnin Fiery Menace!
+turnin Incendosaurs? Whateverosaur is More Like It
+level 49
+train
+note Fly from Thorium Point to Ironforge (Alliance) or Kargath / Orgrimmar (Horde), and on to Un'Goro Crater through Tanaris (Gadgetzan) or Marshal's Refuge if you have it.

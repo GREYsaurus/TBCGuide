@@ -11,82 +11,82 @@
 @next H_Nagrand
 
 accept A'dal [optional] | Leads you to A'dal in Shattrath.
-turnin A'dal [optional]
-fp Shattrath City
-note In Shattrath, pick the Aldor or the Scryers. Either is fine for leveling.
-accept Arakkoa War Path | Advisor Faila, Stonebreaker Hold.
+turnin A'dal [optional] | Turned in at Shattrath City.
+accept What Happens in Terokkar Stays in Terokkar | Shadowstalker Kaide.
+accept Olemba Seed Oil | Rakoria.
+accept Wanted: Bonelashers Dead!
+accept Vestments of the Wolf Spirit | Malukaz.
 accept An Unwelcome Presence | Kurgatok.
 accept Magical Disturbances
-accept Vestments of the Wolf Spirit | Malukaz.
 accept Stymying the Arakkoa | Rokag.
-accept Olemba Seed Oil | Rakoria.
-accept What Happens in Terokkar Stays in Terokkar | Shadowstalker Kaide.
-accept Speak with Scout Neftis
-accept Wanted: Bonelashers Dead!
+fp Shattrath City
+note In Shattrath, pick the Aldor or the Scryers. Either is fine for leveling.
 fp Stonebreaker Hold
+accept Arakkoa War Path | Advisor Faila, Stonebreaker Hold.
+accept Speak with Scout Neftis
 bind Stonebreaker Hold
+complete Olemba Seed Oil | Olemba Seed: loot Olemba Cone.
+complete What Happens in Terokkar Stays in Terokkar
 complete Arakkoa War Path
 complete An Unwelcome Presence
-complete Magical Disturbances
-complete Vestments of the Wolf Spirit
-complete Stymying the Arakkoa
-complete Olemba Seed Oil
-complete What Happens in Terokkar Stays in Terokkar
-turnin Arakkoa War Path
-turnin An Unwelcome Presence
-accept The Firewing Liaison
-turnin Magical Disturbances
-turnin Vestments of the Wolf Spirit
-accept Patriarch Ironjaw
-turnin Stymying the Arakkoa
 turnin Olemba Seed Oil
 accept And Now, the Moment of Truth
-turnin What Happens in Terokkar Stays in Terokkar
+accept 9960 What's Wrong at Cenarion Thicket? | Tooki.
+complete Vestments of the Wolf Spirit | Timber Worg Pelt drops from Timber Worg and Timber Worg Alpha.
+turnin Vestments of the Wolf Spirit
+accept Patriarch Ironjaw
+complete Magical Disturbances
+turnin Magical Disturbances
 turnin Speak with Scout Neftis
 accept Who Are They?
 complete Who Are They?
 turnin Who Are They?
 accept Kill the Shadow Council!
-complete Kill the Shadow Council!
-turnin Kill the Shadow Council!
-complete The Firewing Liaison
-complete Patriarch Ironjaw
+complete Patriarch Ironjaw | Ironjaw's Pelt drops from Ironjaw.
 complete And Now, the Moment of Truth
 complete Wanted: Bonelashers Dead!
-turnin The Firewing Liaison
-turnin Patriarch Ironjaw
-accept Welcoming the Wolf Spirit
-turnin And Now, the Moment of Truth
-turnin Wanted: Bonelashers Dead!
-turnin Welcoming the Wolf Spirit
-accept 9960 What's Wrong at Cenarion Thicket? | Tooki.
 turnin 9960 What's Wrong at Cenarion Thicket? | Earthbinder Tavgren, Cenarion Thicket.
 accept Strange Energy
 accept Clues in the Thicket
-complete Strange Energy
-complete Clues in the Thicket
+complete Strange Energy | Teromoth Sample drops from Teromoth. Vicious Teromoth Sample drops from Vicious Teromoth.
+complete Clues in the Thicket | Click Strange Object.
 turnin Strange Energy
 turnin Clues in the Thicket
 accept By Any Means Necessary
 turnin By Any Means Necessary
 accept Wind Trader Lathrai
-turnin Wind Trader Lathrai
+turnin Wind Trader Lathrai | Turned in at Shattrath City.
 accept A Personal Favor
-complete A Personal Favor
-turnin A Personal Favor
+complete A Personal Favor | Lathrai's Stolen Goods drops from Skithian Dreadhawk and Skithian Windripper.
+turnin A Personal Favor | Turned in at Shattrath City.
 accept Investigate Tuurem
 turnin Investigate Tuurem
 accept What Are These Things?
+turnin Arakkoa War Path
+complete Kill the Shadow Council!
+turnin Kill the Shadow Council!
+complete Stymying the Arakkoa
+turnin Stymying the Arakkoa
+turnin Wanted: Bonelashers Dead!
 turnin What Are These Things?
 accept Report to Stonebreaker Camp
+turnin Patriarch Ironjaw
+accept Welcoming the Wolf Spirit
+turnin Welcoming the Wolf Spirit
+turnin An Unwelcome Presence
+accept The Firewing Liaison
+turnin What Happens in Terokkar Stays in Terokkar
+complete The Firewing Liaison
+turnin The Firewing Liaison
 turnin Report to Stonebreaker Camp
 accept Attack on Firewing Point
 complete Attack on Firewing Point
 turnin Attack on Firewing Point
 accept The Final Code
-complete The Final Code
+complete The Final Code | Click Mana Bomb.
 turnin The Final Code
 accept Letting Earthbinder Tavgren Know
+turnin And Now, the Moment of Truth
 turnin Letting Earthbinder Tavgren Know
 accept An Improper Burial | Commander Ra'vaj, Sha'tari Base Camp.
 complete An Improper Burial
@@ -100,8 +100,8 @@ turnin The Fallen Exarch
 accept For the Fallen
 complete For the Fallen
 turnin For the Fallen
-accept Terokkarantula
-complete Terokkarantula [group=2]
+accept Terokkarantula | Group quest: Terokkarantula is elite.
+complete Terokkarantula [group=2] | Elite: Terokkarantula; bring help or skip.
 turnin Terokkarantula
 level 65
 note Ride west from Shattrath into Nagrand; Garadar is the Horde town in the north.

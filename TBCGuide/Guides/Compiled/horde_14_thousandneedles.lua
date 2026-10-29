@@ -6,7 +6,7 @@ ns.Guides:Register({
   id="H_ThousandNeedles", name="Thousand Needles (Freewind Post)", faction="Horde", chapter="Azeroth",
   minLevel=29, maxLevel=33, zone=400, zoneName="Thousand Needles",
   desc="Freewind Post, the Grimtotem and centaur camps, and the Shimmering Flats racing goblins and gnomes.",
-  next={{id="H_Arathi"},},
+  next={{id="H_Desolace"},},
   steps={
     {"turnin",q=1195,title="The Sacred Flame",npc="Zangen Stonehoof",z=1638,x=55,y=51.4,text="Turned in at Thunder Bluff.",optional=true,v=1},
     {"accept",q=1196,title="The Sacred Flame",npc="Zangen Stonehoof",z=1638,x=55,y=51.4,optional=true,v=1},
@@ -142,6 +142,6 @@ ns.Guides:Register({
     {"train",text="No shaman trainer in this zone - train at the next town or capital.",classes={"SHAMAN"},v=1},
     {"train",text="No warlock trainer in this zone - train at the next town or capital.",classes={"WARLOCK"},v=1},
     {"train",text="No warrior trainer in this zone - train at the next town or capital.",classes={"WARRIOR"},v=1},
-    {"note",text="Take the zeppelin to the Undercity and fly or ride to Hammerfall (Arathi Highlands).",v=1},
+    {"note",text="Next: Desolace, west of Stonetalon Mountains.",v=1},
   },
 })

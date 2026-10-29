@@ -16,136 +16,136 @@ accept Arrival in Outland
 turnin Arrival in Outland | Vlagga Freyfeather, wind rider master on the Stair.
 accept Journey to Thrallmar
 fly Thrallmar
+fp Thrallmar
 turnin Journey to Thrallmar | General Krakork.
 accept Report to Nazgrel [optional]
 turnin Report to Nazgrel [optional]
-fp Thrallmar
 bind Thrallmar
 accept Eradicate the Burning Legion | Nazgrel.
-accept Bonechewer Blood | Vurtok Axebreaker.
 accept I Work... For the Horde! | Megzeg Nukklebust.
-accept Preparing the Salve | Grelag.
-accept The Warp Rifts | Ogath the Mad.
 turnin Eradicate the Burning Legion | Sergeant Shatterskull, Reaver's Fall area.
 accept Felspark Ravine
 complete Felspark Ravine | Demons in Felspark Ravine.
 turnin Felspark Ravine
 accept Forward Base: Reaver's Fall
+accept Wanted: Worg Master Kruush | Spinebreaker Post wanted poster.
+complete Wanted: Worg Master Kruush | Zeth'Gor (east).
+turnin Wanted: Worg Master Kruush
+accept Zeth'Gor Must Burn!
+accept Preparing the Salve | Grelag.
+accept The Warp Rifts | Ogath the Mad.
 turnin Forward Base: Reaver's Fall | Forward Commander To'arch.
 accept Disrupt Their Reinforcements
-complete Disrupt Their Reinforcements
+complete Disrupt Their Reinforcements | Click Portal Kruul and Portal Xilus.
 turnin Disrupt Their Reinforcements
 accept Mission: Gateways Murketh and Shaadraz
 complete Mission: Gateways Murketh and Shaadraz | Use the wind rider at Reaver's Fall.
 turnin Mission: Gateways Murketh and Shaadraz
-accept Mission: The Abyssal Shelf
+accept Mission: The Abyssal Shelf | Group quest: Fel Cannon and Gan'arg Peon are elite.
 accept Return to Thrallmar
-complete Mission: The Abyssal Shelf
+complete Mission: The Abyssal Shelf | Elite: Fel Cannon and Gan'arg Peon; bring help or skip.
 turnin Mission: The Abyssal Shelf
+fp Spinebreaker Ridge
+turnin Return to Thrallmar
+accept Forge Camp: Mageddon
+accept Bonechewer Blood | Vurtok Axebreaker.
 complete Bonechewer Blood | Bonechewer orcs along the road.
 complete I Work... For the Horde! | Collect the debris near Thrallmar.
-complete Preparing the Salve
+complete Preparing the Salve | Hellfire Spineleaf: loot Hellfire Spineleaf.
 complete The Warp Rifts | Void Ridge warp rifts.
 turnin Bonechewer Blood
 accept Apothecary Zelana
-turnin I Work... For the Horde!
-accept Burn It Up... For the Horde!
+turnin Apothecary Zelana | Spinebreaker Post, south.
+accept Spinebreaker Post
 turnin Preparing the Salve
 accept Investigate the Crash
-turnin The Warp Rifts
-accept Void Ridge
-turnin Return to Thrallmar
-accept Forge Camp: Mageddon
-turnin Apothecary Zelana | Spinebreaker Post, south.
-fp Spinebreaker Ridge
-accept Spinebreaker Post
 turnin Spinebreaker Post
 accept Boiling Blood
 complete Boiling Blood
 turnin Boiling Blood
 accept Apothecary Antonivich
+accept The Eyes of Grillok | Zezzak.
+complete The Eyes of Grillok
+turnin The Eyes of Grillok
+accept Grillok "Darkeye"
+complete Zeth'Gor Must Burn!
+turnin The Warp Rifts
+accept Void Ridge
+turnin I Work... For the Horde!
+accept Burn It Up... For the Horde!
+complete Burn It Up... For the Horde!
+complete Investigate the Crash
+complete Void Ridge | Void Ridge Soul Shard drops from Collapsing Voidwalker and Vacillating Voidcaller.
+complete Forge Camp: Mageddon | Head of Forgefiend Razorsaw drops from Razorsaw.
+turnin Burn It Up... For the Horde!
 turnin Apothecary Antonivich
-accept A Burden of Souls
-complete A Burden of Souls
+accept A Burden of Souls | Group quest: Drillmaster Zurok is elite.
+complete A Burden of Souls | Elite: Drillmaster Zurok; bring help or skip.
 turnin A Burden of Souls
 accept The Demoniac Scryer
 complete The Demoniac Scryer
 turnin The Demoniac Scryer
 accept Report to Nazgrel
-accept Wanted: Worg Master Kruush | Spinebreaker Post wanted poster.
-complete Wanted: Worg Master Kruush | Zeth'Gor (east).
-turnin Wanted: Worg Master Kruush
-accept The Eyes of Grillok | Zezzak.
-complete The Eyes of Grillok
-accept Zeth'Gor Must Burn!
-turnin The Eyes of Grillok
-accept Grillok "Darkeye"
-complete Zeth'Gor Must Burn!
-complete Grillok "Darkeye"
-turnin Zeth'Gor Must Burn!
-turnin Grillok "Darkeye"
-complete Burn It Up... For the Horde!
-complete Investigate the Crash
-complete Void Ridge
-complete Forge Camp: Mageddon
-turnin Burn It Up... For the Horde!
-turnin Investigate the Crash
-turnin Void Ridge
 turnin Forge Camp: Mageddon
-accept Cannons of Rage
+accept Cannons of Rage | Needs level 60. If you are lower, TBCGuide skips it and moves on.
 complete Cannons of Rage
 turnin Cannons of Rage
 accept Doorway to the Abyss
-complete Doorway to the Abyss
+complete Doorway to the Abyss | Burning Legion Gate Key drops from Warbringer Arix'Amal. Click Forge Camp: Portal Glyph.
 turnin Doorway to the Abyss
 turnin Report to Nazgrel
-accept The Assassin
+accept The Assassin | Needs level 60. If you are lower, TBCGuide skips it and moves on.
 turnin The Assassin | The fel orc corpse north of Thrallmar.
-accept A Strange Weapon
+accept A Strange Weapon | Needs level 60. If you are lower, TBCGuide skips it and moves on.
 turnin A Strange Weapon
-accept The Warchief's Mandate
+accept The Warchief's Mandate | Needs level 60. If you are lower, TBCGuide skips it and moves on.
 turnin The Warchief's Mandate | Far Seer Regulkut at the Mag'har Post (north-west).
-accept A Spirit Guide
+accept A Spirit Guide | Needs level 60. If you are lower, TBCGuide skips it and moves on.
 complete A Spirit Guide
 turnin A Spirit Guide
 accept The Mag'har
 turnin The Mag'har
 accept 9498 Falcon Watch [race=Orc,Troll,Tauren,Scourge] | Martik Tor'seldori.
 accept 9499 Falcon Watch [race=BloodElf]
+complete Grillok "Darkeye" | Grillok's Eyepatch drops from Grillok "Darkeye".
+turnin Void Ridge
+turnin Grillok "Darkeye"
+turnin Zeth'Gor Must Burn!
+turnin Investigate the Crash
 turnin 9498 Falcon Watch [race=Orc,Troll,Tauren,Scourge]
 turnin 9499 Falcon Watch [race=BloodElf]
-fp Falcon Watch
-accept Magic of the Arakkoa | Arcanist Calesthris Dawnstar.
-accept Birds of a Feather | Falconer Drenna Riverwind.
-accept In Need of Felblood | Ryathen the Somber.
-accept Source of the Corruption | Apothecary Azethen.
 accept The Great Fissure | Ranger Captain Venn'ren.
+accept Birds of a Feather | Falconer Drenna Riverwind.
 accept Arelion's Journal | Magistrix Carinda.
-complete Magic of the Arakkoa
+accept Source of the Corruption | Apothecary Azethen.
+accept In Need of Felblood | Ryathen the Somber.
 complete Birds of a Feather
-complete In Need of Felblood
-complete Source of the Corruption
+complete In Need of Felblood | Felblood Sample drops from Terrorfiend.
+complete Source of the Corruption | Demonic Essence drops from Illidari Taskmaster.
 complete The Great Fissure
-complete Arelion's Journal
-turnin Magic of the Arakkoa
-turnin Birds of a Feather
-accept Trueflight Arrows
+complete Arelion's Journal | Arelion's Journal drops from Blistering Oozeling.
 turnin In Need of Felblood
 accept The Cleansing Must Be Stopped
 turnin Source of the Corruption
-turnin The Great Fissure
-accept Marking the Path
 turnin Arelion's Journal
 accept Arelion's Secret
 turnin Arelion's Secret
 accept The Mistress Revealed
-complete Trueflight Arrows
+turnin The Great Fissure
+accept Marking the Path
+turnin Birds of a Feather
+accept Trueflight Arrows | Needs level 61. If you are lower, TBCGuide skips it and moves on.
+complete Trueflight Arrows | Bonestripper Tail Feather drops from Bonestripper Vulture.
 complete The Cleansing Must Be Stopped
-complete Marking the Path
+complete Marking the Path | Click Central Beacon and Western Beacon.
 complete The Mistress Revealed
 turnin Trueflight Arrows
-turnin The Cleansing Must Be Stopped
 turnin Marking the Path
+fp Falcon Watch
+turnin The Cleansing Must Be Stopped
+accept Magic of the Arakkoa | Arcanist Calesthris Dawnstar.
+complete Magic of the Arakkoa | Haal'eshi Scroll drops from Avruu, Haal'eshi Talonguard and Haal'eshi Windwalker.
+turnin Magic of the Arakkoa
 turnin The Mistress Revealed
 accept Arelion's Mistress
 complete Arelion's Mistress

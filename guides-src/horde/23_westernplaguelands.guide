@@ -8,21 +8,37 @@
 @zone Western Plaguelands
 @chapter Azeroth
 @desc The Bulwark: the Scourge cauldron chain, the plagued farms, Andorhal and the wildlife quests. At 58 go straight to the Dark Portal.
-@next H_Hellfire
+@next Both_EasternPlaguelands
 
+accept 5094 A Call to Arms: The Plaguelands! [zone=Undercity] | Harbinger Balthazad in the Undercity (Warcaller Gorlach in Orgrimmar has the same quest). Needed for the Bulwark chain.
+turnin 5094 A Call to Arms: The Plaguelands! [zone=Tirisfal Glades] | High Executor Derrington, the Bulwark.
 accept Scarlet Diversions [zone=Tirisfal Glades] | High Executor Derrington, the Bulwark.
 complete Scarlet Diversions | Plant the banner at the Scarlet camp in the north and kill Scarlet troops.
 turnin Scarlet Diversions [zone=Tirisfal Glades] | Turned in at Tirisfal Glades.
+accept All Along the Watchtowers [zone=Tirisfal Glades] | High Executor Derrington.
 accept The Scourge Cauldrons [zone=Tirisfal Glades]
 turnin The Scourge Cauldrons [zone=Tirisfal Glades] | Shadow Priestess Vandis.
 accept Target: Felstone Field [zone=Tirisfal Glades]
 complete Target: Felstone Field | The cauldron at Felstone Field; kill the Cauldron Lord for the key.
 turnin Target: Felstone Field
 accept Return to the Bulwark
+complete All Along the Watchtowers | Mark the three watchtowers in Andorhal with the torch.
+accept A Matter of Time | Chromie in the ruined inn at Andorhal.
+complete A Matter of Time | Use the Temporal Displacer by the silos in Andorhal and kill the Temporal Parasites that appear.
+turnin A Matter of Time
+accept Counting Out Time
+complete Counting Out Time | Andorhal Watches from the small lockboxes in the Andorhal houses.
+turnin Counting Out Time
 turnin Return to the Bulwark [zone=Tirisfal Glades] | Turned in at Tirisfal Glades.
+turnin All Along the Watchtowers [zone=Tirisfal Glades]
 accept Target: Dalson's Tears [zone=Tirisfal Glades]
 complete Target: Dalson's Tears | The cauldron at Dalson's Tears.
 turnin Target: Dalson's Tears
+accept Mrs. Dalson's Diary [optional] | The diary in the Dalson farmhouse.
+turnin Mrs. Dalson's Diary [optional]
+accept 5060 Locked Away | The locked cabinet in the farmhouse.
+complete 5060 Locked Away | Farmer Dalson, upstairs in the barn, drops the cabinet key.
+turnin 5060 Locked Away
 accept 5232 Return to the Bulwark
 turnin 5232 Return to the Bulwark [zone=Tirisfal Glades] | Turned in at Tirisfal Glades.
 accept Target: Writhing Haunt [zone=Tirisfal Glades]
@@ -46,6 +62,6 @@ accept 5236 Return to the Bulwark
 turnin 5236 Return to the Bulwark [zone=Tirisfal Glades] | Turned in at Tirisfal Glades.
 accept Mission Accomplished! [zone=Tirisfal Glades]
 turnin Mission Accomplished! [zone=Tirisfal Glades] | Turned in at Tirisfal Glades.
-level 58
-train | Train before Outland.
-note At 58 head for the Dark Portal in the Blasted Lands. Take the quest Through the Dark Portal from the herald in Orgrimmar or the Undercity.
+level 57
+train
+note Next: the Eastern Plaguelands, east along the Thondroril River.

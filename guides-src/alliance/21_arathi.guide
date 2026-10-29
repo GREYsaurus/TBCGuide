@@ -8,7 +8,7 @@
 @zone Arathi Highlands
 @chapter Azeroth
 @desc Refuge Pointe, Northfold Manor, Stromgarde and the Shards of Myzrael. Then south to Stranglethorn.
-@next A_Stranglethorn
+@next A_Desolace
 
 accept The Princess Trapped | The Shards of Myzrael object, south-east of Refuge Pointe.
 complete The Princess Trapped | Kill Kobolds at Drywhisker Gorge for Iridescent Shards.
@@ -34,4 +34,4 @@ complete Breaking the Keystone | Rod of Order drops from Fozruk.
 turnin Breaking the Keystone
 level 33
 train
-note Fly from Refuge Pointe to Ironforge or Stormwind, then on to Booty Bay or Rebel Camp (northern Stranglethorn).
+note Next: Desolace in Kalimdor. Fly from Refuge Pointe to Ironforge first (a Desolace quest starts there).

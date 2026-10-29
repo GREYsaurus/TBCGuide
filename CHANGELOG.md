@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.9.1
+
+### Added
+- **New zones in the 31-60 route:**
+  - Desolace (Alliance and Horde) and the Badlands (Alliance and Horde);
+  - Searing Gorge and Eastern Plaguelands (shared, with Horde-only Nathanos steps).
+- **Expanded guides:** Horde Feralas (4 → 14 quests), Alliance Western Plaguelands (9 → 26, with the Chillwind cauldron chain), Horde Western Plaguelands (14 → 20), Felwood (both), and Horde Blade's Edge (15 → 25, Mok'Nathal Village).
+  - In the route model, grinding from 30 to 58 falls from about 17 to 12.3 levels (Alliance) and from 16 to 12.2 (Horde). See docs/LEVELS_31_60.md.
+- **Outland:** all 13 guides were reordered within their travel segments (estimated travel down about 35%), with 166 data notes. See docs/OUTLAND.md.
+- **Talent plans for every spec**, taken from the Icy Veins TBC Classic leveling guides in their own point order. Each runs from the first point at 10 to 70 with no forced respec, including Demonology from level 10. New: Marksmanship, Survival, Subtlety, Discipline, Arcane, Demonology, Restoration Druid and Frost single-target. See docs/TALENTS.md.
+
+### Changed
+- **Existing talent plans** now follow the Icy Veins builds. Old saved choices still resolve to the new plans, and learned talents are never touched. Assassination keeps TBCGuide's own plan, because Icy Veins has no Assassination leveling build.
+- **Saved progress** follows guides reordered across several releases (0.7.0 or 0.9.0 → now).
+- **Shared guides** can mark steps `[faction=Horde]` or `[faction=Alliance]`.
+
 ## 0.9.0
 
 Our biggest update yet: a first-login setup, bag add-on support, non-English client support, class trainer suggestions, talent suggestions in the talent window, an auction house upgrades tab, and a full route pass from level 1 to 60.

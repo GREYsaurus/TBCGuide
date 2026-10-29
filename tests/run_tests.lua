@@ -104,7 +104,9 @@ check(type(ns.char.progress["A_Human_Elwynn"]) ~= "string", "corrupt progress re
 for _, b in ipairs(ns.Talents.buildList) do
     local seq, errors = ns.Talents:Expand(b)
     check(#errors == 0, "build " .. b.id .. " valid: " .. table.concat(errors, "; "))
-    check(#seq == 61, "build " .. b.id .. " uses 61 points (" .. #seq .. ")")
+    -- Exception: the Icy Veins Destruction build spends 59 points (docs/TALENTS.md); nothing is invented.
+    local want = b.id == "warlock_destro_iv" and 59 or 61
+    check(#seq == want, "build " .. b.id .. " uses " .. want .. " points (" .. #seq .. ")")
 end
 
 -- Selector for every race/class at level 1 and at 60

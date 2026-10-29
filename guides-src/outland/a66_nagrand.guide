@@ -12,19 +12,25 @@
 
 fp Telaar
 bind Telaar
-accept Do My Eyes Deceive Me | Huntress Bintook, Telaar.
-accept HELP! | Corki, Telaar.
+accept The Ravaged Caravan | Huntress Kima.
+complete The Ravaged Caravan | Telaar Supply Crate: loot Telaar Supply Crate.
+turnin The Ravaged Caravan
 accept Wanted: Giselda the Crone
 accept Wanted: Zorbo the Advisor
-accept The Ravaged Caravan | Huntress Kima.
-accept Fierce Enemies | Warden Moi'bff Jill.
+accept The Nesingwary Safari | "Shotgun" Jones.
+accept Do My Eyes Deceive Me | Huntress Bintook, Telaar.
 turnin Do My Eyes Deceive Me
 accept Not On My Watch!
-turnin HELP! | Corki, in a cage at the Warmaul village.
-accept Corki's Gone Missing Again!
 complete Not On My Watch!
 turnin Not On My Watch!
 accept Mo'mor the Breaker
+accept Fierce Enemies | Warden Moi'bff Jill.
+complete Wanted: Giselda the Crone | Kil'sorrow Fortress (east).
+complete Wanted: Zorbo the Advisor
+turnin Wanted: Giselda the Crone
+turnin Wanted: Zorbo the Advisor
+complete Fierce Enemies | Obsidian Warbeads drops from Boulderfist Crusher, Boulderfist Mystic and Boulderfist Warrior and others.
+turnin Fierce Enemies
 turnin Mo'mor the Breaker
 accept The Ruins of Burning Blade
 complete The Ruins of Burning Blade
@@ -32,12 +38,13 @@ turnin The Ruins of Burning Blade
 accept The Twin Clefts of Nagrand
 complete The Twin Clefts of Nagrand
 turnin The Twin Clefts of Nagrand
-accept Diplomatic Measures
+accept Diplomatic Measures | Escort quest: start it when you are ready to follow.
+accept HELP! | Corki, Telaar.
 turnin Diplomatic Measures | Lantresor of the Blade.
 accept Ruthless Cunning
 accept Armaments for Deception
 complete Ruthless Cunning
-complete Armaments for Deception
+complete Armaments for Deception | Kil'sorrow Armaments drops from Kil'sorrow Cultist.
 turnin Ruthless Cunning
 turnin Armaments for Deception
 accept Returning the Favor
@@ -47,30 +54,24 @@ complete Body of Evidence
 turnin Returning the Favor
 turnin Body of Evidence
 accept Message to Telaar
+accept The Throne of the Elements | Elementalist Ioki.
+turnin HELP! | Corki, in a cage at the Warmaul village.
+accept Corki's Gone Missing Again!
 turnin Message to Telaar
-complete Wanted: Giselda the Crone | Kil'sorrow Fortress (east).
-complete Wanted: Zorbo the Advisor
-turnin Wanted: Giselda the Crone
-turnin Wanted: Zorbo the Advisor
-complete The Ravaged Caravan
-turnin The Ravaged Caravan
-complete Fierce Enemies
-turnin Fierce Enemies
 complete Corki's Gone Missing Again!
 turnin Corki's Gone Missing Again!
 accept Corki's Ransom
 complete Corki's Ransom
 turnin Corki's Ransom
 accept Cho'war the Pillager
-complete Cho'war the Pillager [group=2]
-turnin Cho'war the Pillager
-accept The Throne of the Elements | Elementalist Ioki.
+accept The Ring of Blood: Brokentoe [optional] | Gurgthock at the Ring of Blood.
+complete The Ring of Blood: Brokentoe [optional] | Elite: Brokentoe; bring help or skip. Escort: stay close; it fails if the NPC dies.
+turnin The Ring of Blood: Brokentoe [optional]
 turnin The Throne of the Elements
 accept A Rare Bean | Elementalist Lo'ap.
 accept Muck Diving
-accept The Underneath | Elementalist Untrag.
-complete A Rare Bean
-complete Muck Diving
+complete A Rare Bean | Digested Caracoli: loot Dung.
+complete Muck Diving | Muck-ridden Core drops from Muck Spawn.
 turnin A Rare Bean
 accept Agitated Spirits of Skysong
 turnin Muck Diving
@@ -82,35 +83,34 @@ turnin Blessing of Incineratus
 accept The Spirit Polluted
 complete The Spirit Polluted
 turnin The Spirit Polluted
+accept The Underneath | Elementalist Untrag.
 turnin The Underneath
 accept The Tortured Earth
 complete The Tortured Earth
 turnin The Tortured Earth
 accept Eating Damnation
-complete Eating Damnation
+complete Eating Damnation | Enraged Crusher Core drops from Enraged Crusher.
 turnin Eating Damnation
-accept The Nesingwary Safari | "Shotgun" Jones.
-turnin The Nesingwary Safari | Hemet Nesingwary's camp, north Nagrand.
-accept 9789 Clefthoof Mastery
+complete Cho'war the Pillager [group=2]
 accept 9854 Windroc Mastery
 accept 9857 Talbuk Mastery
+turnin The Nesingwary Safari | Hemet Nesingwary's camp, north Nagrand.
+accept 9789 Clefthoof Mastery
 complete 9789 Clefthoof Mastery
 complete 9854 Windroc Mastery
 complete 9857 Talbuk Mastery
 turnin 9789 Clefthoof Mastery
-turnin 9854 Windroc Mastery
-turnin 9857 Talbuk Mastery
 accept 9850 Clefthoof Mastery
+turnin 9854 Windroc Mastery
 accept 9855 Windroc Mastery
+turnin 9857 Talbuk Mastery
 accept 9858 Talbuk Mastery
 complete 9850 Clefthoof Mastery
 complete 9855 Windroc Mastery
 complete 9858 Talbuk Mastery
-turnin 9850 Clefthoof Mastery
-turnin 9855 Windroc Mastery
 turnin 9858 Talbuk Mastery
-accept The Ring of Blood: Brokentoe [optional] | Gurgthock at the Ring of Blood.
-complete The Ring of Blood: Brokentoe [optional]
-turnin The Ring of Blood: Brokentoe [optional]
+turnin 9855 Windroc Mastery
+turnin 9850 Clefthoof Mastery
+turnin Cho'war the Pillager
 level 67
 note Fly to Shattrath, then to Sylvanaar in the Blade's Edge Mountains (or ride north from Zangarmarsh).

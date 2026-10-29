@@ -12,101 +12,101 @@
 
 fp Sylvanaar
 bind Sylvanaar
-accept The Encroaching Wilderness | Rina Moonspring, Sylvanaar.
-accept The Bloodmaul Ogres | Commander Skyshadow.
-accept Into the Draenethyst Mine | Bronwyn Stouthammer.
-accept Strange Brew | Borgrim Stouthammer.
 accept The Trappings of a Vindicator | Vindicator Vuuleen.
+accept Strange Brew | Borgrim Stouthammer.
 accept Malaise | Daranelle.
-accept Killing the Crawlers | Sentinel Moonwhisper.
-complete The Encroaching Wilderness
-complete The Bloodmaul Ogres
-complete Into the Draenethyst Mine | Ogres in the Draenethyst Mine.
-complete Strange Brew
-complete The Trappings of a Vindicator
-complete Malaise
-complete Killing the Crawlers
-turnin The Encroaching Wilderness
-accept Marauding Wolves
-turnin The Bloodmaul Ogres
-accept The Bladespire Ogres
-turnin Into the Draenethyst Mine
-turnin Strange Brew
-accept Getting the Bladespire Tanked
-turnin The Trappings of a Vindicator
-accept Gorr'Dim, Your Time Has Come...
+complete Malaise | Plucked Lashh'an Feather drops from Lashh'an Talonite, Lashh'an Windwalker and Lashh'an Wing Guard and others.
 turnin Malaise
 accept Scratches
-turnin Killing the Crawlers
-complete Marauding Wolves
-complete The Bladespire Ogres
-complete Getting the Bladespire Tanked
+accept Killing the Crawlers | Sentinel Moonwhisper.
+accept Into the Draenethyst Mine | Bronwyn Stouthammer.
+complete Into the Draenethyst Mine | Ogres in the Draenethyst Mine.
+complete Strange Brew | Bloodmaul Brutebane Brew drops from Bloodmaul Brewmaster.
+turnin Into the Draenethyst Mine
+complete The Trappings of a Vindicator | Vindicator Vuuleen's Blade drops from Droggam. Vindicator Vuuleen's Shield drops from Mugdorg.
+complete Killing the Crawlers
+turnin Strange Brew
+accept Getting the Bladespire Tanked | Group quest: Bladespire Sober Defender is elite.
+turnin The Trappings of a Vindicator
+accept Gorr'Dim, Your Time Has Come...
+complete Getting the Bladespire Tanked | Elite: Bladespire Sober Defender; bring help or skip.
 complete Gorr'Dim, Your Time Has Come...
 complete Scratches
-turnin Marauding Wolves
-accept Protecting Our Own
-turnin The Bladespire Ogres
-turnin Getting the Bladespire Tanked
 turnin Gorr'Dim, Your Time Has Come...
 accept Planting the Banner
+turnin Getting the Bladespire Tanked
 turnin Scratches
-complete Protecting Our Own
-complete Planting the Banner
+accept The Encroaching Wilderness | Rina Moonspring, Sylvanaar.
+complete The Encroaching Wilderness
+turnin The Encroaching Wilderness
+accept Marauding Wolves
+complete Marauding Wolves | Thunderlord Dire Wolf Tail drops from Thunderlord Dire Wolf.
+turnin Marauding Wolves
+accept Protecting Our Own
+complete Protecting Our Own | Click Grove Seedling.
+complete Planting the Banner | Bladespire Clan Banner drops from Bladespire Champion. Helm of Gurn Grubnosh drops from Gurn Grubnosh.
 turnin Protecting Our Own
 accept A Dire Situation
-turnin Planting the Banner
-accept Where Did Those Darn Gnomes Go?
 complete A Dire Situation
 turnin A Dire Situation
+accept The Bloodmaul Ogres | Commander Skyshadow.
+complete The Bloodmaul Ogres
+turnin The Bloodmaul Ogres
+accept The Bladespire Ogres | Group quest: Bladespire Sober Defender is elite.
+turnin Killing the Crawlers
+turnin Planting the Banner
+accept Where Did Those Darn Gnomes Go?
+complete The Bladespire Ogres | Elite: Bladespire Sober Defender; bring help or skip.
+turnin The Bladespire Ogres
 turnin Where Did Those Darn Gnomes Go?
 accept Follow the Breadcrumbs
-turnin Follow the Breadcrumbs | Toshley's Station.
 fp Toshley's Station
-accept Picking Up Some Power Converters | Toshley.
-accept Crystal Clear | Nickwinkle the Metro-Gnome.
 accept What Came First, the Drake or the Egg? | Fizit "Doc" Clocktock.
+accept Crystal Clear | Nickwinkle the Metro-Gnome.
+turnin Follow the Breadcrumbs | Toshley's Station.
+accept Picking Up Some Power Converters | Toshley.
 complete Picking Up Some Power Converters
 complete Crystal Clear
-complete What Came First, the Drake or the Egg?
+complete What Came First, the Drake or the Egg? | Proto-Nether Drake Essence drops from Proto-Nether Drake. Adolescent Nether Drake Essence drops from Adolescent Nether Drake.
 turnin Picking Up Some Power Converters
-accept Ridgespine Menace
-accept Cutting Your Teeth
 accept Ride the Lightning
 turnin Crystal Clear
-accept Gauging the Resonant Frequency
-turnin What Came First, the Drake or the Egg?
+accept Gauging the Resonant Frequency | Escort quest: start it when you are ready to follow.
+accept Cutting Your Teeth
+accept Ridgespine Menace
 complete Ridgespine Menace
-complete Cutting Your Teeth
-complete Ride the Lightning
-complete Gauging the Resonant Frequency
+complete Cutting Your Teeth | Extra Sharp Daggermaw Tooth drops from Daggermaw Lashtail.
+complete Ride the Lightning | Scalewing Lightning Gland drops from Scalewing Serpent.
+complete Gauging the Resonant Frequency | Escort: stay close; it fails if the NPC dies.
 turnin Ridgespine Menace
 accept More than a Pound of Flesh
-turnin Cutting Your Teeth
 turnin Ride the Lightning
 accept Trapping the Light Fantastic
-turnin Gauging the Resonant Frequency
-complete More than a Pound of Flesh
+complete More than a Pound of Flesh | Ether-Energized Flesh drops from Fiendling Flesh Beast.
 complete Trapping the Light Fantastic
-turnin More than a Pound of Flesh
 turnin Trapping the Light Fantastic
 accept Show Them Gnome Mercy!
-complete Show Them Gnome Mercy!
+complete Show Them Gnome Mercy! | Collection of Souls: loot Collection of Souls.
 turnin Show Them Gnome Mercy!
-accept A Time for Negotiation... | Tree Warden Chawn, Evergrove (north).
+turnin More than a Pound of Flesh
+turnin Gauging the Resonant Frequency
+turnin Cutting Your Teeth
+turnin What Came First, the Drake or the Egg?
 fp Evergrove
+accept A Time for Negotiation... | Tree Warden Chawn, Evergrove (north).
 turnin A Time for Negotiation...
 accept ...and a Time for Action
-accept Poaching from Poachers
 accept Culling the Wild | Faradrella.
 accept Little Embers | Mosswood the Ancient.
 accept From the Ashes
+accept Poaching from Poachers
 complete ...and a Time for Action
-complete Poaching from Poachers
+complete Poaching from Poachers | Wyrmcult Net drops from Wyrmcult Poacher.
 complete Culling the Wild
-complete Little Embers
-complete From the Ashes
-turnin ...and a Time for Action
 turnin Poaching from Poachers
+complete Little Embers
+complete From the Ashes | Click Fertile Volcanic Soil.
+turnin ...and a Time for Action
 turnin Culling the Wild
 turnin Little Embers
 turnin From the Ashes

@@ -26,6 +26,9 @@ fp Bloodvenom Post
 accept Cleansing Felwood | Maybess Riverbreeze, Emerald Sanctuary.
 complete Cleansing Felwood | Blood Amber drops from Dessecus, Warpwood Moss Flayer and Warpwood Shredder.
 turnin Cleansing Felwood
+accept Salve via Hunting | Maybess Riverbreeze. Needs Cleansing Felwood turned in.
+complete Salve via Hunting | Corrupted Soul Shards from Cursed Oozes in the Ruins of Constellas, west of the road.
+turnin Salve via Hunting
 turnin Forces of Jaedenar
 accept Collection of the Corrupt Water
 complete Collection of the Corrupt Water | The corrupted moonwell in Jaedenar.

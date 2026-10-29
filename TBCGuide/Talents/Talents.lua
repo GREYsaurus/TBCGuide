@@ -7,8 +7,9 @@
 -- See the GNU General Public License for more details. The complete license text is in LICENSE.
 --
 -- Talent trees come from Talents/Data/TalentTrees.lua (generated from client DB2 tables).
--- Builds (Talents/Builds/*.lua) list talent picks in order, one entry per point, using talent
--- NAMES, e.g. {"Improved Heroic Strike", 3} = three points. The engine expands a build into an
+-- Builds (Talents/Builds/*.lua) list talent picks in order, each {talent, points}: the client
+-- talent id (stable in every client language, used by the Icy Veins plans) or a talent NAME
+-- (English, "Tree:Name" when ambiguous), e.g. {"Improved Heroic Strike", 3} = three points. The engine expands a build into an
 -- ordered list of {talentId, rank}, checks every pick against tier gating, prerequisites and max
 -- ranks, and can compare it with the character's live talents (player class only).
 
@@ -86,7 +87,13 @@ function Talents:Expand(build)
     local ranks, perTab = {}, { 0, 0, 0 }
     for _, pick in ipairs(build.picks or {}) do
         local name, count, note = pick[1], pick[2] or 1, pick[3]
-        local t, err = self:Find(build.class, name)
+        local t, err
+        if type(name) == "number" then
+            t = ci.byId[name]
+            if not t then err = "unknown talent id " .. name end
+        else
+            t, err = self:Find(build.class, name)
+        end
         if not t then
             errors[#errors + 1] = err
         else
@@ -201,10 +208,28 @@ function Talents:PrintPlan(build, live)
     ns:Print("Talent plan (" .. build.name .. "): " .. table.concat(parts, ", "))
 end
 
+-- Build ids used before the Icy Veins plans (saved per character as talentBuild) -> their
+-- replacement for the same spec. Only the recommendation changes; learned talents never do.
+Talents.ALIASES = {
+    warrior_arms_leveling = "warrior_arms_iv", warrior_fury_70 = "warrior_fury_iv", warrior_prot_70 = "warrior_prot_iv",
+    paladin_ret_leveling = "paladin_ret_iv", paladin_holy_70 = "paladin_holy_iv", paladin_prot_70 = "paladin_prot_iv",
+    hunter_bm_leveling = "hunter_bm_iv", hunter_bm_70 = "hunter_bm_iv", rogue_combat_leveling = "rogue_combat_iv",
+    priest_shadow_leveling = "priest_shadow_iv", priest_holy_70 = "priest_holy_iv",
+    shaman_enh_leveling = "shaman_enh_iv", shaman_ele_70 = "shaman_ele_iv", shaman_resto_70 = "shaman_resto_iv",
+    mage_frost_leveling = "mage_frost_aoe_iv", mage_fire_70 = "mage_fire_iv",
+    warlock_aff_leveling = "warlock_aff_iv", warlock_destro_70 = "warlock_destro_iv",
+    druid_feral_leveling = "druid_feral_iv", druid_balance_70 = "druid_balance_iv",
+}
+
+function Talents:Get(id)
+    if not id then return nil end
+    return self.builds[id] or self.builds[self.ALIASES[id] or ""]
+end
+
 -- Chosen build for this character: saved choice, else first leveling build for the class.
 function Talents:ActiveBuild()
     local class = ns.Compat.PlayerInfo().class
-    local b = ns.char.talentBuild and self.builds[ns.char.talentBuild]
+    local b = self:Get(ns.char.talentBuild)
     if b and b.class == class then return b end
     for _, cand in ipairs(self:BuildsFor(class)) do
         if cand.kind == "leveling" then return cand end

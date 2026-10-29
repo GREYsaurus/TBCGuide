@@ -8,7 +8,7 @@
 @zone The Hinterlands
 @chapter Azeroth
 @desc Revantusk Village: the Vilebranch trolls, the Wildhammer messages, Elder Torntusk and the Hinterlands wildlife.
-@next Both_UngoroCrater
+@next Both_SearingGorge
 
 fp Revantusk Village
 bind Revantusk Village
@@ -52,4 +52,4 @@ turnin Return to Primal Torntusk
 turnin Lard Lost His Lunch
 level 49
 train
-note Fly to Gadgetzan and ride north-west into Un'Goro Crater.
+note Next: the Searing Gorge, west of Kargath.

@@ -110,3 +110,14 @@ None of these have been done yet. Tick them off on a real client:
 
 **Levels 31-60** (docs/LEVELS_31_60.md)
 - [ ] Play a reordered 31-60 guide from a 0.7.0 save: the guide stays on the same step after updating.
+
+### Coverage pass (not yet run in the game)
+
+- [ ] **Alliance 33:** Arathi → Ironforge (Reclaimers breadcrumb) → Menethil → Auberdine → Desolace. Nijel's Point quests accept; the Malem escort completes.
+- [ ] **Horde 33:** Thousand Needles → Desolace. Khan Dez'hepah, then Centaur Bounty; the Shadowprey flight path is learned.
+- [ ] **Badlands:** the Alliance Ryedol chain reaches Ironforge. The Horde trip to Kargath on foot is survivable, and Kargath's quests accept at 36.
+- [ ] **Searing Gorge:** Thorium Point quests accept at 45+. Kalaran's chain reaches Set Them Ablaze!.
+- [ ] **Eastern Plaguelands:** Little Pamela is picked up in WPL; Horde sees the Nathanos steps and Alliance does not. The guide ends at 58 and hands off to Hellfire.
+- [ ] **Alliance WPL:** Courier Hammerfall in Ironforge gives the call to arms, and the cauldron chain flows through Chillwind Camp.
+- [ ] **Horde Feralas and Blade's Edge:** the new loops run in order with no step pointing back across the zone.
+- [ ] **Saved progress:** a 0.9.0 (or 0.7.0) save on a reordered guide (e.g. A_WesternPlaguelands, H_Hellfire) stays on the same step.

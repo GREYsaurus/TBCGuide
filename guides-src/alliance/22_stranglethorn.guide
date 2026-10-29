@@ -8,7 +8,7 @@
 @zone Stranglethorn Vale
 @chapter Azeroth
 @desc Rebel Camp, Nesingwary's Expedition, Kurzen's compound, Grom'gol's neighbours and Booty Bay. A contested zone - watch for Horde players.
-@next A_Dustwallow
+@next A_Badlands
 
 turnin 322 Blessed Arm [class=Warrior,Rogue,Warlock; race=Gnome; optional] | Turned in at Stormwind City.
 turnin 322 Blessed Arm [class=Warrior,Paladin,Rogue,Priest,Warlock; race=Human; optional] | Turned in at Stormwind City.
@@ -148,4 +148,4 @@ turnin 192 Panther Mastery
 level 38
 train | Fly to Ironforge/Stormwind to train.
 note Leave the remaining Tiger/Panther/Raptor Mastery chain for your second STV visit or skip it.
-note Take the boat from Menethil to Theramore (Dustwallow Marsh).
+note Next: the Badlands. Fly to Ironforge.

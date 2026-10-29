@@ -1,0 +1,37 @@
+# TBCGuide - Badlands (35-38), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Badlands
+@name Badlands (Kargath)
+@faction Horde
+@levels 35-38
+@zone Badlands
+@chapter Azeroth
+@desc Kargath's reagent run, coyotes and the advisor's lost baggage, Lotwil Veriatus's rock elementals and Rigglefuzz's power stones. Getting there is the hard part: see the first step.
+@next H_Stranglethorn
+
+note Kargath has no flight path until you reach it. From Hammerfall cross Thandol Span into the Wetlands and ride east through Loch Modan into the Badlands (Alliance zones: keep off the roads). Kargath is on the west edge of the Badlands.
+fp Kargath
+accept Badlands Reagent Run | Jarkal Mossmeld, Kargath. Needs level 36.
+accept Coyote Thieves | Neeka Bloodscar.
+accept Unclaimed Baggage | Advisor Sarophas. Needs level 36.
+accept 710 Study of the Elements: Rock | Lotwil Veriatus, east of Kargath.
+complete 710 Study of the Elements: Rock | Lesser Rock Elementals around Lotwil's camp.
+turnin 710 Study of the Elements: Rock
+accept 711 Study of the Elements: Rock
+complete 711 Study of the Elements: Rock | Rock Elementals north-west of the camp.
+complete Badlands Reagent Run [obj=3] | Rock Elemental Shards from the same Rock Elementals.
+turnin 711 Study of the Elements: Rock
+accept Power Stones | Rigglefuzz at the camp in the middle of the Badlands.
+complete Coyote Thieves | Crag Coyotes all over the middle of the zone.
+complete Badlands Reagent Run [obj=2] | Crag Coyote Fangs from the same coyotes.
+complete Unclaimed Baggage | The pack in a barrel and the rapier on a weapon rack at Agmond's End, north.
+complete Power Stones | Shadowforge Surveyors at Agmond's End and around Uldaman's entrance.
+complete Badlands Reagent Run [obj=1] | Buzzard Gizzards from Starving Buzzards in the north-east.
+turnin Power Stones | Rigglefuzz.
+turnin Coyote Thieves | Kargath.
+turnin Badlands Reagent Run
+turnin Unclaimed Baggage
+level 38
+train | Fly to Orgrimmar or the Undercity to train.
+note Fly from Kargath to the Undercity and take the zeppelin to Grom'gol (Stranglethorn).

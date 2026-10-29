@@ -1,0 +1,48 @@
+# TBCGuide - Eastern Plaguelands (56-58), both factions
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide Both_EasternPlaguelands
+@name Eastern Plaguelands (Light's Hope)
+@faction Both
+@levels 56-58
+@zone Eastern Plaguelands
+@chapter Azeroth
+@desc Tirion Fordring's hut on the western edge, Augustus at Terrordale, Light's Hope Chapel and the plaguehounds, then Darrowshire and the Redpath family. Horde also work for Nathanos Blightcaller at Marris Stead. Ends at 58 for the Dark Portal.
+@next A_Hellfire [faction=Alliance]
+@next H_Hellfire [faction=Horde]
+
+accept Little Pamela [zone=Western Plaguelands] | Marlene Redpath in the house at Sorrow Hill, south Western Plaguelands, on your way east.
+note Ride east out of the Western Plaguelands along the Thondroril River. Tirion Fordring's hut is just inside the border, by the river.
+accept Demon Dogs | Tirion Fordring.
+accept Blood Tinged Skies | Tirion Fordring.
+accept Carrion Grubbage | Tirion Fordring.
+accept Augustus' Receipt Book | Augustus the Touched at the hut in Terrordale, north-west. He is friendly; ignore the ghouls around him.
+complete Augustus' Receipt Book | The book is upstairs in the inn across the road.
+turnin Augustus' Receipt Book
+note Ride the road east across the zone to Light's Hope Chapel.
+fp Light's Hope Chapel
+accept Zaeldarr the Outcast | Caretaker Alen, Light's Hope Chapel.
+complete Demon Dogs | Plaguehounds and Frenzied Plaguehounds around Light's Hope and the north; Plaguehound Runts in the south.
+complete Carrion Grubbage | Slabs of Carrion Worm Meat from Carrion Grubs, often next to the plaguehounds.
+complete Blood Tinged Skies | Plaguebats are everywhere south of the road.
+turnin Little Pamela | Pamela Redpath in Darrowshire, south.
+accept Pamela's Doll
+complete Pamela's Doll | The doll's head, dress and stuffing are in the ruined houses of Darrowshire. Ghosts appear when you loot them.
+turnin Pamela's Doll
+accept Uncle Carlin
+complete Zaeldarr the Outcast | Zaeldarr in the Darrowshire crypt, west side of the village.
+accept To Kill With Purpose [faction=Horde] | Nathanos Blightcaller at Marris Stead, west of Darrowshire.
+accept Un-Life's Little Annoyances [faction=Horde] | Nathanos Blightcaller.
+complete To Kill With Purpose [faction=Horde] | Coagulated Rot from the ghouls and flayers around Darrowshire and the Marris Stead.
+complete Un-Life's Little Annoyances [faction=Horde] | Noxious Plaguebats south, Monstrous Plaguebats north.
+turnin To Kill With Purpose [faction=Horde]
+turnin Un-Life's Little Annoyances [faction=Horde]
+turnin Demon Dogs | Tirion Fordring.
+turnin Blood Tinged Skies
+turnin Carrion Grubbage
+note Ride back east to Light's Hope Chapel.
+turnin Zaeldarr the Outcast | Caretaker Alen.
+turnin Uncle Carlin | Carlin Redpath.
+level 58
+train
+note At 58 go to the Dark Portal in the Blasted Lands. Alliance: fly to Stormwind, then Nethergarde Keep (the herald for Through the Dark Portal is in Stormwind or Nethergarde). Horde: fly to Orgrimmar or the Undercity (the herald is there), then Stonard and ride south.

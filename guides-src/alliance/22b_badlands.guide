@@ -1,0 +1,54 @@
+# TBCGuide - Badlands (38-41), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Badlands
+@name Badlands
+@faction Alliance
+@levels 38-41
+@zone Badlands
+@chapter Azeroth
+@desc Prospector Ryedol's camp and the Explorers' League chain, Lotwil Veriatus's rock elementals and Rigglefuzz's power stones, then the Ironforge follow-ups on the way to Dustwallow.
+@next A_Dustwallow
+
+turnin 1457 The Karnitol Shipwreck [zone=Ironforge; optional] | Roetten Stonehammer, Hall of Explorers (from Desolace).
+note From Ironforge fly to Thelsamar and ride south through Loch Modan into the Badlands.
+accept Power Stones | Rigglefuzz at the camp in the middle of the Badlands.
+accept 710 Study of the Elements: Rock | Lotwil Veriatus, west.
+complete 710 Study of the Elements: Rock | Lesser Rock Elementals around Lotwil's camp.
+turnin 710 Study of the Elements: Rock
+accept 711 Study of the Elements: Rock
+complete 711 Study of the Elements: Rock | Rock Elementals north-west of the camp.
+turnin 711 Study of the Elements: Rock
+accept A Dwarf and His Tools | Prospector Ryedol, east of the middle.
+accept Mirages | Sigrun Ironhew, next to Ryedol.
+accept 720 A Sign of Hope | The Crumpled Map on the ground north of Ryedol.
+complete A Dwarf and His Tools | Ryedol's Lucky Pick drops from Shadowforge Tunnelers at Angor Fortress.
+complete Mirages | The Excavation Supply Crate in the north-east hills.
+turnin 720 A Sign of Hope | Prospector Ryedol.
+turnin A Dwarf and His Tools
+turnin Mirages | Sigrun Ironhew.
+accept 721 A Sign of Hope
+accept Scrounging | Scrap Metal from Dustbelcher ogres in the west.
+complete Power Stones | Shadowforge Surveyors at Agmond's End and around Uldaman's entrance, north.
+turnin 721 A Sign of Hope | Hammertoe Grez at the Uldaman excavation, north.
+accept Amulet of Secrets
+complete Amulet of Secrets | Hammertoe's Amulet drops from Magregan Deepshadow at the Stonesplinter camp just north of Hammertoe.
+turnin Amulet of Secrets
+accept 723 Prospect of Faith
+turnin 723 Prospect of Faith | Prospector Ryedol.
+accept 724 Prospect of Faith | Turned in at Ironforge on your way to Dustwallow.
+complete Scrounging | Dustbelcher ogres in the west.
+turnin Power Stones | Rigglefuzz.
+turnin Scrounging | Sigrun Ironhew.
+accept 712 Study of the Elements: Rock [optional] | Needs level 42 to kill the Greater Rock Elementals comfortably.
+complete 712 Study of the Elements: Rock [optional] | Bracers of Rock Binding from Greater Rock Elementals in the far south-west.
+turnin 712 Study of the Elements: Rock [optional]
+level 40
+note Ride back north to Thelsamar and fly to Ironforge.
+turnin 724 Prospect of Faith [zone=Ironforge] | Historian Karnik, Hall of Explorers.
+accept 725 Passing Word of a Threat [zone=Ironforge]
+turnin 725 Passing Word of a Threat [zone=Ironforge] | Advisor Belgrum, same hall.
+accept 726 Passing Word of a Threat [zone=Ironforge]
+turnin 726 Passing Word of a Threat [zone=Ironforge] | Historian Karnik.
+train
+note Fly to Menethil Harbor and take the boat to Theramore (Dustwallow Marsh).

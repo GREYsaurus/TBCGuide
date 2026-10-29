@@ -10,51 +10,52 @@
 @desc Cenarion Refuge, Telredor, Orebor Harborage and Sporeggar. The Coilfang Reservoir dungeons (Slave Pens, Underbog) are optional.
 @next A_Terokkar
 
-accept The Umbrafen Tribe | Ikeyen, Cenarion Refuge.
-accept Plants of Zangarmarsh | Lauranna Thar'well.
-accept The Dying Balance | Lethyn Moonfire.
 turnin The Cenarion Expedition [optional] | Ysiel Windsinger, if you took it in Hellfire.
 accept Disturbance at Umbrafen Lake | Ysiel Windsinger.
-accept Warden Hamoot
-accept Blessings of the Ancients | Windcaller Blackhoof.
-complete Blessings of the Ancients | Speak to the ancients Ashyen and Keleth, right here at the Refuge.
-turnin Blessings of the Ancients
-accept The Zapthrottle Mote Extractor! | K. Lee Smallfry.
-fp Cenarion Refuge
-turnin Warden Hamoot
-accept A Warm Welcome
+accept The Umbrafen Tribe | Ikeyen, Cenarion Refuge.
 complete The Umbrafen Tribe | Umbrafen kobolds at Umbrafen Lake (south).
 complete Disturbance at Umbrafen Lake | Explore the pumping station.
 turnin The Umbrafen Tribe
 accept A Damp, Dark Place
-accept Safeguarding the Watchers
 accept Saving the Sporeloks
+accept Plants of Zangarmarsh | Lauranna Thar'well.
+complete Plants of Zangarmarsh [optional] | 10 Unidentified Plant Parts drop from Zangarmarsh creatures as you quest.
+turnin Plants of Zangarmarsh [optional] | Lauranna Thar'well; hand in whenever you are back with 10 parts.
+accept Blessings of the Ancients | Windcaller Blackhoof.
+complete Blessings of the Ancients | Speak to the ancients Ashyen and Keleth, right here at the Refuge.
+turnin Blessings of the Ancients
+accept Safeguarding the Watchers
 turnin Disturbance at Umbrafen Lake
-accept As the Crow Flies
+accept As the Crow Flies | Escort quest: start it when you are ready to follow.
 complete As the Crow Flies | Use the potion to fly the route.
 turnin As the Crow Flies
 accept Balance Must Be Preserved
+accept Warden Hamoot
+accept The Dying Balance | Lethyn Moonfire.
+turnin Warden Hamoot
+accept A Warm Welcome
 complete A Warm Welcome | Mire Hydras.
 complete A Damp, Dark Place | The Ikeyen's Belongings cave in Umbrafen.
 complete Safeguarding the Watchers | Kill the Umbrafen Oracles and Seers.
 complete Saving the Sporeloks
 complete Balance Must Be Preserved | Shut down the pumps at Umbrafen Lake.
-complete The Dying Balance
+complete The Dying Balance | Elite: Boglash; bring help or skip.
 turnin A Warm Welcome
-turnin A Damp, Dark Place
 turnin Safeguarding the Watchers
+turnin A Damp, Dark Place
 turnin Saving the Sporeloks
-turnin Balance Must Be Preserved
-complete Plants of Zangarmarsh [optional] | 10 Unidentified Plant Parts drop from Zangarmarsh creatures as you quest.
-turnin Plants of Zangarmarsh [optional] | Lauranna Thar'well; hand in whenever you are back with 10 parts.
 turnin The Dying Balance
+turnin Balance Must Be Preserved
+fp Cenarion Refuge
 fp Telredor | Climb the giant mushroom at Telredor.
+accept The Zapthrottle Mote Extractor! | K. Lee Smallfry.
 bind Telredor
-accept Fulgor Spores | Ruam.
-accept Menacing Marshfangs | Noraani.
-accept Too Many Mouths to Feed | Haalrun.
 accept The Dead Mire | Vindicator Idaar.
+accept The Orebor Harborage | Anchorite Ahuurn.
 accept The Boha'mu Ruins | Anchorite Ahuurn.
+accept Fulgor Spores | Ruam.
+accept Too Many Mouths to Feed | Haalrun.
+accept Menacing Marshfangs | Noraani.
 complete Menacing Marshfangs | Marshfang Rippers.
 complete Too Many Mouths to Feed
 complete Fulgor Spores | Fulgor spores on mushrooms around Telredor.
@@ -62,68 +63,67 @@ complete The Dead Mire | The soil sample in the Dead Mire (east).
 complete The Boha'mu Ruins | Explore the Boha'mu Ruins.
 turnin Menacing Marshfangs
 accept Umbrafen Eel Filets
+complete Umbrafen Eel Filets | Eel Filet drops from Umbrafen Eel.
+turnin Umbrafen Eel Filets
 turnin Too Many Mouths to Feed
 accept Diaphanous Wings
+complete Diaphanous Wings | Diaphanous Wing drops from Blacksting, Marshlight Bleeder and Umbraglow Stinger and others.
+turnin Diaphanous Wings
 turnin Fulgor Spores
-turnin The Dead Mire
-accept An Unnatural Drought
 turnin The Boha'mu Ruins
 accept Idols of the Feralfen
-complete Umbrafen Eel Filets
-complete Diaphanous Wings
-complete An Unnatural Drought | Withered giants in the Dead Mire.
 complete Idols of the Feralfen | Feralfen Ruins idols.
-turnin Umbrafen Eel Filets
-turnin Diaphanous Wings
-turnin An Unnatural Drought
 turnin Idols of the Feralfen
 accept Gathering the Reagents
-complete Gathering the Reagents
+complete Gathering the Reagents | Spore Bat Eye drops from Greater Sporebat, Sporebat and Sporewing and others. Fen Strider Tentacle drops from Boglash and Fen Strider.
 turnin Gathering the Reagents
 accept Messenger to the Feralfen
 complete Messenger to the Feralfen
 turnin Messenger to the Feralfen
+turnin The Dead Mire
+accept An Unnatural Drought
+complete An Unnatural Drought | Withered giants in the Dead Mire.
+turnin An Unnatural Drought
+turnin The Zapthrottle Mote Extractor! [optional]
 accept Watcher Leesa'oh | From Lethyn Moonfire.
-turnin Watcher Leesa'oh | Watcher Leesa'oh, near Sporeggar.
-accept Observing the Sporelings
 accept The Sporelings' Plight | Fahssn.
 accept Natural Enemies
+turnin Watcher Leesa'oh | Watcher Leesa'oh, near Sporeggar.
+accept Observing the Sporelings
 complete Observing the Sporelings
 complete The Sporelings' Plight | Mature Spore Sacs on the ground.
-complete Natural Enemies
+complete Natural Enemies | Bog Lord Tendril drops from Bog Lord, Starving Fungal Giant and Withered Giant and others.
 turnin Observing the Sporelings
 accept A Question of Gluttony
-turnin The Sporelings' Plight
-turnin Natural Enemies
-complete A Question of Gluttony
+complete A Question of Gluttony | Discarded Nutriment: loot Discarded Nutriment.
 turnin A Question of Gluttony
 accept Familiar Fungi
-complete Familiar Fungi
+complete Familiar Fungi | Mushroom Sample drops from Ango'rosh Ogre, Ango'rosh Shaman and Boss Grog'ak and others.
 turnin Familiar Fungi
-accept The Orebor Harborage | Anchorite Ahuurn.
-turnin The Orebor Harborage
-fp Orebor Harborage
-accept Ango'rosh Encroachment | Ikuti.
-accept Daggerfen Deviance
+turnin The Sporelings' Plight
+turnin Natural Enemies
 accept Stinger Venom | Puluu.
 accept Lines of Communication
 accept Natural Armor | Maktu.
+turnin The Orebor Harborage
+accept Ango'rosh Encroachment | Ikuti.
+accept Daggerfen Deviance
 complete Ango'rosh Encroachment | Ango'rosh ogres at the Twin Spire Ruins and the Ango'rosh Grounds.
 complete Daggerfen Deviance | Daggerfen camp, north.
 complete Stinger Venom | Marshlight Bleeders.
 complete Lines of Communication
-complete Natural Armor
+complete Natural Armor | Fenclaw Hide drops from Fenclaw Thrasher and Mragesh.
 turnin Ango'rosh Encroachment
 accept Overlord Gorefist
-turnin Daggerfen Deviance
-turnin Stinger Venom
-turnin Lines of Communication
 turnin Natural Armor
 accept Maktu's Revenge
 complete Overlord Gorefist | Ango'rosh Stronghold.
+turnin Daggerfen Deviance
 complete Maktu's Revenge
 turnin Overlord Gorefist
 turnin Maktu's Revenge
-turnin The Zapthrottle Mote Extractor! [optional]
+turnin Stinger Venom
+turnin Lines of Communication
+fp Orebor Harborage
 level 63
 note Ride south from Telredor into Terokkar Forest; Allerian Stronghold is the Alliance town. Shattrath City is on the way.

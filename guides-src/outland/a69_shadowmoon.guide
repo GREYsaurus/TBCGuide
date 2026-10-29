@@ -11,29 +11,24 @@
 
 fp Wildhammer Stronghold
 bind Wildhammer Stronghold
-accept Besieged! | Wing Commander Nuainn.
-accept The Sketh'lon Wreckage | Gryphonrider Kieran.
-accept A Ghost in the Machine | Zorus the Judicator.
-accept Spleendid! | Gnomus.
 accept Put On Yer Kneepads... | Thane Yoregar.
-complete Besieged! | Infernal attackers outside the stronghold.
-turnin Besieged!
-accept To Legion Hold
-complete The Sketh'lon Wreckage
-complete A Ghost in the Machine
-complete Spleendid!
+accept Spleendid! | Gnomus.
+accept A Ghost in the Machine | Zorus the Judicator.
+accept The Sketh'lon Wreckage | Gryphonrider Kieran.
+complete The Sketh'lon Wreckage | Sketh'lon Commander's Journal - Page 1 drops from Dark Conclave Hawkeye, Dark Conclave Ravenguard and Dark Conclave Shadowmancer. Sketh'lon Commander's Journal 
 complete Put On Yer Kneepads...
 turnin The Sketh'lon Wreckage
 accept Find the Deserter
-turnin A Ghost in the Machine
-accept Harbingers of Shadowmoon
-turnin Spleendid!
-accept The Second Course...
-turnin Put On Yer Kneepads...
+accept Besieged! | Wing Commander Nuainn.
+complete Besieged! | Infernal attackers outside the stronghold.
+turnin Besieged!
+accept To Legion Hold
+complete A Ghost in the Machine | Ever-burning Ash: loot Ever-burning Ash.
+complete Spleendid! | Felfire Spleen drops from Felfire Diemetradon.
 complete To Legion Hold | Legion Hold, west Shadowmoon.
 turnin To Legion Hold
 accept Setting Up the Bomb
-complete Setting Up the Bomb
+complete Setting Up the Bomb | Fel Reaver Power Core: loot Fel Reaver Power Core. Fel Reaver Armor Plate: loot Fel Reaver Armor Plating.
 turnin Setting Up the Bomb
 accept Blast the Infernals!
 complete Blast the Infernals!
@@ -47,22 +42,27 @@ turnin Minions of the Shadow Council
 accept The Fate of Flanis
 accept The Summoning Chamber
 complete The Fate of Flanis
-complete The Summoning Chamber
+complete The Summoning Chamber | Elemental Displacer drops from Deathforge Smith and Deathforge Tinkerer.
 turnin The Fate of Flanis
 turnin The Summoning Chamber
 accept Bring Down the Warbringer!
-complete Bring Down the Warbringer!
+complete Bring Down the Warbringer! | Razuun's Orders drops from Warbringer Razuun.
 turnin Bring Down the Warbringer!
 accept Gaining Access
 turnin Gaining Access
 accept Invasion Point: Cataclysm
-complete Invasion Point: Cataclysm
-turnin Invasion Point: Cataclysm
+turnin Spleendid!
+accept The Second Course...
+turnin Put On Yer Kneepads...
+turnin A Ghost in the Machine
+accept Harbingers of Shadowmoon
 complete Harbingers of Shadowmoon
-complete The Second Course...
+complete The Second Course... | Overdeveloped Felfire Gizzard drops from Greater Felfire Diemetradon.
 turnin Harbingers of Shadowmoon
 turnin The Second Course...
 complete Find the Deserter
 turnin Find the Deserter
+complete Invasion Point: Cataclysm
+turnin Invasion Point: Cataclysm
 level 70
 note Congratulations - level 70. Open /tbcg talents to switch to a level-70 build, and check the dungeon and heroic attunement quests for your next goals.

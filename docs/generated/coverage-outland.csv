@@ -1,0 +1,902 @@
+guide,side,quest,title,questLevel,requiredLevel
+A_Hellfire,Alliance,9355,A Job for an Intelligent Man,61,58
+A_Hellfire,Alliance,9373,Missing Missive,61,58
+A_Hellfire,Alliance,9383,An Ambitious Plan,63,61
+A_Hellfire,Alliance,9418,Avruu's Orb,63,60
+A_Hellfire,Alliance,9420,The Finest Down,62,60
+A_Hellfire,Alliance,9430,Sha'naar Relics,63,60
+A_Hellfire,Alliance,9545,The Seer's Relic,63,60
+A_Hellfire,Alliance,9563,Gaining Mirren's Trust,62,60
+A_Hellfire,Alliance,9587,Dark Tidings,62,59
+A_Hellfire,Alliance,10134,Crimson Crystal Clue,63,61
+A_Hellfire,Alliance,10349,The Earthbinder,63,61
+A_Hellfire,Alliance,10351,Natural Remedies,63,61
+A_Hellfire,Alliance,10367,A Traitor Among Us,62,60
+A_Hellfire,Alliance,10368,The Dreghood Elders,62,60
+A_Hellfire,Alliance,10369,Arzeth's Demise,62,60
+A_Hellfire,Alliance,10395,The Dark Missive,61,58
+A_Hellfire,Alliance,10399,The Heart of Darkness,61,58
+A_Hellfire,Alliance,10400,Overlord,63,58
+A_Hellfire,Alliance,10403,Naladu,62,60
+A_Hellfire,Alliance,10443,Helping the Cenarion Post,61,61
+A_Hellfire,Alliance,10629,Shizz Work,61,58
+A_Hellfire,Alliance,10630,Beneath Thrallmar,61,58
+A_Hellfire,Alliance,10895,Zeth'Gor Must Burn!,60,58
+A_Zangarmarsh,Alliance,9709,Stealing Back the Mushrooms,64,61
+A_Zangarmarsh,Alliance,9724,Warning the Cenarion Circle,64,61
+A_Zangarmarsh,Alliance,9726,Now That We're Friends...,64,62
+A_Zangarmarsh,Alliance,9729,Fhwoor Smash!,65,63
+A_Zangarmarsh,Alliance,9730,Leader of the Darkcrest,64,58
+A_Zangarmarsh,Alliance,9731,Drain Schematics,63,59
+A_Zangarmarsh,Alliance,9732,Return to the Marsh,63,60
+A_Zangarmarsh,Alliance,9752,Escape from Umbrafen,63,60
+A_Zangarmarsh,Alliance,9792,A Message to Telaar,64,64
+A_Zangarmarsh,Alliance,9793,The Fate of Tuurem,62,62
+A_Zangarmarsh,Alliance,9806,Fertile Spores,64,62
+A_Zangarmarsh,Alliance,9808,Glowcap Mushrooms,64,62
+A_Zangarmarsh,Alliance,9817,Leader of the Bloodscale,63,58
+A_Zangarmarsh,Alliance,9827,Withered Basidium,62,60
+A_Zangarmarsh,Alliance,9848,Secrets of the Daggerfen,64,62
+A_Zangarmarsh,Alliance,9896,Blacksting's Bane,62,60
+A_Zangarmarsh,Alliance,9901,Unfinished Business,62,60
+A_Zangarmarsh,Alliance,9902,The Terror of Marshlight Lake,64,62
+A_Zangarmarsh,Alliance,9911,The Count of the Marshes,64,62
+A_Zangarmarsh,Alliance,9919,Sporeggar,64,60
+A_Zangarmarsh,Alliance,10104,Concerns About Tuurem,62,62
+A_Zangarmarsh,Alliance,10116,Wanted: Chieftain Mummaki,64,58
+A_Zangarmarsh,Alliance,10355,Withered Flesh,62,60
+A_Terokkar,Alliance,9951,It's Watching You!,64,62
+A_Terokkar,Alliance,9957,What's Wrong at Cenarion Thicket?,63,62
+A_Terokkar,Alliance,10009,Crackin' Some Skulls,68,66
+A_Terokkar,Alliance,10010,It's Just That Easy?,68,66
+A_Terokkar,Alliance,10012,Fel Orc Plans,64,62
+A_Terokkar,Alliance,10030,Recover the Bones,65,63
+A_Terokkar,Alliance,10031,Helping the Lost Find Their Way,65,63
+A_Terokkar,Alliance,10035,Torgos!,65,63
+A_Terokkar,Alliance,10037,Rather Be Fishin',64,62
+A_Terokkar,Alliance,10051,Escape from Firewing Point!,64,62
+A_Terokkar,Alliance,10180,Can't Stay Away,69,65
+A_Terokkar,Alliance,10839,Veil Skith: Darkstone of Terokk,64,62
+A_Terokkar,Alliance,10840,The Tomb of Lights,65,63
+A_Terokkar,Alliance,10842,The Vengeful Harbinger,65,63
+A_Terokkar,Alliance,10847,The Eyes of Skettis,62,62
+A_Terokkar,Alliance,10848,Veil Rhaze: Unliving Evil,64,62
+A_Terokkar,Alliance,10849,Seek Out Kirrik,63,62
+A_Terokkar,Alliance,10852,Missing Friends,64,62
+A_Terokkar,Alliance,10861,Veil Lithic: Preemptive Strike,64,62
+A_Terokkar,Alliance,10863,Secrets of the Arakkoa,63,62
+A_Terokkar,Alliance,10873,Taken in the Night,65,63
+A_Terokkar,Alliance,10874,Veil Shalas: Signal Fires,65,62
+A_Terokkar,Alliance,10877,The Dread Relic,66,63
+A_Terokkar,Alliance,10878,Before Darkness Falls,63,62
+A_Terokkar,Alliance,10879,The Skettis Offensive,65,62
+A_Terokkar,Alliance,10880,Cabal Orders,64,62
+A_Terokkar,Alliance,10881,The Shadow Tomb,64,62
+A_Terokkar,Alliance,10887,Escaping the Tomb,64,62
+A_Terokkar,Alliance,10889,Return to Shattrath,65,62
+A_Terokkar,Alliance,10896,The Infested Protectors,65,62
+A_Terokkar,Alliance,10898,Skywing,65,63
+A_Terokkar,Alliance,10908,Speak with Rilak the Redeemed,63,62
+A_Terokkar,Alliance,10917,The Outcast's Plight,65,62
+A_Terokkar,Alliance,10923,Evil Draws Near,65,63
+A_Terokkar,Alliance,10926,Return to Sha'tari Base Camp,65,65
+A_Terokkar,Alliance,10929,Fumping,65,63
+A_Terokkar,Alliance,10930,The Big Bone Worm,65,63
+A_Nagrand,Alliance,9849,Shattering the Veil,67,64
+A_Nagrand,Alliance,9851,Clefthoof Mastery,67,64
+A_Nagrand,Alliance,9852,The Ultimate Bloodsport,68,64
+A_Nagrand,Alliance,9853,Gurok the Usurper,67,64
+A_Nagrand,Alliance,9856,Windroc Mastery,67,64
+A_Nagrand,Alliance,9859,Talbuk Mastery,66,64
+A_Nagrand,Alliance,9861,The Howling Wind,67,64
+A_Nagrand,Alliance,9862,Murkblood Corrupters,67,64
+A_Nagrand,Alliance,9871,Murkblood Invaders,67,64
+A_Nagrand,Alliance,9873,Ortor My Old Friend...,67,64
+A_Nagrand,Alliance,9874,Stopping the Spread,67,64
+A_Nagrand,Alliance,9878,Solving the Problem,67,64
+A_Nagrand,Alliance,9879,The Totem of Kar'dash,67,64
+A_Nagrand,Alliance,9882,Stealing from Thieves,66,64
+A_Nagrand,Alliance,9893,Obsidian Warbeads,67,64
+A_Nagrand,Alliance,9897,I'm Saved!,65,64
+A_Nagrand,Alliance,9900,Gava'xi,67,65
+A_Nagrand,Alliance,9913,The Consortium Needs You!,66,64
+A_Nagrand,Alliance,9914,A Head Full of Ivory,66,64
+A_Nagrand,Alliance,9925,Matters of Security,66,64
+A_Nagrand,Alliance,9938,Wanted: Durn the Hungerer,67,66
+A_Nagrand,Alliance,9967,The Ring of Blood: The Blue Brothers,67,65
+A_Nagrand,Alliance,9970,The Ring of Blood: Rokdar the Sundered Lord,67,65
+A_Nagrand,Alliance,9972,The Ring of Blood: Skra'gath,67,65
+A_Nagrand,Alliance,9973,The Ring of Blood: The Warmaul Champion,67,65
+A_Nagrand,Alliance,9977,The Ring of Blood: The Final Challenge,68,65
+A_Nagrand,Alliance,9982,He Called Himself Altruis...,68,66
+A_Nagrand,Alliance,9991,Survey the Land,68,66
+A_Nagrand,Alliance,9999,Buying Time,68,66
+A_Nagrand,Alliance,10001,The Master Planner,68,66
+A_Nagrand,Alliance,10004,Patience and Understanding,68,66
+A_Nagrand,Alliance,10011,Forge Camp: Annihilated,68,66
+A_Nagrand,Alliance,10076,Oshu'gun Crystal Powder,67,64
+A_Nagrand,Alliance,10109,I Must Have Them!,66,64
+A_Nagrand,Alliance,10111,Bring Me The Egg!,66,64
+A_Nagrand,Alliance,10251,The Master's Grand Design?,67,65
+A_Nagrand,Alliance,10252,Vision of the Dead,67,64
+A_Nagrand,Alliance,10640,Altruis,70,68
+A_Nagrand,Alliance,10641,Against the Legion,70,68
+A_Nagrand,Alliance,10646,Illidan's Pupil,70,68
+A_Nagrand,Alliance,10668,Against the Illidari,70,68
+A_Nagrand,Alliance,10669,Against All Odds,70,68
+A_Nagrand,Alliance,10689,Altruis,70,68
+A_Nagrand,Alliance,11042,A Mystifying Vision,67,67
+A_Nagrand,Alliance,11044,Visions of Destruction,67,67
+A_BladesEdge,Alliance,9794,No Time for Curiosity,65,64
+A_BladesEdge,Alliance,10567,Creating the Pendant,66,66
+A_BladesEdge,Alliance,10607,Whispers of the Raven God,68,66
+A_BladesEdge,Alliance,10690,The Den Mother,66,65
+A_BladesEdge,Alliance,10719,Did You Get The Note?,67,65
+A_BladesEdge,Alliance,10722,Meeting at the Blackwing Coven,68,65
+A_BladesEdge,Alliance,10747,Whelps of the Wyrmcult,68,65
+A_BladesEdge,Alliance,10748,Maxnar Must Die!,68,65
+A_BladesEdge,Alliance,10795,A Date with Dorgok,67,65
+A_BladesEdge,Alliance,10796,Crush the Bloodmaul Camp!,67,65
+A_BladesEdge,Alliance,10797,Favor of the Gronn,67,65
+A_BladesEdge,Alliance,10798,Pay the Baron a Visit,67,65
+A_BladesEdge,Alliance,10799,Into the Churning Gulch,67,65
+A_BladesEdge,Alliance,10800,"Goodnight, Gronn",67,65
+A_BladesEdge,Alliance,10801,It's a Trap!,67,65
+A_BladesEdge,Alliance,10802,Gorgrom the Dragon-Eater,68,65
+A_BladesEdge,Alliance,10803,Slaughter at Boulder'mok,68,65
+A_BladesEdge,Alliance,10805,Massacre at Gruul's Lair,67,65
+A_BladesEdge,Alliance,10806,Showdown,70,65
+A_BladesEdge,Alliance,10810,Damaged Mask,68,65
+A_BladesEdge,Alliance,10812,Mystery Mask,68,65
+A_BladesEdge,Alliance,10818,Baron Sablemane Has Requested Your Presence,67,65
+A_BladesEdge,Alliance,10819,Felsworn Gas Mask,68,65
+A_BladesEdge,Alliance,10820,Deceive thy Enemy,68,65
+A_BladesEdge,Alliance,10821,You're Fired!,68,65
+A_BladesEdge,Alliance,10825,The Truth Unorbed,68,66
+A_BladesEdge,Alliance,10829,Treebole Must Know,68,66
+A_BladesEdge,Alliance,10830,Exorcising the Trees,68,66
+A_BladesEdge,Alliance,10893,Longtail is the Lynchpin,67,65
+A_BladesEdge,Alliance,10894,Wyrmskull Watcher,67,65
+A_BladesEdge,Alliance,10904,Harvesting the Fel Ammunition,68,65
+A_BladesEdge,Alliance,10910,Death's Door,68,65
+A_BladesEdge,Alliance,10911,Fire At Will!,68,65
+A_BladesEdge,Alliance,10912,The Hound-Master,68,65
+A_BladesEdge,Alliance,10974,Stasis Chambers of Bash'ir,70,70
+A_BladesEdge,Alliance,10976,The Mark of the Nexus-King,70,70
+A_BladesEdge,Alliance,10982,The Eye of Haramad,70,70
+A_BladesEdge,Alliance,10983,Mog'dorg the Wizened,70,70
+A_BladesEdge,Alliance,10989,Mog'dorg the Wizened,70,70
+A_BladesEdge,Alliance,10995,Grulloc Has Two Skulls,70,70
+A_BladesEdge,Alliance,10996,Maggoc's Treasure Chest,70,70
+A_BladesEdge,Alliance,10998,Grim(oire) Business,70,70
+A_BladesEdge,Alliance,11000,Into the Soulgrinder,70,70
+A_BladesEdge,Alliance,11009,Ogre Heaven,70,70
+A_BladesEdge,Alliance,11022,Speak with Mog'dorg,70,70
+A_BladesEdge,Alliance,11025,The Crystals,70,70
+A_BladesEdge,Alliance,11026,Banish the Demons,70,70
+A_BladesEdge,Alliance,11030,Our Boy Wants To Be A Skyguard Ranger,70,70
+A_BladesEdge,Alliance,11040,Parts for the Rocket-Chief,67,67
+A_BladesEdge,Alliance,11043,Building a Better Gryphon,67,67
+A_BladesEdge,Alliance,11057,The Trouble Below,70,70
+A_BladesEdge,Alliance,11058,An Apexis Relic,70,70
+A_BladesEdge,Alliance,11059,Guardian of the Monument,70,70
+A_BladesEdge,Alliance,11061,A Father's Duty,70,70
+A_BladesEdge,Alliance,11062,The Skyguard Outpost,70,70
+A_BladesEdge,Alliance,11065,Wrangle Some Aether Rays!,70,70
+A_BladesEdge,Alliance,11078,To Rule The Skies,70,70
+A_BladesEdge,Alliance,11079,A Fel Whip For Gahk,70,70
+A_BladesEdge,Alliance,11091,A Special Thank You,70,70
+A_BladesEdge,Alliance,11119,Assault on Bash'ir Landing!,70,70
+A_Shadowmoon,Alliance,10451,Escape from Coilskar Cistern,70,67
+A_Shadowmoon,Alliance,10458,Enraged Spirits of Fire and Earth,70,68
+A_Shadowmoon,Alliance,10480,Enraged Spirits of Water,70,68
+A_Shadowmoon,Alliance,10481,Enraged Spirits of Air,70,68
+A_Shadowmoon,Alliance,10513,Oronok Torn-heart,70,68
+A_Shadowmoon,Alliance,10514,I Was A Lot Of Things...,70,68
+A_Shadowmoon,Alliance,10515,A Lesson Learned,70,68
+A_Shadowmoon,Alliance,10519,The Cipher of Damnation - Truth and History,70,68
+A_Shadowmoon,Alliance,10521,"Grom'tor, Son of Oronok",70,68
+A_Shadowmoon,Alliance,10522,The Cipher of Damnation - Grom'tor's Charge,70,68
+A_Shadowmoon,Alliance,10523,The Cipher of Damnation - The First Fragment Recovered,70,68
+A_Shadowmoon,Alliance,10527,"Ar'tor, Son of Oronok",70,68
+A_Shadowmoon,Alliance,10528,Demonic Crystal Prisons,70,68
+A_Shadowmoon,Alliance,10537,"Lohn'goron, Bow of the Torn-heart",70,68
+A_Shadowmoon,Alliance,10540,The Cipher of Damnation - Ar'tor's Charge,70,68
+A_Shadowmoon,Alliance,10541,The Cipher of Damnation - The Second Fragment Recovered,70,68
+A_Shadowmoon,Alliance,10546,"Borak, Son of Oronok",70,68
+A_Shadowmoon,Alliance,10547,Of Thistleheads and Eggs...,70,68
+A_Shadowmoon,Alliance,10550,The Bundle of Bloodthistle,70,68
+A_Shadowmoon,Alliance,10568,Tablets of Baa'ri,70,68
+A_Shadowmoon,Alliance,10570,To Catch A Thistlehead,70,68
+A_Shadowmoon,Alliance,10571,Oronu the Elder,70,68
+A_Shadowmoon,Alliance,10574,The Ashtongue Corruptors,70,68
+A_Shadowmoon,Alliance,10575,The Warden's Cage,70,68
+A_Shadowmoon,Alliance,10576,The Shadowmoon Shuffle,70,68
+A_Shadowmoon,Alliance,10577,"What Illidan Wants, Illidan Gets...",70,68
+A_Shadowmoon,Alliance,10578,The Cipher of Damnation - Borak's Charge,70,68
+A_Shadowmoon,Alliance,10579,The Cipher of Damnation - The Third Fragment Recovered,70,68
+A_Shadowmoon,Alliance,10587,Karabor Training Grounds,70,68
+A_Shadowmoon,Alliance,10588,The Cipher of Damnation,70,68
+A_Shadowmoon,Alliance,10606,The Art of Fel Reaver Maintenance,69,67
+A_Shadowmoon,Alliance,10612,The Fel and the Furious,69,67
+A_Shadowmoon,Alliance,10619,The Ashtongue Tribe,70,68
+A_Shadowmoon,Alliance,10621,Illidari-Bane Shard,69,67
+A_Shadowmoon,Alliance,10622,Proof of Allegiance,70,68
+A_Shadowmoon,Alliance,10626,Capture the Weapons,69,67
+A_Shadowmoon,Alliance,10628,Akama,70,68
+A_Shadowmoon,Alliance,10634,Divination: Gorefiend's Armor,70,67
+A_Shadowmoon,Alliance,10635,Divination: Gorefiend's Cloak,70,67
+A_Shadowmoon,Alliance,10636,Divination: Gorefiend's Truncheon,70,67
+A_Shadowmoon,Alliance,10637,A Necessary Distraction,70,68
+A_Shadowmoon,Alliance,10644,Teron Gorefiend - Lore and Legend,70,67
+A_Shadowmoon,Alliance,10645,"Teron Gorefiend, I am...",70,67
+A_Shadowmoon,Alliance,10648,"Wanted: Uvuros, Scourge of Shadowmoon",70,67
+A_Shadowmoon,Alliance,10650,Return to the Aldor,70,69
+A_Shadowmoon,Alliance,10651,Varedis Must Be Stopped,70,68
+A_Shadowmoon,Alliance,10662,The Hermit Smith,69,67
+A_Shadowmoon,Alliance,10664,Additional Materials,69,67
+A_Shadowmoon,Alliance,10665,Fresh From the Mechanar,69,67
+A_Shadowmoon,Alliance,10666,The Lexicon Demonica,69,67
+A_Shadowmoon,Alliance,10667,Underworld Loam,70,67
+A_Shadowmoon,Alliance,10670,Tear of the Earthmother,70,67
+A_Shadowmoon,Alliance,10676,Bane of the Illidari,70,70
+A_Shadowmoon,Alliance,10678,The Main Course!,70,67
+A_Shadowmoon,Alliance,10679,Quenching the Blade,70,70
+A_Shadowmoon,Alliance,10680,The Hand of Gul'dan,70,68
+A_Shadowmoon,Alliance,10683,Tablets of Baa'ri,70,68
+A_Shadowmoon,Alliance,10684,Oronu the Elder,70,68
+A_Shadowmoon,Alliance,10685,The Ashtongue Corruptors,70,68
+A_Shadowmoon,Alliance,10686,The Warden's Cage,70,68
+A_Shadowmoon,Alliance,10687,Karabor Training Grounds,70,68
+A_Shadowmoon,Alliance,10688,A Necessary Distraction,70,68
+A_Shadowmoon,Alliance,10691,Return to the Scryers,70,69
+A_Shadowmoon,Alliance,10692,Varedis Must Be Stopped,70,68
+A_Shadowmoon,Alliance,10706,A Mysterious Portent,70,69
+A_Shadowmoon,Alliance,10707,The Ata'mal Terrace,70,68
+A_Shadowmoon,Alliance,10708,Akama's Promise,70,68
+A_Shadowmoon,Alliance,10744,News of Victory,70,67
+A_Shadowmoon,Alliance,10772,The Path of Conquest,70,68
+A_Shadowmoon,Alliance,10773,Breaching the Path,70,68
+A_Shadowmoon,Alliance,10774,Blood Elf + Giant = ???,70,68
+A_Shadowmoon,Alliance,10775,Tabards of the Illidari,70,68
+A_Shadowmoon,Alliance,10776,Dissension Amongst the Ranks...,70,68
+A_Shadowmoon,Alliance,10777,Asghar's Totem,69,67
+A_Shadowmoon,Alliance,10778,The Rod of Lianthe,69,67
+A_Shadowmoon,Alliance,10780,Sketh'lon Feathers,69,67
+A_Shadowmoon,Alliance,10781,Battle of the Crimson Watch,70,68
+A_Shadowmoon,Alliance,10782,Imbuing the Headpiece,69,67
+A_Shadowmoon,Alliance,10793,The Journal of Val'zareq: Portends of War,70,68
+A_Shadowmoon,Alliance,10804,Kindness,70,70
+A_Shadowmoon,Alliance,10807,The Ashtongue Broken,70,68
+A_Shadowmoon,Alliance,10808,Thwart the Dark Conclave,69,67
+A_Shadowmoon,Alliance,10811,Seek Out Neltharaku,70,70
+A_Shadowmoon,Alliance,10814,Neltharaku's Tale,70,70
+A_Shadowmoon,Alliance,10816,Reclaiming Holy Grounds,70,68
+A_Shadowmoon,Alliance,10817,The Great Retribution,70,68
+A_Shadowmoon,Alliance,10824,Sunfury Signets,70,68
+A_Shadowmoon,Alliance,10836,Infiltrating Dragonmaw Fortress,70,70
+A_Shadowmoon,Alliance,10837,To Netherwing Ledge!,70,70
+A_Shadowmoon,Alliance,10854,The Force of Neltharaku,70,70
+A_Shadowmoon,Alliance,10858,Karynaku,70,70
+A_Shadowmoon,Alliance,10866,Zuluhed the Whacked,70,70
+A_Shadowmoon,Alliance,10870,Ally of the Netherwing,70,70
+A_Shadowmoon,Alliance,10871,Ally of the Netherwing,70,70
+A_Shadowmoon,Alliance,10872,Zuluhed the Whacked,70,70
+A_Shadowmoon,Alliance,10944,The Secret Compromised,70,70
+A_Shadowmoon,Alliance,10949,Entry Into the Black Temple,70,70
+A_Shadowmoon,Alliance,10985,A Distraction for Akama,70,70
+A_Shadowmoon,Alliance,11013,In Service of the Illidari,70,70
+A_Shadowmoon,Alliance,11019,Your Friend On The Inside,70,70
+A_Shadowmoon,Alliance,11041,A Job Unfinished...,70,70
+A_Shadowmoon,Alliance,11049,The Great Netherwing Egg Hunt,70,70
+A_Shadowmoon,Alliance,11052,Akama's Promise,70,68
+A_Shadowmoon,Alliance,11053,"Rise, Overseer!",70,70
+A_Shadowmoon,Alliance,11054,Overseeing and You: Making the Right Choices,70,70
+A_Shadowmoon,Alliance,11063,Earning Your Wings...,70,70
+A_Shadowmoon,Alliance,11064,Dragonmaw Race: The Ballad of Oldie McOld,70,70
+A_Shadowmoon,Alliance,11067,Dragonmaw Race: Trope the Filth-Belcher,70,70
+A_Shadowmoon,Alliance,11068,Dragonmaw Race: Corlok the Vet,70,70
+A_Shadowmoon,Alliance,11069,Dragonmaw Race: Wing Commander Ichman,70,70
+A_Shadowmoon,Alliance,11070,Dragonmaw Race: Wing Commander Mulverick,70,70
+A_Shadowmoon,Alliance,11071,Dragonmaw Race: Captain Skyshatter,70,70
+A_Shadowmoon,Alliance,11075,The Netherwing Mines,70,70
+A_Shadowmoon,Alliance,11081,The Great Murkblood Revolt,70,70
+A_Shadowmoon,Alliance,11082,Seeker of Truth,70,70
+A_Shadowmoon,Alliance,11083,Crazed and Confused,70,70
+A_Shadowmoon,Alliance,11084,"Stand Tall, Captain!",70,70
+A_Shadowmoon,Alliance,11089,The Soul Cannon of Reth'hedron,70,70
+A_Shadowmoon,Alliance,11090,Subdue the Subduer,70,70
+A_Shadowmoon,Alliance,11092,"Hail, Commander!",70,70
+A_Shadowmoon,Alliance,11094,Kill Them All!,70,70
+A_Shadowmoon,Alliance,11095,Commander Hobb,70,70
+A_Shadowmoon,Alliance,11099,Kill Them All!,70,70
+A_Shadowmoon,Alliance,11100,Commander Arcus,70,70
+A_Shadowmoon,Alliance,11107,Bow to the Highlord,70,70
+A_Shadowmoon,Alliance,11108,Lord Illidan Stormrage,70,70
+A_Shadowmoon,Alliance,11497,Learning to Fly,70,70
+Both_Netherstorm,Alliance,9631,A Colleague's Aid,70,70
+Both_Netherstorm,Alliance,10176,Ar'kelos the Guardian,68,67
+Both_Netherstorm,Alliance,10182,Battle-Mage Dathric,68,67
+Both_Netherstorm,Alliance,10184,Malevolent Remnants,68,67
+Both_Netherstorm,Alliance,10185,A Fate Worse Than Death,68,67
+Both_Netherstorm,Alliance,10188,The Sigil of Krasus,69,67
+Both_Netherstorm,Alliance,10189,Manaforge B'naar,68,67
+Both_Netherstorm,Alliance,10191,Mark V is Alive!,68,67
+Both_Netherstorm,Alliance,10192,Krasus's Compendium,69,67
+Both_Netherstorm,Alliance,10193,High Value Targets,68,67
+Both_Netherstorm,Alliance,10194,Stealth Flight,68,67
+Both_Netherstorm,Alliance,10197,A Convincing Disguise,68,67
+Both_Netherstorm,Alliance,10198,Information Gathering,68,67
+Both_Netherstorm,Alliance,10200,Return to Thalodien,68,67
+Both_Netherstorm,Alliance,10202,A Defector,70,67
+Both_Netherstorm,Alliance,10204,Bloodgem Crystals,68,67
+Both_Netherstorm,Alliance,10209,Summoner Kanthin's Prize,69,67
+Both_Netherstorm,Alliance,10222,The Sunfury Garrison,69,67
+Both_Netherstorm,Alliance,10223,Down With Daellis,69,67
+Both_Netherstorm,Alliance,10233,Torching Sunfury Hold,69,67
+Both_Netherstorm,Alliance,10239,Potential Energy Source,69,67
+Both_Netherstorm,Alliance,10240,Building a Perimeter,69,67
+Both_Netherstorm,Alliance,10241,Distraction at Manaforge B'naar,68,67
+Both_Netherstorm,Alliance,10243,Naaru Technology,68,67
+Both_Netherstorm,Alliance,10245,B'naar Console Transcription,68,67
+Both_Netherstorm,Alliance,10246,Attack on Manaforge Coruu,68,67
+Both_Netherstorm,Alliance,10256,Finding the Keymaster,69,67
+Both_Netherstorm,Alliance,10257,Capturing the Keystone,70,67
+Both_Netherstorm,Alliance,10263,Assisting the Consortium,68,67
+Both_Netherstorm,Alliance,10264,Assisting the Consortium,68,67
+Both_Netherstorm,Alliance,10269,Triangulation Point One,69,67
+Both_Netherstorm,Alliance,10270,A Not-So-Modest Proposal,70,68
+Both_Netherstorm,Alliance,10271,Getting Down to Business,70,68
+Both_Netherstorm,Alliance,10272,A Promising Start,70,68
+Both_Netherstorm,Alliance,10273,Troublesome Distractions,70,68
+Both_Netherstorm,Alliance,10274,Securing the Celestial Ridge,70,68
+Both_Netherstorm,Alliance,10275,Triangulation Point Two,70,67
+Both_Netherstorm,Alliance,10276,Full Triangle,70,67
+Both_Netherstorm,Alliance,10281,Formal Introductions,70,68
+Both_Netherstorm,Alliance,10290,In Search of Farahlite,70,68
+Both_Netherstorm,Alliance,10293,Hitting the Motherlode,69,68
+Both_Netherstorm,Alliance,10299,Shutting Down Manaforge B'naar,68,67
+Both_Netherstorm,Alliance,10301,Unlocking the Compendium,69,67
+Both_Netherstorm,Alliance,10305,Abjurist Belmara,69,67
+Both_Netherstorm,Alliance,10306,Conjurer Luminrath,69,67
+Both_Netherstorm,Alliance,10307,Cohlien Frostweaver,69,67
+Both_Netherstorm,Alliance,10309,"It's a Fel Reaver, But with Heart",68,67
+Both_Netherstorm,Alliance,10310,Sabotage the Warp-Gate!,70,68
+Both_Netherstorm,Alliance,10311,Drijya Needs Your Help,70,68
+Both_Netherstorm,Alliance,10312,The Annals of Kirin'Var,69,67
+Both_Netherstorm,Alliance,10313,Measuring Warp Energies,68,67
+Both_Netherstorm,Alliance,10314,A Lingering Suspicion,69,67
+Both_Netherstorm,Alliance,10315,Neutralizing the Nethermancers,70,68
+Both_Netherstorm,Alliance,10316,Searching for Evidence,69,67
+Both_Netherstorm,Alliance,10317,Dealing with the Foreman,70,68
+Both_Netherstorm,Alliance,10318,Dealing with the Overmaster,70,68
+Both_Netherstorm,Alliance,10319,Capturing the Phylactery,69,67
+Both_Netherstorm,Alliance,10320,Destroy Naberius!,69,67
+Both_Netherstorm,Alliance,10321,Shutting Down Manaforge Coruu,69,67
+Both_Netherstorm,Alliance,10322,Shutting Down Manaforge Duro,70,67
+Both_Netherstorm,Alliance,10323,Shutting Down Manaforge Ara,70,67
+Both_Netherstorm,Alliance,10328,Sunfury Briefings,70,67
+Both_Netherstorm,Alliance,10329,Shutting Down Manaforge B'naar,68,67
+Both_Netherstorm,Alliance,10330,Shutting Down Manaforge Coruu,69,67
+Both_Netherstorm,Alliance,10331,Indispensable Tools,69,67
+Both_Netherstorm,Alliance,10332,Master Smith Rhonsus,69,67
+Both_Netherstorm,Alliance,10334,Needs More Cowbell,69,67
+Both_Netherstorm,Alliance,10335,Surveying the Ruins,70,68
+Both_Netherstorm,Alliance,10336,The Minions of Culuthas,70,68
+Both_Netherstorm,Alliance,10337,When the Cows Come Home,69,67
+Both_Netherstorm,Alliance,10338,Shutting Down Manaforge Duro,70,67
+Both_Netherstorm,Alliance,10339,The Ethereum,70,68
+Both_Netherstorm,Alliance,10341,Kick Them While They're Down,70,67
+Both_Netherstorm,Alliance,10343,The Unending Invasion,69,67
+Both_Netherstorm,Alliance,10345,The Flesh Lies...,70,68
+Both_Netherstorm,Alliance,10353,Arconus the Insatiable,70,68
+Both_Netherstorm,Alliance,10365,Shutting Down Manaforge Ara,70,67
+Both_Netherstorm,Alliance,10380,A Dark Pact,70,67
+Both_Netherstorm,Alliance,10381,Aldor No More,70,67
+Both_Netherstorm,Alliance,10384,Ethereum Data,70,68
+Both_Netherstorm,Alliance,10385,Potential for Brain Damage = High,70,68
+Both_Netherstorm,Alliance,10405,S-A-B-O-T-A-G-E,70,68
+Both_Netherstorm,Alliance,10406,Delivering the Message,70,68
+Both_Netherstorm,Alliance,10407,Socrethar's Shadow,70,67
+Both_Netherstorm,Alliance,10408,Nexus-King Salhadaar,70,68
+Both_Netherstorm,Alliance,10409,Deathblow to the Legion,70,67
+Both_Netherstorm,Alliance,10410,Ishanah's Help,70,67
+Both_Netherstorm,Alliance,10411,Electro-Shock Goodness!,70,68
+Both_Netherstorm,Alliance,10413,The Horrors of Pollution,70,68
+Both_Netherstorm,Alliance,10422,Captain Tyralius,70,68
+Both_Netherstorm,Alliance,10423,To the Stormspire,69,67
+Both_Netherstorm,Alliance,10424,Diagnosis: Critical,69,67
+Both_Netherstorm,Alliance,10425,Escape from the Staging Grounds,70,68
+Both_Netherstorm,Alliance,10431,Outside Assistance,70,67
+Both_Netherstorm,Alliance,10432,Damning Evidence,70,67
+Both_Netherstorm,Alliance,10433,Keeping Up Appearances,69,67
+Both_Netherstorm,Alliance,10434,The Dynamic Duo,69,67
+Both_Netherstorm,Alliance,10435,Retrieving the Goods,69,67
+Both_Netherstorm,Alliance,10436,All Clear!,69,67
+Both_Netherstorm,Alliance,10437,Recipe for Destruction,70,68
+Both_Netherstorm,Alliance,10438,On Nethery Wings,70,68
+Both_Netherstorm,Alliance,10439,Dimensius the All-Devouring,70,68
+Both_Netherstorm,Alliance,10440,Success!,69,67
+Both_Netherstorm,Alliance,10507,Turning Point,70,67
+Both_Netherstorm,Alliance,10508,A Gift for Voren'thal,70,67
+Both_Netherstorm,Alliance,10652,Behind Enemy Lines,69,67
+Both_Netherstorm,Alliance,10701,Breaking Down Netherock,68,67
+Both_Netherstorm,Alliance,10855,"Fel Reavers, No Thanks!",69,67
+Both_Netherstorm,Alliance,10856,The Best Defense,69,67
+Both_Netherstorm,Alliance,10857,Teleport This!,69,67
+Both_Netherstorm,Alliance,10924,Bloody Imp-ossible!,69,67
+Both_Netherstorm,Alliance,10969,Seek Out Ameer,70,70
+Both_Netherstorm,Alliance,10970,A Mission of Mercy,70,70
+Both_Netherstorm,Alliance,10971,Ethereum Secrets,70,70
+Both_Netherstorm,Alliance,10973,A Thousand Worlds,70,70
+Both_Netherstorm,Horde,9631,A Colleague's Aid,70,70
+Both_Netherstorm,Horde,10176,Ar'kelos the Guardian,68,67
+Both_Netherstorm,Horde,10182,Battle-Mage Dathric,68,67
+Both_Netherstorm,Horde,10184,Malevolent Remnants,68,67
+Both_Netherstorm,Horde,10185,A Fate Worse Than Death,68,67
+Both_Netherstorm,Horde,10188,The Sigil of Krasus,69,67
+Both_Netherstorm,Horde,10189,Manaforge B'naar,68,67
+Both_Netherstorm,Horde,10191,Mark V is Alive!,68,67
+Both_Netherstorm,Horde,10192,Krasus's Compendium,69,67
+Both_Netherstorm,Horde,10193,High Value Targets,68,67
+Both_Netherstorm,Horde,10194,Stealth Flight,68,67
+Both_Netherstorm,Horde,10197,A Convincing Disguise,68,67
+Both_Netherstorm,Horde,10198,Information Gathering,68,67
+Both_Netherstorm,Horde,10200,Return to Thalodien,68,67
+Both_Netherstorm,Horde,10202,A Defector,70,67
+Both_Netherstorm,Horde,10204,Bloodgem Crystals,68,67
+Both_Netherstorm,Horde,10209,Summoner Kanthin's Prize,69,67
+Both_Netherstorm,Horde,10222,The Sunfury Garrison,69,67
+Both_Netherstorm,Horde,10223,Down With Daellis,69,67
+Both_Netherstorm,Horde,10233,Torching Sunfury Hold,69,67
+Both_Netherstorm,Horde,10239,Potential Energy Source,69,67
+Both_Netherstorm,Horde,10240,Building a Perimeter,69,67
+Both_Netherstorm,Horde,10241,Distraction at Manaforge B'naar,68,67
+Both_Netherstorm,Horde,10243,Naaru Technology,68,67
+Both_Netherstorm,Horde,10245,B'naar Console Transcription,68,67
+Both_Netherstorm,Horde,10246,Attack on Manaforge Coruu,68,67
+Both_Netherstorm,Horde,10256,Finding the Keymaster,69,67
+Both_Netherstorm,Horde,10257,Capturing the Keystone,70,67
+Both_Netherstorm,Horde,10263,Assisting the Consortium,68,67
+Both_Netherstorm,Horde,10264,Assisting the Consortium,68,67
+Both_Netherstorm,Horde,10269,Triangulation Point One,69,67
+Both_Netherstorm,Horde,10270,A Not-So-Modest Proposal,70,68
+Both_Netherstorm,Horde,10271,Getting Down to Business,70,68
+Both_Netherstorm,Horde,10272,A Promising Start,70,68
+Both_Netherstorm,Horde,10273,Troublesome Distractions,70,68
+Both_Netherstorm,Horde,10274,Securing the Celestial Ridge,70,68
+Both_Netherstorm,Horde,10275,Triangulation Point Two,70,67
+Both_Netherstorm,Horde,10276,Full Triangle,70,67
+Both_Netherstorm,Horde,10281,Formal Introductions,70,68
+Both_Netherstorm,Horde,10290,In Search of Farahlite,70,68
+Both_Netherstorm,Horde,10293,Hitting the Motherlode,69,68
+Both_Netherstorm,Horde,10299,Shutting Down Manaforge B'naar,68,67
+Both_Netherstorm,Horde,10301,Unlocking the Compendium,69,67
+Both_Netherstorm,Horde,10305,Abjurist Belmara,69,67
+Both_Netherstorm,Horde,10306,Conjurer Luminrath,69,67
+Both_Netherstorm,Horde,10307,Cohlien Frostweaver,69,67
+Both_Netherstorm,Horde,10309,"It's a Fel Reaver, But with Heart",68,67
+Both_Netherstorm,Horde,10310,Sabotage the Warp-Gate!,70,68
+Both_Netherstorm,Horde,10311,Drijya Needs Your Help,70,68
+Both_Netherstorm,Horde,10312,The Annals of Kirin'Var,69,67
+Both_Netherstorm,Horde,10313,Measuring Warp Energies,68,67
+Both_Netherstorm,Horde,10314,A Lingering Suspicion,69,67
+Both_Netherstorm,Horde,10315,Neutralizing the Nethermancers,70,68
+Both_Netherstorm,Horde,10316,Searching for Evidence,69,67
+Both_Netherstorm,Horde,10317,Dealing with the Foreman,70,68
+Both_Netherstorm,Horde,10318,Dealing with the Overmaster,70,68
+Both_Netherstorm,Horde,10319,Capturing the Phylactery,69,67
+Both_Netherstorm,Horde,10320,Destroy Naberius!,69,67
+Both_Netherstorm,Horde,10321,Shutting Down Manaforge Coruu,69,67
+Both_Netherstorm,Horde,10322,Shutting Down Manaforge Duro,70,67
+Both_Netherstorm,Horde,10323,Shutting Down Manaforge Ara,70,67
+Both_Netherstorm,Horde,10328,Sunfury Briefings,70,67
+Both_Netherstorm,Horde,10329,Shutting Down Manaforge B'naar,68,67
+Both_Netherstorm,Horde,10330,Shutting Down Manaforge Coruu,69,67
+Both_Netherstorm,Horde,10331,Indispensable Tools,69,67
+Both_Netherstorm,Horde,10332,Master Smith Rhonsus,69,67
+Both_Netherstorm,Horde,10334,Needs More Cowbell,69,67
+Both_Netherstorm,Horde,10335,Surveying the Ruins,70,68
+Both_Netherstorm,Horde,10336,The Minions of Culuthas,70,68
+Both_Netherstorm,Horde,10337,When the Cows Come Home,69,67
+Both_Netherstorm,Horde,10338,Shutting Down Manaforge Duro,70,67
+Both_Netherstorm,Horde,10339,The Ethereum,70,68
+Both_Netherstorm,Horde,10341,Kick Them While They're Down,70,67
+Both_Netherstorm,Horde,10343,The Unending Invasion,69,67
+Both_Netherstorm,Horde,10345,The Flesh Lies...,70,68
+Both_Netherstorm,Horde,10353,Arconus the Insatiable,70,68
+Both_Netherstorm,Horde,10365,Shutting Down Manaforge Ara,70,67
+Both_Netherstorm,Horde,10380,A Dark Pact,70,67
+Both_Netherstorm,Horde,10381,Aldor No More,70,67
+Both_Netherstorm,Horde,10384,Ethereum Data,70,68
+Both_Netherstorm,Horde,10385,Potential for Brain Damage = High,70,68
+Both_Netherstorm,Horde,10405,S-A-B-O-T-A-G-E,70,68
+Both_Netherstorm,Horde,10406,Delivering the Message,70,68
+Both_Netherstorm,Horde,10407,Socrethar's Shadow,70,67
+Both_Netherstorm,Horde,10408,Nexus-King Salhadaar,70,68
+Both_Netherstorm,Horde,10409,Deathblow to the Legion,70,67
+Both_Netherstorm,Horde,10410,Ishanah's Help,70,67
+Both_Netherstorm,Horde,10411,Electro-Shock Goodness!,70,68
+Both_Netherstorm,Horde,10413,The Horrors of Pollution,70,68
+Both_Netherstorm,Horde,10422,Captain Tyralius,70,68
+Both_Netherstorm,Horde,10423,To the Stormspire,69,67
+Both_Netherstorm,Horde,10424,Diagnosis: Critical,69,67
+Both_Netherstorm,Horde,10425,Escape from the Staging Grounds,70,68
+Both_Netherstorm,Horde,10431,Outside Assistance,70,67
+Both_Netherstorm,Horde,10432,Damning Evidence,70,67
+Both_Netherstorm,Horde,10433,Keeping Up Appearances,69,67
+Both_Netherstorm,Horde,10434,The Dynamic Duo,69,67
+Both_Netherstorm,Horde,10435,Retrieving the Goods,69,67
+Both_Netherstorm,Horde,10436,All Clear!,69,67
+Both_Netherstorm,Horde,10437,Recipe for Destruction,70,68
+Both_Netherstorm,Horde,10438,On Nethery Wings,70,68
+Both_Netherstorm,Horde,10439,Dimensius the All-Devouring,70,68
+Both_Netherstorm,Horde,10440,Success!,69,67
+Both_Netherstorm,Horde,10507,Turning Point,70,67
+Both_Netherstorm,Horde,10508,A Gift for Voren'thal,70,67
+Both_Netherstorm,Horde,10652,Behind Enemy Lines,69,67
+Both_Netherstorm,Horde,10701,Breaking Down Netherock,68,67
+Both_Netherstorm,Horde,10855,"Fel Reavers, No Thanks!",69,67
+Both_Netherstorm,Horde,10856,The Best Defense,69,67
+Both_Netherstorm,Horde,10857,Teleport This!,69,67
+Both_Netherstorm,Horde,10924,Bloody Imp-ossible!,69,67
+Both_Netherstorm,Horde,10969,Seek Out Ameer,70,70
+Both_Netherstorm,Horde,10970,A Mission of Mercy,70,70
+Both_Netherstorm,Horde,10971,Ethereum Secrets,70,70
+Both_Netherstorm,Horde,10973,A Thousand Worlds,70,70
+H_Hellfire,Horde,9349,Ravager Egg Roundup,61,58
+H_Hellfire,Horde,9351,Voidwalkers Gone Wild,61,58
+H_Hellfire,Horde,9356,Smooth as Butter,61,58
+H_Hellfire,Horde,9361,"Helboar, the Other White Meat",61,58
+H_Hellfire,Horde,9372,Demonic Contamination,63,61
+H_Hellfire,Horde,9373,Missing Missive,61,58
+H_Hellfire,Horde,9375,The Road to Falcon Watch,63,61
+H_Hellfire,Horde,9376,A Pilgrim's Plight,63,61
+H_Hellfire,Horde,9418,Avruu's Orb,63,60
+H_Hellfire,Horde,9438,Messenger to Thrall,62,60
+H_Hellfire,Horde,9441,Envoy to the Mag'har,63,60
+H_Hellfire,Horde,9442,A Debilitating Sickness,63,60
+H_Hellfire,Horde,9447,Administering the Salve,63,60
+H_Hellfire,Horde,9466,Wanted: Blacktalon the Savage,63,58
+H_Hellfire,Horde,9588,Dark Tidings,62,59
+H_Hellfire,Horde,10103,Report to Zurai,61,61
+H_Hellfire,Horde,10132,Colossal Menace,63,61
+H_Hellfire,Horde,10134,Crimson Crystal Clue,63,61
+H_Hellfire,Horde,10136,Cruel's Intentions,63,58
+H_Hellfire,Horde,10159,Keep Thornfang Hill Clear!,63,61
+H_Hellfire,Horde,10161,In Case of Emergency...,61,58
+H_Hellfire,Horde,10220,Make Them Listen,61,58
+H_Hellfire,Horde,10229,Decipher the Tome,61,58
+H_Hellfire,Horde,10230,The Battle Horn,61,58
+H_Hellfire,Horde,10236,Outland Sucks!,61,58
+H_Hellfire,Horde,10238,How to Serve Goblins,61,58
+H_Hellfire,Horde,10250,Bloody Vengeance,61,58
+H_Hellfire,Horde,10258,Honor the Fallen,61,58
+H_Hellfire,Horde,10295,From the Abyss,63,58
+H_Hellfire,Horde,10349,The Earthbinder,63,61
+H_Hellfire,Horde,10351,Natural Remedies,63,61
+H_Hellfire,Horde,10367,A Traitor Among Us,62,60
+H_Hellfire,Horde,10368,The Dreghood Elders,62,60
+H_Hellfire,Horde,10369,Arzeth's Demise,62,60
+H_Hellfire,Horde,10389,The Agony and the Darkness,61,58
+H_Hellfire,Horde,10393,Vile Plans,61,58
+H_Hellfire,Horde,10403,Naladu,62,60
+H_Hellfire,Horde,10442,Helping the Cenarion Post,61,61
+H_Hellfire,Horde,10629,Shizz Work,61,58
+H_Hellfire,Horde,10630,Beneath Thrallmar,61,58
+H_Hellfire,Horde,10876,The Foot of the Citadel,63,58
+H_Zangarmarsh,Horde,9708,Familiar Fungi,63,61
+H_Zangarmarsh,Horde,9709,Stealing Back the Mushrooms,64,61
+H_Zangarmarsh,Horde,9724,Warning the Cenarion Circle,64,61
+H_Zangarmarsh,Horde,9726,Now That We're Friends...,64,62
+H_Zangarmarsh,Horde,9729,Fhwoor Smash!,65,63
+H_Zangarmarsh,Horde,9730,Leader of the Darkcrest,64,58
+H_Zangarmarsh,Horde,9731,Drain Schematics,63,59
+H_Zangarmarsh,Horde,9732,Return to the Marsh,63,60
+H_Zangarmarsh,Horde,9752,Escape from Umbrafen,63,60
+H_Zangarmarsh,Horde,9796,News from Zangarmarsh,62,62
+H_Zangarmarsh,Horde,9797,Reinforcements for Garadar,64,64
+H_Zangarmarsh,Horde,9806,Fertile Spores,64,62
+H_Zangarmarsh,Horde,9808,Glowcap Mushrooms,64,62
+H_Zangarmarsh,Horde,9816,Have You Ever Seen One of These?,64,62
+H_Zangarmarsh,Horde,9817,Leader of the Bloodscale,63,58
+H_Zangarmarsh,Horde,9828,Withered Basidium,62,60
+H_Zangarmarsh,Horde,9846,Spirits of the Feralfen,62,60
+H_Zangarmarsh,Horde,9847,A Spirit Ally?,64,60
+H_Zangarmarsh,Horde,9911,The Count of the Marshes,64,62
+H_Zangarmarsh,Horde,9912,The Cenarion Expedition,62,61
+H_Zangarmarsh,Horde,9919,Sporeggar,64,60
+H_Zangarmarsh,Horde,10105,News for Rakoria,62,62
+H_Zangarmarsh,Horde,10117,Wanted: Chieftain Mummaki,64,58
+H_Terokkar,Horde,9951,It's Watching You!,64,62
+H_Terokkar,Horde,9957,What's Wrong at Cenarion Thicket?,63,62
+H_Terokkar,Horde,10009,Crackin' Some Skulls,68,66
+H_Terokkar,Horde,10010,It's Just That Easy?,68,66
+H_Terokkar,Horde,10013,An Unseen Hand,64,62
+H_Terokkar,Horde,10030,Recover the Bones,65,63
+H_Terokkar,Horde,10031,Helping the Lost Find Their Way,65,63
+H_Terokkar,Horde,10036,Torgos!,65,63
+H_Terokkar,Horde,10037,Rather Be Fishin',64,62
+H_Terokkar,Horde,10052,Escape from Firewing Point!,64,62
+H_Terokkar,Horde,10180,Can't Stay Away,69,65
+H_Terokkar,Horde,10839,Veil Skith: Darkstone of Terokk,64,62
+H_Terokkar,Horde,10840,The Tomb of Lights,65,63
+H_Terokkar,Horde,10842,The Vengeful Harbinger,65,63
+H_Terokkar,Horde,10847,The Eyes of Skettis,62,62
+H_Terokkar,Horde,10848,Veil Rhaze: Unliving Evil,64,62
+H_Terokkar,Horde,10849,Seek Out Kirrik,63,62
+H_Terokkar,Horde,10852,Missing Friends,64,62
+H_Terokkar,Horde,10861,Veil Lithic: Preemptive Strike,64,62
+H_Terokkar,Horde,10862,Surrender to the Horde,63,62
+H_Terokkar,Horde,10873,Taken in the Night,65,63
+H_Terokkar,Horde,10874,Veil Shalas: Signal Fires,65,62
+H_Terokkar,Horde,10877,The Dread Relic,66,63
+H_Terokkar,Horde,10878,Before Darkness Falls,63,62
+H_Terokkar,Horde,10879,The Skettis Offensive,65,62
+H_Terokkar,Horde,10880,Cabal Orders,64,62
+H_Terokkar,Horde,10881,The Shadow Tomb,64,62
+H_Terokkar,Horde,10887,Escaping the Tomb,64,62
+H_Terokkar,Horde,10889,Return to Shattrath,65,62
+H_Terokkar,Horde,10896,The Infested Protectors,65,62
+H_Terokkar,Horde,10898,Skywing,65,63
+H_Terokkar,Horde,10908,Speak with Rilak the Redeemed,63,62
+H_Terokkar,Horde,10917,The Outcast's Plight,65,62
+H_Terokkar,Horde,10922,Digging Through Bones,65,63
+H_Terokkar,Horde,10923,Evil Draws Near,65,63
+H_Terokkar,Horde,10926,Return to Sha'tari Base Camp,65,65
+H_Terokkar,Horde,10929,Fumping,65,63
+H_Terokkar,Horde,10930,The Big Bone Worm,65,63
+H_Nagrand,Horde,9810,The Spirit Polluted,66,64
+H_Nagrand,Horde,9821,Eating Damnation,66,64
+H_Nagrand,Horde,9849,Shattering the Veil,67,64
+H_Nagrand,Horde,9851,Clefthoof Mastery,67,64
+H_Nagrand,Horde,9852,The Ultimate Bloodsport,68,64
+H_Nagrand,Horde,9853,Gurok the Usurper,67,64
+H_Nagrand,Horde,9856,Windroc Mastery,67,64
+H_Nagrand,Horde,9859,Talbuk Mastery,66,64
+H_Nagrand,Horde,9861,The Howling Wind,67,64
+H_Nagrand,Horde,9862,Murkblood Corrupters,67,64
+H_Nagrand,Horde,9868,The Totem of Kar'dash,67,64
+H_Nagrand,Horde,9872,Murkblood Invaders,67,64
+H_Nagrand,Horde,9882,Stealing from Thieves,66,64
+H_Nagrand,Horde,9893,Obsidian Warbeads,67,64
+H_Nagrand,Horde,9897,I'm Saved!,65,64
+H_Nagrand,Horde,9900,Gava'xi,67,65
+H_Nagrand,Horde,9910,Standards and Practices,65,64
+H_Nagrand,Horde,9913,The Consortium Needs You!,66,64
+H_Nagrand,Horde,9914,A Head Full of Ivory,66,64
+H_Nagrand,Horde,9916,Bleeding Hollow Supply Crates,66,64
+H_Nagrand,Horde,9925,Matters of Security,66,64
+H_Nagrand,Horde,9937,Wanted: Durn the Hungerer,67,66
+H_Nagrand,Horde,9967,The Ring of Blood: The Blue Brothers,67,65
+H_Nagrand,Horde,9970,The Ring of Blood: Rokdar the Sundered Lord,67,65
+H_Nagrand,Horde,9972,The Ring of Blood: Skra'gath,67,65
+H_Nagrand,Horde,9973,The Ring of Blood: The Warmaul Champion,67,65
+H_Nagrand,Horde,9977,The Ring of Blood: The Final Challenge,68,65
+H_Nagrand,Horde,9983,He Called Himself Altruis...,68,66
+H_Nagrand,Horde,9991,Survey the Land,68,66
+H_Nagrand,Horde,9999,Buying Time,68,66
+H_Nagrand,Horde,10001,The Master Planner,68,66
+H_Nagrand,Horde,10004,Patience and Understanding,68,66
+H_Nagrand,Horde,10011,Forge Camp: Annihilated,68,66
+H_Nagrand,Horde,10044,A Visit With the Greatmother,68,66
+H_Nagrand,Horde,10045,Material Components,68,66
+H_Nagrand,Horde,10074,Oshu'gun Crystal Powder,67,64
+H_Nagrand,Horde,10081,To Meet Mother Kashur,68,66
+H_Nagrand,Horde,10082,The Agitated Ancestors,68,66
+H_Nagrand,Horde,10085,A Visit With The Ancestors,68,66
+H_Nagrand,Horde,10101,When Spirits Speak,68,66
+H_Nagrand,Horde,10102,A Secret Revealed,68,66
+H_Nagrand,Horde,10109,I Must Have Them!,66,64
+H_Nagrand,Horde,10111,Bring Me The Egg!,66,64
+H_Nagrand,Horde,10168,What the Soul Sees,68,66
+H_Nagrand,Horde,10170,Return to the Greatmother,68,66
+H_Nagrand,Horde,10171,The Inconsolable Chieftain,68,66
+H_Nagrand,Horde,10172,There Is No Hope,68,66
+H_Nagrand,Horde,10175,"Thrall, Son of Durotan",68,66
+H_Nagrand,Horde,10212,Hero of the Mag'har,68,66
+H_Nagrand,Horde,10251,The Master's Grand Design?,67,65
+H_Nagrand,Horde,10252,Vision of the Dead,67,64
+H_Nagrand,Horde,10640,Altruis,70,68
+H_Nagrand,Horde,10641,Against the Legion,70,68
+H_Nagrand,Horde,10646,Illidan's Pupil,70,68
+H_Nagrand,Horde,10668,Against the Illidari,70,68
+H_Nagrand,Horde,10669,Against All Odds,70,68
+H_Nagrand,Horde,10689,Altruis,70,68
+H_Nagrand,Horde,11037,A Strange Vision,67,67
+H_Nagrand,Horde,11048,Kroghan's Report,67,67
+H_BladesEdge,Horde,9795,The Ogre Threat,65,64
+H_BladesEdge,Horde,10489,Felling an Ancient Tree,66,65
+H_BladesEdge,Horde,10524,Thunderlord Clan Artifacts,66,65
+H_BladesEdge,Horde,10525,Vision Guide,66,65
+H_BladesEdge,Horde,10526,The Thunderspike,67,65
+H_BladesEdge,Horde,10543,"Grimnok and Korgaah, I Am For You!",67,65
+H_BladesEdge,Horde,10544,A Curse Upon Both of Your Clans!,66,65
+H_BladesEdge,Horde,10567,Creating the Pendant,66,66
+H_BladesEdge,Horde,10607,Whispers of the Raven God,68,66
+H_BladesEdge,Horde,10614,Whispers on the Wind,66,65
+H_BladesEdge,Horde,10615,Ruuan Weald,64,64
+H_BladesEdge,Horde,10709,Reunion,67,65
+H_BladesEdge,Horde,10714,On Spirit's Wings,67,65
+H_BladesEdge,Horde,10715,Into the Churning Gulch,67,65
+H_BladesEdge,Horde,10718,The Spirits Have Voices,67,65
+H_BladesEdge,Horde,10719,Did You Get The Note?,67,65
+H_BladesEdge,Horde,10720,The Smallest Creatures,67,65
+H_BladesEdge,Horde,10721,A Boaring Time for Grulloc,67,65
+H_BladesEdge,Horde,10722,Meeting at the Blackwing Coven,68,65
+H_BladesEdge,Horde,10723,Gorgrom the Dragon-Eater,68,65
+H_BladesEdge,Horde,10724,Prisoner of the Bladespire,67,65
+H_BladesEdge,Horde,10742,Showdown,70,65
+H_BladesEdge,Horde,10747,Whelps of the Wyrmcult,68,65
+H_BladesEdge,Horde,10748,Maxnar Must Die!,68,65
+H_BladesEdge,Horde,10749,Baron Sablemane's Poison,67,65
+H_BladesEdge,Horde,10783,Baron Sablemane,67,65
+H_BladesEdge,Horde,10784,Crush the Bloodmaul Camp,67,65
+H_BladesEdge,Horde,10785,It's a Trap!,67,65
+H_BladesEdge,Horde,10786,Slaughter at Boulder'mok,68,65
+H_BladesEdge,Horde,10810,Damaged Mask,68,65
+H_BladesEdge,Horde,10812,Mystery Mask,68,65
+H_BladesEdge,Horde,10819,Felsworn Gas Mask,68,65
+H_BladesEdge,Horde,10820,Deceive thy Enemy,68,65
+H_BladesEdge,Horde,10821,You're Fired!,68,65
+H_BladesEdge,Horde,10825,The Truth Unorbed,68,66
+H_BladesEdge,Horde,10829,Treebole Must Know,68,66
+H_BladesEdge,Horde,10830,Exorcising the Trees,68,66
+H_BladesEdge,Horde,10867,There Can Be Only One Response,68,65
+H_BladesEdge,Horde,10893,Longtail is the Lynchpin,67,65
+H_BladesEdge,Horde,10894,Wyrmskull Watcher,67,65
+H_BladesEdge,Horde,10904,Harvesting the Fel Ammunition,68,65
+H_BladesEdge,Horde,10910,Death's Door,68,65
+H_BladesEdge,Horde,10911,Fire At Will!,68,65
+H_BladesEdge,Horde,10912,The Hound-Master,68,65
+H_BladesEdge,Horde,10974,Stasis Chambers of Bash'ir,70,70
+H_BladesEdge,Horde,10976,The Mark of the Nexus-King,70,70
+H_BladesEdge,Horde,10982,The Eye of Haramad,70,70
+H_BladesEdge,Horde,10983,Mog'dorg the Wizened,70,70
+H_BladesEdge,Horde,10989,Mog'dorg the Wizened,70,70
+H_BladesEdge,Horde,10995,Grulloc Has Two Skulls,70,70
+H_BladesEdge,Horde,10996,Maggoc's Treasure Chest,70,70
+H_BladesEdge,Horde,10998,Grim(oire) Business,70,70
+H_BladesEdge,Horde,11000,Into the Soulgrinder,70,70
+H_BladesEdge,Horde,11009,Ogre Heaven,70,70
+H_BladesEdge,Horde,11022,Speak with Mog'dorg,70,70
+H_BladesEdge,Horde,11025,The Crystals,70,70
+H_BladesEdge,Horde,11026,Banish the Demons,70,70
+H_BladesEdge,Horde,11030,Our Boy Wants To Be A Skyguard Ranger,70,70
+H_BladesEdge,Horde,11036,Out of This World Produce!,67,67
+H_BladesEdge,Horde,11047,The Apprentice's Request,67,67
+H_BladesEdge,Horde,11057,The Trouble Below,70,70
+H_BladesEdge,Horde,11058,An Apexis Relic,70,70
+H_BladesEdge,Horde,11059,Guardian of the Monument,70,70
+H_BladesEdge,Horde,11061,A Father's Duty,70,70
+H_BladesEdge,Horde,11062,The Skyguard Outpost,70,70
+H_BladesEdge,Horde,11065,Wrangle Some Aether Rays!,70,70
+H_BladesEdge,Horde,11078,To Rule The Skies,70,70
+H_BladesEdge,Horde,11079,A Fel Whip For Gahk,70,70
+H_BladesEdge,Horde,11091,A Special Thank You,70,70
+H_BladesEdge,Horde,11119,Assault on Bash'ir Landing!,70,70
+H_Shadowmoon,Horde,10451,Escape from Coilskar Cistern,70,67
+H_Shadowmoon,Horde,10458,Enraged Spirits of Fire and Earth,70,68
+H_Shadowmoon,Horde,10480,Enraged Spirits of Water,70,68
+H_Shadowmoon,Horde,10481,Enraged Spirits of Air,70,68
+H_Shadowmoon,Horde,10513,Oronok Torn-heart,70,68
+H_Shadowmoon,Horde,10514,I Was A Lot Of Things...,70,68
+H_Shadowmoon,Horde,10515,A Lesson Learned,70,68
+H_Shadowmoon,Horde,10519,The Cipher of Damnation - Truth and History,70,68
+H_Shadowmoon,Horde,10521,"Grom'tor, Son of Oronok",70,68
+H_Shadowmoon,Horde,10522,The Cipher of Damnation - Grom'tor's Charge,70,68
+H_Shadowmoon,Horde,10523,The Cipher of Damnation - The First Fragment Recovered,70,68
+H_Shadowmoon,Horde,10527,"Ar'tor, Son of Oronok",70,68
+H_Shadowmoon,Horde,10528,Demonic Crystal Prisons,70,68
+H_Shadowmoon,Horde,10537,"Lohn'goron, Bow of the Torn-heart",70,68
+H_Shadowmoon,Horde,10540,The Cipher of Damnation - Ar'tor's Charge,70,68
+H_Shadowmoon,Horde,10541,The Cipher of Damnation - The Second Fragment Recovered,70,68
+H_Shadowmoon,Horde,10546,"Borak, Son of Oronok",70,68
+H_Shadowmoon,Horde,10547,Of Thistleheads and Eggs...,70,68
+H_Shadowmoon,Horde,10550,The Bundle of Bloodthistle,70,68
+H_Shadowmoon,Horde,10568,Tablets of Baa'ri,70,68
+H_Shadowmoon,Horde,10570,To Catch A Thistlehead,70,68
+H_Shadowmoon,Horde,10571,Oronu the Elder,70,68
+H_Shadowmoon,Horde,10574,The Ashtongue Corruptors,70,68
+H_Shadowmoon,Horde,10575,The Warden's Cage,70,68
+H_Shadowmoon,Horde,10576,The Shadowmoon Shuffle,70,68
+H_Shadowmoon,Horde,10577,"What Illidan Wants, Illidan Gets...",70,68
+H_Shadowmoon,Horde,10578,The Cipher of Damnation - Borak's Charge,70,68
+H_Shadowmoon,Horde,10579,The Cipher of Damnation - The Third Fragment Recovered,70,68
+H_Shadowmoon,Horde,10587,Karabor Training Grounds,70,68
+H_Shadowmoon,Horde,10588,The Cipher of Damnation,70,68
+H_Shadowmoon,Horde,10611,The Art of Fel Reaver Maintenance,69,67
+H_Shadowmoon,Horde,10613,The Fel and the Furious,69,67
+H_Shadowmoon,Horde,10619,The Ashtongue Tribe,70,68
+H_Shadowmoon,Horde,10622,Proof of Allegiance,70,68
+H_Shadowmoon,Horde,10623,Illidari-Bane Shard,69,67
+H_Shadowmoon,Horde,10627,Capture the Weapons,69,67
+H_Shadowmoon,Horde,10628,Akama,70,68
+H_Shadowmoon,Horde,10633,Teron Gorefiend - Lore and Legend,70,67
+H_Shadowmoon,Horde,10634,Divination: Gorefiend's Armor,70,67
+H_Shadowmoon,Horde,10635,Divination: Gorefiend's Cloak,70,67
+H_Shadowmoon,Horde,10636,Divination: Gorefiend's Truncheon,70,67
+H_Shadowmoon,Horde,10637,A Necessary Distraction,70,68
+H_Shadowmoon,Horde,10639,"Teron Gorefiend, I am...",70,67
+H_Shadowmoon,Horde,10647,"Wanted: Uvuros, Scourge of Shadowmoon",70,67
+H_Shadowmoon,Horde,10650,Return to the Aldor,70,69
+H_Shadowmoon,Horde,10651,Varedis Must Be Stopped,70,68
+H_Shadowmoon,Horde,10663,The Hermit Smith,69,67
+H_Shadowmoon,Horde,10664,Additional Materials,69,67
+H_Shadowmoon,Horde,10665,Fresh From the Mechanar,69,67
+H_Shadowmoon,Horde,10666,The Lexicon Demonica,69,67
+H_Shadowmoon,Horde,10667,Underworld Loam,70,67
+H_Shadowmoon,Horde,10670,Tear of the Earthmother,70,67
+H_Shadowmoon,Horde,10673,Felspine the Greater,70,67
+H_Shadowmoon,Horde,10676,Bane of the Illidari,70,70
+H_Shadowmoon,Horde,10679,Quenching the Blade,70,70
+H_Shadowmoon,Horde,10681,The Hand of Gul'dan,70,68
+H_Shadowmoon,Horde,10683,Tablets of Baa'ri,70,68
+H_Shadowmoon,Horde,10684,Oronu the Elder,70,68
+H_Shadowmoon,Horde,10685,The Ashtongue Corruptors,70,68
+H_Shadowmoon,Horde,10686,The Warden's Cage,70,68
+H_Shadowmoon,Horde,10687,Karabor Training Grounds,70,68
+H_Shadowmoon,Horde,10688,A Necessary Distraction,70,68
+H_Shadowmoon,Horde,10691,Return to the Scryers,70,69
+H_Shadowmoon,Horde,10692,Varedis Must Be Stopped,70,68
+H_Shadowmoon,Horde,10706,A Mysterious Portent,70,69
+H_Shadowmoon,Horde,10707,The Ata'mal Terrace,70,68
+H_Shadowmoon,Horde,10708,Akama's Promise,70,68
+H_Shadowmoon,Horde,10745,News of Victory,70,67
+H_Shadowmoon,Horde,10750,The Path of Conquest,70,68
+H_Shadowmoon,Horde,10751,Breaching the Path,70,68
+H_Shadowmoon,Horde,10765,When Worlds Collide...,70,68
+H_Shadowmoon,Horde,10768,Tabards of the Illidari,70,68
+H_Shadowmoon,Horde,10769,Dissension Amongst the Ranks...,70,67
+H_Shadowmoon,Horde,10777,Asghar's Totem,69,67
+H_Shadowmoon,Horde,10778,The Rod of Lianthe,69,67
+H_Shadowmoon,Horde,10780,Sketh'lon Feathers,69,67
+H_Shadowmoon,Horde,10781,Battle of the Crimson Watch,70,68
+H_Shadowmoon,Horde,10782,Imbuing the Headpiece,69,67
+H_Shadowmoon,Horde,10793,The Journal of Val'zareq: Portends of War,70,68
+H_Shadowmoon,Horde,10804,Kindness,70,70
+H_Shadowmoon,Horde,10807,The Ashtongue Broken,70,68
+H_Shadowmoon,Horde,10808,Thwart the Dark Conclave,69,67
+H_Shadowmoon,Horde,10811,Seek Out Neltharaku,70,70
+H_Shadowmoon,Horde,10814,Neltharaku's Tale,70,70
+H_Shadowmoon,Horde,10816,Reclaiming Holy Grounds,70,68
+H_Shadowmoon,Horde,10817,The Great Retribution,70,68
+H_Shadowmoon,Horde,10824,Sunfury Signets,70,68
+H_Shadowmoon,Horde,10836,Infiltrating Dragonmaw Fortress,70,70
+H_Shadowmoon,Horde,10837,To Netherwing Ledge!,70,70
+H_Shadowmoon,Horde,10854,The Force of Neltharaku,70,70
+H_Shadowmoon,Horde,10858,Karynaku,70,70
+H_Shadowmoon,Horde,10866,Zuluhed the Whacked,70,70
+H_Shadowmoon,Horde,10870,Ally of the Netherwing,70,70
+H_Shadowmoon,Horde,10944,The Secret Compromised,70,70
+H_Shadowmoon,Horde,10949,Entry Into the Black Temple,70,70
+H_Shadowmoon,Horde,10985,A Distraction for Akama,70,70
+H_Shadowmoon,Horde,11013,In Service of the Illidari,70,70
+H_Shadowmoon,Horde,11019,Your Friend On The Inside,70,70
+H_Shadowmoon,Horde,11041,A Job Unfinished...,70,70
+H_Shadowmoon,Horde,11049,The Great Netherwing Egg Hunt,70,70
+H_Shadowmoon,Horde,11052,Akama's Promise,70,68
+H_Shadowmoon,Horde,11053,"Rise, Overseer!",70,70
+H_Shadowmoon,Horde,11054,Overseeing and You: Making the Right Choices,70,70
+H_Shadowmoon,Horde,11063,Earning Your Wings...,70,70
+H_Shadowmoon,Horde,11064,Dragonmaw Race: The Ballad of Oldie McOld,70,70
+H_Shadowmoon,Horde,11067,Dragonmaw Race: Trope the Filth-Belcher,70,70
+H_Shadowmoon,Horde,11068,Dragonmaw Race: Corlok the Vet,70,70
+H_Shadowmoon,Horde,11069,Dragonmaw Race: Wing Commander Ichman,70,70
+H_Shadowmoon,Horde,11070,Dragonmaw Race: Wing Commander Mulverick,70,70
+H_Shadowmoon,Horde,11071,Dragonmaw Race: Captain Skyshatter,70,70
+H_Shadowmoon,Horde,11075,The Netherwing Mines,70,70
+H_Shadowmoon,Horde,11081,The Great Murkblood Revolt,70,70
+H_Shadowmoon,Horde,11082,Seeker of Truth,70,70
+H_Shadowmoon,Horde,11083,Crazed and Confused,70,70
+H_Shadowmoon,Horde,11084,"Stand Tall, Captain!",70,70
+H_Shadowmoon,Horde,11089,The Soul Cannon of Reth'hedron,70,70
+H_Shadowmoon,Horde,11090,Subdue the Subduer,70,70
+H_Shadowmoon,Horde,11092,"Hail, Commander!",70,70
+H_Shadowmoon,Horde,11094,Kill Them All!,70,70
+H_Shadowmoon,Horde,11095,Commander Hobb,70,70
+H_Shadowmoon,Horde,11099,Kill Them All!,70,70
+H_Shadowmoon,Horde,11100,Commander Arcus,70,70
+H_Shadowmoon,Horde,11107,Bow to the Highlord,70,70
+H_Shadowmoon,Horde,11108,Lord Illidan Stormrage,70,70
+H_Shadowmoon,Horde,11498,Learning to Fly,70,70

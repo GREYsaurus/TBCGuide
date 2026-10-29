@@ -14,7 +14,9 @@
   <Script file="alliance_14_wetlands.lua"/>
   <Script file="alliance_20_hillsbrad.lua"/>
   <Script file="alliance_21_arathi.lua"/>
+  <Script file="alliance_21b_desolace.lua"/>
   <Script file="alliance_22_stranglethorn.lua"/>
+  <Script file="alliance_22b_badlands.lua"/>
   <Script file="alliance_23_dustwallow.lua"/>
   <Script file="alliance_25_feralas.lua"/>
   <Script file="alliance_26_hinterlands.lua"/>
@@ -32,7 +34,9 @@
   <Script file="horde_12_ashenvale.lua"/>
   <Script file="horde_13_hillsbrad.lua"/>
   <Script file="horde_14_thousandneedles.lua"/>
+  <Script file="horde_14b_desolace.lua"/>
   <Script file="horde_15_arathi.lua"/>
+  <Script file="horde_15b_badlands.lua"/>
   <Script file="horde_16_stranglethorn.lua"/>
   <Script file="horde_17_dustwallow.lua"/>
   <Script file="horde_20_feralas.lua"/>
@@ -53,5 +57,7 @@
   <Script file="outland_h67_bladesedge.lua"/>
   <Script file="outland_h69_shadowmoon.lua"/>
   <Script file="shared_24_tanaris.lua"/>
+  <Script file="shared_26b_searinggorge.lua"/>
   <Script file="shared_27_ungoro.lua"/>
+  <Script file="shared_31_easternplaguelands.lua"/>
 </Ui>

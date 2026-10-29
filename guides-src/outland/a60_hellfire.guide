@@ -16,18 +16,22 @@ accept Arrival in Outland
 turnin Arrival in Outland | Amish Wildhammer, the gryphon master on the Stair.
 accept Journey to Honor Hold
 fly Honor Hold
+fp Honor Hold
 turnin Journey to Honor Hold | Marshal Isildor.
 accept Force Commander Danath
 turnin Force Commander Danath
 accept The Legion Reborn
 accept Know your Enemy
 turnin Know your Enemy
-fp Honor Hold
 bind Honor Hold
-accept Fel Orc Scavengers | Lieutenant Amadi.
-accept Waste Not, Want Not | Dumphry.
-accept Ravager Egg Roundup | Legassi.
 accept In Case of Emergency... | "Screaming" Screed Luckheed.
+accept Ravager Egg Roundup | Legassi.
+accept Waste Not, Want Not | Dumphry.
+accept Fel Orc Scavengers | Lieutenant Amadi.
+complete Fel Orc Scavengers | Fel orcs at Zeth'Gor.
+complete Ravager Egg Roundup | Ravager nests south of Honor Hold.
+turnin Fel Orc Scavengers
+accept Ill Omens
 accept Outland Sucks! | Foreman Razelcraz, outside Honor Hold.
 turnin The Legion Reborn | Sergeant Altumus at the Stair of Destiny caravan.
 accept The Path of Anguish
@@ -37,27 +41,20 @@ complete Outland Sucks! | Salvage scattered west of Honor Hold.
 complete In Case of Emergency... | Zeppelin debris around the Hellfire fields.
 turnin The Path of Anguish
 accept Expedition Point
+complete Ill Omens | Bleeding Hollow orcs at Zeth'Gor.
+turnin Ill Omens
+accept Cursed Talismans
+complete Cursed Talismans | Cursed Talisman drops from Bleeding Hollow Dark Shaman, Bleeding Hollow Grunt and Bleeding Hollow Peon and others.
+turnin Cursed Talismans
+accept Warlord of the Bleeding Hollow
+complete Warlord of the Bleeding Hollow | Morkh's Shattered Armor drops from Warlord Morkh.
+turnin Warlord of the Bleeding Hollow
+accept Return to Honor Hold
 turnin Expedition Point | Forward Commander Kingston, Expedition Point.
 accept Disrupt Their Reinforcements
 complete Disrupt Their Reinforcements | Demons at the two Legion portals near Expedition Point.
 turnin Disrupt Their Reinforcements
 accept Mission: The Murketh and Shaadraz Gateways
-complete Fel Orc Scavengers | Fel orcs at Zeth'Gor.
-complete Ravager Egg Roundup | Ravager nests south of Honor Hold.
-turnin Fel Orc Scavengers
-accept Ill Omens
-turnin Ravager Egg Roundup
-accept Helboar, the Other White Meat
-turnin Waste Not, Want Not
-accept Laying Waste to the Unwanted
-turnin Outland Sucks!
-accept How to Serve Goblins
-turnin In Case of Emergency...
-accept Voidwalkers Gone Wild
-accept The Longbeards | Sid Limbardi, Honor Hold.
-accept When This Mine's a-Rockin' | Foreman Biggums.
-accept Unyielding Souls | Honor Guard Wesilow.
-accept An Old Gift | Father Malgor Devidicus.
 complete Mission: The Murketh and Shaadraz Gateways | Fly over the gateways with the gryphon from Shatter Point.
 turnin Mission: The Murketh and Shaadraz Gateways
 accept Shatter Point
@@ -65,7 +62,7 @@ turnin Shatter Point
 accept Wing Commander Gryphongar
 fp Shatter Point
 turnin Wing Commander Gryphongar
-accept Mission: The Abyssal Shelf
+accept Mission: The Abyssal Shelf | Group quest: Fel Cannon and Gan'arg Peon are elite.
 complete Mission: The Abyssal Shelf | Bomb the Abyssal Shelf from the gryphon.
 turnin Mission: The Abyssal Shelf
 accept Go to the Front
@@ -77,105 +74,108 @@ accept Enemy of my Enemy...
 complete Enemy of my Enemy...
 turnin Enemy of my Enemy...
 accept Invasion Point: Annihilator
-complete Invasion Point: Annihilator
+complete Invasion Point: Annihilator | Burning Legion Gate Key drops from Warbringer Arix'Amal. Click Forge Camp: Portal Glyph.
 turnin Invasion Point: Annihilator
-complete Ill Omens | Bleeding Hollow orcs at Zeth'Gor.
-turnin Ill Omens
-accept Cursed Talismans
-complete Cursed Talismans
-turnin Cursed Talismans
-accept Warlord of the Bleeding Hollow
-complete Warlord of the Bleeding Hollow
-turnin Warlord of the Bleeding Hollow
-accept Return to Honor Hold
+turnin Outland Sucks!
+accept How to Serve Goblins
+turnin Waste Not, Want Not
+accept Laying Waste to the Unwanted
+accept Unyielding Souls | Honor Guard Wesilow.
+accept When This Mine's a-Rockin' | Foreman Biggums.
+turnin Ravager Egg Roundup
+accept Helboar, the Other White Meat
+accept An Old Gift | Father Malgor Devidicus.
 complete Helboar, the Other White Meat | Helboars around Honor Hold.
 complete Laying Waste to the Unwanted | Burn the fuel tanks along the Path of Glory.
 complete How to Serve Goblins | Rescue goblins from the Bonechewer camps.
 complete When This Mine's a-Rockin' | Hellfire Quarry mine.
 complete Unyielding Souls | Unyielding orcs at the Hellfire Citadel approach.
 complete An Old Gift | The broken altar at the Hellfire Citadel ruins.
-complete Voidwalkers Gone Wild | Voidwalkers at Void Ridge.
-turnin Helboar, the Other White Meat
-accept Smooth as Butter
-turnin Laying Waste to the Unwanted
-turnin How to Serve Goblins
-turnin When This Mine's a-Rockin'
-accept The Mastermind
-turnin Unyielding Souls
-accept Looking to the Leadership
-turnin An Old Gift
-turnin Voidwalkers Gone Wild
 turnin Return to Honor Hold
 accept Fel Spirits
 accept Digging for Prayer Beads
-complete The Mastermind | Deep inside the Hellfire Quarry mine.
-complete Looking to the Leadership | Bonechewer leaders.
-complete Smooth as Butter | Bonestripper Buzzards.
 complete Fel Spirits
-complete Digging for Prayer Beads
-turnin The Mastermind
-turnin Looking to the Leadership
-turnin Smooth as Butter
+complete Digging for Prayer Beads | Draenei Prayer Beads: loot Fei Fei's Cache.
 turnin Fel Spirits
 turnin Digging for Prayer Beads
 accept The Exorcism of Colonel Jules
 complete The Exorcism of Colonel Jules
 turnin The Exorcism of Colonel Jules
 accept Trollbane is Looking for You
-turnin Trollbane is Looking for You
-accept Drill the Drillmaster
+turnin An Old Gift
+accept The Longbeards | Sid Limbardi, Honor Hold. Needs level 60; TBCGuide skips it if you are lower and brings it back when you ding.
+turnin Helboar, the Other White Meat
+accept Smooth as Butter
+turnin In Case of Emergency...
+accept Voidwalkers Gone Wild
+complete Voidwalkers Gone Wild | Voidwalkers at Void Ridge.
+turnin Voidwalkers Gone Wild
+turnin The Longbeards | Gremni Longbeard.
+accept Rampaging Ravagers | Gremni Longbeard. Needs level 60; TBCGuide skips it if you are lower and brings it back when you ding.
+accept The Arakkoa Threat | Needs level 60. If you are lower, TBCGuide skips it and moves on.
+turnin Unyielding Souls
+accept Looking to the Leadership
+turnin When This Mine's a-Rockin'
+accept The Mastermind
+complete The Mastermind | Deep inside the Hellfire Quarry mine.
+turnin The Mastermind
+complete Looking to the Leadership | Bonechewer leaders.
 accept The Path of Glory | Warp-Scryer Kryv.
-complete Drill the Drillmaster
-turnin Drill the Drillmaster
-complete The Path of Glory
+complete The Path of Glory | Click Trampled Skeleton.
 turnin The Path of Glory
 accept The Temple of Telhamat
-turnin The Temple of Telhamat | Amaan the Wise, Temple of Telhamat (west).
-fp Temple of Telhamat
-accept The Pools of Aggonar
+complete Smooth as Butter | Bonestripper Buzzards.
+turnin Trollbane is Looking for You
+accept Drill the Drillmaster | Group quest: Drillmaster Zurok is elite.
+complete Drill the Drillmaster | Elite: Drillmaster Zurok; bring help or skip.
+turnin Drill the Drillmaster
+turnin Smooth as Butter
+turnin Looking to the Leadership
+turnin Laying Waste to the Unwanted
+turnin How to Serve Goblins
 accept In Search of Sedai | Anchorite Obadei.
-accept Deadly Predators | Scout Vanura.
-accept Cruel Taskmasters | Ikan.
-accept The Rock Flayer Matriarch
-turnin The Longbeards | Gremni Longbeard.
-accept Rampaging Ravagers | Gremni Longbeard.
-accept The Arakkoa Threat
 turnin In Search of Sedai | Sedai's corpse on the road.
 accept Return to Obadei
+fp Temple of Telhamat
 turnin Return to Obadei
+accept Cruel Taskmasters | Ikan.
+accept The Rock Flayer Matriarch
 accept Makuru's Vengeance
+accept Deadly Predators | Scout Vanura.
+turnin The Temple of Telhamat | Amaan the Wise, Temple of Telhamat (west).
+accept The Pools of Aggonar
 complete The Pools of Aggonar | Aggonis and blistering oozes at the Pools of Aggonar.
 complete Deadly Predators | Fel stalkers and helboars.
 complete Cruel Taskmasters | Taskmasters at the Mag'har Grounds.
 complete Makuru's Vengeance | Mag'har orcs at the Mag'har Grounds.
-complete The Rock Flayer Matriarch
+complete The Rock Flayer Matriarch | Blacktalon's Claws drops from Blacktalon the Savage.
 complete Rampaging Ravagers
 complete The Arakkoa Threat | Arakkoa at Haal'eshi Gorge.
 turnin The Pools of Aggonar
 accept Cleansing the Waters
+complete Cleansing the Waters [group=2] | Aggonis at the pools.
+turnin Cleansing the Waters
 turnin Deadly Predators
 turnin Cruel Taskmasters
+turnin The Rock Flayer Matriarch
 turnin Makuru's Vengeance
 accept Atonement
 turnin Atonement
-turnin The Rock Flayer Matriarch
-turnin Rampaging Ravagers
-turnin The Arakkoa Threat
-complete Cleansing the Waters [group=2] | Aggonis at the pools.
-turnin Cleansing the Waters
 accept The Cenarion Expedition [optional] | Leads to Zangarmarsh.
-accept Demonic Contamination | Thiah Redmane, Cenarion Post.
-accept Colossal Menace | Tola'thion.
 accept Keep Thornfang Hill Clear! | Mahuram Stouthoof.
-complete Demonic Contamination
-complete Colossal Menace
+accept Colossal Menace | Tola'thion.
+accept Demonic Contamination | Thiah Redmane, Cenarion Post.
+complete Demonic Contamination | Helboar Blood Sample drops from Dreadtusk and Hulking Helboar.
+complete Colossal Menace | Elite: Raging Colossus; bring help or skip.
 complete Keep Thornfang Hill Clear!
 turnin Demonic Contamination
-accept Testing the Antidote
+accept Testing the Antidote | Needs level 61. If you are lower, TBCGuide skips it and moves on.
 complete Testing the Antidote
 turnin Testing the Antidote
 turnin Colossal Menace
 turnin Keep Thornfang Hill Clear!
+turnin Rampaging Ravagers
+turnin The Arakkoa Threat
 level 62
 train | Hearth or take the Dark Portal back to a capital city to train.
 note Ride west from the Temple of Telhamat into Zangarmarsh; Telredor is the Alliance town.

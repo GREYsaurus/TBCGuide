@@ -8,24 +8,40 @@ local E, G = ns.Engine, ns.Guides
 
 -- Saved progress follows reordered steps -------------------------------------------------------------
 local L = ns.GuideLayouts and ns.GuideLayouts.H_Barrens
-check(L and L.layout == 2 and next(L.map), "H_Barrens has a step layout map")
+local M = L and L.maps and L.maps[2]
+check(L and L.layout == 2 and M and next(M), "H_Barrens has a step layout map")
 local oldIdx, newIdx
-for k, v in pairs(L.map) do oldIdx, newIdx = k, v break end
+for k, v in pairs(M) do oldIdx, newIdx = k, v break end
 ns.char.progress.H_Barrens = { step = oldIdx, done = { [oldIdx] = true }, skipped = { [1] = true } }
 local p = ns:GetProgress("H_Barrens")
 check(p.layout == 2 and p.done[newIdx] == true and (oldIdx == newIdx or not p.done[oldIdx]), "done step moved to its new index")
 check(p.step == newIdx, "current step moved too")
-check(p.skipped[L.map[1] or 1] == true, "skipped steps moved")
+check(p.skipped[M[1] or 1] == true, "skipped steps moved")
 local again = ns:GetProgress("H_Barrens")
 check(again.done[newIdx] == true, "the remap runs once")
 ns:ResetProgress("H_Barrens")
 check(ns.char.progress.H_Barrens.layout == 2, "fresh progress records the current layout")
-check(ns:GetProgress("A_Human_Elwynn").layout == (ns.GuideLayouts.A_Human_Elwynn and 2 or nil), "guides without changes keep no layout")
--- the map is a permutation of the old steps onto the new ones
+check(ns:GetProgress("A_Human_Elwynn").layout == (ns.GuideLayouts.A_Human_Elwynn and ns.GuideLayouts.A_Human_Elwynn.layout or nil), "guides without changes keep no layout")
+
+-- Two reorders in a row (0.7.0 -> 0.9.0 -> now): progress from either release lands on the same step.
+local W = ns.GuideLayouts.A_WesternPlaguelands
+check(W and W.layout == 3 and W.maps[2] and W.maps[3], "A_WesternPlaguelands has two chained maps")
+local a7, a9
+for k, v in pairs(W.maps[2]) do if W.maps[3][v] then a7, a9 = k, v break end end
+ns.char.progress.A_WesternPlaguelands = { step = a7, done = { [a7] = true }, skipped = {} }
+local p7 = ns:GetProgress("A_WesternPlaguelands")
+ns.char.progress.A_WesternPlaguelands = { step = a9, done = { [a9] = true }, skipped = {}, layout = 2 }
+local p9 = ns:GetProgress("A_WesternPlaguelands")
+check(p7.layout == 3 and p9.layout == 3 and p7.step == W.maps[3][a9] and p9.step == p7.step and p7.done[p7.step], "0.7.0 and 0.9.0 progress both reach the current step")
+ns:ResetProgress("A_WesternPlaguelands")
+-- every map is one-to-one and names a real guide
 for id, lay in pairs(ns.GuideLayouts) do
-    local seen, ok = {}, true
-    for _, v in pairs(lay.map) do if seen[v] then ok = false end seen[v] = true end
-    check(ok and G.byId[id] ~= nil, id .. ": layout map is one-to-one and names a real guide")
+    local ok = G.byId[id] ~= nil and type(lay.maps) == "table"
+    for _, m in pairs(lay.maps or {}) do
+        local seen = {}
+        for _, v in pairs(m) do if seen[v] then ok = false end seen[v] = true end
+    end
+    check(ok, id .. ": layout maps are one-to-one and name a real guide")
 end
 
 -- Under-level pickups are skipped, not blocking ---------------------------------------------------------

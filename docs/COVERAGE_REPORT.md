@@ -7,14 +7,14 @@ It reports what the automated checks found. It is **not** evidence of in-game te
 
 | Item | Count |
 |---|---|
-| Guides | 54 (41 Azeroth, 13 Outland) |
-| Guide steps | 5731 |
-| Quest steps (accept/complete/turn-in) | 5099 |
-| Distinct quests referenced | 1730 |
-| Steps with database-derived coordinates | 4054 |
+| Guides | 60 (47 Azeroth, 13 Outland) |
+| Guide steps | 6134 |
+| Quest steps (accept/complete/turn-in) | 5418 |
+| Distinct quests referenced | 1836 |
+| Steps with database-derived coordinates | 4294 |
 | Steps with hand-written coordinates (unverified) | 1 |
 | Race/class combinations | 52 |
-| Talent builds | 21 (21 pass validation) |
+| Talent builds | 28 (28 pass validation) |
 | Validation | validate: 0 error(s), 0 warning(s) |
 | Compiler warnings | 137 (see docs/generated/guide-warnings.log) |
 
@@ -24,58 +24,58 @@ Each race/class combination is followed from its racial start guide through the 
 
 | Race | Class | Faction | Guides | Reaches | Problems |
 |---|---|---|---|---|---|
-| Draenei | HUNTER | Alliance | 22 | 70 | none |
-| Draenei | MAGE | Alliance | 22 | 70 | none |
-| Draenei | PALADIN | Alliance | 22 | 70 | none |
-| Draenei | PRIEST | Alliance | 22 | 70 | none |
-| Draenei | SHAMAN | Alliance | 22 | 70 | none |
-| Draenei | WARRIOR | Alliance | 22 | 70 | none |
-| Dwarf | HUNTER | Alliance | 23 | 70 | none |
-| Dwarf | PALADIN | Alliance | 23 | 70 | none |
-| Dwarf | PRIEST | Alliance | 23 | 70 | none |
-| Dwarf | ROGUE | Alliance | 23 | 70 | none |
-| Dwarf | WARRIOR | Alliance | 23 | 70 | none |
-| Gnome | MAGE | Alliance | 23 | 70 | none |
-| Gnome | ROGUE | Alliance | 23 | 70 | none |
-| Gnome | WARLOCK | Alliance | 23 | 70 | none |
-| Gnome | WARRIOR | Alliance | 23 | 70 | none |
-| Human | MAGE | Alliance | 23 | 70 | none |
-| Human | PALADIN | Alliance | 23 | 70 | none |
-| Human | PRIEST | Alliance | 23 | 70 | none |
-| Human | ROGUE | Alliance | 23 | 70 | none |
-| Human | WARLOCK | Alliance | 23 | 70 | none |
-| Human | WARRIOR | Alliance | 23 | 70 | none |
-| NightElf | DRUID | Alliance | 22 | 70 | none |
-| NightElf | HUNTER | Alliance | 22 | 70 | none |
-| NightElf | PRIEST | Alliance | 22 | 70 | none |
-| NightElf | ROGUE | Alliance | 22 | 70 | none |
-| NightElf | WARRIOR | Alliance | 22 | 70 | none |
-| BloodElf | HUNTER | Horde | 23 | 70 | none |
-| BloodElf | MAGE | Horde | 23 | 70 | none |
-| BloodElf | PALADIN | Horde | 23 | 70 | none |
-| BloodElf | PRIEST | Horde | 23 | 70 | none |
-| BloodElf | ROGUE | Horde | 23 | 70 | none |
-| BloodElf | WARLOCK | Horde | 23 | 70 | none |
-| Orc | HUNTER | Horde | 22 | 70 | none |
-| Orc | ROGUE | Horde | 22 | 70 | none |
-| Orc | SHAMAN | Horde | 22 | 70 | none |
-| Orc | WARLOCK | Horde | 22 | 70 | none |
-| Orc | WARRIOR | Horde | 22 | 70 | none |
-| Scourge | MAGE | Horde | 23 | 70 | none |
-| Scourge | PRIEST | Horde | 23 | 70 | none |
-| Scourge | ROGUE | Horde | 23 | 70 | none |
-| Scourge | WARLOCK | Horde | 23 | 70 | none |
-| Scourge | WARRIOR | Horde | 23 | 70 | none |
-| Tauren | DRUID | Horde | 22 | 70 | none |
-| Tauren | HUNTER | Horde | 22 | 70 | none |
-| Tauren | SHAMAN | Horde | 22 | 70 | none |
-| Tauren | WARRIOR | Horde | 22 | 70 | none |
-| Troll | HUNTER | Horde | 22 | 70 | none |
-| Troll | MAGE | Horde | 22 | 70 | none |
-| Troll | PRIEST | Horde | 22 | 70 | none |
-| Troll | ROGUE | Horde | 22 | 70 | none |
-| Troll | SHAMAN | Horde | 22 | 70 | none |
-| Troll | WARRIOR | Horde | 22 | 70 | none |
+| Draenei | HUNTER | Alliance | 26 | 70 | none |
+| Draenei | MAGE | Alliance | 26 | 70 | none |
+| Draenei | PALADIN | Alliance | 26 | 70 | none |
+| Draenei | PRIEST | Alliance | 26 | 70 | none |
+| Draenei | SHAMAN | Alliance | 26 | 70 | none |
+| Draenei | WARRIOR | Alliance | 26 | 70 | none |
+| Dwarf | HUNTER | Alliance | 27 | 70 | none |
+| Dwarf | PALADIN | Alliance | 27 | 70 | none |
+| Dwarf | PRIEST | Alliance | 27 | 70 | none |
+| Dwarf | ROGUE | Alliance | 27 | 70 | none |
+| Dwarf | WARRIOR | Alliance | 27 | 70 | none |
+| Gnome | MAGE | Alliance | 27 | 70 | none |
+| Gnome | ROGUE | Alliance | 27 | 70 | none |
+| Gnome | WARLOCK | Alliance | 27 | 70 | none |
+| Gnome | WARRIOR | Alliance | 27 | 70 | none |
+| Human | MAGE | Alliance | 27 | 70 | none |
+| Human | PALADIN | Alliance | 27 | 70 | none |
+| Human | PRIEST | Alliance | 27 | 70 | none |
+| Human | ROGUE | Alliance | 27 | 70 | none |
+| Human | WARLOCK | Alliance | 27 | 70 | none |
+| Human | WARRIOR | Alliance | 27 | 70 | none |
+| NightElf | DRUID | Alliance | 26 | 70 | none |
+| NightElf | HUNTER | Alliance | 26 | 70 | none |
+| NightElf | PRIEST | Alliance | 26 | 70 | none |
+| NightElf | ROGUE | Alliance | 26 | 70 | none |
+| NightElf | WARRIOR | Alliance | 26 | 70 | none |
+| BloodElf | HUNTER | Horde | 27 | 70 | none |
+| BloodElf | MAGE | Horde | 27 | 70 | none |
+| BloodElf | PALADIN | Horde | 27 | 70 | none |
+| BloodElf | PRIEST | Horde | 27 | 70 | none |
+| BloodElf | ROGUE | Horde | 27 | 70 | none |
+| BloodElf | WARLOCK | Horde | 27 | 70 | none |
+| Orc | HUNTER | Horde | 26 | 70 | none |
+| Orc | ROGUE | Horde | 26 | 70 | none |
+| Orc | SHAMAN | Horde | 26 | 70 | none |
+| Orc | WARLOCK | Horde | 26 | 70 | none |
+| Orc | WARRIOR | Horde | 26 | 70 | none |
+| Scourge | MAGE | Horde | 27 | 70 | none |
+| Scourge | PRIEST | Horde | 27 | 70 | none |
+| Scourge | ROGUE | Horde | 27 | 70 | none |
+| Scourge | WARLOCK | Horde | 27 | 70 | none |
+| Scourge | WARRIOR | Horde | 27 | 70 | none |
+| Tauren | DRUID | Horde | 26 | 70 | none |
+| Tauren | HUNTER | Horde | 26 | 70 | none |
+| Tauren | SHAMAN | Horde | 26 | 70 | none |
+| Tauren | WARRIOR | Horde | 26 | 70 | none |
+| Troll | HUNTER | Horde | 26 | 70 | none |
+| Troll | MAGE | Horde | 26 | 70 | none |
+| Troll | PRIEST | Horde | 26 | 70 | none |
+| Troll | ROGUE | Horde | 26 | 70 | none |
+| Troll | SHAMAN | Horde | 26 | 70 | none |
+| Troll | WARRIOR | Horde | 26 | 70 | none |
 
 ## Guides
 
@@ -108,20 +108,26 @@ Each race/class combination is followed from its racial start guide through the 
 | Arathi Highlands (Refuge Pointe) | Alliance | 30-34 | Arathi Highlands | 33 | 7 | 6 |
 | Stranglethorn Vale | Alliance | 32-40 | Stranglethorn Vale | 147 | 47 | 16 |
 | Arathi Highlands (Hammerfall) | Horde | 32-35 | Arathi Highlands | 52 | 14 | 0 |
+| Desolace (Nijel's Point) | Alliance | 33-37 | Desolace | 69 | 21 | 3 |
+| Desolace (Ghost Walker Post and Shadowprey) | Horde | 33-36 | Desolace | 35 | 7 | 0 |
 | Stranglethorn Vale (Grom'gol) | Horde | 34-40 | Stranglethorn Vale | 69 | 19 | 0 |
+| Badlands (Kargath) | Horde | 35-38 | Badlands | 33 | 6 | 0 |
 | Dustwallow Marsh (Theramore) | Alliance | 36-41 | Dustwallow Marsh | 75 | 23 | 15 |
 | Dustwallow Marsh (Brackenwall Village) | Horde | 37-42 | Dustwallow Marsh | 91 | 29 | 14 |
+| Badlands | Alliance | 38-41 | Badlands | 50 | 15 | 4 |
 | Tanaris (Gadgetzan) | Both | 41-45 | Tanaris | 49 | 12 | 6 |
 | Feralas (Feathermoon Stronghold) | Alliance | 43-47 | Feralas | 60 | 19 | 2 |
-| Feralas (Camp Mojache) | Horde | 43-47 | Feralas | 26 | 4 | 0 |
+| Feralas (Camp Mojache) | Horde | 43-47 | Feralas | 54 | 14 | 0 |
 | The Hinterlands (Revantusk Village) | Horde | 44-50 | The Hinterlands | 51 | 13 | 0 |
 | The Hinterlands (Aerie Peak) | Alliance | 45-49 | The Hinterlands | 39 | 9 | 0 |
+| Searing Gorge (Thorium Point) | Both | 47-50 | Searing Gorge | 50 | 13 | 0 |
 | Un'Goro Crater | Both | 48-52 | Un'Goro Crater | 51 | 13 | 1 |
-| Felwood (Talonbranch Glade) | Alliance | 51-54 | Felwood | 35 | 8 | 0 |
-| Felwood (Bloodvenom Post) | Horde | 51-54 | Felwood | 35 | 8 | 0 |
+| Felwood (Talonbranch Glade) | Alliance | 51-54 | Felwood | 38 | 9 | 0 |
+| Felwood (Bloodvenom Post) | Horde | 51-54 | Felwood | 38 | 9 | 0 |
 | Burning Steppes (Morgan's Vigil) | Alliance | 53-56 | Burning Steppes | 42 | 13 | 2 |
-| Western Plaguelands (The Bulwark) | Horde | 54-58 | Western Plaguelands | 47 | 14 | 0 |
-| Western Plaguelands (Chillwind Camp) | Alliance | 55-58 | Western Plaguelands | 38 | 9 | 0 |
+| Western Plaguelands (The Bulwark) | Horde | 54-58 | Western Plaguelands | 63 | 20 | 2 |
+| Western Plaguelands (Chillwind Camp) | Alliance | 55-57 | Western Plaguelands | 81 | 26 | 2 |
+| Eastern Plaguelands (Light's Hope) | Both | 56-58 | Eastern Plaguelands | 44 | 10 | 0 |
 | Hellfire Peninsula (Honor Hold) | Alliance | 58-62 | Hellfire Peninsula | 177 | 60 | 4 |
 | Hellfire Peninsula (Thrallmar) | Horde | 58-62 | Hellfire Peninsula | 142 | 51 | 4 |
 | Zangarmarsh (Telredor) | Alliance | 61-64 | Zangarmarsh | 117 | 39 | 4 |
@@ -131,47 +137,54 @@ Each race/class combination is followed from its racial start guide through the 
 | Nagrand (Telaar) | Alliance | 64-67 | Nagrand | 104 | 36 | 4 |
 | Nagrand (Garadar) | Horde | 64-67 | Nagrand | 114 | 39 | 4 |
 | Blade's Edge Mountains (Sylvanaar & Toshley's Station) | Alliance | 66-68 | Blade's Edge Mountains | 102 | 33 | 0 |
-| Blade's Edge Mountains (Thunderlord Stronghold) | Horde | 66-68 | Blade's Edge Mountains | 50 | 15 | 3 |
+| Blade's Edge Mountains (Thunderlord Stronghold) | Horde | 66-68 | Blade's Edge Mountains | 79 | 25 | 3 |
 | Netherstorm (Area 52) | Both | 67-70 | Netherstorm | 105 | 35 | 3 |
 | Shadowmoon Valley (Wildhammer Stronghold) | Alliance | 68-70 | Shadowmoon Valley | 57 | 18 | 0 |
 | Shadowmoon Valley (Shadowmoon Village) | Horde | 68-70 | Shadowmoon Valley | 57 | 18 | 0 |
 
 ### Zones covered
 
-- **Azeroth (32):** Arathi Highlands, Ashenvale, Azuremyst Isle, Bloodmyst Isle, Burning Steppes, Darkshore, Dun Morogh, Durotar, Duskwood, Dustwallow Marsh, Elwynn Forest, Eversong Woods, Felwood, Feralas, Ghostlands, Hillsbrad Foothills, Loch Modan, Mulgore, Redridge Mountains, Silverpine Forest, Stonetalon Mountains, Stranglethorn Vale, Tanaris, Teldrassil, The Barrens, The Hinterlands, Thousand Needles, Tirisfal Glades, Un'Goro Crater, Western Plaguelands, Westfall, Wetlands
+- **Azeroth (36):** Arathi Highlands, Ashenvale, Azuremyst Isle, Badlands, Bloodmyst Isle, Burning Steppes, Darkshore, Desolace, Dun Morogh, Durotar, Duskwood, Dustwallow Marsh, Eastern Plaguelands, Elwynn Forest, Eversong Woods, Felwood, Feralas, Ghostlands, Hillsbrad Foothills, Loch Modan, Mulgore, Redridge Mountains, Searing Gorge, Silverpine Forest, Stonetalon Mountains, Stranglethorn Vale, Tanaris, Teldrassil, The Barrens, The Hinterlands, Thousand Needles, Tirisfal Glades, Un'Goro Crater, Western Plaguelands, Westfall, Wetlands
 - **Outland (7):** Blade's Edge Mountains, Hellfire Peninsula, Nagrand, Netherstorm, Shadowmoon Valley, Terokkar Forest, Zangarmarsh
 
 ## Talent builds
 
 | Class | Build | Kind | Role | Points (trees) | Validation |
 |---|---|---|---|---|---|
-| DRUID | Balance (level 70 DPS) | endgame | Ranged DPS | 61 (47/0/14) | pass |
-| DRUID | Feral (leveling, cat and bear) | leveling | Solo DPS / Tank | 61 (0/43/18) | pass |
-| HUNTER | Beast Mastery (level 70 DPS) | endgame | Ranged DPS | 61 (41/20/0) | pass |
-| HUNTER | Beast Mastery (leveling) | leveling | Solo DPS | 61 (45/16/0) | pass |
-| MAGE | Fire (level 70 raid DPS) | endgame | Ranged DPS | 61 (10/48/3) | pass |
-| MAGE | Frost (leveling / AoE) | leveling | Solo DPS | 61 (20/0/41) | pass |
-| PALADIN | Holy (level 70 healer) | endgame | Healer | 61 (41/20/0) | pass |
-| PALADIN | Protection (level 70 tank) | endgame | Tank | 61 (13/48/0) | pass |
-| PALADIN | Retribution (leveling) | leveling | Solo DPS | 61 (17/0/44) | pass |
-| PRIEST | Holy (level 70 healer) | endgame | Healer | 61 (20/41/0) | pass |
-| PRIEST | Shadow (leveling) | leveling | Solo DPS | 61 (19/0/42) | pass |
-| ROGUE | Mutilate (level 70 dagger DPS) | endgame | Melee DPS | 61 (41/20/0) | pass |
-| ROGUE | Combat Swords (leveling) | leveling | Solo DPS | 61 (19/42/0) | pass |
-| SHAMAN | Elemental (level 70 DPS) | endgame | Ranged DPS | 61 (45/0/16) | pass |
-| SHAMAN | Restoration (level 70 healer) | endgame | Healer | 61 (0/17/44) | pass |
-| SHAMAN | Enhancement (leveling) | leveling | Solo DPS | 61 (20/41/0) | pass |
-| WARLOCK | Destruction (level 70 raid DPS) | endgame | Ranged DPS | 61 (0/21/40) | pass |
-| WARLOCK | Affliction (leveling) | leveling | Solo DPS | 61 (41/20/0) | pass |
-| WARRIOR | Fury (level 70 raid DPS) | endgame | Melee DPS | 61 (17/44/0) | pass |
-| WARRIOR | Protection (level 70 tank) | endgame | Tank | 61 (5/15/41) | pass |
-| WARRIOR | Arms (leveling) | leveling | Solo DPS | 61 (45/16/0) | pass |
+| DRUID | Balance (Icy Veins leveling) | leveling | Ranged DPS | 61 (47/0/14) | pass |
+| DRUID | Feral (Icy Veins leveling) | leveling | Melee DPS / Tank | 61 (0/47/14) | pass |
+| DRUID | Restoration (Icy Veins leveling) | leveling | Healer | 61 (0/0/61) | pass |
+| HUNTER | Beast Mastery (Icy Veins leveling) | leveling | Ranged DPS | 61 (47/14/0) | pass |
+| HUNTER | Marksmanship (Icy Veins leveling) | leveling | Ranged DPS | 61 (16/45/0) | pass |
+| HUNTER | Survival (Icy Veins leveling) | leveling | Ranged DPS | 61 (5/12/44) | pass |
+| MAGE | Arcane (Icy Veins leveling) | leveling | Ranged DPS | 61 (61/0/0) | pass |
+| MAGE | Fire (Icy Veins leveling) | leveling | Ranged DPS | 61 (11/47/3) | pass |
+| MAGE | Frost single-target (Icy Veins leveling) | leveling | Ranged DPS | 61 (10/0/51) | pass |
+| MAGE | Frost AoE (Icy Veins leveling) | leveling | Ranged DPS | 61 (18/0/43) | pass |
+| PALADIN | Holy (Icy Veins leveling) | leveling | Healer | 61 (43/11/7) | pass |
+| PALADIN | Protection (Icy Veins leveling) | leveling | Tank | 61 (11/50/0) | pass |
+| PALADIN | Retribution (Icy Veins leveling) | leveling | Melee DPS | 61 (5/10/46) | pass |
+| PRIEST | Discipline (Icy Veins leveling) | leveling | Healer | 61 (41/20/0) | pass |
+| PRIEST | Holy (Icy Veins leveling) | leveling | Healer | 61 (20/41/0) | pass |
+| PRIEST | Shadow (Icy Veins leveling) | leveling | Ranged DPS | 61 (14/0/47) | pass |
+| ROGUE | Combat (Icy Veins leveling) | leveling | Melee DPS | 61 (20/41/0) | pass |
+| ROGUE | Subtlety (Icy Veins leveling) | leveling | Melee DPS | 61 (20/0/41) | pass |
+| ROGUE | Mutilate (TBCGuide plan) | leveling | Melee DPS | 61 (41/20/0) | pass |
+| SHAMAN | Elemental (Icy Veins leveling) | leveling | Ranged DPS | 61 (41/0/20) | pass |
+| SHAMAN | Enhancement (Icy Veins leveling) | leveling | Melee DPS | 61 (17/44/0) | pass |
+| SHAMAN | Restoration (Icy Veins leveling) | leveling | Healer | 61 (0/5/56) | pass |
+| WARLOCK | Affliction (Icy Veins leveling) | leveling | Ranged DPS | 61 (44/17/0) | pass |
+| WARLOCK | Demonology (Icy Veins leveling) | leveling | Ranged DPS | 61 (20/41/0) | pass |
+| WARLOCK | Destruction (Icy Veins PvE build) | leveling | Ranged DPS | 59 (0/19/40) | pass |
+| WARRIOR | Arms (Icy Veins leveling) | leveling | Melee DPS | 61 (35/26/0) | pass |
+| WARRIOR | Fury (Icy Veins leveling) | leveling | Melee DPS | 61 (18/43/0) | pass |
+| WARRIOR | Protection (Icy Veins leveling) | leveling | Tank | 61 (13/5/43) | pass |
 
 ## Data awaiting verification
 
 - Guide **routes, ordering and notes** are original and were written without in-game testing. Quest ids, names, faction/race/class limits and NPC coordinates come from the database, but the practical route (XP sufficiency, travel efficiency) needs play-testing.
-- **99 complete-steps** have no objective location in the data (escort, talk or event quests). The arrow cannot target them; the step text still shows the objective.
-- **31 prerequisite warnings**: a quest's prerequisite is not turned in on the route (usually an alternative chain). The engine auto-skips unavailable quests at runtime.
+- **100 complete-steps** have no objective location in the data (escort, talk or event quests). The arrow cannot target them; the step text still shows the objective.
+- **30 prerequisite warnings**: a quest's prerequisite is not turned in on the route (usually an alternative chain). The engine auto-skips unavailable quests at runtime.
 - **Class advice** text (Classes/ClassAdvice.lua) is marked unverified. Ability training levels are from developer knowledge.
 - **Talent builds** are legal against the 2.5.6 client tables, but how good they are is a judgement call, not something tested.
 

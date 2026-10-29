@@ -49,6 +49,6 @@ ns.Guides:Register({
     {"train",text="No shaman trainer in this zone - train at the next town or capital.",classes={"SHAMAN"},v=1},
     {"train",text="No warlock trainer in this zone - train at the next town or capital.",classes={"WARLOCK"},v=1},
     {"train",text="No warrior trainer in this zone - train at the next town or capital.",classes={"WARRIOR"},v=1},
-    {"note",text="Fly to Chillwind Camp in the Western Plaguelands (fly to Aerie Peak or Southshore first if you lack the path).",v=1},
+    {"note",text="Fly to Ironforge (Courier Hammerfall has the Western Plaguelands call to arms), then to Chillwind Camp (via Aerie Peak or Southshore if you lack the path).",v=1},
   },
 })

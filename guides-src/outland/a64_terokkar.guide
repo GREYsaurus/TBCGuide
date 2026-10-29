@@ -11,58 +11,46 @@
 @next A_Nagrand
 
 accept A'dal [optional] | Khadgar's servant brings you to A'dal in Shattrath (opens the Aldor/Scryer choice).
-turnin A'dal [optional]
+turnin A'dal [optional] | Turned in at Shattrath City.
 fp Shattrath City
 note In Shattrath, pick the Aldor or the Scryers. Either is fine for leveling; it only affects later rewards.
-accept Thin the Flock | Lieutenant Gravelhammer, Allerian Stronghold.
+fp Allerian Stronghold
 accept Unruly Neighbors | Bertelm.
 accept Timber Worg Tails
-accept Olemba Seeds | Ros'eleth.
-accept Magical Disturbances | Andarl.
-accept Stymying the Arakkoa | Thander.
+accept Thin the Flock | Lieutenant Gravelhammer, Allerian Stronghold.
 accept Speak with Private Weeks
+accept Olemba Seeds | Ros'eleth.
 accept Wanted: Bonelashers Dead!
-fp Allerian Stronghold
+accept Stymying the Arakkoa | Thander.
+accept Magical Disturbances | Andarl.
 bind Allerian Stronghold
-complete Thin the Flock | Arakkoa at Veil Rhaze area.
-complete Unruly Neighbors | Firewing blood elves around Firewing Point.
-complete Timber Worg Tails | Timber Worgs.
-complete Olemba Seeds | Olemba cones from the trees.
-complete Magical Disturbances | Mana Wraiths at the Bone Wastes.
-complete Stymying the Arakkoa | Arakkoa at the eastern veils.
-turnin Thin the Flock
-turnin Unruly Neighbors
-accept The Firewing Liaison
-accept Thinning the Ranks
-turnin Timber Worg Tails
-accept The Elusive Ironjaw
-turnin Olemba Seeds
-accept Vessels of Power
-turnin Magical Disturbances
-turnin Stymying the Arakkoa
 turnin Speak with Private Weeks | Private Weeks, Shadow Council camp area.
 accept Who Are They?
 complete Who Are They? | Use the disguise at the Shadow Council camp.
 turnin Who Are They?
 accept Kill the Shadow Council!
+complete Thin the Flock | Arakkoa at Veil Rhaze area.
+complete Unruly Neighbors | Firewing blood elves around Firewing Point.
+complete Timber Worg Tails | Timber Worgs.
+complete Olemba Seeds | Olemba cones from the trees.
+turnin Olemba Seeds
+accept Vessels of Power
+turnin Thin the Flock
 complete Kill the Shadow Council!
 turnin Kill the Shadow Council!
-complete The Firewing Liaison
-complete Thinning the Ranks
-complete The Elusive Ironjaw
-complete Vessels of Power
+turnin Timber Worg Tails
+accept The Elusive Ironjaw
+complete Magical Disturbances | Mana Wraiths at the Bone Wastes.
+complete Stymying the Arakkoa | Arakkoa at the eastern veils.
+turnin Magical Disturbances
+complete The Elusive Ironjaw | Ironjaw's Pelt drops from Ironjaw.
+complete Vessels of Power | Draenei Vessel: loot Draenei Vessel.
 complete Wanted: Bonelashers Dead!
-turnin The Firewing Liaison
-turnin Thinning the Ranks
-turnin The Elusive Ironjaw
-turnin Vessels of Power
 turnin Wanted: Bonelashers Dead!
-accept 9961 What's Wrong at Cenarion Thicket? | Jenai Starwhisper.
-turnin 9961 What's Wrong at Cenarion Thicket? | Earthbinder Tavgren, Cenarion Thicket (north).
 accept Strange Energy
 accept Clues in the Thicket
-complete Strange Energy
-complete Clues in the Thicket
+complete Strange Energy | Teromoth Sample drops from Teromoth. Vicious Teromoth Sample drops from Vicious Teromoth.
+complete Clues in the Thicket | Click Strange Object.
 turnin Strange Energy
 turnin Clues in the Thicket
 accept By Any Means Necessary
@@ -70,22 +58,35 @@ turnin By Any Means Necessary
 accept Wind Trader Lathrai
 turnin Wind Trader Lathrai | Lower City, Shattrath.
 accept A Personal Favor
-complete A Personal Favor
-turnin A Personal Favor
+complete A Personal Favor | Lathrai's Stolen Goods drops from Skithian Dreadhawk and Skithian Windripper.
+turnin A Personal Favor | Turned in at Shattrath City.
 accept Investigate Tuurem
 turnin Investigate Tuurem
 accept What Are These Things?
 turnin What Are These Things?
 accept Report to the Allerian Post
+turnin Unruly Neighbors
+accept The Firewing Liaison
+accept Thinning the Ranks
+complete The Firewing Liaison
+complete Thinning the Ranks
 turnin Report to the Allerian Post
 accept Attack on Firewing Point
 complete Attack on Firewing Point
 turnin Attack on Firewing Point
 accept The Final Code
-complete The Final Code
+turnin The Firewing Liaison
+turnin Thinning the Ranks
+turnin The Elusive Ironjaw
+turnin Vessels of Power
+turnin Stymying the Arakkoa
+complete The Final Code | Click Mana Bomb.
 turnin The Final Code
 accept Letting Earthbinder Tavgren Know
+accept 9961 What's Wrong at Cenarion Thicket? | Jenai Starwhisper.
+turnin 9961 What's Wrong at Cenarion Thicket? | Earthbinder Tavgren, Cenarion Thicket (north).
 turnin Letting Earthbinder Tavgren Know
+accept Digging Through Bones | Chief Archaeologist Letoll, Bone Wastes.
 accept An Improper Burial | Commander Ra'vaj, Sha'tari Base Camp (southwest).
 complete An Improper Burial
 turnin An Improper Burial
@@ -95,14 +96,13 @@ turnin A Hero Is Needed
 accept The Fallen Exarch
 complete The Fallen Exarch
 turnin The Fallen Exarch
+complete Digging Through Bones [group=2] | Escort.
+turnin Digging Through Bones
 accept For the Fallen | Vindicator Haylen.
 complete For the Fallen
 turnin For the Fallen
-accept Terokkarantula
-complete Terokkarantula [group=2]
+accept Terokkarantula | Group quest: Terokkarantula is elite.
+complete Terokkarantula [group=2] | Elite: Terokkarantula; bring help or skip.
 turnin Terokkarantula
-accept Digging Through Bones | Chief Archaeologist Letoll, Bone Wastes.
-complete Digging Through Bones [group=2] | Escort.
-turnin Digging Through Bones
 level 65
 note Ride west from Shattrath into Nagrand; Telaar is the Alliance town in the south.

@@ -1,0 +1,73 @@
+# TBCGuide - Desolace (33-37), Alliance
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide A_Desolace
+@name Desolace (Nijel's Point)
+@faction Alliance
+@levels 33-37
+@zone Desolace
+@chapter Azeroth
+@desc Nijel's Point: the Reclaimers and the Karnitol wreck, Vahlarriel's search for the Malem family, Rackmore's treasure, the Magram centaurs and the Gizelton caravan's kodos. Loops run north-east, west coast, Thunder Axe Fortress, then the south.
+@next A_Stranglethorn
+
+accept Reclaimers' Business in Desolace [zone=Ironforge] | Roetten Stonehammer in Ironforge's Hall of Explorers. Needed for the Reclaimers quests in Desolace.
+note From Ironforge fly to Menethil Harbor and take the boat to Auberdine. Fly to Stonetalon Peak if you have it (otherwise Astranaar, then ride west through Stonetalon) and follow the road south into Desolace. Nijel's Point is in the north-east.
+fp Nijel's Point
+bind Nijel's Point
+accept Centaur Bounty | Corporal Melkins.
+accept 1437 Vahlarriel's Search | Vahlarriel Demonslayer.
+accept Brutal Politics | Captain Pentigast. Choose the Magram side: do not also take Strange Alliance.
+turnin Reclaimers' Business in Desolace | Kreldig Ungor.
+accept 1458 Reagents for Reclaimers Inc. | Kreldig Ungor.
+accept 1454 The Karnitol Shipwreck | Kreldig Ungor.
+complete 1458 Reagents for Reclaimers Inc. | Hatefury satyrs at Sargeron, east of Nijel's Point.
+turnin 1458 Reagents for Reclaimers Inc.
+accept 1459 Reagents for Reclaimers Inc. | Scorpashi in the north and Aged Kodos in the south. Collect the venom as you go.
+turnin 1437 Vahlarriel's Search | At the Malem chest by the overturned cart.
+accept 1465 Vahlarriel's Search
+accept Sceptre of Light | Azore Aldamort, the tower on the west coast.
+accept Claim Rackmore's Treasure! | Rackmore's Log by the Karnitol wreck.
+turnin 1454 The Karnitol Shipwreck | Karnitol's Chest on the wrecked ship.
+accept 1455 The Karnitol Shipwreck
+complete Claim Rackmore's Treasure! | Silver Key from Drysnap Crawlers on the shore, Golden Key from Slitherblade Naga.
+turnin Claim Rackmore's Treasure! | Rackmore's Chest on Ranazjar Isle, north-west. Swim across.
+turnin 1455 The Karnitol Shipwreck | Back at Nijel's Point.
+turnin 1465 Vahlarriel's Search
+accept 1456 The Karnitol Shipwreck
+accept 1438 Vahlarriel's Search
+turnin 1438 Vahlarriel's Search | Dalinda Malem, inside Thunder Axe Fortress.
+accept Search for Tyranis
+complete Search for Tyranis | Tyranis Malem inside the fortress.
+complete Sceptre of Light | Burning Blade Seers in Thunder Axe Fortress; the Sceptre drops from the one at the top of the tower.
+turnin Search for Tyranis
+accept Return to Vahlarriel | Escort quest: Dalinda walks you out of the fortress.
+complete Return to Vahlarriel
+complete 1459 Reagents for Reclaimers Inc. [obj=1] | Scorpashi Venom from Scorpashi in the north.
+turnin Return to Vahlarriel | Nijel's Point.
+complete 1456 The Karnitol Shipwreck | Karnitol's Satchel from Slitherblade Tidehunters on the north-west coast.
+turnin Sceptre of Light | Azore Aldamort.
+turnin 1456 The Karnitol Shipwreck | Nijel's Point.
+accept 1457 The Karnitol Shipwreck | Turned in at Ironforge; keep it for the trip to the Badlands.
+accept Bone Collector | Bibbly F'utzbuckle at Kormek's Hut.
+accept Kodo Roundup | Smeed Scrabblescrew at the caravan camp.
+complete Kodo Roundup | Use the Kodo Kombobulator on Ancient, Aged or Dying Kodos in the Kodo Graveyard and lead them back to Smeed.
+complete Bone Collector | Kodo Bones on the ground in the Kodo Graveyard.
+complete 1459 Reagents for Reclaimers Inc. [obj=2] | Aged Kodo Hide from Aged Kodos around the graveyard.
+turnin Kodo Roundup
+turnin Brutal Politics | Warug in the Magram village, east.
+accept Assault on the Kolkar
+complete Assault on the Kolkar | Kolkar village north of the Magram.
+complete Centaur Bounty | Centaur Ears from the same Kolkar.
+turnin Assault on the Kolkar
+turnin Bone Collector | Kormek's Hut.
+turnin Centaur Bounty | Nijel's Point.
+turnin 1459 Reagents for Reclaimers Inc.
+accept 1466 Reagents for Reclaimers Inc. [optional] | Mannoroc Coven demons; level 38-40 and they hit hard.
+accept Down the Scarlet Path | Brother Anton. Needs level 34.
+complete 1466 Reagents for Reclaimers Inc. [optional] | Mana Eaters, Nether Maidens and Doomwarder Captains at the Mannoroc Coven.
+complete Down the Scarlet Path | Undead Ravagers in the Valley of Bones, far south.
+turnin 1466 Reagents for Reclaimers Inc. [optional] | Nijel's Point.
+turnin Down the Scarlet Path
+level 36
+train
+note Fly to Auberdine, take the boat to Menethil Harbor and fly to Ironforge or Stormwind, then on to Booty Bay or Rebel Camp in Stranglethorn.

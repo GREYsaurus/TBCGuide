@@ -8,7 +8,7 @@
 @zone Thousand Needles
 @chapter Azeroth
 @desc Freewind Post, the Grimtotem and centaur camps, and the Shimmering Flats racing goblins and gnomes.
-@next H_Arathi
+@next H_Desolace
 
 turnin 1195 The Sacred Flame [optional] | Turned in at Thunder Bluff.
 accept 1196 The Sacred Flame [optional]
@@ -136,4 +136,4 @@ turnin Hardened Shells
 turnin Rocket Car Parts
 level 32
 train
-note Take the zeppelin to the Undercity and fly or ride to Hammerfall (Arathi Highlands).
+note Next: Desolace, west of Stonetalon Mountains.

@@ -12,10 +12,10 @@ Every race/class route is walked step by step. **Model level** comes from the XP
 | Order errors (prerequisite later, complete before accept, log over cap) | 0 |
 | Warnings | 31 |
 | Peak quest log (worst route) | 22 / 25 |
-| Reduced-XP pickups (6+ levels below estimate) | 18 |
-| Level-gated pickups | 129 |
+| Reduced-XP pickups (6+ levels below estimate) | 32 |
+| Level-gated pickups | 135 |
 | Accepted, never turned in | 0 |
-| Hub revisits (all guides) | 431 |
+| Hub revisits (all guides) | 397 |
 
 ## Per guide
 
@@ -25,58 +25,64 @@ Values in brackets are the baseline (`docs/generated/route-metrics-baseline.csv`
 |---|---|---|---|---|---|---|---|---|---|---|
 | A_Arathi | 33 (34) | 7 (8) | 80 (184) | 80 | 0 (4) | 0 | 0 | 0 (1) | 0 | 4 |
 | A_Ashenvale | 76 (62) | 24 (21) | 113 (270) | 197 | 4 | 0 | 4 (1) | 0 (5) | 0 | 1 |
-| A_BladesEdge | 102 (103) | 33 (34) | 258 | 258 | 8 | 0 | 0 | 0 (1) | 2 | 0 |
+| A_Badlands | 50 | 15 | 128 | 228 | 5 | 0 | 0 | 0 | 0 | 0 |
+| A_BladesEdge | 102 (103) | 33 (34) | 193 (258) | 193 | 3 (8) | 0 | 0 | 0 (1) | 2 | 0 |
 | A_BurningSteppes | 42 (44) | 13 (15) | 8 (203) | 133 | 2 (5) | 0 | 0 | 0 (4) | 2 | 1 |
 | A_Darkshore | 189 (110) | 54 (39) | 306 (355) | 409 | 12 (13) | 0 | 10 (0) | 0 (5) | 5 (2) | 2 |
+| A_Desolace | 69 | 21 | 350 | 375 | 6 | 0 | 0 | 0 | 1 | 0 |
 | A_Draenei_Azuremyst | 204 (131) | 77 (45) | 421 (384) | 434 | 12 (9) | 0 | 2 (4) | 0 (2) | 4 (1) | 0 |
 | A_Draenei_Bloodmyst | 205 (125) | 78 (42) | 336 (276) | 634 | 22 (6) | 1 (0) | 11 (4) | 0 | 2 | 1 |
 | A_Duskwood | 190 (78) | 65 (29) | 207 (571) | 772 | 19 (13) | 0 | 4 (0) | 0 (4) | 1 (0) | 0 |
 | A_Dustwallow | 75 (78) | 23 (27) | 236 (429) | 215 | 3 (7) | 0 | 0 | 0 (6) | 1 | 0 |
 | A_DwarfGnome_DunMorogh | 145 (101) | 50 (34) | 255 (322) | 320 | 13 (15) | 0 | 7 (3) | 0 | 3 (0) | 0 |
-| A_Felwood | 35 (36) | 8 (9) | 146 (247) | 92 | 0 (4) | 0 | 0 | 0 (1) | 0 | 0 |
+| A_Felwood | 38 (36) | 9 | 146 (247) | 92 | 0 (4) | 0 | 0 | 0 (1) | 0 | 0 |
 | A_Feralas | 60 (63) | 19 (22) | 272 (344) | 272 | 3 | 0 | 2 (0) | 0 (3) | 2 (3) | 2 |
-| A_Hellfire | 177 | 60 (61) | 803 (804) | 828 | 34 (35) | 0 | 6 (0) | 0 (3) | 0 | 1 (2) |
+| A_Hellfire | 177 | 60 (61) | 494 (804) | 519 | 18 (35) | 0 | 8 (0) | 0 (3) | 0 | 1 (2) |
 | A_Hillsbrad | 65 (47) | 25 (14) | 26 (44) | 226 | 1 (0) | 0 | 5 (3) | 0 (3) | 0 | 0 |
 | A_Hinterlands | 39 (40) | 9 (10) | 93 (111) | 93 | 1 (5) | 0 | 0 | 0 (1) | 0 | 0 |
 | A_Human_Elwynn | 164 (143) | 59 (48) | 392 (467) | 455 | 13 (16) | 0 | 7 (2) | 0 | 0 | 2 |
 | A_LochModan | 106 (72) | 29 (24) | 133 (517) | 382 | 5 (11) | 0 | 4 (0) | 0 (2) | 0 | 0 (1) |
-| A_Nagrand | 104 (105) | 36 (37) | 367 | 367 | 4 | 0 | 0 | 0 (1) | 2 | 1 (2) |
+| A_Nagrand | 104 (105) | 36 (37) | 192 (367) | 192 | 1 (4) | 0 | 0 | 0 (1) | 2 | 1 (2) |
 | A_NightElf_Teldrassil | 178 (92) | 63 (30) | 313 (214) | 471 | 13 (7) | 0 | 3 (1) | 0 (1) | 6 (0) | 0 |
 | A_Redridge | 118 (69) | 41 (22) | 243 (289) | 370 | 10 (13) | 0 | 12 (0) | 0 (1) | 1 | 3 |
-| A_Shadowmoon | 57 | 18 | 132 | 132 | 2 | 0 | 0 | 0 | 0 | 0 |
-| A_Stranglethorn | 147 (76) | 47 (25) | 311 (269) | 484 | 6 | 2 (0) | 0 | 0 (5) | 0 | 0 |
-| A_Terokkar | 96 (97) | 33 (34) | 390 | 465 | 11 | 0 | 0 | 0 (1) | 1 | 2 (3) |
-| A_WesternPlaguelands | 38 (41) | 9 (12) | 48 (288) | 98 | 0 (5) | 0 | 0 | 0 (3) | 0 | 0 |
+| A_Shadowmoon | 57 | 18 | 76 (132) | 76 | 1 (2) | 0 | 0 | 0 | 0 | 0 |
+| A_Stranglethorn | 147 (76) | 47 (25) | 311 (269) | 484 | 6 | 12 (0) | 0 | 0 (5) | 0 | 0 |
+| A_Terokkar | 96 (97) | 33 (34) | 292 (390) | 367 | 5 (11) | 0 | 0 | 0 (1) | 1 | 2 (3) |
+| A_WesternPlaguelands | 81 (41) | 26 (12) | 452 (288) | 527 | 9 (5) | 0 | 0 | 0 (3) | 0 | 0 |
 | A_Westfall | 78 (56) | 27 (16) | 83 (253) | 167 | 5 (7) | 0 | 2 (0) | 0 | 0 | 2 |
 | A_Wetlands | 113 (79) | 41 (26) | 229 (255) | 429 | 8 (9) | 0 | 8 (0) | 0 (2) | 0 | 0 |
-| A_Zangarmarsh | 117 (115) | 39 (41) | 323 (365) | 323 | 9 | 0 | 0 | 0 (5) | 1 (2) | 0 (1) |
-| Both_Netherstorm | 105 (107) | 35 (37) | 358 (440) | 358 | 11 (14) | 0 | 0 | 0 (2) | 0 (1) | 1 |
+| A_Zangarmarsh | 117 (115) | 39 (41) | 174 (365) | 174 | 3 (9) | 0 | 0 | 0 (5) | 1 (2) | 0 (1) |
+| Both_EasternPlaguelands | 44 | 10 | 279 | 300 | 2 | 0 | 0 | 0 | 0 | 0 |
+| Both_Netherstorm | 105 (107) | 35 (37) | 220 (440) | 220 | 7 (14) | 0 | 0 | 0 (2) | 0 (1) | 1 |
+| Both_SearingGorge | 50 | 13 | 33 | 30 | 1 | 0 | 0 | 0 | 2 | 0 |
 | Both_Tanaris | 49 (52) | 12 (15) | 39 (63) | 35 | 0 (1) | 0 | 1 | 0 (3) | 0 | 2 |
-| Both_UngoroCrater | 51 (55) | 13 (17) | 309 (323) | 309 | 3 (4) | 0 | 1 | 0 (4) | 3 | 1 (2) |
+| Both_UngoroCrater | 51 (55) | 13 (17) | 309 (323) | 309 | 3 (4) | 0 | 0 (1) | 0 (4) | 3 | 1 (2) |
 | H_Arathi | 52 | 14 | 103 (163) | 103 | 2 (3) | 0 | 0 | 0 | 0 | 0 |
 | H_Ashenvale | 58 (42) | 18 (10) | 258 (492) | 258 | 6 (13) | 0 | 0 (1) | 0 (1) | 2 | 5 (3) |
+| H_Badlands | 33 | 6 | 91 | 91 | 3 | 0 | 2 | 0 | 0 | 0 |
 | H_Barrens | 323 (117) | 111 (41) | 474 (299) | 740 | 26 (13) | 14 (0) | 14 (0) | 0 (7) | 2 (1) | 1 |
-| H_BladesEdge | 50 (51) | 15 (16) | 215 (245) | 215 | 7 (8) | 0 | 0 | 0 (1) | 1 | 0 |
+| H_BladesEdge | 79 (51) | 25 (16) | 192 (245) | 192 | 4 (8) | 0 | 0 | 0 (1) | 1 | 0 |
 | H_BloodElf_Eversong | 243 (118) | 93 (41) | 442 (583) | 520 | 14 (16) | 1 (0) | 4 (0) | 0 (4) | 4 (1) | 0 |
 | H_BloodElf_Ghostlands | 193 (103) | 70 (35) | 396 (440) | 498 | 18 (16) | 0 | 4 (1) | 0 (1) | 1 (0) | 1 |
+| H_Desolace | 35 | 7 | 212 | 212 | 4 | 0 | 0 | 0 | 0 | 0 |
 | H_Dustwallow | 91 (90) | 29 | 248 (301) | 298 | 8 (12) | 0 | 0 | 0 (1) | 0 | 0 |
-| H_Felwood | 35 (36) | 8 (9) | 150 (274) | 150 | 1 (5) | 0 | 0 | 0 (1) | 1 | 0 |
-| H_Feralas | 26 (28) | 4 (5) | 66 (130) | 36 | 0 (3) | 0 | 0 (5) | 0 | 0 | 0 |
-| H_Hellfire | 142 (146) | 51 (55) | 713 (748) | 738 | 14 (15) | 0 | 3 (0) | 0 (4) | 0 | 0 |
+| H_Felwood | 38 (36) | 9 | 150 (274) | 150 | 1 (5) | 0 | 0 | 0 (1) | 1 | 0 |
+| H_Feralas | 54 (28) | 14 (5) | 106 (130) | 105 | 2 (3) | 0 | 0 (5) | 0 | 0 | 0 |
+| H_Hellfire | 142 (146) | 51 (55) | 442 (748) | 467 | 10 (15) | 0 | 6 (0) | 0 (4) | 0 | 0 |
 | H_Hillsbrad | 51 (48) | 14 (15) | 140 (122) | 140 | 1 | 0 | 3 (0) | 0 (4) | 0 | 0 |
 | H_Hinterlands | 51 (52) | 13 (14) | 54 (70) | 54 | 1 | 0 | 0 | 0 (1) | 0 | 0 |
-| H_Nagrand | 114 | 39 | 336 | 386 | 9 | 0 | 0 | 0 | 3 | 1 |
+| H_Nagrand | 114 | 39 | 155 (336) | 205 | 3 (9) | 0 | 0 | 0 | 3 | 1 |
 | H_OrcTroll_Durotar | 215 (105) | 70 (33) | 367 (371) | 445 | 11 (14) | 0 | 7 (0) | 0 (2) | 4 (0) | 0 |
-| H_Shadowmoon | 57 | 18 | 89 | 89 | 5 | 0 | 0 | 0 | 0 | 0 |
+| H_Shadowmoon | 57 | 18 | 65 (89) | 65 | 3 (5) | 0 | 0 | 0 | 0 | 0 |
 | H_Silverpine | 75 (76) | 27 (28) | 190 (191) | 340 | 7 (8) | 0 | 0 | 0 (1) | 1 | 2 (3) |
 | H_Stonetalon | 59 (37) | 23 (8) | 160 (222) | 237 | 8 (5) | 0 | 0 | 0 | 2 (1) | 0 |
-| H_Stranglethorn | 69 (70) | 19 (20) | 236 (278) | 146 | 4 (5) | 0 (1) | 0 | 0 (1) | 0 | 0 |
+| H_Stranglethorn | 69 (70) | 19 (20) | 236 (278) | 146 | 4 (5) | 4 (1) | 0 | 0 (1) | 0 | 0 |
 | H_Tauren_Mulgore | 162 (90) | 60 (30) | 248 (258) | 452 | 13 (9) | 0 | 1 | 0 (2) | 8 (3) | 0 |
-| H_Terokkar | 95 (96) | 33 (34) | 351 | 426 | 13 | 0 | 0 | 0 (1) | 0 | 1 (2) |
+| H_Terokkar | 95 (96) | 33 (34) | 230 (351) | 305 | 7 (13) | 0 | 0 | 0 (1) | 0 | 1 (2) |
 | H_ThousandNeedles | 135 (56) | 42 (16) | 146 (246) | 473 | 8 | 0 | 0 | 0 (2) | 4 (1) | 0 |
 | H_Undead_Tirisfal | 119 (97) | 40 (30) | 119 (216) | 177 | 7 (5) | 0 | 4 (0) | 0 | 0 | 0 |
-| H_WesternPlaguelands | 47 | 14 | 8 (10) | 208 | 4 (7) | 0 | 0 | 0 | 1 | 0 |
-| H_Zangarmarsh | 111 (108) | 37 (38) | 401 (397) | 401 | 10 | 0 | 0 | 0 (3) | 1 | 0 |
+| H_WesternPlaguelands | 63 (47) | 20 (14) | 30 (10) | 255 | 4 (7) | 0 | 0 | 0 | 1 | 0 |
+| H_Zangarmarsh | 111 (108) | 37 (38) | 251 (397) | 251 | 6 (10) | 0 | 0 | 0 (3) | 1 | 0 |
 
 ## Peak quest log per route
 
@@ -179,12 +185,14 @@ None.
 - A_DwarfGnome_DunMorogh: level-gated pickup: Training the Beast (6086) needs 10, model level 7.3 (quests only: 6) [alliance/01_dwarf_gnome_dunmorogh.guide:112, Dwarf/HUNTER]
 - A_Feralas: level-gated pickup: Fuel for the Zapping (7721) needs 45, model level 44.6 (quests only: 44) [alliance/25_feralas.guide:52, Human/WARRIOR]
 - A_Feralas: level-gated pickup: Zapped Giants (7003) needs 45, model level 44.6 (quests only: 44) [alliance/25_feralas.guide:51, Human/WARRIOR]
-- A_Hellfire: level-gated pickup: Colossal Menace (10132) needs 61, model level 60.5 (quests only: 60) [outland/a60_hellfire.guide:168, Human/WARRIOR]
+- A_Hellfire: level-gated pickup: Colossal Menace (10132) needs 61, model level 60.5 (quests only: 60) [outland/a60_hellfire.guide:166, Human/WARRIOR]
 - A_Hellfire: level-gated pickup: Demonic Contamination (9372) needs 61, model level 60.5 (quests only: 60) [outland/a60_hellfire.guide:167, Human/WARRIOR]
-- A_Hellfire: level-gated pickup: Keep Thornfang Hill Clear! (10159) needs 61, model level 60.5 (quests only: 60) [outland/a60_hellfire.guide:169, Human/WARRIOR]
-- A_Hellfire: level-gated pickup: Testing the Antidote (10255) needs 61, model level 60.6 (quests only: 60) [outland/a60_hellfire.guide:174, Human/WARRIOR]
-- A_Hellfire: level-gated pickup: The Cenarion Expedition (9912) needs 61, model level 60.5 (quests only: 60) [outland/a60_hellfire.guide:166, Human/WARRIOR]
-- A_Hellfire: level-gated pickup: The Longbeards (9558) needs 60, model level 58.7 (quests only: 58) [outland/a60_hellfire.guide:57, Human/WARRIOR]
+- A_Hellfire: level-gated pickup: Keep Thornfang Hill Clear! (10159) needs 61, model level 60.5 (quests only: 60) [outland/a60_hellfire.guide:165, Human/WARRIOR]
+- A_Hellfire: level-gated pickup: Rampaging Ravagers (9385) needs 60, model level 59.9 (quests only: 59) [outland/a60_hellfire.guide:114, Human/WARRIOR]
+- A_Hellfire: level-gated pickup: Testing the Antidote (10255) needs 61, model level 60.5 (quests only: 60) [outland/a60_hellfire.guide:172, Human/WARRIOR]
+- A_Hellfire: level-gated pickup: The Arakkoa Threat (9417) needs 60, model level 59.9 (quests only: 59) [outland/a60_hellfire.guide:115, Human/WARRIOR]
+- A_Hellfire: level-gated pickup: The Cenarion Expedition (9912) needs 61, model level 60.5 (quests only: 60) [outland/a60_hellfire.guide:164, Human/WARRIOR]
+- A_Hellfire: level-gated pickup: The Longbeards (9558) needs 60, model level 59.7 (quests only: 59) [outland/a60_hellfire.guide:106, Human/WARRIOR]
 - A_Hillsbrad: level-gated pickup: Costly Menace (564) needs 30, model level 28.3 (quests only: 28) [alliance/20_hillsbrad.guide:26, Human/WARRIOR]
 - A_Hillsbrad: level-gated pickup: Crushridge Bounty (500) needs 30, model level 28.8 (quests only: 28) [alliance/20_hillsbrad.guide:40, Human/WARRIOR]
 - A_Hillsbrad: level-gated pickup: Encrypted Letter (511) needs 30, model level 28.6 (quests only: 28) [alliance/20_hillsbrad.guide:33, Human/WARRIOR]
@@ -216,8 +224,18 @@ None.
 - A_Redridge: level-gated pickup: The Legend of Stalvan (66) needs 22, model level 15.0 (quests only: 15) [alliance/12_redridge.guide:14, Human/WARRIOR]
 - A_Redridge: level-gated pickup: The Tome of Valor (1649) needs 20, model level 15.0 (quests only: 15) [alliance/12_redridge.guide:25, Human/PALADIN]
 - A_Redridge: level-gated pickup: The Tome of Valor (1650) needs 20, model level 15.0 (quests only: 15) [alliance/12_redridge.guide:28, Human/PALADIN]
-- A_Stranglethorn: reduced-XP quest: The Missing Diplomat (1242, level 28) at estimated level 34.3
-- A_Stranglethorn: reduced-XP quest: The Missing Diplomat (1243, level 28) at estimated level 34.3
+- A_Stranglethorn: reduced-XP quest: A Noble Brew (336, level 30) at estimated level 36.2
+- A_Stranglethorn: reduced-XP quest: Supply and Demand (575, level 31) at estimated level 37.0
+- A_Stranglethorn: reduced-XP quest: The Legend of Stalvan (78, level 28) at estimated level 36.1
+- A_Stranglethorn: reduced-XP quest: The Legend of Stalvan (79, level 28) at estimated level 36.3
+- A_Stranglethorn: reduced-XP quest: The Legend of Stalvan (80, level 28) at estimated level 36.3
+- A_Stranglethorn: reduced-XP quest: The Legend of Stalvan (97, level 28) at estimated level 36.3
+- A_Stranglethorn: reduced-XP quest: The Missing Diplomat (1241, level 28) at estimated level 36.4
+- A_Stranglethorn: reduced-XP quest: The Missing Diplomat (1242, level 28) at estimated level 37.0
+- A_Stranglethorn: reduced-XP quest: The Missing Diplomat (1243, level 28) at estimated level 37.0
+- A_Stranglethorn: reduced-XP quest: The Missing Diplomat (1245, level 30) at estimated level 36.2
+- A_Stranglethorn: reduced-XP quest: The Missing Diplomat (1274, level 28) at estimated level 36.0
+- A_Stranglethorn: reduced-XP quest: Welcome to the Jungle (583, level 30) at estimated level 36.5
 - A_Westfall: level-gated pickup: The Coastal Menace (104) needs 15, model level 12.7 (quests only: 11) [alliance/10_westfall.guide:65, Human/WARRIOR]
 - A_Westfall: level-gated pickup: The Defias Brotherhood (65) needs 14, model level 11.7 (quests only: 11) [alliance/10_westfall.guide:50, Human/WARRIOR]
 - A_Wetlands: level-gated pickup: A Grim Task (304) needs 26, model level 25.9 (quests only: 25) [alliance/14_wetlands.guide:80, NightElf/WARRIOR]
@@ -228,8 +246,9 @@ None.
 - A_Wetlands: level-gated pickup: The Thandol Span (632) needs 28, model level 26.6 (quests only: 26) [alliance/14_wetlands.guide:76, Human/WARRIOR]
 - A_Wetlands: level-gated pickup: The Thandol Span (633) needs 28, model level 26.7 (quests only: 26) [alliance/14_wetlands.guide:78, Human/WARRIOR]
 - A_Wetlands: level-gated pickup: Uncovering the Past (299) needs 25, model level 24.3 (quests only: 24) [alliance/14_wetlands.guide:41, NightElf/WARRIOR]
-- Both_Tanaris: level-gated pickup: The Dunemaul Compound (5863) needs 44, model level 41.7 (quests only: 41) [shared/24_tanaris.guide:41, Human/WARRIOR]
-- Both_UngoroCrater: level-gated pickup: Roll the Bones (3882) needs 49, model level 48.0 (quests only: 48) [shared/27_ungoro.guide:17, Human/WARRIOR]
+- Both_Tanaris: level-gated pickup: The Dunemaul Compound (5863) needs 44, model level 42.1 (quests only: 41) [shared/24_tanaris.guide:41, Human/WARRIOR]
+- H_Badlands: level-gated pickup: Badlands Reagent Run (2258) needs 36, model level 36.0 (quests only: 35) [horde/15b_badlands.guide:15, Orc/WARRIOR]
+- H_Badlands: level-gated pickup: Unclaimed Baggage (9439) needs 36, model level 36.0 (quests only: 35) [horde/15b_badlands.guide:17, Orc/WARRIOR]
 - H_Barrens: level-gated pickup: Blind Cazul (1508) needs 20, model level 12.3 (quests only: 11) [horde/10_barrens.guide:93, Orc/WARLOCK]
 - H_Barrens: level-gated pickup: Calling in the Reserves (5881) needs 23, model level 17.4 (quests only: 15) [horde/10_barrens.guide:263, Orc/WARRIOR]
 - H_Barrens: level-gated pickup: Deepmoss Spider Eggs (1069) needs 15, model level 13.9 (quests only: 13) [horde/10_barrens.guide:148, Orc/WARRIOR]
@@ -267,9 +286,12 @@ None.
 - H_BloodElf_Ghostlands: level-gated pickup: Greed (9491) needs 16, model level 13.5 (quests only: 11) [horde/04_bloodelf_ghostlands.guide:70, BloodElf/ROGUE]
 - H_BloodElf_Ghostlands: level-gated pickup: Retaking Windrunner Spire (9173) needs 15, model level 12.8 (quests only: 10) [horde/04_bloodelf_ghostlands.guide:56, BloodElf/PALADIN]
 - H_BloodElf_Ghostlands: level-gated pickup: Rogues of the Shattered Hand (10794) needs 20, model level 13.1 (quests only: 11) [horde/04_bloodelf_ghostlands.guide:52, BloodElf/ROGUE]
-- H_Hellfire: level-gated pickup: Cannons of Rage (10391) needs 60, model level 59.8 (quests only: 59) [outland/h60_hellfire.guide:95, Orc/WARRIOR]
-- H_Hellfire: level-gated pickup: The Assassin (9400) needs 60, model level 60.0 (quests only: 59) [outland/h60_hellfire.guide:102, Orc/WARRIOR]
-- H_Hellfire: level-gated pickup: Trueflight Arrows (9381) needs 61, model level 60.2 (quests only: 59) [outland/h60_hellfire.guide:132, Orc/WARRIOR]
+- H_Hellfire: level-gated pickup: A Spirit Guide (9410) needs 60, model level 59.9 (quests only: 59) [outland/h60_hellfire.guide:103, Orc/WARRIOR]
+- H_Hellfire: level-gated pickup: A Strange Weapon (9401) needs 60, model level 59.8 (quests only: 59) [outland/h60_hellfire.guide:99, Orc/WARRIOR]
+- H_Hellfire: level-gated pickup: Cannons of Rage (10391) needs 60, model level 59.5 (quests only: 59) [outland/h60_hellfire.guide:90, Orc/WARRIOR]
+- H_Hellfire: level-gated pickup: The Assassin (9400) needs 60, model level 59.7 (quests only: 59) [outland/h60_hellfire.guide:97, Orc/WARRIOR]
+- H_Hellfire: level-gated pickup: The Warchief's Mandate (9405) needs 60, model level 59.9 (quests only: 59) [outland/h60_hellfire.guide:101, Orc/WARRIOR]
+- H_Hellfire: level-gated pickup: Trueflight Arrows (9381) needs 61, model level 60.3 (quests only: 59) [outland/h60_hellfire.guide:137, Orc/WARRIOR]
 - H_Hillsbrad: level-gated pickup: Dalaran Patrols (545) needs 30, model level 28.0 (quests only: 27) [horde/13_hillsbrad.guide:49, Orc/WARRIOR]
 - H_Hillsbrad: level-gated pickup: Prison Break In (544) needs 30, model level 27.0 (quests only: 27) [horde/13_hillsbrad.guide:20, Orc/WARRIOR]
 - H_Hillsbrad: level-gated pickup: The Hammer May Fall (676) needs 30, model level 27.0 (quests only: 27) [horde/13_hillsbrad.guide:16, Orc/WARRIOR]
@@ -280,6 +302,10 @@ None.
 - H_OrcTroll_Durotar: level-gated pickup: Taming the Beast (6082) needs 10, model level 8.2 (quests only: 6) [horde/00_orc_troll_durotar.guide:143, Orc/HUNTER]
 - H_OrcTroll_Durotar: level-gated pickup: Taming the Beast (6083) needs 10, model level 8.2 (quests only: 6) [horde/00_orc_troll_durotar.guide:140, Orc/HUNTER]
 - H_OrcTroll_Durotar: level-gated pickup: Training the Beast (6081) needs 10, model level 8.2 (quests only: 6) [horde/00_orc_troll_durotar.guide:146, Orc/HUNTER]
+- H_Stranglethorn: reduced-XP quest: Panther Mastery (190, level 31) at estimated level 38.0
+- H_Stranglethorn: reduced-XP quest: Supply and Demand (575, level 31) at estimated level 38.6
+- H_Stranglethorn: reduced-XP quest: Tiger Mastery (185, level 31) at estimated level 38.0
+- H_Stranglethorn: reduced-XP quest: Welcome to the Jungle (583, level 30) at estimated level 38.0
 - H_Tauren_Mulgore: level-gated pickup: Call of Earth (1519) needs 4, model level 1.0 (quests only: 1) [horde/01_tauren_mulgore.guide:16, Tauren/SHAMAN]
 - H_Undead_Tirisfal: level-gated pickup: At War With The Scarlet Crusade (427) needs 5, model level 4.9 (quests only: 4) [horde/02_undead_tirisfal.guide:62, Scourge/WARRIOR]
 - H_Undead_Tirisfal: level-gated pickup: Garments of Darkness (5650) needs 5, model level 5.0 (quests only: 4) [horde/02_undead_tirisfal.guide:64, Scourge/PRIEST]

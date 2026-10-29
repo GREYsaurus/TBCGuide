@@ -7,24 +7,52 @@
 @levels 43-47
 @zone Feralas
 @chapter Azeroth
-@desc Camp Mojache, the Northspring harpies, the Twin Colossals giants and the Grimtotem compound.
+@desc Camp Mojache: the Woodpaw gnolls and the Zukk'ash hive to the south-east, the Grimtotem and the Gordunni ogres to the north, then the yetis, the Gordunni camp, the Twin Colossals giants and the Northspring harpies to the west.
 @next H_Hinterlands
 
 fp Camp Mojache
 bind Camp Mojache
-level 45 | Camp Mojache's quests need level 45. If you are short, kill gnolls and yetis around the camp until you ding.
+accept War on the Woodpaw | Hadoken Swiftstrider, Camp Mojache.
+accept A New Cloak's Sheen | Krueg Skullsplitter.
+accept 2975 The Ogres of Feralas | Rok Orhan.
+accept The Mark of Quality | Jangdor Swiftstrider.
+complete War on the Woodpaw | Woodpaw Gnoll Manes from the gnolls south-west of the camp.
+complete A New Cloak's Sheen | Iridescent Sprite Darter Wings from Sprite Darters by the gnoll camp.
+turnin War on the Woodpaw
+accept Alpha Strike
+turnin A New Cloak's Sheen | Krueg Skullsplitter.
+accept 2974 A Grim Discovery
+complete Alpha Strike | Woodpaw Alphas in the same gnoll camps.
+turnin Alpha Strike | Hadoken Swiftstrider.
+accept Woodpaw Investigation
+turnin Woodpaw Investigation | The Woodpaw Battle Map on a table in the southern gnoll camp.
+accept The Battle Plans
+turnin The Battle Plans | Hadoken Swiftstrider.
+accept Zukk'ash Infestation
+complete Zukk'ash Infestation | Zukk'ash Carapaces from Zukk'ash Stingers at the hive south-east of the camp.
+turnin Zukk'ash Infestation
+complete 2974 A Grim Discovery | Grimtotem Horns from Grimtotem Raiders north of Camp Mojache.
+complete 2975 The Ogres of Feralas | Gordunni Ogres, Ogre Mages and Brutes at the northern ogre camp.
+turnin 2974 A Grim Discovery | Krueg Skullsplitter.
+turnin 2975 The Ogres of Feralas | Rok Orhan.
+accept 2980 The Ogres of Feralas
+level 45 | Camp Mojache's harpy and giant quests need level 45. You should be there by now; if not, finish the yetis and ogres below first.
 accept Dark Heart | Talo Thornhoof, Camp Mojache.
 accept Vengeance on the Northspring
-complete Vengeance on the Northspring | Northspring harpies.
-complete Dark Heart | Harpy chieftain at the Northspring nest.
-turnin Vengeance on the Northspring
-turnin Dark Heart
+complete The Mark of Quality | Thick Yeti Hides from Feral Scar Yetis in the yeti cave west of the camp.
+complete 2980 The Ogres of Feralas | Gordunni Shamans, Warlocks and Maulers at the Gordunni camp, south-west.
 accept Zapped Giants | Zorbin Fandazzle on the coast.
 accept Fuel for the Zapping
 complete Zapped Giants | Use Zorbin's Ultra-Shrinker on Wave Striders and Land Walkers.
 complete Fuel for the Zapping | Water elementals on the coast.
 turnin Zapped Giants
 turnin Fuel for the Zapping
+complete Vengeance on the Northspring | Northspring harpies in the north-west.
+complete Dark Heart | Harpy chieftain at the Northspring nest.
+turnin Vengeance on the Northspring | Camp Mojache.
+turnin Dark Heart
+turnin 2980 The Ogres of Feralas | Rok Orhan.
+turnin The Mark of Quality | Jangdor Swiftstrider.
 level 46
 train
 note Fly to Revantusk Village in the Hinterlands (via the Undercity or Tarren Mill).

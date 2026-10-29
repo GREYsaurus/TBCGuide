@@ -11,29 +11,24 @@
 
 fp Shadowmoon Village
 bind Shadowmoon Village
-accept Besieged! | Blood Guard Gulmok.
-accept The Sketh'lon Wreckage | Sergeant Kargrul.
+accept A Grunt's Work... | Overlord Or'barokh.
 accept A Haunted History | Chief Apothecary Hildagard.
 accept What Strange Creatures... | Researcher Tiorus.
-accept A Grunt's Work... | Overlord Or'barokh.
-complete Besieged!
-turnin Besieged!
-accept To Legion Hold
-complete The Sketh'lon Wreckage
-complete A Haunted History
-complete What Strange Creatures...
+accept The Sketh'lon Wreckage | Sergeant Kargrul.
+complete The Sketh'lon Wreckage | Sketh'lon Commander's Journal - Page 1 drops from Dark Conclave Hawkeye, Dark Conclave Ravenguard and Dark Conclave Shadowmancer. Sketh'lon Commander's Journal 
 complete A Grunt's Work...
 turnin The Sketh'lon Wreckage
 accept Find the Deserter
-turnin A Haunted History
-accept Spectrecles
-turnin What Strange Creatures...
-accept Frankly, It Makes No Sense...
-turnin A Grunt's Work...
-complete To Legion Hold
+accept Besieged! | Blood Guard Gulmok.
+complete Besieged!
+turnin Besieged!
+accept To Legion Hold
+complete A Haunted History | Ever-burning Ash: loot Ever-burning Ash.
+complete What Strange Creatures... | Felfire Spleen drops from Felfire Diemetradon.
+complete To Legion Hold | Click Legion Communication Device.
 turnin To Legion Hold
 accept Setting Up the Bomb
-complete Setting Up the Bomb
+complete Setting Up the Bomb | Fel Reaver Power Core: loot Fel Reaver Power Core. Fel Reaver Armor Plate: loot Fel Reaver Armor Plating.
 turnin Setting Up the Bomb
 accept Blast the Infernals!
 complete Blast the Infernals!
@@ -47,17 +42,22 @@ turnin Minions of the Shadow Council
 accept The Fate of Kagrosh
 accept The Summoning Chamber
 complete The Fate of Kagrosh
-complete The Summoning Chamber
+complete The Summoning Chamber | Elemental Displacer drops from Deathforge Smith and Deathforge Tinkerer.
 turnin The Fate of Kagrosh
 turnin The Summoning Chamber
 accept Bring Down the Warbringer!
-complete Bring Down the Warbringer!
+complete Bring Down the Warbringer! | Razuun's Orders drops from Warbringer Razuun.
 turnin Bring Down the Warbringer!
 accept Gaining Access
 turnin Gaining Access
 accept Invasion Point: Cataclysm
+turnin What Strange Creatures...
+accept Frankly, It Makes No Sense...
+turnin A Grunt's Work...
 complete Invasion Point: Cataclysm
 turnin Invasion Point: Cataclysm
+turnin A Haunted History
+accept Spectrecles
 complete Spectrecles
 complete Frankly, It Makes No Sense...
 complete Find the Deserter

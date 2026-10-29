@@ -6,7 +6,7 @@ ns.Guides:Register({
   id="A_Stranglethorn", name="Stranglethorn Vale", faction="Alliance", chapter="Azeroth",
   minLevel=32, maxLevel=40, zone=33, zoneName="Stranglethorn Vale",
   desc="Rebel Camp, Nesingwary's Expedition, Kurzen's compound, Grom'gol's neighbours and Booty Bay. A contested zone - watch for Horde players.",
-  next={{id="A_Dustwallow"},},
+  next={{id="A_Badlands"},},
   steps={
     {"turnin",q=322,title="Blessed Arm",npc="Grimand Elmore",z=1519,x=51.8,y=12.1,text="Turned in at Stormwind City.",classes={"WARRIOR","ROGUE","WARLOCK"},races={"Gnome"},optional=true,v=1},
     {"turnin",q=322,title="Blessed Arm",npc="Grimand Elmore",z=1519,x=51.8,y=12.1,text="Turned in at Stormwind City.",classes={"WARRIOR","PALADIN","ROGUE","PRIEST","WARLOCK"},races={"Human"},optional=true,v=1},
@@ -154,6 +154,6 @@ ns.Guides:Register({
     {"train",text="Fly to Ironforge/Stormwind to train.",classes={"WARLOCK"},v=1},
     {"train",text="Fly to Ironforge/Stormwind to train.",classes={"WARRIOR"},v=1},
     {"note",text="Leave the remaining Tiger/Panther/Raptor Mastery chain for your second STV visit or skip it.",v=1},
-    {"note",text="Take the boat from Menethil to Theramore (Dustwallow Marsh).",v=1},
+    {"note",text="Next: the Badlands. Fly to Ironforge.",v=1},
   },
 })

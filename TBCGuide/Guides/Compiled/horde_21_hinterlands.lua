@@ -6,7 +6,7 @@ ns.Guides:Register({
   id="H_Hinterlands", name="The Hinterlands (Revantusk Village)", faction="Horde", chapter="Azeroth",
   minLevel=44, maxLevel=50, zone=47, zoneName="The Hinterlands",
   desc="Revantusk Village: the Vilebranch trolls, the Wildhammer messages, Elder Torntusk and the Hinterlands wildlife.",
-  next={{id="Both_UngoroCrater"},},
+  next={{id="Both_SearingGorge"},},
   steps={
     {"fp",npc="Gorkas",z=47,x=81.7,y=81.8,place="Revantusk Village",v=1},
     {"bind",npc="Lard",z=47,x=78.1,y=81.4,place="Revantusk Village",v=1},
@@ -58,6 +58,6 @@ ns.Guides:Register({
     {"train",text="No shaman trainer in this zone - train at the next town or capital.",classes={"SHAMAN"},v=1},
     {"train",text="No warlock trainer in this zone - train at the next town or capital.",classes={"WARLOCK"},v=1},
     {"train",text="No warrior trainer in this zone - train at the next town or capital.",classes={"WARRIOR"},v=1},
-    {"note",text="Fly to Gadgetzan and ride north-west into Un'Goro Crater.",v=1},
+    {"note",text="Next: the Searing Gorge, west of Kargath.",v=1},
   },
 })

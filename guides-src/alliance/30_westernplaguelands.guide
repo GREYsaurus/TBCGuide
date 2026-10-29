@@ -1,34 +1,77 @@
-# TBCGuide - Western Plaguelands (55-58), Alliance
+# TBCGuide - Western Plaguelands (55-57), Alliance
 # Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
 
 @guide A_WesternPlaguelands
 @name Western Plaguelands (Chillwind Camp)
 @faction Alliance
-@levels 55-58
+@levels 55-57
 @zone Western Plaguelands
 @chapter Azeroth
-@desc Chillwind Camp: the Scourge cauldron chain, Andorhal, the Felstone and Dalson farms, and the wildlife quests. At 58 go straight to the Dark Portal.
-@next A_Hellfire
+@desc Chillwind Camp: the Scourge cauldron chain (four cauldrons, a return to camp after each), Andorhal's watchtowers and Chromie, the Felstone and Dalson farms, the wildlife quests and the Scarlet Crusade in the north. Then on to the Eastern Plaguelands.
+@next Both_EasternPlaguelands
 
+accept 5090 A Call to Arms: The Plaguelands! [zone=Ironforge] | Courier Hammerfall walks around Ironforge (Crier Goodman in Stormwind has the same quest). Needed for the Chillwind Camp chain.
 fp Chillwind Camp
+turnin 5090 A Call to Arms: The Plaguelands! | Commander Ashlam Valorfist, Chillwind Camp.
+accept Clear the Way
 accept A Plague Upon Thee | Nathaniel Dumah, Chillwind Camp.
-complete A Plague Upon Thee | Termite barrels in the farms.
-turnin A Plague Upon Thee
-accept 5904 A Plague Upon Thee
 accept The Wildlife Suffers Too | Mulgris Deepriver.
-complete The Wildlife Suffers Too | Diseased wolves.
-turnin The Wildlife Suffers Too
-accept 4985 The Wildlife Suffers Too
-complete 4985 The Wildlife Suffers Too | Diseased Grizzlies.
-turnin 4985 The Wildlife Suffers Too
-accept Better Late Than Never | Janice Felstone at the Felstone Field farm.
+accept Unfinished Business | Kirsta Deepshadow. The Scarlet camps are in the north; this is done last.
+complete Clear the Way | Skeletal Flayers and Slavering Ghouls in the Felstone Field.
+accept Better Late Than Never | Janice Felstone at the Felstone Field farmhouse.
 complete Better Late Than Never
 turnin Better Late Than Never
 accept 5022 Better Late Than Never
 turnin 5022 Better Late Than Never | Turned in at Stormwind City.
-complete 5904 A Plague Upon Thee
+complete A Plague Upon Thee | Termite barrels in the farms.
+complete The Wildlife Suffers Too | Diseased wolves around the farms.
+turnin Clear the Way | Chillwind Camp.
+accept The Scourge Cauldrons
+accept All Along the Watchtowers | Commander Ashlam Valorfist.
+turnin The Scourge Cauldrons | High Priestess MacDonnell.
+accept Target: Felstone Field
+turnin A Plague Upon Thee
+accept 5904 A Plague Upon Thee
+turnin The Wildlife Suffers Too
+accept 4985 The Wildlife Suffers Too
+complete Target: Felstone Field | Kill Cauldron Lord Bilemaw at the Felstone Field cauldron for the key.
+turnin Target: Felstone Field | Use the key on the cauldron.
+accept 5217 Return to Chillwind Camp
+complete All Along the Watchtowers | Mark the three watchtowers in Andorhal with the torch.
+accept A Matter of Time | Chromie in the ruined inn at Andorhal.
+complete A Matter of Time | Use the Temporal Displacer by the silos in Andorhal and kill the Temporal Parasites that appear.
+turnin A Matter of Time
+accept Counting Out Time
+complete Counting Out Time | Andorhal Watches from the small lockboxes in the Andorhal houses.
+turnin Counting Out Time
+turnin 5217 Return to Chillwind Camp | High Priestess MacDonnell.
+turnin All Along the Watchtowers | Commander Ashlam Valorfist.
+accept Target: Dalson's Tears
+complete Target: Dalson's Tears | Cauldron Lord Malvinious at the Dalson's Tears cauldron drops the key.
+turnin Target: Dalson's Tears
+accept 5220 Return to Chillwind Camp
+accept Mrs. Dalson's Diary [optional] | The diary in the Dalson farmhouse.
+turnin Mrs. Dalson's Diary [optional]
+accept 5060 Locked Away | The locked cabinet in the farmhouse.
+complete 5060 Locked Away | Farmer Dalson, upstairs in the barn, drops the cabinet key.
+turnin 5060 Locked Away
+complete 4985 The Wildlife Suffers Too | Diseased Grizzlies in the hills east of the farms.
+turnin 5220 Return to Chillwind Camp
+accept Target: Writhing Haunt
+turnin 4985 The Wildlife Suffers Too | Mulgris Deepriver.
+complete Target: Writhing Haunt | Cauldron Lord Razarch at the Writhing Haunt cauldron.
+turnin Target: Writhing Haunt
+accept 5223 Return to Chillwind Camp
+complete 5904 A Plague Upon Thee | Termite barrels at the Northridge Lumber Camp.
+turnin 5223 Return to Chillwind Camp
+accept Target: Gahrron's Withering
 turnin 5904 A Plague Upon Thee
-accept Unfinished Business | Kirsta Deepshadow.
+complete Target: Gahrron's Withering | Cauldron Lord Soulwrath at the Gahrron's Withering cauldron, east.
+turnin Target: Gahrron's Withering
+accept 5226 Return to Chillwind Camp
+turnin 5226 Return to Chillwind Camp
+accept Mission Accomplished!
+turnin Mission Accomplished! | Commander Ashlam Valorfist.
 complete Unfinished Business | Scarlet Medics and Hunters at the Northridge Lumber Camp.
 turnin Unfinished Business
 accept 6023 Unfinished Business
@@ -37,6 +80,6 @@ turnin 6023 Unfinished Business
 accept 6025 Unfinished Business
 complete 6025 Unfinished Business
 turnin 6025 Unfinished Business
-level 58
-train | Train before Outland.
-note At 58 head for the Dark Portal in the Blasted Lands. Fly to Nethergarde Keep (or from Stormwind) and take the quest Through the Dark Portal from the herald in Stormwind or Nethergarde.
+level 57
+train
+note Next: the Eastern Plaguelands, east along the Thondroril River.

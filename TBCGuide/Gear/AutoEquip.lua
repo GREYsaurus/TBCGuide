@@ -193,6 +193,7 @@ function AE:OnProfileChanged()
     self.failed, self.displaced = {}, {}
     self:Schedule(0.2)
     if ns.AHUpgrades then ns.AHUpgrades:Refresh() end -- re-score cached auctions, no rescan
+    if ns.TalentHints then ns.TalentHints:Refresh() end -- the talent plan follows the spec profile
 end
 
 function AE:Status()

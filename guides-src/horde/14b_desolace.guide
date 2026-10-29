@@ -1,0 +1,39 @@
+# TBCGuide - Desolace (33-36), Horde
+# Copyright (C) 2026 GREYsaurus (https://github.com/GREYsaurus) - GPL-3.0-only. Original route and notes.
+
+@guide H_Desolace
+@name Desolace (Ghost Walker Post and Shadowprey)
+@faction Horde
+@levels 33-36
+@zone Desolace
+@chapter Azeroth
+@desc Ghost Walker Post's Kolkar and satyr quests and the Gizelton kodos in the middle and east, then Shadowprey Village and the naga, Rackmore's treasure and the Burning Blade on the west side.
+@next H_Arathi
+
+note From Freewind Post fly to the Crossroads and ride west through Stonetalon Mountains (or fly to Sun Rock Retreat if you have it) and take the road south into Desolace. Ghost Walker Post is in the middle of the zone.
+accept Khan Dez'hepah | Felgur Twocuts, Ghost Walker Post.
+accept Befouled by Satyr | Takata Steelblade.
+accept Kodo Roundup | Smeed Scrabblescrew at the caravan camp just east of Ghost Walker Post.
+complete Kodo Roundup | Use the Kodo Kombobulator on Ancient, Aged or Dying Kodos in the Kodo Graveyard (south of Ghost Walker Post) and lead them back to Smeed.
+turnin Kodo Roundup
+complete Khan Dez'hepah | Khan Dez'hepah in the Kolkar village, east.
+turnin Khan Dez'hepah | Ghost Walker Post.
+accept Centaur Bounty | Felgur Twocuts. Needs Khan Dez'hepah turned in.
+complete Centaur Bounty | Centaur Ears from the Kolkar back in the eastern village.
+complete Befouled by Satyr | Hatefury satyrs at Sargeron, north of the Kolkar village.
+turnin Centaur Bounty | Ghost Walker Post.
+turnin Befouled by Satyr
+note Ride south-west to Shadowprey Village on the coast.
+fp Shadowprey Village
+accept Other Fish to Fry | Drulzegar Skraghook, Shadowprey Village.
+accept Sceptre of Light | Azore Aldamort, the tower on the north-west coast.
+accept Claim Rackmore's Treasure! | Rackmore's Log by the Karnitol wreck, just south of Azore's tower.
+complete Other Fish to Fry | Slitherblade naga along the north-west coast.
+complete Claim Rackmore's Treasure! | Silver Key from Drysnap Crawlers on the shore, Golden Key from Slitherblade Naga.
+turnin Claim Rackmore's Treasure! | Rackmore's Chest on Ranazjar Isle, north-west. Swim across.
+complete Sceptre of Light | The Sceptre drops from the Burning Blade Seer at the top of the Thunder Axe Fortress tower.
+turnin Sceptre of Light | Azore Aldamort.
+turnin Other Fish to Fry | Shadowprey Village.
+level 35
+train
+note Fly from Shadowprey Village to Orgrimmar, take the zeppelin to the Undercity and fly to Hammerfall (Arathi Highlands).

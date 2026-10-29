@@ -12,51 +12,80 @@
 
 fp Thunderlord Stronghold
 bind Thunderlord Stronghold
-accept The Encroaching Wilderness | Gor'drek.
 accept The Bladespire Threat | Tor'chunk Twoclaws.
 accept They Stole Me Hookah and Me Brews! | T'chali the Witch Doctor.
 accept Killing the Crawlers | Grunt Grahk.
+accept The Encroaching Wilderness | Gor'drek.
 complete The Encroaching Wilderness
-complete The Bladespire Threat
-complete They Stole Me Hookah and Me Brews!
+complete The Bladespire Threat | Elite: Bladespire Sober Defender; bring help or skip.
+complete They Stole Me Hookah and Me Brews! | T'chali's Hookah: loot T'chali's Hookah. Bloodmaul Brutebane Brew drops from Bloodmaul Brewmaster.
 complete Killing the Crawlers
 turnin The Encroaching Wilderness
 accept Dust from the Drakes
 turnin The Bladespire Threat
 accept The Bloodmaul Ogres
-turnin They Stole Me Hookah and Me Brews!
-accept Bladespire Kegger
 turnin Killing the Crawlers
-complete Dust from the Drakes
+complete Dust from the Drakes | Dust of the Fey Drake drops from Fey Drake.
 complete The Bloodmaul Ogres
-complete Bladespire Kegger
+turnin The Bloodmaul Ogres
+turnin They Stole Me Hookah and Me Brews!
+accept Bladespire Kegger | Group quest: Bladespire Sober Defender is elite.
+complete Bladespire Kegger | Elite: Bladespire Sober Defender; bring help or skip.
+turnin Bladespire Kegger
 turnin Dust from the Drakes
 accept Protecting Our Own
-turnin The Bloodmaul Ogres
-turnin Bladespire Kegger
 complete Protecting Our Own
 turnin Protecting Our Own
 accept A Time for Negotiation... | Tree Warden Chawn, Evergrove.
-fp Evergrove
 turnin A Time for Negotiation...
 accept ...and a Time for Action
-accept Poaching from Poachers
 accept Culling the Wild
 accept Little Embers
 accept From the Ashes
+accept Poaching from Poachers
 complete ...and a Time for Action
-complete Poaching from Poachers
+complete Poaching from Poachers | Wyrmcult Net drops from Wyrmcult Poacher.
 complete Culling the Wild
-complete Little Embers
-complete From the Ashes
-turnin ...and a Time for Action
 turnin Poaching from Poachers
+complete Little Embers
+complete From the Ashes | Click Fertile Volcanic Soil.
+turnin ...and a Time for Action
 turnin Culling the Wild
 turnin Little Embers
 turnin From the Ashes
+fp Evergrove
 accept Mok'Nathal Treats [optional] | Matron Varah, Mok'Nathal Village.
-fp Mok'Nathal Village
-complete Mok'Nathal Treats [optional]
+complete Mok'Nathal Treats [optional] | Raptor Ribs drops from Bladespire Raptor, Bladespire Ravager and Daggermaw Lashtail and others. Serpent Flesh drops from Cobalt Serpent, Cobalt Serpent (1) and 
 turnin Mok'Nathal Treats [optional]
+fp Mok'Nathal Village
+accept Silkwing Cocoons | Taerek, Mok'Nathal Village.
+accept The Stones of Vekh'nir | Dertrok.
+complete The Stones of Vekh'nir
+turnin The Stones of Vekh'nir
+accept Trial and Error
+accept Understanding the Mok'Nathal | Leoroxx.
+complete Trial and Error | Dullgrom Dredgers south-east of the village.
+complete Understanding the Mok'Nathal | Vekh, south-east of the village.
+complete Silkwing Cocoons | Silkwing Cocoons from Silkwing Larvae in the same valley.
+turnin Trial and Error | Dertrok.
+turnin Understanding the Mok'Nathal | Leoroxx.
+turnin Silkwing Cocoons | Taerek.
+accept 10843 Since Time Forgotten... | Leoroxx.
+accept The Totems of My Enemy | Spiritcaller Dohgar.
+complete 10843 Since Time Forgotten... | Gnosh Brognat, west of the village.
+complete The Totems of My Enemy | Bladespire Totems from Bladespire Crushers nearby.
+turnin 10843 Since Time Forgotten...
+turnin The Totems of My Enemy
+accept Slay the Brood Mother | Leoroxx.
+accept Spirit Calling | Spiritcaller Dohgar.
+complete Slay the Brood Mother | Dreadwing, south of the village.
+complete Spirit Calling | Lesser Nether Drake spirits from Lesser Nether Drakes in the same area.
+turnin Slay the Brood Mother
+turnin Spirit Calling
+accept Gather the Orbs
+complete Gather the Orbs | Razaani Light Orbs north of the village.
+turnin Gather the Orbs
+accept Inform Leoroxx!
+turnin Inform Leoroxx!
 level 68
 note Fly to Area 52 in Netherstorm.

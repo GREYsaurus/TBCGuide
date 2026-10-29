@@ -34,6 +34,9 @@ turnin Timbermaw Ally
 accept Cleansing Felwood | Arathandris Silversky.
 complete Cleansing Felwood | Cenarion Plant Salve - gather from Felwood.
 turnin Cleansing Felwood
+accept Salve via Hunting | Arathandris Silversky. Needs Cleansing Felwood turned in.
+complete Salve via Hunting | Corrupted Soul Shards from Cursed Oozes in the Ruins of Constellas, west of the road.
+turnin Salve via Hunting
 level 54
 train
-note Seeking Spiritual Aid continues in Winterspring - optional. Fly to Ironforge, then to Morgan's Vigil in the Burning Steppes.
+note Fly to Ironforge, then to Morgan's Vigil in the Burning Steppes.

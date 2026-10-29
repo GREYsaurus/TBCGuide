@@ -12,47 +12,45 @@
 
 fp Garadar
 bind Garadar
-accept Vile Idolatry | Farseer Kurkush.
-accept The Missing War Party | Farseer Corhuk.
-accept Murkblood Leaders... | Farseer Margadesh.
+accept Missing Mag'hari Procession | Matron Drakia.
+accept The Impotent Leader | Jorin Deadeye.
 accept Wanted: Giselda the Crone
 accept Wanted: Zorbo the Advisor
 accept Proving Your Strength | Warden Bullrok.
+accept The Missing War Party | Farseer Corhuk.
+accept Murkblood Leaders... | Farseer Margadesh.
+complete The Missing War Party
+complete Murkblood Leaders... | Head of Ortor of Murkblood drops from Ortor of Murkblood.
+turnin Murkblood Leaders...
+turnin The Impotent Leader | Turned in at Terokkar Forest.
+accept Don't Kill the Fat One | Escort quest: start it when you are ready to follow.
+complete Don't Kill the Fat One | Escort: stay close; it fails if the NPC dies.
+turnin Don't Kill the Fat One | Turned in at Terokkar Forest.
+accept Success!
+turnin Success! | Turned in at Terokkar Forest.
+accept Because Kilrath is a Coward
+complete Because Kilrath is a Coward
 accept War on the Warmaul | Elder Yorley.
 accept Finding the Survivors | Elder Ungriz.
-accept Missing Mag'hari Procession | Matron Drakia.
-accept The Impotent Leader | Jorin Deadeye.
-complete Vile Idolatry
-complete The Missing War Party
-complete Murkblood Leaders...
-complete Proving Your Strength
+complete Proving Your Strength | Obsidian Warbeads drops from Boulderfist Crusher, Boulderfist Mystic and Boulderfist Warrior and others.
 complete War on the Warmaul
 complete Finding the Survivors
+turnin Finding the Survivors
 complete Missing Mag'hari Procession
-turnin Vile Idolatry
-turnin The Missing War Party
-accept Once Were Warriors
-turnin Murkblood Leaders...
-turnin Proving Your Strength
 turnin War on the Warmaul
 accept Cho'war the Pillager
-turnin Finding the Survivors
 turnin Missing Mag'hari Procession
+complete Cho'war the Pillager [group=2] | Head of Cho'war drops from Cho'war the Pillager.
+turnin Cho'war the Pillager
+turnin The Missing War Party
+accept Once Were Warriors
 complete Once Were Warriors
 turnin Once Were Warriors
 accept He Will Walk The Earth...
-complete He Will Walk The Earth...
-turnin He Will Walk The Earth...
-complete Cho'war the Pillager [group=2]
-turnin Cho'war the Pillager
-turnin The Impotent Leader
-accept Don't Kill the Fat One
-complete Don't Kill the Fat One
-turnin Don't Kill the Fat One
-accept Success!
-turnin Success!
-accept Because Kilrath is a Coward
-complete Because Kilrath is a Coward
+accept The Ring of Blood: Brokentoe [optional] | Escort quest: start it when you are ready to follow.
+complete The Ring of Blood: Brokentoe [optional] | Elite: Brokentoe; bring help or skip. Escort: stay close; it fails if the NPC dies.
+turnin The Ring of Blood: Brokentoe [optional]
+accept The Nesingwary Safari | Ohlorn Farstrider.
 turnin Because Kilrath is a Coward
 accept Message in a Battle
 complete Message in a Battle
@@ -60,12 +58,18 @@ turnin Message in a Battle
 accept An Audacious Advance
 complete An Audacious Advance
 turnin An Audacious Advance
-accept Diplomatic Measures
+accept Diplomatic Measures | Escort quest: start it when you are ready to follow.
+accept The Throne of the Elements | Elementalist Yal'hah.
+accept Vile Idolatry | Farseer Kurkush.
+complete Vile Idolatry | Murkblood Idol drops from Murkblood Putrifier, Murkblood Raider and Ortor of Murkblood and others.
+turnin Vile Idolatry
+complete He Will Walk The Earth...
+turnin He Will Walk The Earth...
 turnin Diplomatic Measures | Lantresor of the Blade.
 accept Ruthless Cunning
 accept Armaments for Deception
 complete Ruthless Cunning
-complete Armaments for Deception
+complete Armaments for Deception | Kil'sorrow Armaments drops from Kil'sorrow Cultist.
 turnin Ruthless Cunning
 turnin Armaments for Deception
 accept Returning the Favor
@@ -75,18 +79,18 @@ complete Body of Evidence
 turnin Returning the Favor
 turnin Body of Evidence
 accept Message to Garadar
-turnin Message to Garadar
+turnin Proving Your Strength
 complete Wanted: Giselda the Crone
 complete Wanted: Zorbo the Advisor
 turnin Wanted: Giselda the Crone
 turnin Wanted: Zorbo the Advisor
-accept The Throne of the Elements | Elementalist Yal'hah.
+turnin Message to Garadar
+accept The Underneath
 turnin The Throne of the Elements
 accept A Rare Bean
 accept Muck Diving
-accept The Underneath
-complete A Rare Bean
-complete Muck Diving
+complete A Rare Bean | Digested Caracoli: loot Dung.
+complete Muck Diving | Muck-ridden Core drops from Muck Spawn.
 turnin A Rare Bean
 accept Agitated Spirits of Skysong
 turnin Muck Diving
@@ -99,28 +103,24 @@ turnin The Underneath
 accept The Tortured Earth
 complete The Tortured Earth
 turnin The Tortured Earth
-accept The Nesingwary Safari | Ohlorn Farstrider.
 turnin The Nesingwary Safari
-accept 9789 Clefthoof Mastery
 accept 9854 Windroc Mastery
 accept 9857 Talbuk Mastery
+accept 9789 Clefthoof Mastery
 complete 9789 Clefthoof Mastery
 complete 9854 Windroc Mastery
 complete 9857 Talbuk Mastery
 turnin 9789 Clefthoof Mastery
-turnin 9854 Windroc Mastery
-turnin 9857 Talbuk Mastery
 accept 9850 Clefthoof Mastery
+turnin 9854 Windroc Mastery
 accept 9855 Windroc Mastery
+turnin 9857 Talbuk Mastery
 accept 9858 Talbuk Mastery
 complete 9850 Clefthoof Mastery
 complete 9855 Windroc Mastery
 complete 9858 Talbuk Mastery
+turnin 9858 Talbuk Mastery
 turnin 9850 Clefthoof Mastery
 turnin 9855 Windroc Mastery
-turnin 9858 Talbuk Mastery
-accept The Ring of Blood: Brokentoe [optional]
-complete The Ring of Blood: Brokentoe [optional]
-turnin The Ring of Blood: Brokentoe [optional]
 level 67
 note Fly to Shattrath, then to Thunderlord Stronghold in Blade's Edge (or ride north from Zangarmarsh).

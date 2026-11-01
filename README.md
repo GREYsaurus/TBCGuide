@@ -1,3 +1,17 @@
+# TBCGuide has been retired
+
+TBCGuide is no longer maintained. Development has moved to [Questwarden](https://github.com/GREYsaurus/Questwarden), the successor project encompassing both TBCGuide and ForeverGuide.
+
+Please use Questwarden for current documentation, development, bug reports, and feature requests.
+
+Questwarden includes TBCGuide's TBC Classic Anniversary data and 1-70 routes (from TBCGuide 0.9.5). Do not run TBCGuide and Questwarden at the same time: both would act on the same quests and NPCs.
+
+This repository is retained for historical reference. The documentation below describes the retired project and may no longer be current.
+
+---
+
+## Legacy documentation
+
 # TBCGuide
 
 A **free** leveling guide and talent add-on for **World of Warcraft: The Burning Crusade Classic** (Anniversary realms, client 2.5.6, interface `20506`).

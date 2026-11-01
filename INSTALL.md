@@ -1,5 +1,7 @@
 # Installing TBCGuide
 
+> **TBCGuide has been retired.** These instructions are kept for historical reference. For a maintained add-on, see [Questwarden](https://github.com/GREYsaurus/Questwarden).
+
 ## Players
 
 1. Download `TBCGuide-<version>.zip` from the GitHub **Releases** page (https://github.com/GREYsaurus/TBCGuide/releases), or build it yourself (it lands in `dist/`). If you use GitHub's *Code > Download ZIP* instead, copy only the inner `TBCGuide` folder out of `TBCGuide-main`.
